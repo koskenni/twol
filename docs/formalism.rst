@@ -145,3 +145,6 @@ For a context requirement rule, this means that one must find contexts other tha
 For an output coercion rule (``<=``), we create the set of negative examples by first finding all examples where X occurs, and replace them with all strings Y in X.m.  From the set of distorted examples we, again, subtract any examples which are in the original set of examples.  This difference is the set of negative examples for an output coercion rule.  The rule is expected to discard all such examples, and the compiler can list any negative example which the rule accepts.
 
 For an input coercion rule (``<--``) the building of negative examples is similar, but instead of using X.m one uses X.s.
+
+In order to make testing against negative examples general, one would need a different version of the context requirement rule (=>) which could be (-->).  That rule would compile the same way as the normal one but it would have a different set of negative examples for testing it.  Obviously, the double arrow rule ought to have, then, a counterpart (<-->) too.
+
