@@ -122,7 +122,7 @@ There are four types of two-level rules:
 **<=**
     An **output coercion rule** (or a surface coercion rule or a left arrow rule) says that the input side of *X* must correspond to one of the possibilities given in *X* in the contexts given by the rule.  In other words, *X.m - X* may not occur in any of the contexts given by the rule.  Thus *X <= LC _ RC* is equivalent to *X.m - X /<= LC _ RC*
 
-**``<--``**
+``<--``
     An **input coercion rule** says that the output side of *X* must correspond to one of the possibilities given in *X* in the contexts listed in the rule.  In other words, *X.s - X* may not occur in any of the contexts given by the rule.  Thus *X <= LC _ RC* is equivalent to *X.s - X /<= LC _ RC*
 
 **<=>**
@@ -146,5 +146,5 @@ For an output coercion rule (``<=``), we create the set of negative examples by 
 
 For an input coercion rule (``<--``) the building of negative examples is similar, but instead of using X.m one uses X.s.
 
-In order to make testing against negative examples general, one would need a different version of the context requirement rule (=>) which could be (-->).  That rule would compile the same way as the normal one but it would have a different set of negative examples for testing it.  Obviously, the double arrow rule ought to have, then, a counterpart (<-->) too.
+In order to make testing against negative examples general, one would need a different version of the context requirement rule (=>) which could be (``-->``).  That rule would compile the same way as the normal one but it would have a different set of negative examples for testing it.  Obviously, the double arrow rule ought to have, then, a counterpart (``<-->``) too.
 
