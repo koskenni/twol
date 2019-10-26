@@ -1,0 +1,88 @@
+@@grammar::TwolCSyntax
+@@left_recursion :: False
+
+expr_start = expression $ ;
+
+rul_start = rule $ ;
+
+def_start = define $ ;
+
+define = left:identifier op:'=' ~ right:expression ';' ;
+
+###identifier = token:/[a-záéíóúəüűőåäöčšťA-ZÜØÅÄÖ0-9]+/ ;
+identifier = token:/[^- \[\]\/<>=_;,.|&*+\\()]+/ ;
+
+rule = double_arrow_rule | right_arrow_rule | exclusion_rule | output_coercion_rule | input_coercion_rule ;
+
+double_arrow_rule = left:expression op:'<=>' ~ right:contexts ';' ;
+
+right_arrow_rule = left:expression op:'=>' ~ right:contexts ';' ;
+
+exclusion_rule = left:expression op:'/<=' ~ right:contexts ';' ;
+
+output_coercion_rule = left:expression op:'<=' ~ right:contexts ';' ;
+
+input_coercion_rule = left:expression op:'<--' ~ right:contexts ';' ;
+
+contexts = context_lst | context ;
+
+context_lst = left:context ',' right:contexts ;
+
+context = left:[expression] '_' right:[expression] ;
+
+expression = composition | term ;
+
+composition = left:term '.o.' ~ right:expression ;
+
+term = union | difference | intersection | factor ;
+
+union = left:factor op:'|' ~ right:term ;
+
+difference = left:factor op:'-' ~ right:term ;
+
+intersection = left:factor op:'&' ~ right:term ;
+
+factor = concatenation | unit ;
+
+concatenation = left:unit right:factor ;
+
+unit =
+    | Kleene_plus
+    | Kleene_star
+    | Upper
+    | Lower
+    | Morphophonemic
+    | Surface
+    | One_but_not
+    | atom
+    ;
+
+Kleene_plus = expr:atom '+' ;
+
+Kleene_star = expr:atom '*' ;
+
+Upper = expr:atom '.u' ;
+
+Lower = expr:atom '.l' ;
+
+Morphophonemic = expr:atom '.m' ;
+
+Surface = expr:atom '.s' ;
+
+One_but_not = '\\' expr:atom ;
+
+atom
+    = '[' @:subexpression ~ ']'
+    | '(' @:optexpression ~ ')'
+    | symbol_or_pair
+    | boundary ;
+
+subexpression = expr:expression ;
+
+optexpression = expr:expression ;
+
+###symbol_or_pair = token:/[a-zåüäöõšžA-ZØ:{}'´`]+/ ;
+symbol_or_pair = token:/[^- \[\]\/<>=_;,.|&*+\\()]+/ ;
+
+boundary = '.#.' ;
+

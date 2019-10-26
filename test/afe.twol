@@ -1,0 +1,66 @@
+! Two-level rules: Aligned Baltic-Finnish
+
+V = a|e|i|o|u|y:ü|ä|ö|a:Ø|e:õ|i:e|i:õ|i:Ø|o:u|o:õ|o:Ø|u:o|u:Ø|y:ö|y:ü|y:Ø|ä:a|ä:Ø ;
+C = h|j|k|l|m|n|p|r|s|t|v|j:i|k:g|k:Ø|n:Ø|p:b|p:Ø|t:d ;
+Cs = h|j|k|l|m|n|p|r|t|v|j:i|k:g|k:Ø|n:Ø|p:b|p:Ø|t:d ;
+BkV = a:Ø|a|o:Ø|o|u:Ø|u ;
+FrV = ä|ö|y:ü|y:ö|y:Ø|ä:a|ä:Ø ;
+NeV = e|i|e:õ|i:e|i:õ|i:Ø ;
+Z = Ø:a|Ø:ü|Ø:õ ;
+Dbl = [V V | C | V Z n:Ø] C (V C) ;
+
+BkV     /<=  FrV :* _ ;
+FrV     /<=  BkV :* _ ;
+
+a:Ø     <=>  Dbl _ .#. ;
+
+e:õ     <=>  .#. C* (i:õ) _ C* BkV ;
+
+i        =>  [.#.|C] _ [C|.#.] ,
+             i _ , _ i ;
+i:Ø     <=>  Dbl _ .#. ;
+i:e      =>  .#. C* _ e ;
+e | i   /<=  .#. C* _ e ;
+i:õ     <=>  .#. C* _ [e:õ|e] C* BkV ;  
+
+o         =>  :o _ ,
+              _ C j:i ;
+o:Ø      <=>  Dbl _ .#. ;
+o:õ      <=>  .#. C _ C+ [i: | :i] ,
+              _ Ø:õ n:Ø s i: ;
+o:u      <=>  V C _ .#. ;
+
+u:o       =>  .#. C* _ o ;
+u:o      <--  .#. C* _ o ;
+u:Ø      <=>  Dbl _ .#. ;
+
+y:Ø       =>  Dbl _ .#. ;
+y:ü      /<=  Dbl _ .#. ;
+y:ö       =>  .#. C* _ ö ;
+y:ü      /<=  .#. C* _ ö ;
+
+ä:a       =>  V C+ _ ;
+ä        /<=  V C+ _ ;
+ä:Ø      <=>  Dbl _ .#. ;
+
+Cs       /<=  _ .#. ;
+
+j:i      <=>  [h|l|r|n] _ a:Ø .#. ;
+
+k:g       =>  [V|l|r|n] _ V ;
+k:Ø       =>  [k] _ V .#. ;
+k         =>  .#. _ , [s|h] _ , _ [k|k:Ø] ;
+p:Ø       =>  V (l|r|m) [p] _ V .#. ;
+p:b       =>  [V|l|r|m] _ V ;
+p         =>  .#. _ , [h|s|p] _ , _ [s] , _ [p|p:Ø] ;
+t:d       =>  [V|l|r|n] _ V ;
+t         =>  .#. _ , [h|s] _ , _ [s] , _ [t] ;
+
+n:Ø       =>  [a Ø:a|y:ü Ø:ü|o:õ Ø:õ] _ s i:Ø ;
+n        /<=  [a|y:ü|o:õ] _ s i:Ø ;
+Ø:a       =>  a  _ n:Ø s i:Ø ;
+Ø:ü       =>  y:ü _ n:Ø s i:Ø ;
+Ø:õ       =>  o:õ _ n:Ø s i:Ø ;
+
+.#.      /<=  _ C C ;
+.#.      /<=  C C _ ;
