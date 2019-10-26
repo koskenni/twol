@@ -1,0 +1,68 @@
+ID,KSK,STM SG1,STM PAST SG3,STM POTN SG3,STM COND SG3,STM IMPV,STM IMPVSG3,STM PCP2,STM PSSPRES,STM PSSPAST,STM PSSPCP2
+PUNOA,V1,puno.n,puno.i.,puno.ne.e,puno.isi.,puno.,puno.koon,puno.nut,puno.tØaan,puno.ttiin,puno.ttu
+kutoa,V1,kudo.n,kuto.i.,kuto.ne.e,kuto.isi.,kudo.,kuto.koon,kuto.nut,kudo.tØaan,kudo.ttiin,kudo.ttu
+MUISTAA,V2,muista.n,muist.i.,muista.ne.e,muista.isi.,muista.,muista.koon,muista.nut,muiste.tØaan,muiste.ttiin,muiste.ttu
+hätkähtää,V2,hätkähdä.n,hätkäht.i.,hätkähtä.ne.e,hätkähtä.isi.,hätkähdä.,hätkähtä.köön,hätkähtä.nyt,hätkähde.tØään,hätkähde.ttiin,hätkähde.tty
+HUUTAA,V3,huuda.n,huus.i. (huut.i.),huuta.ne.e,huuta.isi.,huuda.,huuta.koon,huuta.nut,huude.tØaan,huude.ttiin,huude.ttu
+SOUTAA,V4,souda.n,sous.i. sout.i.,souta.ne.e,souta.isi.,souda.,souta.koon,souta.nut,soude.tØaan,soude.ttiin,soude.ttu
+PUOLTAA,V5,puolla.n,puols.i. (puolt.i.),puolta.ne.e,puolta.isi.,puolla.,puolta.koon,puolta.nut,puolle.tØaan,puolle.ttiin,puolle.ttu
+MURTAA,V6,murra.n,murs.i. (murt.i.),murta.ne.e,murta.isi.,murra.,murta.koon,murta.nut,murre.tØaan,murre.ttiin,murre.ttu
+SORTAA,V7,sorra.n,(sors.i.) sort.i.,sorta.ne.e,sorta.isi.,sorra.,sorta.koon,sorta.nut,sorre.tØaan,sorre.ttiin,sorre.ttu
+PAHENTAA,V8,pahenna.n,pahens.i. (pahent.i.),pahenta.ne.e,pahenta.isi.,pahenna.,pahenta.koon,pahenta.nut,pahenne.tØaan,pahenne.ttiin,pahenne.ttu
+KAIVAA,V9,kaiva.n,kaivo.i.,kaiva.ne.e,kaiva.isi.,kaiva.,kaiva.koon,kaiva.nut,kaive.tØaan,kaive.ttiin,kaive.ttu
+tappaa,V9,tapa.n,tappo.i.,tappa.ne.e,tappa.isi.,tapa.,tappa.koon,tappa.nut,tape.tØaan,tape.ttiin,tape.ttu
+HAASTAA,V10,haasta.n,haasto.i. haast.i.,haasta.ne.e,haasta.isi.,haasta.,haasta.koon,haasta.nut,haaste.taan,haaste.ttiin,haaste.ttu
+PAISTAA,V11,paista.n,paisto.i. (paist.i.),paista.ne.e,paista.isi.,paista.,paista.koon,paista.nut,paiste.tØaan,paiste.ttiin,paiste.ttu
+SAARTAA,V12,saarra.n,saars.i. saarto.i. (saart.i.),saarta.ne.e,saarta.isi.,saarra.,saarta.koon,saarta.nut,saarre.tØaan,saarre.ttiin,saarre.ttu
+LASKEA,V13,laske.n,lask.i.,laske.ne.e,lask.isi.,laske.,laske.koon,laske.nut,laske.tØaan,laske.ttiin,laske.ttu
+kokea,V13,koe.n,kok.i.,koke.ne.e,kok.isi.,koe.,koke.koon,koke.nut,koe.tØaan,koe.ttiin,koe.ttu
+TUNTEA,V14,tunne.n,tuns.i.,tunte.ne.e,tunt.isi.,tunne.,tunte.koon,tunte.nut,tunne.tØaan,tunne.ttiin,tunne.ttu
+POTEA,V15,pode.n,pot.i. (pos.i.),pote.ne.e,pot.isi.,pode.,pote.koon,pote.nut,pode.tØaan,pode.ttiin,pode.ttu
+LÄHTEÄ,V16,lähde.n,läht.i. läks.i.,lähte.ne.e,läht.isi. läks.isi.,lähde.,lähte.köön,lähte.nyt,lähde.tØään,lähde.ttiin,lähde.tty
+SALLIA,V17,salli.n,sall.i.,salli.ne.e,sall.isi.,salli.,salli.koon,salli.nut,salli.tØaan,salli.ttiin,salli.ttu
+onkia,V17,ongi.n,onk.i.,onki.ne.e,onk.isi.,ongi.,onki.koon,onki.nut,ongi.tØaan,ongi.ttiin,ongi.ttu
+NAIDA,V18,nai.n,na.i.,nai.ne.e,na.isi.,nai.,nai.koon,nai.nut,nai.dØaan,nai.Øtiin,nai.tu
+SAADA,V19,saa.n,sa.i.,saa.ne.e,sa.isi.,saa.,saa.koon,saa.nut,saa.dØaan,saa.Øtiin,saa.tu
+MYYDÄ,V20,myy.n,my.i.,myy.ne.e,my.isi.,myy.,myy.köön,myy.nyt,myy.dØään,myy.Øtiin,myy.ty
+JUODA,V21,juo.n,jo.i.,juo.ne.e,jo.isi.,juo.,juo.koon,juo.nut,juo.dØaan,juo.tiin,juo.tu
+VIEDÄ,V22,vie.n,ve.i.,vie.ne.e,ve.isi.,vie.,vie.köön,vie.nyt,vie.dØään,vie.tiin,vie.ty
+KÄYDÄ,V23,käØy.n,kävØ.i.,käy.ne.e,käv.isi.,käy.,käy.köön,käy.nyt,käy.dØään,käy.tiin,käy.ty
+NUOLAISTA,V24,nuolaise.n,nuolais.i.,nuolais.se.e,nuolais.isi.,nuolaise.,nuolais.koon,nuolais.sut,nuolais.tØaan,nuolais.tiin,nuolais.tu
+TULLA,V25,tule.n,tul.i.,tul.le.e,tul.isi.,tule.,tul.koon,tul.lut,tul.lØaan,tul.tiin,tul.tu
+PURRA,V26,pure.n,pur.i.,pur.re.e,pur.isi.,pure.,pur.koon,pur.rut,pur.rØaan,pur.tiin,pur.tu
+MENNÄ,V27,mene.n,men.i.,men.ne.e,men.isi.,mene.,men.köön,men.nyt,men.nØään,men.tiin,men.ty
+KATSELLA,V28,katsele.n,katsel.i.,katsel.le.e,katsel.isi. (katsele.isi.),katsele.,katsel.koon,katsel.lut,katsel.lØaan,katsel.tiin,katsel.tu
+madella,V28,matele.n,matel.i.,madel.le.e,matel.isi.,matele.,madel.koon,madel.lut,madel.lØaan,madel.tiin,madel.tu
+ARVAILLA,V29,arvaile.n,arvail.i.,arvail.le.e,arvail.isi. (arvaele.isi.),arvaile.,arvail.koon,arvail.lut,arvail.lØaan,arvail.tiin,arvail.tu
+HARAVOIDA,V30,haravoi.n,haravo.i.,haravoi.ne.e,haravo.isi.,haravoi.,haravoi.koon,haravoi.nut,haravoi.dØaan,haravoi.tiin,haravoi.Øtu
+HARAVOITA,V30,haravoitse.n,haravoits.i.,haravoin.ne.e,haravoits.isi.,haravoitse.,(haravoit.koon),(haravoin.nut),haravoit.ØØaan,(haravoit.tiin),(haravoit.Øtu)
+VALITA,V31,valitse.n,valits.i.,valin.ne.e,valits.isi. (valitse.isi.),valitse.,valit.koon,valin.nut,valit.ØØaan,valit.tiin,valit.Øtu
+JUOSTA,V32,juokse.n,juoks.i.,juos.se.e,juoks.isi.,juokse.,juos.koon,juos.sut (juos.nut),juos.tØaan,juos.tiin,juos.Øtu
+NÄHDÄ,V33,näØe.n,näk.i.,näh.ne.e,näk.isi.,näe.,näh.köön,näh.nyt,näh.dØään,näh.tiin,näh.Øty
+ALETA,V34,alene.n,alen.i.,alen.ne.e,alen.isi. (alene.isi.),alene.,alet.koon,alen.nut,alet.ØØaan,alet.tiin,alet.tu
+valjeta,V34,valkene.n,valken.i.,valjen.ne.e,valken.isi.,valkene.,valjet.koon,valjen.nut,valjet.ØØaan,valjet.tiin,valjet.tu
+SALATA,V35,salaØa.n,salas.i.,salan.ne.e,sala.isi.,salaa.,salat.koon,salan.nut,salat.ØØaan,salat.tiin,salat.tu
+aidata,V35,aitaØa.n,aitas.i.,aidan.ne.e,aita.isi.,aitaa.,aidat.koon,aidan.nut,aidat.ØØaan,aidat.tiin,aidat.tu
+KATKETA,V36,katkeØa.n,katkes.i.,katken.ne.e,katkea.isi.,katkea.,katket.koon,katken.nut,katket.ØØaan,katket.tiin,katket.tu
+?Katketa,V36,(katkeØe.n),[katkes.i.],[katken.ne.e],(katke.isi.),(katkee.),,,,,
+herjetä,V36,herkeØä.n,herkes.i.,herjen.ne.e,herkeä.isi.,herkeä.,herjet.köön,herjen.nyt,herjet.ØØään,herjet.tiin,herjet.ty
+SELVITÄ,V37,selviØä.n,selvis.i.,selvin.ne.e,selviä.isi.,selviä.,selvit.köön,selvin.nyt,selvit.ØØään,selvit.tiin,selvit.ty
+?Selvitä,V38,(selviØi.n),[selvis.i.],[selvin.ne.e],,,,,,,
+lämmitä,V37,lämpiØä.n,lämpis.i.,lämmin.ne.e,lämpiä.isi.,lämpiä.,lämmit.köön,lämmin.nyt,lämmit.ØØään,lämmit.tiin,lämmit.ty
+KOHOTA,V38,kohoØa.n,kohos.i.,kohon.ne.e,kohoa.isi.,kohoa.,kohot.koon,kohon.nut,kohot.ØØaan,kohot.tiin,kohot.tu
+?Kohota,V38,(kohoo.n),,,(koho.isi.),(kohoo.),,,,,
+kimmota,V38,kimpoØa.n,kimpos.i.,kimmon.ne.e,kimpoa.isi.,kimpoa.,kimmot.koon,kimmon.nut,kimmot.ØØaan,kimmot.tiin,kimmot.tu
+HALUTA,V39,haluØa.n,halus.i.,halun.ne.e,halua.isi.,halua.,halut.koon,halun.nut,halut.ØØaan,halut.tiin,halut.tu
+vivuta,V39,vipuØa.n,vipus.i.,vivun.ne.e,vipua.isi.,vipua.,vivut.koon,vivun.nut,vivut.ØØaan,vivut.tiin,vivut.tu
+PALATA,V40,palaØa.n,palas.i.,palan.ne.e,pala.isi.,palaa.,palat.koon,palan.nut,palat.ØØaan,palat.tiin,palat.tu
+?Palata,V40,(palaja.n),,,(palaja.isi.),(palaja.),,,,,
+hylätä,V40,hylkäØä.n,hylkäs.i.,hylän.ne.e,hylkä.isi.,hylkää.,hylät.köön,hylän.nyt,hylät.ØØään,hylät.tiin,hylät.ty
+KIHISTÄ,V41,kihise.n,kihis.i.,kihis.se.e,kihis.isi.,kihise.,kihis.köön,kihis.syt,kihis.tØään,kihis.tiin,kihis.ty
+KIHAJAA,V41,kihaja.n,(kihaj.i.),[kihaja.ne.e],kihaja.isi.,(kihaja.),[kihaja.koon],[kihaja.nut],kihaje.tØaan],[kihaje.ttiin],[kihaje.ttu]
+RAKENTAA,V42,rakenna.n,rakens.i.,rakenta.ne.e,rakenta.isi.,rakenna.,rakenta.koon,rakenta.nut,rakenne.tØaan,rakenne.ttiin,rakenne.ttu
+?RAKETA,V42,rakenna.n],(rakent.i.),,,,(raket.koon),,,(raket.tiin),(raket.tu)
+TAITAA,V43,taida.n,tais.i.,taita.ne.e,taita.isi.,taida.,taita.koon,taita.nut,taide.tØaan,taide.ttiin,taide.ttu
+?TAITA,V43,,,tain.ne.e,,,[tait.koon],tain.nut,[tait.ØØaan],tait.tiin,tait.tu
+ANTAUTUA,V44,antaudu.n,antautu.i.,antautu.ne.e,antautu.isi.,antaudu.,antautu.koon,antautu.nut,antaudu.tØaan,antaudu.ttiin,antaudu.ttu
+ANTAUTA,V44,(antau.n),(antaus.i.),(antau.ne.e),(antau.isi.),,(antau.koon),(antau.nut),(antau.tØaan),(antau.ttiin),(antau.ttu)
+KAATA,V45,kaada.n,kaas.i.,kaan.ne.e,kaata.isi.,kaada.,kaat.koon,kaan.nut,kaat.ØØaan,kaat.tiin,kaat.tu

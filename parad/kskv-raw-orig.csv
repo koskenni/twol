@@ -1,0 +1,628 @@
+MORPHEMES,MORPHS,ZEROFILLED,RAW
+PUNOA SG1,puno.n,puno.n,p u n o n
+PUNOA PAST SG3,puno.i.,puno.i.Ø,p u n o {i} {VØ}
+PUNOA POTN SG3,puno.ne.e,puno.ne.e,p u n o {nlrs} e {VØ}
+PUNOA COND SG3,puno.isi.,puno.isi.Ø,p u n o i s i {VØ}
+PUNOA IMPV,puno.,puno.Ø,p u n o {C}
+PUNOA IMPVSG3,puno.koon,puno.koon,p u n o k {oö} {oö} n
+PUNOA PCP2,puno.nut,puno.nut,p u n o {nlrs} {uy} t
+PUNOA PSSPRES,puno.tØaan,puno.tØaan,p u n o {tdlrnØ} {C} {aä} {aä} n
+PUNOA PSSPAST,puno.ttiin,puno.ttiin,p u n o {Øt} t i i n
+PUNOA PSSPCP2,puno.ttu,puno.ttu,p u n o {Øt} t {uy}
+kutoa SG1,kudo.n,kudo.n,k u {dttttd} o n
+kutoa PAST SG3,kuto.i.,kuto.i.Ø,k u {dttttd} o {i} {VØ}
+kutoa POTN SG3,kuto.ne.e,kuto.ne.e,k u {dttttd} o {nlrs} e {VØ}
+kutoa COND SG3,kuto.isi.,kuto.isi.Ø,k u {dttttd} o i s i {VØ}
+kutoa IMPV,kudo.,kudo.Ø,k u {dttttd} o {C}
+kutoa IMPVSG3,kuto.koon,kuto.koon,k u {dttttd} o k {oö} {oö} n
+kutoa PCP2,kuto.nut,kuto.nut,k u {dttttd} o {nlrs} {uy} t
+kutoa PSSPRES,kudo.tØaan,kudo.tØaan,k u {dttttd} o {tdlrnØ} {C} {aä} {aä} n
+kutoa PSSPAST,kudo.ttiin,kudo.ttiin,k u {dttttd} o {Øt} t i i n
+kutoa PSSPCP2,kudo.ttu,kudo.ttu,k u {dttttd} o {Øt} t {uy}
+MUISTAA SG1,muista.n,muista.n,m u i s t {aØaaae} n
+MUISTAA PAST SG3,muist.i.,muistØ.i.Ø,m u i s t {aØaaae} {i} {VØ}
+MUISTAA POTN SG3,muista.ne.e,muista.ne.e,m u i s t {aØaaae} {nlrs} e {VØ}
+MUISTAA COND SG3,muista.isi.,muista.isi.Ø,m u i s t {aØaaae} i s i {VØ}
+MUISTAA IMPV,muista.,muista.Ø,m u i s t {aØaaae} {C}
+MUISTAA IMPVSG3,muista.koon,muista.koon,m u i s t {aØaaae} k {oö} {oö} n
+MUISTAA PCP2,muista.nut,muista.nut,m u i s t {aØaaae} {nlrs} {uy} t
+MUISTAA PSSPRES,muiste.tØaan,muiste.tØaan,m u i s t {aØaaae} {tdlrnØ} {C} {aä} {aä} n
+MUISTAA PSSPAST,muiste.ttiin,muiste.ttiin,m u i s t {aØaaae} {Øt} t i i n
+MUISTAA PSSPCP2,muiste.ttu,muiste.ttu,m u i s t {aØaaae} {Øt} t {uy}
+hätkähtää SG1,hätkähdä.n,hätkähdä.n,h ä t k ä h {dttttd} {äØäääe} n
+hätkähtää PAST SG3,hätkäht.i.,hätkähtØ.i.Ø,h ä t k ä h {dttttd} {äØäääe} {i} {VØ}
+hätkähtää POTN SG3,hätkähtä.ne.e,hätkähtä.ne.e,h ä t k ä h {dttttd} {äØäääe} {nlrs} e {VØ}
+hätkähtää COND SG3,hätkähtä.isi.,hätkähtä.isi.Ø,h ä t k ä h {dttttd} {äØäääe} i s i {VØ}
+hätkähtää IMPV,hätkähdä.,hätkähdä.Ø,h ä t k ä h {dttttd} {äØäääe} {C}
+hätkähtää IMPVSG3,hätkähtä.köön,hätkähtä.köön,h ä t k ä h {dttttd} {äØäääe} k {oö} {oö} n
+hätkähtää PCP2,hätkähtä.nyt,hätkähtä.nyt,h ä t k ä h {dttttd} {äØäääe} {nlrs} {uy} t
+hätkähtää PSSPRES,hätkähde.tØään,hätkähde.tØään,h ä t k ä h {dttttd} {äØäääe} {tdlrnØ} {C} {aä} {aä} n
+hätkähtää PSSPAST,hätkähde.ttiin,hätkähde.ttiin,h ä t k ä h {dttttd} {äØäääe} {Øt} t i i n
+hätkähtää PSSPCP2,hätkähde.tty,hätkähde.tty,h ä t k ä h {dttttd} {äØäääe} {Øt} t {uy}
+HUUTAA SG1,huuda.n,huuda.n,h u u {dsttttd} {aØØaaae} n
+HUUTAA PAST SG3,huus.i.,huusØ.i.Ø,h u u {dsttttd} {aØØaaae} {i} {VØ}
+HUUTAA PAST SG3,huut.i.,huutØ.i.Ø,h u u {dsttttd} {aØØaaae} {i} {VØ}
+HUUTAA POTN SG3,huuta.ne.e,huuta.ne.e,h u u {dsttttd} {aØØaaae} {nlrs} e {VØ}
+HUUTAA COND SG3,huuta.isi.,huuta.isi.Ø,h u u {dsttttd} {aØØaaae} i s i {VØ}
+HUUTAA IMPV,huuda.,huuda.Ø,h u u {dsttttd} {aØØaaae} {C}
+HUUTAA IMPVSG3,huuta.koon,huuta.koon,h u u {dsttttd} {aØØaaae} k {oö} {oö} n
+HUUTAA PCP2,huuta.nut,huuta.nut,h u u {dsttttd} {aØØaaae} {nlrs} {uy} t
+HUUTAA PSSPRES,huude.tØaan,huude.tØaan,h u u {dsttttd} {aØØaaae} {tdlrnØ} {C} {aä} {aä} n
+HUUTAA PSSPAST,huude.ttiin,huude.ttiin,h u u {dsttttd} {aØØaaae} {Øt} t i i n
+HUUTAA PSSPCP2,huude.ttu,huude.ttu,h u u {dsttttd} {aØØaaae} {Øt} t {uy}
+SOUTAA SG1,souda.n,souda.n,s o u {dsttttd} {aØØaaae} n
+SOUTAA PAST SG3,sous.i.,sousØ.i.Ø,s o u {dsttttd} {aØØaaae} {i} {VØ}
+SOUTAA PAST SG3,sout.i.,soutØ.i.Ø,s o u {dsttttd} {aØØaaae} {i} {VØ}
+SOUTAA POTN SG3,souta.ne.e,souta.ne.e,s o u {dsttttd} {aØØaaae} {nlrs} e {VØ}
+SOUTAA COND SG3,souta.isi.,souta.isi.Ø,s o u {dsttttd} {aØØaaae} i s i {VØ}
+SOUTAA IMPV,souda.,souda.Ø,s o u {dsttttd} {aØØaaae} {C}
+SOUTAA IMPVSG3,souta.koon,souta.koon,s o u {dsttttd} {aØØaaae} k {oö} {oö} n
+SOUTAA PCP2,souta.nut,souta.nut,s o u {dsttttd} {aØØaaae} {nlrs} {uy} t
+SOUTAA PSSPRES,soude.tØaan,soude.tØaan,s o u {dsttttd} {aØØaaae} {tdlrnØ} {C} {aä} {aä} n
+SOUTAA PSSPAST,soude.ttiin,soude.ttiin,s o u {dsttttd} {aØØaaae} {Øt} t i i n
+SOUTAA PSSPCP2,soude.ttu,soude.ttu,s o u {dsttttd} {aØØaaae} {Øt} t {uy}
+PUOLTAA SG1,puolla.n,puolla.n,p u o l {lsttttl} {aØØaaae} n
+PUOLTAA PAST SG3,puols.i.,puolsØ.i.Ø,p u o l {lsttttl} {aØØaaae} {i} {VØ}
+PUOLTAA PAST SG3,puolt.i.,puoltØ.i.Ø,p u o l {lsttttl} {aØØaaae} {i} {VØ}
+PUOLTAA POTN SG3,puolta.ne.e,puolta.ne.e,p u o l {lsttttl} {aØØaaae} {nlrs} e {VØ}
+PUOLTAA COND SG3,puolta.isi.,puolta.isi.Ø,p u o l {lsttttl} {aØØaaae} i s i {VØ}
+PUOLTAA IMPV,puolla.,puolla.Ø,p u o l {lsttttl} {aØØaaae} {C}
+PUOLTAA IMPVSG3,puolta.koon,puolta.koon,p u o l {lsttttl} {aØØaaae} k {oö} {oö} n
+PUOLTAA PCP2,puolta.nut,puolta.nut,p u o l {lsttttl} {aØØaaae} {nlrs} {uy} t
+PUOLTAA PSSPRES,puolle.tØaan,puolle.tØaan,p u o l {lsttttl} {aØØaaae} {tdlrnØ} {C} {aä} {aä} n
+PUOLTAA PSSPAST,puolle.ttiin,puolle.ttiin,p u o l {lsttttl} {aØØaaae} {Øt} t i i n
+PUOLTAA PSSPCP2,puolle.ttu,puolle.ttu,p u o l {lsttttl} {aØØaaae} {Øt} t {uy}
+MURTAA SG1,murra.n,murra.n,m u r {rsttttr} {aØØaaae} n
+MURTAA PAST SG3,murs.i.,mursØ.i.Ø,m u r {rsttttr} {aØØaaae} {i} {VØ}
+MURTAA PAST SG3,murt.i.,murtØ.i.Ø,m u r {rsttttr} {aØØaaae} {i} {VØ}
+MURTAA POTN SG3,murta.ne.e,murta.ne.e,m u r {rsttttr} {aØØaaae} {nlrs} e {VØ}
+MURTAA COND SG3,murta.isi.,murta.isi.Ø,m u r {rsttttr} {aØØaaae} i s i {VØ}
+MURTAA IMPV,murra.,murra.Ø,m u r {rsttttr} {aØØaaae} {C}
+MURTAA IMPVSG3,murta.koon,murta.koon,m u r {rsttttr} {aØØaaae} k {oö} {oö} n
+MURTAA PCP2,murta.nut,murta.nut,m u r {rsttttr} {aØØaaae} {nlrs} {uy} t
+MURTAA PSSPRES,murre.tØaan,murre.tØaan,m u r {rsttttr} {aØØaaae} {tdlrnØ} {C} {aä} {aä} n
+MURTAA PSSPAST,murre.ttiin,murre.ttiin,m u r {rsttttr} {aØØaaae} {Øt} t i i n
+MURTAA PSSPCP2,murre.ttu,murre.ttu,m u r {rsttttr} {aØØaaae} {Øt} t {uy}
+SORTAA SG1,sorra.n,sorra.n,s o r {rsttttr} {aØØaaae} n
+SORTAA PAST SG3,sors.i.,sorsØ.i.Ø,s o r {rsttttr} {aØØaaae} {i} {VØ}
+SORTAA PAST SG3,sort.i.,sortØ.i.Ø,s o r {rsttttr} {aØØaaae} {i} {VØ}
+SORTAA POTN SG3,sorta.ne.e,sorta.ne.e,s o r {rsttttr} {aØØaaae} {nlrs} e {VØ}
+SORTAA COND SG3,sorta.isi.,sorta.isi.Ø,s o r {rsttttr} {aØØaaae} i s i {VØ}
+SORTAA IMPV,sorra.,sorra.Ø,s o r {rsttttr} {aØØaaae} {C}
+SORTAA IMPVSG3,sorta.koon,sorta.koon,s o r {rsttttr} {aØØaaae} k {oö} {oö} n
+SORTAA PCP2,sorta.nut,sorta.nut,s o r {rsttttr} {aØØaaae} {nlrs} {uy} t
+SORTAA PSSPRES,sorre.tØaan,sorre.tØaan,s o r {rsttttr} {aØØaaae} {tdlrnØ} {C} {aä} {aä} n
+SORTAA PSSPAST,sorre.ttiin,sorre.ttiin,s o r {rsttttr} {aØØaaae} {Øt} t i i n
+SORTAA PSSPCP2,sorre.ttu,sorre.ttu,s o r {rsttttr} {aØØaaae} {Øt} t {uy}
+PAHENTAA SG1,pahenna.n,pahenna.n,p a h e n {nsttttn} {aØØaaae} n
+PAHENTAA PAST SG3,pahens.i.,pahensØ.i.Ø,p a h e n {nsttttn} {aØØaaae} {i} {VØ}
+PAHENTAA PAST SG3,pahent.i.,pahentØ.i.Ø,p a h e n {nsttttn} {aØØaaae} {i} {VØ}
+PAHENTAA POTN SG3,pahenta.ne.e,pahenta.ne.e,p a h e n {nsttttn} {aØØaaae} {nlrs} e {VØ}
+PAHENTAA COND SG3,pahenta.isi.,pahenta.isi.Ø,p a h e n {nsttttn} {aØØaaae} i s i {VØ}
+PAHENTAA IMPV,pahenna.,pahenna.Ø,p a h e n {nsttttn} {aØØaaae} {C}
+PAHENTAA IMPVSG3,pahenta.koon,pahenta.koon,p a h e n {nsttttn} {aØØaaae} k {oö} {oö} n
+PAHENTAA PCP2,pahenta.nut,pahenta.nut,p a h e n {nsttttn} {aØØaaae} {nlrs} {uy} t
+PAHENTAA PSSPRES,pahenne.tØaan,pahenne.tØaan,p a h e n {nsttttn} {aØØaaae} {tdlrnØ} {C} {aä} {aä} n
+PAHENTAA PSSPAST,pahenne.ttiin,pahenne.ttiin,p a h e n {nsttttn} {aØØaaae} {Øt} t i i n
+PAHENTAA PSSPCP2,pahenne.ttu,pahenne.ttu,p a h e n {nsttttn} {aØØaaae} {Øt} t {uy}
+KAIVAA SG1,kaiva.n,kaiva.n,k a i v {aoaaae} n
+KAIVAA PAST SG3,kaivo.i.,kaivo.i.Ø,k a i v {aoaaae} {i} {VØ}
+KAIVAA POTN SG3,kaiva.ne.e,kaiva.ne.e,k a i v {aoaaae} {nlrs} e {VØ}
+KAIVAA COND SG3,kaiva.isi.,kaiva.isi.Ø,k a i v {aoaaae} i s i {VØ}
+KAIVAA IMPV,kaiva.,kaiva.Ø,k a i v {aoaaae} {C}
+KAIVAA IMPVSG3,kaiva.koon,kaiva.koon,k a i v {aoaaae} k {oö} {oö} n
+KAIVAA PCP2,kaiva.nut,kaiva.nut,k a i v {aoaaae} {nlrs} {uy} t
+KAIVAA PSSPRES,kaive.tØaan,kaive.tØaan,k a i v {aoaaae} {tdlrnØ} {C} {aä} {aä} n
+KAIVAA PSSPAST,kaive.ttiin,kaive.ttiin,k a i v {aoaaae} {Øt} t i i n
+KAIVAA PSSPCP2,kaive.ttu,kaive.ttu,k a i v {aoaaae} {Øt} t {uy}
+tappaa SG1,tapa.n,tapØa.n,t a p {ØppppØ} {aoaaae} n
+tappaa PAST SG3,tappo.i.,tappo.i.Ø,t a p {ØppppØ} {aoaaae} {i} {VØ}
+tappaa POTN SG3,tappa.ne.e,tappa.ne.e,t a p {ØppppØ} {aoaaae} {nlrs} e {VØ}
+tappaa COND SG3,tappa.isi.,tappa.isi.Ø,t a p {ØppppØ} {aoaaae} i s i {VØ}
+tappaa IMPV,tapa.,tapØa.Ø,t a p {ØppppØ} {aoaaae} {C}
+tappaa IMPVSG3,tappa.koon,tappa.koon,t a p {ØppppØ} {aoaaae} k {oö} {oö} n
+tappaa PCP2,tappa.nut,tappa.nut,t a p {ØppppØ} {aoaaae} {nlrs} {uy} t
+tappaa PSSPRES,tape.tØaan,tapØe.tØaan,t a p {ØppppØ} {aoaaae} {tdlrnØ} {C} {aä} {aä} n
+tappaa PSSPAST,tape.ttiin,tapØe.ttiin,t a p {ØppppØ} {aoaaae} {Øt} t i i n
+tappaa PSSPCP2,tape.ttu,tapØe.ttu,t a p {ØppppØ} {aoaaae} {Øt} t {uy}
+HAASTAA SG1,haasta.n,haasta.n,h a a s t {aoØaaae} n
+HAASTAA PAST SG3,haasto.i.,haasto.i.Ø,h a a s t {aoØaaae} {i} {VØ}
+HAASTAA PAST SG3,haast.i.,haastØ.i.Ø,h a a s t {aoØaaae} {i} {VØ}
+HAASTAA POTN SG3,haasta.ne.e,haasta.ne.e,h a a s t {aoØaaae} {nlrs} e {VØ}
+HAASTAA COND SG3,haasta.isi.,haasta.isi.Ø,h a a s t {aoØaaae} i s i {VØ}
+HAASTAA IMPV,haasta.,haasta.Ø,h a a s t {aoØaaae} {C}
+HAASTAA IMPVSG3,haasta.koon,haasta.koon,h a a s t {aoØaaae} k {oö} {oö} n
+HAASTAA PCP2,haasta.nut,haasta.nut,h a a s t {aoØaaae} {nlrs} {uy} t
+HAASTAA PSSPRES,haaste.taan,haaste.tØaan,h a a s t {aoØaaae} {tdlrnØ} {C} {aä} {aä} n
+HAASTAA PSSPAST,haaste.ttiin,haaste.ttiin,h a a s t {aoØaaae} {Øt} t i i n
+HAASTAA PSSPCP2,haaste.ttu,haaste.ttu,h a a s t {aoØaaae} {Øt} t {uy}
+PAISTAA SG1,paista.n,paista.n,p a i s t {aoØaaae} n
+PAISTAA PAST SG3,paisto.i.,paisto.i.Ø,p a i s t {aoØaaae} {i} {VØ}
+PAISTAA PAST SG3,paist.i.,paistØ.i.Ø,p a i s t {aoØaaae} {i} {VØ}
+PAISTAA POTN SG3,paista.ne.e,paista.ne.e,p a i s t {aoØaaae} {nlrs} e {VØ}
+PAISTAA COND SG3,paista.isi.,paista.isi.Ø,p a i s t {aoØaaae} i s i {VØ}
+PAISTAA IMPV,paista.,paista.Ø,p a i s t {aoØaaae} {C}
+PAISTAA IMPVSG3,paista.koon,paista.koon,p a i s t {aoØaaae} k {oö} {oö} n
+PAISTAA PCP2,paista.nut,paista.nut,p a i s t {aoØaaae} {nlrs} {uy} t
+PAISTAA PSSPRES,paiste.tØaan,paiste.tØaan,p a i s t {aoØaaae} {tdlrnØ} {C} {aä} {aä} n
+PAISTAA PSSPAST,paiste.ttiin,paiste.ttiin,p a i s t {aoØaaae} {Øt} t i i n
+PAISTAA PSSPCP2,paiste.ttu,paiste.ttu,p a i s t {aoØaaae} {Øt} t {uy}
+SAARTAA SG1,saarra.n,saarra.n,s a a r {rstttttr} {aØoØaaae} n
+SAARTAA PAST SG3,saars.i.,saarsØ.i.Ø,s a a r {rstttttr} {aØoØaaae} {i} {VØ}
+SAARTAA PAST SG3,saarto.i.,saarto.i.Ø,s a a r {rstttttr} {aØoØaaae} {i} {VØ}
+SAARTAA PAST SG3,saart.i.,saartØ.i.Ø,s a a r {rstttttr} {aØoØaaae} {i} {VØ}
+SAARTAA POTN SG3,saarta.ne.e,saarta.ne.e,s a a r {rstttttr} {aØoØaaae} {nlrs} e {VØ}
+SAARTAA COND SG3,saarta.isi.,saarta.isi.Ø,s a a r {rstttttr} {aØoØaaae} i s i {VØ}
+SAARTAA IMPV,saarra.,saarra.Ø,s a a r {rstttttr} {aØoØaaae} {C}
+SAARTAA IMPVSG3,saarta.koon,saarta.koon,s a a r {rstttttr} {aØoØaaae} k {oö} {oö} n
+SAARTAA PCP2,saarta.nut,saarta.nut,s a a r {rstttttr} {aØoØaaae} {nlrs} {uy} t
+SAARTAA PSSPRES,saarre.tØaan,saarre.tØaan,s a a r {rstttttr} {aØoØaaae} {tdlrnØ} {C} {aä} {aä} n
+SAARTAA PSSPAST,saarre.ttiin,saarre.ttiin,s a a r {rstttttr} {aØoØaaae} {Øt} t i i n
+SAARTAA PSSPCP2,saarre.ttu,saarre.ttu,s a a r {rstttttr} {aØoØaaae} {Øt} t {uy}
+LASKEA SG1,laske.n,laske.n,l a s k {eØeØee} n
+LASKEA PAST SG3,lask.i.,laskØ.i.Ø,l a s k {eØeØee} {i} {VØ}
+LASKEA POTN SG3,laske.ne.e,laske.ne.e,l a s k {eØeØee} {nlrs} e {VØ}
+LASKEA COND SG3,lask.isi.,laskØ.isi.Ø,l a s k {eØeØee} i s i {VØ}
+LASKEA IMPV,laske.,laske.Ø,l a s k {eØeØee} {C}
+LASKEA IMPVSG3,laske.koon,laske.koon,l a s k {eØeØee} k {oö} {oö} n
+LASKEA PCP2,laske.nut,laske.nut,l a s k {eØeØee} {nlrs} {uy} t
+LASKEA PSSPRES,laske.tØaan,laske.tØaan,l a s k {eØeØee} {tdlrnØ} {C} {aä} {aä} n
+LASKEA PSSPAST,laske.ttiin,laske.ttiin,l a s k {eØeØee} {Øt} t i i n
+LASKEA PSSPCP2,laske.ttu,laske.ttu,l a s k {eØeØee} {Øt} t {uy}
+kokea SG1,koe.n,koØe.n,k o {ØkkkkØ} {eØeØee} n
+kokea PAST SG3,kok.i.,kokØ.i.Ø,k o {ØkkkkØ} {eØeØee} {i} {VØ}
+kokea POTN SG3,koke.ne.e,koke.ne.e,k o {ØkkkkØ} {eØeØee} {nlrs} e {VØ}
+kokea COND SG3,kok.isi.,kokØ.isi.Ø,k o {ØkkkkØ} {eØeØee} i s i {VØ}
+kokea IMPV,koe.,koØe.Ø,k o {ØkkkkØ} {eØeØee} {C}
+kokea IMPVSG3,koke.koon,koke.koon,k o {ØkkkkØ} {eØeØee} k {oö} {oö} n
+kokea PCP2,koke.nut,koke.nut,k o {ØkkkkØ} {eØeØee} {nlrs} {uy} t
+kokea PSSPRES,koe.tØaan,koØe.tØaan,k o {ØkkkkØ} {eØeØee} {tdlrnØ} {C} {aä} {aä} n
+kokea PSSPAST,koe.ttiin,koØe.ttiin,k o {ØkkkkØ} {eØeØee} {Øt} t i i n
+kokea PSSPCP2,koe.ttu,koØe.ttu,k o {ØkkkkØ} {eØeØee} {Øt} t {uy}
+TUNTEA SG1,tunne.n,tunne.n,t u n {nstttn} {eØeØee} n
+TUNTEA PAST SG3,tuns.i.,tunsØ.i.Ø,t u n {nstttn} {eØeØee} {i} {VØ}
+TUNTEA POTN SG3,tunte.ne.e,tunte.ne.e,t u n {nstttn} {eØeØee} {nlrs} e {VØ}
+TUNTEA COND SG3,tunt.isi.,tuntØ.isi.Ø,t u n {nstttn} {eØeØee} i s i {VØ}
+TUNTEA IMPV,tunne.,tunne.Ø,t u n {nstttn} {eØeØee} {C}
+TUNTEA IMPVSG3,tunte.koon,tunte.koon,t u n {nstttn} {eØeØee} k {oö} {oö} n
+TUNTEA PCP2,tunte.nut,tunte.nut,t u n {nstttn} {eØeØee} {nlrs} {uy} t
+TUNTEA PSSPRES,tunne.tØaan,tunne.tØaan,t u n {nstttn} {eØeØee} {tdlrnØ} {C} {aä} {aä} n
+TUNTEA PSSPAST,tunne.ttiin,tunne.ttiin,t u n {nstttn} {eØeØee} {Øt} t i i n
+TUNTEA PSSPCP2,tunne.ttu,tunne.ttu,t u n {nstttn} {eØeØee} {Øt} t {uy}
+POTEA SG1,pode.n,pode.n,p o {dtstttd} {eØØeØee} n
+POTEA PAST SG3,pot.i.,potØ.i.Ø,p o {dtstttd} {eØØeØee} {i} {VØ}
+POTEA PAST SG3,pos.i.,posØ.i.Ø,p o {dtstttd} {eØØeØee} {i} {VØ}
+POTEA POTN SG3,pote.ne.e,pote.ne.e,p o {dtstttd} {eØØeØee} {nlrs} e {VØ}
+POTEA COND SG3,pot.isi.,potØ.isi.Ø,p o {dtstttd} {eØØeØee} i s i {VØ}
+POTEA IMPV,pode.,pode.Ø,p o {dtstttd} {eØØeØee} {C}
+POTEA IMPVSG3,pote.koon,pote.koon,p o {dtstttd} {eØØeØee} k {oö} {oö} n
+POTEA PCP2,pote.nut,pote.nut,p o {dtstttd} {eØØeØee} {nlrs} {uy} t
+POTEA PSSPRES,pode.tØaan,pode.tØaan,p o {dtstttd} {eØØeØee} {tdlrnØ} {C} {aä} {aä} n
+POTEA PSSPAST,pode.ttiin,pode.ttiin,p o {dtstttd} {eØØeØee} {Øt} t i i n
+POTEA PSSPCP2,pode.ttu,pode.ttu,p o {dtstttd} {eØØeØee} {Øt} t {uy}
+LÄHTEÄ SG1,lähde.n,lähde.n,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} n
+LÄHTEÄ PAST SG3,läht.i.,lähtØ.i.Ø,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} {i} {VØ}
+LÄHTEÄ PAST SG3,läks.i.,läksØ.i.Ø,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} {i} {VØ}
+LÄHTEÄ POTN SG3,lähte.ne.e,lähte.ne.e,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} {nlrs} e {VØ}
+LÄHTEÄ COND SG3,läht.isi.,lähtØ.isi.Ø,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} i s i {VØ}
+LÄHTEÄ COND SG3,läks.isi.,läksØ.isi.Ø,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} i s i {VØ}
+LÄHTEÄ IMPV,lähde.,lähde.Ø,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} {C}
+LÄHTEÄ IMPVSG3,lähte.köön,lähte.köön,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} k {oö} {oö} n
+LÄHTEÄ PCP2,lähte.nyt,lähte.nyt,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} {nlrs} {uy} t
+LÄHTEÄ PSSPRES,lähde.tØään,lähde.tØään,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} {tdlrnØ} {C} {aä} {aä} n
+LÄHTEÄ PSSPAST,lähde.ttiin,lähde.ttiin,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} {Øt} t i i n
+LÄHTEÄ PSSPCP2,lähde.tty,lähde.tty,l ä {hhkhhkhh} {dtsttstd} {eØØeØØee} {Øt} t {uy}
+SALLIA SG1,salli.n,salli.n,s a l l {iØiØii} n
+SALLIA PAST SG3,sall.i.,sallØ.i.Ø,s a l l {iØiØii} {i} {VØ}
+SALLIA POTN SG3,salli.ne.e,salli.ne.e,s a l l {iØiØii} {nlrs} e {VØ}
+SALLIA COND SG3,sall.isi.,sallØ.isi.Ø,s a l l {iØiØii} i s i {VØ}
+SALLIA IMPV,salli.,salli.Ø,s a l l {iØiØii} {C}
+SALLIA IMPVSG3,salli.koon,salli.koon,s a l l {iØiØii} k {oö} {oö} n
+SALLIA PCP2,salli.nut,salli.nut,s a l l {iØiØii} {nlrs} {uy} t
+SALLIA PSSPRES,salli.tØaan,salli.tØaan,s a l l {iØiØii} {tdlrnØ} {C} {aä} {aä} n
+SALLIA PSSPAST,salli.ttiin,salli.ttiin,s a l l {iØiØii} {Øt} t i i n
+SALLIA PSSPCP2,salli.ttu,salli.ttu,s a l l {iØiØii} {Øt} t {uy}
+onkia SG1,ongi.n,ongi.n,o n {gkkkkg} {iØiØii} n
+onkia PAST SG3,onk.i.,onkØ.i.Ø,o n {gkkkkg} {iØiØii} {i} {VØ}
+onkia POTN SG3,onki.ne.e,onki.ne.e,o n {gkkkkg} {iØiØii} {nlrs} e {VØ}
+onkia COND SG3,onk.isi.,onkØ.isi.Ø,o n {gkkkkg} {iØiØii} i s i {VØ}
+onkia IMPV,ongi.,ongi.Ø,o n {gkkkkg} {iØiØii} {C}
+onkia IMPVSG3,onki.koon,onki.koon,o n {gkkkkg} {iØiØii} k {oö} {oö} n
+onkia PCP2,onki.nut,onki.nut,o n {gkkkkg} {iØiØii} {nlrs} {uy} t
+onkia PSSPRES,ongi.tØaan,ongi.tØaan,o n {gkkkkg} {iØiØii} {tdlrnØ} {C} {aä} {aä} n
+onkia PSSPAST,ongi.ttiin,ongi.ttiin,o n {gkkkkg} {iØiØii} {Øt} t i i n
+onkia PSSPCP2,ongi.ttu,ongi.ttu,o n {gkkkkg} {iØiØii} {Øt} t {uy}
+NAIDA SG1,nai.n,nai.n,n a {iØiØii} n
+NAIDA PAST SG3,na.i.,naØ.i.Ø,n a {iØiØii} {i} {VØ}
+NAIDA POTN SG3,nai.ne.e,nai.ne.e,n a {iØiØii} {nlrs} e {VØ}
+NAIDA COND SG3,na.isi.,naØ.isi.Ø,n a {iØiØii} i s i {VØ}
+NAIDA IMPV,nai.,nai.Ø,n a {iØiØii} {C}
+NAIDA IMPVSG3,nai.koon,nai.koon,n a {iØiØii} k {oö} {oö} n
+NAIDA PCP2,nai.nut,nai.nut,n a {iØiØii} {nlrs} {uy} t
+NAIDA PSSPRES,nai.dØaan,nai.dØaan,n a {iØiØii} {tdlrnØ} {C} {aä} {aä} n
+NAIDA PSSPAST,nai.Øtiin,nai.Øtiin,n a {iØiØii} {Øt} t i i n
+NAIDA PSSPCP2,nai.tu,nai.Øtu,n a {iØiØii} {Øt} t {uy}
+SAADA SG1,saa.n,saa.n,s a {aØaØaa} n
+SAADA PAST SG3,sa.i.,saØ.i.Ø,s a {aØaØaa} {i} {VØ}
+SAADA POTN SG3,saa.ne.e,saa.ne.e,s a {aØaØaa} {nlrs} e {VØ}
+SAADA COND SG3,sa.isi.,saØ.isi.Ø,s a {aØaØaa} i s i {VØ}
+SAADA IMPV,saa.,saa.Ø,s a {aØaØaa} {C}
+SAADA IMPVSG3,saa.koon,saa.koon,s a {aØaØaa} k {oö} {oö} n
+SAADA PCP2,saa.nut,saa.nut,s a {aØaØaa} {nlrs} {uy} t
+SAADA PSSPRES,saa.dØaan,saa.dØaan,s a {aØaØaa} {tdlrnØ} {C} {aä} {aä} n
+SAADA PSSPAST,saa.Øtiin,saa.Øtiin,s a {aØaØaa} {Øt} t i i n
+SAADA PSSPCP2,saa.tu,saa.Øtu,s a {aØaØaa} {Øt} t {uy}
+MYYDÄ SG1,myy.n,myy.n,m y {yØyØyy} n
+MYYDÄ PAST SG3,my.i.,myØ.i.Ø,m y {yØyØyy} {i} {VØ}
+MYYDÄ POTN SG3,myy.ne.e,myy.ne.e,m y {yØyØyy} {nlrs} e {VØ}
+MYYDÄ COND SG3,my.isi.,myØ.isi.Ø,m y {yØyØyy} i s i {VØ}
+MYYDÄ IMPV,myy.,myy.Ø,m y {yØyØyy} {C}
+MYYDÄ IMPVSG3,myy.köön,myy.köön,m y {yØyØyy} k {oö} {oö} n
+MYYDÄ PCP2,myy.nyt,myy.nyt,m y {yØyØyy} {nlrs} {uy} t
+MYYDÄ PSSPRES,myy.dØään,myy.dØään,m y {yØyØyy} {tdlrnØ} {C} {aä} {aä} n
+MYYDÄ PSSPAST,myy.Øtiin,myy.Øtiin,m y {yØyØyy} {Øt} t i i n
+MYYDÄ PSSPCP2,myy.ty,myy.Øty,m y {yØyØyy} {Øt} t {uy}
+JUODA SG1,juo.n,juo.n,j {uØuØuu} o n
+JUODA PAST SG3,jo.i.,jØo.i.Ø,j {uØuØuu} o {i} {VØ}
+JUODA POTN SG3,juo.ne.e,juo.ne.e,j {uØuØuu} o {nlrs} e {VØ}
+JUODA COND SG3,jo.isi.,jØo.isi.Ø,j {uØuØuu} o i s i {VØ}
+JUODA IMPV,juo.,juo.Ø,j {uØuØuu} o {C}
+JUODA IMPVSG3,juo.koon,juo.koon,j {uØuØuu} o k {oö} {oö} n
+JUODA PCP2,juo.nut,juo.nut,j {uØuØuu} o {nlrs} {uy} t
+JUODA PSSPRES,juo.dØaan,juo.dØaan,j {uØuØuu} o {tdlrnØ} {C} {aä} {aä} n
+JUODA PSSPAST,juo.tiin,juo.Øtiin,j {uØuØuu} o {Øt} t i i n
+JUODA PSSPCP2,juo.tu,juo.Øtu,j {uØuØuu} o {Øt} t {uy}
+VIEDÄ SG1,vie.n,vie.n,v {iØiØii} e n
+VIEDÄ PAST SG3,ve.i.,vØe.i.Ø,v {iØiØii} e {i} {VØ}
+VIEDÄ POTN SG3,vie.ne.e,vie.ne.e,v {iØiØii} e {nlrs} e {VØ}
+VIEDÄ COND SG3,ve.isi.,vØe.isi.Ø,v {iØiØii} e i s i {VØ}
+VIEDÄ IMPV,vie.,vie.Ø,v {iØiØii} e {C}
+VIEDÄ IMPVSG3,vie.köön,vie.köön,v {iØiØii} e k {oö} {oö} n
+VIEDÄ PCP2,vie.nyt,vie.nyt,v {iØiØii} e {nlrs} {uy} t
+VIEDÄ PSSPRES,vie.dØään,vie.dØään,v {iØiØii} e {tdlrnØ} {C} {aä} {aä} n
+VIEDÄ PSSPAST,vie.tiin,vie.Øtiin,v {iØiØii} e {Øt} t i i n
+VIEDÄ PSSPCP2,vie.ty,vie.Øty,v {iØiØii} e {Øt} t {uy}
+KÄYDÄ SG1,käØy.n,käØy.n,k ä {ØvØvØØ} {yØyØyy} n
+KÄYDÄ PAST SG3,kävØ.i.,kävØ.i.Ø,k ä {ØvØvØØ} {yØyØyy} {i} {VØ}
+KÄYDÄ POTN SG3,käy.ne.e,käØy.ne.e,k ä {ØvØvØØ} {yØyØyy} {nlrs} e {VØ}
+KÄYDÄ COND SG3,käv.isi.,kävØ.isi.Ø,k ä {ØvØvØØ} {yØyØyy} i s i {VØ}
+KÄYDÄ IMPV,käy.,käØy.Ø,k ä {ØvØvØØ} {yØyØyy} {C}
+KÄYDÄ IMPVSG3,käy.köön,käØy.köön,k ä {ØvØvØØ} {yØyØyy} k {oö} {oö} n
+KÄYDÄ PCP2,käy.nyt,käØy.nyt,k ä {ØvØvØØ} {yØyØyy} {nlrs} {uy} t
+KÄYDÄ PSSPRES,käy.dØään,käØy.dØään,k ä {ØvØvØØ} {yØyØyy} {tdlrnØ} {C} {aä} {aä} n
+KÄYDÄ PSSPAST,käy.tiin,käØy.Øtiin,k ä {ØvØvØØ} {yØyØyy} {Øt} t i i n
+KÄYDÄ PSSPCP2,käy.ty,käØy.Øty,k ä {ØvØvØØ} {yØyØyy} {Øt} t {uy}
+NUOLAISTA SG1,nuolaise.n,nuolaise.n,n u o l a i s {eØØØØØ} n
+NUOLAISTA PAST SG3,nuolais.i.,nuolaisØ.i.Ø,n u o l a i s {eØØØØØ} {i} {VØ}
+NUOLAISTA POTN SG3,nuolais.se.e,nuolaisØ.se.e,n u o l a i s {eØØØØØ} {nlrs} e {VØ}
+NUOLAISTA COND SG3,nuolais.isi.,nuolaisØ.isi.Ø,n u o l a i s {eØØØØØ} i s i {VØ}
+NUOLAISTA IMPV,nuolaise.,nuolaise.Ø,n u o l a i s {eØØØØØ} {C}
+NUOLAISTA IMPVSG3,nuolais.koon,nuolaisØ.koon,n u o l a i s {eØØØØØ} k {oö} {oö} n
+NUOLAISTA PCP2,nuolais.sut,nuolaisØ.sut,n u o l a i s {eØØØØØ} {nlrs} {uy} t
+NUOLAISTA PSSPRES,nuolais.tØaan,nuolaisØ.tØaan,n u o l a i s {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+NUOLAISTA PSSPAST,nuolais.tiin,nuolaisØ.Øtiin,n u o l a i s {eØØØØØ} {Øt} t i i n
+NUOLAISTA PSSPCP2,nuolais.tu,nuolaisØ.Øtu,n u o l a i s {eØØØØØ} {Øt} t {uy}
+TULLA SG1,tule.n,tule.n,t u l {eØØØØØ} n
+TULLA PAST SG3,tul.i.,tulØ.i.Ø,t u l {eØØØØØ} {i} {VØ}
+TULLA POTN SG3,tul.le.e,tulØ.le.e,t u l {eØØØØØ} {nlrs} e {VØ}
+TULLA COND SG3,tul.isi.,tulØ.isi.Ø,t u l {eØØØØØ} i s i {VØ}
+TULLA IMPV,tule.,tule.Ø,t u l {eØØØØØ} {C}
+TULLA IMPVSG3,tul.koon,tulØ.koon,t u l {eØØØØØ} k {oö} {oö} n
+TULLA PCP2,tul.lut,tulØ.lut,t u l {eØØØØØ} {nlrs} {uy} t
+TULLA PSSPRES,tul.lØaan,tulØ.lØaan,t u l {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+TULLA PSSPAST,tul.tiin,tulØ.Øtiin,t u l {eØØØØØ} {Øt} t i i n
+TULLA PSSPCP2,tul.tu,tulØ.Øtu,t u l {eØØØØØ} {Øt} t {uy}
+PURRA SG1,pure.n,pure.n,p u r {eØØØØØ} n
+PURRA PAST SG3,pur.i.,purØ.i.Ø,p u r {eØØØØØ} {i} {VØ}
+PURRA POTN SG3,pur.re.e,purØ.re.e,p u r {eØØØØØ} {nlrs} e {VØ}
+PURRA COND SG3,pur.isi.,purØ.isi.Ø,p u r {eØØØØØ} i s i {VØ}
+PURRA IMPV,pure.,pure.Ø,p u r {eØØØØØ} {C}
+PURRA IMPVSG3,pur.koon,purØ.koon,p u r {eØØØØØ} k {oö} {oö} n
+PURRA PCP2,pur.rut,purØ.rut,p u r {eØØØØØ} {nlrs} {uy} t
+PURRA PSSPRES,pur.rØaan,purØ.rØaan,p u r {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+PURRA PSSPAST,pur.tiin,purØ.Øtiin,p u r {eØØØØØ} {Øt} t i i n
+PURRA PSSPCP2,pur.tu,purØ.Øtu,p u r {eØØØØØ} {Øt} t {uy}
+MENNÄ SG1,mene.n,mene.n,m e n {eØØØØØ} n
+MENNÄ PAST SG3,men.i.,menØ.i.Ø,m e n {eØØØØØ} {i} {VØ}
+MENNÄ POTN SG3,men.ne.e,menØ.ne.e,m e n {eØØØØØ} {nlrs} e {VØ}
+MENNÄ COND SG3,men.isi.,menØ.isi.Ø,m e n {eØØØØØ} i s i {VØ}
+MENNÄ IMPV,mene.,mene.Ø,m e n {eØØØØØ} {C}
+MENNÄ IMPVSG3,men.köön,menØ.köön,m e n {eØØØØØ} k {oö} {oö} n
+MENNÄ PCP2,men.nyt,menØ.nyt,m e n {eØØØØØ} {nlrs} {uy} t
+MENNÄ PSSPRES,men.nØään,menØ.nØään,m e n {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+MENNÄ PSSPAST,men.tiin,menØ.Øtiin,m e n {eØØØØØ} {Øt} t i i n
+MENNÄ PSSPCP2,men.ty,menØ.Øty,m e n {eØØØØØ} {Øt} t {uy}
+KATSELLA SG1,katsele.n,katsele.n,k a t s e l {eØØØeØØ} n
+KATSELLA PAST SG3,katsel.i.,katselØ.i.Ø,k a t s e l {eØØØeØØ} {i} {VØ}
+KATSELLA POTN SG3,katsel.le.e,katselØ.le.e,k a t s e l {eØØØeØØ} {nlrs} e {VØ}
+KATSELLA COND SG3,katsel.isi.,katselØ.isi.Ø,k a t s e l {eØØØeØØ} i s i {VØ}
+KATSELLA COND SG3,katsele.isi.,katsele.isi.Ø,k a t s e l {eØØØeØØ} i s i {VØ}
+KATSELLA IMPV,katsele.,katsele.Ø,k a t s e l {eØØØeØØ} {C}
+KATSELLA IMPVSG3,katsel.koon,katselØ.koon,k a t s e l {eØØØeØØ} k {oö} {oö} n
+KATSELLA PCP2,katsel.lut,katselØ.lut,k a t s e l {eØØØeØØ} {nlrs} {uy} t
+KATSELLA PSSPRES,katsel.lØaan,katselØ.lØaan,k a t s e l {eØØØeØØ} {tdlrnØ} {C} {aä} {aä} n
+KATSELLA PSSPAST,katsel.tiin,katselØ.Øtiin,k a t s e l {eØØØeØØ} {Øt} t i i n
+KATSELLA PSSPCP2,katsel.tu,katselØ.Øtu,k a t s e l {eØØØeØØ} {Øt} t {uy}
+madella SG1,matele.n,matele.n,m a {ttdtdd} e l {eØØØØØ} n
+madella PAST SG3,matel.i.,matelØ.i.Ø,m a {ttdtdd} e l {eØØØØØ} {i} {VØ}
+madella POTN SG3,madel.le.e,madelØ.le.e,m a {ttdtdd} e l {eØØØØØ} {nlrs} e {VØ}
+madella COND SG3,matel.isi.,matelØ.isi.Ø,m a {ttdtdd} e l {eØØØØØ} i s i {VØ}
+madella IMPV,matele.,matele.Ø,m a {ttdtdd} e l {eØØØØØ} {C}
+madella IMPVSG3,madel.koon,madelØ.koon,m a {ttdtdd} e l {eØØØØØ} k {oö} {oö} n
+madella PCP2,madel.lut,madelØ.lut,m a {ttdtdd} e l {eØØØØØ} {nlrs} {uy} t
+madella PSSPRES,madel.lØaan,madelØ.lØaan,m a {ttdtdd} e l {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+madella PSSPAST,madel.tiin,madelØ.Øtiin,m a {ttdtdd} e l {eØØØØØ} {Øt} t i i n
+madella PSSPCP2,madel.tu,madelØ.Øtu,m a {ttdtdd} e l {eØØØØØ} {Øt} t {uy}
+ARVAILLA SG1,arvaile.n,arvaile.n,a r v a {iiiieii} l {eØØØeØØ} n
+ARVAILLA PAST SG3,arvail.i.,arvailØ.i.Ø,a r v a {iiiieii} l {eØØØeØØ} {i} {VØ}
+ARVAILLA POTN SG3,arvail.le.e,arvailØ.le.e,a r v a {iiiieii} l {eØØØeØØ} {nlrs} e {VØ}
+ARVAILLA COND SG3,arvail.isi.,arvailØ.isi.Ø,a r v a {iiiieii} l {eØØØeØØ} i s i {VØ}
+ARVAILLA COND SG3,arvaele.isi.,arvaele.isi.Ø,a r v a {iiiieii} l {eØØØeØØ} i s i {VØ}
+ARVAILLA IMPV,arvaile.,arvaile.Ø,a r v a {iiiieii} l {eØØØeØØ} {C}
+ARVAILLA IMPVSG3,arvail.koon,arvailØ.koon,a r v a {iiiieii} l {eØØØeØØ} k {oö} {oö} n
+ARVAILLA PCP2,arvail.lut,arvailØ.lut,a r v a {iiiieii} l {eØØØeØØ} {nlrs} {uy} t
+ARVAILLA PSSPRES,arvail.lØaan,arvailØ.lØaan,a r v a {iiiieii} l {eØØØeØØ} {tdlrnØ} {C} {aä} {aä} n
+ARVAILLA PSSPAST,arvail.tiin,arvailØ.Øtiin,a r v a {iiiieii} l {eØØØeØØ} {Øt} t i i n
+ARVAILLA PSSPCP2,arvail.tu,arvailØ.Øtu,a r v a {iiiieii} l {eØØØeØØ} {Øt} t {uy}
+HARAVOIDA SG1,haravoi.n,haravoi.n,h a r a v o {iØiØii} n
+HARAVOIDA PAST SG3,haravo.i.,haravoØ.i.Ø,h a r a v o {iØiØii} {i} {VØ}
+HARAVOIDA POTN SG3,haravoi.ne.e,haravoi.ne.e,h a r a v o {iØiØii} {nlrs} e {VØ}
+HARAVOIDA COND SG3,haravo.isi.,haravoØ.isi.Ø,h a r a v o {iØiØii} i s i {VØ}
+HARAVOIDA IMPV,haravoi.,haravoi.Ø,h a r a v o {iØiØii} {C}
+HARAVOIDA IMPVSG3,haravoi.koon,haravoi.koon,h a r a v o {iØiØii} k {oö} {oö} n
+HARAVOIDA PCP2,haravoi.nut,haravoi.nut,h a r a v o {iØiØii} {nlrs} {uy} t
+HARAVOIDA PSSPRES,haravoi.dØaan,haravoi.dØaan,h a r a v o {iØiØii} {tdlrnØ} {C} {aä} {aä} n
+HARAVOIDA PSSPAST,haravoi.tiin,haravoi.Øtiin,h a r a v o {iØiØii} {Øt} t i i n
+HARAVOIDA PSSPCP2,haravoi.Øtu,haravoi.Øtu,h a r a v o {iØiØii} {Øt} t {uy}
+HARAVOITA SG1,haravoitse.n,haravoitse.n,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} n
+HARAVOITA PAST SG3,haravoits.i.,haravoitsØ.i.Ø,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} {i} {VØ}
+HARAVOITA POTN SG3,haravoin.ne.e,haravoinØØ.ne.e,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} {nlrs} e {VØ}
+HARAVOITA COND SG3,haravoits.isi.,haravoitsØ.isi.Ø,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} i s i {VØ}
+HARAVOITA IMPV,haravoitse.,haravoitse.Ø,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} {C}
+HARAVOITA IMPVSG3,haravoit.koon,haravoitØØ.koon,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} k {oö} {oö} n
+HARAVOITA PCP2,haravoin.nut,haravoinØØ.nut,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} {nlrs} {uy} t
+HARAVOITA PSSPRES,haravoit.ØØaan,haravoitØØ.ØØaan,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+HARAVOITA PSSPAST,haravoit.tiin,haravoitØØ.Øtiin,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} {Øt} t i i n
+HARAVOITA PSSPCP2,haravoit.Øtu,haravoitØØ.Øtu,h a r a v o i {ttnttt} {ssØsØØ} {eØØØØØ} {Øt} t {uy}
+VALITA SG1,valitse.n,valitse.n,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} n
+VALITA PAST SG3,valits.i.,valitsØ.i.Ø,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} {i} {VØ}
+VALITA POTN SG3,valin.ne.e,valinØØ.ne.e,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} {nlrs} e {VØ}
+VALITA COND SG3,valits.isi.,valitsØ.isi.Ø,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} i s i {VØ}
+VALITA COND SG3,valitse.isi.,valitse.isi.Ø,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} i s i {VØ}
+VALITA IMPV,valitse.,valitse.Ø,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} {C}
+VALITA IMPVSG3,valit.koon,valitØØ.koon,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} k {oö} {oö} n
+VALITA PCP2,valin.nut,valinØØ.nut,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} {nlrs} {uy} t
+VALITA PSSPRES,valit.ØØaan,valitØØ.ØØaan,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} {tdlrnØ} {C} {aä} {aä} n
+VALITA PSSPAST,valit.tiin,valitØØ.Øtiin,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} {Øt} t i i n
+VALITA PSSPCP2,valit.Øtu,valitØØ.Øtu,v a l i {ttntttt} {ssØssØØ} {eØØØeØØ} {Øt} t {uy}
+JUOSTA SG1,juokse.n,juokse.n,j u o {kkØkØØ} s {eØØØØØ} n
+JUOSTA PAST SG3,juoks.i.,juoksØ.i.Ø,j u o {kkØkØØ} s {eØØØØØ} {i} {VØ}
+JUOSTA POTN SG3,juos.se.e,juoØsØ.se.e,j u o {kkØkØØ} s {eØØØØØ} {nlrs} e {VØ}
+JUOSTA COND SG3,juoks.isi.,juoksØ.isi.Ø,j u o {kkØkØØ} s {eØØØØØ} i s i {VØ}
+JUOSTA IMPV,juokse.,juokse.Ø,j u o {kkØkØØ} s {eØØØØØ} {C}
+JUOSTA IMPVSG3,juos.koon,juoØsØ.koon,j u o {kkØkØØ} s {eØØØØØ} k {oö} {oö} n
+JUOSTA PCP2,juos.sut,juoØsØ.sut,j u o {kkØkØØ} s {eØØØØØ} {nlrs} {uy} t
+JUOSTA PCP2,juos.nut,juoØsØ.nut,j u o {kkØkØØ} s {eØØØØØ} {nlrs} {uy} t
+JUOSTA PSSPRES,juos.tØaan,juoØsØ.tØaan,j u o {kkØkØØ} s {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+JUOSTA PSSPAST,juos.tiin,juoØsØ.Øtiin,j u o {kkØkØØ} s {eØØØØØ} {Øt} t i i n
+JUOSTA PSSPCP2,juos.Øtu,juoØsØ.Øtu,j u o {kkØkØØ} s {eØØØØØ} {Øt} t {uy}
+NÄHDÄ SG1,näØe.n,näØe.n,n ä {Økhkhh} {eØØØØØ} n
+NÄHDÄ PAST SG3,näk.i.,näkØ.i.Ø,n ä {Økhkhh} {eØØØØØ} {i} {VØ}
+NÄHDÄ POTN SG3,näh.ne.e,nähØ.ne.e,n ä {Økhkhh} {eØØØØØ} {nlrs} e {VØ}
+NÄHDÄ COND SG3,näk.isi.,näkØ.isi.Ø,n ä {Økhkhh} {eØØØØØ} i s i {VØ}
+NÄHDÄ IMPV,näe.,näØe.Ø,n ä {Økhkhh} {eØØØØØ} {C}
+NÄHDÄ IMPVSG3,näh.köön,nähØ.köön,n ä {Økhkhh} {eØØØØØ} k {oö} {oö} n
+NÄHDÄ PCP2,näh.nyt,nähØ.nyt,n ä {Økhkhh} {eØØØØØ} {nlrs} {uy} t
+NÄHDÄ PSSPRES,näh.dØään,nähØ.dØään,n ä {Økhkhh} {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+NÄHDÄ PSSPAST,näh.tiin,nähØ.Øtiin,n ä {Økhkhh} {eØØØØØ} {Øt} t i i n
+NÄHDÄ PSSPCP2,näh.Øty,nähØ.Øty,n ä {Økhkhh} {eØØØØØ} {Øt} t {uy}
+ALETA SG1,alene.n,alene.n,a l e {nnnnntt} {eØØØeØØ} n
+ALETA PAST SG3,alen.i.,alenØ.i.Ø,a l e {nnnnntt} {eØØØeØØ} {i} {VØ}
+ALETA POTN SG3,alen.ne.e,alenØ.ne.e,a l e {nnnnntt} {eØØØeØØ} {nlrs} e {VØ}
+ALETA COND SG3,alen.isi.,alenØ.isi.Ø,a l e {nnnnntt} {eØØØeØØ} i s i {VØ}
+ALETA COND SG3,alene.isi.,alene.isi.Ø,a l e {nnnnntt} {eØØØeØØ} i s i {VØ}
+ALETA IMPV,alene.,alene.Ø,a l e {nnnnntt} {eØØØeØØ} {C}
+ALETA IMPVSG3,alet.koon,aletØ.koon,a l e {nnnnntt} {eØØØeØØ} k {oö} {oö} n
+ALETA PCP2,alen.nut,alenØ.nut,a l e {nnnnntt} {eØØØeØØ} {nlrs} {uy} t
+ALETA PSSPRES,alet.ØØaan,aletØ.ØØaan,a l e {nnnnntt} {eØØØeØØ} {tdlrnØ} {C} {aä} {aä} n
+ALETA PSSPAST,alet.tiin,aletØ.Øtiin,a l e {nnnnntt} {eØØØeØØ} {Øt} t i i n
+ALETA PSSPCP2,alet.tu,aletØ.Øtu,a l e {nnnnntt} {eØØØeØØ} {Øt} t {uy}
+valjeta SG1,valkene.n,valkene.n,v a l {kkjkjj} e {nnnntt} {eØØØØØ} n
+valjeta PAST SG3,valken.i.,valkenØ.i.Ø,v a l {kkjkjj} e {nnnntt} {eØØØØØ} {i} {VØ}
+valjeta POTN SG3,valjen.ne.e,valjenØ.ne.e,v a l {kkjkjj} e {nnnntt} {eØØØØØ} {nlrs} e {VØ}
+valjeta COND SG3,valken.isi.,valkenØ.isi.Ø,v a l {kkjkjj} e {nnnntt} {eØØØØØ} i s i {VØ}
+valjeta IMPV,valkene.,valkene.Ø,v a l {kkjkjj} e {nnnntt} {eØØØØØ} {C}
+valjeta IMPVSG3,valjet.koon,valjetØ.koon,v a l {kkjkjj} e {nnnntt} {eØØØØØ} k {oö} {oö} n
+valjeta PCP2,valjen.nut,valjenØ.nut,v a l {kkjkjj} e {nnnntt} {eØØØØØ} {nlrs} {uy} t
+valjeta PSSPRES,valjet.ØØaan,valjetØ.ØØaan,v a l {kkjkjj} e {nnnntt} {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+valjeta PSSPAST,valjet.tiin,valjetØ.Øtiin,v a l {kkjkjj} e {nnnntt} {eØØØØØ} {Øt} t i i n
+valjeta PSSPCP2,valjet.tu,valjetØ.Øtu,v a l {kkjkjj} e {nnnntt} {eØØØØØ} {Øt} t {uy}
+SALATA SG1,salaØa.n,salaØa.n,s a l a {ØsnØtt} {aØØØØØ} n
+SALATA PAST SG3,salas.i.,salasØ.i.Ø,s a l a {ØsnØtt} {aØØØØØ} {i} {VØ}
+SALATA POTN SG3,salan.ne.e,salanØ.ne.e,s a l a {ØsnØtt} {aØØØØØ} {nlrs} e {VØ}
+SALATA COND SG3,sala.isi.,salaØØ.isi.Ø,s a l a {ØsnØtt} {aØØØØØ} i s i {VØ}
+SALATA IMPV,salaa.,salaØa.Ø,s a l a {ØsnØtt} {aØØØØØ} {C}
+SALATA IMPVSG3,salat.koon,salatØ.koon,s a l a {ØsnØtt} {aØØØØØ} k {oö} {oö} n
+SALATA PCP2,salan.nut,salanØ.nut,s a l a {ØsnØtt} {aØØØØØ} {nlrs} {uy} t
+SALATA PSSPRES,salat.ØØaan,salatØ.ØØaan,s a l a {ØsnØtt} {aØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+SALATA PSSPAST,salat.tiin,salatØ.Øtiin,s a l a {ØsnØtt} {aØØØØØ} {Øt} t i i n
+SALATA PSSPCP2,salat.tu,salatØ.Øtu,s a l a {ØsnØtt} {aØØØØØ} {Øt} t {uy}
+aidata SG1,aitaØa.n,aitaØa.n,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} n
+aidata PAST SG3,aitas.i.,aitasØ.i.Ø,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {i} {VØ}
+aidata POTN SG3,aidan.ne.e,aidanØ.ne.e,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {nlrs} e {VØ}
+aidata COND SG3,aita.isi.,aitaØØ.isi.Ø,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} i s i {VØ}
+aidata IMPV,aitaa.,aitaØa.Ø,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {C}
+aidata IMPVSG3,aidat.koon,aidatØ.koon,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} k {oö} {oö} n
+aidata PCP2,aidan.nut,aidanØ.nut,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {nlrs} {uy} t
+aidata PSSPRES,aidat.ØØaan,aidatØ.ØØaan,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+aidata PSSPAST,aidat.tiin,aidatØ.Øtiin,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {Øt} t i i n
+aidata PSSPCP2,aidat.tu,aidatØ.Øtu,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {Øt} t {uy}
+KATKETA SG1,katkeØa.n,katkeØa.n,k a t k e {ØsnØtt} {aØØaØØ} n
+KATKETA PAST SG3,katkes.i.,katkesØ.i.Ø,k a t k e {ØsnØtt} {aØØaØØ} {i} {VØ}
+KATKETA POTN SG3,katken.ne.e,katkenØ.ne.e,k a t k e {ØsnØtt} {aØØaØØ} {nlrs} e {VØ}
+KATKETA COND SG3,katkea.isi.,katkeØa.isi.Ø,k a t k e {ØsnØtt} {aØØaØØ} i s i {VØ}
+KATKETA IMPV,katkea.,katkeØa.Ø,k a t k e {ØsnØtt} {aØØaØØ} {C}
+KATKETA IMPVSG3,katket.koon,katketØ.koon,k a t k e {ØsnØtt} {aØØaØØ} k {oö} {oö} n
+KATKETA PCP2,katken.nut,katkenØ.nut,k a t k e {ØsnØtt} {aØØaØØ} {nlrs} {uy} t
+KATKETA PSSPRES,katket.ØØaan,katketØ.ØØaan,k a t k e {ØsnØtt} {aØØaØØ} {tdlrnØ} {C} {aä} {aä} n
+KATKETA PSSPAST,katket.tiin,katketØ.Øtiin,k a t k e {ØsnØtt} {aØØaØØ} {Øt} t i i n
+KATKETA PSSPCP2,katket.tu,katketØ.Øtu,k a t k e {ØsnØtt} {aØØaØØ} {Øt} t {uy}
+herjetä SG1,herkeØä.n,herkeØä.n,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} n
+herjetä PAST SG3,herkes.i.,herkesØ.i.Ø,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} {i} {VØ}
+herjetä POTN SG3,herjen.ne.e,herjenØ.ne.e,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} {nlrs} e {VØ}
+herjetä COND SG3,herkeä.isi.,herkeØä.isi.Ø,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} i s i {VØ}
+herjetä IMPV,herkeä.,herkeØä.Ø,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} {C}
+herjetä IMPVSG3,herjet.köön,herjetØ.köön,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} k {oö} {oö} n
+herjetä PCP2,herjen.nyt,herjenØ.nyt,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} {nlrs} {uy} t
+herjetä PSSPRES,herjet.ØØään,herjetØ.ØØään,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} {tdlrnØ} {C} {aä} {aä} n
+herjetä PSSPAST,herjet.tiin,herjetØ.Øtiin,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} {Øt} t i i n
+herjetä PSSPCP2,herjet.ty,herjetØ.Øty,h e r {kkjkjj} e {ØsnØtt} {äØØäØØ} {Øt} t {uy}
+SELVITÄ SG1,selviØä.n,selviØä.n,s e l v i {ØsnØtt} {äØØäØØ} n
+SELVITÄ PAST SG3,selvis.i.,selvisØ.i.Ø,s e l v i {ØsnØtt} {äØØäØØ} {i} {VØ}
+SELVITÄ POTN SG3,selvin.ne.e,selvinØ.ne.e,s e l v i {ØsnØtt} {äØØäØØ} {nlrs} e {VØ}
+SELVITÄ COND SG3,selviä.isi.,selviØä.isi.Ø,s e l v i {ØsnØtt} {äØØäØØ} i s i {VØ}
+SELVITÄ IMPV,selviä.,selviØä.Ø,s e l v i {ØsnØtt} {äØØäØØ} {C}
+SELVITÄ IMPVSG3,selvit.köön,selvitØ.köön,s e l v i {ØsnØtt} {äØØäØØ} k {oö} {oö} n
+SELVITÄ PCP2,selvin.nyt,selvinØ.nyt,s e l v i {ØsnØtt} {äØØäØØ} {nlrs} {uy} t
+SELVITÄ PSSPRES,selvit.ØØään,selvitØ.ØØään,s e l v i {ØsnØtt} {äØØäØØ} {tdlrnØ} {C} {aä} {aä} n
+SELVITÄ PSSPAST,selvit.tiin,selvitØ.Øtiin,s e l v i {ØsnØtt} {äØØäØØ} {Øt} t i i n
+SELVITÄ PSSPCP2,selvit.ty,selvitØ.Øty,s e l v i {ØsnØtt} {äØØäØØ} {Øt} t {uy}
+lämmitä SG1,lämpiØä.n,lämpiØä.n,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} n
+lämmitä PAST SG3,lämpis.i.,lämpisØ.i.Ø,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} {i} {VØ}
+lämmitä POTN SG3,lämmin.ne.e,lämminØ.ne.e,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} {nlrs} e {VØ}
+lämmitä COND SG3,lämpiä.isi.,lämpiØä.isi.Ø,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} i s i {VØ}
+lämmitä IMPV,lämpiä.,lämpiØä.Ø,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} {C}
+lämmitä IMPVSG3,lämmit.köön,lämmitØ.köön,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} k {oö} {oö} n
+lämmitä PCP2,lämmin.nyt,lämminØ.nyt,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} {nlrs} {uy} t
+lämmitä PSSPRES,lämmit.ØØään,lämmitØ.ØØään,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} {tdlrnØ} {C} {aä} {aä} n
+lämmitä PSSPAST,lämmit.tiin,lämmitØ.Øtiin,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} {Øt} t i i n
+lämmitä PSSPCP2,lämmit.ty,lämmitØ.Øty,l ä m {ppmpmm} i {ØsnØtt} {äØØäØØ} {Øt} t {uy}
+KOHOTA SG1,kohoØa.n,kohoØa.n,k o h o {ØsnØtt} {aØØaØØ} n
+KOHOTA PAST SG3,kohos.i.,kohosØ.i.Ø,k o h o {ØsnØtt} {aØØaØØ} {i} {VØ}
+KOHOTA POTN SG3,kohon.ne.e,kohonØ.ne.e,k o h o {ØsnØtt} {aØØaØØ} {nlrs} e {VØ}
+KOHOTA COND SG3,kohoa.isi.,kohoØa.isi.Ø,k o h o {ØsnØtt} {aØØaØØ} i s i {VØ}
+KOHOTA IMPV,kohoa.,kohoØa.Ø,k o h o {ØsnØtt} {aØØaØØ} {C}
+KOHOTA IMPVSG3,kohot.koon,kohotØ.koon,k o h o {ØsnØtt} {aØØaØØ} k {oö} {oö} n
+KOHOTA PCP2,kohon.nut,kohonØ.nut,k o h o {ØsnØtt} {aØØaØØ} {nlrs} {uy} t
+KOHOTA PSSPRES,kohot.ØØaan,kohotØ.ØØaan,k o h o {ØsnØtt} {aØØaØØ} {tdlrnØ} {C} {aä} {aä} n
+KOHOTA PSSPAST,kohot.tiin,kohotØ.Øtiin,k o h o {ØsnØtt} {aØØaØØ} {Øt} t i i n
+KOHOTA PSSPCP2,kohot.tu,kohotØ.Øtu,k o h o {ØsnØtt} {aØØaØØ} {Øt} t {uy}
+kimmota SG1,kimpoØa.n,kimpoØa.n,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} n
+kimmota PAST SG3,kimpos.i.,kimposØ.i.Ø,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} {i} {VØ}
+kimmota POTN SG3,kimmon.ne.e,kimmonØ.ne.e,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} {nlrs} e {VØ}
+kimmota COND SG3,kimpoa.isi.,kimpoØa.isi.Ø,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} i s i {VØ}
+kimmota IMPV,kimpoa.,kimpoØa.Ø,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} {C}
+kimmota IMPVSG3,kimmot.koon,kimmotØ.koon,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} k {oö} {oö} n
+kimmota PCP2,kimmon.nut,kimmonØ.nut,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} {nlrs} {uy} t
+kimmota PSSPRES,kimmot.ØØaan,kimmotØ.ØØaan,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} {tdlrnØ} {C} {aä} {aä} n
+kimmota PSSPAST,kimmot.tiin,kimmotØ.Øtiin,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} {Øt} t i i n
+kimmota PSSPCP2,kimmot.tu,kimmotØ.Øtu,k i m {ppmpmm} o {ØsnØtt} {aØØaØØ} {Øt} t {uy}
+HALUTA SG1,haluØa.n,haluØa.n,h a l u {ØsnØtt} {aØØaØØ} n
+HALUTA PAST SG3,halus.i.,halusØ.i.Ø,h a l u {ØsnØtt} {aØØaØØ} {i} {VØ}
+HALUTA POTN SG3,halun.ne.e,halunØ.ne.e,h a l u {ØsnØtt} {aØØaØØ} {nlrs} e {VØ}
+HALUTA COND SG3,halua.isi.,haluØa.isi.Ø,h a l u {ØsnØtt} {aØØaØØ} i s i {VØ}
+HALUTA IMPV,halua.,haluØa.Ø,h a l u {ØsnØtt} {aØØaØØ} {C}
+HALUTA IMPVSG3,halut.koon,halutØ.koon,h a l u {ØsnØtt} {aØØaØØ} k {oö} {oö} n
+HALUTA PCP2,halun.nut,halunØ.nut,h a l u {ØsnØtt} {aØØaØØ} {nlrs} {uy} t
+HALUTA PSSPRES,halut.ØØaan,halutØ.ØØaan,h a l u {ØsnØtt} {aØØaØØ} {tdlrnØ} {C} {aä} {aä} n
+HALUTA PSSPAST,halut.tiin,halutØ.Øtiin,h a l u {ØsnØtt} {aØØaØØ} {Øt} t i i n
+HALUTA PSSPCP2,halut.tu,halutØ.Øtu,h a l u {ØsnØtt} {aØØaØØ} {Øt} t {uy}
+vivuta SG1,vipuØa.n,vipuØa.n,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} n
+vivuta PAST SG3,vipus.i.,vipusØ.i.Ø,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} {i} {VØ}
+vivuta POTN SG3,vivun.ne.e,vivunØ.ne.e,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} {nlrs} e {VØ}
+vivuta COND SG3,vipua.isi.,vipuØa.isi.Ø,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} i s i {VØ}
+vivuta IMPV,vipua.,vipuØa.Ø,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} {C}
+vivuta IMPVSG3,vivut.koon,vivutØ.koon,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} k {oö} {oö} n
+vivuta PCP2,vivun.nut,vivunØ.nut,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} {nlrs} {uy} t
+vivuta PSSPRES,vivut.ØØaan,vivutØ.ØØaan,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} {tdlrnØ} {C} {aä} {aä} n
+vivuta PSSPAST,vivut.tiin,vivutØ.Øtiin,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} {Øt} t i i n
+vivuta PSSPCP2,vivut.tu,vivutØ.Øtu,v i {ppvpvv} u {ØsnØtt} {aØØaØØ} {Øt} t {uy}
+PALATA SG1,palaØa.n,palaØa.n,p a l a {ØsnØtt} {aØØØØØ} n
+PALATA PAST SG3,palas.i.,palasØ.i.Ø,p a l a {ØsnØtt} {aØØØØØ} {i} {VØ}
+PALATA POTN SG3,palan.ne.e,palanØ.ne.e,p a l a {ØsnØtt} {aØØØØØ} {nlrs} e {VØ}
+PALATA COND SG3,pala.isi.,palaØØ.isi.Ø,p a l a {ØsnØtt} {aØØØØØ} i s i {VØ}
+PALATA IMPV,palaa.,palaØa.Ø,p a l a {ØsnØtt} {aØØØØØ} {C}
+PALATA IMPVSG3,palat.koon,palatØ.koon,p a l a {ØsnØtt} {aØØØØØ} k {oö} {oö} n
+PALATA PCP2,palan.nut,palanØ.nut,p a l a {ØsnØtt} {aØØØØØ} {nlrs} {uy} t
+PALATA PSSPRES,palat.ØØaan,palatØ.ØØaan,p a l a {ØsnØtt} {aØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+PALATA PSSPAST,palat.tiin,palatØ.Øtiin,p a l a {ØsnØtt} {aØØØØØ} {Øt} t i i n
+PALATA PSSPCP2,palat.tu,palatØ.Øtu,p a l a {ØsnØtt} {aØØØØØ} {Øt} t {uy}
+hylätä SG1,hylkäØä.n,hylkäØä.n,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} n
+hylätä PAST SG3,hylkäs.i.,hylkäsØ.i.Ø,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} {i} {VØ}
+hylätä POTN SG3,hylän.ne.e,hylØänØ.ne.e,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} {nlrs} e {VØ}
+hylätä COND SG3,hylkä.isi.,hylkäØØ.isi.Ø,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} i s i {VØ}
+hylätä IMPV,hylkää.,hylkäØä.Ø,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} {C}
+hylätä IMPVSG3,hylät.köön,hylØätØ.köön,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} k {oö} {oö} n
+hylätä PCP2,hylän.nyt,hylØänØ.nyt,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} {nlrs} {uy} t
+hylätä PSSPRES,hylät.ØØään,hylØätØ.ØØään,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+hylätä PSSPAST,hylät.tiin,hylØätØ.Øtiin,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} {Øt} t i i n
+hylätä PSSPCP2,hylät.ty,hylØätØ.Øty,h y l {kkØkØØ} ä {ØsnØtt} {äØØØØØ} {Øt} t {uy}
+KIHISTÄ SG1,kihise.n,kihise.n,k i h i s {eØØØØØ} n
+KIHISTÄ PAST SG3,kihis.i.,kihisØ.i.Ø,k i h i s {eØØØØØ} {i} {VØ}
+KIHISTÄ POTN SG3,kihis.se.e,kihisØ.se.e,k i h i s {eØØØØØ} {nlrs} e {VØ}
+KIHISTÄ COND SG3,kihis.isi.,kihisØ.isi.Ø,k i h i s {eØØØØØ} i s i {VØ}
+KIHISTÄ IMPV,kihise.,kihise.Ø,k i h i s {eØØØØØ} {C}
+KIHISTÄ IMPVSG3,kihis.köön,kihisØ.köön,k i h i s {eØØØØØ} k {oö} {oö} n
+KIHISTÄ PCP2,kihis.syt,kihisØ.syt,k i h i s {eØØØØØ} {nlrs} {uy} t
+KIHISTÄ PSSPRES,kihis.tØään,kihisØ.tØään,k i h i s {eØØØØØ} {tdlrnØ} {C} {aä} {aä} n
+KIHISTÄ PSSPAST,kihis.tiin,kihisØ.Øtiin,k i h i s {eØØØØØ} {Øt} t i i n
+KIHISTÄ PSSPCP2,kihis.ty,kihisØ.Øty,k i h i s {eØØØØØ} {Øt} t {uy}
+KIHAJAA SG1,kihaja.n,kihaja.n,k i h a j {aØaaae} n
+KIHAJAA PAST SG3,kihaj.i.,kihajØ.i.Ø,k i h a j {aØaaae} {i} {VØ}
+KIHAJAA POTN SG3,kihaja.ne.e,kihaja.ne.e,k i h a j {aØaaae} {nlrs} e {VØ}
+KIHAJAA COND SG3,kihaja.isi.,kihaja.isi.Ø,k i h a j {aØaaae} i s i {VØ}
+KIHAJAA IMPV,kihaja.,kihaja.Ø,k i h a j {aØaaae} {C}
+KIHAJAA IMPVSG3,kihaja.koon,kihaja.koon,k i h a j {aØaaae} k {oö} {oö} n
+KIHAJAA PCP2,kihaja.nut,kihaja.nut,k i h a j {aØaaae} {nlrs} {uy} t
+KIHAJAA PSSPRES,kihaje.tØaan,kihaje.tØaan,k i h a j {aØaaae} {tdlrnØ} {C} {aä} {aä} n
+KIHAJAA PSSPAST,kihaje.ttiin,kihaje.ttiin,k i h a j {aØaaae} {Øt} t i i n
+KIHAJAA PSSPCP2,kihaje.ttu,kihaje.ttu,k i h a j {aØaaae} {Øt} t {uy}
+RAKENTAA SG1,rakenna.n,rakenna.n,r a k e n {nstttn} {aØaaae} n
+RAKENTAA PAST SG3,rakens.i.,rakensØ.i.Ø,r a k e n {nstttn} {aØaaae} {i} {VØ}
+RAKENTAA POTN SG3,rakenta.ne.e,rakenta.ne.e,r a k e n {nstttn} {aØaaae} {nlrs} e {VØ}
+RAKENTAA COND SG3,rakenta.isi.,rakenta.isi.Ø,r a k e n {nstttn} {aØaaae} i s i {VØ}
+RAKENTAA IMPV,rakenna.,rakenna.Ø,r a k e n {nstttn} {aØaaae} {C}
+RAKENTAA IMPVSG3,rakenta.koon,rakenta.koon,r a k e n {nstttn} {aØaaae} k {oö} {oö} n
+RAKENTAA PCP2,rakenta.nut,rakenta.nut,r a k e n {nstttn} {aØaaae} {nlrs} {uy} t
+RAKENTAA PSSPRES,rakenne.tØaan,rakenne.tØaan,r a k e n {nstttn} {aØaaae} {tdlrnØ} {C} {aä} {aä} n
+RAKENTAA PSSPAST,rakenne.ttiin,rakenne.ttiin,r a k e n {nstttn} {aØaaae} {Øt} t i i n
+RAKENTAA PSSPCP2,rakenne.ttu,rakenne.ttu,r a k e n {nstttn} {aØaaae} {Øt} t {uy}
+TAITAA SG1,taida.n,taida.n,t a i {dstttd} {aØaaae} n
+TAITAA PAST SG3,tais.i.,taisØ.i.Ø,t a i {dstttd} {aØaaae} {i} {VØ}
+TAITAA POTN SG3,taita.ne.e,taita.ne.e,t a i {dstttd} {aØaaae} {nlrs} e {VØ}
+TAITAA COND SG3,taita.isi.,taita.isi.Ø,t a i {dstttd} {aØaaae} i s i {VØ}
+TAITAA IMPV,taida.,taida.Ø,t a i {dstttd} {aØaaae} {C}
+TAITAA IMPVSG3,taita.koon,taita.koon,t a i {dstttd} {aØaaae} k {oö} {oö} n
+TAITAA PCP2,taita.nut,taita.nut,t a i {dstttd} {aØaaae} {nlrs} {uy} t
+TAITAA PSSPRES,taide.tØaan,taide.tØaan,t a i {dstttd} {aØaaae} {tdlrnØ} {C} {aä} {aä} n
+TAITAA PSSPAST,taide.ttiin,taide.ttiin,t a i {dstttd} {aØaaae} {Øt} t i i n
+TAITAA PSSPCP2,taide.ttu,taide.ttu,t a i {dstttd} {aØaaae} {Øt} t {uy}
+ANTAUTUA SG1,antaudu.n,antaudu.n,a n t a u {dttttd} u n
+ANTAUTUA PAST SG3,antautu.i.,antautu.i.Ø,a n t a u {dttttd} u {i} {VØ}
+ANTAUTUA POTN SG3,antautu.ne.e,antautu.ne.e,a n t a u {dttttd} u {nlrs} e {VØ}
+ANTAUTUA COND SG3,antautu.isi.,antautu.isi.Ø,a n t a u {dttttd} u i s i {VØ}
+ANTAUTUA IMPV,antaudu.,antaudu.Ø,a n t a u {dttttd} u {C}
+ANTAUTUA IMPVSG3,antautu.koon,antautu.koon,a n t a u {dttttd} u k {oö} {oö} n
+ANTAUTUA PCP2,antautu.nut,antautu.nut,a n t a u {dttttd} u {nlrs} {uy} t
+ANTAUTUA PSSPRES,antaudu.tØaan,antaudu.tØaan,a n t a u {dttttd} u {tdlrnØ} {C} {aä} {aä} n
+ANTAUTUA PSSPAST,antaudu.ttiin,antaudu.ttiin,a n t a u {dttttd} u {Øt} t i i n
+ANTAUTUA PSSPCP2,antaudu.ttu,antaudu.ttu,a n t a u {dttttd} u {Øt} t {uy}
+ANTAUTA SG1,antau.n,antauØ.n,a n t a u {ØsØØØØ} n
+ANTAUTA PAST SG3,antaus.i.,antaus.i.Ø,a n t a u {ØsØØØØ} {i} {VØ}
+ANTAUTA POTN SG3,antau.ne.e,antauØ.ne.e,a n t a u {ØsØØØØ} {nlrs} e {VØ}
+ANTAUTA COND SG3,antau.isi.,antauØ.isi.Ø,a n t a u {ØsØØØØ} i s i {VØ}
+ANTAUTA IMPVSG3,antau.koon,antauØ.koon,a n t a u {ØsØØØØ} k {oö} {oö} n
+ANTAUTA PCP2,antau.nut,antauØ.nut,a n t a u {ØsØØØØ} {nlrs} {uy} t
+ANTAUTA PSSPRES,antau.tØaan,antauØ.tØaan,a n t a u {ØsØØØØ} {tdlrnØ} {C} {aä} {aä} n
+ANTAUTA PSSPAST,antau.ttiin,antauØ.ttiin,a n t a u {ØsØØØØ} {Øt} t i i n
+ANTAUTA PSSPCP2,antau.ttu,antauØ.ttu,a n t a u {ØsØØØØ} {Øt} t {uy}
+KAATA SG1,kaada.n,kaada.n,k a a {dsnttt} {aØØaØØ} n
+KAATA PAST SG3,kaas.i.,kaasØ.i.Ø,k a a {dsnttt} {aØØaØØ} {i} {VØ}
+KAATA POTN SG3,kaan.ne.e,kaanØ.ne.e,k a a {dsnttt} {aØØaØØ} {nlrs} e {VØ}
+KAATA COND SG3,kaata.isi.,kaata.isi.Ø,k a a {dsnttt} {aØØaØØ} i s i {VØ}
+KAATA IMPV,kaada.,kaada.Ø,k a a {dsnttt} {aØØaØØ} {C}
+KAATA IMPVSG3,kaat.koon,kaatØ.koon,k a a {dsnttt} {aØØaØØ} k {oö} {oö} n
+KAATA PCP2,kaan.nut,kaanØ.nut,k a a {dsnttt} {aØØaØØ} {nlrs} {uy} t
+KAATA PSSPRES,kaat.ØØaan,kaatØ.ØØaan,k a a {dsnttt} {aØØaØØ} {tdlrnØ} {C} {aä} {aä} n
+KAATA PSSPAST,kaat.tiin,kaatØ.Øtiin,k a a {dsnttt} {aØØaØØ} {Øt} t i i n
+KAATA PSSPCP2,kaat.tu,kaatØ.Øtu,k a a {dsnttt} {aØØaØØ} {Øt} t {uy}

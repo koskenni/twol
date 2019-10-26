@@ -1,0 +1,628 @@
+MORPHEMES,MORPHS
+PUNOA SG1,puno.n
+PUNOA PAST SG3,puno.i.
+PUNOA POTN SG3,puno.ne.e
+PUNOA COND SG3,puno.isi.
+PUNOA IMPV,puno.
+PUNOA IMPVSG3,puno.koon
+PUNOA PCP2,puno.nut
+PUNOA PSSPRES,puno.tØaan
+PUNOA PSSPAST,puno.ttiin
+PUNOA PSSPCP2,puno.ttu
+kutoa SG1,kudo.n
+kutoa PAST SG3,kuto.i.
+kutoa POTN SG3,kuto.ne.e
+kutoa COND SG3,kuto.isi.
+kutoa IMPV,kudo.
+kutoa IMPVSG3,kuto.koon
+kutoa PCP2,kuto.nut
+kutoa PSSPRES,kudo.tØaan
+kutoa PSSPAST,kudo.ttiin
+kutoa PSSPCP2,kudo.ttu
+MUISTAA SG1,muista.n
+MUISTAA PAST SG3,muist.i.
+MUISTAA POTN SG3,muista.ne.e
+MUISTAA COND SG3,muista.isi.
+MUISTAA IMPV,muista.
+MUISTAA IMPVSG3,muista.koon
+MUISTAA PCP2,muista.nut
+MUISTAA PSSPRES,muiste.tØaan
+MUISTAA PSSPAST,muiste.ttiin
+MUISTAA PSSPCP2,muiste.ttu
+hätkähtää SG1,hätkähdä.n
+hätkähtää PAST SG3,hätkäht.i.
+hätkähtää POTN SG3,hätkähtä.ne.e
+hätkähtää COND SG3,hätkähtä.isi.
+hätkähtää IMPV,hätkähdä.
+hätkähtää IMPVSG3,hätkähtä.köön
+hätkähtää PCP2,hätkähtä.nyt
+hätkähtää PSSPRES,hätkähde.tØään
+hätkähtää PSSPAST,hätkähde.ttiin
+hätkähtää PSSPCP2,hätkähde.tty
+HUUTAA SG1,huuda.n
+HUUTAA PAST SG3,huus.i.
+HUUTAA PAST SG3,huut.i.
+HUUTAA POTN SG3,huuta.ne.e
+HUUTAA COND SG3,huuta.isi.
+HUUTAA IMPV,huuda.
+HUUTAA IMPVSG3,huuta.koon
+HUUTAA PCP2,huuta.nut
+HUUTAA PSSPRES,huude.tØaan
+HUUTAA PSSPAST,huude.ttiin
+HUUTAA PSSPCP2,huude.ttu
+SOUTAA SG1,souda.n
+SOUTAA PAST SG3,sous.i.
+SOUTAA PAST SG3,sout.i.
+SOUTAA POTN SG3,souta.ne.e
+SOUTAA COND SG3,souta.isi.
+SOUTAA IMPV,souda.
+SOUTAA IMPVSG3,souta.koon
+SOUTAA PCP2,souta.nut
+SOUTAA PSSPRES,soude.tØaan
+SOUTAA PSSPAST,soude.ttiin
+SOUTAA PSSPCP2,soude.ttu
+PUOLTAA SG1,puolla.n
+PUOLTAA PAST SG3,puols.i.
+PUOLTAA PAST SG3,puolt.i.
+PUOLTAA POTN SG3,puolta.ne.e
+PUOLTAA COND SG3,puolta.isi.
+PUOLTAA IMPV,puolla.
+PUOLTAA IMPVSG3,puolta.koon
+PUOLTAA PCP2,puolta.nut
+PUOLTAA PSSPRES,puolle.tØaan
+PUOLTAA PSSPAST,puolle.ttiin
+PUOLTAA PSSPCP2,puolle.ttu
+MURTAA SG1,murra.n
+MURTAA PAST SG3,murs.i.
+MURTAA PAST SG3,murt.i.
+MURTAA POTN SG3,murta.ne.e
+MURTAA COND SG3,murta.isi.
+MURTAA IMPV,murra.
+MURTAA IMPVSG3,murta.koon
+MURTAA PCP2,murta.nut
+MURTAA PSSPRES,murre.tØaan
+MURTAA PSSPAST,murre.ttiin
+MURTAA PSSPCP2,murre.ttu
+SORTAA SG1,sorra.n
+SORTAA PAST SG3,sors.i.
+SORTAA PAST SG3,sort.i.
+SORTAA POTN SG3,sorta.ne.e
+SORTAA COND SG3,sorta.isi.
+SORTAA IMPV,sorra.
+SORTAA IMPVSG3,sorta.koon
+SORTAA PCP2,sorta.nut
+SORTAA PSSPRES,sorre.tØaan
+SORTAA PSSPAST,sorre.ttiin
+SORTAA PSSPCP2,sorre.ttu
+PAHENTAA SG1,pahenna.n
+PAHENTAA PAST SG3,pahens.i.
+PAHENTAA PAST SG3,pahent.i.
+PAHENTAA POTN SG3,pahenta.ne.e
+PAHENTAA COND SG3,pahenta.isi.
+PAHENTAA IMPV,pahenna.
+PAHENTAA IMPVSG3,pahenta.koon
+PAHENTAA PCP2,pahenta.nut
+PAHENTAA PSSPRES,pahenne.tØaan
+PAHENTAA PSSPAST,pahenne.ttiin
+PAHENTAA PSSPCP2,pahenne.ttu
+KAIVAA SG1,kaiva.n
+KAIVAA PAST SG3,kaivo.i.
+KAIVAA POTN SG3,kaiva.ne.e
+KAIVAA COND SG3,kaiva.isi.
+KAIVAA IMPV,kaiva.
+KAIVAA IMPVSG3,kaiva.koon
+KAIVAA PCP2,kaiva.nut
+KAIVAA PSSPRES,kaive.tØaan
+KAIVAA PSSPAST,kaive.ttiin
+KAIVAA PSSPCP2,kaive.ttu
+tappaa SG1,tapa.n
+tappaa PAST SG3,tappo.i.
+tappaa POTN SG3,tappa.ne.e
+tappaa COND SG3,tappa.isi.
+tappaa IMPV,tapa.
+tappaa IMPVSG3,tappa.koon
+tappaa PCP2,tappa.nut
+tappaa PSSPRES,tape.tØaan
+tappaa PSSPAST,tape.ttiin
+tappaa PSSPCP2,tape.ttu
+HAASTAA SG1,haasta.n
+HAASTAA PAST SG3,haasto.i.
+HAASTAA PAST SG3,haast.i.
+HAASTAA POTN SG3,haasta.ne.e
+HAASTAA COND SG3,haasta.isi.
+HAASTAA IMPV,haasta.
+HAASTAA IMPVSG3,haasta.koon
+HAASTAA PCP2,haasta.nut
+HAASTAA PSSPRES,haaste.taan
+HAASTAA PSSPAST,haaste.ttiin
+HAASTAA PSSPCP2,haaste.ttu
+PAISTAA SG1,paista.n
+PAISTAA PAST SG3,paisto.i.
+PAISTAA PAST SG3,paist.i.
+PAISTAA POTN SG3,paista.ne.e
+PAISTAA COND SG3,paista.isi.
+PAISTAA IMPV,paista.
+PAISTAA IMPVSG3,paista.koon
+PAISTAA PCP2,paista.nut
+PAISTAA PSSPRES,paiste.tØaan
+PAISTAA PSSPAST,paiste.ttiin
+PAISTAA PSSPCP2,paiste.ttu
+SAARTAA SG1,saarra.n
+SAARTAA PAST SG3,saars.i.
+SAARTAA PAST SG3,saarto.i.
+SAARTAA PAST SG3,saart.i.
+SAARTAA POTN SG3,saarta.ne.e
+SAARTAA COND SG3,saarta.isi.
+SAARTAA IMPV,saarra.
+SAARTAA IMPVSG3,saarta.koon
+SAARTAA PCP2,saarta.nut
+SAARTAA PSSPRES,saarre.tØaan
+SAARTAA PSSPAST,saarre.ttiin
+SAARTAA PSSPCP2,saarre.ttu
+LASKEA SG1,laske.n
+LASKEA PAST SG3,lask.i.
+LASKEA POTN SG3,laske.ne.e
+LASKEA COND SG3,lask.isi.
+LASKEA IMPV,laske.
+LASKEA IMPVSG3,laske.koon
+LASKEA PCP2,laske.nut
+LASKEA PSSPRES,laske.tØaan
+LASKEA PSSPAST,laske.ttiin
+LASKEA PSSPCP2,laske.ttu
+kokea SG1,koe.n
+kokea PAST SG3,kok.i.
+kokea POTN SG3,koke.ne.e
+kokea COND SG3,kok.isi.
+kokea IMPV,koe.
+kokea IMPVSG3,koke.koon
+kokea PCP2,koke.nut
+kokea PSSPRES,koe.tØaan
+kokea PSSPAST,koe.ttiin
+kokea PSSPCP2,koe.ttu
+TUNTEA SG1,tunne.n
+TUNTEA PAST SG3,tuns.i.
+TUNTEA POTN SG3,tunte.ne.e
+TUNTEA COND SG3,tunt.isi.
+TUNTEA IMPV,tunne.
+TUNTEA IMPVSG3,tunte.koon
+TUNTEA PCP2,tunte.nut
+TUNTEA PSSPRES,tunne.tØaan
+TUNTEA PSSPAST,tunne.ttiin
+TUNTEA PSSPCP2,tunne.ttu
+POTEA SG1,pode.n
+POTEA PAST SG3,pot.i.
+POTEA PAST SG3,pos.i.
+POTEA POTN SG3,pote.ne.e
+POTEA COND SG3,pot.isi.
+POTEA IMPV,pode.
+POTEA IMPVSG3,pote.koon
+POTEA PCP2,pote.nut
+POTEA PSSPRES,pode.tØaan
+POTEA PSSPAST,pode.ttiin
+POTEA PSSPCP2,pode.ttu
+LÄHTEÄ SG1,lähde.n
+LÄHTEÄ PAST SG3,läht.i.
+LÄHTEÄ PAST SG3,läks.i.
+LÄHTEÄ POTN SG3,lähte.ne.e
+LÄHTEÄ COND SG3,läht.isi.
+LÄHTEÄ COND SG3,läks.isi.
+LÄHTEÄ IMPV,lähde.
+LÄHTEÄ IMPVSG3,lähte.köön
+LÄHTEÄ PCP2,lähte.nyt
+LÄHTEÄ PSSPRES,lähde.tØään
+LÄHTEÄ PSSPAST,lähde.ttiin
+LÄHTEÄ PSSPCP2,lähde.tty
+SALLIA SG1,salli.n
+SALLIA PAST SG3,sall.i.
+SALLIA POTN SG3,salli.ne.e
+SALLIA COND SG3,sall.isi.
+SALLIA IMPV,salli.
+SALLIA IMPVSG3,salli.koon
+SALLIA PCP2,salli.nut
+SALLIA PSSPRES,salli.tØaan
+SALLIA PSSPAST,salli.ttiin
+SALLIA PSSPCP2,salli.ttu
+onkia SG1,ongi.n
+onkia PAST SG3,onk.i.
+onkia POTN SG3,onki.ne.e
+onkia COND SG3,onk.isi.
+onkia IMPV,ongi.
+onkia IMPVSG3,onki.koon
+onkia PCP2,onki.nut
+onkia PSSPRES,ongi.tØaan
+onkia PSSPAST,ongi.ttiin
+onkia PSSPCP2,ongi.ttu
+NAIDA SG1,nai.n
+NAIDA PAST SG3,na.i.
+NAIDA POTN SG3,nai.ne.e
+NAIDA COND SG3,na.isi.
+NAIDA IMPV,nai.
+NAIDA IMPVSG3,nai.koon
+NAIDA PCP2,nai.nut
+NAIDA PSSPRES,nai.dØaan
+NAIDA PSSPAST,nai.Øtiin
+NAIDA PSSPCP2,nai.tu
+SAADA SG1,saa.n
+SAADA PAST SG3,sa.i.
+SAADA POTN SG3,saa.ne.e
+SAADA COND SG3,sa.isi.
+SAADA IMPV,saa.
+SAADA IMPVSG3,saa.koon
+SAADA PCP2,saa.nut
+SAADA PSSPRES,saa.dØaan
+SAADA PSSPAST,saa.Øtiin
+SAADA PSSPCP2,saa.tu
+MYYDÄ SG1,myy.n
+MYYDÄ PAST SG3,my.i.
+MYYDÄ POTN SG3,myy.ne.e
+MYYDÄ COND SG3,my.isi.
+MYYDÄ IMPV,myy.
+MYYDÄ IMPVSG3,myy.köön
+MYYDÄ PCP2,myy.nyt
+MYYDÄ PSSPRES,myy.dØään
+MYYDÄ PSSPAST,myy.Øtiin
+MYYDÄ PSSPCP2,myy.ty
+JUODA SG1,juo.n
+JUODA PAST SG3,jo.i.
+JUODA POTN SG3,juo.ne.e
+JUODA COND SG3,jo.isi.
+JUODA IMPV,juo.
+JUODA IMPVSG3,juo.koon
+JUODA PCP2,juo.nut
+JUODA PSSPRES,juo.dØaan
+JUODA PSSPAST,juo.tiin
+JUODA PSSPCP2,juo.tu
+VIEDÄ SG1,vie.n
+VIEDÄ PAST SG3,ve.i.
+VIEDÄ POTN SG3,vie.ne.e
+VIEDÄ COND SG3,ve.isi.
+VIEDÄ IMPV,vie.
+VIEDÄ IMPVSG3,vie.köön
+VIEDÄ PCP2,vie.nyt
+VIEDÄ PSSPRES,vie.dØään
+VIEDÄ PSSPAST,vie.tiin
+VIEDÄ PSSPCP2,vie.ty
+KÄYDÄ SG1,käØy.n
+KÄYDÄ PAST SG3,kävØ.i.
+KÄYDÄ POTN SG3,käy.ne.e
+KÄYDÄ COND SG3,käv.isi.
+KÄYDÄ IMPV,käy.
+KÄYDÄ IMPVSG3,käy.köön
+KÄYDÄ PCP2,käy.nyt
+KÄYDÄ PSSPRES,käy.dØään
+KÄYDÄ PSSPAST,käy.tiin
+KÄYDÄ PSSPCP2,käy.ty
+NUOLAISTA SG1,nuolaise.n
+NUOLAISTA PAST SG3,nuolais.i.
+NUOLAISTA POTN SG3,nuolais.se.e
+NUOLAISTA COND SG3,nuolais.isi.
+NUOLAISTA IMPV,nuolaise.
+NUOLAISTA IMPVSG3,nuolais.koon
+NUOLAISTA PCP2,nuolais.sut
+NUOLAISTA PSSPRES,nuolais.tØaan
+NUOLAISTA PSSPAST,nuolais.tiin
+NUOLAISTA PSSPCP2,nuolais.tu
+TULLA SG1,tule.n
+TULLA PAST SG3,tul.i.
+TULLA POTN SG3,tul.le.e
+TULLA COND SG3,tul.isi.
+TULLA IMPV,tule.
+TULLA IMPVSG3,tul.koon
+TULLA PCP2,tul.lut
+TULLA PSSPRES,tul.lØaan
+TULLA PSSPAST,tul.tiin
+TULLA PSSPCP2,tul.tu
+PURRA SG1,pure.n
+PURRA PAST SG3,pur.i.
+PURRA POTN SG3,pur.re.e
+PURRA COND SG3,pur.isi.
+PURRA IMPV,pure.
+PURRA IMPVSG3,pur.koon
+PURRA PCP2,pur.rut
+PURRA PSSPRES,pur.rØaan
+PURRA PSSPAST,pur.tiin
+PURRA PSSPCP2,pur.tu
+MENNÄ SG1,mene.n
+MENNÄ PAST SG3,men.i.
+MENNÄ POTN SG3,men.ne.e
+MENNÄ COND SG3,men.isi.
+MENNÄ IMPV,mene.
+MENNÄ IMPVSG3,men.köön
+MENNÄ PCP2,men.nyt
+MENNÄ PSSPRES,men.nØään
+MENNÄ PSSPAST,men.tiin
+MENNÄ PSSPCP2,men.ty
+KATSELLA SG1,katsele.n
+KATSELLA PAST SG3,katsel.i.
+KATSELLA POTN SG3,katsel.le.e
+KATSELLA COND SG3,katsel.isi.
+KATSELLA COND SG3,katsele.isi.
+KATSELLA IMPV,katsele.
+KATSELLA IMPVSG3,katsel.koon
+KATSELLA PCP2,katsel.lut
+KATSELLA PSSPRES,katsel.lØaan
+KATSELLA PSSPAST,katsel.tiin
+KATSELLA PSSPCP2,katsel.tu
+madella SG1,matele.n
+madella PAST SG3,matel.i.
+madella POTN SG3,madel.le.e
+madella COND SG3,matel.isi.
+madella IMPV,matele.
+madella IMPVSG3,madel.koon
+madella PCP2,madel.lut
+madella PSSPRES,madel.lØaan
+madella PSSPAST,madel.tiin
+madella PSSPCP2,madel.tu
+ARVAILLA SG1,arvaile.n
+ARVAILLA PAST SG3,arvail.i.
+ARVAILLA POTN SG3,arvail.le.e
+ARVAILLA COND SG3,arvail.isi.
+ARVAILLA COND SG3,arvaele.isi.
+ARVAILLA IMPV,arvaile.
+ARVAILLA IMPVSG3,arvail.koon
+ARVAILLA PCP2,arvail.lut
+ARVAILLA PSSPRES,arvail.lØaan
+ARVAILLA PSSPAST,arvail.tiin
+ARVAILLA PSSPCP2,arvail.tu
+HARAVOIDA SG1,haravoi.n
+HARAVOIDA PAST SG3,haravo.i.
+HARAVOIDA POTN SG3,haravoi.ne.e
+HARAVOIDA COND SG3,haravo.isi.
+HARAVOIDA IMPV,haravoi.
+HARAVOIDA IMPVSG3,haravoi.koon
+HARAVOIDA PCP2,haravoi.nut
+HARAVOIDA PSSPRES,haravoi.dØaan
+HARAVOIDA PSSPAST,haravoi.tiin
+HARAVOIDA PSSPCP2,haravoi.Øtu
+HARAVOITA SG1,haravoitse.n
+HARAVOITA PAST SG3,haravoits.i.
+HARAVOITA POTN SG3,haravoin.ne.e
+HARAVOITA COND SG3,haravoits.isi.
+HARAVOITA IMPV,haravoitse.
+HARAVOITA IMPVSG3,haravoit.koon
+HARAVOITA PCP2,haravoin.nut
+HARAVOITA PSSPRES,haravoit.ØØaan
+HARAVOITA PSSPAST,haravoit.tiin
+HARAVOITA PSSPCP2,haravoit.Øtu
+VALITA SG1,valitse.n
+VALITA PAST SG3,valits.i.
+VALITA POTN SG3,valin.ne.e
+VALITA COND SG3,valits.isi.
+VALITA COND SG3,valitse.isi.
+VALITA IMPV,valitse.
+VALITA IMPVSG3,valit.koon
+VALITA PCP2,valin.nut
+VALITA PSSPRES,valit.ØØaan
+VALITA PSSPAST,valit.tiin
+VALITA PSSPCP2,valit.Øtu
+JUOSTA SG1,juokse.n
+JUOSTA PAST SG3,juoks.i.
+JUOSTA POTN SG3,juos.se.e
+JUOSTA COND SG3,juoks.isi.
+JUOSTA IMPV,juokse.
+JUOSTA IMPVSG3,juos.koon
+JUOSTA PCP2,juos.sut
+JUOSTA PCP2,juos.nut
+JUOSTA PSSPRES,juos.tØaan
+JUOSTA PSSPAST,juos.tiin
+JUOSTA PSSPCP2,juos.Øtu
+NÄHDÄ SG1,näØe.n
+NÄHDÄ PAST SG3,näk.i.
+NÄHDÄ POTN SG3,näh.ne.e
+NÄHDÄ COND SG3,näk.isi.
+NÄHDÄ IMPV,näe.
+NÄHDÄ IMPVSG3,näh.köön
+NÄHDÄ PCP2,näh.nyt
+NÄHDÄ PSSPRES,näh.dØään
+NÄHDÄ PSSPAST,näh.tiin
+NÄHDÄ PSSPCP2,näh.Øty
+ALETA SG1,alene.n
+ALETA PAST SG3,alen.i.
+ALETA POTN SG3,alen.ne.e
+ALETA COND SG3,alen.isi.
+ALETA COND SG3,alene.isi.
+ALETA IMPV,alene.
+ALETA IMPVSG3,alet.koon
+ALETA PCP2,alen.nut
+ALETA PSSPRES,alet.ØØaan
+ALETA PSSPAST,alet.tiin
+ALETA PSSPCP2,alet.tu
+valjeta SG1,valkene.n
+valjeta PAST SG3,valken.i.
+valjeta POTN SG3,valjen.ne.e
+valjeta COND SG3,valken.isi.
+valjeta IMPV,valkene.
+valjeta IMPVSG3,valjet.koon
+valjeta PCP2,valjen.nut
+valjeta PSSPRES,valjet.ØØaan
+valjeta PSSPAST,valjet.tiin
+valjeta PSSPCP2,valjet.tu
+SALATA SG1,salaØa.n
+SALATA PAST SG3,salas.i.
+SALATA POTN SG3,salan.ne.e
+SALATA COND SG3,sala.isi.
+SALATA IMPV,salaa.
+SALATA IMPVSG3,salat.koon
+SALATA PCP2,salan.nut
+SALATA PSSPRES,salat.ØØaan
+SALATA PSSPAST,salat.tiin
+SALATA PSSPCP2,salat.tu
+aidata SG1,aitaØa.n
+aidata PAST SG3,aitas.i.
+aidata POTN SG3,aidan.ne.e
+aidata COND SG3,aita.isi.
+aidata IMPV,aitaa.
+aidata IMPVSG3,aidat.koon
+aidata PCP2,aidan.nut
+aidata PSSPRES,aidat.ØØaan
+aidata PSSPAST,aidat.tiin
+aidata PSSPCP2,aidat.tu
+KATKETA SG1,katkeØa.n
+KATKETA PAST SG3,katkes.i.
+KATKETA POTN SG3,katken.ne.e
+KATKETA COND SG3,katkea.isi.
+KATKETA IMPV,katkea.
+KATKETA IMPVSG3,katket.koon
+KATKETA PCP2,katken.nut
+KATKETA PSSPRES,katket.ØØaan
+KATKETA PSSPAST,katket.tiin
+KATKETA PSSPCP2,katket.tu
+herjetä SG1,herkeØä.n
+herjetä PAST SG3,herkes.i.
+herjetä POTN SG3,herjen.ne.e
+herjetä COND SG3,herkeä.isi.
+herjetä IMPV,herkeä.
+herjetä IMPVSG3,herjet.köön
+herjetä PCP2,herjen.nyt
+herjetä PSSPRES,herjet.ØØään
+herjetä PSSPAST,herjet.tiin
+herjetä PSSPCP2,herjet.ty
+SELVITÄ SG1,selviØä.n
+SELVITÄ PAST SG3,selvis.i.
+SELVITÄ POTN SG3,selvin.ne.e
+SELVITÄ COND SG3,selviä.isi.
+SELVITÄ IMPV,selviä.
+SELVITÄ IMPVSG3,selvit.köön
+SELVITÄ PCP2,selvin.nyt
+SELVITÄ PSSPRES,selvit.ØØään
+SELVITÄ PSSPAST,selvit.tiin
+SELVITÄ PSSPCP2,selvit.ty
+lämmitä SG1,lämpiØä.n
+lämmitä PAST SG3,lämpis.i.
+lämmitä POTN SG3,lämmin.ne.e
+lämmitä COND SG3,lämpiä.isi.
+lämmitä IMPV,lämpiä.
+lämmitä IMPVSG3,lämmit.köön
+lämmitä PCP2,lämmin.nyt
+lämmitä PSSPRES,lämmit.ØØään
+lämmitä PSSPAST,lämmit.tiin
+lämmitä PSSPCP2,lämmit.ty
+KOHOTA SG1,kohoØa.n
+KOHOTA PAST SG3,kohos.i.
+KOHOTA POTN SG3,kohon.ne.e
+KOHOTA COND SG3,kohoa.isi.
+KOHOTA IMPV,kohoa.
+KOHOTA IMPVSG3,kohot.koon
+KOHOTA PCP2,kohon.nut
+KOHOTA PSSPRES,kohot.ØØaan
+KOHOTA PSSPAST,kohot.tiin
+KOHOTA PSSPCP2,kohot.tu
+kimmota SG1,kimpoØa.n
+kimmota PAST SG3,kimpos.i.
+kimmota POTN SG3,kimmon.ne.e
+kimmota COND SG3,kimpoa.isi.
+kimmota IMPV,kimpoa.
+kimmota IMPVSG3,kimmot.koon
+kimmota PCP2,kimmon.nut
+kimmota PSSPRES,kimmot.ØØaan
+kimmota PSSPAST,kimmot.tiin
+kimmota PSSPCP2,kimmot.tu
+HALUTA SG1,haluØa.n
+HALUTA PAST SG3,halus.i.
+HALUTA POTN SG3,halun.ne.e
+HALUTA COND SG3,halua.isi.
+HALUTA IMPV,halua.
+HALUTA IMPVSG3,halut.koon
+HALUTA PCP2,halun.nut
+HALUTA PSSPRES,halut.ØØaan
+HALUTA PSSPAST,halut.tiin
+HALUTA PSSPCP2,halut.tu
+vivuta SG1,vipuØa.n
+vivuta PAST SG3,vipus.i.
+vivuta POTN SG3,vivun.ne.e
+vivuta COND SG3,vipua.isi.
+vivuta IMPV,vipua.
+vivuta IMPVSG3,vivut.koon
+vivuta PCP2,vivun.nut
+vivuta PSSPRES,vivut.ØØaan
+vivuta PSSPAST,vivut.tiin
+vivuta PSSPCP2,vivut.tu
+PALATA SG1,palaØa.n
+PALATA PAST SG3,palas.i.
+PALATA POTN SG3,palan.ne.e
+PALATA COND SG3,pala.isi.
+PALATA IMPV,palaa.
+PALATA IMPVSG3,palat.koon
+PALATA PCP2,palan.nut
+PALATA PSSPRES,palat.ØØaan
+PALATA PSSPAST,palat.tiin
+PALATA PSSPCP2,palat.tu
+hylätä SG1,hylkäØä.n
+hylätä PAST SG3,hylkäs.i.
+hylätä POTN SG3,hylän.ne.e
+hylätä COND SG3,hylkä.isi.
+hylätä IMPV,hylkää.
+hylätä IMPVSG3,hylät.köön
+hylätä PCP2,hylän.nyt
+hylätä PSSPRES,hylät.ØØään
+hylätä PSSPAST,hylät.tiin
+hylätä PSSPCP2,hylät.ty
+KIHISTÄ SG1,kihise.n
+KIHISTÄ PAST SG3,kihis.i.
+KIHISTÄ POTN SG3,kihis.se.e
+KIHISTÄ COND SG3,kihis.isi.
+KIHISTÄ IMPV,kihise.
+KIHISTÄ IMPVSG3,kihis.köön
+KIHISTÄ PCP2,kihis.syt
+KIHISTÄ PSSPRES,kihis.tØään
+KIHISTÄ PSSPAST,kihis.tiin
+KIHISTÄ PSSPCP2,kihis.ty
+KIHAJAA SG1,kihaja.n
+KIHAJAA PAST SG3,kihaj.i.
+KIHAJAA POTN SG3,kihaja.ne.e
+KIHAJAA COND SG3,kihaja.isi.
+KIHAJAA IMPV,kihaja.
+KIHAJAA IMPVSG3,kihaja.koon
+KIHAJAA PCP2,kihaja.nut
+KIHAJAA PSSPRES,kihaje.tØaan
+KIHAJAA PSSPAST,kihaje.ttiin
+KIHAJAA PSSPCP2,kihaje.ttu
+RAKENTAA SG1,rakenna.n
+RAKENTAA PAST SG3,rakens.i.
+RAKENTAA POTN SG3,rakenta.ne.e
+RAKENTAA COND SG3,rakenta.isi.
+RAKENTAA IMPV,rakenna.
+RAKENTAA IMPVSG3,rakenta.koon
+RAKENTAA PCP2,rakenta.nut
+RAKENTAA PSSPRES,rakenne.tØaan
+RAKENTAA PSSPAST,rakenne.ttiin
+RAKENTAA PSSPCP2,rakenne.ttu
+TAITAA SG1,taida.n
+TAITAA PAST SG3,tais.i.
+TAITAA POTN SG3,taita.ne.e
+TAITAA COND SG3,taita.isi.
+TAITAA IMPV,taida.
+TAITAA IMPVSG3,taita.koon
+TAITAA PCP2,taita.nut
+TAITAA PSSPRES,taide.tØaan
+TAITAA PSSPAST,taide.ttiin
+TAITAA PSSPCP2,taide.ttu
+ANTAUTUA SG1,antaudu.n
+ANTAUTUA PAST SG3,antautu.i.
+ANTAUTUA POTN SG3,antautu.ne.e
+ANTAUTUA COND SG3,antautu.isi.
+ANTAUTUA IMPV,antaudu.
+ANTAUTUA IMPVSG3,antautu.koon
+ANTAUTUA PCP2,antautu.nut
+ANTAUTUA PSSPRES,antaudu.tØaan
+ANTAUTUA PSSPAST,antaudu.ttiin
+ANTAUTUA PSSPCP2,antaudu.ttu
+ANTAUTA SG1,antau.n
+ANTAUTA PAST SG3,antaus.i.
+ANTAUTA POTN SG3,antau.ne.e
+ANTAUTA COND SG3,antau.isi.
+ANTAUTA IMPVSG3,antau.koon
+ANTAUTA PCP2,antau.nut
+ANTAUTA PSSPRES,antau.tØaan
+ANTAUTA PSSPAST,antau.ttiin
+ANTAUTA PSSPCP2,antau.ttu
+KAATA SG1,kaada.n
+KAATA PAST SG3,kaas.i.
+KAATA POTN SG3,kaan.ne.e
+KAATA COND SG3,kaata.isi.
+KAATA IMPV,kaada.
+KAATA IMPVSG3,kaat.koon
+KAATA PCP2,kaan.nut
+KAATA PSSPRES,kaat.ØØaan
+KAATA PSSPAST,kaat.tiin
+KAATA PSSPCP2,kaat.tu
