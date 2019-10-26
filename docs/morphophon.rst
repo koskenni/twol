@@ -35,7 +35,7 @@ The input for the first step is a CSV table which one can produce using a spread
    LASI,lasi,lasi.ssa,lasi.na,lase.i.ssa
    LAKI,laki,lai.ssa,laki.na,lae.i.ssa
 
-parad2words.py
+table2words.py
 ==============
 
 This script reads in a paradigm table of word forms and writes the data in a format where each word form is on line of its own.  Both the input table and the output file are in the CSV format.  Output contains two fields, e.g.::
