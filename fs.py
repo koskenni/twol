@@ -112,3 +112,5 @@ def string_to_fsa(grapheme_string):
     fsa = hfst.HfstTransducer(bfsa)
     return(fsa)
     
+if __name__ == "__main__":
+    print("fs module is not meant to be used as a script")

@@ -194,3 +194,6 @@ def expanded_examples(TR, insyms, symbol_pair_set):
     #T.minus(TR)
     #T.minimize()
     return(T)
+
+if __name__ == "__main__":
+    print("twbt module is not meant to be used as a script")
