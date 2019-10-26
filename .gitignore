@@ -1,3 +1,12 @@
+# Private files
+*-priv.*
+priv-*
+
+# HFST binary files
+*.fst
+*.ofst
+*.att
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
