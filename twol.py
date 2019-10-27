@@ -72,11 +72,17 @@ if cfg.verbosity >= 30:
 
 twrule.init()
 
+i = 0
 skip = False
 all_rules_fst_lst = []
 rule_file = open(args.rules, 'r')
 line_lst = []
+
 for line_nl in rule_file:
+    i += 1
+    if not line_lst:
+        line_nl_lst = []
+    line_nl_lst.append(line_nl)
     line = line_nl.split('!', maxsplit=1)[0].strip()
     if line == "START":
         skip = False
@@ -91,32 +97,32 @@ for line_nl in rule_file:
     else:
         rule_str = " ".join(line_lst)
         line_lst = []
-    op, left, right, title = twparser.parse_rule(parser, rule_str)
-    if not (left and right):
-        print("ERROR:", line)
+
+    op, left, right = twparser.parse_rule(parser, rule_str, i, line_nl_lst)
+    if op == "?" or not (left and right):
         continue
+
+    if args.thorough > 0:
+        print("\n")
+        print(rule_str)
+
     if op == "=":
-        print(title)
+        #        if cfg.verbosity > 0:
+        #            print(line)
         if cfg.verbosity >= 10:
             print(left, op)
             twbt.ppfst(right)
         continue
-    if args.thorough > 0:
-        print("\n\n")
-    x_expr = left
-    ctx_expr_list = right
-    if args.thorough > 0:
-        print(title)
-    if op == "=>":
-        R, selector_fst, MIXe = twrule.rightarrow(title, x_expr, *ctx_expr_list)
+    elif op == "=>":
+        R, selector_fst, MIXe = twrule.rightarrow(line, left, *right)
     elif op == "<=":
-        R, selector_fst, MIXe = twrule.output_coercion(title, x_expr, *ctx_expr_list)
+        R, selector_fst, MIXe = twrule.output_coercion(line, left, *right)
     elif op == "<--":
-        R, selector_fst, MIXe = twrule.input_coercion(title, x_expr, *ctx_expr_list)
+        R, selector_fst, MIXe = twrule.input_coercion(line, left, *right)
     elif op == "<=>":
-        R, selector_fst, MIXe = twrule.doublearrow(title, x_expr, *ctx_expr_list)
+        R, selector_fst, MIXe = twrule.doublearrow(line, left, *right)
     elif op == "/<=":
-        R, selector_fst, MIXe = twrule.center_exclusion(title, x_expr, *ctx_expr_list)
+        R, selector_fst, MIXe = twrule.center_exclusion(line, left, *right)
     else:
         print("Error: not a valid type of a rule", op)
         continue

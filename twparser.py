@@ -382,7 +382,7 @@ def init(grammar_file='../twolcsyntax.ebnf'):
     parser = tatsu.compile(grammar)
     return parser
 
-def parse_rule(parser, line_nl, start="expr_start"):
+def parse_rule(parser, line_nl, line_no, line_lst, start="expr_start"):
     """Parse one rule or definiton or any constituent given as start
 
     parser -- a tatsu parser which parses the EBNF grammar for two-level rules
@@ -393,7 +393,7 @@ def parse_rule(parser, line_nl, start="expr_start"):
 """
     line = line_nl.strip()
     if (not line) or line[0] == '!':
-        return "!", None, None, line  # it was a comment or an empty line
+        return "!", None, None  # it was a comment or an empty line
     rulepat = r"^.* +(=|<=|=>|<=>|/<=|<--) +.*$"
     try:
         m = re.match(rulepat, line)
@@ -401,27 +401,34 @@ def parse_rule(parser, line_nl, start="expr_start"):
             #print("groups:", m.groups())###
             if m.group(1) == '=':
                 op, name, expr_fst = parser.parse(line, start='def_start',
-                                                      semantics=TwolFstSemantics())
-                return op, name, expr_fst, line
+                                                  semantics=TwolFstSemantics())
+                return op, name, expr_fst
             elif m.group(1) in {'=>', '<=', '<=>', '/<=', '<--'}:
                 op, x_fst, contexts = parser.parse(line, start='rul_start',
-                                                       semantics=TwolFstSemantics())
-                return op, x_fst, contexts, line
+                                                   semantics=TwolFstSemantics())
+                return op, x_fst, contexts
         else:
-             return "?", None, None, line
+             return "?", None, None
     except ParseException as e:
+        print("\n" + 40 * "*")
+        print("ERROR WAS IN INPUT LINES:",
+              line_no, "-", line_no + len(line_lst) - 1)
+        print("".join(line_lst))
+        print("THE ERROR IS LIKELY ABOVE THE '^' OR BEFORE IT")
         msg = str(e)
         lst = msg.split("\n")
         if len(lst) >= 3:
             print(lst[1])
-            print(lst[2], "<---", e.__class__.__name__, "ERROR HERE")
+            print(lst[2], "<---", e.__class__.__name__, "HERE")
             if cfg.error_message:
+                print("EXPLANATION:")
                 print("    ", cfg.error_message)
                 cfg.error_message = ""
-                return "?", None, None, line
         else:
+            print(e) ###
             print(str(e))
-            return "?", None, None, line
+        print(40 * "*" + "\n")
+        return "?", None, None
 
 if __name__ == '__main__':
     import hfst, argparse, twbt, cfg, twexamp
