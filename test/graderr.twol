@@ -1,0 +1,33 @@
+! Copyright Kimmo Koskenniemi, 2012, 2016, 2018
+!
+! This version has intentional ERRORS for testing the error recovery
+!
+Vow = :a|:e|:i|:o|:u ;
+Cons = :d|:g|:j|:k|:l|:m|:n|:p|:r|:s|:t|:v ;
+Vo = Vow.s ;
+Vi = Vow.m ;
+Co = Cons.s ;
+Ci = Cons.m ;
+Closed = (i) Ci [Ci | .#.] ;
+
+! (ERROR: "{ťn}:n" instead of "{tn}:n")
+{kg}:g | {kj}:j | {kv}:v | {pm}:m | {pv}:v | {pØ}:Ø |
+    {td}:d | {tl}:l | {ťn}:n | {tr}:r | {tØ}:Ø
+        <=>  _  Vi Closed ;
+
+! (ERROR: "Closd" instead of "Closed")
+{kØ}:Ø <=>   _  Vi Closd ;
+
+! (ERROR: fourth context does not end in a comma)
+{kØ'}:' <=>
+    Vi :a _ :a Closed ,
+    Vi :e _ :e Closed ,
+    Vi :i _ :i Closed ,
+    Vi :o _ :o Closed 
+    Vi :u _ :u Closed ,
+    Vi :y _ :y Closed ,
+    Vi :ä _ :ä Closed ;
+
+! vaa<>oissa
+{kØ'}:k /<= _ Vi Closed ;
+

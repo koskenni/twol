@@ -1,0 +1,21 @@
+C = [PI .o. [b|d|h|k|l|m|n|p|r|s|t|v]] | j ;
+CC = [[C].u .o. PI] ;
+V = PI .o. [a | e | i | o | u | y | ä | ö] ;
+VØ = [[V].u .o. PI] - V ;
+CLOSED = ({ij}:i) CC (VØ) [CC | END] ;
+{iieØ}:e <=> _ [{ij}: \e | {i}: {nØ}:] ;
+{ao}:o | {aØ}:Ø | {eØ}:Ø <=> _ {ij}: ;
+{iØ}:Ø <=> _ (e) {ij}: ;
+{uØ}:Ø <=> _ (o) {ij}: ;
+{yØ}:Ø <=> _ (ö) {ij}: ;
+{ij}:j <=> V _ :Ø* V ;
+{iieØ}:Ø <=> _ {ij}: e {nØ}: ;
+! {iieØ}:i elsewhere
+{ieØØ}:i <=> _ END ;
+{ieØØ}:Ø <=> _ [{ij}: | {Øt}:t | {t}:t] ;
+!{ieØØ}:e => _ \[{ij}:] ;
+{hØ}:h =>   [V | VØ ({nØ}:Ø)] {ij}: _ ;
+{hØ}:Ø => C      VØ ({nØ}:Ø)  {ij}: _ ;
+{nm}:n | {Øp}:Ø <=> _ :Ø* [:t | END] ;
+{pm}:m <=> _ V CLOSED ;
+{kØ´}:´ => :a :a _ :a CLOSED ,  V :u _ u CLOSED ;
