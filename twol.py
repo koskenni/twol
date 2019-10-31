@@ -1,4 +1,9 @@
-#!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
+# twol.py
+# =======
+# A compiler and tester for simplified two-level rules.
+# Copyright (c) Kimmo Koskenniemi, 2019
+# This orogram is free software according to GPL 3 license
+#
 import sys, re
 import hfst, cfg
 import twbt, twexamp, twrule
@@ -102,7 +107,7 @@ for line_nl in rule_file:
     if op == "?" or not (left and right):
         continue
 
-    if args.thorough > 0:
+    if (args.thorough > 0 and op != "=") or cfg.verbosity > 0:
         print("\n")
         print(rule_str)
 
