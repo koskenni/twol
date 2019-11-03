@@ -162,7 +162,7 @@ def context_to_output_str(pairsym_str):
     outsym_lst = [outsym for insym, outsym in sympair_lst]
     return "".join(outsym_lst)
 
-if __name__ == "__main__":
+def discover():
     import argparse
     arpar = argparse.ArgumentParser("python3 twdiscov.py")
     arpar.add_argument("examples", help="example pair strings file",
@@ -215,3 +215,6 @@ if __name__ == "__main__":
                 l_str = context_to_output_str(lc)
                 r_str = context_to_output_str(rc)
                 print("{:>30}<{}>{}".format(l_str, outsym, r_str))
+
+if __name__ == "__main__":
+    discover()
