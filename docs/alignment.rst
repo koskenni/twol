@@ -26,23 +26,42 @@ The algorithm is described in some detail in [koskenniemi2017]_.  The present ve
 A simpler and more versatile version of for aligning just two words or morphs is described in [koskenniemi2013b]_.
 
 
+Installing
+==========
+
+One may install the programs for alignment as a Python package called ``twolalign`` by using ``pip3 install --upgrade twolalign`` or equivalently with the Python itself::
+
+  $ python3 -m pip install --user --no-cache-dir --upgrade twolalign
+
+Installing the package this way makes a few command line scripts that can executed as if they were executable programs, in particular: ``twol-multialign`` and ``twol-aligner``.  The available parameters for these, and other scripts in the package, can be seen by giving the ``--help`` option to the script.
+
+Otherwise, you may also just clone the github project ``https://github.com/koskenni/alignment`` to your personal Linux or Mac.
+
+
 Standalone use
 ==============
 
 The help message::
 
-  $ python3 multialign.py -h
-  usage: python3 multialign.py [-h] [-l {vertical,list,horizontal}]
-			       [-v VERBOSITY] [-z ZEROS]
+   $ twol-multialign --help
+   usage: twol-multialign [-h] [-l {vertical,list,horizontal}] [-f] [-w]
+                          [-c] [-v VERBOSITY] [-z ZEROS] alphabet
 
-  optional arguments:
-    -h, --help            show this help message and exit
-    -l {vertical,list,horizontal}, --layout {vertical,list,horizontal}
-			  output layout
-    -v VERBOSITY, --verbosity VERBOSITY
-			  level of diagnostic output
-    -z ZEROS, --zeros ZEROS
-			  number of extra zeros beyond the minimum
+   positional arguments:
+     alphabet              A file which defines the phonemes through their
+                           distinctive features
+
+   optional arguments:
+     -h, --help            show this help message and exit
+     -l {vertical,list,horizontal}, --layout {vertical,list,horizontal}
+                           Output layout
+     -f, --final           Prefer deletion at the end
+     -w, --weights         Print the weight of the alignment
+     -c, --comments        Copy input words to the output lines as comments
+     -v VERBOSITY, --verbosity VERBOSITY
+                           Level of diagnostic output
+     -z ZEROS, --zeros ZEROS
+                           Number of extra zeros allowed beyond the minimum
 
 The module can be executed as a script.  The default is that the zero-filled aligned morphs are given in vertical layout::
 

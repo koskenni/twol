@@ -373,11 +373,14 @@ class TwolFstSemantics(object):
         result_fst.set_name(".#.")
         return result_fst
 
-def init(grammar_file='../twolcsyntax.ebnf'):
+def init():
     """Initializes the module and compiles and returns a tatsu parser
 
     grammar_file -- the name of the file containing the EBNF grammar for rules
 """
+    import os
+    dir = os.path.dirname(os.path.abspath(__file__))
+    grammar_file = dir + "/twolcsyntax.ebnf"
     grammar = open(grammar_file).read()
     parser = tatsu.compile(grammar)
     return parser
