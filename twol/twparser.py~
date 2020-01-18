@@ -11,8 +11,9 @@ from tatsu.walkers import NodeWalker
 
 from tatsu.exceptions import ParseException, FailedParse, ParseError, FailedSemantics
 
-import cfg, hfst
-import twexamp
+import hfst
+import twol.cfg as cfg
+import twol.twexamp as twexamp
 
 class TwolRegexSemantics(object):
 
@@ -433,9 +434,10 @@ def parse_rule(parser, line_nl, line_no, line_lst, start="expr_start"):
         print(40 * "*" + "\n")
         return "?", None, None
 
-if __name__ == '__main__':
+def main();
     import hfst, argparse, twbt, cfg, twexamp
-    arpar = argparse.ArgumentParser(description="A compiler and tester for two-level rules")
+    arpar = argparse.ArgumentParser(
+        description="A compiler and tester for two-level rules")
     arpar.add_argument("start",
                         help="start parsing from",
                         default="expr_start")
@@ -464,3 +466,7 @@ if __name__ == '__main__':
             twbt.ppfst(fst, True)
         elif op == "?":
             print("Incorrect: " + line)
+        return
+
+if __name__ == '__main__':
+    main()

@@ -9,8 +9,8 @@ space separated sequences of pair-symbols.
 
 import sys
 import re
-import cfg
-import twexamp
+import twol.cfg as cfg
+import twol.twexamp as twexamp
 
 pair_symbols_for_input = {}   # key: input symbol, value: set of pair symbols
 pair_symbols_for_output = {}

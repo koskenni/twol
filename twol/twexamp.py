@@ -13,8 +13,8 @@ hfst.rules.restriction
 """
 import re
 import hfst
-import cfg
-import twbt
+import twol.cfg as cfg
+import twol.twbt as twbt
 
 def pairs_to_fst(pair_set):
     """Converts a seq of symbol pairs into a fst that accepts any of them
@@ -109,8 +109,7 @@ def read_examples(filename="test.pstr", build_fsts=True):
         cfg.examples_fst.set_property("x-pair_symbols", pair_symbol_str)
     return
 
-
-if __name__ == "__main__":
+def main():
     import hfst
     import argparse
     arpar = argparse.ArgumentParser("python3 twexamp.py")
@@ -133,4 +132,7 @@ if __name__ == "__main__":
         exfile.flush()
         exfile.close()
         print("--- example fst written to ", args.output ," ---")
+    return
 
+if __name__ == "__main__":
+    main()

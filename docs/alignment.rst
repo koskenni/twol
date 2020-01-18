@@ -35,7 +35,9 @@ One may install the programs for alignment as a Python package called ``twolalig
 
 Installing the package this way makes a few command line scripts that can executed as if they were executable programs, in particular: ``twol-multialign`` and ``twol-aligner``.  The available parameters for these, and other scripts in the package, can be seen by giving the ``--help`` option to the script.
 
-Otherwise, you may also just clone the github project ``https://github.com/koskenni/alignment`` to your personal Linux or Mac.
+Otherwise, you may also just clone the github project ``https://github.com/koskenni/alignment`` to your personal Linux or Mac.  On a Linux machine, you can do that by::
+
+  git clone git@github.com:koskenni/alignment.git
 
 
 Standalone use

@@ -7,7 +7,9 @@ programs, e.g. `twol`, `multialign`, `paratab2segcsv`,
 
 __author__ = """© Kimmo Koskenniemi, 2018"""
 
-import hfst, re
+import re
+import hfst
+
 #hfst.set_default_fst_type(hfst.ImplementationType.FOMA_TYPE)
 
 verbosity = 0

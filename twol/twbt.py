@@ -1,5 +1,10 @@
-"""Module for detailed handling transducers
+"""Module for detailed handling basic transducers 
+
+Copyright 2015-2020, Kimmo Koskenniemi
+
+This program is free software under Gnu GPL 3 or later
 """
+
 import hfst
 
 def pairname(insym, outsym):

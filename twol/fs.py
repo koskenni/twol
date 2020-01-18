@@ -6,7 +6,7 @@ The HFST engine used for accomplishing the operations but all functions make cop
 
 import hfst
 import grapheme
-import cfg
+import twol.cfg as cfg
 
 def expr(e):
     """Return an FST corresponding to a XFST regular expression"""
