@@ -63,7 +63,7 @@ def main():
     args = arpar.parse_args()
 
     if args.version:
-        print("twol-comp version 0.1.0")
+        print("twol-comp version 0.1.1")
         return
 
     cfg.verbosity = args.verbosity

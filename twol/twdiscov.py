@@ -162,23 +162,32 @@ def context_to_output_str(pairsym_str):
     outsym_lst = [outsym for insym, outsym in sympair_lst]
     return "".join(outsym_lst)
 
-def discover():
+def main():
     import argparse
     arpar = argparse.ArgumentParser("python3 twdiscov.py")
-    arpar.add_argument("examples", help="example pair strings file",
+    arpar.add_argument("examples", help="Example pair strings file",
                        default="test.pstr")
     arpar.add_argument("-s", "--symbol",
-                        help="input symbol for which to find rules",
-                        default="")
-    arpar.add_argument("-v", "--verbosity",
-                       help="level of  diagnostic output",
-                       type=int, default=0)
+        help="Input symbol for which to find rules",
+        default="")
+    arpar.add_argument(
+        "-v", "--verbosity",
+        help="Level of  diagnostic output, default is 5,"\
+        " 0 to omit the printing of relevant examples for the rules",
+        type=int, default=5)
+    arpar.add_argument("-V", "--version",
+        help="Print the version of the program",
+        default=False,
+        action="store_true")
     args = arpar.parse_args()
+
+    if args.version:
+        print("twol-discov version 0.1.3")
 
     cfg.verbosity = args.verbosity
     
     twexamp.read_examples(filename=args.examples, build_fsts=False)
-    if cfg.verbosity >= 5:
+    if cfg.verbosity >= 10:
         print("--- all examples read in ---")
     
     for insym in cfg.input_symbol_set:
@@ -214,7 +223,7 @@ def discover():
             for lc, rc in posi_contexts:
                 l_str = context_to_output_str(lc)
                 r_str = context_to_output_str(rc)
-                print("{:>30}<{}>{}".format(l_str, outsym, r_str))
+                print("!{:>29}<{}>{}".format(l_str, outsym, r_str))
 
 if __name__ == "__main__":
-    discover()
+    main()

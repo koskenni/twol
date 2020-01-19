@@ -16,7 +16,7 @@ Thus, some ways to insert zeros result in infeasible alignment and other result 
 
 The algorithm is described in some detail in [koskenniemi2017]_.  The present version proceeds in three steps:
 
-1. Each :term:`raw morphophoneme` is scored according to the set of phonemes (and the zero) which are present in it.  The score for the alignment is the sum of the scores of all its raw morphophonemes.  Only the candidates with the best score are kept.
+1. Each :term:`raw morphophoneme` is scored according to the set of phonemes (and the zero) which are present in it.  The score for the alignment is the sum of the scores of all its raw morphophonemes.  Only the candidates with the best total score are kept.
 
 2. The syllable structure of the alignment is considered.  Those having a smaller number of syllables are preferred and those having a greater number are discarded.
 
@@ -26,24 +26,105 @@ The algorithm is described in some detail in [koskenniemi2017]_.  The present ve
 A simpler and more versatile version of for aligning just two words or morphs is described in [koskenniemi2013b]_.
 
 
+Alphabet
+========
+
+The alignment is based on the similarities of phonemes.  Therfore a definition of the alphabet is obligatory.  The definition is a file which defines the letters in terms of their distinctive phonological features as in the International Phonetic Alphabet (IPA), see https://www.internationalphoneticalphabet.org/ for more information.  Here is a fairly extensive definition for Estonian alphabet::
+
+   m  =  Bilabial, Voiced, Nasal,,,
+   p  =  Bilabial, Unvoiced, Stop,,,
+   b  =  Bilabial, Voiced, Stop,,,
+   v  =  Labiodental, Voiced, Fricative,,,
+   f  =  Labiodental, Unvoiced, Fricative,,,
+   t  =  Dental, Unvoiced, Stop,,,
+   z  =  Dental, Unvoiced, Affricate,,,
+   s  =  Alveolar, Unvoiced, Sibilant,,,
+   d  =  PostAlveolar, Voiced, Stop,,,
+   n  =  PostAlveolar, Voiced, Nasal,,,
+   r  =  PostAlveolar, Voiced, Trill,,,
+   l  =  PostAlveolar, Voiced, Lateral,,,
+   j  =  Palatal, Voiced, Approximant, SemiVowel, Front, Unrounded
+   k  =  Velar, Unvoiced, Stop,,,
+   g  =  Velar, Voiced, Stop,,,
+   h  =  Glottal, Unvoiced, Fricative,,,
+   Bilabial Labiodental Dental Alveolar PostAlveolar Palatal Velar Glottal = 50
+   Bilabial Labiodental Dental Alveolar PostAlveolar = 30
+   Bilabial Labiodental = 20
+   Dental PostAlveolar = 20
+   Alveolar PostAlveolar Palatal = 20
+   Velar Bilabial = 20
+   Velar Labiodental = 20
+
+   Unvoiced Voiced = 20
+
+   Stop Fricative Sibilant Affricate Trill Lateral Approximant Nasal = 70
+   Stop Sibilant Fricative Affricate = 10
+   Sibilant Nasal = 30
+   Stop Nasal = 20
+   Fricative Nasal = 20
+   Stop Sibilant Fricative Lateral Trill = 40
+
+   i  =  ,,, Close, Front, Unrounded
+   ü  =  ,,, Close, Front, Rounded  #  Estonian ü, IPA y
+   u  =  ,,, Close, Back, Rounded
+   e  =  ,,, CloseMid, Front, Unrounded
+   ö  =  ,,, CloseMid, Front, Rounded  #  IPA ø
+   o  =  ,,, CloseMid, Back, Rounded
+   õ  =  ,,, CloseMid, Back, Unrounded  #  Estonian õ, IPA ɤ
+   ä  =  ,,, OpenMid, Front, Unrounded  #  IPA æ
+   a  =  ,,, Open, Back, Unrounded  #  IPA ɑ
+
+   SemiVowel Close CloseMid OpenMid Open = 70
+   Close CloseMid OpenMid Open = 20
+   Close CloseMid Open = 15
+   Close CloseMid = 10
+   CloseMid Open = 10
+   OpenMid Open = 0
+   SemiVowel Close = 10
+   SemiVowel CloseMid = 60
+
+   Front Back = 10
+
+   Unrounded Rounded = 10
+
+The lines with a symbol, equal sign and a comma separated list of six feature names define the *set of phonemes and their qualities*.  The alphabet is partitioned into *consonants* where the first three features must be present and into *vowels* where the last three features must be present. For *semivowels* or *approximants*, all six features are present.  Only these alternatives are allowed.  The features must belong consistently to one of these six positions.  Otherwise, the names used for the features can be freely chosen (although the IPA names are recommended).
+
+The similarity of each pair or subsets of phonemes is defined by the rest of the lines in the example.  Consider a set of phonemes, e.g. ``{i, e}`` or equivalently a morphophoneme ``ie``.  In terms of features this morphophoneme is represented as::
+
+  ({}, {}, {}, {Close, CloseMid}, {Front}, {Unrounded})
+
+There are no consonantal features, i.e. the first three sets are empty and therefore have a zero weight.  The fifth and the sixth sets consist of just one feature, and their weights are also zero.  The fourth set has two features in it.  Its weight is determined by using the feature sets in the alphabet.  The set ``{Close, CloseMid}`` is a subset of four sets in the alphabet::
+   
+   SemiVowel Close CloseMid OpenMid Open = 70
+   Close CloseMid OpenMid Open = 20
+   Close CloseMid Open = 15
+   Close CloseMid = 10
+
+The sets define different weights, but the lowest weight is taken, thus the weight of this feature group is 10 and the total weight of the morphophoneme ``ie`` is 10.
+
+When reading the alphabet file, the program computes the weights of all possible subsets and their weights of each of the six feature groups.  
+
 Installing
 ==========
 
-One may install the programs for alignment as a Python package called ``twolalign`` by using ``pip3 install --upgrade twolalign`` or equivalently with the Python itself::
+One may install the programs for alignment as a Python package called ``twolalign`` by using ``pip3 install --user twolalign`` or equivalently with the Python itself::
 
-  $ python3 -m pip install --user --no-cache-dir --upgrade twolalign
+  $ python3 -m pip install --user twolalign
 
 Installing the package this way makes a few command line scripts that can executed as if they were executable programs, in particular: ``twol-multialign`` and ``twol-aligner``.  The available parameters for these, and other scripts in the package, can be seen by giving the ``--help`` option to the script.
 
-Otherwise, you may also just clone the github project ``https://github.com/koskenni/alignment`` to your personal Linux or Mac.  On a Linux machine, you can do that by::
+If you have previously installed a version of ``twolalign`` and you wieh to replace it with a newer one, you can use an additional option ``--upgrade`` in the installation commands.
+
+If you indend to participate in the development of these tools, you may also clone the github project ``twolalign`` to your personal Linux or Mac computer by::
 
   git clone git@github.com:koskenni/alignment.git
+
 
 
 Standalone use
 ==============
 
-The help message::
+Befor using a command or script, one is advised first to ask it for help i.e. what the program will do and what kinds of parameters it needs, e.g.::
 
    $ twol-multialign --help
    usage: twol-multialign [-h] [-l {vertical,list,horizontal}] [-f] [-w]
