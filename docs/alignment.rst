@@ -47,6 +47,7 @@ The alignment is based on the similarities of phonemes.  Therfore a definition o
    k  =  Velar, Unvoiced, Stop,,,
    g  =  Velar, Voiced, Stop,,,
    h  =  Glottal, Unvoiced, Fricative,,,
+   
    Bilabial Labiodental Dental Alveolar PostAlveolar Palatal Velar Glottal = 50
    Bilabial Labiodental Dental Alveolar PostAlveolar = 30
    Bilabial Labiodental = 20
@@ -102,27 +103,32 @@ There are no consonantal features, i.e. the first three sets are empty and there
 
 The sets define different weights, but the lowest weight is taken, thus the weight of this feature group is 10 and the total weight of the morphophoneme ``ie`` is 10.
 
-When reading the alphabet file, the program computes the weights of all possible subsets and their weights of each of the six feature groups.  
+When reading the alphabet file, the program computes the weights of all possible subsets and their weights of each of the six feature groups.  These pre-computed weights are then used for deciding which alignments are the best. 
 
-Installing
-==========
 
-One may install the programs for alignment as a Python package called ``twolalign`` by using ``pip3 install --user twolalign`` or equivalently with the Python itself::
+Installing the package
+======================
+
+One may install the programs for alignment as a Python package called ``twolalign`` by using::
+
+  $ pip3 install --user twolalign
+
+or equivalently with the Python itself::
 
   $ python3 -m pip install --user twolalign
 
-Installing the package this way makes a few command line scripts that can executed as if they were executable programs, in particular: ``twol-multialign`` and ``twol-aligner``.  The available parameters for these, and other scripts in the package, can be seen by giving the ``--help`` option to the script.
+Installing the package this way makes a few command line scripts that can executed as if they were executable programs, in particular: ``twol-multialign`` and ``twol-aligner``.
 
 If you have previously installed a version of ``twolalign`` and you wieh to replace it with a newer one, you can use an additional option ``--upgrade`` in the installation commands.
 
 If you indend to participate in the development of these tools, you may also clone the github project ``twolalign`` to your personal Linux or Mac computer by::
 
-  git clone git@github.com:koskenni/alignment.git
+  $ git clone git@github.com:koskenni/alignment.git
 
 
 
-Standalone use
-==============
+``twol-multialign``
+===============
 
 Befor using a command or script, one is advised first to ask it for help i.e. what the program will do and what kinds of parameters it needs, e.g.::
 
@@ -148,13 +154,14 @@ Befor using a command or script, one is advised first to ask it for help i.e. wh
 
 The module can be executed as a script.  The default is that the zero-filled aligned morphs are given in vertical layout::
 
-  $ python3 multialign.py
+  $ twol-multialign alphabet.text
   käsi käde käte kät käs                          (first input line)
   käsi
   käde
   käte
   kätØ
   käsØ
+  
   saapas saappaa saappa                           (second input line)
   saapØasØ
   saappaØa
@@ -163,31 +170,26 @@ The module can be executed as a script.  The default is that the zero-filled ali
 
 The results may printed in an alternative layout where the raw morphophonemes are explicitly given::
 
-  $ python3 multialign.py --layout horizontal
+  $ twol-multialign --layout horizontal
   saapas saappaa saappa                           (first input line)
   s a a p Øpp a sØØ ØaØ
 
 
-Use from another program
-========================
+Using multialign from another program
+=====================================
 
-You can e.g.::
+When the ``twolalign`` package has been installed, you can use the alignment from your own Python 3 program.  You can e.g.::
 
-  import multialign
+  from twolalign.multialign import aligner
   morpheme = "MIES"
   words = ["mies", "miehe", "mieh"]
-  aligned_sym_seq = multialign.aligner(words, 1, morpheme)
+  aligned_sym_seq = aligner(words, 1, morpheme)
   print(aligned_sym_seq)
   
-and it would print::
+and your program would print::
   
   ['mmm', 'iii', 'eee', 'shh', 'ØeØ']
   
 
-Functions of the ``multialign`` module
-======================================
-
-.. automodule:: multialign
-   :members:
 
 
