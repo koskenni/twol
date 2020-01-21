@@ -119,6 +119,16 @@ or equivalently with the Python itself::
 
 Installing the package this way makes a few command line scripts that can executed as if they were executable programs, in particular: ``twol-multialign`` and ``twol-aligner``.
 
+If these commands do not work, the reason can be that the command line interpreter does not find any commands installed by ``pip3``.  Iin Linux the commands are installed in a directory ``.local/bin``.  This must be present in the ``PATH`` environment variable, usually set in the ``.bashrc`` file.  You could add the following line (where *USERNAME* stands for your username) to that file::
+
+  export PATH=/home/USERNAME/.local/bin:$PATH
+
+You may also need another similar line in the ``.bashrc`` file so that the Python 3 interpreter will find the modules themselves::
+
+  export PYTHONPATH=/home/USERNAME/.local/lib/python3.6/site-packages:$PYTHONPATH
+
+The lines may need to be slightly different on different systems.  On Mac OS, at least, the beginning of the pathnames is slightly different.
+
 If you have previously installed a version of ``twolalign`` and you wieh to replace it with a newer one, you can use an additional option ``--upgrade`` in the installation commands.
 
 If you indend to participate in the development of these tools, you may also clone the github project ``twolalign`` to your personal Linux or Mac computer by::
@@ -175,8 +185,8 @@ The results may printed in an alternative layout where the raw morphophonemes ar
   s a a p Øpp a sØØ ØaØ
 
 
-Using multialign from another program
-=====================================
+Using ``multialign`` from another program
+-------------------------------------
 
 When the ``twolalign`` package has been installed, you can use the alignment from your own Python 3 program.  You can e.g.::
 
