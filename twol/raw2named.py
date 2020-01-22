@@ -40,7 +40,7 @@ def main():
         help="level of diagnostic and debugging output")
     args = argparser.parse_args()
 
-    import twolalign.cfg as cfg
+    import twol.cfg as cfg
     cfg.verbosity = args.verbosity
 
     mphon_name = { }

@@ -6,8 +6,13 @@ from codecs import open
 from pprint import pprint
 
 import tatsu
+from tatsu import compile
 from tatsu.ast import AST
+#from tatsu import ast
+#from ast import AST
 from tatsu.walkers import NodeWalker
+#from tatsu import walkers
+#from walkers import NodeWalker
 
 from tatsu.exceptions import ParseException, FailedParse, ParseError, FailedSemantics
 
@@ -383,7 +388,7 @@ def init():
     dir = os.path.dirname(os.path.abspath(__file__))
     grammar_file = dir + "/twolcsyntax.ebnf"
     grammar = open(grammar_file).read()
-    parser = tatsu.compile(grammar)
+    parser = compile(grammar)
     return parser
 
 def parse_rule(parser, line_nl, line_no, line_lst, start="expr_start"):

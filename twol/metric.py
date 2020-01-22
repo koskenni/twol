@@ -38,7 +38,7 @@ def main():
 
     import sys
     import re
-    import twolalign.alphabet as alphabet
+    import twol.alphabet as alphabet
 
     alphabet.read_alphabet(args.alphabet)
 

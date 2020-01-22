@@ -1,3 +1,5 @@
+.. _moduleindex:
+
 ============
 Module index
 ============

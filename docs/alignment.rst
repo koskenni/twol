@@ -127,7 +127,7 @@ You may also need another similar line in the ``.bashrc`` file so that the Pytho
 
   export PYTHONPATH=/home/USERNAME/.local/lib/python3.6/site-packages:$PYTHONPATH
 
-The lines may need to be slightly different on different systems.  On Mac OS, at least, the beginning of the pathnames is slightly different.
+The lines may need to be slightly different on different systems.  On Mac OS, at least, the beginning of the pathnames is different.
 
 If you have previously installed a version of ``twolalign`` and you wieh to replace it with a newer one, you can use an additional option ``--upgrade`` in the installation commands.
 
@@ -138,7 +138,7 @@ If you indend to participate in the development of these tools, you may also clo
 
 
 ``twol-multialign``
-===============
+===================
 
 Befor using a command or script, one is advised first to ask it for help i.e. what the program will do and what kinds of parameters it needs, e.g.::
 
@@ -186,7 +186,7 @@ The results may printed in an alternative layout where the raw morphophonemes ar
 
 
 Using ``multialign`` from another program
--------------------------------------
+-----------------------------------------
 
 When the ``twolalign`` package has been installed, you can use the alignment from your own Python 3 program.  You can e.g.::
 

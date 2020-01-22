@@ -1,8 +1,8 @@
 """Global values and functions for twol modules.
 
 These definitions and values are used by several twol-related
-programs, e.g. `twol`, `multialign`, `paratab2segcsv`,
-`segm2zerofilled` etc.
+programs, e.g. `twol`, `multialign`, `table2words`,
+`words2zerofilled` etc.
 """
 
 __author__ = """© Kimmo Koskenniemi, 2018"""

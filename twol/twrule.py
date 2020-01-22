@@ -4,10 +4,13 @@ __author__ = "© Kimmo Koskenniemi, 2018"
 __version__ = "0.7.1"
 import re
 import hfst
-import twol.cfg as cfg
-import twol.fs as fs
-import twol.twbt as twbt
-import twol.twexamp as twexamp
+#import twol.cfg as cfg
+import cfg
+#import twol.fs as fs
+import fs
+import twbt
+#import twol.twexamp as twexamp
+import twexamp
 
 def init():
     """Initializes the module by computing several common FSTs
@@ -477,6 +480,11 @@ def center_exclusion(name, x_fst, *contexts):
     return rule_fst, selector_fst, scrambler_fst
 
 if __name__ == "__main__":
+    """This module forms the rule FSTs out of the collection of component
+FSTs which have been compiled out of the center parts, left and right
+contexts of the rules.  The formulas used in the module are those from
+[ylijyrä2006]_.  """
+    
     twex.read_examples()
     init(1)
     #define("V", "PI .o.[a|e|i|o|ä|ö]")

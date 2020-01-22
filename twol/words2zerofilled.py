@@ -98,11 +98,11 @@ def main():
     # STEP 2:
     # align the allomorphs of each morpheme
 
-    import twolalign.cfg as cfg
+    import twol.cfg as cfg
     cfg.all_zero_weight = 1.0
 
-    from twolalign.multialign import aligner
-    from twolalign.alphabet import read_alphabet
+    from twol.multialign import aligner
+    from twol.alphabet import read_alphabet
     
     read_alphabet(args.alphabet)
 

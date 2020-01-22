@@ -12,5 +12,5 @@ Functions of the twrule module
 
 Functions of the ``twrule`` module
 
-.. automodule:: twrule
+.. automodule:: twol.twrule
    :members:

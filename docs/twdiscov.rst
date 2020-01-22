@@ -94,5 +94,5 @@ In the output, you can see that the rules for ``{aä}``, i.e. vowel harmony, are
 Functions of the ``twdiscov`` module
 ====================================
 
-.. automodule:: twdiscov
+.. automodule:: twol.twdiscov
    :members:

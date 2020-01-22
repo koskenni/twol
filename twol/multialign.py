@@ -9,8 +9,8 @@ This is free software according to GNU GPL 3 License.
 import re, sys
 import hfst
 import grapheme
-from twolalign.cfg import verbosity
-import twolalign.alphabet as alphabet
+from twol.cfg import verbosity
+import twol.alphabet as alphabet
 
 def remove_bad_transitions(fsa):
     """Copy the FSA excluding transitions with consonants and vowels"""
@@ -46,8 +46,8 @@ def shuffle_with_zeros(string, target_length):
     Returns a fsa which accepts all the strings with the inserted zeros.
     All strings have exactly target_length symbols.
     """
-    from twolalign.cfg import verbosity
-    from twolalign.fs import string_to_fsa
+    from twol.cfg import verbosity
+    from twol.fs import string_to_fsa
     
     ### result_fsa = hfst.fst(string) # not correct for composed graphemes !!!
     result_fsa = string_to_fsa(string)
@@ -90,7 +90,7 @@ def multialign(strings, target_length):
     if the target lenght is too small and also that there may be
     all-zero correspondences if the target length is too long.
     """
-    from twolalign.cfg import verbosity
+    from twol.cfg import verbosity
     
     s1 = strings[0]
     fsa = shuffle_with_zeros(s1, target_length)
@@ -202,7 +202,7 @@ def aligner(words, max_zeros_in_longest, line):
 
     Returns the best alignment as a list of raw morphophoneme.
     """
-    from twolalign.cfg import verbosity, final
+    from twol.cfg import verbosity, final
     #from twolalign.alphabet import mphon_weight
 
     max_length = max([grapheme.length(x) for x in words])
@@ -238,7 +238,7 @@ def main():
     import hfst
     import grapheme
     #from twolalign.alphabet import read_alphabet, mphon_weight, consonant_set, vowel_set
-    from twolalign.cfg import verbosity
+    from twol.cfg import verbosity
 
     import argparse
     arpar = argparse.ArgumentParser("python3 multialign.py")

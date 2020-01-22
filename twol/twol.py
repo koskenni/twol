@@ -6,11 +6,23 @@
 #
 import sys, re
 import hfst
-import twol.cfg as cfg
-import twol.twbt as twbt
-import twol.twexamp as twexamp
-import twol.twrule as twrule
-import twol.twparser as twparser
+import cfg
+#from twol.cfg import verbosity
+#from twol.cfg import examples_fst
+from cfg import verbosity
+from cfg import examples_fst
+#import twol.cfg as cfg
+import twbt
+#import twol.twbt as twbt
+#import twol.twexamp as twexamp
+import twrule
+#import twol.twrule as twrule
+import twparser
+#from twol.twparser import init as twparser_init
+#from twol.twparser import parse_rule
+from twparser import init as twparser_init
+from twparser import parse_rule
+#import twol.twparser as twparser
 
 def print_raw_paths(paths):
     for path in paths:
@@ -66,7 +78,7 @@ def main():
         print("twol-comp version 0.1.1")
         return
 
-    cfg.verbosity = args.verbosity
+    verbosity = args.verbosity
     if args.recursion:
         sys.setrecursionlimit(args.recursion)
 
@@ -75,16 +87,16 @@ def main():
     else:
         twexamp.read_examples(args.examples)
 
-    if cfg.verbosity >= 30:
-        twbt.ppfst(cfg.examples_fst, title="examples_fst")
+    if verbosity >= 30:
+        twbt.ppfst(examples_fst, title="examples_fst")
 
-    parser = twparser.init()
+    parser = twparser_init()
 
-    examples_fsa = hfst.fst_to_fsa(cfg.examples_fst, separator="^")
+    examples_fsa = hfst.fst_to_fsa(examples_fst, separator="^")
 
-    examples_up_fsa = cfg.examples_fst.copy()
+    examples_up_fsa = examples_fst.copy()
     examples_up_fsa.input_project()
-    if cfg.verbosity >= 30:
+    if verbosity >= 30:
         twbt.ppfst(examples_up_fsa, title="examples_up_fsa")
 
     twrule.init()
@@ -115,18 +127,18 @@ def main():
             rule_str = " ".join(line_lst)
             line_lst = []
 
-        op, left, right = twparser.parse_rule(parser, rule_str, i, line_nl_lst)
+        op, left, right = parse_rule(parser, rule_str, i, line_nl_lst)
         if op == "?" or not (left and right):
             continue
 
-        if (args.thorough > 0 and op != "=") or cfg.verbosity > 0:
+        if (args.thorough > 0 and op != "=") or verbosity > 0:
             print("\n")
             print(rule_str)
 
         if op == "=":
-            #        if cfg.verbosity > 0:
+            #        if verbosity > 0:
             #            print(line)
-            if cfg.verbosity >= 10:
+            if verbosity >= 10:
                 print(left, op)
                 twbt.ppfst(right)
             continue
@@ -143,15 +155,15 @@ def main():
         else:
             print("Error: not a valid type of a rule", op)
             continue
-        if cfg.verbosity >= 10:
+        if verbosity >= 10:
             twbt.ppfst(R)
         if args.lost or args.wrong or args.output:
             all_rules_fst_lst.append(R)
         if args.thorough > 0:
-            selector_fst.intersect(cfg.examples_fst)
+            selector_fst.intersect(examples_fst)
             # selector_fst.n_best(5)
             selector_fst.minimize()
-            if cfg.verbosity >= 20:
+            if verbosity >= 20:
                 paths = selector_fst.extract_paths(output='raw')
                 print_raw_paths(paths[0:20])
             passed_pos_examples_fst = selector_fst.copy()
@@ -171,7 +183,7 @@ def main():
             neg_examples_fsa.compose(MIXe)
             neg_examples_fsa.output_project()
             neg_examples_fst = hfst.fsa_to_fst(neg_examples_fsa, separator="^")
-            neg_examples_fst.minus(cfg.examples_fst)
+            neg_examples_fst.minus(examples_fst)
             NG = examples_up_fsa.copy()
             NG.compose(neg_examples_fst)
             npaths = NG.extract_paths(output='raw')
@@ -191,7 +203,7 @@ def main():
         RESU.compose_intersect(tuple(all_rules_fst_lst))
         RESU.minimize()
     if args.lost:
-        lost_positive_examples_fst = cfg.examples_fst.copy()
+        lost_positive_examples_fst = examples_fst.copy()
         lost_positive_examples_fst.minus(RESU)
         lost_positive_examples_fst.minimize()
         lost_stream = hfst.HfstOutputStream(filename=args.lost)
@@ -201,7 +213,7 @@ def main():
         print("wrote lost examples to", args.lost)
     if args.wrong:
         WRONG = RESU.copy()
-        WRONG.subtract(cfg.examples_fst)
+        WRONG.subtract(examples_fst)
         WRONG.minimize()
         wrong_stream = hfst.HfstOutputStream(filename=args.wrong)
         wrong_stream.write(WRONG)

@@ -26,7 +26,6 @@ Welcome to twol's documentation!
    py-modindex
    differences
    twparsere
-   modules
 
 ..   twexamp
 ..   twrule
