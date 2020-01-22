@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="twol", # of the PyPI project and package
-    version="0.0.15",
+    version="0.0.18",
     author="Kimmo Koskenniemi",
     author_email="koskenni@gmail.com",
     description="Tools for simplified two-level morphology",
@@ -20,6 +20,13 @@ setuptools.setup(
     ],
     entry_points={
         "console_scripts": [
+            "twol-aligner = twolalign.aligner:main",
+            "twol-metric = twolalign.metric:main",
+            "twol-multialign = twolalign.multialign:main",
+            "twol-table2words = twolalign.table2words:step1",
+            "twol-words2zerofilled = twolalign.words2zerofilled:main",
+            "twol-zerofilled2raw = twolalign.zerofilled2raw:main",
+            "twol-raw2named = twolalign.raw2named:main",
             "twol-comp = twol.twol:main",
             "twol-examples2fst = twol.twexamp:main",
             "twol-discov =  twol.twdiscov:main"
