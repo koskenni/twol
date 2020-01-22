@@ -11,7 +11,8 @@ This is free software according to GNU GPL 3 license.
 """
 
 import sys, re
-import cfg
+#import cfg
+import twol.cfg as cfg
 from twol.cfg import verbosity
 
 cost_of_zero_c = 25

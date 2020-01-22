@@ -6,22 +6,22 @@
 #
 import sys, re
 import hfst
-import cfg
-#from twol.cfg import verbosity
-#from twol.cfg import examples_fst
-from cfg import verbosity
-from cfg import examples_fst
+#import cfg
+from twol.cfg import verbosity
+from twol.cfg import examples_fst
+#from cfg import verbosity
+#from cfg import examples_fst
 #import twol.cfg as cfg
-import twbt
-#import twol.twbt as twbt
-#import twol.twexamp as twexamp
-import twrule
-#import twol.twrule as twrule
-import twparser
-#from twol.twparser import init as twparser_init
-#from twol.twparser import parse_rule
-from twparser import init as twparser_init
-from twparser import parse_rule
+#import twbt
+import twol.twbt as twbt
+import twol.twexamp as twexamp
+#import twrule
+import twol.twrule as twrule
+#import twparser
+from twol.twparser import init as twparser_init
+from twol.twparser import parse_rule
+#from twparser import init as twparser_init
+#from twparser import parse_rule
 #import twol.twparser as twparser
 
 def print_raw_paths(paths):

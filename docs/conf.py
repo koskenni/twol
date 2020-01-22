@@ -15,10 +15,11 @@
 import os
 import sys
 #sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('../'))
+#sys.path.insert(0, os.path.abspath('../'))
+sys.path.insert(0, os.path.abspath('..'))
 #sys.path.insert(0, os.path.abspath('../..')) ## trying to help readthedocs 
 #sys.path.insert(0, '/home/koskenni/github/twol/') ## -- kmk ---
-sys.path.insert(0, os.path.abspath('../twol/'))
+#sys.path.insert(0, os.path.abspath('../twol/'))
 #sys.path.insert(0, '/home/koskenni/github/twol/twol') ## -- kmk ---
 
 
@@ -217,5 +218,7 @@ class Mock(MagicMock):
     def __getattr__(cls, name):
         return MagicMock()
 
-MOCK_MODULES = ['hfst', 'tatsu', 'grapheme']
+MOCK_MODULES = [
+    'hfst', 'tatsu', 'tatsu.ast', 'tatsu.walkers', 'tatsu.exceptions',
+    'grapheme']
 sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)

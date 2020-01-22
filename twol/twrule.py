@@ -4,13 +4,14 @@ __author__ = "© Kimmo Koskenniemi, 2018"
 __version__ = "0.7.1"
 import re
 import hfst
-#import twol.cfg as cfg
-import cfg
-#import twol.fs as fs
-import fs
-import twbt
-#import twol.twexamp as twexamp
-import twexamp
+#import cfg
+import twol.cfg as cfg
+#import fs
+import twol.fs as fs
+#import twbt
+import twol.twbt as twbt
+#import twexamp
+import twol.twexamp as twexamp
 
 def init():
     """Initializes the module by computing several common FSTs
