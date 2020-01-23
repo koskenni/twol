@@ -35,8 +35,8 @@ The input for the first step is a CSV table which one can produce using a spread
    LASI,lasi,lasi.ssa,lasi.na,lase.i.ssa
    LAKI,laki,lai.ssa,laki.na,lae.i.ssa
 
-table2words.py
-==============
+twol-table2words
+================
 
 This script reads in a paradigm table of word forms and writes the data in a format where each word form is on line of its own.  Both the input table and the output file are in the CSV format.  Output contains two fields, e.g.::
 
@@ -58,8 +58,8 @@ This script reads in a paradigm table of word forms and writes the data in a for
      LAKI ESS,laki.na
      LAKI PL INE,lae.i.ssa
 
-words2zerofilled.py
-===================
+twol-words2zerofilled
+=====================
 
 This script reads data in the above CSV format produced either by the ``paratab2segcsv.py`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file augmented with the aligned i.e. zero-filled example word forms.  The :doc:`alignment` is accomplished by the ``multialign.py`` module, see :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
 
@@ -81,8 +81,8 @@ This script reads data in the above CSV format produced either by the ``paratab2
      LAKI ESS,laki.na,laki.na
      LAKI PL INE,lae.i.ssa,laØe.i.ssa
 
-zerofilled2raw.py
-=================
+twol-zerofilled2raw
+===================
 
 This script reads in the aligned example words from the preceding step and constructs a raw morphophonemic representation for each example word.  Output contains the three fields in the input and a new one, the raw morphophonemic representation of the word form, e.g.::
 
@@ -121,8 +121,8 @@ The morphophonemes in affixes coud be constructed mechanically, but we meet simi
 
 The file lists the principal forms in lines where the second field is ``+``.  Note that the principal forms may consist of zero, one or more affix morphemes (i.e. their names).  The remaining lines have the affix name in the first field and its morphophonemic representation in the second field.  Note that each morpheme (name) has an affix of its own.  One may establish distinct names for grammatically identical but phonemically distinct affixes.  (In Finnish, e.g. some plural genitive endings are so different that one may treat them as different morphemes having slighty different names.)
 
-raw2named.py
-============
+twol-raw2named
+==============
 
 This script renames some raw morphophonemes of the example word forms and writes a file of examples where each example is a line of blank separated string of :term:`pair symbols <pair symbol>`.  Pair symbols are the newly renamed ones or if the raw symbol is not yet renamed, the pair symbol is the original raw one.  This file is suitable for the twol.py compiler as its example file.
 
@@ -150,4 +150,4 @@ Assigning names to raw morphophonemes is usually done with the aid of ``twdiscov
    l a {kØ}:k {iiie}:i n {aä}:a ESS:Ø
    l a {kØ}:Ø {iiie}:e i s s {aä}:a PL:Ø INE:Ø
 
-One may also write a two-level rule for such tentatively final morphophoneme and test the validity of the rule using ``twol`` rule compiler.  See separate documents for them.
+One may also write a two-level rule for such tentatively final morphophoneme and test the validity of the rule using ``twol-comp`` rule compiler.  See separate documents for them.

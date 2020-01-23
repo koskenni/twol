@@ -188,9 +188,9 @@ The results may printed in an alternative layout where the raw morphophonemes ar
 Using ``multialign`` from another program
 -----------------------------------------
 
-When the ``twolalign`` package has been installed, you can use the alignment from your own Python 3 program.  You can e.g.::
+When the ``twol`` package has been installed, you can use the alignment from your own Python 3 program.  You can e.g.::
 
-  from twolalign.multialign import aligner
+  from twol.multialign import aligner
   morpheme = "MIES"
   words = ["mies", "miehe", "mieh"]
   aligned_sym_seq = aligner(words, 1, morpheme)

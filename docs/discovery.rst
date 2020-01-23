@@ -16,13 +16,15 @@ The program suggests reasonable raw rules for phenomena where the condition is s
 
 The program only produces ``=>`` and ``/<=`` types of rules.  This is not a limitation which would restrict the phenomena which can be expressed.  Indeed, when some phenomena are optional, using just these two types of rules makes it easy to allow for free variation.
 
-Enven in the best case, the rules can only be as good as the set of examples. If the examples are chosen in a disciplined and balanced manner, the program is expected to be useful and practical.  If alternations are only partly present in the set of examples, the proposed raw rules will be poor and may even be misleading.
+Even in the best case, the rules can only be as good as the set of examples. If the examples are chosen in a disciplined and balanced manner, the program is expected to be useful and practical.  If alternations are only partly present in the set of examples, the proposed raw rules will be poor and may even be misleading.
+
+For more information on the program itself, see the documentation of the program code ``twdiscov`` in the :doc:`modules` and directly in :doc:`twol.twdiscov`.
 
 
-Using ``twdiscov.py``
+Using ``twol-discov``
 =====================
 
-The input for this script must be in the same format as the examples given to the ``twol.py`` rule compiler and tester, e.g.::
+The input for this script must be in the same format as the examples given to the ``twol-comp`` rule compiler and tester, e.g.::
 
   m ä {kØ}:k {ieeØ}:i
   m ä {kØ}:Ø {ieeØ}:e n GEN:Ø
@@ -47,7 +49,7 @@ The input for this script must be in the same format as the examples given to th
 
 The program collects the input and the output alphabets and the allowed symbol pairs from the examples, thus no other definitions are needed.  The program produces output such as::
 
-   $ python3.5 ../twdiscov.py demo-raw.pstr
+   $ twol-discov demo-raw.pstr
    {aä}:a =>
        {kØ}:Ø {iiie}:i s s _  ;
        s {iiie}:i s s _  ;
@@ -91,8 +93,3 @@ The program collects the input and the output alphabets and the allowed symbol p
 
 In the output, you can see that the rules for ``{aä}``, i.e. vowel harmony, are fairly useless, even if they are correct for the input data.  On the other hand, the rules for stem final vowel aternations for ``{ieeØ}`` and ``{iiie}`` are almost correct and general.  So are the rules for consonant gradation ``{kØ}`` and the slightly more complicated ``{tds}`` alternation.
 
-Functions of the ``twdiscov`` module
-====================================
-
-.. automodule:: twol.twdiscov
-   :members:

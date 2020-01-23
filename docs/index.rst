@@ -16,17 +16,16 @@ Welcome to twol's documentation!
    morphophon
    alignment
    formalism
-   twdiscov
+   discovery
    compiletest
    lexguessing
    technical
    ofitwol
    glossary
    genindex
-   py-modindex
+   modules
    differences
    twparsere
-   modules
 
 ..   twexamp
 ..   twrule

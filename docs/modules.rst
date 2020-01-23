@@ -1,5 +1,7 @@
-twol
-====
+.. _modules:
+
+Modules of the twol package
+===========================
 
 .. toctree::
    :maxdepth: 4

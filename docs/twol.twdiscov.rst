@@ -1,3 +1,5 @@
+.. _twdiscov:
+
 twol\.twdiscov module
 =====================
 
