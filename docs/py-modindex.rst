@@ -1,6 +1,0 @@
-.. _moduleindex:
-
-============
-Module index
-============
-
