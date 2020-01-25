@@ -9,7 +9,7 @@ This is free software according to GNU GPL 3 License.
 import re, sys
 import hfst
 import grapheme
-from twol.cfg import verbosity
+import twol.cfg as cfg
 import twol.alphabet as alphabet
 
 def remove_bad_transitions(fsa):
@@ -31,7 +31,7 @@ def remove_bad_transitions(fsa):
                 new_bfsa.add_transition(state, target_st, in_sym, in_sym, 0)
     result_fsa = hfst.HfstTransducer(new_bfsa)
     result_fsa.minimize()
-    if verbosity >= 20:
+    if cfg.verbosity >= 20:
         print("remove_bad_transitions:")
         print(result_fsa)
     return result_fsa
@@ -46,7 +46,7 @@ def shuffle_with_zeros(string, target_length):
     Returns a fsa which accepts all the strings with the inserted zeros.
     All strings have exactly target_length symbols.
     """
-    from twol.cfg import verbosity
+    #from twol.cfg import verbosity
     from twol.fs import string_to_fsa
     
     ### result_fsa = hfst.fst(string) # not correct for composed graphemes !!!
@@ -58,7 +58,7 @@ def shuffle_with_zeros(string, target_length):
         result_fsa.shuffle(n_zeros_fsa)
     result_fsa.minimize()
     result_fsa.set_name(string)
-    if verbosity >= 30:
+    if cfg.verbosity >= 30:
         print("shuffle_with_zeros:")
         print(result_fsa)
     return result_fsa
@@ -78,7 +78,7 @@ def set_weights(fsa):
             w = alphabet.mphon_weight(insym)
             arc.set_weight(w)
     weighted_fsa = hfst.HfstTransducer(bfsa)
-    if verbosity >=20:
+    if cfg.verbosity >=20:
         print("set_weights:\n", weighted_fsa)
     return weighted_fsa
 
@@ -90,20 +90,20 @@ def multialign(strings, target_length):
     if the target lenght is too small and also that there may be
     all-zero correspondences if the target length is too long.
     """
-    from twol.cfg import verbosity
+    #from twol.cfg import verbosity
     
     s1 = strings[0]
     fsa = shuffle_with_zeros(s1, target_length)
     for string in strings[1:]:
         suf_fsa = shuffle_with_zeros(string, target_length)
         fsa.cross_product(suf_fsa)      # results in a transducer
-        if verbosity >=30:
+        if cfg.verbosity >=30:
             print("fsa\n", fsa)
         prod_fsa = hfst.fst_to_fsa(fsa)      # encodes the fst as a fsa
         fsa = remove_bad_transitions(prod_fsa)
         fsa.minimize()
     wfsa = set_weights(fsa)
-    if verbosity >=20:
+    if cfg.verbosity >=20:
         print("multialign:\n", wfsa)
     return wfsa
 
@@ -202,7 +202,7 @@ def aligner(words, max_zeros_in_longest, line):
 
     Returns the best alignment as a list of raw morphophoneme.
     """
-    from twol.cfg import verbosity, final
+    #from twol.cfg import verbosity, final
     #from twolalign.alphabet import mphon_weight
 
     max_length = max([grapheme.length(x) for x in words])
@@ -210,7 +210,7 @@ def aligner(words, max_zeros_in_longest, line):
     for m in range(max_length, max_length + max_zeros_in_longest + 1):
         R = multialign(words, m)
         if R.compare(hfst.empty_fst()):
-            if verbosity > 1:
+            if cfg.verbosity > 1:
                 print("target length", m, "failed")
             continue
         weighted_fsa.disjunct(R)
@@ -218,7 +218,7 @@ def aligner(words, max_zeros_in_longest, line):
     weighted_fsa.n_best(10) 
     weighted_fsa.minimize() # accepts 10 best results
     results = weighted_fsa.extract_paths(output="raw")
-    if verbosity >= 5:
+    if cfg.verbosity >= 5:
         for w, sym_pair_seq in results:
             lst = [isym for isym, outsym in sym_pair_seq]
             mpw = ["{}::{:.2f}".format(x, alphabet.mphon_weight(x)) for x in lst]
@@ -227,7 +227,7 @@ def aligner(words, max_zeros_in_longest, line):
         print("*** NO ALIGNMENTS FOR:", line, "***", results)
         return([])
     best_syl_struct = prefer_syl_struct(results)
-    if final:
+    if cfg.final:
         best = prefer_final_zeros(best_syl_struct)
     else:
         best = best_syl_struct[0]
@@ -238,7 +238,7 @@ def main():
     import hfst
     import grapheme
     #from twolalign.alphabet import read_alphabet, mphon_weight, consonant_set, vowel_set
-    from twol.cfg import verbosity
+    #from twol.cfg import verbosity
 
     import argparse
     arpar = argparse.ArgumentParser("python3 multialign.py")
@@ -272,10 +272,12 @@ def main():
     args = arpar.parse_args()
 
     if args.version:
-        print("twol-multialign version 0.1.0")
+        print("twol-multialign version 0.1.1")
         return
-    verbosity = args.verbosity
-    alphabet.read_alphabet(args.alphabet)
+    cfg.verbosity = args.verbosity
+    alphabet.read_alphabet(args.alphabet, cfg.verbosity)
+    if args.final:
+        cfg.final = args.final
     valid_letters = alphabet.vowel_set | alphabet.consonant_set | set(" ")
 
     for line in sys.stdin:

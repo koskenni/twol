@@ -3,7 +3,7 @@ __all__ = [
     "fs",
     "twbt",
     "twexamp",
-    "twol",
+    "twolcomp",
     "twparser",
     "twrule",
     "twdiscov",
