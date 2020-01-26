@@ -10,10 +10,6 @@ This is free software according to GNU GPL 3 license.
 
 """
 
-features_of_phoneme = {}
-feature_set = set()
-input_phonemes = set()
-output_phonemes = set()
 within_set_lst = []
 forall_lst = []
 
@@ -21,9 +17,16 @@ pair_weight_dict = {}
 
 
 def main():
+    version = "2020-10-26"
+    
     import argparse
     arpar = argparse.ArgumentParser(
-        description="Builds a distance metric FST")
+        "twol-metric",
+        description="Builds a distance metric FST out of an alphabet"\
+        " description. See"\
+        " https://pytwolc.readthedocs.io/en/latest/alignment.html"\
+        " for detailed instructions. {}".format(version)
+    )
     arpar.add_argument(
         "alphabet",
         help="An alphabet definition with features and similarity sets")
@@ -40,7 +43,7 @@ def main():
     import re
     import twol.alphabet as alphabet
 
-    alphabet.read_alphabet(args.alphabet)
+    alphabet.read_alphabet(args.alphabet, 0)
 
     pair_weight_lst = []
     for insym in alphabet.consonant_set:

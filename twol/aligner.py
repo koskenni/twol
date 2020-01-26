@@ -9,33 +9,45 @@ This is free software according to GNU GPL 3 license.
 """
 
 def main():
+
+    version = "2020-01-26"
+    
     import argparse
     arpar = argparse.ArgumentParser(
-        description="Run-time aligner of words")
+        "twol-aligner",
+        description="Aligns pairs of words separated by a colon. See"\
+        " https://pytwolc.readthedocs.io/en/latest/alignment.html"\
+        " for detailed instructions. {}".format(version))
     arpar.add_argument(
         "metrics",
-        help="FST which contains weights for preferring alternative alignments")
+        help="FST computed with twol-metric from an alphabet file."\
+        " The FST contains weights for phoneme correspondences.")
     arpar.add_argument(
         "-d", "--delimiter",
         help="Separates the two cognates, default is ':'",
         default=":")
-    arpar.add_argument(
-        "-c", "--comment-separator",
-        help="Comment separator. Comments are ignored but copied to output. Default is '!'",
-        default="!")
     arpar.add_argument(
         "-l", "--layout",
         choices=["vertical","list","horizontal"],
         help="output layout",
         default="vertical")
     arpar.add_argument(
+        "-c", "--comment-separator",
+        help="Comment separator. Comments in input after this character are just"\
+        " copied to output. Input words are then also copied to"\
+        " the end of comments. Default separator is '' i.e. no comments."\
+        " Comments come to the output only in horizontal layout.",
+        default="")
+    arpar.add_argument(
+        "-w", "--weights",
+        help="print also the weight of each alignment."\
+        " Default is not to print."
+        " Works only if a comment separator is also set.",
+        action="store_true")
+    arpar.add_argument(
         "-n", "--number",
         help="number of best results to be printed. Default is 1",
         type=int, default=1)
-    arpar.add_argument(
-        "-w", "--weights",
-        help="print also the weight of each alignment. Default is not to print.",
-        action="store_true")
     arpar.add_argument(
         "-v", "--verbosity",
         help="Level of diagnostic information to be printed. Default is 0",
@@ -50,7 +62,10 @@ def main():
     separator = args.delimiter
     import sys
     for line in sys.stdin:
-        pair, comm, comments = line.strip().partition(args.comment_separator)
+        if args.comment_separator:
+            pair, comm, comments = line.strip().partition(args.comment_separator)
+        else:
+            pair, comm, comments = line.strip(), "", ""
         if args.verbosity > 0:
             print(pair, args.comment_separator, comm)
         f1, sep, f2 =  pair.strip().partition(args.delimiter)
@@ -110,10 +125,15 @@ def main():
                     lst.append(pair)
                 algh = " ".join(lst)
                 if args.weights:
-                    comments = weight.rjust(4) + " " + comments
+                    weight = weight.rjust(4)
+                else:
+                    weight = ""
                 if args.comment_separator:
-                    comments = comments + " | " + f1 + " " + f2
-                    algh = algh.ljust(30) + args.comment_separator + comments
+                    if comments:
+                        comments = " " + comments + " | " + f1 + " " + f2
+                    else:
+                        comments = " " + f1 + " " + f2
+                    algh = algh.ljust(30) + args.comment_separator + weight + comments
                 
                 print(algh)
 

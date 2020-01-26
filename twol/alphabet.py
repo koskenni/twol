@@ -42,8 +42,11 @@ consonant_set = set()
 mphon_weight_cache = {}
 """A cache for morphophoneme weights."""
 
-for_definitions_lst = []     # list of ... FOR X IN ... definitions
-exception_lst = []           # list of weighting exceptions
+for_definitions_lst = []
+"""A list of ... FOR X IN ... definitions to be used in metric.py"""
+
+exception_lst = []
+"""A list of weighting exceptions to be used in metric.py"""
 
 def spaced_bin_int(intg):
     """binint to human readable string conversion."""
@@ -208,6 +211,7 @@ def read_alphabet(file_name, verbos):
                 continue
             mat5 = re.fullmatch("(?P<expr>(\w:\w +)*\w:\w::[0-9]+)", line)
             if mat5:
+                # it defines an exception list
                 exception_lst.append(mat5.group("expr"))
                 continue
             msg = "** INCORRECT ALPHABET DEFINITON LINE {}:\n {}"
@@ -316,7 +320,8 @@ def read_alphabet(file_name, verbos):
             w = 100
             for subset_bin, weight, group, bin_str in subset_bin_lst:
                 if verbosity >= 25:
-                    print("\nsubset_bin, weight, group, bin_str, i:", bin(j), weight, group, bin_str, i)
+                    print("\nsubset_bin, weight, group, bin_str, i:",
+                          bin(j), weight, group, bin_str, i)
                 #if group == i and ((subset_bin | ~j) & mask) == mask and weight < w:
                 test = ~(subset_bin | ~j)
                 if verbosity >= 25:

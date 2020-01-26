@@ -237,11 +237,16 @@ def main():
     import re, sys
     import hfst
     import grapheme
-    #from twolalign.alphabet import read_alphabet, mphon_weight, consonant_set, vowel_set
-    #from twol.cfg import verbosity
 
+    version = "2020-01-26"
     import argparse
-    arpar = argparse.ArgumentParser("python3 multialign.py")
+    arpar = argparse.ArgumentParser(
+        "twol-multialign",
+        description="Aligns sets of words separated by blanks"\
+        " by inserting Ø symbols to make them equal length so that"\
+        " similar phonemes correspond to each other. See"\
+        " https://pytwolc.readthedocs.io/en/latest/alignment.html"\
+        " for detailed instructions. {}".format(version))
     arpar.add_argument("alphabet",
         help="A file which defines the phonemes through their distinctive features",
         default="")
@@ -253,7 +258,7 @@ def main():
         help="Prefer deletion at the end",
         action="store_false")
     arpar.add_argument("-w", "--weights",
-        help="Print the weight of the alignment",
+        help="Print the weight of each alignment",
         action="store_true")
     arpar.add_argument("-c", "--comments",
         help="Copy input words to the output lines as comments",
@@ -265,17 +270,12 @@ def main():
     arpar.add_argument("-z", "--zeros",
         help="Number of extra zeros allowed beyond the minimum",
         type=int, default=1)
-    arpar.add_argument("-V", "--version",
-        help="Print the version of the program and quit",
-        default=False,
-        action="store_true")
     args = arpar.parse_args()
 
-    if args.version:
-        print("twol-multialign version 0.1.1")
-        return
     cfg.verbosity = args.verbosity
+
     alphabet.read_alphabet(args.alphabet, cfg.verbosity)
+
     if args.final:
         cfg.final = args.final
     valid_letters = alphabet.vowel_set | alphabet.consonant_set | set(" ")
