@@ -7,7 +7,6 @@ The HFST engine used for accomplishing the operations but all functions make cop
 import hfst
 import grapheme
 import twol.cfg as cfg
-#import cfg
 
 def expr(e):
     """Return an FST corresponding to a XFST regular expression"""
@@ -60,8 +59,8 @@ def union(f, g):
 def intersect(f, g):
     """Return the intersection of two FSTs
 
-Both arguments are assumed to be length preserving mappings.
-"""
+    Both arguments are assumed to be length preserving mappings.
+    """
     res = f.copy()
     res.conjunct(g)
     res.minimize()
@@ -84,9 +83,9 @@ def lower(f):
 def symbol_to_fsa(sym):
     """Return a FSA which accepts the one letter string 'sym'
 
-The symbol 'sym' may be e.g. a composed Unicode grapheme, i.e. a
-string of two or more Unicode characters.
-"""
+    The symbol 'sym' may be e.g. a composed Unicode grapheme, i.e. a
+    string of two or more Unicode characters.
+    """
     bfsa = hfst.HfstBasicTransducer()
     string_pair_path = ((sym, sym))
     bfsa.disjunct(string_pair_path, 0)

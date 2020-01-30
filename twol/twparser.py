@@ -250,6 +250,12 @@ class TwolFstSemantics(object):
         return result_fst
 
     def Upper(self, ast):
+        """Input projection
+
+        Note that the result is outside the Pi*, i.e. not a valid
+        two-level expression.  This operator should be avoided at all
+        costs.
+        """
         name = "[{}].u".format(ast.expr.get_name())
         result_fst = ast.expr.copy()
         result_fst.input_project()
@@ -257,6 +263,12 @@ class TwolFstSemantics(object):
         return result_fst
 
     def Lower(self, ast):
+        """Output projection
+
+        Note that the result is outside the Pi*, i.e. not a valid
+        two-level expression.  This operator should be avoided at all
+        costs.
+        """
         name = "[{}].l".format(ast.expr.get_name())
         result_fst = ast.expr.copy()
         result_fst.output_project()
@@ -264,7 +276,13 @@ class TwolFstSemantics(object):
         result_fst.set_name(name)
         return result_fst
 
-    def Morphophonemic(self, ast):               # Surface completion
+    def Morphophonemic(self, ast):
+        """Surface completion
+
+        Returns a FST which accepts sequences of valid pairs whose
+        input side is accepted by the input side of the argument.
+        For a single symbol pair k:g it is equivalent to k:
+        """
         name = "[{}].m".format(ast.expr.get_name())
         result_fst = ast.expr.copy()
         result_fst.input_project()
@@ -274,7 +292,13 @@ class TwolFstSemantics(object):
         result_fst.set_name(name)
         return result_fst
 
-    def Surface(self, ast):                      # Morphophonemic completion
+    def Surface(self, ast):
+        """Morphophonemic completion
+
+        Returns a FST which accepts sequences of valid pairs whose
+        ouput side is accepted by the output side of the argument.
+        For a single symbol pair k:g it is equivalent to :g
+        """
         name = "[{}].s".format(ast.expr.get_name())
         temp_fst = ast.expr.copy()
         temp_fst.output_project()

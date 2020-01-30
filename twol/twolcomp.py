@@ -6,25 +6,16 @@
 #
 import sys, re
 import hfst
-#import cfg
-from twol.cfg import verbosity
-from twol.cfg import examples_fst
-#from cfg import verbosity
-#from cfg import examples_fst
-#import twol.cfg as cfg
-#import twbt
+import twol.cfg as cfg
 import twol.twbt as twbt
 import twol.twexamp as twexamp
-#import twrule
 import twol.twrule as twrule
-#import twparser
 from twol.twparser import init as twparser_init
 from twol.twparser import parse_rule
-#from twparser import init as twparser_init
-#from twparser import parse_rule
-#import twol.twparser as twparser
+
 
 def print_raw_paths(paths):
+    """For debugging only: print a FST path as a space-separated pairstring"""
     for path in paths:
         weight, sym_pairs = path
         sym_list = [(insym if insym == outsym else insym + ":" + outsym)
@@ -42,11 +33,14 @@ def main():
         default="")
     arpar.add_argument(
         "-l", "--lost",
-        help="File to which write the examples not accepted by all rules as a fst",
+        help="File to which write the examples"\
+        " that were not accepted by all rules"\
+        " -- it is written as a FST",
         default="")
     arpar.add_argument(
         "-w", "--wrong",
-        help="file to which write the wrong strings accepted by all rules as a fst",
+        help="file to which write the wrong strings"\
+        " that are accepted by all rules -- it is written as a FST",
         default="")
     arpar.add_argument(
         "-t", "--thorough",
@@ -63,7 +57,8 @@ def main():
         type=int, default=0)
     arpar.add_argument(
         "examples",
-        help="name of the examples fst or example pair symbol string file",
+        help="name of the examples FST file or"\
+        " example pair symbol string file",
         default="examples.fst")
     arpar.add_argument(
         "rules", help="name of the rule file",
@@ -78,7 +73,7 @@ def main():
         print("twol-comp version 0.1.1")
         return
 
-    verbosity = args.verbosity
+    cfg.verbosity = args.verbosity
     if args.recursion:
         sys.setrecursionlimit(args.recursion)
 
@@ -87,16 +82,16 @@ def main():
     else:
         twexamp.read_examples(args.examples)
 
-    if verbosity >= 30:
-        twbt.ppfst(examples_fst, title="examples_fst")
+    if cfg.verbosity >= 30:
+        twbt.ppfst(cfg.examples_fst, title="examples_fst")
 
     parser = twparser_init()
 
-    examples_fsa = hfst.fst_to_fsa(examples_fst, separator="^")
+    examples_fsa = hfst.fst_to_fsa(cfg.examples_fst, separator="^")
 
-    examples_up_fsa = examples_fst.copy()
+    examples_up_fsa = cfg.examples_fst.copy()
     examples_up_fsa.input_project()
-    if verbosity >= 30:
+    if cfg.verbosity >= 30:
         twbt.ppfst(examples_up_fsa, title="examples_up_fsa")
 
     twrule.init()
@@ -131,14 +126,14 @@ def main():
         if op == "?" or not (left and right):
             continue
 
-        if (args.thorough > 0 and op != "=") or verbosity > 0:
+        if (args.thorough > 0 and op != "=") or cfg.verbosity > 0:
             print("\n")
             print(rule_str)
 
         if op == "=":
-            #        if verbosity > 0:
+            #        if cfg.verbosity > 0:
             #            print(line)
-            if verbosity >= 10:
+            if cfg.verbosity >= 10:
                 print(left, op)
                 twbt.ppfst(right)
             continue
@@ -155,15 +150,15 @@ def main():
         else:
             print("Error: not a valid type of a rule", op)
             continue
-        if verbosity >= 10:
+        if cfg.verbosity >= 10:
             twbt.ppfst(R)
         if args.lost or args.wrong or args.output:
             all_rules_fst_lst.append(R)
         if args.thorough > 0:
-            selector_fst.intersect(examples_fst)
+            selector_fst.intersect(cfg.examples_fst)
             # selector_fst.n_best(5)
             selector_fst.minimize()
-            if verbosity >= 20:
+            if cfg.verbosity >= 20:
                 paths = selector_fst.extract_paths(output='raw')
                 print_raw_paths(paths[0:20])
             passed_pos_examples_fst = selector_fst.copy()
@@ -183,7 +178,7 @@ def main():
             neg_examples_fsa.compose(MIXe)
             neg_examples_fsa.output_project()
             neg_examples_fst = hfst.fsa_to_fst(neg_examples_fsa, separator="^")
-            neg_examples_fst.minus(examples_fst)
+            neg_examples_fst.minus(cfg.examples_fst)
             NG = examples_up_fsa.copy()
             NG.compose(neg_examples_fst)
             npaths = NG.extract_paths(output='raw')
@@ -203,7 +198,7 @@ def main():
         RESU.compose_intersect(tuple(all_rules_fst_lst))
         RESU.minimize()
     if args.lost:
-        lost_positive_examples_fst = examples_fst.copy()
+        lost_positive_examples_fst = cfg.examples_fst.copy()
         lost_positive_examples_fst.minus(RESU)
         lost_positive_examples_fst.minimize()
         lost_stream = hfst.HfstOutputStream(filename=args.lost)
@@ -213,7 +208,7 @@ def main():
         print("wrote lost examples to", args.lost)
     if args.wrong:
         WRONG = RESU.copy()
-        WRONG.subtract(examples_fst)
+        WRONG.subtract(cfg.examples_fst)
         WRONG.minimize()
         wrong_stream = hfst.HfstOutputStream(filename=args.wrong)
         wrong_stream.write(WRONG)
