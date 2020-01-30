@@ -1,0 +1,78 @@
+m  =  Bilabial, Voiced, Nasal,,,
+p  =  Bilabial, Unvoiced, Stop,,,
+b  =  Bilabial, Voiced, Stop,,,
+v  =  Labiodental, Voiced, Fricative,,,
+f  =  Labiodental, Unvoiced, Fricative,,,
+t  =  Dental, Unvoiced, Stop,,,
+z  =  Dental, Unvoiced, Affricate,,,
+s  =  Alveolar, Unvoiced, Sibilant,,,
+d  =  PostAlveolar, Voiced, Stop,,,
+n  =  PostAlveolar, Voiced, Nasal,,,
+š  =  PostAlveolar, Unvoiced, Sibilant,,,  #  IPA ʃ
+ž  =  PostAlveolar, Voiced, Sibilant,,,  #  IPA ʒ
+r  =  PostAlveolar, Voiced, Trill,,,
+l  =  PostAlveolar, Voiced, Lateral,,,
+j  =  Palatal, Voiced, Approximant, SemiVowel, Front, Unrounded
+k  =  Velar, Unvoiced, Stop,,,
+g  =  Velar, Voiced, Stop,,,
+ŋ  =  Velar, Voiced, Nasal,,,
+h  =  Glottal, Unvoiced, Fricative,,,
+
+Bilabial Labiodental Dental Alveolar PostAlveolar Palatal Velar Glottal = 50
+Bilabial Labiodental Dental Alveolar PostAlveolar = 30
+Bilabial Labiodental = 20
+Dental PostAlveolar = 20
+Alveolar PostAlveolar Palatal = 20
+Velar Bilabial = 20
+Velar Labiodental = 20
+
+Unvoiced Voiced = 20
+
+Stop Fricative Sibilant Affricate Trill Lateral Approximant Nasal = 70
+Stop Sibilant Fricative Affricate = 10
+Sibilant Nasal = 30
+Stop Nasal = 20
+Fricative Nasal = 20
+Stop Sibilant Fricative Lateral Trill = 40
+
+i  =  ,,, Close, Front, Unrounded
+:ü =  ,,, Close, Front, Rounded  #  Estonian ü, IPA y
+y: =  ,,, Close, Front, Rounded  #  Estonian ü, IPA y
+u  =  ,,, Close, Back, Rounded
+e  =  ,,, CloseMid, Front, Unrounded
+ö  =  ,,, CloseMid, Front, Rounded  #  IPA ø
+o  =  ,,, CloseMid, Back, Rounded
+:õ =  ,,, CloseMid, Back, Unrounded  #  Estonian õ, IPA ɤ
+ä  =  ,,, OpenMid, Front, Unrounded  #  IPA æ
+a  =  ,,, Open, Back, Unrounded  #  IPA ɑ
+
+SemiVowel Close CloseMid OpenMid Open = 70
+Close CloseMid OpenMid Open = 20
+Close CloseMid = 10
+Close CloseMid Open = 15
+CloseMid Open = 10
+OpenMid Open = 0
+SemiVowel Close = 10
+SemiVowel CloseMid = 60
+
+Front Back = 10
+
+Unrounded Rounded = 10
+
+Zero += 25 10
+
+
+j:i::5
+y:ũ::0
+o:õ::5
+X:Ø::10 FOR X IN Vowels
+Ø:X::10 FOR X IN Vowels
+X:Ø::25 FOR X IN Consonants
+X:X X:Ø::5 FOR X IN Consonants
+X:X Ø:X::5 FOR X IN Consonants
+X:X X:Ø::5 FOR X IN Vowels
+X:X Ø:X::5 FOR X IN Vowels
+y:ü Ø:ü::5
+y:ü y:Ø::5
+o:õ Ø:õ::5
+o:õ o:Ø::5
