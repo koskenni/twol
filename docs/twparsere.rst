@@ -1,4 +1,4 @@
-.. warning:: This document is under construction
+.. warning:: This document is under construction and no implementation is available at present.
 
 
 ===================================================
@@ -56,4 +56,4 @@ Each such position can then be tested against the list of context.  Each context
 Creating negative examples
 ==========================
 
-See ...
+The same method as in twol-discov could be used here for creating negative examples, see :doc:`discovery`.

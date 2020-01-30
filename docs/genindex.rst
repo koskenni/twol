@@ -2,9 +2,8 @@
 Index
 =====
 
-Indices and tables
-==================
+Search
+------
 
 * :ref:`search`
-* :ref:`modindex`
-* :ref:`genindex`
+

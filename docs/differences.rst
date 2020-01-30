@@ -15,7 +15,7 @@ The simplified two-level morphology differs in several respects from the standar
      
      k a u p {pØ}:Ø {ao}:a s s {aä}:a
 
-   The alphabet (morphophonemes or input symbols, surface phonemes or output symbols and the set of allowed symbol pairs) is deduced from the examples.  The twol.py compiler neither needs nor accepts alphabet or character set definitions.  A set of examples needs to be converted into a FST before the compilation, see :doc:`twexamp`.
+   The alphabet (morphophonemes or input symbols, surface phonemes or output symbols and the set of allowed symbol pairs) is deduced from the examples.  The twol.py compiler neither needs nor accepts alphabet or character set definitions.  A set of examples needs to be converted into a FST before the compilation, see :doc:`twol.twexamp`.
 
 2. In the simplified model, there is a strong recommendation that :term:`morphophonemes <morphophoneme>` inicate clearly what phonemes it may correspond on the surface, e.g. use ``{aä}`` if it represents an alternation between ``a`` and ``ä``.  It is recommended to use curly braces to indicate morphophonemes.  The syntax for expressions has been simplified so that these special characters are now free for that purpose.  The morphophonemes must never occur as output symbols, e.g. ``{äa}:{aä}`` is not recommended.
 
@@ -23,7 +23,7 @@ The simplified two-level morphology differs in several respects from the standar
 
 3. :term:`Deletion <deletion>` and :term:`epenthesis` are not treated as :term:`epsilons <epsilon>`.  Instead, a deletion is represented as a concete :term:`zero symbol <zero>`, e.g. ``Ø`` on the surface level.  The corresponding lexical symbol is always a morphophoneme, e.g. ``{pØ}``.  In the lexical representations, epenthesis is also represented as a morphophoneme, e.g. as ``{Øh}`` if, in the surface forms, an ``h`` alternates with nothing according to the context.  In such cases, the surface form of the examples has a zero ``Ø`` in that position.  Different surface allomorphs are made equally long by inserting zeros as needed.
 
-4. The twol.py compiler is incremental as it compiles each rule separately and immediately tests the newly compiled rule against positive and negative examples.  See :doc:`twdiscov`, :doc:`compiletest` and :doc:`twrule` for further information.
+4. The twol.py compiler is incremental as it compiles each rule separately and immediately tests the newly compiled rule against positive and negative examples.  See :doc:`discovery`, :doc:`compiletest` and :doc:`twol.twrule` for further information.
 
 .. index:: alphabet
 

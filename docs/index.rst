@@ -8,7 +8,7 @@ Welcome to twol's documentation!
 
 .. toctree::
    :numbered:
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents:
    :includehidden:
 
@@ -21,22 +21,14 @@ Welcome to twol's documentation!
    lexguessing
    technical
    ofitwol
-   glossary
-   genindex
-   modules
    differences
    twparsere
-
-..   twexamp
-..   twrule
-..   cfg
-..   fs
-
+   modules
+   glossary
+   genindex
 
 Indices and tables
 ==================
 
 * :ref:`search`
-* :ref:`modindex`
-* :ref:`genindex`
 

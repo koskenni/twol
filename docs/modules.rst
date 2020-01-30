@@ -17,7 +17,7 @@ Modules of the twol package
    twol.twbt
    twol.twdiscov
    twol.twexamp
-   twol.twol
+   twol.twolcomp
    twol.twparser
    twol.twrule
    twol.words2zerofilled

@@ -27,7 +27,7 @@ In the following, a method is presented for constructing such a :term:`morphopho
 
 The process consists of four scripts:
 
-The input for the first step is a CSV table which one can produce using a spreadsheet proghram and by saving the table as :term:`CSV` file, e.g.::
+The input for the first step is a CSV table which one can produce using a spreadsheet program and by saving the table as :term:`CSV` file, e.g.::
 
    ID,STM,STM INE,STM ESS,STM PL INE
    MÄKI,mäki,mäe.ssä,mäke.nä,mä.i.ssä

@@ -201,5 +201,23 @@ and your program would print::
   ['mmm', 'iii', 'eee', 'shh', 'ØeØ']
   
 
+``twol-aligner``
+----------------
 
+This is an alternative to ``twol-multialign`` which is restrected to aligning exactly two cognate forms at a time.  In return, it can use a more powerful ways than *multialign* to define weights.  In particular, it can express preferences or explicit lower weights for some correspondences by listing them as weighted regular expressions, e.g.::
+
+  o:õ::5
+
+This expression gives an explicit weight of 5 for ``o`` corresponding to ``õ``.  The expressions may consist of more than one pair, e.g.::
+
+  x:k Ø:s::2
+
+Furthermore, one may refer to the whole classes of vowels or consonants by using a ``... FOR ... IN ...`` clause, e.g.::
+
+  X:X X:Ø::5 FOR X IN Consonants
+  X:X Ø:X::5 FOR X IN Consonants
+  X:X X:Ø::5 FOR X IN Vowels
+  X:X Ø:X::5 FOR X IN Vowels
+
+These clauses would relax the weight for consonant or vowel lengthening and shortening.  Shortening or lengthening is common in languages and should recieve a lighter weight than deletions or epenthesis in general.  Such practice appears to result in good alignments. 
 

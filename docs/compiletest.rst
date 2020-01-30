@@ -7,7 +7,7 @@ Compiling and testing the rules
 Required files and packages
 ===========================
 
-Before you can start using the ``twol.py`` compiler, you have to see that all necessary parts are available.  In order to run properly, the compiler needs:
+Before you can start using the ``twol-comp`` compiler, you have to see that all necessary parts are available.  In order to run properly, the compiler needs:
 
 1. modules *twexamp.py*, *cfg.py*, *fs.py*, *twbt.py*, *twparser.py*, *twrule.py* and *twolcsyntax.ebnf* which come along when you perform ``git clone`` or ``git pull`` commands
 
