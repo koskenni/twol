@@ -19,7 +19,8 @@ def main():
     argparser.add_argument(
         "alphabet",
         default="alphabet-test.text",
-        help="An alphabet definition which determines the weights for morphophonemes")
+        help="An alphabet definition which determines"\
+        " the weights for morphophonemes")
     argparser.add_argument(
         "-s", "--morph-separator",
         default=".",
@@ -30,8 +31,9 @@ def main():
         help="delimiter between the fields")
     argparser.add_argument(
         "-n", "--name-separator",
-        default=" ",
-        help="separator between morpheme names in the morpheme list")
+        default=".",
+        help="separator between morpheme names"\
+        " in the morpheme list,, default is '.'")
     argparser.add_argument(
         "-z", "--zero-symbol",
         default="Ø",

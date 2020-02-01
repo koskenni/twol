@@ -1,16 +1,12 @@
 """Module for compiling two-level rules out of FSTs for the components.
 """
-__author__ = "© Kimmo Koskenniemi, 2018"
-__version__ = "0.7.1"
+__author__ = "© Kimmo Koskenniemi, 2018 - 2020"
+__version__ = "2020-02-01"
 import re
 import hfst
-#import cfg
 import twol.cfg as cfg
-#import fs
 import twol.fs as fs
-#import twbt
 import twol.twbt as twbt
-#import twexamp
 import twol.twexamp as twexamp
 
 def init():
@@ -84,9 +80,9 @@ def init():
 def quote(str):
     """Protect '{' and '}' with a % in xerox regular expressions.
 
->>> quote("a {ij}:j [a:c | b]")
-"a %{ij%}:j [a:c | b]"
-"""
+    >>> quote("a {ij}:j [a:c | b]")
+    "a %{ij%}:j [a:c | b]"
+    """
     return(re.sub(r"([{'}])", r"%\1", str))
 
 def e(str):
@@ -107,7 +103,8 @@ def e(str):
         twbt.ppfst(F) ##
     return(F)
 
-def generalized_restriction(precondition_fst, postcondition_fst):
+def generalized_restriction(precondition_fst,
+                            postcondition_fst):
     """Combines the precondition FST and the postcondition FST into a rule FST.
 
     Conditions are formed out of the center/contexts of a rule.
@@ -173,7 +170,8 @@ def begin_end(expr_fst):
     # twbt.ppfst(result_fst, True) ##
     return(result_fst)
 
-def context_to_condition(left_context_fst, right_context_fst):
+def context_to_condition(left_context_fst,
+                         right_context_fst):
     """Convert one context into a condition (for the generalized restriction)
     
     left_context_fst -- the left context as an FST
@@ -395,7 +393,8 @@ def input_coercion(name, x_fst, *contexts):
     
     x_fst -- the center (X) of the rule
     
-    \*contexts -- list of contexts, i.e. pairs of left and right context
+    \*contexts -- list of contexts, i.e. pairs of left and right
+    context
     
     Returns a triple:
     rule_fst -- the compiled rule
@@ -429,7 +428,8 @@ def doublearrow(name, x_fst, *contexts):
     
     x_fst -- the center (X) of the rule
     
-    \*contexts -- list of contexts, i.e. pairs of left and right context
+    \*contexts -- list of contexts, i.e. pairs of left and right
+    context
     
     Returns a triple:
     
@@ -439,6 +439,7 @@ def doublearrow(name, x_fst, *contexts):
     this rule
     
     scrambler_fst -- an encoded FST which produces negative examples
+
     """
     rule_fst, selector_fst, scrambler_fst = rightarrow(name, x_fst, *contexts)
     rule2_fst, selector2_fst, scrambler2_fst = output_coercion(name, x_fst, *contexts)

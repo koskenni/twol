@@ -19,7 +19,6 @@ Welcome to twol's documentation!
    discovery
    compiletest
    lexguessing
-   technical
    ofitwol
    differences
    twparsere

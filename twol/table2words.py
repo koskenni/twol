@@ -11,7 +11,8 @@ def step1():
     import argparse
     argparser = argparse.ArgumentParser(
         "python3 paratab2segcsv.py",
-        description="Converts a tabular csv paradigm into a example per row as a CSV file")
+        description="Converts a tabular csv paradigm into"\
+        " a example per row as a CSV file")
     argparser.add_argument(
         "input",
         default="ksk-paradigms.csv",
@@ -30,8 +31,9 @@ def step1():
         help="CSV delimiter between the two fields, default is ','")
     argparser.add_argument(
         "-n", "--name-separator",
-        default=" ",
-        help="Separator between morpheme names in the morpheme list, default is ' '")
+        default=".",
+        help="Separator between morpheme names"\
+        " in the morpheme list, default is '.'")
     argparser.add_argument(
         "-z", "--zero-symbol",
         default="Ø",
