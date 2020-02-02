@@ -10,14 +10,14 @@ This is free software according to GNU GPL 3 license.
 
 def main():
 
-    version = "2020-01-26"
+    version = "2020-02-01"
     
     import argparse
     arpar = argparse.ArgumentParser(
         "twol-aligner",
         description="Aligns pairs of words separated by a colon. See"\
         " https://pytwolc.readthedocs.io/en/latest/alignment.html"\
-        " for detailed instructions. {}".format(version))
+        " for detailed instructions. Version {}".format(version))
     arpar.add_argument(
         "metrics",
         help="FST computed with twol-metric from an alphabet file."\

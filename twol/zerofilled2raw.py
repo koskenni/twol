@@ -15,10 +15,16 @@ languages).
 """
 
 def main():
+
+    version = "2020-02-01"
+    
     import argparse
     argparser = argparse.ArgumentParser(
         "python3 zerofilled2raw.py",
-        description="Forms raw morphophonemes out of zero-filled morphs")
+        description="Forms raw morphophonemes out of zero-filled"\
+        " morphs and produces a space-separated pair string"\
+        " representation for the word suitable for"\
+        " twol-comp or twol-discov. Version {}".format(version))
     argparser.add_argument(
         "input",
         default="ksk-zerofilled.csv",
@@ -26,27 +32,29 @@ def main():
     argparser.add_argument(
         "output",
         default="ksk-raw-examp.csv",
-        help="example word with raw morhpophonemes as a CSV file")
+        help="The output file in CSV format with a new column"\
+        " where the words are represented with raw"\
+        " morhpophonemes from zero-filling.")
     argparser.add_argument(
         "affix_info",
         default="demo-affix-info.csv",
-        help="principal forms and morphophonemic affixes as a CSV file")
+        help="Principal forms and morphophonemic affixes as a CSV file")
     argparser.add_argument(
         "-s", "--morph-separator",
         default=".",
-        help="separator between morphs in the word form")
+        help="Separator between morphs in the word form")
     argparser.add_argument(
         "-d", "--csv-delimiter",
         default=",",
-        help="delimiter between the fields")
+        help="Delimiter between the fields")
     argparser.add_argument(
         "-n", "--name-separator",
         default=" ",
-        help="separator between morpheme names in the morpheme list")
+        help="Separator between morpheme names in the morpheme list")
     argparser.add_argument(
         "-z", "--zero-symbol",
         default="Ø",
-        help="symbol inserted in word forms to align them")
+        help="Symbol inserted in word forms to align them")
     argparser.add_argument(
         "-v", "--verbosity",
         default=0,

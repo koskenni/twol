@@ -14,8 +14,6 @@ import twol.alphabet as alphabet
 
 def remove_bad_transitions(fsa):
     """Copy the FSA excluding transitions with consonants and vowels"""
-    #from twolalign.alphabet import mphon_is_valid
-    #from twolalign.cfg import verbosity
     old_bfsa = hfst.HfstBasicTransducer(fsa)
     new_bfsa = hfst.HfstBasicTransducer()
     for state in old_bfsa.states():
@@ -46,7 +44,6 @@ def shuffle_with_zeros(string, target_length):
     Returns a fsa which accepts all the strings with the inserted zeros.
     All strings have exactly target_length symbols.
     """
-    #from twol.cfg import verbosity
     from twol.fs import string_to_fsa
     
     ### result_fsa = hfst.fst(string) # not correct for composed graphemes !!!
@@ -66,9 +63,6 @@ def shuffle_with_zeros(string, target_length):
 def set_weights(fsa):
     """Sets weights to transitions using mphon_weight()
     """
-    #from twolalign.alphabet import mphon_weight
-    #from twolalign.cfg import verbosity
-    
     bfsa = hfst.HfstBasicTransducer(fsa)
     for state in bfsa.states():
         for arc in bfsa.transitions(state):
@@ -90,8 +84,6 @@ def multialign(strings, target_length):
     if the target lenght is too small and also that there may be
     all-zero correspondences if the target length is too long.
     """
-    #from twol.cfg import verbosity
-    
     s1 = strings[0]
     fsa = shuffle_with_zeros(s1, target_length)
     for string in strings[1:]:
@@ -238,7 +230,7 @@ def main():
     import hfst
     import grapheme
 
-    version = "2020-01-26"
+    version = "2020-02-01"
     import argparse
     arpar = argparse.ArgumentParser(
         "twol-multialign",
@@ -246,7 +238,7 @@ def main():
         " by inserting Ø symbols to make them equal length so that"\
         " similar phonemes correspond to each other. See"\
         " https://pytwolc.readthedocs.io/en/latest/alignment.html"\
-        " for detailed instructions. {}".format(version))
+        " for detailed instructions. Version {}".format(version))
     arpar.add_argument("alphabet",
         help="A file which defines the phonemes through their distinctive features",
         default="")
@@ -267,14 +259,14 @@ def main():
     arpar.add_argument("-v", "--verbosity",
         help="Level of diagnostic output",
         type=int, default=0)
-    arpar.add_argument("-z", "--zeros",
+    arpar.add_argument("-x", "--extra-zeros",
         help="Number of extra zeros allowed beyond the minimum",
         type=int, default=1)
     args = arpar.parse_args()
 
     cfg.verbosity = args.verbosity
 
-    alphabet.read_alphabet(args.alphabet, cfg.verbosity)
+    alphabet.read_alphabet(args.alphabet)
 
     if args.final:
         cfg.final = args.final
@@ -296,7 +288,7 @@ def main():
         words = line.split()
         comment = number + " ".join(words)
             
-        best = aligner(words, args.zeros, line) # returns a list of morphoponemes
+        best = aligner(words, args.extra_zeros, line) # returns a list of morphoponemes
         if args.weights:
             weight = 0
             for mphon in best:

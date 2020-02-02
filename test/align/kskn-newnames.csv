@@ -14,6 +14,7 @@
 {aä},,+maass<a> päät<ä> tiell<ä>
 {dt},,+mai<d>en mai<t>ten
 {dtdttt},{td},+äi<d>yt äi<t>yen
+{dtdtttt},{td},+äi<d>yt äi<t>yen
 {eeeeeØ},{eeØ},+korke<e> korke<>ita leve<e>tä leve<>isiin
 {eeeeØ},{eeØ},+kame<e> kame<>ita
 {eeØeØØØ},{eeØØ},+hevon<e>n hevos<e>n hevos<>ta hevos<>na hevos<>ia
@@ -77,6 +78,8 @@
 {tØttt},{tØ},+pat<t>i pat<>in
 {tØtttØ},{tØØ},+ilmet<t>y ilmet<>yn ilmet<t>yä ilmet<t>yjä ilmet<>yitä
 {tØtØØh},{tØthn},+airu<t> airu<>en airu<t>ta airu<>ena airu<>ita airu<h>ia airu<>isiin airu<h>isin
+{tØtØhØh},{tØthn},+airu<t> airu<>en airu<t>ta airu<>ena airu<>ita airu<h>ia airu<>isiin airu<h>isin
+{tØtØhØh},{tØthn},+airu<t> airu<>en airu<t>ta airu<>ena airu<>ita airu<h>ia airu<>isiin airu<h>isin
 {ueeueeuee},{ue},+kuoll<u>t kuoll<e>en kuoll<u>tta kuoll<e>ena kuoll<e>hena kuoll<e>isiin kuoll<e>hisin
 {uuuuØ},{uØ},+pu<u> pu<u>n pu<>ita
 {yyyyØ},{yØ},+<y>ö <y>ön <>öitä
@@ -90,6 +93,7 @@
 {ØeeØeØ},{ØeØeØ},+askele<> askele<e>n askelet<>ta askele<>ita askele<>isiin
 {ØeØeØ},{ØeØeØ},+uistin<> uistim<e>n uistin<>ta uistim<e>na uistim<>ia vastaus<> vastauks<e>n vastaus<>ta
 {ØeØeØØ},{ØeØØØ},+ahven<> ahven<e>n ahven<>ta ahven<e>na ahven<>na ahven<>ia airut<>ten 
+{ØeØeeØØ},{ØeØØØ},+airut<>ten
 {ØeØeØØØ},{ØeØØØ},+mies<> mieh<e>n mies<>tä mieh<e>nä mies<>nä mies<>sä mieh<>iä
 {ØaaØaaØØ},{ØaØaØ},?? koras<> koiraks<e>n koira<a>n
 {Øh},,+nallei<h>in kaloi<h>in koiri<>in lohe<>en arvelui<h>in

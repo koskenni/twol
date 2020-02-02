@@ -8,11 +8,13 @@
 def step1():
     import csv, re, sys
 
+    version = "2020-02-01"
+
     import argparse
     argparser = argparse.ArgumentParser(
         "python3 paratab2segcsv.py",
         description="Converts a tabular csv paradigm into"\
-        " a example per row as a CSV file")
+        " one example per row CSV file. Version {} ".format(version))
     argparser.add_argument(
         "input",
         default="ksk-paradigms.csv",
@@ -37,7 +39,8 @@ def step1():
     argparser.add_argument(
         "-z", "--zero-symbol",
         default="Ø",
-        help="symbol to be inserted in word forms in order to align them, default is Ø")
+        help="Symbol to be inserted in word forms in order to"\
+        " align them, default is Ø.  You are discouraged to change it.")
     args = argparser.parse_args()
 
     out_file = open(args.output, "w")

@@ -1,99 +1,99 @@
 ID,KSK,STM,STM.GEN,STM.PTV,STM.ESS,STM.ILL,STM.ILLseen,STM.PL.INE,STM.PL.GENiden,STM.PL.GENien,STM.PLGENten,STM.GENin,STM.PL.PTV,STM.PL.ILL,STM.PL.ILLsiin
-ARKKU,1,arkku,arku.n,arkku.a,arkku.na,arkku.un [arkku.hun],,arku.i.ssa,,arkku.j.en,,(arkku.in),arkku.j.a,arkku.i.hin,
-PATO,1,pato,pado.n,pato.a,pato.na,pato.on [pato.hon],,pado.i.ssa,,pato.j.en,,(pato.in),pato.j.a,pato.i.hin,
-ARVELU,2,arvelu,arvelu.n,arvelu.a,arvelu.na,arvelu.un [arvelu.hun],,arvelu.i.ssa,arvelu.i.den arvelu.i.tten,arvelu.j.en,,(arvelu.in),arvelu.j.a arvelu.i.ta,arvelu.i.hin,
-ILMETTY,2,ilmetty,ilmety.n,ilmetty.ä,ilmetty.nä,ilmetty.yn [ilmetty.hyn],,ilmety.i.ssä,ilmety.i.den ilmety.i.tten,ilmetty.j.en,,(ilmetty.in),ilmetty.j.ä ilmety.i.tä,ilmetty.i.hin,
-SISÄKKÖ,2,sisäkkö,sisäkö.n,sisäkkö.ä,sisäkkö.nä,sisäkkö.ön [sisäkkö.hön],,sisäkö.i.ssä,sisäkö.i.den sisäkö.i.tten,sisäkkö.j.en,,(sisäkkö.in),sisäkkö.j.ä sisäkö.i.tä,sisäkkö.i.hin sisäkö.i.hin,
-AUTIO,3,autio,autio.n,autio.ta (autio.a),autio.na,autio.on [autio.hon],,autio.i.ssa,autio.i.den autio.i.tten,,,(autio.in),autio.i.ta,autio.i.hin,
-HEITTIÖ,3,heittiö,heittiö.n,heittiö.tä (heittiö.ä),heittiö.nä,heittiö.ön [heittiö.hön],,heittiö.i.ssä,heittiö.i.den heittiö.i.tten,,,(heittiö.in),heittiö.i.tä,heittiö.i.hin,
-VATI,4,vati,vadi.n,vati.a,vati.na,vati.in [vati.hin],,vade.i.ssa,,vat.i.en,,(vate.in),vate.j.a,vate.i.hin,
-PATTI,4,patti,pati.n,patti.a,patti.na,patti.in [patti.hin],,pate.i.ssa,,patt.i.en,,(patte.in),patte.j.a,patte.i.hin,
-PAPERI,5,paperi,paperi.n,paperi.a,paperi.na,paperi.in [paperi.hin],,papere.i.ssa,papere.i.den papere.i.tten,paper.i.en,,(papere.in),papere.j.a papere.i.ta,papere.i.hin,
-BANAALI,6,banaali,banaali.n,banaali.a,banaali.na,banaali.in [banaali.hin],,banaale.i.ssa,(banaale.i.den) (banaale.i.tten),banaal.i.en,,(banaale.in),banaale.j.a (banaale.i.ta),banaale.i.hin,
-KALSIUM,7,kalsium,kalsiumi.n,kalsiumi.a,kalsiumi.na,kalsiumi.in [kalsiumi.hin],,kalsiume.i.ssa,,kalsium.i.en,,(kalsiume.in),kalsiume.j.a,kalsiume.i.hin,
-TUPPI,8,tuppi,tupe.n,tuppe.a,tuppe.na,tuppe.en [tuppe.hen],,tup.i.ssa,,tupp.i.en,,(tuppe.in),tupp.i.a,tupp.i.in [tupp.i.hin],
-NALLE,9,nalle,nalle.n,nalle.a,nalle.na,nalle.en [nalle.hen],,nalle.i.ssa,,[nalle.j.en],,nalle.in,nalle.j.a,nalle.i.hin,
-KALA,10,kala,kala.n,kala.a,kala.na,kala.an [kala.han],,kalo.i.ssa,,kalo.j.en,,kala.in,kalo.j.a,kalo.i.hin,
-KOIRA,11,koira,koira.n,koira.a,koira.na,koira.an [koira.han],,koir.i.ssa,,koir.i.en,,koira.in,koir.i.a,koir.i.in [koir.i.hin],
-MATALA,12,matala,matala.n,matala.a (matala.ta),matala.na,matala.an [matala.han],,matal.i.ssa (matalo.i.ssa),matalo.i.den matalo.i.tten,matal.i.en (matalo.j.en),,matala.in,matal.i.a (matalo.i.ta),matal.i.in matalo.i.hin [matal.i.hin],
-ASEMA,13,asema,asema.n,asema.a (asema.ta),asema.na,asema.an [asema.han],,asem.i.ssa,,asem.i.en,,asema.in,asem.i.a,asem.i.in [asem.i.hin],
-KULKIJA,14,kulkija,kulkija.n,kulkija.a (kulkija.ta),kulkija.na,kulkija.an [kulkija.han],,kulkijo.i.ssa,kulkijo.i.den kulkijo.i.tten,,,kulkija.in,kulkijo.i.ta,kulkijo.i.hin,
-MANSIKKA,15,mansikka,mansika.n,mansikka.a (mansikka.ta),mansikka.na,mansikka.an [mansikka.han],,mansiko.i.ssa,mansiko.i.den mansiko.i.tten,mansikko.j.en,,mansikka.in,mansiko.i.ta mansikko.j.a,mansikko.i.hin mansiko.i.hin,
-HARAKKA,15,harakka,haraka.n,harakka.a (harakka.ta),harakka.na,harakka.an [harakka.han],,harako.i.ssa,harako.i.den harako.i.tten,harakko.j.en,,harakka.in,harako.i.ta harakko.j.a,harakko.i.hin harako.i.hin,
-KANTAJA,16,kantaja,kantaja.n,kantaja.a (kantaja.ta),kantaja.na,kantaja.an [kantaja.han],,kantaj.i.ssa (kantajo.i.ssa),(kantajo.i.den) (kantajo.i.tten),kantaj.i.en,,kantaja.in,kantaj.i.a (kantajo.i.ta),kantaj.i.in (kantajo.i.hin) [kantaj.i.hin],
-PERUNA,17,peruna,peruna.n,peruna.a (peruna.ta),peruna.na,peruna.an [peruna.han],,peruno.i.ssa (perun.i.ssa),peruno.i.den peruno.i.tten,(perun.i.en) (peruno.j.en),,peruna.in,peruno.i.ta (perun.i.a) (peruno.j.a),peruno.i.hin (perun.i.in) [perun.i.hin],
-PASUUNA,18,pasuuna,pasuuna.n,pasuuna.a (pasuuna.ta),pasuuna.na,pasuuna.an [pasuuna.han],,pasuuno.i.ssa (pasuun.i.ssa),pasuuno.i.den pasuuno.i.tten,pasuuno.j.en (pasuun.i.en),,pasuuna.in,pasuuno.i.ta pasuuno.j.a (pasuun.i.a),pasuuno.i.hin (pasuun.i.in) [pasuun.i.hin],
-AINOA,19,ainoa,ainoa.n,ainoa.a ainoa.ta,ainoa.na,ainoa.an [ainoa.han],,aino.i.ssa,aino.i.den aino.i.tten,,,ainoa.in,aino.i.ta,aino.i.hin,aino.i.siin
-AINOO,19,(ainoo),(ainoo.n),(ainoo.ta),(ainoo.na),,[ainoo.seen],aino.i.ssa,aino.i.den aino.i.tten,,,,aino.i.ta,aino.i.hin,aino.i.siin
-HERTTUA,20,herttua,herttua.n,herttua.a herttua.ta,herttua.na,herttua.an [herttua.han],,herttuo.i.ssa (herttu.i.ssa),herttuo.i.den herttuo.i.tten (herttu.i.den) (herttu.i.tten),,,herttua.in,herttuo.i.ta (herttu.i.ta),herttuo.i.hin (herttu.i.hin),
-KORKEA,21,korkea *(korkia),korkea.n,korkea.a korkea.ta,korkea.na,korkea.an [korkea.han],,korke.i.ssa (korkeo.i.ssa),korke.i.den korke.i.tten (korkeo.i.den) (korkeo.i.tten),,,korkea.in,korke.i.ta (korkeo.i.ta),korke.i.hin (korkeo.i.hin),korke.i.siin 
-?KORKEE,21,(korkee),[korkehe.n] (korkee.n),(korkee.ta),(korkee.na),,[korkee.seen],korke.i.ssa,korke.i.den korke.i.tten  (korkeh.i.tten),(korkeh.i.en),,,korke.i.ta,korke.i.hin,korke.i.siin 
-LEVEÄ,21,leveä *(leviä),leveä.n,leveä.ä leveä.tä,leveä.nä,leveä.än [leveä.hän],,leve.i.ssä (leveö.i.ssä),leve.i.den leve.i.tten (leveö.i.den) (leveö.i.tten),,,leveä.in,leve.i.tä (leveö.i.tä),leve.i.hin (leveö.i.hin),leve.i.siin 
-?LEVEE,21,(levee),(levee.n) [levehe.n],(levee.tä),(levee.nä),,[levee.seen],leve.i.ssä,leve.i.den leve.i.tten (leveh.i.tten),(leveh.i.en),,,leve.i.tä,leve.i.hin,leve.i.siin 
-VAPAA,23,vapaa,vapaa.n (vapaha.n),vapaa.ta,vapaa.na (vapaha.na),[vapaa.han],vapaa.seen (vapaha.sen),vapa.i.ssa (vapah.i.ssa),vapa.i.den vapa.i.tten (vapah.i.tten),(vapah.i.en),,,vapa.i.ta (vapah.i.a),,vapa.i.siin (vapah.i.sin)
-TIENOO,24,tienoo,tienoo.n (tienoho.n),tienoo.ta,tienoo.na (tienoho.na),[tienoo.hon],tienoo.seen (tienoho.sen),tieno.i.ssa (tienoh.i.ssa),tieno.i.den tieno.i.tten (tienoh.i.tten),(tienoh.i.en),,,tieno.i.ta (tienoh.i.a),tieno.i.hin,tieno.i.siin (tienoh.i.sin)
-LEIKKUUU,25,leikkuu,leikkuu.n,leikkuu.ta,leikkuu.na,[leikkuu.hun],leikkuu.seen,leikku.i.ssa,leikku.i.den leikku.i.tten,,,,leikku.i.ta,leikku.i.hin,leikku.i.siin
-KAMEE,26,kamee,kamee.n,kamee.ta,kamee.na,kamee.hen,kamee.seen,kame.i.ssa,kame.i.den kame.i.tten,,,,kame.i.ta,kame.i.hin,kame.i.siin
-PII,27,pii,pii.n,pii.tä,pii.nä,pii.hin,,pi.i.ssä,pi.i.den pi.i.tten,,,,pi.i.tä,pi.i.hin,
+ARKKU,1,arkku,arku.n,arkku.a,arkku.na,"arkku.un [arkku.hun]",,arku.i.ssa,,arkku.j.en,,(arkku.in),arkku.j.a,arkku.i.hin,
+PATO,1,pato,pado.n,pato.a,pato.na,"pato.on [pato.hon]",,pado.i.ssa,,pato.j.en,,(pato.in),pato.j.a,pato.i.hin,
+ARVELU,2,arvelu,arvelu.n,arvelu.a,arvelu.na,"arvelu.un [arvelu.hun]",,arvelu.i.ssa,"arvelu.i.den arvelu.i.tten",arvelu.j.en,,(arvelu.in),"arvelu.j.a arvelu.i.ta",arvelu.i.hin,
+ILMETTY,2,ilmetty,ilmety.n,ilmetty.ä,ilmetty.nä,"ilmetty.yn [ilmetty.hyn]",,ilmety.i.ssä,"ilmety.i.den ilmety.i.tten",ilmetty.j.en,,(ilmetty.in),"ilmetty.j.ä ilmety.i.tä",ilmetty.i.hin,
+SISÄKKÖ,2,sisäkkö,sisäkö.n,sisäkkö.ä,sisäkkö.nä,"sisäkkö.ön [sisäkkö.hön]",,sisäkö.i.ssä,"sisäkö.i.den sisäkö.i.tten",sisäkkö.j.en,,(sisäkkö.in),"sisäkkö.j.ä sisäkö.i.tä","sisäkkö.i.hin sisäkö.i.hin",
+AUTIO,3,autio,autio.n,"autio.ta (autio.a)",autio.na,"autio.on [autio.hon]",,autio.i.ssa,"autio.i.den autio.i.tten",,,(autio.in),autio.i.ta,autio.i.hin,
+HEITTIÖ,3,heittiö,heittiö.n,"heittiö.tä (heittiö.ä)",heittiö.nä,"heittiö.ön [heittiö.hön]",,heittiö.i.ssä,"heittiö.i.den heittiö.i.tten",,,(heittiö.in),heittiö.i.tä,heittiö.i.hin,
+VATI,4,vati,vadi.n,vati.a,vati.na,"vati.in [vati.hin]",,vade.i.ssa,,vat.i.en,,(vate.in),vate.j.a,vate.i.hin,
+PATTI,4,patti,pati.n,patti.a,patti.na,"patti.in [patti.hin]",,pate.i.ssa,,patt.i.en,,(patte.in),patte.j.a,patte.i.hin,
+PAPERI,5,paperi,paperi.n,paperi.a,paperi.na,"paperi.in [paperi.hin]",,papere.i.ssa,"papere.i.den papere.i.tten",paper.i.en,,(papere.in),"papere.j.a papere.i.ta",papere.i.hin,
+BANAALI,6,banaali,banaali.n,banaali.a,banaali.na,"banaali.in [banaali.hin]",,banaale.i.ssa,"(banaale.i.den) (banaale.i.tten)",banaal.i.en,,(banaale.in),"banaale.j.a (banaale.i.ta)",banaale.i.hin,
+KALSIUM,7,kalsium,kalsiumi.n,kalsiumi.a,kalsiumi.na,"kalsiumi.in [kalsiumi.hin]",,kalsiume.i.ssa,,kalsium.i.en,,(kalsiume.in),kalsiume.j.a,kalsiume.i.hin,
+TUPPI,8,tuppi,tupe.n,tuppe.a,tuppe.na,"tuppe.en [tuppe.hen]",,tup.i.ssa,,tupp.i.en,,(tuppe.in),tupp.i.a,"tupp.i.in [tupp.i.hin]",
+NALLE,9,nalle,nalle.n,nalle.a,nalle.na,"nalle.en [nalle.hen]",,nalle.i.ssa,,[nalle.j.en],,nalle.in,nalle.j.a,nalle.i.hin,
+KALA,10,kala,kala.n,kala.a,kala.na,"kala.an [kala.han]",,kalo.i.ssa,,kalo.j.en,,kala.in,kalo.j.a,kalo.i.hin,
+KOIRA,11,koira,koira.n,koira.a,koira.na,"koira.an [koira.han]",,koir.i.ssa,,koir.i.en,,koira.in,koir.i.a,"koir.i.in [koir.i.hin]",
+MATALA,12,matala,matala.n,"matala.a (matala.ta)",matala.na,"matala.an [matala.han]",,"matal.i.ssa (matalo.i.ssa)","matalo.i.den matalo.i.tten","matal.i.en (matalo.j.en)",,matala.in,"matal.i.a (matalo.i.ta)","matal.i.in matalo.i.hin [matal.i.hin]",
+ASEMA,13,asema,asema.n,"asema.a (asema.ta)",asema.na,"asema.an [asema.han]",,asem.i.ssa,,asem.i.en,,asema.in,asem.i.a,"asem.i.in [asem.i.hin]",
+KULKIJA,14,kulkija,kulkija.n,"kulkija.a (kulkija.ta)",kulkija.na,"kulkija.an [kulkija.han]",,kulkijo.i.ssa,"kulkijo.i.den kulkijo.i.tten",,,kulkija.in,kulkijo.i.ta,kulkijo.i.hin,
+MANSIKKA,15,mansikka,mansika.n,"mansikka.a (mansikka.ta)",mansikka.na,"mansikka.an [mansikka.han]",,mansiko.i.ssa,"mansiko.i.den mansiko.i.tten",mansikko.j.en,,mansikka.in,"mansiko.i.ta mansikko.j.a","mansikko.i.hin mansiko.i.hin",
+HARAKKA,15,harakka,haraka.n,"harakka.a (harakka.ta)",harakka.na,"harakka.an [harakka.han]",,harako.i.ssa,"harako.i.den harako.i.tten",harakko.j.en,,harakka.in,"harako.i.ta harakko.j.a","harakko.i.hin harako.i.hin",
+KANTAJA,16,kantaja,kantaja.n,"kantaja.a (kantaja.ta)",kantaja.na,"kantaja.an [kantaja.han]",,"kantaj.i.ssa (kantajo.i.ssa)","(kantajo.i.den) (kantajo.i.tten)",kantaj.i.en,,kantaja.in,"kantaj.i.a (kantajo.i.ta)","kantaj.i.in (kantajo.i.hin) [kantaj.i.hin]",
+PERUNA,17,peruna,peruna.n,"peruna.a (peruna.ta)",peruna.na,"peruna.an [peruna.han]",,"peruno.i.ssa (perun.i.ssa)","peruno.i.den peruno.i.tten","(perun.i.en) (peruno.j.en)",,peruna.in,"peruno.i.ta (perun.i.a) (peruno.j.a)","peruno.i.hin (perun.i.in) [perun.i.hin]",
+PASUUNA,18,pasuuna,pasuuna.n,"pasuuna.a (pasuuna.ta)",pasuuna.na,"pasuuna.an [pasuuna.han]",,"pasuuno.i.ssa (pasuun.i.ssa)","pasuuno.i.den pasuuno.i.tten","pasuuno.j.en (pasuun.i.en)",,pasuuna.in,"pasuuno.i.ta pasuuno.j.a (pasuun.i.a)","pasuuno.i.hin (pasuun.i.in) [pasuun.i.hin]",
+AINOA,19,ainoa,ainoa.n,"ainoa.a ainoa.ta",ainoa.na,"ainoa.an [ainoa.han]",,aino.i.ssa,"aino.i.den aino.i.tten",,,ainoa.in,aino.i.ta,aino.i.hin,aino.i.siin
+AINOO,19,(ainoo),(ainoo.n),(ainoo.ta),(ainoo.na),,[ainoo.seen],aino.i.ssa,"aino.i.den aino.i.tten",,,,aino.i.ta,aino.i.hin,aino.i.siin
+HERTTUA,20,herttua,herttua.n,"herttua.a herttua.ta",herttua.na,"herttua.an [herttua.han]",,"herttuo.i.ssa (herttu.i.ssa)","herttuo.i.den herttuo.i.tten (herttu.i.den) (herttu.i.tten)",,,herttua.in,"herttuo.i.ta (herttu.i.ta)","herttuo.i.hin (herttu.i.hin)",
+KORKEA,21,"korkea *(korkia)",korkea.n,"korkea.a korkea.ta",korkea.na,"korkea.an [korkea.han]",,"korke.i.ssa (korkeo.i.ssa)","korke.i.den korke.i.tten (korkeo.i.den) (korkeo.i.tten)",,,korkea.in,"korke.i.ta (korkeo.i.ta)","korke.i.hin (korkeo.i.hin)",korke.i.siin
+?KORKEE,21,(korkee),"[korkehe.n] (korkee.n)",(korkee.ta),(korkee.na),,[korkee.seen],korke.i.ssa,"korke.i.den korke.i.tten  (korkeh.i.tten)",(korkeh.i.en),,,korke.i.ta,korke.i.hin,korke.i.siin
+LEVEÄ,21,"leveä *(leviä)",leveä.n,"leveä.ä leveä.tä",leveä.nä,"leveä.än [leveä.hän]",,"leve.i.ssä (leveö.i.ssä)","leve.i.den leve.i.tten (leveö.i.den) (leveö.i.tten)",,,leveä.in,"leve.i.tä (leveö.i.tä)","leve.i.hin (leveö.i.hin)",leve.i.siin
+?LEVEE,21,(levee),"(levee.n) [levehe.n]",(levee.tä),(levee.nä),,[levee.seen],leve.i.ssä,"leve.i.den leve.i.tten (leveh.i.tten)",(leveh.i.en),,,leve.i.tä,leve.i.hin,leve.i.siin
+VAPAA,23,vapaa,"vapaa.n (vapaha.n)",vapaa.ta,"vapaa.na (vapaha.na)",[vapaa.han],"vapaa.seen (vapaha.sen)","vapa.i.ssa (vapah.i.ssa)","vapa.i.den vapa.i.tten (vapah.i.tten)",(vapah.i.en),,,"vapa.i.ta (vapah.i.a)",,"vapa.i.siin (vapah.i.sin)"
+TIENOO,24,tienoo,"tienoo.n (tienoho.n)",tienoo.ta,"tienoo.na (tienoho.na)",[tienoo.hon],"tienoo.seen (tienoho.sen)","tieno.i.ssa (tienoh.i.ssa)","tieno.i.den tieno.i.tten (tienoh.i.tten)",(tienoh.i.en),,,"tieno.i.ta (tienoh.i.a)",tieno.i.hin,"tieno.i.siin (tienoh.i.sin)"
+LEIKKUUU,25,leikkuu,leikkuu.n,leikkuu.ta,leikkuu.na,[leikkuu.hun],leikkuu.seen,leikku.i.ssa,"leikku.i.den leikku.i.tten",,,,leikku.i.ta,leikku.i.hin,leikku.i.siin
+KAMEE,26,kamee,kamee.n,kamee.ta,kamee.na,kamee.hen,kamee.seen,kame.i.ssa,"kame.i.den kame.i.tten",,,,kame.i.ta,kame.i.hin,kame.i.siin
+PII,27,pii,pii.n,pii.tä,pii.nä,pii.hin,,pi.i.ssä,"pi.i.den pi.i.tten",,,,pi.i.tä,pi.i.hin,
 MAA,28,maa,maa.n,maa.ta,maa.na,maa.han,,ma.i.ssa,"ma.i.den 
 ma.i.tten",,,,ma.i.ta,ma.i.hin,
-PUU,29,puu,puu.n,puu.ta,puu.na,puu.hun,,pu.i.ssa,pu.i.den pu.i.tten,,,,pu.i.ta,pu.i.hin,
+PUU,29,puu,puu.n,puu.ta,puu.na,puu.hun,,pu.i.ssa,"pu.i.den pu.i.tten",,,,pu.i.ta,pu.i.hin,
 SUO,30,suo,suo.n,suo.ta,suo.na,suo.hon,,so.i.ssa,"so.i.den 
 so.i.tten",,,,so.i.ta,so.i.hin,
-TUOHI,32,tuohi,tuohe.n,tuoh.ta,tuohe.na,tuohe.en [tuohe.hen],,tuoh.i.ssa,,tuoh.i.en,tuoh.ten,,tuoh.i.a,tuoh.i.in [tuoh.i.hin],
-LOHI,33,lohi,lohe.n,loh.ta,lohe.na,lohe.en [lohe.hen],,loh.i.ssa,,loh.i.en,(loh.ten),,loh.i.a,loh.i.in [loh.i.hin],
-LAHTI,34,lahti,lahde.n,lahte.a *(lah.ta),lahte.na,lahte.en [lahte.hen],,lahd.i.ssa,,laht.i.en,,(lahte.in),laht.i.a,laht.i.in [laht.i.hin],
-LUMI,35,lumi,lume.n,lun.ta [lume.a],lume.na,lume.en [lume.hen],,lum.i.ssa,,lum.i.en,lun.ten,[lume.in],lum.i.a,lum.i.in [lum.i.hin],
-TUOMI,36,tuomi,tuome.n,tuome.a (tuon.ta),tuome.na,tuome.en [tuome.hen),,tuom.i.ssa,,tuom.i.en,(tuon.ten),,tuom.i.a,tuom.i.in [tuom.i.hin],
-NIEMI,37,niemi,nieme.n,nieme.ä nien.tä,nieme.nä,nieme.en [nieme.hen],,niem.i.ssä,,niem.i.en,nien.ten,,niem.i.ä,niem.i.in [niem.i.hin],
-PIENI,38,pieni,piene.n,pien.tä,piene.nä (pien.nä),piene.en [piene.hen],,pien.i.ssä,,pien.i.en,pien.ten,,pien.i.ä,pien.i.in [pien.i.hin],
-NUORI,39,nuori,nuore.n,nuor.ta,nuore.na (nuor.na) (nuor.ra),nuore.en  [nuore.hen],,nuor.i.ssa,,nuor.i.en,nuor.ten,,nuor.i.a,nuor.i.in [nuor.i.hin],
-KÄSI,40,käsi,käde.n,kät.tä,käte.nä,käte.en [käte.hen],,käs.i.ssä,,käs.i.en,(kät.ten),[käte.in],käs.i.ä,käs.i.in [käs.i.hin],
-TOSI,41,tosi ,tode.n,tot.ta,tote.na,tote.en [tote.hen],,tos.i.ssa,,tos.i.en,,,tos.i.a,tos.i.in [tos.i.hin],
-HIRSI,42,hirsi,hirre.n,hirt.tä,hirte.nä,hirte.en [hirte.hen],,hirs.i.ssä,,hirs.i.en,(hirt.ten),,hirs.i.ä,hirs.i.in [hirs.i.hin],
-JÄLSI,43,jälsi,jälle.n,jält.tä,jälte.nä,jälte.en [jälte.hen],,jäls.i.ssä,,jäls.i.en,(jält.ten),,jäls.i.ä,jäls.i.in [jäls.i.hin],
-KANSI,44,kansi,kanne.n,kant.ta,kante.na,kante.en [kante.hen],,kans.i.ssa,,kans.i.en,(kant.ten),,kans.i.a,kans.i.in [kans.i.hin],
-LAPSI,45,lapsi,lapse.n,las.ta,lapse.na (las.na) (las.sa),lapse.en [lapse.hen],,laps.i.ssa,,laps.i.en,las.ten,,laps.i.a,laps.i.in [laps.i.hin],
-HAPSI,46,hapsi,hapse.n,hapse.a has.ta,hapse.na (has.na) (has.sa),hapse.en [hapse.hen],,haps.i.ssa,,haps.i.en,(has.ten),,haps.i.a,haps.i.in [haps.i.hin],
-VEITSI,47,veitsi,veitse.n,veis.tä,veitse.nä,veitse.en [veitse.hen],,veits.i.ssä,,veits.i.en,veis.ten,,veits.i.ä,veits.i.in [veits.i.hin],
-PEITSI,48,peitsi,peitse.n,peis.tä (peitse.ä),peitse.nä,peitse.en [peitse.hen],,peits.i.ssä,,peits.i.en,peis.ten,,peits.i.ä,peits.i.in [peits.i.hin],
-SUKSI,49,suksi,sukse.n,sukse.a (sus.ta),sukse.na,sukse.en [sukse.hen],,suks.i.ssa,,suks.i.en,(sus.ten),(sukse.in),suks.i.a,suks.i.in [suks.i.hin],
-UKSI,50,uksi,ukse.n,us.ta (ukse.a),ukse.na,ukse.en [ukse.hen],,uks.i.ssa,,uks.i.en,us.ten,,uks.i.a,uks.i.in [uks.i.hin],
-KAKSI,51,kaksi,kahde.n,kah.ta,kahte.na,kahte.en [kahte.hen],,kaks.i.ssa,,kaks.i.en,,,kaks.i.a,kaks.i.in [kaks.i.hin],
-SANKARI,52,sankari,sankari.n,sankari.a,sankari.na,sankari.in [sankari.hin],,sankare.i.ssa,sankare.i.den sankare.i.tten,sankar.i.en,,(sankare.in),sankare.i.ta sankare.j.a,sankare.i.hin,
+TUOHI,32,tuohi,tuohe.n,tuoh.ta,tuohe.na,"tuohe.en [tuohe.hen]",,tuoh.i.ssa,,tuoh.i.en,tuoh.ten,,tuoh.i.a,"tuoh.i.in [tuoh.i.hin]",
+LOHI,33,lohi,lohe.n,loh.ta,lohe.na,"lohe.en [lohe.hen]",,loh.i.ssa,,loh.i.en,(loh.ten),,loh.i.a,"loh.i.in [loh.i.hin]",
+LAHTI,34,lahti,lahde.n,"lahte.a *(lah.ta)",lahte.na,"lahte.en [lahte.hen]",,lahd.i.ssa,,laht.i.en,,(lahte.in),laht.i.a,"laht.i.in [laht.i.hin]",
+LUMI,35,lumi,lume.n,"lun.ta [lume.a]",lume.na,"lume.en [lume.hen]",,lum.i.ssa,,lum.i.en,lun.ten,[lume.in],lum.i.a,"lum.i.in [lum.i.hin]",
+TUOMI,36,tuomi,tuome.n,"tuome.a (tuon.ta)",tuome.na,"tuome.en [tuome.hen)",,tuom.i.ssa,,tuom.i.en,(tuon.ten),,tuom.i.a,"tuom.i.in [tuom.i.hin]",
+NIEMI,37,niemi,nieme.n,"nieme.ä nien.tä",nieme.nä,"nieme.en [nieme.hen]",,niem.i.ssä,,niem.i.en,nien.ten,,niem.i.ä,"niem.i.in [niem.i.hin]",
+PIENI,38,pieni,piene.n,pien.tä,"piene.nä (pien.nä)","piene.en [piene.hen]",,pien.i.ssä,,pien.i.en,pien.ten,,pien.i.ä,"pien.i.in [pien.i.hin]",
+NUORI,39,nuori,nuore.n,nuor.ta,"nuore.na (nuor.na) (nuor.ra)","nuore.en  [nuore.hen]",,nuor.i.ssa,,nuor.i.en,nuor.ten,,nuor.i.a,"nuor.i.in [nuor.i.hin]",
+KÄSI,40,käsi,käde.n,kät.tä,käte.nä,"käte.en [käte.hen]",,käs.i.ssä,,käs.i.en,(kät.ten),[käte.in],käs.i.ä,"käs.i.in [käs.i.hin]",
+TOSI,41,tosi,tode.n,tot.ta,tote.na,"tote.en [tote.hen]",,tos.i.ssa,,tos.i.en,,,tos.i.a,"tos.i.in [tos.i.hin]",
+HIRSI,42,hirsi,hirre.n,hirt.tä,hirte.nä,"hirte.en [hirte.hen]",,hirs.i.ssä,,hirs.i.en,(hirt.ten),,hirs.i.ä,"hirs.i.in [hirs.i.hin]",
+JÄLSI,43,jälsi,jälle.n,jält.tä,jälte.nä,"jälte.en [jälte.hen]",,jäls.i.ssä,,jäls.i.en,(jält.ten),,jäls.i.ä,"jäls.i.in [jäls.i.hin]",
+KANSI,44,kansi,kanne.n,kant.ta,kante.na,"kante.en [kante.hen]",,kans.i.ssa,,kans.i.en,(kant.ten),,kans.i.a,"kans.i.in [kans.i.hin]",
+LAPSI,45,lapsi,lapse.n,las.ta,"lapse.na (las.na) (las.sa)","lapse.en [lapse.hen]",,laps.i.ssa,,laps.i.en,las.ten,,laps.i.a,"laps.i.in [laps.i.hin]",
+HAPSI,46,hapsi,hapse.n,"hapse.a has.ta","hapse.na (has.na) (has.sa)","hapse.en [hapse.hen]",,haps.i.ssa,,haps.i.en,(has.ten),,haps.i.a,"haps.i.in [haps.i.hin]",
+VEITSI,47,veitsi,veitse.n,veis.tä,veitse.nä,"veitse.en [veitse.hen]",,veits.i.ssä,,veits.i.en,veis.ten,,veits.i.ä,"veits.i.in [veits.i.hin]",
+PEITSI,48,peitsi,peitse.n,"peis.tä (peitse.ä)",peitse.nä,"peitse.en [peitse.hen]",,peits.i.ssä,,peits.i.en,peis.ten,,peits.i.ä,"peits.i.in [peits.i.hin]",
+SUKSI,49,suksi,sukse.n,"sukse.a (sus.ta)",sukse.na,"sukse.en [sukse.hen]",,suks.i.ssa,,suks.i.en,(sus.ten),(sukse.in),suks.i.a,"suks.i.in [suks.i.hin]",
+UKSI,50,uksi,ukse.n,"us.ta (ukse.a)",ukse.na,"ukse.en [ukse.hen]",,uks.i.ssa,,uks.i.en,us.ten,,uks.i.a,"uks.i.in [uks.i.hin]",
+KAKSI,51,kaksi,kahde.n,kah.ta,kahte.na,"kahte.en [kahte.hen]",,kaks.i.ssa,,kaks.i.en,,,kaks.i.a,"kaks.i.in [kaks.i.hin]",
+SANKARI,52,sankari,sankari.n,sankari.a,sankari.na,"sankari.in [sankari.hin]",,sankare.i.ssa,"sankare.i.den sankare.i.tten",sankar.i.en,,(sankare.in),"sankare.i.ta sankare.j.a",sankare.i.hin,
 ?Sankar,52,[sankar],,[sankar.ta],,,,,,,sankar.ten,,,,
-JUMALA,53,jumala,jumala.n,jumala.a (jumala.ta),jumala.na,jumala.an [jumala.han],,jumal.i.ssa,,jumal.i.en,jumal.ten,jumala.in,jumal.i.a,jumal.i.in [jumal.i.hin],
-SISAR,54,sisar,sisare.n,sisar.ta,sisare.na,sisare.en [sisare.hen],,sisar.i.ssa,,sisar.i.en,sisar.ten,,sisar.i.a,sisar.i.in [sisar.i.hin],
-AHVEN,55,ahven,ahvene.n,ahven.ta,ahvene.na (ahven.na),ahvene.en [ahvene.hen],,ahven.i.ssa,,ahven.i.en,ahven.ten,,ahven.i.a,ahven.i.in [ahven.i.hin],
-UISTIN,56,uistin,uistime.n,uistin.ta,uistime.na,uistime.en [uistime.hen],,uistim.i.ssa,,uistim.i.en,uistin.ten,,uistim.i.a,uistim.i.in [uistim.i.hin],
-ONNETON,57,onnetØoØnØ (onnetoin),onnettoØma.n,onnetØoØnØ.ta (onnetoin.ta),onnettoma.na onneton.na (onnetoin.na),onnettoma.an [onnettoma.han],,onnettom.i.ssa,,onnettom.i.en,onneton.ten (onnetoin.ten),onnettoma.in,onnettom.i.a,onnettom.i.in [onnettom.i.hin],
-?LÄMMIN,58,lämmin,lämpimä.n,lämmin.tä (lämpimä.ä) (lämpimä.tä),lämpimä.nä (lämmin.nä),lämpimä.än [lämpimä.hän],,lämpim.i.ssä,,lämpim.i.en,(lämmin.ten),lämpimä.in,lämpim.i.ä,lämpim.i.in [lämpim.i.hin],
-?PAHIN,59,pahin,pahimma.n,pahin.ta (pahimpa.a) (pahimpa.ta),pahimpa.na (pahin.na),pahimpa.an [pahimpa.han],,pahimm.i.ssa,,pahimp.i.en,pahin.ten,pahimpa.in,pahimp.i.a,pahimp.i.in [pahimp.i.hin],
-?VASEN,60,vasen,vasemma.n,vasen.ta vasempa.a (vasempa.ta),vasempa.na,vasempa.an [vasempa.han],,vasemm.i.ssa,,vasemp.i.en,(vasen.ten),vasempa.in,vasemp.i.a,vasemp.i.in [vasemp.i.hin],
-?MUUAN,61,muuan,muutama.n,muuat.ta muutama.a,muutama.na (muuan.na),muutama.an [muutama.han],,muutam.i.ssa,,muutam.i.en,,muutama.in,muutam.i.a,muutam.i.in [muutam.i.hin],
-?MUUDAN,61,(muudan),muutama.n,(muudat.ta) (muutama.ta),muutama.na (muudan.na),muutama.an [muutama.han],,muutam.i.ssa,,muutam.i.en,,muutama.in,muutam.i.a,muutam.i.in [muutam.i.hin],
-?SEITSEMÄN,62,seitsemän,seitsemä.n,seitsemä.ä seitsen.tä (seitsemä.tä),seitsemä.nä (seitsen.nä),seitsemä.än [seitsemä.hän],,seitsem.i.ssä,,seitsem.i.en,(seitsen.ten),seitsemä.in,seitsem.i.ä,seitsem.i.in [seitsem.i.hin],
-HEVONEN,63,hevonen,hevose.n,hevos.ta,hevose.na (hevos.na) (hevos.sa),hevose.en [hevose.hen],,hevos.i.ssa,,hevos.i.en,hevos.ten,,hevos.i.a,hevos.i.in [hevos.i.hin],
-VASTAUS,64,vastaus,vastaukse.n,vastaus.ta,vastaukse.na,vastaukse.en [vastaukse.hen],,vastauks.i.ssa,,vastauks.i.en,vastaus.ten,,vastauks.i.a,vastauks.i.in [vastauks.i.hin],
-KALLEUS,65,kalleuØsØ,kalleuØde.n,kalleuØtØ.ta,kalleute.na,kalleute.en [kalleute.hen],,kalleuks.i.ssa,,kalleuks.i.en,(kalleut.ten),,kalleuks.i.a,kalleuks.i.in [kalleuks.i.hin],
-VIERAS,66,vieras,vieraa.n (vieraha.n),vieras.ta,vieraa.na (vieras.na) (vieras.sa) (vieraha.na),,vieraa.seen (vieraha.sen),viera.i.ssa (vierah.i.ssa),viera.i.den viera.i.tten,,vieras.ten,,viera.i.ta (vierah.i.a),viera.i.hin, viera.i.siin (vierah.i.sin) 
-SAAPAS,66,saapas,saappaa.n (saappaha.n),saapas.ta,saappaa.na (saapas.na) (saapas.sa) (saappaha.na),,saappaa.seen (saappaha.sen),saappa.i.ssa (saappah.i.ssa),saappa.i.den saappa.i.tten,(saappah.i.en),saapas.ten,,saappa.i.ta (saappah.i.a),saappa.i.hin,saappa.i.siin (saappah.i.sin)
-KIRVES,67,kirves,kirvee.n (kirvehe.n),kirves.tä,kirvee.nä (kirves.nä) (kirves.sä) (kirvehe.nä) ,,kirvee.seen (kirvehe.sen),kirve.i.ssä (kirveh.i.ssä),kirve.i.den kirve.i.tten,(kirveh.i.en),kirves.ten,,kirve.i.tä (kirveh.i.ä),kirve.i.hin,(kirveh.i.sin)
-KAURIS,68,kauris,kaurii.n (kaurihi.n),kauris.ta,kaurii.na (kauris.na) (kauris.sa) (kaurihi.na),,kaurii.seen (kaurihi.sen),kauri.i.ssa (kaurih.i.ssa),kauri.i.den kauri.i.tten,(kaurih.i.en),kauris.ten,,kauri.i.ta (kaurih.i.a),kauri.i.hin,kauri.i.siin (kaurih.i.sin)
-KAUNIS,69,kaunis,kaunii.n (kaunihi.n),kaunis.ta,kaunii.na (kaunis.na) (kaunis.sa) (kaunihi.na),,kaunii.seen (kaunihi.sen),kauni.i.ssa (kaunih.i.ssa) (kauneh.i.ssa) [kaune.i.ssa],kauni.i.den kauni.i.tten (kaune.i.den) (kaune.i.tten),(kaunih.i.en) (kauneh.i.en),kaunis.ten,,kauni.i.ta (kaune.i.ta) (kaunih.i.a) (kauneh.i.a),kauni.i.hin (kaune.i.hin) ,kauni.i.siin  (kaune.i.siin)  (kaunih.i.sin)  (kauneh.i.sin)
-KOIRAS,70,koiras,koirakse.n,koiras.ta,koirakse.na  (koiras.na)  (koiras.sa),koirakse.en [koirakse.hen],,koiraks.i.ssa,,koiraks.i.en,koiras.ten,,koiraks.i.a,koiraks.i.in [koiraks.i.hin],
-Koiras,70,koiras,koiraa.n (koiraha.n),koiras.ta,koiraa.na (koiraha.na),,koiraa.seen (koiraha.sen),koira.i.ssa  (koirah.i.ssa),koira.i.den koira.i.tten,(koirah.i.en),,,koira.i.ta (koirah.i.a),koira.i.hin,koira.i.siin (koirah.i.sin)
-UROS,71,uros,uroo.n (uroho.n),uros.ta,uroo.na (uroho.na),,uroo.seen (uroho.sen),uro.i.ssa (uroh.i.ssa),uro.i.den uro.i.tten (uroh.i.tten),uroh.i.en,uros.ten,,uro.i.ta (uroh.i.a),uro.i.hin ,uro.i.siin (uroh.i.sin)
-MIES,72,mies,miehe.n,mies.tä,miehe.nä (mies.nä) (mies.sä),miehe.en,,mieh.i.ssä,,mieh.i.en,mies.ten,,mieh.i.ä,mieh.i.in,
-AIRUT,73,airutØ,airuØe.n,airutØ.ta,airue.na,airue.en [airue.hen],,airu.i.ssa (airuh.i.ssa),airu.i.den airu.i.tten (airuh.i.tten),(airuh.i.en),(airut.ten),,airu.i.ta (airuh.i.a),airu.i.hin,airu.i.siin (airuh.i.sin)
-ÄIDYT,73,äidytØ,äityØe.n,äidytØ.tä,äitye.nä,äitye.en [äitye.hen],,äity.i.ssä (äityh.i.ssä),äity.i.den äity.i.tten (äityh.i.tten),(äityh.i.en),(äidyt.ten),,äity.i.tä (äityh.i.ä),äity.i.hin,äity.i.siin (äityh.i.sin)
-KEVÄT,74,kevät,kevää.n (kevähä.n),kevät.tä,kevää.nä kevän.nä (kevähä.nä),,kevää.seen (kevähä.sen),kevä.i.ssä (keväh.i.ssä),kevä.i.den kevä.i.tten (keväh.i.tten),(keväh.i.en),(kevät.ten),,kevä.i.tä (keväh.i.ä),kevä.i.hin,kevä.i.siin (keväh.i.sin)
-?KAHDEKSAS,75,kahdeksas,kahdeksanne.n,kahdeksat.ta,kahdeksante.na (kahdeksan.na),kahdeksante.en [kahdeksante.hen],,kahdeksans.i.ssa,,kahdeksans.i.en,,,kahdeksans.i.a,kahdeksans.i.in [kahdeksans.i.hin],
-?TUHAT,76,tuhat *tuhannen,tuhanne.n,tuhat.ta,tuhante.na,tuhante.en [tuhante.hen],,tuhans.i.ssa,,tuhans.i.en,tuhan.ten,,tuhans.i.a,tuhans.i.in [tuhans.i.hin],
-KUOLLUT,77,kuollut,kuollee.n (kuollehe.n),kuollut.ta,kuollee.na (kuollehe.na) (kuollun.na),,kuollee.seen (kuollehe.sen),kuolle.i.ssa (kuolleh.i.ssa),kuolle.i.den kuolle.i.tten (kuolleh.i.tten),(kuolleh.i.en),(kuollut.ten),,kuolle.i.ta (kuolleh.i.a),kuolle.i.hin,kuolle.i.siin (kuolleh.i.sin)
-VAATE,78,vaate,vaattee.n (vaattehe.n),vaatet.ta,vaattee.na (vaattehe.na),,vaattee.seen (vaattehe.sen),vaatte.i.ssa vaatteh.i.ssa,vaatte.i.den vaatte.i.tten,(vaatteh.i.en),(vaatet.ten),,vaatte.i.ta (vaatteh.i.a),vaatte.i.hin,vaatte.i.siin (vaatteh.i.sin)
-TERVE,79,terve,tervee.n (tervehe.n),tervet.tä,tervee.nä (terven.nä) (tervehe.nä),,tervee.seen (tervehe.sen),terve.i.ssä (terveh.i.ssä),terve.i.den terve.i.tten (terveh.i.tten),(terveh.i.en),(tervet.ten),,terve.i.tä (terveh.i.ä),terve.i.hin,terve.i.siin (terveh.i.sin)
-ORI,80,ori,orii.n (orihi.n),orit.ta,orii.na (orihi.na),,orii.seen (orihi.sen),ori.i.ssa (orih.i.ssa),ori.i.den ori.i.tten (orih.i.tten),(orih.i.en),(orit.ten),,ori.i.ta (orih.i.a),ori.i.hin,ori.i.siin (orih.i.sin)
-KIIRU,81,kiiru,kiiruu.n (kiiruhu.n),kiirut.ta,kiiruu.na (kiiruhu.na),,kiiruu.seen (kiiruhu.sen),kiiru.i.ssa (kiiruh.i.ssa),kiiru.i.den kiiru.i.tten (kiiruh.i.tten),(kiiruh.i.en),(kiirut.ten),,kiiru.i.ta (kiiruh.i.a),kiiru.i.hin,kiiru.i.siin (kiiruh.i.sin)
-ASKEL,82,askel,askele.n,askel.ta,askele.na,(askele.en) [askele.hen],,askel.i.ssa,,askel.i.en,askel.ten,,askel.i.a,askel.i.in [askel.i.hin],
-ASKELE,82,askele, [askelehe.n] askelee.n,askelet.ta,askelee.na,,askelee.seen,askele.i.ssa,askele.i.den askele.i.tten,,,,askele.i.ta,askele.i.hin,askele.i.siin
+JUMALA,53,jumala,jumala.n,"jumala.a (jumala.ta)",jumala.na,"jumala.an [jumala.han]",,jumal.i.ssa,,jumal.i.en,jumal.ten,jumala.in,jumal.i.a,"jumal.i.in [jumal.i.hin]",
+SISAR,54,sisar,sisare.n,sisar.ta,sisare.na,"sisare.en [sisare.hen]",,sisar.i.ssa,,sisar.i.en,sisar.ten,,sisar.i.a,"sisar.i.in [sisar.i.hin]",
+AHVEN,55,ahven,ahvene.n,ahven.ta,"ahvene.na (ahven.na)","ahvene.en [ahvene.hen]",,ahven.i.ssa,,ahven.i.en,ahven.ten,,ahven.i.a,"ahven.i.in [ahven.i.hin]",
+UISTIN,56,uistin,uistime.n,uistin.ta,uistime.na,"uistime.en [uistime.hen]",,uistim.i.ssa,,uistim.i.en,uistin.ten,,uistim.i.a,"uistim.i.in [uistim.i.hin]",
+ONNETON,57,"onneton (onnetoin)",onnettoØma.n,"onneton.ta (onnetoin.ta)","onnettoma.na onneton.na (onnetoin.na)","onnettoma.an [onnettoma.han]",,onnettom.i.ssa,,onnettom.i.en,"onneton.ten (onnetoin.ten)",onnettoma.in,onnettom.i.a,"onnettom.i.in [onnettom.i.hin]",
+?LÄMMIN,58,lämmin,lämpimä.n,"lämmin.tä (lämpimä.ä) (lämpimä.tä)","lämpimä.nä (lämmin.nä)","lämpimä.än [lämpimä.hän]",,lämpim.i.ssä,,lämpim.i.en,(lämmin.ten),lämpimä.in,lämpim.i.ä,"lämpim.i.in [lämpim.i.hin]",
+?PAHIN,59,pahin,pahimma.n,"pahin.ta (pahimpa.a) (pahimpa.ta)","pahimpa.na (pahin.na)","pahimpa.an [pahimpa.han]",,pahimm.i.ssa,,pahimp.i.en,pahin.ten,pahimpa.in,pahimp.i.a,"pahimp.i.in [pahimp.i.hin]",
+?VASEN,60,vasen,vasemma.n,"vasen.ta vasempa.a (vasempa.ta)",vasempa.na,"vasempa.an [vasempa.han]",,vasemm.i.ssa,,vasemp.i.en,(vasen.ten),vasempa.in,vasemp.i.a,"vasemp.i.in [vasemp.i.hin]",
+?MUUAN,61,muuan,muutama.n,"muuat.ta muutama.a","muutama.na (muuan.na)","muutama.an [muutama.han]",,muutam.i.ssa,,muutam.i.en,,muutama.in,muutam.i.a,"muutam.i.in [muutam.i.hin]",
+?MUUDAN,61,(muudan),muutama.n,"(muudat.ta) (muutama.ta)","muutama.na (muudan.na)","muutama.an [muutama.han]",,muutam.i.ssa,,muutam.i.en,,muutama.in,muutam.i.a,"muutam.i.in [muutam.i.hin]",
+?SEITSEMÄN,62,seitsemän,seitsemä.n,"seitsemä.ä seitsen.tä (seitsemä.tä)","seitsemä.nä (seitsen.nä)","seitsemä.än [seitsemä.hän]",,seitsem.i.ssä,,seitsem.i.en,(seitsen.ten),seitsemä.in,seitsem.i.ä,"seitsem.i.in [seitsem.i.hin]",
+HEVONEN,63,hevonen,hevose.n,hevos.ta,"hevose.na (hevos.na) (hevos.sa)","hevose.en [hevose.hen]",,hevos.i.ssa,,hevos.i.en,hevos.ten,,hevos.i.a,"hevos.i.in [hevos.i.hin]",
+VASTAUS,64,vastaus,vastaukse.n,vastaus.ta,vastaukse.na,"vastaukse.en [vastaukse.hen]",,vastauks.i.ssa,,vastauks.i.en,vastaus.ten,,vastauks.i.a,"vastauks.i.in [vastauks.i.hin]",
+KALLEUS,65,kalleus,kalleude.n,kalleut.ta,kalleuØte.na,"kalleute.en [kalleute.hen]",,kalleuks.i.ssa,,kalleuks.i.en,(kalleut.ten),,kalleuks.i.a,"kalleuks.i.in [kalleuks.i.hin]",
+VIERAS,66,vieras,"vieraa.n (vieraha.n)",vieras.ta,"vieraa.na (vieras.na) (vieras.sa) (vieraha.na)",,"vieraa.seen (vieraha.sen)","viera.i.ssa (vierah.i.ssa)","viera.i.den viera.i.tten",,vieras.ten,,"viera.i.ta (vierah.i.a)",viera.i.hin,"viera.i.siin (vierah.i.sin)"
+SAAPAS,66,saapas,"saappaa.n (saappaha.n)",saapas.ta,"saappaa.na (saapas.na) (saapas.sa) (saappaha.na)",,"saappaa.seen (saappaha.sen)","saappa.i.ssa (saappah.i.ssa)","saappa.i.den saappa.i.tten",(saappah.i.en),saapas.ten,,"saappa.i.ta (saappah.i.a)",saappa.i.hin,"saappa.i.siin (saappah.i.sin)"
+KIRVES,67,kirves,"kirvee.n (kirvehe.n)",kirves.tä,"kirvee.nä (kirves.nä) (kirves.sä) (kirvehe.nä)",,"kirvee.seen (kirvehe.sen)","kirve.i.ssä (kirveh.i.ssä)","kirve.i.den kirve.i.tten",(kirveh.i.en),kirves.ten,,"kirve.i.tä (kirveh.i.ä)",kirve.i.hin,(kirveh.i.sin)
+KAURIS,68,kauris,"kaurii.n (kaurihi.n)",kauris.ta,"kaurii.na (kauris.na) (kauris.sa) (kaurihi.na)",,"kaurii.seen (kaurihi.sen)","kauri.i.ssa (kaurih.i.ssa)","kauri.i.den kauri.i.tten",(kaurih.i.en),kauris.ten,,"kauri.i.ta (kaurih.i.a)",kauri.i.hin,"kauri.i.siin (kaurih.i.sin)"
+KAUNIS,69,kaunis,"kaunii.n (kaunihi.n)",kaunis.ta,"kaunii.na (kaunis.na) (kaunis.sa) (kaunihi.na)",,"kaunii.seen (kaunihi.sen)","kauni.i.ssa (kaunih.i.ssa) (kauneh.i.ssa) [kaune.i.ssa]","kauni.i.den kauni.i.tten (kaune.i.den) (kaune.i.tten)","(kaunih.i.en) (kauneh.i.en)",kaunis.ten,,"kauni.i.ta (kaune.i.ta) (kaunih.i.a) (kauneh.i.a)","kauni.i.hin (kaune.i.hin)","kauni.i.siin  (kaune.i.siin)  (kaunih.i.sin)  (kauneh.i.sin)"
+KOIRAS,70,koiras,koirakse.n,koiras.ta,"koirakse.na  (koiras.na)  (koiras.sa)","koirakse.en [koirakse.hen]",,koiraks.i.ssa,,koiraks.i.en,koiras.ten,,koiraks.i.a,"koiraks.i.in [koiraks.i.hin]",
+Koiras,70,koiras,"koiraa.n (koiraha.n)",koiras.ta,"koiraa.na (koiraha.na)",,"koiraa.seen (koiraha.sen)","koira.i.ssa  (koirah.i.ssa)","koira.i.den koira.i.tten",(koirah.i.en),,,"koira.i.ta (koirah.i.a)",koira.i.hin,"koira.i.siin (koirah.i.sin)"
+UROS,71,uros,"uroo.n (uroho.n)",uros.ta,"uroo.na (uroho.na)",,"uroo.seen (uroho.sen)","uro.i.ssa (uroh.i.ssa)","uro.i.den uro.i.tten (uroh.i.tten)",uroh.i.en,uros.ten,,"uro.i.ta (uroh.i.a)",uro.i.hin,"uro.i.siin (uroh.i.sin)"
+MIES,72,mies,miehe.n,mies.tä,"miehe.nä (mies.nä) (mies.sä)",miehe.en,,mieh.i.ssä,,mieh.i.en,mies.ten,,mieh.i.ä,mieh.i.in,
+AIRUT,73,airut,airue.n,airut.ta,"airue.na (airuhe.na)","airue.en [airue.hen]",,"airu.i.ssa (airuh.i.ssa)","airu.i.den airu.i.tten (airuh.i.tten)",(airuh.i.en),(airut.ten),,"airu.i.ta (airuh.i.a)",airu.i.hin,"airu.i.siin (airuh.i.sin)"
+ÄIDYT,73,äidyt,äitye.n,äidyt.tä,"äitye.nä (äityhe.nä)","äitye.en [äitye.hen]",,"äity.i.ssä (äityh.i.ssä)","äity.i.den äity.i.tten (äityh.i.tten)",(äityh.i.en),(äidyt.ten),,"äity.i.tä (äityh.i.ä)",äity.i.hin,"äity.i.siin (äityh.i.sin)"
+KEVÄT,74,kevät,"kevää.n (kevähä.n)",kevät.tä,"kevää.nä kevän.nä (kevähä.nä)",,"kevää.seen (kevähä.sen)","kevä.i.ssä (keväh.i.ssä)","kevä.i.den kevä.i.tten (keväh.i.tten)",(keväh.i.en),(kevät.ten),,"kevä.i.tä (keväh.i.ä)",kevä.i.hin,"kevä.i.siin (keväh.i.sin)"
+?KAHDEKSAS,75,kahdeksas,kahdeksanne.n,kahdeksat.ta,"kahdeksante.na (kahdeksan.na)","kahdeksante.en [kahdeksante.hen]",,kahdeksans.i.ssa,,kahdeksans.i.en,,,kahdeksans.i.a,"kahdeksans.i.in [kahdeksans.i.hin]",
+?TUHAT,76,"tuhat *tuhannen",tuhanne.n,tuhat.ta,tuhante.na,"tuhante.en [tuhante.hen]",,tuhans.i.ssa,,tuhans.i.en,tuhan.ten,,tuhans.i.a,"tuhans.i.in [tuhans.i.hin]",
+KUOLLUT,77,kuollut,"kuollee.n (kuollehe.n)",kuollut.ta,"kuollee.na (kuollehe.na) (kuollun.na)",,"kuollee.seen (kuollehe.sen)","kuolle.i.ssa (kuolleh.i.ssa)","kuolle.i.den kuolle.i.tten (kuolleh.i.tten)",(kuolleh.i.en),(kuollut.ten),,"kuolle.i.ta (kuolleh.i.a)",kuolle.i.hin,"kuolle.i.siin (kuolleh.i.sin)"
+VAATE,78,vaate,"vaattee.n (vaattehe.n)",vaatet.ta,"vaattee.na (vaattehe.na)",,"vaattee.seen (vaattehe.sen)","vaatte.i.ssa vaatteh.i.ssa","vaatte.i.den vaatte.i.tten",(vaatteh.i.en),(vaatet.ten),,"vaatte.i.ta (vaatteh.i.a)",vaatte.i.hin,"vaatte.i.siin (vaatteh.i.sin)"
+TERVE,79,terve,"tervee.n (tervehe.n)",tervet.tä,"tervee.nä (terven.nä) (tervehe.nä)",,"tervee.seen (tervehe.sen)","terve.i.ssä (terveh.i.ssä)","terve.i.den terve.i.tten (terveh.i.tten)",(terveh.i.en),(tervet.ten),,"terve.i.tä (terveh.i.ä)",terve.i.hin,"terve.i.siin (terveh.i.sin)"
+ORI,80,ori,"orii.n (orihi.n)",orit.ta,"orii.na (orihi.na)",,"orii.seen (orihi.sen)","ori.i.ssa (orih.i.ssa)","ori.i.den ori.i.tten (orih.i.tten)",(orih.i.en),(orit.ten),,"ori.i.ta (orih.i.a)",ori.i.hin,"ori.i.siin (orih.i.sin)"
+KIIRU,81,kiiru,"kiiruu.n (kiiruhu.n)",kiirut.ta,"kiiruu.na (kiiruhu.na)",,"kiiruu.seen (kiiruhu.sen)","kiiru.i.ssa (kiiruh.i.ssa)","kiiru.i.den kiiru.i.tten (kiiruh.i.tten)",(kiiruh.i.en),(kiirut.ten),,"kiiru.i.ta (kiiruh.i.a)",kiiru.i.hin,"kiiru.i.siin (kiiruh.i.sin)"
+ASKEL,82,askel,askele.n,askel.ta,askele.na,"(askele.en) [askele.hen]",,askel.i.ssa,,askel.i.en,askel.ten,,askel.i.a,"askel.i.in [askel.i.hin]",
+ASKELE,82,askele,"[askelehe.n] askelee.n",askelet.ta,askelee.na,,askelee.seen,askele.i.ssa,"askele.i.den askele.i.tten",,,,askele.i.ta,askele.i.hin,askele.i.siin

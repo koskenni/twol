@@ -17,7 +17,7 @@ pair_weight_dict = {}
 
 
 def main():
-    version = "2020-10-26"
+    version = "2020-02-01"
     
     import argparse
     arpar = argparse.ArgumentParser(
@@ -25,7 +25,7 @@ def main():
         description="Builds a distance metric FST out of an alphabet"\
         " description. See"\
         " https://pytwolc.readthedocs.io/en/latest/alignment.html"\
-        " for detailed instructions. {}".format(version)
+        " for detailed instructions. Version {}".format(version)
     )
     arpar.add_argument(
         "alphabet",
@@ -42,8 +42,11 @@ def main():
     import sys
     import re
     import twol.alphabet as alphabet
+    import twol.cfg as cfg
 
-    alphabet.read_alphabet(args.alphabet, 0)
+    cfg.verbosity = args.verbosity
+
+    alphabet.read_alphabet(args.alphabet)
 
     pair_weight_lst = []
     for insym in alphabet.consonant_set:

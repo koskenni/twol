@@ -1,7 +1,7 @@
 m  =  Bilabial, Voiced, Nasal,,,
 p  =  Bilabial, Unvoiced, Stop,,,
 b  =  Bilabial, Voiced, Stop,,,
-v  =  Labiodental, Voiced, Fricative,,,
+v  =  Labiodental, Voiced, Fricative, Semivowel, Front, Rounded
 f  =  Labiodental, Unvoiced, Fricative,,,
 t  =  Dental, Unvoiced, Stop,,,
 z  =  Dental, Unvoiced, Affricate,,,
@@ -12,7 +12,7 @@ n  =  PostAlveolar, Voiced, Nasal,,,
 ž  =  PostAlveolar, Voiced, Sibilant,,,  #  IPA ʒ
 r  =  PostAlveolar, Voiced, Trill,,,
 l  =  PostAlveolar, Voiced, Lateral,,,
-j  =  Palatal, Voiced, Approximant, SemiVowel, Front, Unrounded
+j  =  Palatal, Voiced, Approximant, Semivowel, Front, Unrounded
 k  =  Velar, Unvoiced, Stop,,,
 g  =  Velar, Voiced, Stop,,,
 ŋ  =  Velar, Voiced, Nasal,,,
@@ -46,14 +46,14 @@ o  =  ,,, CloseMid, Back, Rounded
 ä  =  ,,, OpenMid, Front, Unrounded  #  IPA æ
 a  =  ,,, Open, Back, Unrounded  #  IPA ɑ
 
-SemiVowel Close CloseMid OpenMid Open = 70
+Semivowel Close CloseMid OpenMid Open = 70
 Close CloseMid OpenMid Open = 20
 Close CloseMid = 10
 Close CloseMid Open = 15
 CloseMid Open = 10
 OpenMid Open = 0
-SemiVowel Close = 10
-SemiVowel CloseMid = 60
+Semivowel Close = 10
+Semivowel CloseMid = 60
 
 Front Back = 10
 

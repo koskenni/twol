@@ -65,9 +65,12 @@ def ppcontexts(ctxs, title):
         print(lc, "_", rc)
 
 def shorten_contexts(contexts, left_length, right_length):
+    """Computes a new set of truncated contexts"""
     if cfg.verbosity >= 25:
-        print("left and right length:", left_length, right_length)
-        ppcontexts(contexts, "contexts as given to shorten_contexts()")
+        print("left and right length:",
+              left_length, right_length)
+        ppcontexts(contexts,
+                   "contexts as given to shorten_contexts()")
     new_contexts = set()
     for left_context, right_context in contexts:
         left_lst = left_context.split(" ")
@@ -157,32 +160,39 @@ def print_rule(pair_symbol, operator, contexts):
     return
 
 def context_to_output_str(pairsym_str):
+    """Converts a pair symbol string into its surface string"""
     pairsym_lst = pairsym_str.split(" ")
     sympair_lst = [cfg.pairsym2sympair(psym) for psym in pairsym_lst]
     outsym_lst = [outsym for insym, outsym in sympair_lst]
     return "".join(outsym_lst)
 
 def main():
+    version = "2020-02-01"
+    
     import argparse
-    arpar = argparse.ArgumentParser("python3 twdiscov.py")
-    arpar.add_argument("examples", help="Example pair strings file",
-                       default="test.pstr")
-    arpar.add_argument("-s", "--symbol",
-        help="Input symbol for which to find rules",
+    arpar = argparse.ArgumentParser(
+        "twol-discov",
+        description="Deduces two-level rules out of"\
+        " a file of examples.  The file must consist of"\
+        " lines of space-separated pair string.  Such a file"\
+        " can be produced e.g. by twol-renamed program."\
+        " Version {}".format(version))
+    arpar.add_argument(
+        "examples",
+        help="Example pair strings file",
+        default="test.pstr")
+    arpar.add_argument(
+        "-s", "--symbol",
+        help="Input symbol for which to find rules."\
+        " If not given then rules are proposed for"\
+        " all morphophonemes in the example file",
         default="")
     arpar.add_argument(
         "-v", "--verbosity",
-        help="Level of  diagnostic output, default is 5,"\
+        help="Level of  diagnostic output, default is 5. Set to"\
         " 0 to omit the printing of relevant examples for the rules",
         type=int, default=5)
-    arpar.add_argument("-V", "--version",
-        help="Print the version of the program",
-        default=False,
-        action="store_true")
     args = arpar.parse_args()
-
-    if args.version:
-        print("twol-discov version 0.1.3")
 
     cfg.verbosity = args.verbosity
     
@@ -197,13 +207,20 @@ def main():
         pair_symbols_for_input[insym].add(pair_symbol)
 
     if args.symbol:
-        pair_set = pair_symbols_for_input[args.symbol]
-        pair_lst = []
-        for pairsym in pair_set:
-            insym, outsym = cfg.pairsym2sympair(pairsym)
-            pair_lst.append((insym, outsym))
-        if cfg.verbosity >= 10:
-            print("pair_lst:", pair_lst)
+        if args.symbol in pair_symbols_for_input:
+            pair_set = pair_symbols_for_input[args.symbol]
+            pair_lst = []
+            for pairsym in pair_set:
+                insym, outsym = cfg.pairsym2sympair(pairsym)
+                pair_lst.append((insym, outsym))
+            if cfg.verbosity >= 10:
+                print("pair_lst:", pair_lst)
+        else:
+            print("Symbol {} not in the input alphabet of examples".format(args.symbol))
+            lst = [insym for insym in
+                   pair_symbols_for_input.keys() if len(insym) > 2]
+            print("The following symbols are:", " ".join(sorted(lst)))
+            exit("")
     else:
         pair_lst = sorted(cfg.symbol_pair_set)
 

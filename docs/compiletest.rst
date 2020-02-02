@@ -58,7 +58,7 @@ This rule says that the pair ``{ieØeØ}:i`` can only occur at the end of a word
 
 The simple grammar can now be tested against the examples by::
 
-  $ python3 ../twol.py --thorough 2 examples.pstr rules.twol 
+  $ twol-comp.py --thorough 2 examples.pstr rules.twol 
   
   
   

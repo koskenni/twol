@@ -4,10 +4,14 @@
 """
 
 def main():
+
+    version = "2020-02-01"
+    
     import argparse
     argparser = argparse.ArgumentParser(
         "python3 parad2zerofilled.py",
-        description="Aligns a set of word forms with morph boundaries")
+        description="Aligns a set of word forms with morph boundaries"\
+        " Version {} ".format(version))
     argparser.add_argument(
         "input",
         default="ksk-seg-examp.csv",
@@ -103,10 +107,10 @@ def main():
     import twol.cfg as cfg
     cfg.all_zero_weight = 1.0
 
-    from twol.multialign import aligner
-    from twol.alphabet import read_alphabet
+    import twol.multialign as multialign
+    import twol.alphabet as alphabet
     
-    read_alphabet(args.alphabet)
+    alphabet.read_alphabet(args.alphabet)
 
     alignments = {}
     """All aligned morphs. index: morpheme name, value: sequence of aligned symbols.
@@ -122,7 +126,7 @@ def main():
                 print("words:", words)
             nz = args.extra_zeros 
             ####nz = 1 if len(words) > 10 else 2
-            aligned_sym_seq = aligner(words, nz, morpheme)
+            aligned_sym_seq = multialign.aligner(words, nz, morpheme)
         if args.verbosity >= 20:
             print("aligned_sym_seq:", aligned_sym_seq)
         alignments[morpheme] = aligned_sym_seq

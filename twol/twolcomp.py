@@ -24,9 +24,15 @@ def print_raw_paths(paths):
     return
 
 def main():
+
+    version = "2020-02-01"
     import argparse
     arpar = argparse.ArgumentParser(
-        description="A compiler and tester for two-level rules")
+        description="A compiler and tester for two-level rules."\
+        " Version {}."\
+        " See https://pytwolc.readthedocs.io/en/latest/index.html"\
+        " or https://github.com/koskenni/twol"\
+        " for more information.".format(version))
     arpar.add_argument(
         "-o", "--output",
         help="File to which write the compiled rules if a name is given",
@@ -63,15 +69,7 @@ def main():
     arpar.add_argument(
         "rules", help="name of the rule file",
         default="test.rules")
-    arpar.add_argument("-V", "--version",
-        help="Print the version of the program and quit",
-        default=False,
-        action="store_true")
     args = arpar.parse_args()
-
-    if args.version:
-        print("twol-comp version 0.1.1")
-        return
 
     cfg.verbosity = args.verbosity
     if args.recursion:

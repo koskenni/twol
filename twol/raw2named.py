@@ -10,9 +10,11 @@ def main():
     import csv
     import argparse
 
+    version = "2020-02-01"
+
     argparser = argparse.ArgumentParser(
         "python3 raw2named.py",
-        description="joins and renames raw morphophonemes")
+        description="Renames raw morphophonemes. Version {} ".format(version))
     argparser.add_argument(
         "input",
         default="demo-raw.csv",
