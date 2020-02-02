@@ -82,7 +82,7 @@ Positive tests should always pass, if the rule is correct.  Negative examples ar
   ``--wrong`` filename, ``-w`` filename
     If a value is given to this parameter, a FST file is written containing all negative examples which were accepted by all rules.  Again, we do not know which rule ought to have rejected them.
 
-The results are FSTs, so we cannot look at then directly.  We can use the ``hfst-fst2strings`` tool for looking at their contents, e.g.::
+The results are FSTs, so we cannot look at them directly.  We can use the ``hfst-fst2strings`` tool for looking at their contents, e.g.::
 
   $ hfst-fst2strings -i wrong.fst | less
 
