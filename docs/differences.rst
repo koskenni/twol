@@ -1,10 +1,10 @@
 .. _differences:
 
-==========================================
-Differences between twol.py and hfst-twolc
-==========================================
+============================================
+Differences between twol-comp and hfst-twolc
+============================================
 
-.. index:: HFST, hfst-twolc
+.. index:: HFST, hfst-twolc, twol-comp
    pair: rule; compiler
 
 The simplified two-level morphology differs in several respects from the standard model as described in publications and as implemented in the TWOLC compiler by Karttunen and Beesley and later on in the HFST finite-state transducer tools, see e.g.  [karttunen1987]_.  There are changes in the formalism (i.e. syntax of expressions and rules) and there are some strongly recommended practises which the author of the rules are expected to follow:

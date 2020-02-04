@@ -2,7 +2,7 @@
 Simplified two-level model
 ==========================
 
-.. note:: The twol.py program is still under development and so is this documentation
+.. note:: The twol package is still under development and so is this documentation
 
 The morphological two-level model dates back to [koskenniemi1983]_ and is characterized by the descritpion of phonological or
 morphophonological alternations as a direct relation between the
@@ -32,11 +32,13 @@ Various methods and programs programs have been developed in order to simplify t
 
 2. The linguist marks the morph boundaries in the example words.
 
-3. A program aligns the morphs in the examples by adding zero symbols.  The zero-filled morphs are the same length and phonemes in corresponding positions are phonologically similar.
+3. The linguist checks the letters used in the examples for their approximate phonological distinctive features and makes the necessary modifications to the default definition of the alphabet.
 
-4. A program produces example words as sequences of pair-strings where the left component of each pair is a raw morphophoneme implied by the alignment.  This is the initial version of the example file for designing and testing rules.
+4. A program aligns the morphs in the examples by adding zero symbols.  The zero-filled morphs are the same length and phonemes in corresponding positions are phonologically similar.
 
-5. Using a version of the example file, one selects one morphophoneme at a time and:
+5. A program produces example words as sequences of pair-strings where the left component of each pair is a raw morphophoneme implied by the alignment.  This is the initial version of the example file for designing and testing rules.
+
+6. Using a version of the example file, one selects one morphophoneme at a time, possibly renames it with a simpler name and:
 
    a. Lets a program produce tentative raw two-level rules for the morphophoneme.
 
@@ -75,7 +77,7 @@ There is yet another form in which the examples are represented, i.e. as a pair 
 
   ka{tØ}oll{aä}:katØolla
 
-One can readily see that the three ways to represent examples are equivalent.  Examples are edited as a text file, but for further processing, they are compiled into a FST using the ``ex2fst`` module.
+One can readily see that the three ways to represent examples are equivalent.  The first format (space-separated pair symbol strings or PSTR) is used by the twol programs.  Examples are processed into that format by the programs that produce the morphophonemic representations, but such files can be also edited and extended as ordinary text files.   A PSTR file can also be compiled into a FST using the ``twol-examples2fst`` program.
 
 
 .. _rule-formalism:
@@ -84,26 +86,118 @@ One can readily see that the three ways to represent examples are equivalent.  E
 Rule formalism in the simplified two-level model
 ------------------------------------------------
 
-The simplified two-level grammar consists of one or more lines where each line may be either a *definition*, a *rule* or just a *comment*.  Definitions and rules are made out of *regular two-level expressions*.  Comment lines or empty lines are ignored when the grammar is compiled into finite-state transducers (FSTs).  Comment lines start with an exclamation mark (!) at the first non-blank column, e.g.::
+The simplified two-level grammar consists of one or more lines where each line may be either a *definition*, a *rule* or just a *comment* as described in the section :ref:`formalism`.  Definitions and rules are made out of *regular two-level expressions*.  The following is a small example file `grada.pstr <https://raw.githubusercontent.com/koskenni/twol/master/test/twolcomp/grada.pstr>`_::
 
-  ! trisyllabic word structure
- 
-Regular two-level expressions
-=============================
+    k a n {kg}:k i
+    k a n {kg}:g e n
+    p o i {kj}:k a n a
+    p o i {kj}:j a s t a
+    p u {kv}:k u
+    p u {kv}:v u s s a
+    p a {kØ}:k o
+    p a {kØ}:Ø o s s a
+    v a a {kØ'}:k a
+    v a a {kØ'}:' a l l a
+    v a a {kØ'}:Ø o i s s a
+    k a m {pm}:p a
+    k a m {pm}:m a l l a
+    a r {pv}:p i a
+    a r {pv}:v a n
+    p a p {pØ}:p i
+    p a p {pØ}:Ø i l l e
+    k a {td}:t u
+    k a {td}:d u l l a
+    v a {tl}:t a a n
+    v a {tl}:l a s s a
+    k a n {tn}:t o j a
+    k a n {tn}:n o s s a
+    p a r {tr}:t a
+    p a r {tr}:r a n
+    k a t {tØ}:t o
+    k a t {tØ}:Ø o l l e
 
-The set of possible symbol pairs comes from the set of previously edited examples.  The rules and the two-level regular expressions introduce no correspondences beyond those which occur in the examples.
+A two-level rule file `grada.twol <https://raw.githubusercontent.com/koskenni/twol/master/test/twolcomp/grada.twol>`_ is based on the above example file:: 
 
-The two-level regular expressions (TLREs) can be:
+    Vow = a|e|i|o|u ;
+    Cons = :d|:g|j|k|l|m|n|p|r|s|t|v ;
+    Vi = Vow.m ;
+    Ci = Cons.m ;
+    Closed = (i) Ci [Ci|END] ;
+
+    {kg}:g | {kj}:j | {kv}:v |
+    {pm}:m | {pv}:v | {pØ}:Ø |
+    {td}:d | {tl}:l | {tn}:n | {tr}:r | {tØ}:Ø <=>
+	_ Vi Closed ;
+    ! Weakening except k~Ø~'
+
+    {kØ}:Ø <=> _  Vi Closed ;
+    ! pa<>on
+
+    {kØ'}:' <=>
+	Vi :a _ :a Closed ,
+	Vi :e _ :e Closed ,
+	Vi :i _ :i Closed ,
+	Vi :o _ :o Closed ,
+	Vi :u _ :u Closed ;
+    ! vaa<'>an
+
+    {kØ'}:k /<= _ Vi Closed ;
+    ! vaa<>oissa
+
+Here we can identify (1) definitions which have an equal (=) sign which end in a semicolon, (2) rules which have a rule operator (<=>, =>, <=, <--, or /<=) and comments which start with an exclamation mark (!) and continue to the end of the line.
+
+Definitions and rules consist mostly of *two-level regular expressions* (TLRE) which are discussed and defined in the section :ref:`formalism`.
+
+One can test the ``twol-comp`` compiler with these two files by a command::
+
+  $ twol-comp grada.pstr grada.twol -t 2
+
+The compiler compiles and tests the rules in the following manner::
+
+    {kg}:g | {kj}:j | {kv}:v | {pm}:m | {pv}:v | {pØ}:Ø |
+    {td}:d | {tl}:l | {tn}:n | {tr}:r | {tØ}:Ø <=> _ Vi Closed ;
+    All positive examples accepted
+    All negative examples rejected
 
 
+    {kØ}:Ø <=> _  Vi Closed ;
+    All positive examples accepted
+    All negative examples rejected
 
-Definitions
-===========
 
-A definition assigns a name for a regular two-level expressionn.
+    {kØ'}:' <=> Vi :a _ :a Closed , Vi :e _ :e Closed ,
+    Vi :i _ :i Closed , Vi :o _ :o Closed , Vi :u _ :u Closed ;
+    All positive examples accepted
+    All negative examples rejected
 
-.. warning:: The program is under development and it may tilt!
 
+    {kØ'}:k /<= _ Vi Closed ;
+    All positive examples accepted
+    koskenni-HP:~/github/twol/test/twolcomp
+    $ twol-comp grada.pstr grada.twol -t 2
+
+
+    {kg}:g | {kj}:j | {kv}:v | {pm}:m | {pv}:v | {pØ}:Ø |
+    {td}:d | {tl}:l | {tn}:n | {tr}:r | {tØ}:Ø <=> _ Vi Closed ;
+    All positive examples accepted
+    All negative examples rejected
+
+
+    {kØ}:Ø <=> _  Vi Closed ;
+    All positive examples accepted
+    All negative examples rejected
+
+
+    {kØ'}:' <=> Vi :a _ :a Closed , Vi :e _ :e Closed ,
+    Vi :i _ :i Closed , Vi :o _ :o Closed , Vi :u _ :u Closed ;
+    All positive examples accepted
+    All negative examples rejected
+
+
+    {kØ'}:k /<= _ Vi Closed ;
+    All positive examples accepted
+
+In effect, the result indicates that the rules were consistent with the examples. 
 
 ----------
 References

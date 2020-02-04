@@ -106,11 +106,9 @@ def mphon_weight(mphon):
     :param mphon: A sequence of phonemes a.k.a. morphophoneme, e.g. 'ij'
     :type mphon: str
     
-    :return: The weight of mphon based on the phonological features of
-    its members :rtype: float
-
+    :return: The weight of mphon based on the phonological features of its members 
+    :rtype: float
     """
-
     global weight_c1, weight_c2, weight_c3, weight_v1, weight_v2, weight_v3
     if re.fullmatch(r"[Ø]+", mphon):
         return cfg.all_zero_weight
