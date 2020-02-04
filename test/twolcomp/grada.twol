@@ -1,147 +1,27 @@
-! Copyright Kimmo Koskenniemi, 2012, 2016, 2018
+! Copyright Kimmo Koskenniemi, 2012, 2016, 2018, 2020
 !
-!Vow = a|e|i|o|u|y|ä|ö ;
 Vow = a|e|i|o|u ;
-!Cons = b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|z ;
 Cons = :d|:g|j|k|l|m|n|p|r|s|t|v ;
-Vo = : .o. Vow ;
-Vi = Vo.u .o. : ;
-Co = : .o. Cons ;
-Ci = Co.u .o. : ;
-!Closed = ({ij}:|{i}:|i) ({eØ}:Ø|{eiØ}:Ø) Ci [({eØ}:Ø|{eiØ}:Ø) Ci|END] ;
+Vi = Vow.m ;
+Ci = Cons.m ;
 Closed = (i) Ci [Ci|END] ;
 
+{kg}:g | {kj}:j | {kv}:v |
+{pm}:m | {pv}:v | {pØ}:Ø |
+{td}:d | {tl}:l | {tn}:n | {tr}:r | {tØ}:Ø <=>
+    _ Vi Closed ;
 ! Weakening except k~Ø~'
-{kg}:g|{kj}:j|{kv}:v|{pm}:m|{pv}:v|{pØ}:Ø|{td}:d | {tl}:l | {tn}:n | {tr}:r | {tØ}:Ø <=>  _  Vi Closed ;
 
-!               ~ h a r a v o i {nt}:t {nlrs}:s e m m e
-
-!"kä<d>en jäl<l>en kan<n>en or<r>en"
-!{tds}:d | {tls}:l | {tns}:n | {trs}:r <=> _  :Vowel Closed ;
-!                                           except _ (:Ø)* [{i}: | {ij}:] ;
-!
-!"kä<s>i jäl<s>i kan<s>i or<s>i"
-!{tds}:s | {tls}:s | {tns}:s | {trs}:s <=> _ (:Ø)* [{i}: | {ij}:] ;
-
-! NOT kä<t>en jäl<t>en kan<t>en or<t>en
-!{tds}:t | {tls}:t | {tns}:t | {trs}:t /<= _  Vo Closed ;
-
-! kä<d>en jäl<l>en kan<n>en or<r>en
-!{tds}:d | {tls}:l | {tns}:n | {trs}:r => _  Vo Closed ;
-
-! kä<s>i jäl<s>i kan<s>i or<s>i
-!{tds}:s | {tls}:s | {tns}:s | {trs}:s => _ Vo [{i}: | {ij}:] ;
-
+{kØ}:Ø <=> _  Vi Closed ;
 ! pa<>on
-{kØ}:Ø <=>   _  Vi Closed ;
 
+{kØ'}:' <=>
+    Vi :a _ :a Closed ,
+    Vi :e _ :e Closed ,
+    Vi :i _ :i Closed ,
+    Vi :o _ :o Closed ,
+    Vi :u _ :u Closed ;
 ! vaa<'>an
-{kØ'}:' <=> Vi :a _ :a Closed , Vi :e _ :e Closed , Vi :i _ :i Closed , Vi :o _ :o Closed , Vi :u _ :u Closed , Vi :y _ :y Closed , Vi :ä _ :ä Closed ;
 
-! vaa<>oissa
 {kØ'}:k /<= _ Vi Closed ;
-
-STOP
-
-! taloss<a>
-{aä}:a|{aäØ}:a|{aØe}:a|{aØe}:Ø|{aØe}:e  => [:a|:o|:u] \[#:]* _ ;
-! työss<ä>
-{aä}:ä|{aäØ}:ä|{äØe}:ä|{äØe}:Ø|{äØe}:e /<= [:a|:o|:u] \[#:]* _ ;
-
-"rakent<a>vat"
-{aäØe}:a => [:a | :o | :u] \[=: | |: | _: | #:]* _ ;
-
-"lyhent<ä>vät"
-{aäØe}:ä => .#. \[:a | :o | :u | #:]* _ ;
-
-"maak<o>" 
-{oö}:o <=> [:a | :o | :u] \[=: | |: | _: | #:]* _ ;
-
-"kuoll<u>t" 
-{uy}:u <=> [:a | :o | :u] \[=: | |: | _: | #:]* _ ;
-
-"tul<>in vo<>isin pur<>ra" 
-{eØ}:Ø | {eiØ}:Ø <=>
-               _ [{ij}: | {i}: | i s i | t {aä}:] ;
-               Vowel: [:l | :n | :r | :s] _ [{nlrs}: | {dlnrtØ}: |
-                                             {Øt}: :t |
-                                             k {aä}: {aä}: |
-                                             k {oö}: {oö}:] ;
-
-"t<>eiden v<>ein haravo<>isi"
-{iØ}:Ø <=> _ (e) [{ij}: | {i}: | i s i] ;
-
-"s<>oissa s<>oisivat"
-{uØ}:Ø <=> _ o [{ij}: | {i}: | i s i] ;
-
-"s<>öin"
-{yØ}:Ø <=> _ ö [{ij}: | {i}: | i s i] ;
-
-"kiel<i>" 
-{eiØ}:i <=> _ [.#. | =:Ø | §:Ø | #:Ø | {dlnrtØ}:Ø e] ;
-              except Vowel: [:l | :n | :r | :s] _ {dlnrtØ}: e ;
-
-"rist<e>jä sot<>ia kal<o>ja hät<>iä"
- {ie}:e | {aØ}:Ø | {aØe}:Ø | {aoe}:o | {aäØ}:Ø | {ao}:o |
- {äö}:ö | {äØ}:Ø | {äØe}:Ø <=> _ [{ij}: | {i}:] ;
-
-"haast<o>in haast<>in"
-{aoØe}:o | {aoØe}:Ø => _ {i}: ;
-
-"not haast<a>i"
-{aoØe}:a | {aäØe}:a | {aäØe}:ä /<= _ {i}: ;
-
-"pah<e>mpi puoll<e>taan"
-{aØe}:e | {aoe}:e | {aoØe}:e | {äØe}:e | {aäØe}:e <=>
-              _ [m {pm}: |
-                 {Øt}: :t |
-                 {dlnrtØ}: {C}: {aä}:] ;
-
-"mene<e>"
-{VØ}:VV => :VV _ ;
-          where VV in (a e i o u y ä ö) ;
-
-"maah<a>n"
-{V}:VV <=> :VV (h) _ ;
-          where VV in (a e i o u y ä ö) ;
-
-"ma<>issa" 
-{VØ}:Ø <=> _ [{ij}: | {i}: | i s i] ;
-             [{i}: | i s i | {VØ}: | :u :o | :y :ö |
-              :i :e | :a :i | :o :i | :ö :i | :ä :y] _ ;
-             
-
-"talo<j>a"
-{ij}:j <=> :Vowel _ :Vowel ;
-
-!"salat<>a"
-!{dlnrtØ}:Ø <=> [:t] _ ;
-!               s a l a t {dlnrtØ}:Ø {aä}:a
-!               p u n o {dlnrtØ}:Ø {aä}:a k s e n i
-!               p u n o {dlnrtØ}:Ø {aä}:a
-!               p u n o {dlnrtØ}:Ø e s {aä}:a
-!               h i o  {dlnrtØ}:Ø {aä}:a
-
-"tuo<d>a näh<d>ä"
-!{dlnrtØ}:d <=> :Vowel [:Vowel | h] _ ;
-{dlnrtØ}:d <=> :Vowel h _ ;
-                  [[:a|:o|:u|:ö] :i | :a :a | :ä :ä |
-		  :u :o | :y :ö | :i :e | :ä :y] _ ;
-
-"nuol<l>a men<n>ä pur<r>a"
-{dlnrtØ}:XX <=> :XX ({eØ}:Ø) _ ; where XX in (l n r) ;
-
-"juos<t>a puno<t>aan"
-{dlnrtØ}:t <=> :s (:Ø) _ ;
-                 Cons: :Vowel _ [{C}: {aä}: |
-                                 t {aä}:] ;
-
-"nuol<l>et men<n>et pur<r>ette juos<s>ee"
-{nlrs}:XX <=> :Vowel :XX (:Ø) _ [:e | {uy}:] ;
-                 where XX in (l r s) ;
-
-"kudo<t>tiin pur<>tiin"
-{Øt}:t <=> Cons: :Vowel _ ;
-
-"halu<n>nut"
- {nt}:n <=> _ {nlrs}: ;
+! vaa<>oissa

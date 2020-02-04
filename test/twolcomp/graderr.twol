@@ -24,9 +24,7 @@ Closed = (i) Ci [Ci | .#.] ;
     Vi :e _ :e Closed ,
     Vi :i _ :i Closed ,
     Vi :o _ :o Closed 
-    Vi :u _ :u Closed ,
-    Vi :y _ :y Closed ,
-    Vi :ä _ :ä Closed ;
+    Vi :u _ :u Closed ;
 
 ! vaa<>oissa
 {kØ'}:k /<= _ Vi Closed ;
