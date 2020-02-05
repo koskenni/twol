@@ -33,7 +33,8 @@ def main():
         default="vertical")
     arpar.add_argument(
         "-c", "--comment-separator",
-        help="Comment separator. Comments in input after this character are just"\
+        help="Comment separator. Comments in input"\
+        " after this character are just"\
         " copied to output. Input words are then also copied to"\
         " the end of comments. Default separator is '' i.e. no comments."\
         " Comments come to the output only in horizontal layout.",

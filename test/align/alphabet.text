@@ -68,6 +68,7 @@ o:õ::5
 X:Ø::10 FOR X IN Vowels
 Ø:X::10 FOR X IN Vowels
 X:Ø::25 FOR X IN Consonants
+Ø:X::25 FOR X IN Consonants
 X:X X:Ø::5 FOR X IN Consonants
 X:X Ø:X::5 FOR X IN Consonants
 X:X X:Ø::5 FOR X IN Vowels

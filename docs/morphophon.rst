@@ -87,7 +87,7 @@ The step itself consists of the following command::
  $ twol-words2zerofilled demo-words.csv demo-zerofilled.csv \
                          alphabet.text
 
-This script reads data in the above CSV format produced either by the ``paratab2segcsv.py`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file `demo-zerofilled.cdv <https://github.com/koskenni/twol/blob/master/test/align/demo-zerofilled-orig.csv>`_ which is augmented with the aligned i.e. zero-filled example word forms.  The :doc:`alignment` is accomplished by the ``multialign.py`` module, see :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
+This script reads data in the above CSV format produced either by the ``paratab2segcsv.py`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file `demo-zerofilled.cdv <https://github.com/koskenni/twol/blob/master/test/align/demo-zerofilled-orig.csv>`_ which is augmented with the aligned i.e. zero-filled example word forms.  The alignment is accomplished by the ``multialign.py`` module, see :doc:`alignment` and :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
 
      MORPHEMES,   MORPHS,     ZEROFILLED
      MÄKI,        mäki,       mäki
@@ -113,7 +113,7 @@ Here we can see why we need to have the same number of periods (.) in the column
 twol-zerofilled2raw
 ===================
 
-The command for this step is::
+In full scale processing, the tables might contain many more columns than are actually needed for determining the morphophonemic alternations in the stems.  We often need to select just a subset of the columns in the table.  In full scale tables, the sequence of alternating phonemes in the stems may follow the sequence of the columns in the table.  But, on the contrary, there are arbitrary many occurences of each affix and they are not in any particular order.  Thus, the processing needs still one small definition file ``demo-affixes.csv``.  The command for this step is::
 
   $ twol-zerofilled2raw demo-zerofilled.csv demo-raw.csv \
                         demo-affixes.csv
@@ -142,18 +142,17 @@ The output file `demo-raw.csv <https://raw.githubusercontent.com/koskenni/twol/m
 
 The program, in principle, constructs the morphophonemes just by listing the alternating phonemes as a sequence in curly braces.  In real scale paradigms, this would result in many more morphophonemes than what is necessary.  On the other hand, the program could treat the alternations just as sets, which would result in a small set of morphophonemes.  Unfortunately, in real cases, some of these small sets would simplify too much.  E.g. ``kalsium<>`` - ``kalsium<i>n`` - ``kalsium<e>ja`` represents the same kind of alternation between ``i``, ``e`` and ``Ø`` as ``mäki`` but in a clearly different configuration.
 
-Thus, the construction is made according to a user given set of *principal forms* (or principal parts) i.e. a ordered subset of inflected forms.  In traditional grammars, the principal forms, are understood the forms out of which one can mechanically produce all other inflected forms.
+Thus, the construction is made according to a user given set of :term:`principal forms` (or principal parts) i.e. a ordered subset of inflected forms.  In traditional grammars, the principal forms, are understood the forms out of which one can mechanically produce all other inflected forms.
 
 The morphophonemes in affixes coud be constructed mechanically, but we meet similar problems there.  In order to keep the method simple, the script reads in an additional CSV file which explicitly gives the principal forms and the morphophonemic representations of the affixes.  For our demo example::
 
-  "",+
-  "INE",+
-  "ESS",+
-  "PL INE",+
-  ,
-  INE,s s {aä}
-  ESS,n {aä}
-  PL,i
+  "",     +
+  INE,    +
+  ESS,    +
+  PL.INE, +
+  INE,    s s {aä}
+  ESS,    n {aä}
+  PL,     i
 
 The file lists the principal forms in lines where the second field is ``+``.  Note that the principal forms may consist of zero, one or more affix morphemes (i.e. their names).  The remaining lines have the affix name in the first field and its morphophonemic representation in the second field.  Note that each morpheme (name) has an affix of its own.  One may establish distinct names for grammatically identical but phonemically distinct affixes.  (In Finnish, e.g. some plural genitive endings are so different that one may treat them as different morphemes having slighty different names.)
 
@@ -167,7 +166,7 @@ The new names can be determined one by one.  The decisions made so far are store
   {kØkØ},{kØ},la<k>i la<>in
   {sdts},{tds},kä<t>enä kä<d>essä kä<s>issä
 
-Assigning names to raw morphophonemes is usually done with the aid of ``twol-discov``, see :doc:`/discovery`.  The rule discovery module helps to identify similar raw morphophonemes and to give a common name to them.  The output of this script is e.g.::
+Assigning names to raw morphophonemes is usually done with the aid of ``twol-discov``, see :doc:`discovery`.  The rule discovery module helps to identify similar raw morphophonemes and to give a common name to them.  The output of this script is e.g.::
 
    m ä {kØ}:k {ieeØ}:i
    m ä {kØ}:Ø {ieeØ}:e s s {aä}:ä INE:Ø
@@ -187,3 +186,53 @@ Assigning names to raw morphophonemes is usually done with the aid of ``twol-dis
    l a {kØ}:Ø {iiie}:e i s s {aä}:a PL:Ø INE:Ø
 
 One may also write a two-level rule for such tentatively final morphophoneme and test the validity of the rule using ``twol-comp`` rule compiler.  See separate documents for them.
+
+Exercises
+=========
+
+In order to do these excercises, you must have a Python 3 installed (version at least 3.6) and install the twol-package. See instructions at https://github.com/koskenni/twol/wiki or at the end of the chapter :ref:`compiling`-
+
+1. Test the existing ``demo`` example for creating morphophonemic representations for the example data in https://github.com/koskenni/twol/tree/master/test/align :
+   Four files are needed: `alphabet.text <https://github.com/koskenni/twol/raw/master/test/align/alphabet.text>`__, `demo-affixes,csv <https://github.com/koskenni/twol/raw/master/test/align/demo-affixes.csv>`_, `demo-newnames.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-newnames.csv>`_ and `demo-table.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-table.csv>`__.  You can copy them through the links in the file names above, or you can go to the Github page and click the file name and after that the "Raw" button has a link to the source data.  Click that and then save the clean text version of the file.
+   Run the commands in the text and compare the results with the ones in this document. 
+
+2. Using a text editor, add two words in the demo-table.csv::
+
+     KALA, kala, kala.n, kala.ssa, kala.na kalo.i.ssa
+     MIES, mies, miehe.n, miehe.ssä, miehe.nä mieh.i.ssä
+
+   Run the programs again.  Study the alignment and the morphophonemes that you got.  Do you think that they are phonologically plausible?
+
+3. Go to the directory where the alphabet.text file resides.  Run the multialigner as a separate program, but first with the help option::
+
+     $ $ twol-multialign --help
+
+   The program responds with a message that explains the parameters and switches (options) you must and may give to it.  Then::
+
+     $ twol-multialign alphabet.text
+
+   Thereafter you can give sets of space-separated lists of stems to  the program::
+
+     hevonen hevose hevos
+
+   The program responds with an alignment::
+
+     hevonen
+     hevoseØ
+     hevosØØ
+
+   Test this with five different stems.  You can test Finnish and Estonian words with the given alphabet file.  If you wish to test stems in other languages, you probably need to add some letters in the alphabet file, which you may easily do.  Note however, that if the orthography of the language is not phonemic (e.g. Chinese, or even English or French), there is not much point in the alignment.
+
+4. Consider the Swedish strong verbs as given at `Wikipedia <https://sv.wiktionary.org/wiki/Appendix:Starka_verb>`__.
+
+   - Construct a table ``swev.csv`` of them according to the same principles as were followed above.  Omit the first verb because it appears not to follow the common patterns, but include the rest of them.
+
+   - Add the morph boundaries (``.``) in the word forms in supinum (before ``it``) and perfect participle (before ``en``).  The column headings could be: ``STM``, ``STM.PRET``, ``STM.SUP``, ``STM.PERF``.  Note that you must add a dot at the end of the words in the second column (so that the heading and the words in the column have the same number of dots).
+
+   - Add one line for ``å`` in the alphabet by copying the line for ``o``.
+
+   - Run the ``twol-table2words``, and correct any typos you might have made.  Discrepances between the numbers of dots (i.e. morphs) will be reported by the program.
+
+   - Run the ``twol-words2zerofilled``.  Discrepances between the words and the alphabet are detected here by the program.
+
+   - Run the ``twol-zerofilled2raw``.  Study the morphophonemes proposed by the program.  Are they acceptable?  The program makes good guesses, but it also makes mistakes.
