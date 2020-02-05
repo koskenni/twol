@@ -15,7 +15,7 @@ Modules of the twol package
    twol.raw2named
    twol.table2words
    twol.twbt
-   twol.twdiscov
+   twol.discover
    twol.twexamp
    twol.twolcomp
    twol.twparser

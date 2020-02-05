@@ -82,6 +82,10 @@ Glossary
    phoneme
      For the purposes of writing two-level rules and analyzers, phonemes often correspond to letters in a near-phonemic writing system.  In linguistics, phonemes are units which represent similar phohes whose differences do not carry any additional information.  The choice of a phone in a phoneme might be irrelevant or sometimes determined by the surrounding context of phones.
 
+   principal forms
+   principal parts
+     A subset of inflectional forms that is needed for determining the full paradigm of inflectional forms for a :term:`lemma`.
+     
    raw morphophoneme
      A combination of :term:`phonemes <phoneme>` which correspond to each other as a result of alignment, e.g. if ``käsi``, ``käde``, ``käte``, ``käs`` and ``kät`` are aligned, we get raw morphophonemes such as ``kkkk`` or ``sdtst``.  Raw morhpphonemes are usually renamed to morphophonemes, e.g. ``k`` or ``{tds}``
 

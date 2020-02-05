@@ -6,7 +6,7 @@ __all__ = [
     "twolcomp",
     "twparser",
     "twrule",
-    "twdiscov",
+    "discover",
     "aligner",
     "alphabet",
     "metric",

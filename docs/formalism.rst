@@ -138,7 +138,7 @@ Testing of the rules
 
 For all types of the rules, there is a straight-forward way to check whether the rules apply to the set of examples given to the compiler:  each rule must accept all examples.  Rules only affect examples where the centre of the rule (or the X part) is present.  The author must write (and tune) the rules so that all such examples are accepted.
 
-The compiler can also test rules against so called negative examples as is discussed in :doc:`twdiscov`.  The negative examples are derived from the given set of examples by distorting them a bit.
+The compiler can also test rules against so called negative examples as is discussed in :doc:`discovery`.  The negative examples are derived from the given set of examples by distorting them a bit.
 
 For a context requirement rule, this means that one must find contexts other than the ones whre X actually occurs in the set of examples.  Here we choose to seach occurrences where something like X occurs.  The program considers all examples where an Y in X.m occurs.  In these contexts, one replaces that center Y with the center of the rule, X.  From this collection of distorted examples, one still removes any examples that happen to be in the original set of examples.  If the compiled rule accepts any examples in this difference, the compiler reports them as a warning.  If a rule has a too permissive context, then all positive examples are still accepted.  But then, some negative examples are also accepted.  A listing of such negative examples is usually quite useful information for improving the rule.
 

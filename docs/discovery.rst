@@ -4,13 +4,13 @@
 Discovering raw two-level rules
 ===============================
 
-The ``twdiscov.py`` program reads in a set of two-level examples which consist of space-separated :term:`pair symbols <pair symbol>` and the program produces tentative two-level rules for all :term:`morphophonemes <morphophoneme>` in the examples or just for a given morphophoneme.  Even when processing raw rules for all morphophonemes, the program proceeds one morphophoneme at a time.
+The ``twol-discov`` program reads in a set of two-level examples which consist of space-separated :term:`pair symbols <pair symbol>` and the program produces tentative two-level rules for all :term:`morphophonemes <morphophoneme>` in the examples or just for a given morphophoneme.  Even when processing raw rules for all morphophonemes, the program proceeds one morphophoneme at a time.
 
 The method is based on producing positive and negative examples which are specific to one morphophoneme.  The *positive examples* consist of all examples which contain that morphophoneme.
 
-The *negative examples* are made from the positive ones by distorting the occurrences of the morphophoneme.  Each occurrence is replaced by all correct and incorrect pairs of that morphophoneme.  This results in all negative examples we need, but it also produces some correct examples.  Thus, from this preliminary set, the program subtracts all positive examples and then it has the final set of negative examples for this morphophoneme.
+The *negative examples* are made from the positive ones by distorting the occurrences of the morphophoneme.  Each occurrence is replaced by all correct and incorrect pairs of that morphophoneme.  This results in all negative examples we need, but it also produces some correct examples.  Thus, from this preliminary set, the program subtracts all positive examples which yields the desired set of negative examples for this morphophoneme.
 
-The script finds rule contexts incrementally.  The initial set of context is made out of the examples as such.  Such a rule trivially accepts all examples and rejects all negative examples.  The idea of the algorithm is to shorten the contexts step by step.  The shorter contexts still accept the positive examples but they do not necessarily reject all negative ones.  As long as they do reject, the process goes on.  One side is shortened first and then the other.
+The script finds rule contexts incrementally.  The initial set of contexts is made out of the positive examples as such.  Such a rule trivially accepts all examples and rejects all negative examples.  The idea of the algorithm is to shorten the contexts step by step.  The shorter contexts still accept the positive examples but they do not necessarily reject all negative ones.  As long as they do reject, the process goes on.  One side is shortened first and then the other.
 
 The program suggests reasonable raw rules for phenomena where the condition is strictly local, e.g. stem-final vowel alternations and also for consonant gradation in Finnish.  On the other hand, long distance phenomena e.g. vowel harmony cannot be summarized properly by this method as is shown below.
 
@@ -18,7 +18,7 @@ The program only produces ``=>`` and ``/<=`` types of rules.  This is not a limi
 
 Even in the best case, the rules can only be as good as the set of examples. If the examples are chosen in a disciplined and balanced manner, the program is expected to be useful and practical.  If alternations are only partly present in the set of examples, the proposed raw rules will be poor and may even be misleading.
 
-For more information on the program itself, see the documentation of the program code ``twdiscov`` in the :doc:`modules` and directly in :doc:`twol.twdiscov`.
+For more information on the program itself, see the documentation of the program code ``discover`` in the :doc:`modules` and directly in :doc:`twol.discover`.
 
 
 Using ``twol-discov``

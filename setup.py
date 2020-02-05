@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="twol", # of the PyPI project and package
-    version="0.1",
+    version="0.2.dev3",
     author="Kimmo Koskenniemi",
     author_email="koskenni@gmail.com",
     description="Tools for simplified two-level morphology",
@@ -29,7 +29,7 @@ setuptools.setup(
             "twol-raw2named = twol.raw2named:main",
             "twol-comp = twol.twolcomp:main",
             "twol-examples2fst = twol.twexamp:main",
-            "twol-discov =  twol.twdiscov:main"
+            "twol-discov =  twol.discover:main"
         ]
     },
     include_package_data=True,

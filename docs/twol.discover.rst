@@ -1,9 +1,9 @@
-.. _twdiscov:
+.. _discover:
 
-twol\.twdiscov module
+twol\.discover module
 =====================
 
-.. automodule:: twol.twdiscov
+.. automodule:: twol.discover
     :members:
     :undoc-members:
     :show-inheritance:
