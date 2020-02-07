@@ -194,7 +194,7 @@ In order to do these excercises, you must have a Python 3 installed (version at 
 
 1. Test the existing ``demo`` example for creating morphophonemic representations for the example data in https://github.com/koskenni/twol/tree/master/test/align :
    Four files are needed: `alphabet.text <https://github.com/koskenni/twol/raw/master/test/align/alphabet.text>`__, `demo-affixes,csv <https://github.com/koskenni/twol/raw/master/test/align/demo-affixes.csv>`_, `demo-newnames.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-newnames.csv>`_ and `demo-table.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-table.csv>`__.  You can copy them through the links in the file names above, or you can go to the Github page and click the file name and after that the "Raw" button has a link to the source data.  Click that and then save the clean text version of the file.
-   Run the commands in the text and compare the results with the ones in this document. 
+   Run the commands that are given in sections 2.1, 2.2, 2.3 and 2.4 in this chapter.  Compare the results you get with the ones given in the above sections. 
 
 2. Using a text editor, add two words in the demo-table.csv::
 
