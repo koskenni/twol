@@ -5,7 +5,7 @@
 
 def main():
 
-    version = "2020-02-01"
+    version = "2020-02-08"
     
     import argparse
     argparser = argparse.ArgumentParser(
@@ -28,11 +28,11 @@ def main():
     argparser.add_argument(
         "-s", "--morph-separator",
         default=".",
-        help="separator between morphs in the word form")
+        help="Separator between morphs in the word form, default is '.'")
     argparser.add_argument(
         "-d", "--csv-delimiter",
         default=",",
-        help="delimiter between the fields")
+        help="Delimiter between the fields")
     argparser.add_argument(
         "-n", "--name-separator",
         default=".",
@@ -113,14 +113,16 @@ def main():
     alphabet.read_alphabet(args.alphabet)
 
     alignments = {}
-    """All aligned morphs. index: morpheme name, value: sequence of aligned symbols.
-    Each aligned symbol has as many characters as there are  items in the sequence. 
+    """All aligned morphs. index: morpheme name, value: sequence of
+    aligned symbols.  Each aligned symbol has as many characters as
+    there are items in the sequence.
     """
 
     for morpheme in sorted(morphs_of_morpheme.keys()):
         words = list(morphs_of_morpheme[morpheme])
         if len(words) == 1 and len(words[0]) == 0:
-            aligned_sym_seq = ["Ø"]
+            ###aligned_sym_seq = ["Ø"]
+            aligned_sym_seq = []
         else:
             if args.verbosity >= 20:
                 print("words:", words)
@@ -182,7 +184,7 @@ def main():
         morph_lst = [morph for morpheme, morph in seg_example]
         zero_filled_morph_lst = [aligned_morphs[morpheme].get(morph.replace("Ø", ""), "")
                                   for (morpheme, morph) in seg_example]
-        d["MORPHEMES"] = " ".join(morpheme_lst)
+        d["MORPHEMES"] = args.name_separator.join(morpheme_lst)
         d["MORPHS"] = args.morph_separator.join(morph_lst)
         d["ZEROFILLED"] = args.morph_separator.join(zero_filled_morph_lst)
         writer.writerow(d)

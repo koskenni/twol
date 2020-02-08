@@ -26,11 +26,17 @@ def main():
     argparser.add_argument(
         "names",
         default="demo-renaming.csv",
-        help="mapping from raw to neat morphophonemes as a CSV file")
+        help="mapping from raw to neat morphophonemes as a CSV file,"\
+        " default is ','")
     argparser.add_argument(
         "-d", "--delimiter",
         default=",",
-        help="delimiter between raw name and new name fields")
+        help="delimiter between raw name and new name fields, default is ','")
+    argparser.add_argument(
+        "-n", "--name-separator",
+        default=".",
+        help="Separator between morpheme names in the morpheme list,"\
+        " default is '.'")
     argparser.add_argument(
         "-F", "--add-features",
         default=False, action="store_true",
@@ -67,7 +73,9 @@ def main():
     outfil = open(args.output, "w")
 
     with open(args.input) as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=args.delimiter)
+        reader = csv.DictReader(csvfile,
+                                delimiter=args.delimiter,
+                                skipinitialspace=True)
         for row in reader:
             zero_filled_str = row["ZEROFILLED"].strip().replace(".", "")
             raw_str = row["RAW"].strip()
@@ -88,7 +96,7 @@ def main():
                     psym = clean_insym + ":" + outsym
                 pairsym_lst.append(psym)
             if args.add_features:
-                morpheme_lst = row["MORPHEMES"].strip().split(" ")
+                morpheme_lst = row["MORPHEMES"].strip().split(args.name_separator)
                 for morpheme in morpheme_lst[1:]:
                     pairsym_lst.append(morpheme + ":Ø")
             pairsym_str = " ".join(pairsym_lst)

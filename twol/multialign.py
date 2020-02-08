@@ -194,8 +194,9 @@ def aligner(words, max_zeros_in_longest, line):
 
     Returns the best alignment as a list of raw morphophoneme.
     """
-    #from twol.cfg import verbosity, final
-    #from twolalign.alphabet import mphon_weight
+
+    if max([len(w) for w in words]) == 0:
+        return []
 
     max_length = max([grapheme.length(x) for x in words])
     weighted_fsa = hfst.empty_fst()

@@ -66,13 +66,13 @@ def mphon_to_binint(mphon):
     if mphon in mphon_to_binint_cache:
         return mphon_to_binint_cache[mphon]
     if len(mphon) == 1:
-        print("** '{mphon}' NOT IN ALPHABET?".format(mphon))
-        return 0
+        msg = "** '{}' NOT IN ALPHABET\n\n".format(mphon)
+        exit(msg)
     old = mphon[:-1]
     new = mphon[-1:]
     if new not in mphon_to_binint_cache:
-        print("** '{}' IN '{mphon}' NOT IN ALPHABET?".format(new, mphon))
-        return 0
+        msg = "** '{}' IN '{}' NOT IN ALPHABET\n\n".format(new, mphon)
+        exit(msg)
     if old in mphon_to_binint_cache:
         binint =  mphon_to_binint_cache[old] | mphon_to_binint_cache[new]
         mphon_to_binint_cache[mphon] = binint

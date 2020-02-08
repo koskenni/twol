@@ -42,6 +42,7 @@ u  =  ,,, Close, Back, Rounded
 e  =  ,,, CloseMid, Front, Unrounded
 ö  =  ,,, CloseMid, Front, Rounded  #  IPA ø
 o  =  ,,, CloseMid, Back, Rounded
+å  =  ,,, CloseMid, Back, Rounded
 :õ =  ,,, CloseMid, Back, Unrounded  #  Estonian õ, IPA ɤ
 ä  =  ,,, OpenMid, Front, Unrounded  #  IPA æ
 a  =  ,,, Open, Back, Unrounded  #  IPA ɑ

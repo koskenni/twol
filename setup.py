@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="twol", # of the PyPI project and package
-    version="0.2.dev3",
+    version="0.4",
     author="Kimmo Koskenniemi",
     author_email="koskenni@gmail.com",
     description="Tools for simplified two-level morphology",
@@ -35,8 +35,9 @@ setuptools.setup(
     include_package_data=True,
     python_requires='>=3.6',
         install_requires=[
+        'orderedset',
         'hfst',
-        'TatSu',
+        'TatSu==4.4.0',
         'grapheme'
     ]
 

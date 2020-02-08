@@ -27,7 +27,7 @@ $(BASE)-raw.csv : $(BASE)-zerofilled.csv $(BASE)-affixes.csv
 	twol-zerofilled2raw -d '$(DELIM)' $< $@ $(BASE)-affixes.csv
 
 $(BASE)-zerofilled.csv : $(BASE)-words.csv
-	twol-words2zerofilled -x $(ZEROS) $< $@ alphabet.text -d '$(DELIM)'
+	twol-words2zerofilled -x $(ZEROS) -d '$(DELIM)' $< $@ alphabet.text
 
 $(BASE)-words.csv : $(BASE)-table.csv
 	twol-table2words -d '$(DELIM)' -s "."  $< $@

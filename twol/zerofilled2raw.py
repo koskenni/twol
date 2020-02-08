@@ -16,7 +16,7 @@ languages).
 
 def main():
 
-    version = "2020-02-01"
+    version = "2020-02-08"
     
     import argparse
     argparser = argparse.ArgumentParser(
@@ -27,29 +27,26 @@ def main():
         " twol-comp or twol-discov. Version {}".format(version))
     argparser.add_argument(
         "input",
-        default="ksk-zerofilled.csv",
         help="zero-filled example words as a CSV file")
     argparser.add_argument(
         "output",
-        default="ksk-raw-examp.csv",
         help="The output file in CSV format with a new column"\
         " where the words are represented with raw"\
         " morhpophonemes from zero-filling.")
     argparser.add_argument(
         "affix_info",
-        default="demo-affix-info.csv",
         help="Principal forms and morphophonemic affixes as a CSV file")
-    argparser.add_argument(
-        "-s", "--morph-separator",
-        default=".",
-        help="Separator between morphs in the word form")
     argparser.add_argument(
         "-d", "--csv-delimiter",
         default=",",
-        help="Delimiter between the fields")
+        help="Delimiter between the fields, default=','")
+    argparser.add_argument(
+        "-s", "--morph-separator",
+        default=".",
+        help="Separator between morphs in the word form, default='.'")
     argparser.add_argument(
         "-n", "--name-separator",
-        default=" ",
+        default=".",
         help="Separator between morpheme names in the morpheme list")
     argparser.add_argument(
         "-z", "--zero-symbol",
@@ -77,14 +74,17 @@ def main():
     # Read in the feature combinations of principal forms and
     # the morphophonemic representations of affix features
     with open(args.affix_info, "r") as afffil:
-        affrdr = csv.reader(afffil, delimiter=args.csv_delimiter)
+        affrdr = csv.reader(afffil,
+                            delimiter=args.csv_delimiter,
+                            skipinitialspace=True)
         for row in affrdr:
             if row[1] == '+':
                 principal_set.add(row[0])
             else:
                 feat2mphons[row[0]] = row[1]
-    #print("principal_set =", principal_set)####
-    #print("feat2mphons =", feat2mphons)####
+    if args.verbosity >= 10:
+        print("principal_set =", principal_set)####
+        print("feat2mphons =", feat2mphons)####
 
     # Read in the morpheme names and the zero-filled morphs
 
@@ -94,7 +94,9 @@ def main():
     (MORPHEMES, MORPHS, ALIGNED) in the original data.
     """
     with open(args.input, "r") as infil:
-        rdr = csv.DictReader(infil, delimiter=args.csv_delimiter)
+        rdr = csv.DictReader(infil,
+                             delimiter=args.csv_delimiter,
+                             skipinitialspace=True)
         for row in rdr:
             names = row["MORPHEMES"].strip()
             orig_morphs = row["MORPHS"].strip()
@@ -103,12 +105,13 @@ def main():
                 continue
             name_lst = names.split(args.name_separator, maxsplit=1)
             stem_name = name_lst[0]
-            form_name = " ".join(name_lst[1:]) if len(name_lst) > 1 else ""
+            form_name = ".".join(name_lst[1:]) if len(name_lst) > 1 else ""
             zerof_morph_lst = zerof_morphs.split(args.morph_separator,
                                                  maxsplit=1)
             if stem_name not in stem_morpheme_data:
                 stem_morpheme_data[stem_name] = []
-            stem_morpheme_data[stem_name].append((form_name, orig_morphs,
+            stem_morpheme_data[stem_name].append((form_name,
+                                                  orig_morphs,
                                                   zerof_morph_lst))
 
     ofil = open(args.output, "w")
@@ -118,6 +121,8 @@ def main():
 
     for stem_morpheme, data_lst in stem_morpheme_data.items():
         princ_zstem_lst =[]
+        if args.verbosity >= 10:
+            print("*** stem_morpheme, data_lst:", stem_morpheme, data_lst)
         # select the principal forms of this stem morpheme
         for data in data_lst:
             form_name, orig_morphs, zerof_morph_lst = data
@@ -125,6 +130,8 @@ def main():
                 princ_zstem_lst.append(zerof_morph_lst[0])
         # form the raw morphophonemes by combining corresponding
         # symbols
+        if args.verbosity >= 10:
+            print("*** princ_zstem_lst:", princ_zstem_lst) ###
         l = len(princ_zstem_lst[0])
         zstem_rawsym_lst = []
         for i in range(l):
@@ -143,12 +150,13 @@ def main():
         # morphophonemes
         for data in data_lst:
             form_name, orig_morphs, zerof_morph_lst = data
-            row["MORPHEMES"] = (stem_morpheme + " " + form_name).strip() 
+            form_part = args.name_separator + form_name if form_name else ""
+            row["MORPHEMES"] = (stem_morpheme + form_part).strip() 
             row["MORPHS"] = orig_morphs
             orig_zerof_morphs = args.morph_separator.join(zerof_morph_lst)
             row["ZEROFILLED"] = orig_zerof_morphs
             raw_lst = [zstem_pairsym_str]
-            feat_lst = form_name.split(" ")
+            feat_lst = form_name.split(args.name_separator)
             for feat in feat_lst:
                 raw_lst.append(feat2mphons[feat])
             row["RAW"] = " ".join(raw_lst)

@@ -8,7 +8,7 @@
 def step1():
     import csv, re, sys
 
-    version = "2020-02-01"
+    version = "2020-02-08"
 
     import argparse
     argparser = argparse.ArgumentParser(
@@ -53,23 +53,26 @@ def step1():
     morph_set = {}
     seg_ex_list = []
     with open(args.input, "r") as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=args.csv_delimiter)
+        reader = csv.DictReader(csvfile,
+                                delimiter=args.csv_delimiter,
+                                skipinitialspace=True)
         for row in reader:
             if row["ID"].startswith("?"):
                 continue
-            for column_label, words in row.items(): # process each cell of the row
-                #words = row[column_label] # space separated string of words
-                if not words or column_label in {"ID", "KSK"}:
+            # process each cell of the row
+            for column_label, words in row.items(): 
+                if (not words) or (column_label in {"ID", "KSK"}) \
+                   or ("STM" not in column_label):
                     continue
                 morpheme_list = column_label.split(args.name_separator)
                 if morpheme_list[0] == 'STM':
                     morpheme_list[0] = row['ID']
                 words_clean = re.sub(r'[][()]', '', words)
-                word_list = re.split(r"\s+", words_clean.strip())
+                word_list = re.split(r"\s+", words_clean)
                 for morphs in word_list:
                     if not morphs or morphs.find('*') >= 0:
                         continue
-                    d["MORPHEMES"] = args.name_separator.join(morpheme_list)
+                    d["MORPHEMES"] = args.name_separator.join(morpheme_list).strip()
                     d["MORPHS"] = morphs
                     writer.writerow(d)
     out_file.close()
