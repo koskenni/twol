@@ -44,11 +44,11 @@ The input for the first step is table which one can produce using a spreadsheet 
 
 The twol programs read and write all tables in Comma Separated Value (:term:`CSV`) format  such as `demo-table.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-table.csv>`_::
 
-   ID,STM,STM.INE,STM.ESS,STM.PL.INE
-   MÄKI,mäki,mäe.ssä,mäke.nä,mä.i.ssä
-   KÄSI,käsi,käde.ssä,käte.nä,käs.i.ssä
-   LASI,lasi,lasi.ssa,lasi.na,lase.i.ssa
-   LAKI,laki,lai.ssa,laki.na,lae.i.ssa
+   ID,   STM,  STM.INE,  STM.ESS, STM.PL.INE
+   MÄKI, mäki, mäe.ssä,  mäke.nä, mä.i.ssä
+   KÄSI, käsi, käde.ssä, käte.nä, käs.i.ssä
+   LASI, lasi, lasi.ssa, lasi.na, lase.i.ssa
+   LAKI, laki, lai.ssa,  laki.na, lae.i.ssa
 
 twol-table2words
 ================
@@ -61,9 +61,9 @@ reads in a paradigm table `demo-table.csv <https://raw.githubusercontent.com/kos
 
      MORPHEMES,   MORPHS
      MÄKI,        mäki
-     MÄKI INE,    mäe.ssä
-     MÄKI ESS,    mäke.nä
-     MÄKI PL.INE, mä.i.ssä
+     MÄKI.INE,    mäe.ssä
+     MÄKI.ESS,    mäke.nä
+     MÄKI.PL.INE, mä.i.ssä
      KÄSI,        käsi
      KÄSI.INE,    käde.ssä
      KÄSI.ESS,    käte.nä
@@ -80,7 +80,7 @@ reads in a paradigm table `demo-table.csv <https://raw.githubusercontent.com/kos
 twol-words2zerofilled
 =====================
 
-This step needs the CSV file `demo-words.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/kskn-words-orig.csv>`_ that was produced in the previous step but we also need a file which defines the alphabet used in the examples.  The definition gives the approximate sound features of the letters which represent the phonemes.  For this demo example there is one file `alphabet.text <https://raw.githubusercontent.com/koskenni/twol/master/test/align/alphabet.text>`_.  The alignment uses the alphabet file for determining how similar different phonemes are.  See more explanation of the alphabet definition file in the section :`alignment:`.
+This step needs the CSV file `demo-words.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/kskn-words-orig.csv>`_ that was produced in the previous step but we also need a file which defines the alphabet used in the examples.  The definition gives the approximate sound features of the letters which represent the phonemes.  For this demo example there is one file `alphabet.text <https://raw.githubusercontent.com/koskenni/twol/master/test/align/alphabet.text>`_.  The alignment uses the alphabet file for determining how similar different phonemes are.  See more explanation of the alphabet definition file in the chapter :doc:`alignment`.
 
 The step itself consists of the following command::
 
@@ -124,21 +124,21 @@ The output file `demo-raw.csv <https://raw.githubusercontent.com/koskenni/twol/m
 
      MORPHEMES,   MORPHS,     ZEROFILLED, RAW
      MÄKI,        mäki,       mäki,       m ä {kØkØ} {ieeØ} 
-     MÄKI INE,    mäe.ssä,    mäØe.ssä,   m ä {kØkØ} {ieeØ} s s {aä}
-     MÄKI ESS,    mäke.nä,    mäke.nä,    m ä {kØkØ} {ieeØ} n {aä}
-     MÄKI PL INE, mä.i.ssä,   mäØØ.i.ssä, m ä {kØkØ} {ieeØ} i s s {aä}
+     MÄKI.INE,    mäe.ssä,    mäØe.ssä,   m ä {kØkØ} {ieeØ} s s {aä}
+     MÄKI.ESS,    mäke.nä,    mäke.nä,    m ä {kØkØ} {ieeØ} n {aä}
+     MÄKI.PL.INE, mä.i.ssä,   mäØØ.i.ssä, m ä {kØkØ} {ieeØ} i s s {aä}
      KÄSI,        käsi,       käsi,       k ä {sdts} {ieeØ} 
-     KÄSI INE,    käde.ssä,   käde.ssä,   k ä {sdts} {ieeØ} s s {aä}
-     KÄSI ESS,    käte.nä,    käte.nä,    k ä {sdts} {ieeØ} n {aä}
-     KÄSI PL INE, käs.i.ssä,  käsØ.i.ssä, k ä {sdts} {ieeØ} i s s {aä}
+     KÄSI.INE,    käde.ssä,   käde.ssä,   k ä {sdts} {ieeØ} s s {aä}
+     KÄSI.ESS,    käte.nä,    käte.nä,    k ä {sdts} {ieeØ} n {aä}
+     KÄSI.PL.INE, käs.i.ssä,  käsØ.i.ssä, k ä {sdts} {ieeØ} i s s {aä}
      LASI,        lasi,       lasi,       l a s {iiie} 
-     LASI INE,    lasi.ssa,   lasi.ssa,   l a s {iiie} s s {aä}
-     LASI ESS,    lasi.na,    lasi.na,    l a s {iiie} n {aä}
-     LASI PL INE, lase.i.ssa, lase.i.ssa, l a s {iiie} i s s {aä}
+     LASI.INE,    lasi.ssa,   lasi.ssa,   l a s {iiie} s s {aä}
+     LASI.ESS,    lasi.na,    lasi.na,    l a s {iiie} n {aä}
+     LASI.PL.INE, lase.i.ssa, lase.i.ssa, l a s {iiie} i s s {aä}
      LAKI,        laki,       laki,       l a {kØkØ} {iiie} 
-     LAKI INE,    lai.ssa,    laØi.ssa,   l a {kØkØ} {iiie} s s {aä}
-     LAKI ESS,    laki.na,    laki.na,    l a {kØkØ} {iiie} n {aä}
-     LAKI PL INE, lae.i.ssa,  laØe.i.ssa, l a {kØkØ} {iiie} i s s {aä}
+     LAKI.INE,    lai.ssa,    laØi.ssa,   l a {kØkØ} {iiie} s s {aä}
+     LAKI.ESS,    laki.na,    laki.na,    l a {kØkØ} {iiie} n {aä}
+     LAKI.PL.INE, lae.i.ssa,  laØe.i.ssa, l a {kØkØ} {iiie} i s s {aä}
 
 The program, in principle, constructs the morphophonemes just by listing the alternating phonemes as a sequence in curly braces.  In real scale paradigms, this would result in many more morphophonemes than what is necessary.  On the other hand, the program could treat the alternations just as sets, which would result in a small set of morphophonemes.  Unfortunately, in real cases, some of these small sets would simplify too much.  E.g. ``kalsium<>`` - ``kalsium<i>n`` - ``kalsium<e>ja`` represents the same kind of alternation between ``i``, ``e`` and ``Ø`` as ``mäki`` but in a clearly different configuration.
 
@@ -225,14 +225,59 @@ In order to do these excercises, you must have a Python 3 installed (version at 
 
 4. Consider the Swedish strong verbs as given at `Wikipedia <https://sv.wiktionary.org/wiki/Appendix:Starka_verb>`__.
 
-   - Construct a table ``swev.csv`` of them according to the same principles as were followed above.  Omit the first verb because it appears not to follow the common patterns, but include the rest of them.
-
-   - Add the morph boundaries (``.``) in the word forms in supinum (before ``it``) and perfect participle (before ``en``).  The column headings could be: ``STM``, ``STM.PRET``, ``STM.SUP``, ``STM.PERF``.  Note that you must add a dot at the end of the words in the second column (so that the heading and the words in the column have the same number of dots).
-
-   - Add one line for ``å`` in the alphabet by copying the line for ``o``.
+   - In Github, there is a verson of that table `svsv-table.csv <https://github.com/koskenni/twol/raw/master/test/align/svsv-table.csv>`__.  The CSV table has morph boundaries (``.``) in place.
 
    - Run the ``twol-table2words``, and correct any typos you might have made.  Discrepances between the numbers of dots (i.e. morphs) will be reported by the program.
 
    - Run the ``twol-words2zerofilled``.  Discrepances between the words and the alphabet are detected here by the program.
 
    - Run the ``twol-zerofilled2raw``.  Study the morphophonemes proposed by the program.  Are they acceptable?  The program makes good guesses, but it also makes mistakes.
+
+   Run the ``twol-raw2renamed`` program so that you get a file of space-separated pair symbols ``svsv-renamed.pstr``.
+
+   - Finally, run the ``twol-discov`` program in order to get tentative rules which account for the different surface shapes of the stems and the ending::
+
+       twol-discov -s '{ieii}' svsv-renamed.pstr
+
+     See the chapter :doc:`discovery` for more information on that program.   This gives two possible two-level rules for the raw morphophoneme ``{ieii}``::
+
+       {ieii}:e =>
+             _ g .#.,
+             _ p .#.,
+             _ t .#.,
+             _ v .#. ;
+        !                         .#.b<e>t.#.
+        !                        .#.st<e>g.#.
+        !                        .#.bl<e>v.#.
+        !                       .#.skr<e>v.#.
+        !                        .#.gr<e>p.#.
+        {ieii}:i =>
+             _ p i,
+             _ t e,
+             _ g i,
+             _ t i,
+             _ g {aØ}:a,
+             _ t {aØ}:a,
+             _ v {aØ}:a,
+             _ p {aØ}:a,
+             _ v e,
+             _ g e,
+             _ p e,
+             _ v i ;
+        !                        .#.bl<i>vit.#.
+        !                        .#.st<i>gen.#.
+        !                        .#.st<i>ga.#.
+        !                         .#.b<i>tit.#.
+        !                        .#.bl<i>va.#.
+        !                       .#.skr<i>vit.#.
+        !                        .#.gr<i>pit.#.
+        !                        .#.gr<i>pa.#.
+        !                         .#.b<i>ta.#.
+        !                       .#.skr<i>ven.#.
+        !                         .#.b<i>ten.#.
+        !                        .#.st<i>git.#.
+        !                       .#.skr<i>va.#.
+
+     The lines starting with an exclamation mark (!) are just comments which give the actual example words where that realization of the morphophoneme is present.
+
+     Your task as a computational linguist is to look at the two rules and propose a generalization, i.e. a more compact rule which would do the same thing but in a more general way.  Look at the contexts, if one could use a set of all vowels or all consonants instead of having individual konsonants like ``g``, ``p`` etc.  See wether the two rules could be merged into a single one.  Study the documentation of the two-level rules in :doc:`formalism`.
