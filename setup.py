@@ -33,12 +33,11 @@ setuptools.setup(
         ]
     },
     include_package_data=True,
-    python_requires='>=3.6',
+    python_requires='==3.6,==3.7',
         install_requires=[
         'orderedset',
         'hfst',
         'TatSu==4.4.0',
-        'grapheme'
     ]
 
 )
