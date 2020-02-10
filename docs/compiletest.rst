@@ -7,17 +7,7 @@ Compiling and testing the rules
 Required files and packages
 ===========================
 
-Before you can start using the ``twol-comp`` compiler, you have to see that all necessary parts are available.  In order to run properly, the compiler needs:
-
-1. modules *twexamp.py*, *cfg.py*, *fs.py*, *twbt.py*, *twparser.py*, *twrule.py* and *twolcsyntax.ebnf* which come along when you perform ``git clone`` or ``git pull`` commands
-
-2. the ``hfst`` Python interface which you install (if you do not have it already) by::
-
-     python3 -m pip install hfst
-
-3. a parser generator package called ``tatsu`` which you can install (if you do not have it yet) by::
-
-     python3 -m pip install tatsu
+Before you can start using the ``twol-comp`` compiler, you have to see that all necessary parts are available, usually by installing the ``twol`` package from PyPI, see for more instructions at `wiki <https://github.com/koskenni/twol/wiki>`__.  
 
 
 File containing examples
@@ -27,7 +17,7 @@ Before one writes even the first rule, one has to prepare a file of examples whi
 
 Alternatively, one may prepeare a file of examples manually with a program editor (such as Gedit or Emacs).  One must use some linguistic competence when finding the morphophonemic representations for the example words.
 
-Whatever method you are using when you build your set of examples, you end up with a file ``examples.pstr`` containing lines like::
+Whatever method you are using when you build your set of examples, you end up with a file ``grada.pstr`` containing lines like::
 
   t u o h {ieØeØ}:i
   t u o h {ieØeØ}:e n
@@ -42,7 +32,7 @@ Whatever method you are using when you build your set of examples, you end up wi
   t u o h {ieØeØ}:Ø {ij}:i {Øh}:Ø {V}:i n
   t u o h {ieØeØ}:Ø {ij}:i {Øh}:h {V}:i n
 
-One can use this file directly with the ``twol.py`` compiler or convert the file into a FST to be more efficient for the compiler to load in by executing the following command::
+One can use this file directly with the ``twol-comp`` compiler or convert the file into a FST to be more efficient for the compiler to load in by executing the following command::
 
   python3 twexamp.pl examples.pstr examples.fst
 

@@ -161,12 +161,41 @@ twol-raw2named
 
 This script renames some raw morphophonemes of the example word forms and writes a file of examples where each example is a line of blank separated string of :term:`pair symbols <pair symbol>`.  Pair symbols are the newly renamed ones or if the raw symbol is not yet renamed, the pair symbol is the original raw one.  This file is suitable for the twol.py compiler as its example file.
 
-The new names can be determined one by one.  The decisions made so far are stored in a CSV file with three columns:  the first is the inital raw name, the second is the now given new name for the morphophoneme, and the third column is for documentation, e.g.::
+The linguist can determine the new names one by one.  The decisions made so far are stored in a CSV file with three columns:  the first is the inital raw name, the second is the now given new name for the morphophoneme, and the third column is for documentation, e.g.::
 
   {kØkØ},{kØ},la<k>i la<>in
   {sdts},{tds},kä<t>enä kä<d>essä kä<s>issä
 
-Assigning names to raw morphophonemes is usually done with the aid of ``twol-discov``, see :doc:`discovery`.  The rule discovery module helps to identify similar raw morphophonemes and to give a common name to them.  The output of this script is e.g.::
+The pair symbol string (PSTR) can be produced with the following command::
+
+  $ twol-raw2named demo-raw.csv demo-renamed.pstr demo-newnames.csv
+
+Assigning names to raw morphophonemes is usually done with the aid of ``twol-discov``, see :doc:`discovery`.  The rule discovery module also helps to identify similar raw morphophonemes and to give a common name to them.  The output of this script is e.g.::
+
+  m ä {kØ}:k {ieeØ}:i
+  m ä {kØ}:Ø {ieeØ}:e n
+  m ä {kØ}:Ø {ieeØ}:e s s {aä}:ä
+  m ä {kØ}:k {ieeØ}:e n {aä}:ä
+  m ä {kØ}:Ø {ieeØ}:Ø i s s {aä}:ä
+  k ä {tds}:s {ieeØ}:i
+  k ä {tds}:d {ieeØ}:e n
+  k ä {tds}:d {ieeØ}:e s s {aä}:ä
+  k ä {tds}:t {ieeØ}:e n {aä}:ä
+  k ä {tds}:s {ieeØ}:Ø i s s {aä}:ä
+  l a s {iiie}:i
+  l a s {iiie}:i n
+  l a s {iiie}:i s s {aä}:a
+  l a s {iiie}:i n {aä}:a
+  l a s {iiie}:e i s s {aä}:a
+  l a {kØ}:k {iiie}:i
+  l a {kØ}:Ø {iiie}:i n
+  l a {kØ}:Ø {iiie}:i s s {aä}:a
+  l a {kØ}:k {iiie}:i n {aä}:a
+  l a {kØ}:Ø {iiie}:e i s s {aä}:a
+
+One may also write a two-level rule for such tentatively final morphophoneme and test the validity of the rule using ``twol-comp`` rule compiler.  See separate documents for them.
+
+There is a special option ``-F`` or ``--add-features`` in the ``twol-raw2named`` program which can be used in the rare cases where the phonological shapes of the affixes are not sufficient to deduce some alternations within the stem.  This option makes the program to add diacritical symbols to the end of the word.  These symbols indicate the grammatical form of the word form and they can be used in the two-level rule context.  Our example output would become as following, if the ``--add-features`` option is used::
 
    m ä {kØ}:k {ieeØ}:i
    m ä {kØ}:Ø {ieeØ}:e s s {aä}:ä INE:Ø
@@ -185,7 +214,6 @@ Assigning names to raw morphophonemes is usually done with the aid of ``twol-dis
    l a {kØ}:k {iiie}:i n {aä}:a ESS:Ø
    l a {kØ}:Ø {iiie}:e i s s {aä}:a PL:Ø INE:Ø
 
-One may also write a two-level rule for such tentatively final morphophoneme and test the validity of the rule using ``twol-comp`` rule compiler.  See separate documents for them.
 
 Exercises
 =========
@@ -281,3 +309,6 @@ In order to do these excercises, you must have a Python 3 installed (version at 
      The lines starting with an exclamation mark (!) are just comments which give the actual example words where that realization of the morphophoneme is present.
 
      Your task as a computational linguist is to look at the two rules and propose a generalization, i.e. a more compact rule which would do the same thing but in a more general way.  Look at the contexts, if one could use a set of all vowels or all consonants instead of having individual konsonants like ``g``, ``p`` etc.  See wether the two rules could be merged into a single one.  Study the documentation of the two-level rules in :doc:`formalism`.
+
+5. Study the raw morphophonemes of the preceding excercise and design a CSV file ``svsv-newnames`` which maps all all raw morphophophonemes to some cleaner and shorter forms.  Run the ``twol-discover`` again.  In case you are interested, you might continue by designing two-level rules for this small set of phenomena.
+
