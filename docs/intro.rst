@@ -2,7 +2,7 @@
 Simplified two-level model
 ==========================
 
-.. note:: The twol package is still under development and so is this documentation
+.. note:: The ``twol`` package has been published in `PyPI <https://pypi.org/project/twol/>`__ and can be freely installed from there.  The programs and test materials are available from `Github <https://github.com/koskenni/twol>`__.  The documentation of the ``twol`` package and tools is maintained here.  The programs and this documentation are still under development.
 
 The morphological two-level model dates back to [koskenniemi1983]_ and is characterized by the descritpion of phonological or
 morphophonological alternations as a direct relation between the
@@ -107,8 +107,8 @@ The simplified two-level grammar consists of one or more lines where each line m
     p a p {pØ}:Ø i l l e
     k a {td}:t u
     k a {td}:d u l l a
-    v a {tl}:t a a n
-    v a {tl}:l a s s a
+    v a l {tl}:t a a n
+    v a l {tl}:l a s s a
     k a n {tn}:t o j a
     k a n {tn}:n o s s a
     p a r {tr}:t a
@@ -144,13 +144,13 @@ A two-level rule file `grada.twol <https://raw.githubusercontent.com/koskenni/tw
     {kØ'}:k /<= _ Vi Closed ;
     ! vaa<>oissa
 
-Here we can identify (1) definitions which have an equal (=) sign which end in a semicolon, (2) rules which have a rule operator (<=>, =>, <=, <--, or /<=) and comments which start with an exclamation mark (!) and continue to the end of the line.
+Here we can identify (1) definitions which have an equal (``=``) sign which end in a semicolon (``;``), (2) rules which have a rule operator (``<=>``, ``=>``, ``<=``, ``<--``, or ``/<=``) and comments which start with an exclamation mark (``!``) and continue to the end of the line.
 
 Definitions and rules consist mostly of *two-level regular expressions* (TLRE) which are discussed and defined in the section :ref:`formalism`.
 
 One can test the ``twol-comp`` compiler with these two files by a command::
 
-  $ twol-comp grada.pstr grada.twol -t 2
+  $ twol-comp grada.pstr grada.twol
 
 The compiler compiles and tests the rules in the following manner::
 
@@ -197,7 +197,7 @@ The compiler compiles and tests the rules in the following manner::
     {kØ'}:k /<= _ Vi Closed ;
     All positive examples accepted
 
-In effect, the result indicates that the rules were consistent with the examples. 
+In effect, the result indicates that the rules were quite consistent with the examples. 
 
 ----------
 References

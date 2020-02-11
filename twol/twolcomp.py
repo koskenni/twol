@@ -25,7 +25,7 @@ def print_raw_paths(paths):
 
 def main():
 
-    version = "2020-02-01"
+    version = "2020-02-11"
     import argparse
     arpar = argparse.ArgumentParser(
         description="A compiler and tester for two-level rules."\
@@ -50,9 +50,11 @@ def main():
         default="")
     arpar.add_argument(
         "-t", "--thorough",
-        help="test each rule separately: 1 only against positive,"
-        " 2 against both positive and negative examples",
-        type=int, choices=[0, 1, 2], default=0)
+        help="test each rule separately: 0 if no testing is desired,"\
+        " 1 if against positive examples,"
+        " 2 against both positive and negative examples."\
+        " Default is 2.",
+        type=int, choices=[0, 1, 2], default=2)
     arpar.add_argument(
         "-r", "--recursion",
         help="set the limit for recursion depth",
