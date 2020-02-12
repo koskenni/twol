@@ -226,8 +226,8 @@ In order to do these excercises, you must have a Python 3 installed (version at 
 
 2. Using a text editor, add two words in the demo-table.csv::
 
-     KALA, kala, kala.n, kala.ssa, kala.na kalo.i.ssa
-     MIES, mies, miehe.n, miehe.ssä, miehe.nä mieh.i.ssä
+     KALA, kala, kala.n,  kala.ssa,  kala.na,  kalo.i.ssa
+     MIES, mies, miehe.n, miehe.ssä, miehe.nä, mieh.i.ssä
 
    Run the programs again.  Study the alignment and the morphophonemes that you got.  Do you think that they are phonologically plausible?
 
