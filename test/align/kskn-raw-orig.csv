@@ -1,1253 +1,1253 @@
 MORPHEMES,MORPHS,ZEROFILLED,RAW
 ARKKU,arkku,arkku,a r k {kØkkk} u 
-ARKKU GEN,arku.n,arkØu.n,a r k {kØkkk} u n
-ARKKU PTV,arkku.a,arkku.Øa,a r k {kØkkk} u {Øt} {aä}
-ARKKU ESS,arkku.na,arkku.na,a r k {kØkkk} u {nrs} {aä}
-ARKKU ILL,arkku.un,arkku.Øun,a r k {kØkkk} u {Øh} {V} n
-ARKKU ILL,arkku.hun,arkku.hun,a r k {kØkkk} u {Øh} {V} n
-ARKKU PL INE,arku.i.ssa,arkØu.i.ssa,a r k {kØkkk} u {ij} s s {aä}
-ARKKU PL GENien,arkku.j.en,arkku.j.en,a r k {kØkkk} u {ij} e n
-ARKKU GENin,arkku.in,arkku.in,a r k {kØkkk} u i n
-ARKKU PL PTV,arkku.j.a,arkku.j.Øa,a r k {kØkkk} u {ij} {Øt} {aä}
-ARKKU PL ILL,arkku.i.hin,arkku.i.hin,a r k {kØkkk} u {ij} {Øh} {V} n
+ARKKU.GEN,arku.n,arkØu.n,a r k {kØkkk} u n
+ARKKU.PTV,arkku.a,arkku.Øa,a r k {kØkkk} u {Øt} {aä}
+ARKKU.ESS,arkku.na,arkku.na,a r k {kØkkk} u {nrs} {aä}
+ARKKU.ILL,arkku.un,arkku.Øun,a r k {kØkkk} u {Øh} {V} n
+ARKKU.ILL,arkku.hun,arkku.hun,a r k {kØkkk} u {Øh} {V} n
+ARKKU.PL.INE,arku.i.ssa,arkØu.i.ssa,a r k {kØkkk} u {ij} s s {aä}
+ARKKU.PL.GENien,arkku.j.en,arkku.j.en,a r k {kØkkk} u {ij} e n
+ARKKU.GENin,arkku.in,arkku.in,a r k {kØkkk} u i n
+ARKKU.PL.PTV,arkku.j.a,arkku.j.Øa,a r k {kØkkk} u {ij} {Øt} {aä}
+ARKKU.PL.ILL,arkku.i.hin,arkku.i.hin,a r k {kØkkk} u {ij} {Øh} {V} n
 PATO,pato,pato,p a {tdttt} o 
-PATO GEN,pado.n,pado.n,p a {tdttt} o n
-PATO PTV,pato.a,pato.Øa,p a {tdttt} o {Øt} {aä}
-PATO ESS,pato.na,pato.na,p a {tdttt} o {nrs} {aä}
-PATO ILL,pato.on,pato.Øon,p a {tdttt} o {Øh} {V} n
-PATO ILL,pato.hon,pato.hon,p a {tdttt} o {Øh} {V} n
-PATO PL INE,pado.i.ssa,pado.i.ssa,p a {tdttt} o {ij} s s {aä}
-PATO PL GENien,pato.j.en,pato.j.en,p a {tdttt} o {ij} e n
-PATO GENin,pato.in,pato.in,p a {tdttt} o i n
-PATO PL PTV,pato.j.a,pato.j.Øa,p a {tdttt} o {ij} {Øt} {aä}
-PATO PL ILL,pato.i.hin,pato.i.hin,p a {tdttt} o {ij} {Øh} {V} n
+PATO.GEN,pado.n,pado.n,p a {tdttt} o n
+PATO.PTV,pato.a,pato.Øa,p a {tdttt} o {Øt} {aä}
+PATO.ESS,pato.na,pato.na,p a {tdttt} o {nrs} {aä}
+PATO.ILL,pato.on,pato.Øon,p a {tdttt} o {Øh} {V} n
+PATO.ILL,pato.hon,pato.hon,p a {tdttt} o {Øh} {V} n
+PATO.PL.INE,pado.i.ssa,pado.i.ssa,p a {tdttt} o {ij} s s {aä}
+PATO.PL.GENien,pato.j.en,pato.j.en,p a {tdttt} o {ij} e n
+PATO.GENin,pato.in,pato.in,p a {tdttt} o i n
+PATO.PL.PTV,pato.j.a,pato.j.Øa,p a {tdttt} o {ij} {Øt} {aä}
+PATO.PL.ILL,pato.i.hin,pato.i.hin,p a {tdttt} o {ij} {Øh} {V} n
 ARVELU,arvelu,arvelu,a r v e l u 
-ARVELU GEN,arvelu.n,arvelu.n,a r v e l u n
-ARVELU PTV,arvelu.a,arvelu.Øa,a r v e l u {Øt} {aä}
-ARVELU ESS,arvelu.na,arvelu.na,a r v e l u {nrs} {aä}
-ARVELU ILL,arvelu.un,arvelu.Øun,a r v e l u {Øh} {V} n
-ARVELU ILL,arvelu.hun,arvelu.hun,a r v e l u {Øh} {V} n
-ARVELU PL INE,arvelu.i.ssa,arvelu.i.ssa,a r v e l u {ij} s s {aä}
-ARVELU PL GENiden,arvelu.i.den,arvelu.i.dØen,a r v e l u {ij} {dt} {Øt} e n
-ARVELU PL GENiden,arvelu.i.tten,arvelu.i.tten,a r v e l u {ij} {dt} {Øt} e n
-ARVELU PL GENien,arvelu.j.en,arvelu.j.en,a r v e l u {ij} e n
-ARVELU GENin,arvelu.in,arvelu.in,a r v e l u i n
-ARVELU PL PTV,arvelu.j.a,arvelu.j.Øa,a r v e l u {ij} {Øt} {aä}
-ARVELU PL PTV,arvelu.i.ta,arvelu.i.ta,a r v e l u {ij} {Øt} {aä}
-ARVELU PL ILL,arvelu.i.hin,arvelu.i.hin,a r v e l u {ij} {Øh} {V} n
+ARVELU.GEN,arvelu.n,arvelu.n,a r v e l u n
+ARVELU.PTV,arvelu.a,arvelu.Øa,a r v e l u {Øt} {aä}
+ARVELU.ESS,arvelu.na,arvelu.na,a r v e l u {nrs} {aä}
+ARVELU.ILL,arvelu.un,arvelu.Øun,a r v e l u {Øh} {V} n
+ARVELU.ILL,arvelu.hun,arvelu.hun,a r v e l u {Øh} {V} n
+ARVELU.PL.INE,arvelu.i.ssa,arvelu.i.ssa,a r v e l u {ij} s s {aä}
+ARVELU.PL.GENiden,arvelu.i.den,arvelu.i.dØen,a r v e l u {ij} {dt} {Øt} e n
+ARVELU.PL.GENiden,arvelu.i.tten,arvelu.i.tten,a r v e l u {ij} {dt} {Øt} e n
+ARVELU.PL.GENien,arvelu.j.en,arvelu.j.en,a r v e l u {ij} e n
+ARVELU.GENin,arvelu.in,arvelu.in,a r v e l u i n
+ARVELU.PL.PTV,arvelu.j.a,arvelu.j.Øa,a r v e l u {ij} {Øt} {aä}
+ARVELU.PL.PTV,arvelu.i.ta,arvelu.i.ta,a r v e l u {ij} {Øt} {aä}
+ARVELU.PL.ILL,arvelu.i.hin,arvelu.i.hin,a r v e l u {ij} {Øh} {V} n
 ILMETTY,ilmetty,ilmetty,i l m e t {tØtttØ} y 
-ILMETTY GEN,ilmety.n,ilmetØy.n,i l m e t {tØtttØ} y n
-ILMETTY PTV,ilmetty.ä,ilmetty.Øä,i l m e t {tØtttØ} y {Øt} {aä}
-ILMETTY ESS,ilmetty.nä,ilmetty.nä,i l m e t {tØtttØ} y {nrs} {aä}
-ILMETTY ILL,ilmetty.yn,ilmetty.Øyn,i l m e t {tØtttØ} y {Øh} {V} n
-ILMETTY ILL,ilmetty.hyn,ilmetty.hyn,i l m e t {tØtttØ} y {Øh} {V} n
-ILMETTY PL INE,ilmety.i.ssä,ilmetØy.i.ssä,i l m e t {tØtttØ} y {ij} s s {aä}
-ILMETTY PL GENiden,ilmety.i.den,ilmetØy.i.dØen,i l m e t {tØtttØ} y {ij} {dt} {Øt} e n
-ILMETTY PL GENiden,ilmety.i.tten,ilmetØy.i.tten,i l m e t {tØtttØ} y {ij} {dt} {Øt} e n
-ILMETTY PL GENien,ilmetty.j.en,ilmetty.j.en,i l m e t {tØtttØ} y {ij} e n
-ILMETTY GENin,ilmetty.in,ilmetty.in,i l m e t {tØtttØ} y i n
-ILMETTY PL PTV,ilmetty.j.ä,ilmetty.j.Øä,i l m e t {tØtttØ} y {ij} {Øt} {aä}
-ILMETTY PL PTV,ilmety.i.tä,ilmetØy.i.tä,i l m e t {tØtttØ} y {ij} {Øt} {aä}
-ILMETTY PL ILL,ilmetty.i.hin,ilmetty.i.hin,i l m e t {tØtttØ} y {ij} {Øh} {V} n
+ILMETTY.GEN,ilmety.n,ilmetØy.n,i l m e t {tØtttØ} y n
+ILMETTY.PTV,ilmetty.ä,ilmetty.Øä,i l m e t {tØtttØ} y {Øt} {aä}
+ILMETTY.ESS,ilmetty.nä,ilmetty.nä,i l m e t {tØtttØ} y {nrs} {aä}
+ILMETTY.ILL,ilmetty.yn,ilmetty.Øyn,i l m e t {tØtttØ} y {Øh} {V} n
+ILMETTY.ILL,ilmetty.hyn,ilmetty.hyn,i l m e t {tØtttØ} y {Øh} {V} n
+ILMETTY.PL.INE,ilmety.i.ssä,ilmetØy.i.ssä,i l m e t {tØtttØ} y {ij} s s {aä}
+ILMETTY.PL.GENiden,ilmety.i.den,ilmetØy.i.dØen,i l m e t {tØtttØ} y {ij} {dt} {Øt} e n
+ILMETTY.PL.GENiden,ilmety.i.tten,ilmetØy.i.tten,i l m e t {tØtttØ} y {ij} {dt} {Øt} e n
+ILMETTY.PL.GENien,ilmetty.j.en,ilmetty.j.en,i l m e t {tØtttØ} y {ij} e n
+ILMETTY.GENin,ilmetty.in,ilmetty.in,i l m e t {tØtttØ} y i n
+ILMETTY.PL.PTV,ilmetty.j.ä,ilmetty.j.Øä,i l m e t {tØtttØ} y {ij} {Øt} {aä}
+ILMETTY.PL.PTV,ilmety.i.tä,ilmetØy.i.tä,i l m e t {tØtttØ} y {ij} {Øt} {aä}
+ILMETTY.PL.ILL,ilmetty.i.hin,ilmetty.i.hin,i l m e t {tØtttØ} y {ij} {Øh} {V} n
 SISÄKKÖ,sisäkkö,sisäkkö,s i s ä k {kØkkkØ} ö 
-SISÄKKÖ GEN,sisäkö.n,sisäkØö.n,s i s ä k {kØkkkØ} ö n
-SISÄKKÖ PTV,sisäkkö.ä,sisäkkö.Øä,s i s ä k {kØkkkØ} ö {Øt} {aä}
-SISÄKKÖ ESS,sisäkkö.nä,sisäkkö.nä,s i s ä k {kØkkkØ} ö {nrs} {aä}
-SISÄKKÖ ILL,sisäkkö.ön,sisäkkö.Øön,s i s ä k {kØkkkØ} ö {Øh} {V} n
-SISÄKKÖ ILL,sisäkkö.hön,sisäkkö.hön,s i s ä k {kØkkkØ} ö {Øh} {V} n
-SISÄKKÖ PL INE,sisäkö.i.ssä,sisäkØö.i.ssä,s i s ä k {kØkkkØ} ö {ij} s s {aä}
-SISÄKKÖ PL GENiden,sisäkö.i.den,sisäkØö.i.dØen,s i s ä k {kØkkkØ} ö {ij} {dt} {Øt} e n
-SISÄKKÖ PL GENiden,sisäkö.i.tten,sisäkØö.i.tten,s i s ä k {kØkkkØ} ö {ij} {dt} {Øt} e n
-SISÄKKÖ PL GENien,sisäkkö.j.en,sisäkkö.j.en,s i s ä k {kØkkkØ} ö {ij} e n
-SISÄKKÖ GENin,sisäkkö.in,sisäkkö.in,s i s ä k {kØkkkØ} ö i n
-SISÄKKÖ PL PTV,sisäkkö.j.ä,sisäkkö.j.Øä,s i s ä k {kØkkkØ} ö {ij} {Øt} {aä}
-SISÄKKÖ PL PTV,sisäkö.i.tä,sisäkØö.i.tä,s i s ä k {kØkkkØ} ö {ij} {Øt} {aä}
-SISÄKKÖ PL ILL,sisäkkö.i.hin,sisäkkö.i.hin,s i s ä k {kØkkkØ} ö {ij} {Øh} {V} n
-SISÄKKÖ PL ILL,sisäkö.i.hin,sisäkØö.i.hin,s i s ä k {kØkkkØ} ö {ij} {Øh} {V} n
+SISÄKKÖ.GEN,sisäkö.n,sisäkØö.n,s i s ä k {kØkkkØ} ö n
+SISÄKKÖ.PTV,sisäkkö.ä,sisäkkö.Øä,s i s ä k {kØkkkØ} ö {Øt} {aä}
+SISÄKKÖ.ESS,sisäkkö.nä,sisäkkö.nä,s i s ä k {kØkkkØ} ö {nrs} {aä}
+SISÄKKÖ.ILL,sisäkkö.ön,sisäkkö.Øön,s i s ä k {kØkkkØ} ö {Øh} {V} n
+SISÄKKÖ.ILL,sisäkkö.hön,sisäkkö.hön,s i s ä k {kØkkkØ} ö {Øh} {V} n
+SISÄKKÖ.PL.INE,sisäkö.i.ssä,sisäkØö.i.ssä,s i s ä k {kØkkkØ} ö {ij} s s {aä}
+SISÄKKÖ.PL.GENiden,sisäkö.i.den,sisäkØö.i.dØen,s i s ä k {kØkkkØ} ö {ij} {dt} {Øt} e n
+SISÄKKÖ.PL.GENiden,sisäkö.i.tten,sisäkØö.i.tten,s i s ä k {kØkkkØ} ö {ij} {dt} {Øt} e n
+SISÄKKÖ.PL.GENien,sisäkkö.j.en,sisäkkö.j.en,s i s ä k {kØkkkØ} ö {ij} e n
+SISÄKKÖ.GENin,sisäkkö.in,sisäkkö.in,s i s ä k {kØkkkØ} ö i n
+SISÄKKÖ.PL.PTV,sisäkkö.j.ä,sisäkkö.j.Øä,s i s ä k {kØkkkØ} ö {ij} {Øt} {aä}
+SISÄKKÖ.PL.PTV,sisäkö.i.tä,sisäkØö.i.tä,s i s ä k {kØkkkØ} ö {ij} {Øt} {aä}
+SISÄKKÖ.PL.ILL,sisäkkö.i.hin,sisäkkö.i.hin,s i s ä k {kØkkkØ} ö {ij} {Øh} {V} n
+SISÄKKÖ.PL.ILL,sisäkö.i.hin,sisäkØö.i.hin,s i s ä k {kØkkkØ} ö {ij} {Øh} {V} n
 AUTIO,autio,autio,a u t i o 
-AUTIO GEN,autio.n,autio.n,a u t i o n
-AUTIO PTV,autio.ta,autio.ta,a u t i o {Øt} {aä}
-AUTIO PTV,autio.a,autio.Øa,a u t i o {Øt} {aä}
-AUTIO ESS,autio.na,autio.na,a u t i o {nrs} {aä}
-AUTIO ILL,autio.on,autio.Øon,a u t i o {Øh} {V} n
-AUTIO ILL,autio.hon,autio.hon,a u t i o {Øh} {V} n
-AUTIO PL INE,autio.i.ssa,autio.i.ssa,a u t i o {ij} s s {aä}
-AUTIO PL GENiden,autio.i.den,autio.i.dØen,a u t i o {ij} {dt} {Øt} e n
-AUTIO PL GENiden,autio.i.tten,autio.i.tten,a u t i o {ij} {dt} {Øt} e n
-AUTIO GENin,autio.in,autio.in,a u t i o i n
-AUTIO PL PTV,autio.i.ta,autio.i.ta,a u t i o {ij} {Øt} {aä}
-AUTIO PL ILL,autio.i.hin,autio.i.hin,a u t i o {ij} {Øh} {V} n
+AUTIO.GEN,autio.n,autio.n,a u t i o n
+AUTIO.PTV,autio.ta,autio.ta,a u t i o {Øt} {aä}
+AUTIO.PTV,autio.a,autio.Øa,a u t i o {Øt} {aä}
+AUTIO.ESS,autio.na,autio.na,a u t i o {nrs} {aä}
+AUTIO.ILL,autio.on,autio.Øon,a u t i o {Øh} {V} n
+AUTIO.ILL,autio.hon,autio.hon,a u t i o {Øh} {V} n
+AUTIO.PL.INE,autio.i.ssa,autio.i.ssa,a u t i o {ij} s s {aä}
+AUTIO.PL.GENiden,autio.i.den,autio.i.dØen,a u t i o {ij} {dt} {Øt} e n
+AUTIO.PL.GENiden,autio.i.tten,autio.i.tten,a u t i o {ij} {dt} {Øt} e n
+AUTIO.GENin,autio.in,autio.in,a u t i o i n
+AUTIO.PL.PTV,autio.i.ta,autio.i.ta,a u t i o {ij} {Øt} {aä}
+AUTIO.PL.ILL,autio.i.hin,autio.i.hin,a u t i o {ij} {Øh} {V} n
 HEITTIÖ,heittiö,heittiö,h e i t t i ö 
-HEITTIÖ GEN,heittiö.n,heittiö.n,h e i t t i ö n
-HEITTIÖ PTV,heittiö.tä,heittiö.tä,h e i t t i ö {Øt} {aä}
-HEITTIÖ PTV,heittiö.ä,heittiö.Øä,h e i t t i ö {Øt} {aä}
-HEITTIÖ ESS,heittiö.nä,heittiö.nä,h e i t t i ö {nrs} {aä}
-HEITTIÖ ILL,heittiö.ön,heittiö.Øön,h e i t t i ö {Øh} {V} n
-HEITTIÖ ILL,heittiö.hön,heittiö.hön,h e i t t i ö {Øh} {V} n
-HEITTIÖ PL INE,heittiö.i.ssä,heittiö.i.ssä,h e i t t i ö {ij} s s {aä}
-HEITTIÖ PL GENiden,heittiö.i.den,heittiö.i.dØen,h e i t t i ö {ij} {dt} {Øt} e n
-HEITTIÖ PL GENiden,heittiö.i.tten,heittiö.i.tten,h e i t t i ö {ij} {dt} {Øt} e n
-HEITTIÖ GENin,heittiö.in,heittiö.in,h e i t t i ö i n
-HEITTIÖ PL PTV,heittiö.i.tä,heittiö.i.tä,h e i t t i ö {ij} {Øt} {aä}
-HEITTIÖ PL ILL,heittiö.i.hin,heittiö.i.hin,h e i t t i ö {ij} {Øh} {V} n
+HEITTIÖ.GEN,heittiö.n,heittiö.n,h e i t t i ö n
+HEITTIÖ.PTV,heittiö.tä,heittiö.tä,h e i t t i ö {Øt} {aä}
+HEITTIÖ.PTV,heittiö.ä,heittiö.Øä,h e i t t i ö {Øt} {aä}
+HEITTIÖ.ESS,heittiö.nä,heittiö.nä,h e i t t i ö {nrs} {aä}
+HEITTIÖ.ILL,heittiö.ön,heittiö.Øön,h e i t t i ö {Øh} {V} n
+HEITTIÖ.ILL,heittiö.hön,heittiö.hön,h e i t t i ö {Øh} {V} n
+HEITTIÖ.PL.INE,heittiö.i.ssä,heittiö.i.ssä,h e i t t i ö {ij} s s {aä}
+HEITTIÖ.PL.GENiden,heittiö.i.den,heittiö.i.dØen,h e i t t i ö {ij} {dt} {Øt} e n
+HEITTIÖ.PL.GENiden,heittiö.i.tten,heittiö.i.tten,h e i t t i ö {ij} {dt} {Øt} e n
+HEITTIÖ.GENin,heittiö.in,heittiö.in,h e i t t i ö i n
+HEITTIÖ.PL.PTV,heittiö.i.tä,heittiö.i.tä,h e i t t i ö {ij} {Øt} {aä}
+HEITTIÖ.PL.ILL,heittiö.i.hin,heittiö.i.hin,h e i t t i ö {ij} {Øh} {V} n
 VATI,vati,vati,v a {tdttt} {iiiie} 
-VATI GEN,vadi.n,vadi.n,v a {tdttt} {iiiie} n
-VATI PTV,vati.a,vati.Øa,v a {tdttt} {iiiie} {Øt} {aä}
-VATI ESS,vati.na,vati.na,v a {tdttt} {iiiie} {nrs} {aä}
-VATI ILL,vati.in,vati.Øin,v a {tdttt} {iiiie} {Øh} {V} n
-VATI ILL,vati.hin,vati.hin,v a {tdttt} {iiiie} {Øh} {V} n
-VATI PL INE,vade.i.ssa,vade.i.ssa,v a {tdttt} {iiiie} {ij} s s {aä}
-VATI PL GENien,vat.i.en,vatØ.i.en,v a {tdttt} {iiiie} {ij} e n
-VATI GENin,vate.in,vate.in,v a {tdttt} {iiiie} i n
-VATI PL PTV,vate.j.a,vate.j.Øa,v a {tdttt} {iiiie} {ij} {Øt} {aä}
-VATI PL ILL,vate.i.hin,vate.i.hin,v a {tdttt} {iiiie} {ij} {Øh} {V} n
+VATI.GEN,vadi.n,vadi.n,v a {tdttt} {iiiie} n
+VATI.PTV,vati.a,vati.Øa,v a {tdttt} {iiiie} {Øt} {aä}
+VATI.ESS,vati.na,vati.na,v a {tdttt} {iiiie} {nrs} {aä}
+VATI.ILL,vati.in,vati.Øin,v a {tdttt} {iiiie} {Øh} {V} n
+VATI.ILL,vati.hin,vati.hin,v a {tdttt} {iiiie} {Øh} {V} n
+VATI.PL.INE,vade.i.ssa,vade.i.ssa,v a {tdttt} {iiiie} {ij} s s {aä}
+VATI.PL.GENien,vat.i.en,vatØ.i.en,v a {tdttt} {iiiie} {ij} e n
+VATI.GENin,vate.in,vate.in,v a {tdttt} {iiiie} i n
+VATI.PL.PTV,vate.j.a,vate.j.Øa,v a {tdttt} {iiiie} {ij} {Øt} {aä}
+VATI.PL.ILL,vate.i.hin,vate.i.hin,v a {tdttt} {iiiie} {ij} {Øh} {V} n
 PATTI,patti,patti,p a t {tØttt} {iiiie} 
-PATTI GEN,pati.n,patØi.n,p a t {tØttt} {iiiie} n
-PATTI PTV,patti.a,patti.Øa,p a t {tØttt} {iiiie} {Øt} {aä}
-PATTI ESS,patti.na,patti.na,p a t {tØttt} {iiiie} {nrs} {aä}
-PATTI ILL,patti.in,patti.Øin,p a t {tØttt} {iiiie} {Øh} {V} n
-PATTI ILL,patti.hin,patti.hin,p a t {tØttt} {iiiie} {Øh} {V} n
-PATTI PL INE,pate.i.ssa,patØe.i.ssa,p a t {tØttt} {iiiie} {ij} s s {aä}
-PATTI PL GENien,patt.i.en,pattØ.i.en,p a t {tØttt} {iiiie} {ij} e n
-PATTI GENin,patte.in,patte.in,p a t {tØttt} {iiiie} i n
-PATTI PL PTV,patte.j.a,patte.j.Øa,p a t {tØttt} {iiiie} {ij} {Øt} {aä}
-PATTI PL ILL,patte.i.hin,patte.i.hin,p a t {tØttt} {iiiie} {ij} {Øh} {V} n
+PATTI.GEN,pati.n,patØi.n,p a t {tØttt} {iiiie} n
+PATTI.PTV,patti.a,patti.Øa,p a t {tØttt} {iiiie} {Øt} {aä}
+PATTI.ESS,patti.na,patti.na,p a t {tØttt} {iiiie} {nrs} {aä}
+PATTI.ILL,patti.in,patti.Øin,p a t {tØttt} {iiiie} {Øh} {V} n
+PATTI.ILL,patti.hin,patti.hin,p a t {tØttt} {iiiie} {Øh} {V} n
+PATTI.PL.INE,pate.i.ssa,patØe.i.ssa,p a t {tØttt} {iiiie} {ij} s s {aä}
+PATTI.PL.GENien,patt.i.en,pattØ.i.en,p a t {tØttt} {iiiie} {ij} e n
+PATTI.GENin,patte.in,patte.in,p a t {tØttt} {iiiie} i n
+PATTI.PL.PTV,patte.j.a,patte.j.Øa,p a t {tØttt} {iiiie} {ij} {Øt} {aä}
+PATTI.PL.ILL,patte.i.hin,patte.i.hin,p a t {tØttt} {iiiie} {ij} {Øh} {V} n
 PAPERI,paperi,paperi,p a p e r {iiiiee} 
-PAPERI GEN,paperi.n,paperi.n,p a p e r {iiiiee} n
-PAPERI PTV,paperi.a,paperi.Øa,p a p e r {iiiiee} {Øt} {aä}
-PAPERI ESS,paperi.na,paperi.na,p a p e r {iiiiee} {nrs} {aä}
-PAPERI ILL,paperi.in,paperi.Øin,p a p e r {iiiiee} {Øh} {V} n
-PAPERI ILL,paperi.hin,paperi.hin,p a p e r {iiiiee} {Øh} {V} n
-PAPERI PL INE,papere.i.ssa,papere.i.ssa,p a p e r {iiiiee} {ij} s s {aä}
-PAPERI PL GENiden,papere.i.den,papere.i.dØen,p a p e r {iiiiee} {ij} {dt} {Øt} e n
-PAPERI PL GENiden,papere.i.tten,papere.i.tten,p a p e r {iiiiee} {ij} {dt} {Øt} e n
-PAPERI PL GENien,paper.i.en,paperØ.i.en,p a p e r {iiiiee} {ij} e n
-PAPERI GENin,papere.in,papere.in,p a p e r {iiiiee} i n
-PAPERI PL PTV,papere.j.a,papere.j.Øa,p a p e r {iiiiee} {ij} {Øt} {aä}
-PAPERI PL PTV,papere.i.ta,papere.i.ta,p a p e r {iiiiee} {ij} {Øt} {aä}
-PAPERI PL ILL,papere.i.hin,papere.i.hin,p a p e r {iiiiee} {ij} {Øh} {V} n
+PAPERI.GEN,paperi.n,paperi.n,p a p e r {iiiiee} n
+PAPERI.PTV,paperi.a,paperi.Øa,p a p e r {iiiiee} {Øt} {aä}
+PAPERI.ESS,paperi.na,paperi.na,p a p e r {iiiiee} {nrs} {aä}
+PAPERI.ILL,paperi.in,paperi.Øin,p a p e r {iiiiee} {Øh} {V} n
+PAPERI.ILL,paperi.hin,paperi.hin,p a p e r {iiiiee} {Øh} {V} n
+PAPERI.PL.INE,papere.i.ssa,papere.i.ssa,p a p e r {iiiiee} {ij} s s {aä}
+PAPERI.PL.GENiden,papere.i.den,papere.i.dØen,p a p e r {iiiiee} {ij} {dt} {Øt} e n
+PAPERI.PL.GENiden,papere.i.tten,papere.i.tten,p a p e r {iiiiee} {ij} {dt} {Øt} e n
+PAPERI.PL.GENien,paper.i.en,paperØ.i.en,p a p e r {iiiiee} {ij} e n
+PAPERI.GENin,papere.in,papere.in,p a p e r {iiiiee} i n
+PAPERI.PL.PTV,papere.j.a,papere.j.Øa,p a p e r {iiiiee} {ij} {Øt} {aä}
+PAPERI.PL.PTV,papere.i.ta,papere.i.ta,p a p e r {iiiiee} {ij} {Øt} {aä}
+PAPERI.PL.ILL,papere.i.hin,papere.i.hin,p a p e r {iiiiee} {ij} {Øh} {V} n
 BANAALI,banaali,banaali,b a n a a l {iiiiee} 
-BANAALI GEN,banaali.n,banaali.n,b a n a a l {iiiiee} n
-BANAALI PTV,banaali.a,banaali.Øa,b a n a a l {iiiiee} {Øt} {aä}
-BANAALI ESS,banaali.na,banaali.na,b a n a a l {iiiiee} {nrs} {aä}
-BANAALI ILL,banaali.in,banaali.Øin,b a n a a l {iiiiee} {Øh} {V} n
-BANAALI ILL,banaali.hin,banaali.hin,b a n a a l {iiiiee} {Øh} {V} n
-BANAALI PL INE,banaale.i.ssa,banaale.i.ssa,b a n a a l {iiiiee} {ij} s s {aä}
-BANAALI PL GENiden,banaale.i.den,banaale.i.dØen,b a n a a l {iiiiee} {ij} {dt} {Øt} e n
-BANAALI PL GENiden,banaale.i.tten,banaale.i.tten,b a n a a l {iiiiee} {ij} {dt} {Øt} e n
-BANAALI PL GENien,banaal.i.en,banaalØ.i.en,b a n a a l {iiiiee} {ij} e n
-BANAALI GENin,banaale.in,banaale.in,b a n a a l {iiiiee} i n
-BANAALI PL PTV,banaale.j.a,banaale.j.Øa,b a n a a l {iiiiee} {ij} {Øt} {aä}
-BANAALI PL PTV,banaale.i.ta,banaale.i.ta,b a n a a l {iiiiee} {ij} {Øt} {aä}
-BANAALI PL ILL,banaale.i.hin,banaale.i.hin,b a n a a l {iiiiee} {ij} {Øh} {V} n
+BANAALI.GEN,banaali.n,banaali.n,b a n a a l {iiiiee} n
+BANAALI.PTV,banaali.a,banaali.Øa,b a n a a l {iiiiee} {Øt} {aä}
+BANAALI.ESS,banaali.na,banaali.na,b a n a a l {iiiiee} {nrs} {aä}
+BANAALI.ILL,banaali.in,banaali.Øin,b a n a a l {iiiiee} {Øh} {V} n
+BANAALI.ILL,banaali.hin,banaali.hin,b a n a a l {iiiiee} {Øh} {V} n
+BANAALI.PL.INE,banaale.i.ssa,banaale.i.ssa,b a n a a l {iiiiee} {ij} s s {aä}
+BANAALI.PL.GENiden,banaale.i.den,banaale.i.dØen,b a n a a l {iiiiee} {ij} {dt} {Øt} e n
+BANAALI.PL.GENiden,banaale.i.tten,banaale.i.tten,b a n a a l {iiiiee} {ij} {dt} {Øt} e n
+BANAALI.PL.GENien,banaal.i.en,banaalØ.i.en,b a n a a l {iiiiee} {ij} e n
+BANAALI.GENin,banaale.in,banaale.in,b a n a a l {iiiiee} i n
+BANAALI.PL.PTV,banaale.j.a,banaale.j.Øa,b a n a a l {iiiiee} {ij} {Øt} {aä}
+BANAALI.PL.PTV,banaale.i.ta,banaale.i.ta,b a n a a l {iiiiee} {ij} {Øt} {aä}
+BANAALI.PL.ILL,banaale.i.hin,banaale.i.hin,b a n a a l {iiiiee} {ij} {Øh} {V} n
 KALSIUM,kalsium,kalsiumØ,k a l s i u m {Øiiie} 
-KALSIUM GEN,kalsiumi.n,kalsiumi.n,k a l s i u m {Øiiie} n
-KALSIUM PTV,kalsiumi.a,kalsiumi.Øa,k a l s i u m {Øiiie} {Øt} {aä}
-KALSIUM ESS,kalsiumi.na,kalsiumi.na,k a l s i u m {Øiiie} {nrs} {aä}
-KALSIUM ILL,kalsiumi.in,kalsiumi.Øin,k a l s i u m {Øiiie} {Øh} {V} n
-KALSIUM ILL,kalsiumi.hin,kalsiumi.hin,k a l s i u m {Øiiie} {Øh} {V} n
-KALSIUM PL INE,kalsiume.i.ssa,kalsiume.i.ssa,k a l s i u m {Øiiie} {ij} s s {aä}
-KALSIUM PL GENien,kalsium.i.en,kalsiumØ.i.en,k a l s i u m {Øiiie} {ij} e n
-KALSIUM GENin,kalsiume.in,kalsiume.in,k a l s i u m {Øiiie} i n
-KALSIUM PL PTV,kalsiume.j.a,kalsiume.j.Øa,k a l s i u m {Øiiie} {ij} {Øt} {aä}
-KALSIUM PL ILL,kalsiume.i.hin,kalsiume.i.hin,k a l s i u m {Øiiie} {ij} {Øh} {V} n
+KALSIUM.GEN,kalsiumi.n,kalsiumi.n,k a l s i u m {Øiiie} n
+KALSIUM.PTV,kalsiumi.a,kalsiumi.Øa,k a l s i u m {Øiiie} {Øt} {aä}
+KALSIUM.ESS,kalsiumi.na,kalsiumi.na,k a l s i u m {Øiiie} {nrs} {aä}
+KALSIUM.ILL,kalsiumi.in,kalsiumi.Øin,k a l s i u m {Øiiie} {Øh} {V} n
+KALSIUM.ILL,kalsiumi.hin,kalsiumi.hin,k a l s i u m {Øiiie} {Øh} {V} n
+KALSIUM.PL.INE,kalsiume.i.ssa,kalsiume.i.ssa,k a l s i u m {Øiiie} {ij} s s {aä}
+KALSIUM.PL.GENien,kalsium.i.en,kalsiumØ.i.en,k a l s i u m {Øiiie} {ij} e n
+KALSIUM.GENin,kalsiume.in,kalsiume.in,k a l s i u m {Øiiie} i n
+KALSIUM.PL.PTV,kalsiume.j.a,kalsiume.j.Øa,k a l s i u m {Øiiie} {ij} {Øt} {aä}
+KALSIUM.PL.ILL,kalsiume.i.hin,kalsiume.i.hin,k a l s i u m {Øiiie} {ij} {Øh} {V} n
 TUPPI,tuppi,tuppi,t u p {pØppp} {ieeeØ} 
-TUPPI GEN,tupe.n,tupØe.n,t u p {pØppp} {ieeeØ} n
-TUPPI PTV,tuppe.a,tuppe.Øa,t u p {pØppp} {ieeeØ} {Øt} {aä}
-TUPPI ESS,tuppe.na,tuppe.na,t u p {pØppp} {ieeeØ} {nrs} {aä}
-TUPPI ILL,tuppe.en,tuppe.Øen,t u p {pØppp} {ieeeØ} {Øh} {V} n
-TUPPI ILL,tuppe.hen,tuppe.hen,t u p {pØppp} {ieeeØ} {Øh} {V} n
-TUPPI PL INE,tup.i.ssa,tupØØ.i.ssa,t u p {pØppp} {ieeeØ} {ij} s s {aä}
-TUPPI PL GENien,tupp.i.en,tuppØ.i.en,t u p {pØppp} {ieeeØ} {ij} e n
-TUPPI GENin,tuppe.in,tuppe.in,t u p {pØppp} {ieeeØ} i n
-TUPPI PL PTV,tupp.i.a,tuppØ.i.Øa,t u p {pØppp} {ieeeØ} {ij} {Øt} {aä}
-TUPPI PL ILL,tupp.i.in,tuppØ.i.Øin,t u p {pØppp} {ieeeØ} {ij} {Øh} {V} n
-TUPPI PL ILL,tupp.i.hin,tuppØ.i.hin,t u p {pØppp} {ieeeØ} {ij} {Øh} {V} n
+TUPPI.GEN,tupe.n,tupØe.n,t u p {pØppp} {ieeeØ} n
+TUPPI.PTV,tuppe.a,tuppe.Øa,t u p {pØppp} {ieeeØ} {Øt} {aä}
+TUPPI.ESS,tuppe.na,tuppe.na,t u p {pØppp} {ieeeØ} {nrs} {aä}
+TUPPI.ILL,tuppe.en,tuppe.Øen,t u p {pØppp} {ieeeØ} {Øh} {V} n
+TUPPI.ILL,tuppe.hen,tuppe.hen,t u p {pØppp} {ieeeØ} {Øh} {V} n
+TUPPI.PL.INE,tup.i.ssa,tupØØ.i.ssa,t u p {pØppp} {ieeeØ} {ij} s s {aä}
+TUPPI.PL.GENien,tupp.i.en,tuppØ.i.en,t u p {pØppp} {ieeeØ} {ij} e n
+TUPPI.GENin,tuppe.in,tuppe.in,t u p {pØppp} {ieeeØ} i n
+TUPPI.PL.PTV,tupp.i.a,tuppØ.i.Øa,t u p {pØppp} {ieeeØ} {ij} {Øt} {aä}
+TUPPI.PL.ILL,tupp.i.in,tuppØ.i.Øin,t u p {pØppp} {ieeeØ} {ij} {Øh} {V} n
+TUPPI.PL.ILL,tupp.i.hin,tuppØ.i.hin,t u p {pØppp} {ieeeØ} {ij} {Øh} {V} n
 NALLE,nalle,nalle,n a l l e 
-NALLE GEN,nalle.n,nalle.n,n a l l e n
-NALLE PTV,nalle.a,nalle.Øa,n a l l e {Øt} {aä}
-NALLE ESS,nalle.na,nalle.na,n a l l e {nrs} {aä}
-NALLE ILL,nalle.en,nalle.Øen,n a l l e {Øh} {V} n
-NALLE ILL,nalle.hen,nalle.hen,n a l l e {Øh} {V} n
-NALLE PL INE,nalle.i.ssa,nalle.i.ssa,n a l l e {ij} s s {aä}
-NALLE PL GENien,nalle.j.en,nalle.j.en,n a l l e {ij} e n
-NALLE GENin,nalle.in,nalle.in,n a l l e i n
-NALLE PL PTV,nalle.j.a,nalle.j.Øa,n a l l e {ij} {Øt} {aä}
-NALLE PL ILL,nalle.i.hin,nalle.i.hin,n a l l e {ij} {Øh} {V} n
+NALLE.GEN,nalle.n,nalle.n,n a l l e n
+NALLE.PTV,nalle.a,nalle.Øa,n a l l e {Øt} {aä}
+NALLE.ESS,nalle.na,nalle.na,n a l l e {nrs} {aä}
+NALLE.ILL,nalle.en,nalle.Øen,n a l l e {Øh} {V} n
+NALLE.ILL,nalle.hen,nalle.hen,n a l l e {Øh} {V} n
+NALLE.PL.INE,nalle.i.ssa,nalle.i.ssa,n a l l e {ij} s s {aä}
+NALLE.PL.GENien,nalle.j.en,nalle.j.en,n a l l e {ij} e n
+NALLE.GENin,nalle.in,nalle.in,n a l l e i n
+NALLE.PL.PTV,nalle.j.a,nalle.j.Øa,n a l l e {ij} {Øt} {aä}
+NALLE.PL.ILL,nalle.i.hin,nalle.i.hin,n a l l e {ij} {Øh} {V} n
 KALA,kala,kala,k a l {aaaao} 
-KALA GEN,kala.n,kala.n,k a l {aaaao} n
-KALA PTV,kala.a,kala.Øa,k a l {aaaao} {Øt} {aä}
-KALA ESS,kala.na,kala.na,k a l {aaaao} {nrs} {aä}
-KALA ILL,kala.an,kala.Øan,k a l {aaaao} {Øh} {V} n
-KALA ILL,kala.han,kala.han,k a l {aaaao} {Øh} {V} n
-KALA PL INE,kalo.i.ssa,kalo.i.ssa,k a l {aaaao} {ij} s s {aä}
-KALA PL GENien,kalo.j.en,kalo.j.en,k a l {aaaao} {ij} e n
-KALA GENin,kala.in,kala.in,k a l {aaaao} i n
-KALA PL PTV,kalo.j.a,kalo.j.Øa,k a l {aaaao} {ij} {Øt} {aä}
-KALA PL ILL,kalo.i.hin,kalo.i.hin,k a l {aaaao} {ij} {Øh} {V} n
+KALA.GEN,kala.n,kala.n,k a l {aaaao} n
+KALA.PTV,kala.a,kala.Øa,k a l {aaaao} {Øt} {aä}
+KALA.ESS,kala.na,kala.na,k a l {aaaao} {nrs} {aä}
+KALA.ILL,kala.an,kala.Øan,k a l {aaaao} {Øh} {V} n
+KALA.ILL,kala.han,kala.han,k a l {aaaao} {Øh} {V} n
+KALA.PL.INE,kalo.i.ssa,kalo.i.ssa,k a l {aaaao} {ij} s s {aä}
+KALA.PL.GENien,kalo.j.en,kalo.j.en,k a l {aaaao} {ij} e n
+KALA.GENin,kala.in,kala.in,k a l {aaaao} i n
+KALA.PL.PTV,kalo.j.a,kalo.j.Øa,k a l {aaaao} {ij} {Øt} {aä}
+KALA.PL.ILL,kalo.i.hin,kalo.i.hin,k a l {aaaao} {ij} {Øh} {V} n
 KOIRA,koira,koira,k o i r {aaaaØ} 
-KOIRA GEN,koira.n,koira.n,k o i r {aaaaØ} n
-KOIRA PTV,koira.a,koira.Øa,k o i r {aaaaØ} {Øt} {aä}
-KOIRA ESS,koira.na,koira.na,k o i r {aaaaØ} {nrs} {aä}
-KOIRA ILL,koira.an,koira.Øan,k o i r {aaaaØ} {Øh} {V} n
-KOIRA ILL,koira.han,koira.han,k o i r {aaaaØ} {Øh} {V} n
-KOIRA PL INE,koir.i.ssa,koirØ.i.ssa,k o i r {aaaaØ} {ij} s s {aä}
-KOIRA PL GENien,koir.i.en,koirØ.i.en,k o i r {aaaaØ} {ij} e n
-KOIRA GENin,koira.in,koira.in,k o i r {aaaaØ} i n
-KOIRA PL PTV,koir.i.a,koirØ.i.Øa,k o i r {aaaaØ} {ij} {Øt} {aä}
-KOIRA PL ILL,koir.i.in,koirØ.i.Øin,k o i r {aaaaØ} {ij} {Øh} {V} n
-KOIRA PL ILL,koir.i.hin,koirØ.i.hin,k o i r {aaaaØ} {ij} {Øh} {V} n
+KOIRA.GEN,koira.n,koira.n,k o i r {aaaaØ} n
+KOIRA.PTV,koira.a,koira.Øa,k o i r {aaaaØ} {Øt} {aä}
+KOIRA.ESS,koira.na,koira.na,k o i r {aaaaØ} {nrs} {aä}
+KOIRA.ILL,koira.an,koira.Øan,k o i r {aaaaØ} {Øh} {V} n
+KOIRA.ILL,koira.han,koira.han,k o i r {aaaaØ} {Øh} {V} n
+KOIRA.PL.INE,koir.i.ssa,koirØ.i.ssa,k o i r {aaaaØ} {ij} s s {aä}
+KOIRA.PL.GENien,koir.i.en,koirØ.i.en,k o i r {aaaaØ} {ij} e n
+KOIRA.GENin,koira.in,koira.in,k o i r {aaaaØ} i n
+KOIRA.PL.PTV,koir.i.a,koirØ.i.Øa,k o i r {aaaaØ} {ij} {Øt} {aä}
+KOIRA.PL.ILL,koir.i.in,koirØ.i.Øin,k o i r {aaaaØ} {ij} {Øh} {V} n
+KOIRA.PL.ILL,koir.i.hin,koirØ.i.hin,k o i r {aaaaØ} {ij} {Øh} {V} n
 MATALA,matala,matala,m a t a l {aaaaaØo} 
-MATALA GEN,matala.n,matala.n,m a t a l {aaaaaØo} n
-MATALA PTV,matala.a,matala.Øa,m a t a l {aaaaaØo} {Øt} {aä}
-MATALA PTV,matala.ta,matala.ta,m a t a l {aaaaaØo} {Øt} {aä}
-MATALA ESS,matala.na,matala.na,m a t a l {aaaaaØo} {nrs} {aä}
-MATALA ILL,matala.an,matala.Øan,m a t a l {aaaaaØo} {Øh} {V} n
-MATALA ILL,matala.han,matala.han,m a t a l {aaaaaØo} {Øh} {V} n
-MATALA PL INE,matal.i.ssa,matalØ.i.ssa,m a t a l {aaaaaØo} {ij} s s {aä}
-MATALA PL INE,matalo.i.ssa,matalo.i.ssa,m a t a l {aaaaaØo} {ij} s s {aä}
-MATALA PL GENiden,matalo.i.den,matalo.i.dØen,m a t a l {aaaaaØo} {ij} {dt} {Øt} e n
-MATALA PL GENiden,matalo.i.tten,matalo.i.tten,m a t a l {aaaaaØo} {ij} {dt} {Øt} e n
-MATALA PL GENien,matal.i.en,matalØ.i.en,m a t a l {aaaaaØo} {ij} e n
-MATALA PL GENien,matalo.j.en,matalo.j.en,m a t a l {aaaaaØo} {ij} e n
-MATALA GENin,matala.in,matala.in,m a t a l {aaaaaØo} i n
-MATALA PL PTV,matal.i.a,matalØ.i.Øa,m a t a l {aaaaaØo} {ij} {Øt} {aä}
-MATALA PL PTV,matalo.i.ta,matalo.i.ta,m a t a l {aaaaaØo} {ij} {Øt} {aä}
-MATALA PL ILL,matal.i.in,matalØ.i.Øin,m a t a l {aaaaaØo} {ij} {Øh} {V} n
-MATALA PL ILL,matalo.i.hin,matalo.i.hin,m a t a l {aaaaaØo} {ij} {Øh} {V} n
-MATALA PL ILL,matal.i.hin,matalØ.i.hin,m a t a l {aaaaaØo} {ij} {Øh} {V} n
+MATALA.GEN,matala.n,matala.n,m a t a l {aaaaaØo} n
+MATALA.PTV,matala.a,matala.Øa,m a t a l {aaaaaØo} {Øt} {aä}
+MATALA.PTV,matala.ta,matala.ta,m a t a l {aaaaaØo} {Øt} {aä}
+MATALA.ESS,matala.na,matala.na,m a t a l {aaaaaØo} {nrs} {aä}
+MATALA.ILL,matala.an,matala.Øan,m a t a l {aaaaaØo} {Øh} {V} n
+MATALA.ILL,matala.han,matala.han,m a t a l {aaaaaØo} {Øh} {V} n
+MATALA.PL.INE,matal.i.ssa,matalØ.i.ssa,m a t a l {aaaaaØo} {ij} s s {aä}
+MATALA.PL.INE,matalo.i.ssa,matalo.i.ssa,m a t a l {aaaaaØo} {ij} s s {aä}
+MATALA.PL.GENiden,matalo.i.den,matalo.i.dØen,m a t a l {aaaaaØo} {ij} {dt} {Øt} e n
+MATALA.PL.GENiden,matalo.i.tten,matalo.i.tten,m a t a l {aaaaaØo} {ij} {dt} {Øt} e n
+MATALA.PL.GENien,matal.i.en,matalØ.i.en,m a t a l {aaaaaØo} {ij} e n
+MATALA.PL.GENien,matalo.j.en,matalo.j.en,m a t a l {aaaaaØo} {ij} e n
+MATALA.GENin,matala.in,matala.in,m a t a l {aaaaaØo} i n
+MATALA.PL.PTV,matal.i.a,matalØ.i.Øa,m a t a l {aaaaaØo} {ij} {Øt} {aä}
+MATALA.PL.PTV,matalo.i.ta,matalo.i.ta,m a t a l {aaaaaØo} {ij} {Øt} {aä}
+MATALA.PL.ILL,matal.i.in,matalØ.i.Øin,m a t a l {aaaaaØo} {ij} {Øh} {V} n
+MATALA.PL.ILL,matalo.i.hin,matalo.i.hin,m a t a l {aaaaaØo} {ij} {Øh} {V} n
+MATALA.PL.ILL,matal.i.hin,matalØ.i.hin,m a t a l {aaaaaØo} {ij} {Øh} {V} n
 ASEMA,asema,asema,a s e m {aaaaaØ} 
-ASEMA GEN,asema.n,asema.n,a s e m {aaaaaØ} n
-ASEMA PTV,asema.a,asema.Øa,a s e m {aaaaaØ} {Øt} {aä}
-ASEMA PTV,asema.ta,asema.ta,a s e m {aaaaaØ} {Øt} {aä}
-ASEMA ESS,asema.na,asema.na,a s e m {aaaaaØ} {nrs} {aä}
-ASEMA ILL,asema.an,asema.Øan,a s e m {aaaaaØ} {Øh} {V} n
-ASEMA ILL,asema.han,asema.han,a s e m {aaaaaØ} {Øh} {V} n
-ASEMA PL INE,asem.i.ssa,asemØ.i.ssa,a s e m {aaaaaØ} {ij} s s {aä}
-ASEMA PL GENien,asem.i.en,asemØ.i.en,a s e m {aaaaaØ} {ij} e n
-ASEMA GENin,asema.in,asema.in,a s e m {aaaaaØ} i n
-ASEMA PL PTV,asem.i.a,asemØ.i.Øa,a s e m {aaaaaØ} {ij} {Øt} {aä}
-ASEMA PL ILL,asem.i.in,asemØ.i.Øin,a s e m {aaaaaØ} {ij} {Øh} {V} n
-ASEMA PL ILL,asem.i.hin,asemØ.i.hin,a s e m {aaaaaØ} {ij} {Øh} {V} n
+ASEMA.GEN,asema.n,asema.n,a s e m {aaaaaØ} n
+ASEMA.PTV,asema.a,asema.Øa,a s e m {aaaaaØ} {Øt} {aä}
+ASEMA.PTV,asema.ta,asema.ta,a s e m {aaaaaØ} {Øt} {aä}
+ASEMA.ESS,asema.na,asema.na,a s e m {aaaaaØ} {nrs} {aä}
+ASEMA.ILL,asema.an,asema.Øan,a s e m {aaaaaØ} {Øh} {V} n
+ASEMA.ILL,asema.han,asema.han,a s e m {aaaaaØ} {Øh} {V} n
+ASEMA.PL.INE,asem.i.ssa,asemØ.i.ssa,a s e m {aaaaaØ} {ij} s s {aä}
+ASEMA.PL.GENien,asem.i.en,asemØ.i.en,a s e m {aaaaaØ} {ij} e n
+ASEMA.GENin,asema.in,asema.in,a s e m {aaaaaØ} i n
+ASEMA.PL.PTV,asem.i.a,asemØ.i.Øa,a s e m {aaaaaØ} {ij} {Øt} {aä}
+ASEMA.PL.ILL,asem.i.in,asemØ.i.Øin,a s e m {aaaaaØ} {ij} {Øh} {V} n
+ASEMA.PL.ILL,asem.i.hin,asemØ.i.hin,a s e m {aaaaaØ} {ij} {Øh} {V} n
 KULKIJA,kulkija,kulkija,k u l k i j {aaaaao} 
-KULKIJA GEN,kulkija.n,kulkija.n,k u l k i j {aaaaao} n
-KULKIJA PTV,kulkija.a,kulkija.Øa,k u l k i j {aaaaao} {Øt} {aä}
-KULKIJA PTV,kulkija.ta,kulkija.ta,k u l k i j {aaaaao} {Øt} {aä}
-KULKIJA ESS,kulkija.na,kulkija.na,k u l k i j {aaaaao} {nrs} {aä}
-KULKIJA ILL,kulkija.an,kulkija.Øan,k u l k i j {aaaaao} {Øh} {V} n
-KULKIJA ILL,kulkija.han,kulkija.han,k u l k i j {aaaaao} {Øh} {V} n
-KULKIJA PL INE,kulkijo.i.ssa,kulkijo.i.ssa,k u l k i j {aaaaao} {ij} s s {aä}
-KULKIJA PL GENiden,kulkijo.i.den,kulkijo.i.dØen,k u l k i j {aaaaao} {ij} {dt} {Øt} e n
-KULKIJA PL GENiden,kulkijo.i.tten,kulkijo.i.tten,k u l k i j {aaaaao} {ij} {dt} {Øt} e n
-KULKIJA GENin,kulkija.in,kulkija.in,k u l k i j {aaaaao} i n
-KULKIJA PL PTV,kulkijo.i.ta,kulkijo.i.ta,k u l k i j {aaaaao} {ij} {Øt} {aä}
-KULKIJA PL ILL,kulkijo.i.hin,kulkijo.i.hin,k u l k i j {aaaaao} {ij} {Øh} {V} n
+KULKIJA.GEN,kulkija.n,kulkija.n,k u l k i j {aaaaao} n
+KULKIJA.PTV,kulkija.a,kulkija.Øa,k u l k i j {aaaaao} {Øt} {aä}
+KULKIJA.PTV,kulkija.ta,kulkija.ta,k u l k i j {aaaaao} {Øt} {aä}
+KULKIJA.ESS,kulkija.na,kulkija.na,k u l k i j {aaaaao} {nrs} {aä}
+KULKIJA.ILL,kulkija.an,kulkija.Øan,k u l k i j {aaaaao} {Øh} {V} n
+KULKIJA.ILL,kulkija.han,kulkija.han,k u l k i j {aaaaao} {Øh} {V} n
+KULKIJA.PL.INE,kulkijo.i.ssa,kulkijo.i.ssa,k u l k i j {aaaaao} {ij} s s {aä}
+KULKIJA.PL.GENiden,kulkijo.i.den,kulkijo.i.dØen,k u l k i j {aaaaao} {ij} {dt} {Øt} e n
+KULKIJA.PL.GENiden,kulkijo.i.tten,kulkijo.i.tten,k u l k i j {aaaaao} {ij} {dt} {Øt} e n
+KULKIJA.GENin,kulkija.in,kulkija.in,k u l k i j {aaaaao} i n
+KULKIJA.PL.PTV,kulkijo.i.ta,kulkijo.i.ta,k u l k i j {aaaaao} {ij} {Øt} {aä}
+KULKIJA.PL.ILL,kulkijo.i.hin,kulkijo.i.hin,k u l k i j {aaaaao} {ij} {Øh} {V} n
 MANSIKKA,mansikka,mansikka,m a n s i k {kØkkkØk} {aaaaaoo} 
-MANSIKKA GEN,mansika.n,mansikØa.n,m a n s i k {kØkkkØk} {aaaaaoo} n
-MANSIKKA PTV,mansikka.a,mansikka.Øa,m a n s i k {kØkkkØk} {aaaaaoo} {Øt} {aä}
-MANSIKKA PTV,mansikka.ta,mansikka.ta,m a n s i k {kØkkkØk} {aaaaaoo} {Øt} {aä}
-MANSIKKA ESS,mansikka.na,mansikka.na,m a n s i k {kØkkkØk} {aaaaaoo} {nrs} {aä}
-MANSIKKA ILL,mansikka.an,mansikka.Øan,m a n s i k {kØkkkØk} {aaaaaoo} {Øh} {V} n
-MANSIKKA ILL,mansikka.han,mansikka.han,m a n s i k {kØkkkØk} {aaaaaoo} {Øh} {V} n
-MANSIKKA PL INE,mansiko.i.ssa,mansikØo.i.ssa,m a n s i k {kØkkkØk} {aaaaaoo} {ij} s s {aä}
-MANSIKKA PL GENiden,mansiko.i.den,mansikØo.i.dØen,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {dt} {Øt} e n
-MANSIKKA PL GENiden,mansiko.i.tten,mansikØo.i.tten,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {dt} {Øt} e n
-MANSIKKA PL GENien,mansikko.j.en,mansikko.j.en,m a n s i k {kØkkkØk} {aaaaaoo} {ij} e n
-MANSIKKA GENin,mansikka.in,mansikka.in,m a n s i k {kØkkkØk} {aaaaaoo} i n
-MANSIKKA PL PTV,mansiko.i.ta,mansikØo.i.ta,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {Øt} {aä}
-MANSIKKA PL PTV,mansikko.j.a,mansikko.j.Øa,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {Øt} {aä}
-MANSIKKA PL ILL,mansikko.i.hin,mansikko.i.hin,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {Øh} {V} n
-MANSIKKA PL ILL,mansiko.i.hin,mansikØo.i.hin,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {Øh} {V} n
+MANSIKKA.GEN,mansika.n,mansikØa.n,m a n s i k {kØkkkØk} {aaaaaoo} n
+MANSIKKA.PTV,mansikka.a,mansikka.Øa,m a n s i k {kØkkkØk} {aaaaaoo} {Øt} {aä}
+MANSIKKA.PTV,mansikka.ta,mansikka.ta,m a n s i k {kØkkkØk} {aaaaaoo} {Øt} {aä}
+MANSIKKA.ESS,mansikka.na,mansikka.na,m a n s i k {kØkkkØk} {aaaaaoo} {nrs} {aä}
+MANSIKKA.ILL,mansikka.an,mansikka.Øan,m a n s i k {kØkkkØk} {aaaaaoo} {Øh} {V} n
+MANSIKKA.ILL,mansikka.han,mansikka.han,m a n s i k {kØkkkØk} {aaaaaoo} {Øh} {V} n
+MANSIKKA.PL.INE,mansiko.i.ssa,mansikØo.i.ssa,m a n s i k {kØkkkØk} {aaaaaoo} {ij} s s {aä}
+MANSIKKA.PL.GENiden,mansiko.i.den,mansikØo.i.dØen,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {dt} {Øt} e n
+MANSIKKA.PL.GENiden,mansiko.i.tten,mansikØo.i.tten,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {dt} {Øt} e n
+MANSIKKA.PL.GENien,mansikko.j.en,mansikko.j.en,m a n s i k {kØkkkØk} {aaaaaoo} {ij} e n
+MANSIKKA.GENin,mansikka.in,mansikka.in,m a n s i k {kØkkkØk} {aaaaaoo} i n
+MANSIKKA.PL.PTV,mansiko.i.ta,mansikØo.i.ta,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {Øt} {aä}
+MANSIKKA.PL.PTV,mansikko.j.a,mansikko.j.Øa,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {Øt} {aä}
+MANSIKKA.PL.ILL,mansikko.i.hin,mansikko.i.hin,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {Øh} {V} n
+MANSIKKA.PL.ILL,mansiko.i.hin,mansikØo.i.hin,m a n s i k {kØkkkØk} {aaaaaoo} {ij} {Øh} {V} n
 HARAKKA,harakka,harakka,h a r a k {kØkkkØk} {aaaaaoo} 
-HARAKKA GEN,haraka.n,harakØa.n,h a r a k {kØkkkØk} {aaaaaoo} n
-HARAKKA PTV,harakka.a,harakka.Øa,h a r a k {kØkkkØk} {aaaaaoo} {Øt} {aä}
-HARAKKA PTV,harakka.ta,harakka.ta,h a r a k {kØkkkØk} {aaaaaoo} {Øt} {aä}
-HARAKKA ESS,harakka.na,harakka.na,h a r a k {kØkkkØk} {aaaaaoo} {nrs} {aä}
-HARAKKA ILL,harakka.an,harakka.Øan,h a r a k {kØkkkØk} {aaaaaoo} {Øh} {V} n
-HARAKKA ILL,harakka.han,harakka.han,h a r a k {kØkkkØk} {aaaaaoo} {Øh} {V} n
-HARAKKA PL INE,harako.i.ssa,harakØo.i.ssa,h a r a k {kØkkkØk} {aaaaaoo} {ij} s s {aä}
-HARAKKA PL GENiden,harako.i.den,harakØo.i.dØen,h a r a k {kØkkkØk} {aaaaaoo} {ij} {dt} {Øt} e n
-HARAKKA PL GENiden,harako.i.tten,harakØo.i.tten,h a r a k {kØkkkØk} {aaaaaoo} {ij} {dt} {Øt} e n
-HARAKKA PL GENien,harakko.j.en,harakko.j.en,h a r a k {kØkkkØk} {aaaaaoo} {ij} e n
-HARAKKA GENin,harakka.in,harakka.in,h a r a k {kØkkkØk} {aaaaaoo} i n
-HARAKKA PL PTV,harako.i.ta,harakØo.i.ta,h a r a k {kØkkkØk} {aaaaaoo} {ij} {Øt} {aä}
-HARAKKA PL PTV,harakko.j.a,harakko.j.Øa,h a r a k {kØkkkØk} {aaaaaoo} {ij} {Øt} {aä}
-HARAKKA PL ILL,harakko.i.hin,harakko.i.hin,h a r a k {kØkkkØk} {aaaaaoo} {ij} {Øh} {V} n
-HARAKKA PL ILL,harako.i.hin,harakØo.i.hin,h a r a k {kØkkkØk} {aaaaaoo} {ij} {Øh} {V} n
+HARAKKA.GEN,haraka.n,harakØa.n,h a r a k {kØkkkØk} {aaaaaoo} n
+HARAKKA.PTV,harakka.a,harakka.Øa,h a r a k {kØkkkØk} {aaaaaoo} {Øt} {aä}
+HARAKKA.PTV,harakka.ta,harakka.ta,h a r a k {kØkkkØk} {aaaaaoo} {Øt} {aä}
+HARAKKA.ESS,harakka.na,harakka.na,h a r a k {kØkkkØk} {aaaaaoo} {nrs} {aä}
+HARAKKA.ILL,harakka.an,harakka.Øan,h a r a k {kØkkkØk} {aaaaaoo} {Øh} {V} n
+HARAKKA.ILL,harakka.han,harakka.han,h a r a k {kØkkkØk} {aaaaaoo} {Øh} {V} n
+HARAKKA.PL.INE,harako.i.ssa,harakØo.i.ssa,h a r a k {kØkkkØk} {aaaaaoo} {ij} s s {aä}
+HARAKKA.PL.GENiden,harako.i.den,harakØo.i.dØen,h a r a k {kØkkkØk} {aaaaaoo} {ij} {dt} {Øt} e n
+HARAKKA.PL.GENiden,harako.i.tten,harakØo.i.tten,h a r a k {kØkkkØk} {aaaaaoo} {ij} {dt} {Øt} e n
+HARAKKA.PL.GENien,harakko.j.en,harakko.j.en,h a r a k {kØkkkØk} {aaaaaoo} {ij} e n
+HARAKKA.GENin,harakka.in,harakka.in,h a r a k {kØkkkØk} {aaaaaoo} i n
+HARAKKA.PL.PTV,harako.i.ta,harakØo.i.ta,h a r a k {kØkkkØk} {aaaaaoo} {ij} {Øt} {aä}
+HARAKKA.PL.PTV,harakko.j.a,harakko.j.Øa,h a r a k {kØkkkØk} {aaaaaoo} {ij} {Øt} {aä}
+HARAKKA.PL.ILL,harakko.i.hin,harakko.i.hin,h a r a k {kØkkkØk} {aaaaaoo} {ij} {Øh} {V} n
+HARAKKA.PL.ILL,harako.i.hin,harakØo.i.hin,h a r a k {kØkkkØk} {aaaaaoo} {ij} {Øh} {V} n
 KANTAJA,kantaja,kantaja,k a n t a j {aaaaaØo} 
-KANTAJA GEN,kantaja.n,kantaja.n,k a n t a j {aaaaaØo} n
-KANTAJA PTV,kantaja.a,kantaja.Øa,k a n t a j {aaaaaØo} {Øt} {aä}
-KANTAJA PTV,kantaja.ta,kantaja.ta,k a n t a j {aaaaaØo} {Øt} {aä}
-KANTAJA ESS,kantaja.na,kantaja.na,k a n t a j {aaaaaØo} {nrs} {aä}
-KANTAJA ILL,kantaja.an,kantaja.Øan,k a n t a j {aaaaaØo} {Øh} {V} n
-KANTAJA ILL,kantaja.han,kantaja.han,k a n t a j {aaaaaØo} {Øh} {V} n
-KANTAJA PL INE,kantaj.i.ssa,kantajØ.i.ssa,k a n t a j {aaaaaØo} {ij} s s {aä}
-KANTAJA PL INE,kantajo.i.ssa,kantajo.i.ssa,k a n t a j {aaaaaØo} {ij} s s {aä}
-KANTAJA PL GENiden,kantajo.i.den,kantajo.i.dØen,k a n t a j {aaaaaØo} {ij} {dt} {Øt} e n
-KANTAJA PL GENiden,kantajo.i.tten,kantajo.i.tten,k a n t a j {aaaaaØo} {ij} {dt} {Øt} e n
-KANTAJA PL GENien,kantaj.i.en,kantajØ.i.en,k a n t a j {aaaaaØo} {ij} e n
-KANTAJA GENin,kantaja.in,kantaja.in,k a n t a j {aaaaaØo} i n
-KANTAJA PL PTV,kantaj.i.a,kantajØ.i.Øa,k a n t a j {aaaaaØo} {ij} {Øt} {aä}
-KANTAJA PL PTV,kantajo.i.ta,kantajo.i.ta,k a n t a j {aaaaaØo} {ij} {Øt} {aä}
-KANTAJA PL ILL,kantaj.i.in,kantajØ.i.Øin,k a n t a j {aaaaaØo} {ij} {Øh} {V} n
-KANTAJA PL ILL,kantajo.i.hin,kantajo.i.hin,k a n t a j {aaaaaØo} {ij} {Øh} {V} n
-KANTAJA PL ILL,kantaj.i.hin,kantajØ.i.hin,k a n t a j {aaaaaØo} {ij} {Øh} {V} n
+KANTAJA.GEN,kantaja.n,kantaja.n,k a n t a j {aaaaaØo} n
+KANTAJA.PTV,kantaja.a,kantaja.Øa,k a n t a j {aaaaaØo} {Øt} {aä}
+KANTAJA.PTV,kantaja.ta,kantaja.ta,k a n t a j {aaaaaØo} {Øt} {aä}
+KANTAJA.ESS,kantaja.na,kantaja.na,k a n t a j {aaaaaØo} {nrs} {aä}
+KANTAJA.ILL,kantaja.an,kantaja.Øan,k a n t a j {aaaaaØo} {Øh} {V} n
+KANTAJA.ILL,kantaja.han,kantaja.han,k a n t a j {aaaaaØo} {Øh} {V} n
+KANTAJA.PL.INE,kantaj.i.ssa,kantajØ.i.ssa,k a n t a j {aaaaaØo} {ij} s s {aä}
+KANTAJA.PL.INE,kantajo.i.ssa,kantajo.i.ssa,k a n t a j {aaaaaØo} {ij} s s {aä}
+KANTAJA.PL.GENiden,kantajo.i.den,kantajo.i.dØen,k a n t a j {aaaaaØo} {ij} {dt} {Øt} e n
+KANTAJA.PL.GENiden,kantajo.i.tten,kantajo.i.tten,k a n t a j {aaaaaØo} {ij} {dt} {Øt} e n
+KANTAJA.PL.GENien,kantaj.i.en,kantajØ.i.en,k a n t a j {aaaaaØo} {ij} e n
+KANTAJA.GENin,kantaja.in,kantaja.in,k a n t a j {aaaaaØo} i n
+KANTAJA.PL.PTV,kantaj.i.a,kantajØ.i.Øa,k a n t a j {aaaaaØo} {ij} {Øt} {aä}
+KANTAJA.PL.PTV,kantajo.i.ta,kantajo.i.ta,k a n t a j {aaaaaØo} {ij} {Øt} {aä}
+KANTAJA.PL.ILL,kantaj.i.in,kantajØ.i.Øin,k a n t a j {aaaaaØo} {ij} {Øh} {V} n
+KANTAJA.PL.ILL,kantajo.i.hin,kantajo.i.hin,k a n t a j {aaaaaØo} {ij} {Øh} {V} n
+KANTAJA.PL.ILL,kantaj.i.hin,kantajØ.i.hin,k a n t a j {aaaaaØo} {ij} {Øh} {V} n
 PERUNA,peruna,peruna,p e r u n {aaaaaoØo} 
-PERUNA GEN,peruna.n,peruna.n,p e r u n {aaaaaoØo} n
-PERUNA PTV,peruna.a,peruna.Øa,p e r u n {aaaaaoØo} {Øt} {aä}
-PERUNA PTV,peruna.ta,peruna.ta,p e r u n {aaaaaoØo} {Øt} {aä}
-PERUNA ESS,peruna.na,peruna.na,p e r u n {aaaaaoØo} {nrs} {aä}
-PERUNA ILL,peruna.an,peruna.Øan,p e r u n {aaaaaoØo} {Øh} {V} n
-PERUNA ILL,peruna.han,peruna.han,p e r u n {aaaaaoØo} {Øh} {V} n
-PERUNA PL INE,peruno.i.ssa,peruno.i.ssa,p e r u n {aaaaaoØo} {ij} s s {aä}
-PERUNA PL INE,perun.i.ssa,perunØ.i.ssa,p e r u n {aaaaaoØo} {ij} s s {aä}
-PERUNA PL GENiden,peruno.i.den,peruno.i.dØen,p e r u n {aaaaaoØo} {ij} {dt} {Øt} e n
-PERUNA PL GENiden,peruno.i.tten,peruno.i.tten,p e r u n {aaaaaoØo} {ij} {dt} {Øt} e n
-PERUNA PL GENien,perun.i.en,perunØ.i.en,p e r u n {aaaaaoØo} {ij} e n
-PERUNA PL GENien,peruno.j.en,peruno.j.en,p e r u n {aaaaaoØo} {ij} e n
-PERUNA GENin,peruna.in,peruna.in,p e r u n {aaaaaoØo} i n
-PERUNA PL PTV,peruno.i.ta,peruno.i.ta,p e r u n {aaaaaoØo} {ij} {Øt} {aä}
-PERUNA PL PTV,perun.i.a,perunØ.i.Øa,p e r u n {aaaaaoØo} {ij} {Øt} {aä}
-PERUNA PL PTV,peruno.j.a,peruno.j.Øa,p e r u n {aaaaaoØo} {ij} {Øt} {aä}
-PERUNA PL ILL,peruno.i.hin,peruno.i.hin,p e r u n {aaaaaoØo} {ij} {Øh} {V} n
-PERUNA PL ILL,perun.i.in,perunØ.i.Øin,p e r u n {aaaaaoØo} {ij} {Øh} {V} n
-PERUNA PL ILL,perun.i.hin,perunØ.i.hin,p e r u n {aaaaaoØo} {ij} {Øh} {V} n
+PERUNA.GEN,peruna.n,peruna.n,p e r u n {aaaaaoØo} n
+PERUNA.PTV,peruna.a,peruna.Øa,p e r u n {aaaaaoØo} {Øt} {aä}
+PERUNA.PTV,peruna.ta,peruna.ta,p e r u n {aaaaaoØo} {Øt} {aä}
+PERUNA.ESS,peruna.na,peruna.na,p e r u n {aaaaaoØo} {nrs} {aä}
+PERUNA.ILL,peruna.an,peruna.Øan,p e r u n {aaaaaoØo} {Øh} {V} n
+PERUNA.ILL,peruna.han,peruna.han,p e r u n {aaaaaoØo} {Øh} {V} n
+PERUNA.PL.INE,peruno.i.ssa,peruno.i.ssa,p e r u n {aaaaaoØo} {ij} s s {aä}
+PERUNA.PL.INE,perun.i.ssa,perunØ.i.ssa,p e r u n {aaaaaoØo} {ij} s s {aä}
+PERUNA.PL.GENiden,peruno.i.den,peruno.i.dØen,p e r u n {aaaaaoØo} {ij} {dt} {Øt} e n
+PERUNA.PL.GENiden,peruno.i.tten,peruno.i.tten,p e r u n {aaaaaoØo} {ij} {dt} {Øt} e n
+PERUNA.PL.GENien,perun.i.en,perunØ.i.en,p e r u n {aaaaaoØo} {ij} e n
+PERUNA.PL.GENien,peruno.j.en,peruno.j.en,p e r u n {aaaaaoØo} {ij} e n
+PERUNA.GENin,peruna.in,peruna.in,p e r u n {aaaaaoØo} i n
+PERUNA.PL.PTV,peruno.i.ta,peruno.i.ta,p e r u n {aaaaaoØo} {ij} {Øt} {aä}
+PERUNA.PL.PTV,perun.i.a,perunØ.i.Øa,p e r u n {aaaaaoØo} {ij} {Øt} {aä}
+PERUNA.PL.PTV,peruno.j.a,peruno.j.Øa,p e r u n {aaaaaoØo} {ij} {Øt} {aä}
+PERUNA.PL.ILL,peruno.i.hin,peruno.i.hin,p e r u n {aaaaaoØo} {ij} {Øh} {V} n
+PERUNA.PL.ILL,perun.i.in,perunØ.i.Øin,p e r u n {aaaaaoØo} {ij} {Øh} {V} n
+PERUNA.PL.ILL,perun.i.hin,perunØ.i.hin,p e r u n {aaaaaoØo} {ij} {Øh} {V} n
 PASUUNA,pasuuna,pasuuna,p a s u u n {aaaaaooØ} 
-PASUUNA GEN,pasuuna.n,pasuuna.n,p a s u u n {aaaaaooØ} n
-PASUUNA PTV,pasuuna.a,pasuuna.Øa,p a s u u n {aaaaaooØ} {Øt} {aä}
-PASUUNA PTV,pasuuna.ta,pasuuna.ta,p a s u u n {aaaaaooØ} {Øt} {aä}
-PASUUNA ESS,pasuuna.na,pasuuna.na,p a s u u n {aaaaaooØ} {nrs} {aä}
-PASUUNA ILL,pasuuna.an,pasuuna.Øan,p a s u u n {aaaaaooØ} {Øh} {V} n
-PASUUNA ILL,pasuuna.han,pasuuna.han,p a s u u n {aaaaaooØ} {Øh} {V} n
-PASUUNA PL INE,pasuuno.i.ssa,pasuuno.i.ssa,p a s u u n {aaaaaooØ} {ij} s s {aä}
-PASUUNA PL INE,pasuun.i.ssa,pasuunØ.i.ssa,p a s u u n {aaaaaooØ} {ij} s s {aä}
-PASUUNA PL GENiden,pasuuno.i.den,pasuuno.i.dØen,p a s u u n {aaaaaooØ} {ij} {dt} {Øt} e n
-PASUUNA PL GENiden,pasuuno.i.tten,pasuuno.i.tten,p a s u u n {aaaaaooØ} {ij} {dt} {Øt} e n
-PASUUNA PL GENien,pasuuno.j.en,pasuuno.j.en,p a s u u n {aaaaaooØ} {ij} e n
-PASUUNA PL GENien,pasuun.i.en,pasuunØ.i.en,p a s u u n {aaaaaooØ} {ij} e n
-PASUUNA GENin,pasuuna.in,pasuuna.in,p a s u u n {aaaaaooØ} i n
-PASUUNA PL PTV,pasuuno.i.ta,pasuuno.i.ta,p a s u u n {aaaaaooØ} {ij} {Øt} {aä}
-PASUUNA PL PTV,pasuuno.j.a,pasuuno.j.Øa,p a s u u n {aaaaaooØ} {ij} {Øt} {aä}
-PASUUNA PL PTV,pasuun.i.a,pasuunØ.i.Øa,p a s u u n {aaaaaooØ} {ij} {Øt} {aä}
-PASUUNA PL ILL,pasuuno.i.hin,pasuuno.i.hin,p a s u u n {aaaaaooØ} {ij} {Øh} {V} n
-PASUUNA PL ILL,pasuun.i.in,pasuunØ.i.Øin,p a s u u n {aaaaaooØ} {ij} {Øh} {V} n
-PASUUNA PL ILL,pasuun.i.hin,pasuunØ.i.hin,p a s u u n {aaaaaooØ} {ij} {Øh} {V} n
+PASUUNA.GEN,pasuuna.n,pasuuna.n,p a s u u n {aaaaaooØ} n
+PASUUNA.PTV,pasuuna.a,pasuuna.Øa,p a s u u n {aaaaaooØ} {Øt} {aä}
+PASUUNA.PTV,pasuuna.ta,pasuuna.ta,p a s u u n {aaaaaooØ} {Øt} {aä}
+PASUUNA.ESS,pasuuna.na,pasuuna.na,p a s u u n {aaaaaooØ} {nrs} {aä}
+PASUUNA.ILL,pasuuna.an,pasuuna.Øan,p a s u u n {aaaaaooØ} {Øh} {V} n
+PASUUNA.ILL,pasuuna.han,pasuuna.han,p a s u u n {aaaaaooØ} {Øh} {V} n
+PASUUNA.PL.INE,pasuuno.i.ssa,pasuuno.i.ssa,p a s u u n {aaaaaooØ} {ij} s s {aä}
+PASUUNA.PL.INE,pasuun.i.ssa,pasuunØ.i.ssa,p a s u u n {aaaaaooØ} {ij} s s {aä}
+PASUUNA.PL.GENiden,pasuuno.i.den,pasuuno.i.dØen,p a s u u n {aaaaaooØ} {ij} {dt} {Øt} e n
+PASUUNA.PL.GENiden,pasuuno.i.tten,pasuuno.i.tten,p a s u u n {aaaaaooØ} {ij} {dt} {Øt} e n
+PASUUNA.PL.GENien,pasuuno.j.en,pasuuno.j.en,p a s u u n {aaaaaooØ} {ij} e n
+PASUUNA.PL.GENien,pasuun.i.en,pasuunØ.i.en,p a s u u n {aaaaaooØ} {ij} e n
+PASUUNA.GENin,pasuuna.in,pasuuna.in,p a s u u n {aaaaaooØ} i n
+PASUUNA.PL.PTV,pasuuno.i.ta,pasuuno.i.ta,p a s u u n {aaaaaooØ} {ij} {Øt} {aä}
+PASUUNA.PL.PTV,pasuuno.j.a,pasuuno.j.Øa,p a s u u n {aaaaaooØ} {ij} {Øt} {aä}
+PASUUNA.PL.PTV,pasuun.i.a,pasuunØ.i.Øa,p a s u u n {aaaaaooØ} {ij} {Øt} {aä}
+PASUUNA.PL.ILL,pasuuno.i.hin,pasuuno.i.hin,p a s u u n {aaaaaooØ} {ij} {Øh} {V} n
+PASUUNA.PL.ILL,pasuun.i.in,pasuunØ.i.Øin,p a s u u n {aaaaaooØ} {ij} {Øh} {V} n
+PASUUNA.PL.ILL,pasuun.i.hin,pasuunØ.i.hin,p a s u u n {aaaaaooØ} {ij} {Øh} {V} n
 AINOA,ainoa,ainoa,a i n o {aaaaaØ} 
-AINOA GEN,ainoa.n,ainoa.n,a i n o {aaaaaØ} n
-AINOA PTV,ainoa.a,ainoa.Øa,a i n o {aaaaaØ} {Øt} {aä}
-AINOA PTV,ainoa.ta,ainoa.ta,a i n o {aaaaaØ} {Øt} {aä}
-AINOA ESS,ainoa.na,ainoa.na,a i n o {aaaaaØ} {nrs} {aä}
-AINOA ILL,ainoa.an,ainoa.Øan,a i n o {aaaaaØ} {Øh} {V} n
-AINOA ILL,ainoa.han,ainoa.han,a i n o {aaaaaØ} {Øh} {V} n
-AINOA PL INE,aino.i.ssa,ainoØ.i.ssa,a i n o {aaaaaØ} {ij} s s {aä}
-AINOA PL GENiden,aino.i.den,ainoØ.i.dØen,a i n o {aaaaaØ} {ij} {dt} {Øt} e n
-AINOA PL GENiden,aino.i.tten,ainoØ.i.tten,a i n o {aaaaaØ} {ij} {dt} {Øt} e n
-AINOA GENin,ainoa.in,ainoa.in,a i n o {aaaaaØ} i n
-AINOA PL PTV,aino.i.ta,ainoØ.i.ta,a i n o {aaaaaØ} {ij} {Øt} {aä}
-AINOA PL ILL,aino.i.hin,ainoØ.i.hin,a i n o {aaaaaØ} {ij} {Øh} {V} n
-AINOA PL ILLsiin,aino.i.siin,ainoØ.i.siin,a i n o {aaaaaØ} {ij} s i {iØ} n
+AINOA.GEN,ainoa.n,ainoa.n,a i n o {aaaaaØ} n
+AINOA.PTV,ainoa.a,ainoa.Øa,a i n o {aaaaaØ} {Øt} {aä}
+AINOA.PTV,ainoa.ta,ainoa.ta,a i n o {aaaaaØ} {Øt} {aä}
+AINOA.ESS,ainoa.na,ainoa.na,a i n o {aaaaaØ} {nrs} {aä}
+AINOA.ILL,ainoa.an,ainoa.Øan,a i n o {aaaaaØ} {Øh} {V} n
+AINOA.ILL,ainoa.han,ainoa.han,a i n o {aaaaaØ} {Øh} {V} n
+AINOA.PL.INE,aino.i.ssa,ainoØ.i.ssa,a i n o {aaaaaØ} {ij} s s {aä}
+AINOA.PL.GENiden,aino.i.den,ainoØ.i.dØen,a i n o {aaaaaØ} {ij} {dt} {Øt} e n
+AINOA.PL.GENiden,aino.i.tten,ainoØ.i.tten,a i n o {aaaaaØ} {ij} {dt} {Øt} e n
+AINOA.GENin,ainoa.in,ainoa.in,a i n o {aaaaaØ} i n
+AINOA.PL.PTV,aino.i.ta,ainoØ.i.ta,a i n o {aaaaaØ} {ij} {Øt} {aä}
+AINOA.PL.ILL,aino.i.hin,ainoØ.i.hin,a i n o {aaaaaØ} {ij} {Øh} {V} n
+AINOA.PL.ILLsiin,aino.i.siin,ainoØ.i.siin,a i n o {aaaaaØ} {ij} s i {iØ} n
 AINOO,ainoo,ainoo,a i n o {ooooØ} 
-AINOO GEN,ainoo.n,ainoo.n,a i n o {ooooØ} n
-AINOO PTV,ainoo.ta,ainoo.ta,a i n o {ooooØ} {Øt} {aä}
-AINOO ESS,ainoo.na,ainoo.na,a i n o {ooooØ} {nrs} {aä}
-AINOO ILLseen,ainoo.seen,ainoo.seen,a i n o {ooooØ} s e {Øe} n
-AINOO PL INE,aino.i.ssa,ainoØ.i.ssa,a i n o {ooooØ} {ij} s s {aä}
-AINOO PL GENiden,aino.i.den,ainoØ.i.dØen,a i n o {ooooØ} {ij} {dt} {Øt} e n
-AINOO PL GENiden,aino.i.tten,ainoØ.i.tten,a i n o {ooooØ} {ij} {dt} {Øt} e n
-AINOO PL PTV,aino.i.ta,ainoØ.i.ta,a i n o {ooooØ} {ij} {Øt} {aä}
-AINOO PL ILL,aino.i.hin,ainoØ.i.hin,a i n o {ooooØ} {ij} {Øh} {V} n
-AINOO PL ILLsiin,aino.i.siin,ainoØ.i.siin,a i n o {ooooØ} {ij} s i {iØ} n
+AINOO.GEN,ainoo.n,ainoo.n,a i n o {ooooØ} n
+AINOO.PTV,ainoo.ta,ainoo.ta,a i n o {ooooØ} {Øt} {aä}
+AINOO.ESS,ainoo.na,ainoo.na,a i n o {ooooØ} {nrs} {aä}
+AINOO.ILLseen,ainoo.seen,ainoo.seen,a i n o {ooooØ} s e {Øe} n
+AINOO.PL.INE,aino.i.ssa,ainoØ.i.ssa,a i n o {ooooØ} {ij} s s {aä}
+AINOO.PL.GENiden,aino.i.den,ainoØ.i.dØen,a i n o {ooooØ} {ij} {dt} {Øt} e n
+AINOO.PL.GENiden,aino.i.tten,ainoØ.i.tten,a i n o {ooooØ} {ij} {dt} {Øt} e n
+AINOO.PL.PTV,aino.i.ta,ainoØ.i.ta,a i n o {ooooØ} {ij} {Øt} {aä}
+AINOO.PL.ILL,aino.i.hin,ainoØ.i.hin,a i n o {ooooØ} {ij} {Øh} {V} n
+AINOO.PL.ILLsiin,aino.i.siin,ainoØ.i.siin,a i n o {ooooØ} {ij} s i {iØ} n
 HERTTUA,herttua,herttua,h e r t t u {aaaaaoØ} 
-HERTTUA GEN,herttua.n,herttua.n,h e r t t u {aaaaaoØ} n
-HERTTUA PTV,herttua.a,herttua.Øa,h e r t t u {aaaaaoØ} {Øt} {aä}
-HERTTUA PTV,herttua.ta,herttua.ta,h e r t t u {aaaaaoØ} {Øt} {aä}
-HERTTUA ESS,herttua.na,herttua.na,h e r t t u {aaaaaoØ} {nrs} {aä}
-HERTTUA ILL,herttua.an,herttua.Øan,h e r t t u {aaaaaoØ} {Øh} {V} n
-HERTTUA ILL,herttua.han,herttua.han,h e r t t u {aaaaaoØ} {Øh} {V} n
-HERTTUA PL INE,herttuo.i.ssa,herttuo.i.ssa,h e r t t u {aaaaaoØ} {ij} s s {aä}
-HERTTUA PL INE,herttu.i.ssa,herttuØ.i.ssa,h e r t t u {aaaaaoØ} {ij} s s {aä}
-HERTTUA PL GENiden,herttuo.i.den,herttuo.i.dØen,h e r t t u {aaaaaoØ} {ij} {dt} {Øt} e n
-HERTTUA PL GENiden,herttuo.i.tten,herttuo.i.tten,h e r t t u {aaaaaoØ} {ij} {dt} {Øt} e n
-HERTTUA PL GENiden,herttu.i.den,herttuØ.i.dØen,h e r t t u {aaaaaoØ} {ij} {dt} {Øt} e n
-HERTTUA PL GENiden,herttu.i.tten,herttuØ.i.tten,h e r t t u {aaaaaoØ} {ij} {dt} {Øt} e n
-HERTTUA GENin,herttua.in,herttua.in,h e r t t u {aaaaaoØ} i n
-HERTTUA PL PTV,herttuo.i.ta,herttuo.i.ta,h e r t t u {aaaaaoØ} {ij} {Øt} {aä}
-HERTTUA PL PTV,herttu.i.ta,herttuØ.i.ta,h e r t t u {aaaaaoØ} {ij} {Øt} {aä}
-HERTTUA PL ILL,herttuo.i.hin,herttuo.i.hin,h e r t t u {aaaaaoØ} {ij} {Øh} {V} n
-HERTTUA PL ILL,herttu.i.hin,herttuØ.i.hin,h e r t t u {aaaaaoØ} {ij} {Øh} {V} n
+HERTTUA.GEN,herttua.n,herttua.n,h e r t t u {aaaaaoØ} n
+HERTTUA.PTV,herttua.a,herttua.Øa,h e r t t u {aaaaaoØ} {Øt} {aä}
+HERTTUA.PTV,herttua.ta,herttua.ta,h e r t t u {aaaaaoØ} {Øt} {aä}
+HERTTUA.ESS,herttua.na,herttua.na,h e r t t u {aaaaaoØ} {nrs} {aä}
+HERTTUA.ILL,herttua.an,herttua.Øan,h e r t t u {aaaaaoØ} {Øh} {V} n
+HERTTUA.ILL,herttua.han,herttua.han,h e r t t u {aaaaaoØ} {Øh} {V} n
+HERTTUA.PL.INE,herttuo.i.ssa,herttuo.i.ssa,h e r t t u {aaaaaoØ} {ij} s s {aä}
+HERTTUA.PL.INE,herttu.i.ssa,herttuØ.i.ssa,h e r t t u {aaaaaoØ} {ij} s s {aä}
+HERTTUA.PL.GENiden,herttuo.i.den,herttuo.i.dØen,h e r t t u {aaaaaoØ} {ij} {dt} {Øt} e n
+HERTTUA.PL.GENiden,herttuo.i.tten,herttuo.i.tten,h e r t t u {aaaaaoØ} {ij} {dt} {Øt} e n
+HERTTUA.PL.GENiden,herttu.i.den,herttuØ.i.dØen,h e r t t u {aaaaaoØ} {ij} {dt} {Øt} e n
+HERTTUA.PL.GENiden,herttu.i.tten,herttuØ.i.tten,h e r t t u {aaaaaoØ} {ij} {dt} {Øt} e n
+HERTTUA.GENin,herttua.in,herttua.in,h e r t t u {aaaaaoØ} i n
+HERTTUA.PL.PTV,herttuo.i.ta,herttuo.i.ta,h e r t t u {aaaaaoØ} {ij} {Øt} {aä}
+HERTTUA.PL.PTV,herttu.i.ta,herttuØ.i.ta,h e r t t u {aaaaaoØ} {ij} {Øt} {aä}
+HERTTUA.PL.ILL,herttuo.i.hin,herttuo.i.hin,h e r t t u {aaaaaoØ} {ij} {Øh} {V} n
+HERTTUA.PL.ILL,herttu.i.hin,herttuØ.i.hin,h e r t t u {aaaaaoØ} {ij} {Øh} {V} n
 KORKEA,korkea,korkea,k o r k e {aaaaaØo} 
-KORKEA GEN,korkea.n,korkea.n,k o r k e {aaaaaØo} n
-KORKEA PTV,korkea.a,korkea.Øa,k o r k e {aaaaaØo} {Øt} {aä}
-KORKEA PTV,korkea.ta,korkea.ta,k o r k e {aaaaaØo} {Øt} {aä}
-KORKEA ESS,korkea.na,korkea.na,k o r k e {aaaaaØo} {nrs} {aä}
-KORKEA ILL,korkea.an,korkea.Øan,k o r k e {aaaaaØo} {Øh} {V} n
-KORKEA ILL,korkea.han,korkea.han,k o r k e {aaaaaØo} {Øh} {V} n
-KORKEA PL INE,korke.i.ssa,korkeØ.i.ssa,k o r k e {aaaaaØo} {ij} s s {aä}
-KORKEA PL INE,korkeo.i.ssa,korkeo.i.ssa,k o r k e {aaaaaØo} {ij} s s {aä}
-KORKEA PL GENiden,korke.i.den,korkeØ.i.dØen,k o r k e {aaaaaØo} {ij} {dt} {Øt} e n
-KORKEA PL GENiden,korke.i.tten,korkeØ.i.tten,k o r k e {aaaaaØo} {ij} {dt} {Øt} e n
-KORKEA PL GENiden,korkeo.i.den,korkeo.i.dØen,k o r k e {aaaaaØo} {ij} {dt} {Øt} e n
-KORKEA PL GENiden,korkeo.i.tten,korkeo.i.tten,k o r k e {aaaaaØo} {ij} {dt} {Øt} e n
-KORKEA GENin,korkea.in,korkea.in,k o r k e {aaaaaØo} i n
-KORKEA PL PTV,korke.i.ta,korkeØ.i.ta,k o r k e {aaaaaØo} {ij} {Øt} {aä}
-KORKEA PL PTV,korkeo.i.ta,korkeo.i.ta,k o r k e {aaaaaØo} {ij} {Øt} {aä}
-KORKEA PL ILL,korke.i.hin,korkeØ.i.hin,k o r k e {aaaaaØo} {ij} {Øh} {V} n
-KORKEA PL ILL,korkeo.i.hin,korkeo.i.hin,k o r k e {aaaaaØo} {ij} {Øh} {V} n
-KORKEA PL ILLsiin,korke.i.siin,korkeØ.i.siin,k o r k e {aaaaaØo} {ij} s i {iØ} n
+KORKEA.GEN,korkea.n,korkea.n,k o r k e {aaaaaØo} n
+KORKEA.PTV,korkea.a,korkea.Øa,k o r k e {aaaaaØo} {Øt} {aä}
+KORKEA.PTV,korkea.ta,korkea.ta,k o r k e {aaaaaØo} {Øt} {aä}
+KORKEA.ESS,korkea.na,korkea.na,k o r k e {aaaaaØo} {nrs} {aä}
+KORKEA.ILL,korkea.an,korkea.Øan,k o r k e {aaaaaØo} {Øh} {V} n
+KORKEA.ILL,korkea.han,korkea.han,k o r k e {aaaaaØo} {Øh} {V} n
+KORKEA.PL.INE,korke.i.ssa,korkeØ.i.ssa,k o r k e {aaaaaØo} {ij} s s {aä}
+KORKEA.PL.INE,korkeo.i.ssa,korkeo.i.ssa,k o r k e {aaaaaØo} {ij} s s {aä}
+KORKEA.PL.GENiden,korke.i.den,korkeØ.i.dØen,k o r k e {aaaaaØo} {ij} {dt} {Øt} e n
+KORKEA.PL.GENiden,korke.i.tten,korkeØ.i.tten,k o r k e {aaaaaØo} {ij} {dt} {Øt} e n
+KORKEA.PL.GENiden,korkeo.i.den,korkeo.i.dØen,k o r k e {aaaaaØo} {ij} {dt} {Øt} e n
+KORKEA.PL.GENiden,korkeo.i.tten,korkeo.i.tten,k o r k e {aaaaaØo} {ij} {dt} {Øt} e n
+KORKEA.GENin,korkea.in,korkea.in,k o r k e {aaaaaØo} i n
+KORKEA.PL.PTV,korke.i.ta,korkeØ.i.ta,k o r k e {aaaaaØo} {ij} {Øt} {aä}
+KORKEA.PL.PTV,korkeo.i.ta,korkeo.i.ta,k o r k e {aaaaaØo} {ij} {Øt} {aä}
+KORKEA.PL.ILL,korke.i.hin,korkeØ.i.hin,k o r k e {aaaaaØo} {ij} {Øh} {V} n
+KORKEA.PL.ILL,korkeo.i.hin,korkeo.i.hin,k o r k e {aaaaaØo} {ij} {Øh} {V} n
+KORKEA.PL.ILLsiin,korke.i.siin,korkeØ.i.siin,k o r k e {aaaaaØo} {ij} s i {iØ} n
 LEVEÄ,leveä,leveä,l e v e {äääääØö} 
-LEVEÄ GEN,leveä.n,leveä.n,l e v e {äääääØö} n
-LEVEÄ PTV,leveä.ä,leveä.Øä,l e v e {äääääØö} {Øt} {aä}
-LEVEÄ PTV,leveä.tä,leveä.tä,l e v e {äääääØö} {Øt} {aä}
-LEVEÄ ESS,leveä.nä,leveä.nä,l e v e {äääääØö} {nrs} {aä}
-LEVEÄ ILL,leveä.än,leveä.Øän,l e v e {äääääØö} {Øh} {V} n
-LEVEÄ ILL,leveä.hän,leveä.hän,l e v e {äääääØö} {Øh} {V} n
-LEVEÄ PL INE,leve.i.ssä,leveØ.i.ssä,l e v e {äääääØö} {ij} s s {aä}
-LEVEÄ PL INE,leveö.i.ssä,leveö.i.ssä,l e v e {äääääØö} {ij} s s {aä}
-LEVEÄ PL GENiden,leve.i.den,leveØ.i.dØen,l e v e {äääääØö} {ij} {dt} {Øt} e n
-LEVEÄ PL GENiden,leve.i.tten,leveØ.i.tten,l e v e {äääääØö} {ij} {dt} {Øt} e n
-LEVEÄ PL GENiden,leveö.i.den,leveö.i.dØen,l e v e {äääääØö} {ij} {dt} {Øt} e n
-LEVEÄ PL GENiden,leveö.i.tten,leveö.i.tten,l e v e {äääääØö} {ij} {dt} {Øt} e n
-LEVEÄ GENin,leveä.in,leveä.in,l e v e {äääääØö} i n
-LEVEÄ PL PTV,leve.i.tä,leveØ.i.tä,l e v e {äääääØö} {ij} {Øt} {aä}
-LEVEÄ PL PTV,leveö.i.tä,leveö.i.tä,l e v e {äääääØö} {ij} {Øt} {aä}
-LEVEÄ PL ILL,leve.i.hin,leveØ.i.hin,l e v e {äääääØö} {ij} {Øh} {V} n
-LEVEÄ PL ILL,leveö.i.hin,leveö.i.hin,l e v e {äääääØö} {ij} {Øh} {V} n
-LEVEÄ PL ILLsiin,leve.i.siin,leveØ.i.siin,l e v e {äääääØö} {ij} s i {iØ} n
+LEVEÄ.GEN,leveä.n,leveä.n,l e v e {äääääØö} n
+LEVEÄ.PTV,leveä.ä,leveä.Øä,l e v e {äääääØö} {Øt} {aä}
+LEVEÄ.PTV,leveä.tä,leveä.tä,l e v e {äääääØö} {Øt} {aä}
+LEVEÄ.ESS,leveä.nä,leveä.nä,l e v e {äääääØö} {nrs} {aä}
+LEVEÄ.ILL,leveä.än,leveä.Øän,l e v e {äääääØö} {Øh} {V} n
+LEVEÄ.ILL,leveä.hän,leveä.hän,l e v e {äääääØö} {Øh} {V} n
+LEVEÄ.PL.INE,leve.i.ssä,leveØ.i.ssä,l e v e {äääääØö} {ij} s s {aä}
+LEVEÄ.PL.INE,leveö.i.ssä,leveö.i.ssä,l e v e {äääääØö} {ij} s s {aä}
+LEVEÄ.PL.GENiden,leve.i.den,leveØ.i.dØen,l e v e {äääääØö} {ij} {dt} {Øt} e n
+LEVEÄ.PL.GENiden,leve.i.tten,leveØ.i.tten,l e v e {äääääØö} {ij} {dt} {Øt} e n
+LEVEÄ.PL.GENiden,leveö.i.den,leveö.i.dØen,l e v e {äääääØö} {ij} {dt} {Øt} e n
+LEVEÄ.PL.GENiden,leveö.i.tten,leveö.i.tten,l e v e {äääääØö} {ij} {dt} {Øt} e n
+LEVEÄ.GENin,leveä.in,leveä.in,l e v e {äääääØö} i n
+LEVEÄ.PL.PTV,leve.i.tä,leveØ.i.tä,l e v e {äääääØö} {ij} {Øt} {aä}
+LEVEÄ.PL.PTV,leveö.i.tä,leveö.i.tä,l e v e {äääääØö} {ij} {Øt} {aä}
+LEVEÄ.PL.ILL,leve.i.hin,leveØ.i.hin,l e v e {äääääØö} {ij} {Øh} {V} n
+LEVEÄ.PL.ILL,leveö.i.hin,leveö.i.hin,l e v e {äääääØö} {ij} {Øh} {V} n
+LEVEÄ.PL.ILLsiin,leve.i.siin,leveØ.i.siin,l e v e {äääääØö} {ij} s i {iØ} n
 VAPAA,vapaa,vapaØa,v a p a {ØØhØØhØh} {aaaaaaØØ} 
-VAPAA GEN,vapaa.n,vapaØa.n,v a p a {ØØhØØhØh} {aaaaaaØØ} n
-VAPAA GEN,vapaha.n,vapaha.n,v a p a {ØØhØØhØh} {aaaaaaØØ} n
-VAPAA PTV,vapaa.ta,vapaØa.ta,v a p a {ØØhØØhØh} {aaaaaaØØ} {Øt} {aä}
-VAPAA ESS,vapaa.na,vapaØa.na,v a p a {ØØhØØhØh} {aaaaaaØØ} {nrs} {aä}
-VAPAA ESS,vapaha.na,vapaha.na,v a p a {ØØhØØhØh} {aaaaaaØØ} {nrs} {aä}
-VAPAA ILL,vapaa.han,vapaØa.han,v a p a {ØØhØØhØh} {aaaaaaØØ} {Øh} {V} n
-VAPAA ILLseen,vapaa.seen,vapaØa.seen,v a p a {ØØhØØhØh} {aaaaaaØØ} s e {Øe} n
-VAPAA ILLseen,vapaha.sen,vapaha.seØn,v a p a {ØØhØØhØh} {aaaaaaØØ} s e {Øe} n
-VAPAA PL INE,vapa.i.ssa,vapaØØ.i.ssa,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} s s {aä}
-VAPAA PL INE,vapah.i.ssa,vapahØ.i.ssa,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} s s {aä}
-VAPAA PL GENiden,vapa.i.den,vapaØØ.i.dØen,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {dt} {Øt} e n
-VAPAA PL GENiden,vapa.i.tten,vapaØØ.i.tten,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {dt} {Øt} e n
-VAPAA PL GENiden,vapah.i.tten,vapahØ.i.tten,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {dt} {Øt} e n
-VAPAA PL GENien,vapah.i.en,vapahØ.i.en,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} e n
-VAPAA PL PTV,vapa.i.ta,vapaØØ.i.ta,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {Øt} {aä}
-VAPAA PL PTV,vapah.i.a,vapahØ.i.Øa,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {Øt} {aä}
-VAPAA PL ILLsiin,vapa.i.siin,vapaØØ.i.siin,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} s i {iØ} n
-VAPAA PL ILLsiin,vapah.i.sin,vapahØ.i.siØn,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} s i {iØ} n
+VAPAA.GEN,vapaa.n,vapaØa.n,v a p a {ØØhØØhØh} {aaaaaaØØ} n
+VAPAA.GEN,vapaha.n,vapaha.n,v a p a {ØØhØØhØh} {aaaaaaØØ} n
+VAPAA.PTV,vapaa.ta,vapaØa.ta,v a p a {ØØhØØhØh} {aaaaaaØØ} {Øt} {aä}
+VAPAA.ESS,vapaa.na,vapaØa.na,v a p a {ØØhØØhØh} {aaaaaaØØ} {nrs} {aä}
+VAPAA.ESS,vapaha.na,vapaha.na,v a p a {ØØhØØhØh} {aaaaaaØØ} {nrs} {aä}
+VAPAA.ILL,vapaa.han,vapaØa.han,v a p a {ØØhØØhØh} {aaaaaaØØ} {Øh} {V} n
+VAPAA.ILLseen,vapaa.seen,vapaØa.seen,v a p a {ØØhØØhØh} {aaaaaaØØ} s e {Øe} n
+VAPAA.ILLseen,vapaha.sen,vapaha.seØn,v a p a {ØØhØØhØh} {aaaaaaØØ} s e {Øe} n
+VAPAA.PL.INE,vapa.i.ssa,vapaØØ.i.ssa,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} s s {aä}
+VAPAA.PL.INE,vapah.i.ssa,vapahØ.i.ssa,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} s s {aä}
+VAPAA.PL.GENiden,vapa.i.den,vapaØØ.i.dØen,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {dt} {Øt} e n
+VAPAA.PL.GENiden,vapa.i.tten,vapaØØ.i.tten,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {dt} {Øt} e n
+VAPAA.PL.GENiden,vapah.i.tten,vapahØ.i.tten,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {dt} {Øt} e n
+VAPAA.PL.GENien,vapah.i.en,vapahØ.i.en,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} e n
+VAPAA.PL.PTV,vapa.i.ta,vapaØØ.i.ta,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {Øt} {aä}
+VAPAA.PL.PTV,vapah.i.a,vapahØ.i.Øa,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} {Øt} {aä}
+VAPAA.PL.ILLsiin,vapa.i.siin,vapaØØ.i.siin,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} s i {iØ} n
+VAPAA.PL.ILLsiin,vapah.i.sin,vapahØ.i.siØn,v a p a {ØØhØØhØh} {aaaaaaØØ} {ij} s i {iØ} n
 TIENOO,tienoo,tienoØo,t i e n o {ØØhØØhØh} {ooooooØØ} 
-TIENOO GEN,tienoo.n,tienoØo.n,t i e n o {ØØhØØhØh} {ooooooØØ} n
-TIENOO GEN,tienoho.n,tienoho.n,t i e n o {ØØhØØhØh} {ooooooØØ} n
-TIENOO PTV,tienoo.ta,tienoØo.ta,t i e n o {ØØhØØhØh} {ooooooØØ} {Øt} {aä}
-TIENOO ESS,tienoo.na,tienoØo.na,t i e n o {ØØhØØhØh} {ooooooØØ} {nrs} {aä}
-TIENOO ESS,tienoho.na,tienoho.na,t i e n o {ØØhØØhØh} {ooooooØØ} {nrs} {aä}
-TIENOO ILL,tienoo.hon,tienoØo.hon,t i e n o {ØØhØØhØh} {ooooooØØ} {Øh} {V} n
-TIENOO ILLseen,tienoo.seen,tienoØo.seen,t i e n o {ØØhØØhØh} {ooooooØØ} s e {Øe} n
-TIENOO ILLseen,tienoho.sen,tienoho.seØn,t i e n o {ØØhØØhØh} {ooooooØØ} s e {Øe} n
-TIENOO PL INE,tieno.i.ssa,tienoØØ.i.ssa,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} s s {aä}
-TIENOO PL INE,tienoh.i.ssa,tienohØ.i.ssa,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} s s {aä}
-TIENOO PL GENiden,tieno.i.den,tienoØØ.i.dØen,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {dt} {Øt} e n
-TIENOO PL GENiden,tieno.i.tten,tienoØØ.i.tten,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {dt} {Øt} e n
-TIENOO PL GENiden,tienoh.i.tten,tienohØ.i.tten,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {dt} {Øt} e n
-TIENOO PL GENien,tienoh.i.en,tienohØ.i.en,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} e n
-TIENOO PL PTV,tieno.i.ta,tienoØØ.i.ta,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {Øt} {aä}
-TIENOO PL PTV,tienoh.i.a,tienohØ.i.Øa,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {Øt} {aä}
-TIENOO PL ILL,tieno.i.hin,tienoØØ.i.hin,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {Øh} {V} n
-TIENOO PL ILLsiin,tieno.i.siin,tienoØØ.i.siin,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} s i {iØ} n
-TIENOO PL ILLsiin,tienoh.i.sin,tienohØ.i.siØn,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} s i {iØ} n
-LEIKKUUU,leikkuu,leikkuu,l e i k k u {uuuuØ} 
-LEIKKUUU GEN,leikkuu.n,leikkuu.n,l e i k k u {uuuuØ} n
-LEIKKUUU PTV,leikkuu.ta,leikkuu.ta,l e i k k u {uuuuØ} {Øt} {aä}
-LEIKKUUU ESS,leikkuu.na,leikkuu.na,l e i k k u {uuuuØ} {nrs} {aä}
-LEIKKUUU ILL,leikkuu.hun,leikkuu.hun,l e i k k u {uuuuØ} {Øh} {V} n
-LEIKKUUU ILLseen,leikkuu.seen,leikkuu.seen,l e i k k u {uuuuØ} s e {Øe} n
-LEIKKUUU PL INE,leikku.i.ssa,leikkuØ.i.ssa,l e i k k u {uuuuØ} {ij} s s {aä}
-LEIKKUUU PL GENiden,leikku.i.den,leikkuØ.i.dØen,l e i k k u {uuuuØ} {ij} {dt} {Øt} e n
-LEIKKUUU PL GENiden,leikku.i.tten,leikkuØ.i.tten,l e i k k u {uuuuØ} {ij} {dt} {Øt} e n
-LEIKKUUU PL PTV,leikku.i.ta,leikkuØ.i.ta,l e i k k u {uuuuØ} {ij} {Øt} {aä}
-LEIKKUUU PL ILL,leikku.i.hin,leikkuØ.i.hin,l e i k k u {uuuuØ} {ij} {Øh} {V} n
-LEIKKUUU PL ILLsiin,leikku.i.siin,leikkuØ.i.siin,l e i k k u {uuuuØ} {ij} s i {iØ} n
+TIENOO.GEN,tienoo.n,tienoØo.n,t i e n o {ØØhØØhØh} {ooooooØØ} n
+TIENOO.GEN,tienoho.n,tienoho.n,t i e n o {ØØhØØhØh} {ooooooØØ} n
+TIENOO.PTV,tienoo.ta,tienoØo.ta,t i e n o {ØØhØØhØh} {ooooooØØ} {Øt} {aä}
+TIENOO.ESS,tienoo.na,tienoØo.na,t i e n o {ØØhØØhØh} {ooooooØØ} {nrs} {aä}
+TIENOO.ESS,tienoho.na,tienoho.na,t i e n o {ØØhØØhØh} {ooooooØØ} {nrs} {aä}
+TIENOO.ILL,tienoo.hon,tienoØo.hon,t i e n o {ØØhØØhØh} {ooooooØØ} {Øh} {V} n
+TIENOO.ILLseen,tienoo.seen,tienoØo.seen,t i e n o {ØØhØØhØh} {ooooooØØ} s e {Øe} n
+TIENOO.ILLseen,tienoho.sen,tienoho.seØn,t i e n o {ØØhØØhØh} {ooooooØØ} s e {Øe} n
+TIENOO.PL.INE,tieno.i.ssa,tienoØØ.i.ssa,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} s s {aä}
+TIENOO.PL.INE,tienoh.i.ssa,tienohØ.i.ssa,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} s s {aä}
+TIENOO.PL.GENiden,tieno.i.den,tienoØØ.i.dØen,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {dt} {Øt} e n
+TIENOO.PL.GENiden,tieno.i.tten,tienoØØ.i.tten,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {dt} {Øt} e n
+TIENOO.PL.GENiden,tienoh.i.tten,tienohØ.i.tten,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {dt} {Øt} e n
+TIENOO.PL.GENien,tienoh.i.en,tienohØ.i.en,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} e n
+TIENOO.PL.PTV,tieno.i.ta,tienoØØ.i.ta,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {Øt} {aä}
+TIENOO.PL.PTV,tienoh.i.a,tienohØ.i.Øa,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {Øt} {aä}
+TIENOO.PL.ILL,tieno.i.hin,tienoØØ.i.hin,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} {Øh} {V} n
+TIENOO.PL.ILLsiin,tieno.i.siin,tienoØØ.i.siin,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} s i {iØ} n
+TIENOO.PL.ILLsiin,tienoh.i.sin,tienohØ.i.siØn,t i e n o {ØØhØØhØh} {ooooooØØ} {ij} s i {iØ} n
+LEIKKUU,leikkuu,leikkuu,l e i k k u {uuuuØ} 
+LEIKKUU.GEN,leikkuu.n,leikkuu.n,l e i k k u {uuuuØ} n
+LEIKKUU.PTV,leikkuu.ta,leikkuu.ta,l e i k k u {uuuuØ} {Øt} {aä}
+LEIKKUU.ESS,leikkuu.na,leikkuu.na,l e i k k u {uuuuØ} {nrs} {aä}
+LEIKKUU.ILL,leikkuu.hun,leikkuu.hun,l e i k k u {uuuuØ} {Øh} {V} n
+LEIKKUU.ILLseen,leikkuu.seen,leikkuu.seen,l e i k k u {uuuuØ} s e {Øe} n
+LEIKKUU.PL.INE,leikku.i.ssa,leikkuØ.i.ssa,l e i k k u {uuuuØ} {ij} s s {aä}
+LEIKKUU.PL.GENiden,leikku.i.den,leikkuØ.i.dØen,l e i k k u {uuuuØ} {ij} {dt} {Øt} e n
+LEIKKUU.PL.GENiden,leikku.i.tten,leikkuØ.i.tten,l e i k k u {uuuuØ} {ij} {dt} {Øt} e n
+LEIKKUU.PL.PTV,leikku.i.ta,leikkuØ.i.ta,l e i k k u {uuuuØ} {ij} {Øt} {aä}
+LEIKKUU.PL.ILL,leikku.i.hin,leikkuØ.i.hin,l e i k k u {uuuuØ} {ij} {Øh} {V} n
+LEIKKUU.PL.ILLsiin,leikku.i.siin,leikkuØ.i.siin,l e i k k u {uuuuØ} {ij} s i {iØ} n
 KAMEE,kamee,kamee,k a m e {eeeeØ} 
-KAMEE GEN,kamee.n,kamee.n,k a m e {eeeeØ} n
-KAMEE PTV,kamee.ta,kamee.ta,k a m e {eeeeØ} {Øt} {aä}
-KAMEE ESS,kamee.na,kamee.na,k a m e {eeeeØ} {nrs} {aä}
-KAMEE ILL,kamee.hen,kamee.hen,k a m e {eeeeØ} {Øh} {V} n
-KAMEE ILLseen,kamee.seen,kamee.seen,k a m e {eeeeØ} s e {Øe} n
-KAMEE PL INE,kame.i.ssa,kameØ.i.ssa,k a m e {eeeeØ} {ij} s s {aä}
-KAMEE PL GENiden,kame.i.den,kameØ.i.dØen,k a m e {eeeeØ} {ij} {dt} {Øt} e n
-KAMEE PL GENiden,kame.i.tten,kameØ.i.tten,k a m e {eeeeØ} {ij} {dt} {Øt} e n
-KAMEE PL PTV,kame.i.ta,kameØ.i.ta,k a m e {eeeeØ} {ij} {Øt} {aä}
-KAMEE PL ILL,kame.i.hin,kameØ.i.hin,k a m e {eeeeØ} {ij} {Øh} {V} n
-KAMEE PL ILLsiin,kame.i.siin,kameØ.i.siin,k a m e {eeeeØ} {ij} s i {iØ} n
+KAMEE.GEN,kamee.n,kamee.n,k a m e {eeeeØ} n
+KAMEE.PTV,kamee.ta,kamee.ta,k a m e {eeeeØ} {Øt} {aä}
+KAMEE.ESS,kamee.na,kamee.na,k a m e {eeeeØ} {nrs} {aä}
+KAMEE.ILL,kamee.hen,kamee.hen,k a m e {eeeeØ} {Øh} {V} n
+KAMEE.ILLseen,kamee.seen,kamee.seen,k a m e {eeeeØ} s e {Øe} n
+KAMEE.PL.INE,kame.i.ssa,kameØ.i.ssa,k a m e {eeeeØ} {ij} s s {aä}
+KAMEE.PL.GENiden,kame.i.den,kameØ.i.dØen,k a m e {eeeeØ} {ij} {dt} {Øt} e n
+KAMEE.PL.GENiden,kame.i.tten,kameØ.i.tten,k a m e {eeeeØ} {ij} {dt} {Øt} e n
+KAMEE.PL.PTV,kame.i.ta,kameØ.i.ta,k a m e {eeeeØ} {ij} {Øt} {aä}
+KAMEE.PL.ILL,kame.i.hin,kameØ.i.hin,k a m e {eeeeØ} {ij} {Øh} {V} n
+KAMEE.PL.ILLsiin,kame.i.siin,kameØ.i.siin,k a m e {eeeeØ} {ij} s i {iØ} n
 PII,pii,pii,p i {iiiiØ} 
-PII GEN,pii.n,pii.n,p i {iiiiØ} n
-PII PTV,pii.tä,pii.tä,p i {iiiiØ} {Øt} {aä}
-PII ESS,pii.nä,pii.nä,p i {iiiiØ} {nrs} {aä}
-PII ILL,pii.hin,pii.hin,p i {iiiiØ} {Øh} {V} n
-PII PL INE,pi.i.ssä,piØ.i.ssä,p i {iiiiØ} {ij} s s {aä}
-PII PL GENiden,pi.i.den,piØ.i.dØen,p i {iiiiØ} {ij} {dt} {Øt} e n
-PII PL GENiden,pi.i.tten,piØ.i.tten,p i {iiiiØ} {ij} {dt} {Øt} e n
-PII PL PTV,pi.i.tä,piØ.i.tä,p i {iiiiØ} {ij} {Øt} {aä}
-PII PL ILL,pi.i.hin,piØ.i.hin,p i {iiiiØ} {ij} {Øh} {V} n
+PII.GEN,pii.n,pii.n,p i {iiiiØ} n
+PII.PTV,pii.tä,pii.tä,p i {iiiiØ} {Øt} {aä}
+PII.ESS,pii.nä,pii.nä,p i {iiiiØ} {nrs} {aä}
+PII.ILL,pii.hin,pii.hin,p i {iiiiØ} {Øh} {V} n
+PII.PL.INE,pi.i.ssä,piØ.i.ssä,p i {iiiiØ} {ij} s s {aä}
+PII.PL.GENiden,pi.i.den,piØ.i.dØen,p i {iiiiØ} {ij} {dt} {Øt} e n
+PII.PL.GENiden,pi.i.tten,piØ.i.tten,p i {iiiiØ} {ij} {dt} {Øt} e n
+PII.PL.PTV,pi.i.tä,piØ.i.tä,p i {iiiiØ} {ij} {Øt} {aä}
+PII.PL.ILL,pi.i.hin,piØ.i.hin,p i {iiiiØ} {ij} {Øh} {V} n
 MAA,maa,maa,m a {aaaaØ} 
-MAA GEN,maa.n,maa.n,m a {aaaaØ} n
-MAA PTV,maa.ta,maa.ta,m a {aaaaØ} {Øt} {aä}
-MAA ESS,maa.na,maa.na,m a {aaaaØ} {nrs} {aä}
-MAA ILL,maa.han,maa.han,m a {aaaaØ} {Øh} {V} n
-MAA PL INE,ma.i.ssa,maØ.i.ssa,m a {aaaaØ} {ij} s s {aä}
-MAA PL GENiden,ma.i.den,maØ.i.dØen,m a {aaaaØ} {ij} {dt} {Øt} e n
-MAA PL GENiden,ma.i.tten,maØ.i.tten,m a {aaaaØ} {ij} {dt} {Øt} e n
-MAA PL PTV,ma.i.ta,maØ.i.ta,m a {aaaaØ} {ij} {Øt} {aä}
-MAA PL ILL,ma.i.hin,maØ.i.hin,m a {aaaaØ} {ij} {Øh} {V} n
+MAA.GEN,maa.n,maa.n,m a {aaaaØ} n
+MAA.PTV,maa.ta,maa.ta,m a {aaaaØ} {Øt} {aä}
+MAA.ESS,maa.na,maa.na,m a {aaaaØ} {nrs} {aä}
+MAA.ILL,maa.han,maa.han,m a {aaaaØ} {Øh} {V} n
+MAA.PL.INE,ma.i.ssa,maØ.i.ssa,m a {aaaaØ} {ij} s s {aä}
+MAA.PL.GENiden,ma.i.den,maØ.i.dØen,m a {aaaaØ} {ij} {dt} {Øt} e n
+MAA.PL.GENiden,ma.i.tten,maØ.i.tten,m a {aaaaØ} {ij} {dt} {Øt} e n
+MAA.PL.PTV,ma.i.ta,maØ.i.ta,m a {aaaaØ} {ij} {Øt} {aä}
+MAA.PL.ILL,ma.i.hin,maØ.i.hin,m a {aaaaØ} {ij} {Øh} {V} n
 PUU,puu,puu,p u {uuuuØ} 
-PUU GEN,puu.n,puu.n,p u {uuuuØ} n
-PUU PTV,puu.ta,puu.ta,p u {uuuuØ} {Øt} {aä}
-PUU ESS,puu.na,puu.na,p u {uuuuØ} {nrs} {aä}
-PUU ILL,puu.hun,puu.hun,p u {uuuuØ} {Øh} {V} n
-PUU PL INE,pu.i.ssa,puØ.i.ssa,p u {uuuuØ} {ij} s s {aä}
-PUU PL GENiden,pu.i.den,puØ.i.dØen,p u {uuuuØ} {ij} {dt} {Øt} e n
-PUU PL GENiden,pu.i.tten,puØ.i.tten,p u {uuuuØ} {ij} {dt} {Øt} e n
-PUU PL PTV,pu.i.ta,puØ.i.ta,p u {uuuuØ} {ij} {Øt} {aä}
-PUU PL ILL,pu.i.hin,puØ.i.hin,p u {uuuuØ} {ij} {Øh} {V} n
+PUU.GEN,puu.n,puu.n,p u {uuuuØ} n
+PUU.PTV,puu.ta,puu.ta,p u {uuuuØ} {Øt} {aä}
+PUU.ESS,puu.na,puu.na,p u {uuuuØ} {nrs} {aä}
+PUU.ILL,puu.hun,puu.hun,p u {uuuuØ} {Øh} {V} n
+PUU.PL.INE,pu.i.ssa,puØ.i.ssa,p u {uuuuØ} {ij} s s {aä}
+PUU.PL.GENiden,pu.i.den,puØ.i.dØen,p u {uuuuØ} {ij} {dt} {Øt} e n
+PUU.PL.GENiden,pu.i.tten,puØ.i.tten,p u {uuuuØ} {ij} {dt} {Øt} e n
+PUU.PL.PTV,pu.i.ta,puØ.i.ta,p u {uuuuØ} {ij} {Øt} {aä}
+PUU.PL.ILL,pu.i.hin,puØ.i.hin,p u {uuuuØ} {ij} {Øh} {V} n
 SUO,suo,suo,s {uuuuØ} o 
-SUO GEN,suo.n,suo.n,s {uuuuØ} o n
-SUO PTV,suo.ta,suo.ta,s {uuuuØ} o {Øt} {aä}
-SUO ESS,suo.na,suo.na,s {uuuuØ} o {nrs} {aä}
-SUO ILL,suo.hon,suo.hon,s {uuuuØ} o {Øh} {V} n
-SUO PL INE,so.i.ssa,sØo.i.ssa,s {uuuuØ} o {ij} s s {aä}
-SUO PL GENiden,so.i.den,sØo.i.dØen,s {uuuuØ} o {ij} {dt} {Øt} e n
-SUO PL GENiden,so.i.tten,sØo.i.tten,s {uuuuØ} o {ij} {dt} {Øt} e n
-SUO PL PTV,so.i.ta,sØo.i.ta,s {uuuuØ} o {ij} {Øt} {aä}
-SUO PL ILL,so.i.hin,sØo.i.hin,s {uuuuØ} o {ij} {Øh} {V} n
+SUO.GEN,suo.n,suo.n,s {uuuuØ} o n
+SUO.PTV,suo.ta,suo.ta,s {uuuuØ} o {Øt} {aä}
+SUO.ESS,suo.na,suo.na,s {uuuuØ} o {nrs} {aä}
+SUO.ILL,suo.hon,suo.hon,s {uuuuØ} o {Øh} {V} n
+SUO.PL.INE,so.i.ssa,sØo.i.ssa,s {uuuuØ} o {ij} s s {aä}
+SUO.PL.GENiden,so.i.den,sØo.i.dØen,s {uuuuØ} o {ij} {dt} {Øt} e n
+SUO.PL.GENiden,so.i.tten,sØo.i.tten,s {uuuuØ} o {ij} {dt} {Øt} e n
+SUO.PL.PTV,so.i.ta,sØo.i.ta,s {uuuuØ} o {ij} {Øt} {aä}
+SUO.PL.ILL,so.i.hin,sØo.i.hin,s {uuuuØ} o {ij} {Øh} {V} n
 TUOHI,tuohi,tuohi,t u o h {ieØeØ} 
-TUOHI GEN,tuohe.n,tuohe.n,t u o h {ieØeØ} n
-TUOHI PTV,tuoh.ta,tuohØ.ta,t u o h {ieØeØ} {Øt} {aä}
-TUOHI ESS,tuohe.na,tuohe.na,t u o h {ieØeØ} {nrs} {aä}
-TUOHI ILL,tuohe.en,tuohe.Øen,t u o h {ieØeØ} {Øh} {V} n
-TUOHI ILL,tuohe.hen,tuohe.hen,t u o h {ieØeØ} {Øh} {V} n
-TUOHI PL INE,tuoh.i.ssa,tuohØ.i.ssa,t u o h {ieØeØ} {ij} s s {aä}
-TUOHI PL GENien,tuoh.i.en,tuohØ.i.en,t u o h {ieØeØ} {ij} e n
-TUOHI PLGENten,tuoh.ten,tuohØ.ten,t u o h {ieØeØ} t e n
-TUOHI PL PTV,tuoh.i.a,tuohØ.i.Øa,t u o h {ieØeØ} {ij} {Øt} {aä}
-TUOHI PL ILL,tuoh.i.in,tuohØ.i.Øin,t u o h {ieØeØ} {ij} {Øh} {V} n
-TUOHI PL ILL,tuoh.i.hin,tuohØ.i.hin,t u o h {ieØeØ} {ij} {Øh} {V} n
+TUOHI.GEN,tuohe.n,tuohe.n,t u o h {ieØeØ} n
+TUOHI.PTV,tuoh.ta,tuohØ.ta,t u o h {ieØeØ} {Øt} {aä}
+TUOHI.ESS,tuohe.na,tuohe.na,t u o h {ieØeØ} {nrs} {aä}
+TUOHI.ILL,tuohe.en,tuohe.Øen,t u o h {ieØeØ} {Øh} {V} n
+TUOHI.ILL,tuohe.hen,tuohe.hen,t u o h {ieØeØ} {Øh} {V} n
+TUOHI.PL.INE,tuoh.i.ssa,tuohØ.i.ssa,t u o h {ieØeØ} {ij} s s {aä}
+TUOHI.PL.GENien,tuoh.i.en,tuohØ.i.en,t u o h {ieØeØ} {ij} e n
+TUOHI.PLGENten,tuoh.ten,tuohØ.ten,t u o h {ieØeØ} t e n
+TUOHI.PL.PTV,tuoh.i.a,tuohØ.i.Øa,t u o h {ieØeØ} {ij} {Øt} {aä}
+TUOHI.PL.ILL,tuoh.i.in,tuohØ.i.Øin,t u o h {ieØeØ} {ij} {Øh} {V} n
+TUOHI.PL.ILL,tuoh.i.hin,tuohØ.i.hin,t u o h {ieØeØ} {ij} {Øh} {V} n
 LOHI,lohi,lohi,l o h {ieØeØ} 
-LOHI GEN,lohe.n,lohe.n,l o h {ieØeØ} n
-LOHI PTV,loh.ta,lohØ.ta,l o h {ieØeØ} {Øt} {aä}
-LOHI ESS,lohe.na,lohe.na,l o h {ieØeØ} {nrs} {aä}
-LOHI ILL,lohe.en,lohe.Øen,l o h {ieØeØ} {Øh} {V} n
-LOHI ILL,lohe.hen,lohe.hen,l o h {ieØeØ} {Øh} {V} n
-LOHI PL INE,loh.i.ssa,lohØ.i.ssa,l o h {ieØeØ} {ij} s s {aä}
-LOHI PL GENien,loh.i.en,lohØ.i.en,l o h {ieØeØ} {ij} e n
-LOHI PLGENten,loh.ten,lohØ.ten,l o h {ieØeØ} t e n
-LOHI PL PTV,loh.i.a,lohØ.i.Øa,l o h {ieØeØ} {ij} {Øt} {aä}
-LOHI PL ILL,loh.i.in,lohØ.i.Øin,l o h {ieØeØ} {ij} {Øh} {V} n
-LOHI PL ILL,loh.i.hin,lohØ.i.hin,l o h {ieØeØ} {ij} {Øh} {V} n
+LOHI.GEN,lohe.n,lohe.n,l o h {ieØeØ} n
+LOHI.PTV,loh.ta,lohØ.ta,l o h {ieØeØ} {Øt} {aä}
+LOHI.ESS,lohe.na,lohe.na,l o h {ieØeØ} {nrs} {aä}
+LOHI.ILL,lohe.en,lohe.Øen,l o h {ieØeØ} {Øh} {V} n
+LOHI.ILL,lohe.hen,lohe.hen,l o h {ieØeØ} {Øh} {V} n
+LOHI.PL.INE,loh.i.ssa,lohØ.i.ssa,l o h {ieØeØ} {ij} s s {aä}
+LOHI.PL.GENien,loh.i.en,lohØ.i.en,l o h {ieØeØ} {ij} e n
+LOHI.PLGENten,loh.ten,lohØ.ten,l o h {ieØeØ} t e n
+LOHI.PL.PTV,loh.i.a,lohØ.i.Øa,l o h {ieØeØ} {ij} {Øt} {aä}
+LOHI.PL.ILL,loh.i.in,lohØ.i.Øin,l o h {ieØeØ} {ij} {Øh} {V} n
+LOHI.PL.ILL,loh.i.hin,lohØ.i.hin,l o h {ieØeØ} {ij} {Øh} {V} n
 LAHTI,lahti,lahti,l a h {tdttt} {ieeeØ} 
-LAHTI GEN,lahde.n,lahde.n,l a h {tdttt} {ieeeØ} n
-LAHTI PTV,lahte.a,lahte.Øa,l a h {tdttt} {ieeeØ} {Øt} {aä}
-LAHTI ESS,lahte.na,lahte.na,l a h {tdttt} {ieeeØ} {nrs} {aä}
-LAHTI ILL,lahte.en,lahte.Øen,l a h {tdttt} {ieeeØ} {Øh} {V} n
-LAHTI ILL,lahte.hen,lahte.hen,l a h {tdttt} {ieeeØ} {Øh} {V} n
-LAHTI PL INE,lahd.i.ssa,lahdØ.i.ssa,l a h {tdttt} {ieeeØ} {ij} s s {aä}
-LAHTI PL GENien,laht.i.en,lahtØ.i.en,l a h {tdttt} {ieeeØ} {ij} e n
-LAHTI GENin,lahte.in,lahte.in,l a h {tdttt} {ieeeØ} i n
-LAHTI PL PTV,laht.i.a,lahtØ.i.Øa,l a h {tdttt} {ieeeØ} {ij} {Øt} {aä}
-LAHTI PL ILL,laht.i.in,lahtØ.i.Øin,l a h {tdttt} {ieeeØ} {ij} {Øh} {V} n
-LAHTI PL ILL,laht.i.hin,lahtØ.i.hin,l a h {tdttt} {ieeeØ} {ij} {Øh} {V} n
+LAHTI.GEN,lahde.n,lahde.n,l a h {tdttt} {ieeeØ} n
+LAHTI.PTV,lahte.a,lahte.Øa,l a h {tdttt} {ieeeØ} {Øt} {aä}
+LAHTI.ESS,lahte.na,lahte.na,l a h {tdttt} {ieeeØ} {nrs} {aä}
+LAHTI.ILL,lahte.en,lahte.Øen,l a h {tdttt} {ieeeØ} {Øh} {V} n
+LAHTI.ILL,lahte.hen,lahte.hen,l a h {tdttt} {ieeeØ} {Øh} {V} n
+LAHTI.PL.INE,lahd.i.ssa,lahdØ.i.ssa,l a h {tdttt} {ieeeØ} {ij} s s {aä}
+LAHTI.PL.GENien,laht.i.en,lahtØ.i.en,l a h {tdttt} {ieeeØ} {ij} e n
+LAHTI.GENin,lahte.in,lahte.in,l a h {tdttt} {ieeeØ} i n
+LAHTI.PL.PTV,laht.i.a,lahtØ.i.Øa,l a h {tdttt} {ieeeØ} {ij} {Øt} {aä}
+LAHTI.PL.ILL,laht.i.in,lahtØ.i.Øin,l a h {tdttt} {ieeeØ} {ij} {Øh} {V} n
+LAHTI.PL.ILL,laht.i.hin,lahtØ.i.hin,l a h {tdttt} {ieeeØ} {ij} {Øh} {V} n
 LUMI,lumi,lumi,l u {mmnmmm} {ieØeeØ} 
-LUMI GEN,lume.n,lume.n,l u {mmnmmm} {ieØeeØ} n
-LUMI PTV,lun.ta,lunØ.ta,l u {mmnmmm} {ieØeeØ} {Øt} {aä}
-LUMI PTV,lume.a,lume.Øa,l u {mmnmmm} {ieØeeØ} {Øt} {aä}
-LUMI ESS,lume.na,lume.na,l u {mmnmmm} {ieØeeØ} {nrs} {aä}
-LUMI ILL,lume.en,lume.Øen,l u {mmnmmm} {ieØeeØ} {Øh} {V} n
-LUMI ILL,lume.hen,lume.hen,l u {mmnmmm} {ieØeeØ} {Øh} {V} n
-LUMI PL INE,lum.i.ssa,lumØ.i.ssa,l u {mmnmmm} {ieØeeØ} {ij} s s {aä}
-LUMI PL GENien,lum.i.en,lumØ.i.en,l u {mmnmmm} {ieØeeØ} {ij} e n
-LUMI PLGENten,lun.ten,lunØ.ten,l u {mmnmmm} {ieØeeØ} t e n
-LUMI GENin,lume.in,lume.in,l u {mmnmmm} {ieØeeØ} i n
-LUMI PL PTV,lum.i.a,lumØ.i.Øa,l u {mmnmmm} {ieØeeØ} {ij} {Øt} {aä}
-LUMI PL ILL,lum.i.in,lumØ.i.Øin,l u {mmnmmm} {ieØeeØ} {ij} {Øh} {V} n
-LUMI PL ILL,lum.i.hin,lumØ.i.hin,l u {mmnmmm} {ieØeeØ} {ij} {Øh} {V} n
+LUMI.GEN,lume.n,lume.n,l u {mmnmmm} {ieØeeØ} n
+LUMI.PTV,lun.ta,lunØ.ta,l u {mmnmmm} {ieØeeØ} {Øt} {aä}
+LUMI.PTV,lume.a,lume.Øa,l u {mmnmmm} {ieØeeØ} {Øt} {aä}
+LUMI.ESS,lume.na,lume.na,l u {mmnmmm} {ieØeeØ} {nrs} {aä}
+LUMI.ILL,lume.en,lume.Øen,l u {mmnmmm} {ieØeeØ} {Øh} {V} n
+LUMI.ILL,lume.hen,lume.hen,l u {mmnmmm} {ieØeeØ} {Øh} {V} n
+LUMI.PL.INE,lum.i.ssa,lumØ.i.ssa,l u {mmnmmm} {ieØeeØ} {ij} s s {aä}
+LUMI.PL.GENien,lum.i.en,lumØ.i.en,l u {mmnmmm} {ieØeeØ} {ij} e n
+LUMI.PLGENten,lun.ten,lunØ.ten,l u {mmnmmm} {ieØeeØ} t e n
+LUMI.GENin,lume.in,lume.in,l u {mmnmmm} {ieØeeØ} i n
+LUMI.PL.PTV,lum.i.a,lumØ.i.Øa,l u {mmnmmm} {ieØeeØ} {ij} {Øt} {aä}
+LUMI.PL.ILL,lum.i.in,lumØ.i.Øin,l u {mmnmmm} {ieØeeØ} {ij} {Øh} {V} n
+LUMI.PL.ILL,lum.i.hin,lumØ.i.hin,l u {mmnmmm} {ieØeeØ} {ij} {Øh} {V} n
 TUOMI,tuomi,tuomi,t u o {mmmnmm} {ieeØeØ} 
-TUOMI GEN,tuome.n,tuome.n,t u o {mmmnmm} {ieeØeØ} n
-TUOMI PTV,tuome.a,tuome.Øa,t u o {mmmnmm} {ieeØeØ} {Øt} {aä}
-TUOMI PTV,tuon.ta,tuonØ.ta,t u o {mmmnmm} {ieeØeØ} {Øt} {aä}
-TUOMI ESS,tuome.na,tuome.na,t u o {mmmnmm} {ieeØeØ} {nrs} {aä}
-TUOMI ILL,tuome.en,tuome.Øen,t u o {mmmnmm} {ieeØeØ} {Øh} {V} n
-TUOMI ILL,tuome.hen,tuome.hen,t u o {mmmnmm} {ieeØeØ} {Øh} {V} n
-TUOMI PL INE,tuom.i.ssa,tuomØ.i.ssa,t u o {mmmnmm} {ieeØeØ} {ij} s s {aä}
-TUOMI PL GENien,tuom.i.en,tuomØ.i.en,t u o {mmmnmm} {ieeØeØ} {ij} e n
-TUOMI PLGENten,tuon.ten,tuonØ.ten,t u o {mmmnmm} {ieeØeØ} t e n
-TUOMI PL PTV,tuom.i.a,tuomØ.i.Øa,t u o {mmmnmm} {ieeØeØ} {ij} {Øt} {aä}
-TUOMI PL ILL,tuom.i.in,tuomØ.i.Øin,t u o {mmmnmm} {ieeØeØ} {ij} {Øh} {V} n
-TUOMI PL ILL,tuom.i.hin,tuomØ.i.hin,t u o {mmmnmm} {ieeØeØ} {ij} {Øh} {V} n
+TUOMI.GEN,tuome.n,tuome.n,t u o {mmmnmm} {ieeØeØ} n
+TUOMI.PTV,tuome.a,tuome.Øa,t u o {mmmnmm} {ieeØeØ} {Øt} {aä}
+TUOMI.PTV,tuon.ta,tuonØ.ta,t u o {mmmnmm} {ieeØeØ} {Øt} {aä}
+TUOMI.ESS,tuome.na,tuome.na,t u o {mmmnmm} {ieeØeØ} {nrs} {aä}
+TUOMI.ILL,tuome.en,tuome.Øen,t u o {mmmnmm} {ieeØeØ} {Øh} {V} n
+TUOMI.ILL,tuome.hen,tuome.hen,t u o {mmmnmm} {ieeØeØ} {Øh} {V} n
+TUOMI.PL.INE,tuom.i.ssa,tuomØ.i.ssa,t u o {mmmnmm} {ieeØeØ} {ij} s s {aä}
+TUOMI.PL.GENien,tuom.i.en,tuomØ.i.en,t u o {mmmnmm} {ieeØeØ} {ij} e n
+TUOMI.PLGENten,tuon.ten,tuonØ.ten,t u o {mmmnmm} {ieeØeØ} t e n
+TUOMI.PL.PTV,tuom.i.a,tuomØ.i.Øa,t u o {mmmnmm} {ieeØeØ} {ij} {Øt} {aä}
+TUOMI.PL.ILL,tuom.i.in,tuomØ.i.Øin,t u o {mmmnmm} {ieeØeØ} {ij} {Øh} {V} n
+TUOMI.PL.ILL,tuom.i.hin,tuomØ.i.hin,t u o {mmmnmm} {ieeØeØ} {ij} {Øh} {V} n
 NIEMI,niemi,niemi,n i e {mmmnmm} {ieeØeØ} 
-NIEMI GEN,nieme.n,nieme.n,n i e {mmmnmm} {ieeØeØ} n
-NIEMI PTV,nieme.ä,nieme.Øä,n i e {mmmnmm} {ieeØeØ} {Øt} {aä}
-NIEMI PTV,nien.tä,nienØ.tä,n i e {mmmnmm} {ieeØeØ} {Øt} {aä}
-NIEMI ESS,nieme.nä,nieme.nä,n i e {mmmnmm} {ieeØeØ} {nrs} {aä}
-NIEMI ILL,nieme.en,nieme.Øen,n i e {mmmnmm} {ieeØeØ} {Øh} {V} n
-NIEMI ILL,nieme.hen,nieme.hen,n i e {mmmnmm} {ieeØeØ} {Øh} {V} n
-NIEMI PL INE,niem.i.ssä,niemØ.i.ssä,n i e {mmmnmm} {ieeØeØ} {ij} s s {aä}
-NIEMI PL GENien,niem.i.en,niemØ.i.en,n i e {mmmnmm} {ieeØeØ} {ij} e n
-NIEMI PLGENten,nien.ten,nienØ.ten,n i e {mmmnmm} {ieeØeØ} t e n
-NIEMI PL PTV,niem.i.ä,niemØ.i.Øä,n i e {mmmnmm} {ieeØeØ} {ij} {Øt} {aä}
-NIEMI PL ILL,niem.i.in,niemØ.i.Øin,n i e {mmmnmm} {ieeØeØ} {ij} {Øh} {V} n
-NIEMI PL ILL,niem.i.hin,niemØ.i.hin,n i e {mmmnmm} {ieeØeØ} {ij} {Øh} {V} n
+NIEMI.GEN,nieme.n,nieme.n,n i e {mmmnmm} {ieeØeØ} n
+NIEMI.PTV,nieme.ä,nieme.Øä,n i e {mmmnmm} {ieeØeØ} {Øt} {aä}
+NIEMI.PTV,nien.tä,nienØ.tä,n i e {mmmnmm} {ieeØeØ} {Øt} {aä}
+NIEMI.ESS,nieme.nä,nieme.nä,n i e {mmmnmm} {ieeØeØ} {nrs} {aä}
+NIEMI.ILL,nieme.en,nieme.Øen,n i e {mmmnmm} {ieeØeØ} {Øh} {V} n
+NIEMI.ILL,nieme.hen,nieme.hen,n i e {mmmnmm} {ieeØeØ} {Øh} {V} n
+NIEMI.PL.INE,niem.i.ssä,niemØ.i.ssä,n i e {mmmnmm} {ieeØeØ} {ij} s s {aä}
+NIEMI.PL.GENien,niem.i.en,niemØ.i.en,n i e {mmmnmm} {ieeØeØ} {ij} e n
+NIEMI.PLGENten,nien.ten,nienØ.ten,n i e {mmmnmm} {ieeØeØ} t e n
+NIEMI.PL.PTV,niem.i.ä,niemØ.i.Øä,n i e {mmmnmm} {ieeØeØ} {ij} {Øt} {aä}
+NIEMI.PL.ILL,niem.i.in,niemØ.i.Øin,n i e {mmmnmm} {ieeØeØ} {ij} {Øh} {V} n
+NIEMI.PL.ILL,niem.i.hin,niemØ.i.hin,n i e {mmmnmm} {ieeØeØ} {ij} {Øh} {V} n
 PIENI,pieni,pieni,p i e n {ieØeØØ} 
-PIENI GEN,piene.n,piene.n,p i e n {ieØeØØ} n
-PIENI PTV,pien.tä,pienØ.tä,p i e n {ieØeØØ} {Øt} {aä}
-PIENI ESS,piene.nä,piene.nä,p i e n {ieØeØØ} {nrs} {aä}
-PIENI ESS,pien.nä,pienØ.nä,p i e n {ieØeØØ} {nrs} {aä}
-PIENI ILL,piene.en,piene.Øen,p i e n {ieØeØØ} {Øh} {V} n
-PIENI ILL,piene.hen,piene.hen,p i e n {ieØeØØ} {Øh} {V} n
-PIENI PL INE,pien.i.ssä,pienØ.i.ssä,p i e n {ieØeØØ} {ij} s s {aä}
-PIENI PL GENien,pien.i.en,pienØ.i.en,p i e n {ieØeØØ} {ij} e n
-PIENI PLGENten,pien.ten,pienØ.ten,p i e n {ieØeØØ} t e n
-PIENI PL PTV,pien.i.ä,pienØ.i.Øä,p i e n {ieØeØØ} {ij} {Øt} {aä}
-PIENI PL ILL,pien.i.in,pienØ.i.Øin,p i e n {ieØeØØ} {ij} {Øh} {V} n
-PIENI PL ILL,pien.i.hin,pienØ.i.hin,p i e n {ieØeØØ} {ij} {Øh} {V} n
+PIENI.GEN,piene.n,piene.n,p i e n {ieØeØØ} n
+PIENI.PTV,pien.tä,pienØ.tä,p i e n {ieØeØØ} {Øt} {aä}
+PIENI.ESS,piene.nä,piene.nä,p i e n {ieØeØØ} {nrs} {aä}
+PIENI.ESS,pien.nä,pienØ.nä,p i e n {ieØeØØ} {nrs} {aä}
+PIENI.ILL,piene.en,piene.Øen,p i e n {ieØeØØ} {Øh} {V} n
+PIENI.ILL,piene.hen,piene.hen,p i e n {ieØeØØ} {Øh} {V} n
+PIENI.PL.INE,pien.i.ssä,pienØ.i.ssä,p i e n {ieØeØØ} {ij} s s {aä}
+PIENI.PL.GENien,pien.i.en,pienØ.i.en,p i e n {ieØeØØ} {ij} e n
+PIENI.PLGENten,pien.ten,pienØ.ten,p i e n {ieØeØØ} t e n
+PIENI.PL.PTV,pien.i.ä,pienØ.i.Øä,p i e n {ieØeØØ} {ij} {Øt} {aä}
+PIENI.PL.ILL,pien.i.in,pienØ.i.Øin,p i e n {ieØeØØ} {ij} {Øh} {V} n
+PIENI.PL.ILL,pien.i.hin,pienØ.i.hin,p i e n {ieØeØØ} {ij} {Øh} {V} n
 NUORI,nuori,nuori,n u o r {ieØeØØØ} 
-NUORI GEN,nuore.n,nuore.n,n u o r {ieØeØØØ} n
-NUORI PTV,nuor.ta,nuorØ.ta,n u o r {ieØeØØØ} {Øt} {aä}
-NUORI ESS,nuore.na,nuore.na,n u o r {ieØeØØØ} {nrs} {aä}
-NUORI ESS,nuor.na,nuorØ.na,n u o r {ieØeØØØ} {nrs} {aä}
-NUORI ESS,nuor.ra,nuorØ.ra,n u o r {ieØeØØØ} {nrs} {aä}
-NUORI ILL,nuore.en,nuore.Øen,n u o r {ieØeØØØ} {Øh} {V} n
-NUORI ILL,nuore.hen,nuore.hen,n u o r {ieØeØØØ} {Øh} {V} n
-NUORI PL INE,nuor.i.ssa,nuorØ.i.ssa,n u o r {ieØeØØØ} {ij} s s {aä}
-NUORI PL GENien,nuor.i.en,nuorØ.i.en,n u o r {ieØeØØØ} {ij} e n
-NUORI PLGENten,nuor.ten,nuorØ.ten,n u o r {ieØeØØØ} t e n
-NUORI PL PTV,nuor.i.a,nuorØ.i.Øa,n u o r {ieØeØØØ} {ij} {Øt} {aä}
-NUORI PL ILL,nuor.i.in,nuorØ.i.Øin,n u o r {ieØeØØØ} {ij} {Øh} {V} n
-NUORI PL ILL,nuor.i.hin,nuorØ.i.hin,n u o r {ieØeØØØ} {ij} {Øh} {V} n
+NUORI.GEN,nuore.n,nuore.n,n u o r {ieØeØØØ} n
+NUORI.PTV,nuor.ta,nuorØ.ta,n u o r {ieØeØØØ} {Øt} {aä}
+NUORI.ESS,nuore.na,nuore.na,n u o r {ieØeØØØ} {nrs} {aä}
+NUORI.ESS,nuor.na,nuorØ.na,n u o r {ieØeØØØ} {nrs} {aä}
+NUORI.ESS,nuor.ra,nuorØ.ra,n u o r {ieØeØØØ} {nrs} {aä}
+NUORI.ILL,nuore.en,nuore.Øen,n u o r {ieØeØØØ} {Øh} {V} n
+NUORI.ILL,nuore.hen,nuore.hen,n u o r {ieØeØØØ} {Øh} {V} n
+NUORI.PL.INE,nuor.i.ssa,nuorØ.i.ssa,n u o r {ieØeØØØ} {ij} s s {aä}
+NUORI.PL.GENien,nuor.i.en,nuorØ.i.en,n u o r {ieØeØØØ} {ij} e n
+NUORI.PLGENten,nuor.ten,nuorØ.ten,n u o r {ieØeØØØ} t e n
+NUORI.PL.PTV,nuor.i.a,nuorØ.i.Øa,n u o r {ieØeØØØ} {ij} {Øt} {aä}
+NUORI.PL.ILL,nuor.i.in,nuorØ.i.Øin,n u o r {ieØeØØØ} {ij} {Øh} {V} n
+NUORI.PL.ILL,nuor.i.hin,nuorØ.i.hin,n u o r {ieØeØØØ} {ij} {Øh} {V} n
 KÄSI,käsi,käsi,k ä {sdtts} {ieØeØ} 
-KÄSI GEN,käde.n,käde.n,k ä {sdtts} {ieØeØ} n
-KÄSI PTV,kät.tä,kätØ.tä,k ä {sdtts} {ieØeØ} {Øt} {aä}
-KÄSI ESS,käte.nä,käte.nä,k ä {sdtts} {ieØeØ} {nrs} {aä}
-KÄSI ILL,käte.en,käte.Øen,k ä {sdtts} {ieØeØ} {Øh} {V} n
-KÄSI ILL,käte.hen,käte.hen,k ä {sdtts} {ieØeØ} {Øh} {V} n
-KÄSI PL INE,käs.i.ssä,käsØ.i.ssä,k ä {sdtts} {ieØeØ} {ij} s s {aä}
-KÄSI PL GENien,käs.i.en,käsØ.i.en,k ä {sdtts} {ieØeØ} {ij} e n
-KÄSI PLGENten,kät.ten,kätØ.ten,k ä {sdtts} {ieØeØ} t e n
-KÄSI GENin,käte.in,käte.in,k ä {sdtts} {ieØeØ} i n
-KÄSI PL PTV,käs.i.ä,käsØ.i.Øä,k ä {sdtts} {ieØeØ} {ij} {Øt} {aä}
-KÄSI PL ILL,käs.i.in,käsØ.i.Øin,k ä {sdtts} {ieØeØ} {ij} {Øh} {V} n
-KÄSI PL ILL,käs.i.hin,käsØ.i.hin,k ä {sdtts} {ieØeØ} {ij} {Øh} {V} n
+KÄSI.GEN,käde.n,käde.n,k ä {sdtts} {ieØeØ} n
+KÄSI.PTV,kät.tä,kätØ.tä,k ä {sdtts} {ieØeØ} {Øt} {aä}
+KÄSI.ESS,käte.nä,käte.nä,k ä {sdtts} {ieØeØ} {nrs} {aä}
+KÄSI.ILL,käte.en,käte.Øen,k ä {sdtts} {ieØeØ} {Øh} {V} n
+KÄSI.ILL,käte.hen,käte.hen,k ä {sdtts} {ieØeØ} {Øh} {V} n
+KÄSI.PL.INE,käs.i.ssä,käsØ.i.ssä,k ä {sdtts} {ieØeØ} {ij} s s {aä}
+KÄSI.PL.GENien,käs.i.en,käsØ.i.en,k ä {sdtts} {ieØeØ} {ij} e n
+KÄSI.PLGENten,kät.ten,kätØ.ten,k ä {sdtts} {ieØeØ} t e n
+KÄSI.GENin,käte.in,käte.in,k ä {sdtts} {ieØeØ} i n
+KÄSI.PL.PTV,käs.i.ä,käsØ.i.Øä,k ä {sdtts} {ieØeØ} {ij} {Øt} {aä}
+KÄSI.PL.ILL,käs.i.in,käsØ.i.Øin,k ä {sdtts} {ieØeØ} {ij} {Øh} {V} n
+KÄSI.PL.ILL,käs.i.hin,käsØ.i.hin,k ä {sdtts} {ieØeØ} {ij} {Øh} {V} n
 TOSI,tosi,tosi,t o {sdtts} {ieØeØ} 
-TOSI GEN,tode.n,tode.n,t o {sdtts} {ieØeØ} n
-TOSI PTV,tot.ta,totØ.ta,t o {sdtts} {ieØeØ} {Øt} {aä}
-TOSI ESS,tote.na,tote.na,t o {sdtts} {ieØeØ} {nrs} {aä}
-TOSI ILL,tote.en,tote.Øen,t o {sdtts} {ieØeØ} {Øh} {V} n
-TOSI ILL,tote.hen,tote.hen,t o {sdtts} {ieØeØ} {Øh} {V} n
-TOSI PL INE,tos.i.ssa,tosØ.i.ssa,t o {sdtts} {ieØeØ} {ij} s s {aä}
-TOSI PL GENien,tos.i.en,tosØ.i.en,t o {sdtts} {ieØeØ} {ij} e n
-TOSI PL PTV,tos.i.a,tosØ.i.Øa,t o {sdtts} {ieØeØ} {ij} {Øt} {aä}
-TOSI PL ILL,tos.i.in,tosØ.i.Øin,t o {sdtts} {ieØeØ} {ij} {Øh} {V} n
-TOSI PL ILL,tos.i.hin,tosØ.i.hin,t o {sdtts} {ieØeØ} {ij} {Øh} {V} n
+TOSI.GEN,tode.n,tode.n,t o {sdtts} {ieØeØ} n
+TOSI.PTV,tot.ta,totØ.ta,t o {sdtts} {ieØeØ} {Øt} {aä}
+TOSI.ESS,tote.na,tote.na,t o {sdtts} {ieØeØ} {nrs} {aä}
+TOSI.ILL,tote.en,tote.Øen,t o {sdtts} {ieØeØ} {Øh} {V} n
+TOSI.ILL,tote.hen,tote.hen,t o {sdtts} {ieØeØ} {Øh} {V} n
+TOSI.PL.INE,tos.i.ssa,tosØ.i.ssa,t o {sdtts} {ieØeØ} {ij} s s {aä}
+TOSI.PL.GENien,tos.i.en,tosØ.i.en,t o {sdtts} {ieØeØ} {ij} e n
+TOSI.PL.PTV,tos.i.a,tosØ.i.Øa,t o {sdtts} {ieØeØ} {ij} {Øt} {aä}
+TOSI.PL.ILL,tos.i.in,tosØ.i.Øin,t o {sdtts} {ieØeØ} {ij} {Øh} {V} n
+TOSI.PL.ILL,tos.i.hin,tosØ.i.hin,t o {sdtts} {ieØeØ} {ij} {Øh} {V} n
 HIRSI,hirsi,hirsi,h i r {srtts} {ieØeØ} 
-HIRSI GEN,hirre.n,hirre.n,h i r {srtts} {ieØeØ} n
-HIRSI PTV,hirt.tä,hirtØ.tä,h i r {srtts} {ieØeØ} {Øt} {aä}
-HIRSI ESS,hirte.nä,hirte.nä,h i r {srtts} {ieØeØ} {nrs} {aä}
-HIRSI ILL,hirte.en,hirte.Øen,h i r {srtts} {ieØeØ} {Øh} {V} n
-HIRSI ILL,hirte.hen,hirte.hen,h i r {srtts} {ieØeØ} {Øh} {V} n
-HIRSI PL INE,hirs.i.ssä,hirsØ.i.ssä,h i r {srtts} {ieØeØ} {ij} s s {aä}
-HIRSI PL GENien,hirs.i.en,hirsØ.i.en,h i r {srtts} {ieØeØ} {ij} e n
-HIRSI PLGENten,hirt.ten,hirtØ.ten,h i r {srtts} {ieØeØ} t e n
-HIRSI PL PTV,hirs.i.ä,hirsØ.i.Øä,h i r {srtts} {ieØeØ} {ij} {Øt} {aä}
-HIRSI PL ILL,hirs.i.in,hirsØ.i.Øin,h i r {srtts} {ieØeØ} {ij} {Øh} {V} n
-HIRSI PL ILL,hirs.i.hin,hirsØ.i.hin,h i r {srtts} {ieØeØ} {ij} {Øh} {V} n
+HIRSI.GEN,hirre.n,hirre.n,h i r {srtts} {ieØeØ} n
+HIRSI.PTV,hirt.tä,hirtØ.tä,h i r {srtts} {ieØeØ} {Øt} {aä}
+HIRSI.ESS,hirte.nä,hirte.nä,h i r {srtts} {ieØeØ} {nrs} {aä}
+HIRSI.ILL,hirte.en,hirte.Øen,h i r {srtts} {ieØeØ} {Øh} {V} n
+HIRSI.ILL,hirte.hen,hirte.hen,h i r {srtts} {ieØeØ} {Øh} {V} n
+HIRSI.PL.INE,hirs.i.ssä,hirsØ.i.ssä,h i r {srtts} {ieØeØ} {ij} s s {aä}
+HIRSI.PL.GENien,hirs.i.en,hirsØ.i.en,h i r {srtts} {ieØeØ} {ij} e n
+HIRSI.PLGENten,hirt.ten,hirtØ.ten,h i r {srtts} {ieØeØ} t e n
+HIRSI.PL.PTV,hirs.i.ä,hirsØ.i.Øä,h i r {srtts} {ieØeØ} {ij} {Øt} {aä}
+HIRSI.PL.ILL,hirs.i.in,hirsØ.i.Øin,h i r {srtts} {ieØeØ} {ij} {Øh} {V} n
+HIRSI.PL.ILL,hirs.i.hin,hirsØ.i.hin,h i r {srtts} {ieØeØ} {ij} {Øh} {V} n
 JÄLSI,jälsi,jälsi,j ä l {sltts} {ieØeØ} 
-JÄLSI GEN,jälle.n,jälle.n,j ä l {sltts} {ieØeØ} n
-JÄLSI PTV,jält.tä,jältØ.tä,j ä l {sltts} {ieØeØ} {Øt} {aä}
-JÄLSI ESS,jälte.nä,jälte.nä,j ä l {sltts} {ieØeØ} {nrs} {aä}
-JÄLSI ILL,jälte.en,jälte.Øen,j ä l {sltts} {ieØeØ} {Øh} {V} n
-JÄLSI ILL,jälte.hen,jälte.hen,j ä l {sltts} {ieØeØ} {Øh} {V} n
-JÄLSI PL INE,jäls.i.ssä,jälsØ.i.ssä,j ä l {sltts} {ieØeØ} {ij} s s {aä}
-JÄLSI PL GENien,jäls.i.en,jälsØ.i.en,j ä l {sltts} {ieØeØ} {ij} e n
-JÄLSI PLGENten,jält.ten,jältØ.ten,j ä l {sltts} {ieØeØ} t e n
-JÄLSI PL PTV,jäls.i.ä,jälsØ.i.Øä,j ä l {sltts} {ieØeØ} {ij} {Øt} {aä}
-JÄLSI PL ILL,jäls.i.in,jälsØ.i.Øin,j ä l {sltts} {ieØeØ} {ij} {Øh} {V} n
-JÄLSI PL ILL,jäls.i.hin,jälsØ.i.hin,j ä l {sltts} {ieØeØ} {ij} {Øh} {V} n
+JÄLSI.GEN,jälle.n,jälle.n,j ä l {sltts} {ieØeØ} n
+JÄLSI.PTV,jält.tä,jältØ.tä,j ä l {sltts} {ieØeØ} {Øt} {aä}
+JÄLSI.ESS,jälte.nä,jälte.nä,j ä l {sltts} {ieØeØ} {nrs} {aä}
+JÄLSI.ILL,jälte.en,jälte.Øen,j ä l {sltts} {ieØeØ} {Øh} {V} n
+JÄLSI.ILL,jälte.hen,jälte.hen,j ä l {sltts} {ieØeØ} {Øh} {V} n
+JÄLSI.PL.INE,jäls.i.ssä,jälsØ.i.ssä,j ä l {sltts} {ieØeØ} {ij} s s {aä}
+JÄLSI.PL.GENien,jäls.i.en,jälsØ.i.en,j ä l {sltts} {ieØeØ} {ij} e n
+JÄLSI.PLGENten,jält.ten,jältØ.ten,j ä l {sltts} {ieØeØ} t e n
+JÄLSI.PL.PTV,jäls.i.ä,jälsØ.i.Øä,j ä l {sltts} {ieØeØ} {ij} {Øt} {aä}
+JÄLSI.PL.ILL,jäls.i.in,jälsØ.i.Øin,j ä l {sltts} {ieØeØ} {ij} {Øh} {V} n
+JÄLSI.PL.ILL,jäls.i.hin,jälsØ.i.hin,j ä l {sltts} {ieØeØ} {ij} {Øh} {V} n
 KANSI,kansi,kansi,k a n {sntts} {ieØeØ} 
-KANSI GEN,kanne.n,kanne.n,k a n {sntts} {ieØeØ} n
-KANSI PTV,kant.ta,kantØ.ta,k a n {sntts} {ieØeØ} {Øt} {aä}
-KANSI ESS,kante.na,kante.na,k a n {sntts} {ieØeØ} {nrs} {aä}
-KANSI ILL,kante.en,kante.Øen,k a n {sntts} {ieØeØ} {Øh} {V} n
-KANSI ILL,kante.hen,kante.hen,k a n {sntts} {ieØeØ} {Øh} {V} n
-KANSI PL INE,kans.i.ssa,kansØ.i.ssa,k a n {sntts} {ieØeØ} {ij} s s {aä}
-KANSI PL GENien,kans.i.en,kansØ.i.en,k a n {sntts} {ieØeØ} {ij} e n
-KANSI PLGENten,kant.ten,kantØ.ten,k a n {sntts} {ieØeØ} t e n
-KANSI PL PTV,kans.i.a,kansØ.i.Øa,k a n {sntts} {ieØeØ} {ij} {Øt} {aä}
-KANSI PL ILL,kans.i.in,kansØ.i.Øin,k a n {sntts} {ieØeØ} {ij} {Øh} {V} n
-KANSI PL ILL,kans.i.hin,kansØ.i.hin,k a n {sntts} {ieØeØ} {ij} {Øh} {V} n
+KANSI.GEN,kanne.n,kanne.n,k a n {sntts} {ieØeØ} n
+KANSI.PTV,kant.ta,kantØ.ta,k a n {sntts} {ieØeØ} {Øt} {aä}
+KANSI.ESS,kante.na,kante.na,k a n {sntts} {ieØeØ} {nrs} {aä}
+KANSI.ILL,kante.en,kante.Øen,k a n {sntts} {ieØeØ} {Øh} {V} n
+KANSI.ILL,kante.hen,kante.hen,k a n {sntts} {ieØeØ} {Øh} {V} n
+KANSI.PL.INE,kans.i.ssa,kansØ.i.ssa,k a n {sntts} {ieØeØ} {ij} s s {aä}
+KANSI.PL.GENien,kans.i.en,kansØ.i.en,k a n {sntts} {ieØeØ} {ij} e n
+KANSI.PLGENten,kant.ten,kantØ.ten,k a n {sntts} {ieØeØ} t e n
+KANSI.PL.PTV,kans.i.a,kansØ.i.Øa,k a n {sntts} {ieØeØ} {ij} {Øt} {aä}
+KANSI.PL.ILL,kans.i.in,kansØ.i.Øin,k a n {sntts} {ieØeØ} {ij} {Øh} {V} n
+KANSI.PL.ILL,kans.i.hin,kansØ.i.hin,k a n {sntts} {ieØeØ} {ij} {Øh} {V} n
 LAPSI,lapsi,lapsi,l a {ppØpØØp} s {ieØeØØØ} 
-LAPSI GEN,lapse.n,lapse.n,l a {ppØpØØp} s {ieØeØØØ} n
-LAPSI PTV,las.ta,laØsØ.ta,l a {ppØpØØp} s {ieØeØØØ} {Øt} {aä}
-LAPSI ESS,lapse.na,lapse.na,l a {ppØpØØp} s {ieØeØØØ} {nrs} {aä}
-LAPSI ESS,las.na,laØsØ.na,l a {ppØpØØp} s {ieØeØØØ} {nrs} {aä}
-LAPSI ESS,las.sa,laØsØ.sa,l a {ppØpØØp} s {ieØeØØØ} {nrs} {aä}
-LAPSI ILL,lapse.en,lapse.Øen,l a {ppØpØØp} s {ieØeØØØ} {Øh} {V} n
-LAPSI ILL,lapse.hen,lapse.hen,l a {ppØpØØp} s {ieØeØØØ} {Øh} {V} n
-LAPSI PL INE,laps.i.ssa,lapsØ.i.ssa,l a {ppØpØØp} s {ieØeØØØ} {ij} s s {aä}
-LAPSI PL GENien,laps.i.en,lapsØ.i.en,l a {ppØpØØp} s {ieØeØØØ} {ij} e n
-LAPSI PLGENten,las.ten,laØsØ.ten,l a {ppØpØØp} s {ieØeØØØ} t e n
-LAPSI PL PTV,laps.i.a,lapsØ.i.Øa,l a {ppØpØØp} s {ieØeØØØ} {ij} {Øt} {aä}
-LAPSI PL ILL,laps.i.in,lapsØ.i.Øin,l a {ppØpØØp} s {ieØeØØØ} {ij} {Øh} {V} n
-LAPSI PL ILL,laps.i.hin,lapsØ.i.hin,l a {ppØpØØp} s {ieØeØØØ} {ij} {Øh} {V} n
+LAPSI.GEN,lapse.n,lapse.n,l a {ppØpØØp} s {ieØeØØØ} n
+LAPSI.PTV,las.ta,laØsØ.ta,l a {ppØpØØp} s {ieØeØØØ} {Øt} {aä}
+LAPSI.ESS,lapse.na,lapse.na,l a {ppØpØØp} s {ieØeØØØ} {nrs} {aä}
+LAPSI.ESS,las.na,laØsØ.na,l a {ppØpØØp} s {ieØeØØØ} {nrs} {aä}
+LAPSI.ESS,las.sa,laØsØ.sa,l a {ppØpØØp} s {ieØeØØØ} {nrs} {aä}
+LAPSI.ILL,lapse.en,lapse.Øen,l a {ppØpØØp} s {ieØeØØØ} {Øh} {V} n
+LAPSI.ILL,lapse.hen,lapse.hen,l a {ppØpØØp} s {ieØeØØØ} {Øh} {V} n
+LAPSI.PL.INE,laps.i.ssa,lapsØ.i.ssa,l a {ppØpØØp} s {ieØeØØØ} {ij} s s {aä}
+LAPSI.PL.GENien,laps.i.en,lapsØ.i.en,l a {ppØpØØp} s {ieØeØØØ} {ij} e n
+LAPSI.PLGENten,las.ten,laØsØ.ten,l a {ppØpØØp} s {ieØeØØØ} t e n
+LAPSI.PL.PTV,laps.i.a,lapsØ.i.Øa,l a {ppØpØØp} s {ieØeØØØ} {ij} {Øt} {aä}
+LAPSI.PL.ILL,laps.i.in,lapsØ.i.Øin,l a {ppØpØØp} s {ieØeØØØ} {ij} {Øh} {V} n
+LAPSI.PL.ILL,laps.i.hin,lapsØ.i.hin,l a {ppØpØØp} s {ieØeØØØ} {ij} {Øh} {V} n
 HAPSI,hapsi,hapsi,h a {pppØpØØp} s {ieeØeØØØ} 
-HAPSI GEN,hapse.n,hapse.n,h a {pppØpØØp} s {ieeØeØØØ} n
-HAPSI PTV,hapse.a,hapse.Øa,h a {pppØpØØp} s {ieeØeØØØ} {Øt} {aä}
-HAPSI PTV,has.ta,haØsØ.ta,h a {pppØpØØp} s {ieeØeØØØ} {Øt} {aä}
-HAPSI ESS,hapse.na,hapse.na,h a {pppØpØØp} s {ieeØeØØØ} {nrs} {aä}
-HAPSI ESS,has.na,haØsØ.na,h a {pppØpØØp} s {ieeØeØØØ} {nrs} {aä}
-HAPSI ESS,has.sa,haØsØ.sa,h a {pppØpØØp} s {ieeØeØØØ} {nrs} {aä}
-HAPSI ILL,hapse.en,hapse.Øen,h a {pppØpØØp} s {ieeØeØØØ} {Øh} {V} n
-HAPSI ILL,hapse.hen,hapse.hen,h a {pppØpØØp} s {ieeØeØØØ} {Øh} {V} n
-HAPSI PL INE,haps.i.ssa,hapsØ.i.ssa,h a {pppØpØØp} s {ieeØeØØØ} {ij} s s {aä}
-HAPSI PL GENien,haps.i.en,hapsØ.i.en,h a {pppØpØØp} s {ieeØeØØØ} {ij} e n
-HAPSI PLGENten,has.ten,haØsØ.ten,h a {pppØpØØp} s {ieeØeØØØ} t e n
-HAPSI PL PTV,haps.i.a,hapsØ.i.Øa,h a {pppØpØØp} s {ieeØeØØØ} {ij} {Øt} {aä}
-HAPSI PL ILL,haps.i.in,hapsØ.i.Øin,h a {pppØpØØp} s {ieeØeØØØ} {ij} {Øh} {V} n
-HAPSI PL ILL,haps.i.hin,hapsØ.i.hin,h a {pppØpØØp} s {ieeØeØØØ} {ij} {Øh} {V} n
+HAPSI.GEN,hapse.n,hapse.n,h a {pppØpØØp} s {ieeØeØØØ} n
+HAPSI.PTV,hapse.a,hapse.Øa,h a {pppØpØØp} s {ieeØeØØØ} {Øt} {aä}
+HAPSI.PTV,has.ta,haØsØ.ta,h a {pppØpØØp} s {ieeØeØØØ} {Øt} {aä}
+HAPSI.ESS,hapse.na,hapse.na,h a {pppØpØØp} s {ieeØeØØØ} {nrs} {aä}
+HAPSI.ESS,has.na,haØsØ.na,h a {pppØpØØp} s {ieeØeØØØ} {nrs} {aä}
+HAPSI.ESS,has.sa,haØsØ.sa,h a {pppØpØØp} s {ieeØeØØØ} {nrs} {aä}
+HAPSI.ILL,hapse.en,hapse.Øen,h a {pppØpØØp} s {ieeØeØØØ} {Øh} {V} n
+HAPSI.ILL,hapse.hen,hapse.hen,h a {pppØpØØp} s {ieeØeØØØ} {Øh} {V} n
+HAPSI.PL.INE,haps.i.ssa,hapsØ.i.ssa,h a {pppØpØØp} s {ieeØeØØØ} {ij} s s {aä}
+HAPSI.PL.GENien,haps.i.en,hapsØ.i.en,h a {pppØpØØp} s {ieeØeØØØ} {ij} e n
+HAPSI.PLGENten,has.ten,haØsØ.ten,h a {pppØpØØp} s {ieeØeØØØ} t e n
+HAPSI.PL.PTV,haps.i.a,hapsØ.i.Øa,h a {pppØpØØp} s {ieeØeØØØ} {ij} {Øt} {aä}
+HAPSI.PL.ILL,haps.i.in,hapsØ.i.Øin,h a {pppØpØØp} s {ieeØeØØØ} {ij} {Øh} {V} n
+HAPSI.PL.ILL,haps.i.hin,hapsØ.i.hin,h a {pppØpØØp} s {ieeØeØØØ} {ij} {Øh} {V} n
 VEITSI,veitsi,veitsi,v e i {ttØtt} s {ieØeØ} 
-VEITSI GEN,veitse.n,veitse.n,v e i {ttØtt} s {ieØeØ} n
-VEITSI PTV,veis.tä,veiØsØ.tä,v e i {ttØtt} s {ieØeØ} {Øt} {aä}
-VEITSI ESS,veitse.nä,veitse.nä,v e i {ttØtt} s {ieØeØ} {nrs} {aä}
-VEITSI ILL,veitse.en,veitse.Øen,v e i {ttØtt} s {ieØeØ} {Øh} {V} n
-VEITSI ILL,veitse.hen,veitse.hen,v e i {ttØtt} s {ieØeØ} {Øh} {V} n
-VEITSI PL INE,veits.i.ssä,veitsØ.i.ssä,v e i {ttØtt} s {ieØeØ} {ij} s s {aä}
-VEITSI PL GENien,veits.i.en,veitsØ.i.en,v e i {ttØtt} s {ieØeØ} {ij} e n
-VEITSI PLGENten,veis.ten,veiØsØ.ten,v e i {ttØtt} s {ieØeØ} t e n
-VEITSI PL PTV,veits.i.ä,veitsØ.i.Øä,v e i {ttØtt} s {ieØeØ} {ij} {Øt} {aä}
-VEITSI PL ILL,veits.i.in,veitsØ.i.Øin,v e i {ttØtt} s {ieØeØ} {ij} {Øh} {V} n
-VEITSI PL ILL,veits.i.hin,veitsØ.i.hin,v e i {ttØtt} s {ieØeØ} {ij} {Øh} {V} n
+VEITSI.GEN,veitse.n,veitse.n,v e i {ttØtt} s {ieØeØ} n
+VEITSI.PTV,veis.tä,veiØsØ.tä,v e i {ttØtt} s {ieØeØ} {Øt} {aä}
+VEITSI.ESS,veitse.nä,veitse.nä,v e i {ttØtt} s {ieØeØ} {nrs} {aä}
+VEITSI.ILL,veitse.en,veitse.Øen,v e i {ttØtt} s {ieØeØ} {Øh} {V} n
+VEITSI.ILL,veitse.hen,veitse.hen,v e i {ttØtt} s {ieØeØ} {Øh} {V} n
+VEITSI.PL.INE,veits.i.ssä,veitsØ.i.ssä,v e i {ttØtt} s {ieØeØ} {ij} s s {aä}
+VEITSI.PL.GENien,veits.i.en,veitsØ.i.en,v e i {ttØtt} s {ieØeØ} {ij} e n
+VEITSI.PLGENten,veis.ten,veiØsØ.ten,v e i {ttØtt} s {ieØeØ} t e n
+VEITSI.PL.PTV,veits.i.ä,veitsØ.i.Øä,v e i {ttØtt} s {ieØeØ} {ij} {Øt} {aä}
+VEITSI.PL.ILL,veits.i.in,veitsØ.i.Øin,v e i {ttØtt} s {ieØeØ} {ij} {Øh} {V} n
+VEITSI.PL.ILL,veits.i.hin,veitsØ.i.hin,v e i {ttØtt} s {ieØeØ} {ij} {Øh} {V} n
 PEITSI,peitsi,peitsi,p e i {ttØttt} s {ieØeeØ} 
-PEITSI GEN,peitse.n,peitse.n,p e i {ttØttt} s {ieØeeØ} n
-PEITSI PTV,peis.tä,peiØsØ.tä,p e i {ttØttt} s {ieØeeØ} {Øt} {aä}
-PEITSI PTV,peitse.ä,peitse.Øä,p e i {ttØttt} s {ieØeeØ} {Øt} {aä}
-PEITSI ESS,peitse.nä,peitse.nä,p e i {ttØttt} s {ieØeeØ} {nrs} {aä}
-PEITSI ILL,peitse.en,peitse.Øen,p e i {ttØttt} s {ieØeeØ} {Øh} {V} n
-PEITSI ILL,peitse.hen,peitse.hen,p e i {ttØttt} s {ieØeeØ} {Øh} {V} n
-PEITSI PL INE,peits.i.ssä,peitsØ.i.ssä,p e i {ttØttt} s {ieØeeØ} {ij} s s {aä}
-PEITSI PL GENien,peits.i.en,peitsØ.i.en,p e i {ttØttt} s {ieØeeØ} {ij} e n
-PEITSI PLGENten,peis.ten,peiØsØ.ten,p e i {ttØttt} s {ieØeeØ} t e n
-PEITSI PL PTV,peits.i.ä,peitsØ.i.Øä,p e i {ttØttt} s {ieØeeØ} {ij} {Øt} {aä}
-PEITSI PL ILL,peits.i.in,peitsØ.i.Øin,p e i {ttØttt} s {ieØeeØ} {ij} {Øh} {V} n
-PEITSI PL ILL,peits.i.hin,peitsØ.i.hin,p e i {ttØttt} s {ieØeeØ} {ij} {Øh} {V} n
+PEITSI.GEN,peitse.n,peitse.n,p e i {ttØttt} s {ieØeeØ} n
+PEITSI.PTV,peis.tä,peiØsØ.tä,p e i {ttØttt} s {ieØeeØ} {Øt} {aä}
+PEITSI.PTV,peitse.ä,peitse.Øä,p e i {ttØttt} s {ieØeeØ} {Øt} {aä}
+PEITSI.ESS,peitse.nä,peitse.nä,p e i {ttØttt} s {ieØeeØ} {nrs} {aä}
+PEITSI.ILL,peitse.en,peitse.Øen,p e i {ttØttt} s {ieØeeØ} {Øh} {V} n
+PEITSI.ILL,peitse.hen,peitse.hen,p e i {ttØttt} s {ieØeeØ} {Øh} {V} n
+PEITSI.PL.INE,peits.i.ssä,peitsØ.i.ssä,p e i {ttØttt} s {ieØeeØ} {ij} s s {aä}
+PEITSI.PL.GENien,peits.i.en,peitsØ.i.en,p e i {ttØttt} s {ieØeeØ} {ij} e n
+PEITSI.PLGENten,peis.ten,peiØsØ.ten,p e i {ttØttt} s {ieØeeØ} t e n
+PEITSI.PL.PTV,peits.i.ä,peitsØ.i.Øä,p e i {ttØttt} s {ieØeeØ} {ij} {Øt} {aä}
+PEITSI.PL.ILL,peits.i.in,peitsØ.i.Øin,p e i {ttØttt} s {ieØeeØ} {ij} {Øh} {V} n
+PEITSI.PL.ILL,peits.i.hin,peitsØ.i.hin,p e i {ttØttt} s {ieØeeØ} {ij} {Øh} {V} n
 SUKSI,suksi,suksi,s u {kkkØkk} s {ieeØeØ} 
-SUKSI GEN,sukse.n,sukse.n,s u {kkkØkk} s {ieeØeØ} n
-SUKSI PTV,sukse.a,sukse.Øa,s u {kkkØkk} s {ieeØeØ} {Øt} {aä}
-SUKSI PTV,sus.ta,suØsØ.ta,s u {kkkØkk} s {ieeØeØ} {Øt} {aä}
-SUKSI ESS,sukse.na,sukse.na,s u {kkkØkk} s {ieeØeØ} {nrs} {aä}
-SUKSI ILL,sukse.en,sukse.Øen,s u {kkkØkk} s {ieeØeØ} {Øh} {V} n
-SUKSI ILL,sukse.hen,sukse.hen,s u {kkkØkk} s {ieeØeØ} {Øh} {V} n
-SUKSI PL INE,suks.i.ssa,suksØ.i.ssa,s u {kkkØkk} s {ieeØeØ} {ij} s s {aä}
-SUKSI PL GENien,suks.i.en,suksØ.i.en,s u {kkkØkk} s {ieeØeØ} {ij} e n
-SUKSI PLGENten,sus.ten,suØsØ.ten,s u {kkkØkk} s {ieeØeØ} t e n
-SUKSI GENin,sukse.in,sukse.in,s u {kkkØkk} s {ieeØeØ} i n
-SUKSI PL PTV,suks.i.a,suksØ.i.Øa,s u {kkkØkk} s {ieeØeØ} {ij} {Øt} {aä}
-SUKSI PL ILL,suks.i.in,suksØ.i.Øin,s u {kkkØkk} s {ieeØeØ} {ij} {Øh} {V} n
-SUKSI PL ILL,suks.i.hin,suksØ.i.hin,s u {kkkØkk} s {ieeØeØ} {ij} {Øh} {V} n
+SUKSI.GEN,sukse.n,sukse.n,s u {kkkØkk} s {ieeØeØ} n
+SUKSI.PTV,sukse.a,sukse.Øa,s u {kkkØkk} s {ieeØeØ} {Øt} {aä}
+SUKSI.PTV,sus.ta,suØsØ.ta,s u {kkkØkk} s {ieeØeØ} {Øt} {aä}
+SUKSI.ESS,sukse.na,sukse.na,s u {kkkØkk} s {ieeØeØ} {nrs} {aä}
+SUKSI.ILL,sukse.en,sukse.Øen,s u {kkkØkk} s {ieeØeØ} {Øh} {V} n
+SUKSI.ILL,sukse.hen,sukse.hen,s u {kkkØkk} s {ieeØeØ} {Øh} {V} n
+SUKSI.PL.INE,suks.i.ssa,suksØ.i.ssa,s u {kkkØkk} s {ieeØeØ} {ij} s s {aä}
+SUKSI.PL.GENien,suks.i.en,suksØ.i.en,s u {kkkØkk} s {ieeØeØ} {ij} e n
+SUKSI.PLGENten,sus.ten,suØsØ.ten,s u {kkkØkk} s {ieeØeØ} t e n
+SUKSI.GENin,sukse.in,sukse.in,s u {kkkØkk} s {ieeØeØ} i n
+SUKSI.PL.PTV,suks.i.a,suksØ.i.Øa,s u {kkkØkk} s {ieeØeØ} {ij} {Øt} {aä}
+SUKSI.PL.ILL,suks.i.in,suksØ.i.Øin,s u {kkkØkk} s {ieeØeØ} {ij} {Øh} {V} n
+SUKSI.PL.ILL,suks.i.hin,suksØ.i.hin,s u {kkkØkk} s {ieeØeØ} {ij} {Øh} {V} n
 UKSI,uksi,uksi,u {kkØkkk} s {ieØeeØ} 
-UKSI GEN,ukse.n,ukse.n,u {kkØkkk} s {ieØeeØ} n
-UKSI PTV,us.ta,uØsØ.ta,u {kkØkkk} s {ieØeeØ} {Øt} {aä}
-UKSI PTV,ukse.a,ukse.Øa,u {kkØkkk} s {ieØeeØ} {Øt} {aä}
-UKSI ESS,ukse.na,ukse.na,u {kkØkkk} s {ieØeeØ} {nrs} {aä}
-UKSI ILL,ukse.en,ukse.Øen,u {kkØkkk} s {ieØeeØ} {Øh} {V} n
-UKSI ILL,ukse.hen,ukse.hen,u {kkØkkk} s {ieØeeØ} {Øh} {V} n
-UKSI PL INE,uks.i.ssa,uksØ.i.ssa,u {kkØkkk} s {ieØeeØ} {ij} s s {aä}
-UKSI PL GENien,uks.i.en,uksØ.i.en,u {kkØkkk} s {ieØeeØ} {ij} e n
-UKSI PLGENten,us.ten,uØsØ.ten,u {kkØkkk} s {ieØeeØ} t e n
-UKSI PL PTV,uks.i.a,uksØ.i.Øa,u {kkØkkk} s {ieØeeØ} {ij} {Øt} {aä}
-UKSI PL ILL,uks.i.in,uksØ.i.Øin,u {kkØkkk} s {ieØeeØ} {ij} {Øh} {V} n
-UKSI PL ILL,uks.i.hin,uksØ.i.hin,u {kkØkkk} s {ieØeeØ} {ij} {Øh} {V} n
+UKSI.GEN,ukse.n,ukse.n,u {kkØkkk} s {ieØeeØ} n
+UKSI.PTV,us.ta,uØsØ.ta,u {kkØkkk} s {ieØeeØ} {Øt} {aä}
+UKSI.PTV,ukse.a,ukse.Øa,u {kkØkkk} s {ieØeeØ} {Øt} {aä}
+UKSI.ESS,ukse.na,ukse.na,u {kkØkkk} s {ieØeeØ} {nrs} {aä}
+UKSI.ILL,ukse.en,ukse.Øen,u {kkØkkk} s {ieØeeØ} {Øh} {V} n
+UKSI.ILL,ukse.hen,ukse.hen,u {kkØkkk} s {ieØeeØ} {Øh} {V} n
+UKSI.PL.INE,uks.i.ssa,uksØ.i.ssa,u {kkØkkk} s {ieØeeØ} {ij} s s {aä}
+UKSI.PL.GENien,uks.i.en,uksØ.i.en,u {kkØkkk} s {ieØeeØ} {ij} e n
+UKSI.PLGENten,us.ten,uØsØ.ten,u {kkØkkk} s {ieØeeØ} t e n
+UKSI.PL.PTV,uks.i.a,uksØ.i.Øa,u {kkØkkk} s {ieØeeØ} {ij} {Øt} {aä}
+UKSI.PL.ILL,uks.i.in,uksØ.i.Øin,u {kkØkkk} s {ieØeeØ} {ij} {Øh} {V} n
+UKSI.PL.ILL,uks.i.hin,uksØ.i.hin,u {kkØkkk} s {ieØeeØ} {ij} {Øh} {V} n
 KAKSI,kaksi,kaksi,k a {khhhk} {sdØts} {ieØeØ} 
-KAKSI GEN,kahde.n,kahde.n,k a {khhhk} {sdØts} {ieØeØ} n
-KAKSI PTV,kah.ta,kahØØ.ta,k a {khhhk} {sdØts} {ieØeØ} {Øt} {aä}
-KAKSI ESS,kahte.na,kahte.na,k a {khhhk} {sdØts} {ieØeØ} {nrs} {aä}
-KAKSI ILL,kahte.en,kahte.Øen,k a {khhhk} {sdØts} {ieØeØ} {Øh} {V} n
-KAKSI ILL,kahte.hen,kahte.hen,k a {khhhk} {sdØts} {ieØeØ} {Øh} {V} n
-KAKSI PL INE,kaks.i.ssa,kaksØ.i.ssa,k a {khhhk} {sdØts} {ieØeØ} {ij} s s {aä}
-KAKSI PL GENien,kaks.i.en,kaksØ.i.en,k a {khhhk} {sdØts} {ieØeØ} {ij} e n
-KAKSI PL PTV,kaks.i.a,kaksØ.i.Øa,k a {khhhk} {sdØts} {ieØeØ} {ij} {Øt} {aä}
-KAKSI PL ILL,kaks.i.in,kaksØ.i.Øin,k a {khhhk} {sdØts} {ieØeØ} {ij} {Øh} {V} n
-KAKSI PL ILL,kaks.i.hin,kaksØ.i.hin,k a {khhhk} {sdØts} {ieØeØ} {ij} {Øh} {V} n
+KAKSI.GEN,kahde.n,kahde.n,k a {khhhk} {sdØts} {ieØeØ} n
+KAKSI.PTV,kah.ta,kahØØ.ta,k a {khhhk} {sdØts} {ieØeØ} {Øt} {aä}
+KAKSI.ESS,kahte.na,kahte.na,k a {khhhk} {sdØts} {ieØeØ} {nrs} {aä}
+KAKSI.ILL,kahte.en,kahte.Øen,k a {khhhk} {sdØts} {ieØeØ} {Øh} {V} n
+KAKSI.ILL,kahte.hen,kahte.hen,k a {khhhk} {sdØts} {ieØeØ} {Øh} {V} n
+KAKSI.PL.INE,kaks.i.ssa,kaksØ.i.ssa,k a {khhhk} {sdØts} {ieØeØ} {ij} s s {aä}
+KAKSI.PL.GENien,kaks.i.en,kaksØ.i.en,k a {khhhk} {sdØts} {ieØeØ} {ij} e n
+KAKSI.PL.PTV,kaks.i.a,kaksØ.i.Øa,k a {khhhk} {sdØts} {ieØeØ} {ij} {Øt} {aä}
+KAKSI.PL.ILL,kaks.i.in,kaksØ.i.Øin,k a {khhhk} {sdØts} {ieØeØ} {ij} {Øh} {V} n
+KAKSI.PL.ILL,kaks.i.hin,kaksØ.i.hin,k a {khhhk} {sdØts} {ieØeØ} {ij} {Øh} {V} n
 SANKARI,sankari,sankari,s a n k a r {iiiiee} 
-SANKARI GEN,sankari.n,sankari.n,s a n k a r {iiiiee} n
-SANKARI PTV,sankari.a,sankari.Øa,s a n k a r {iiiiee} {Øt} {aä}
-SANKARI ESS,sankari.na,sankari.na,s a n k a r {iiiiee} {nrs} {aä}
-SANKARI ILL,sankari.in,sankari.Øin,s a n k a r {iiiiee} {Øh} {V} n
-SANKARI ILL,sankari.hin,sankari.hin,s a n k a r {iiiiee} {Øh} {V} n
-SANKARI PL INE,sankare.i.ssa,sankare.i.ssa,s a n k a r {iiiiee} {ij} s s {aä}
-SANKARI PL GENiden,sankare.i.den,sankare.i.dØen,s a n k a r {iiiiee} {ij} {dt} {Øt} e n
-SANKARI PL GENiden,sankare.i.tten,sankare.i.tten,s a n k a r {iiiiee} {ij} {dt} {Øt} e n
-SANKARI PL GENien,sankar.i.en,sankarØ.i.en,s a n k a r {iiiiee} {ij} e n
-SANKARI GENin,sankare.in,sankare.in,s a n k a r {iiiiee} i n
-SANKARI PL PTV,sankare.i.ta,sankare.i.ta,s a n k a r {iiiiee} {ij} {Øt} {aä}
-SANKARI PL PTV,sankare.j.a,sankare.j.Øa,s a n k a r {iiiiee} {ij} {Øt} {aä}
-SANKARI PL ILL,sankare.i.hin,sankare.i.hin,s a n k a r {iiiiee} {ij} {Øh} {V} n
+SANKARI.GEN,sankari.n,sankari.n,s a n k a r {iiiiee} n
+SANKARI.PTV,sankari.a,sankari.Øa,s a n k a r {iiiiee} {Øt} {aä}
+SANKARI.ESS,sankari.na,sankari.na,s a n k a r {iiiiee} {nrs} {aä}
+SANKARI.ILL,sankari.in,sankari.Øin,s a n k a r {iiiiee} {Øh} {V} n
+SANKARI.ILL,sankari.hin,sankari.hin,s a n k a r {iiiiee} {Øh} {V} n
+SANKARI.PL.INE,sankare.i.ssa,sankare.i.ssa,s a n k a r {iiiiee} {ij} s s {aä}
+SANKARI.PL.GENiden,sankare.i.den,sankare.i.dØen,s a n k a r {iiiiee} {ij} {dt} {Øt} e n
+SANKARI.PL.GENiden,sankare.i.tten,sankare.i.tten,s a n k a r {iiiiee} {ij} {dt} {Øt} e n
+SANKARI.PL.GENien,sankar.i.en,sankarØ.i.en,s a n k a r {iiiiee} {ij} e n
+SANKARI.GENin,sankare.in,sankare.in,s a n k a r {iiiiee} i n
+SANKARI.PL.PTV,sankare.i.ta,sankare.i.ta,s a n k a r {iiiiee} {ij} {Øt} {aä}
+SANKARI.PL.PTV,sankare.j.a,sankare.j.Øa,s a n k a r {iiiiee} {ij} {Øt} {aä}
+SANKARI.PL.ILL,sankare.i.hin,sankare.i.hin,s a n k a r {iiiiee} {ij} {Øh} {V} n
 JUMALA,jumala,jumala,j u m a l {aaaaaØ} 
-JUMALA GEN,jumala.n,jumala.n,j u m a l {aaaaaØ} n
-JUMALA PTV,jumala.a,jumala.Øa,j u m a l {aaaaaØ} {Øt} {aä}
-JUMALA PTV,jumala.ta,jumala.ta,j u m a l {aaaaaØ} {Øt} {aä}
-JUMALA ESS,jumala.na,jumala.na,j u m a l {aaaaaØ} {nrs} {aä}
-JUMALA ILL,jumala.an,jumala.Øan,j u m a l {aaaaaØ} {Øh} {V} n
-JUMALA ILL,jumala.han,jumala.han,j u m a l {aaaaaØ} {Øh} {V} n
-JUMALA PL INE,jumal.i.ssa,jumalØ.i.ssa,j u m a l {aaaaaØ} {ij} s s {aä}
-JUMALA PL GENien,jumal.i.en,jumalØ.i.en,j u m a l {aaaaaØ} {ij} e n
-JUMALA PLGENten,jumal.ten,jumalØ.ten,j u m a l {aaaaaØ} t e n
-JUMALA GENin,jumala.in,jumala.in,j u m a l {aaaaaØ} i n
-JUMALA PL PTV,jumal.i.a,jumalØ.i.Øa,j u m a l {aaaaaØ} {ij} {Øt} {aä}
-JUMALA PL ILL,jumal.i.in,jumalØ.i.Øin,j u m a l {aaaaaØ} {ij} {Øh} {V} n
-JUMALA PL ILL,jumal.i.hin,jumalØ.i.hin,j u m a l {aaaaaØ} {ij} {Øh} {V} n
+JUMALA.GEN,jumala.n,jumala.n,j u m a l {aaaaaØ} n
+JUMALA.PTV,jumala.a,jumala.Øa,j u m a l {aaaaaØ} {Øt} {aä}
+JUMALA.PTV,jumala.ta,jumala.ta,j u m a l {aaaaaØ} {Øt} {aä}
+JUMALA.ESS,jumala.na,jumala.na,j u m a l {aaaaaØ} {nrs} {aä}
+JUMALA.ILL,jumala.an,jumala.Øan,j u m a l {aaaaaØ} {Øh} {V} n
+JUMALA.ILL,jumala.han,jumala.han,j u m a l {aaaaaØ} {Øh} {V} n
+JUMALA.PL.INE,jumal.i.ssa,jumalØ.i.ssa,j u m a l {aaaaaØ} {ij} s s {aä}
+JUMALA.PL.GENien,jumal.i.en,jumalØ.i.en,j u m a l {aaaaaØ} {ij} e n
+JUMALA.PLGENten,jumal.ten,jumalØ.ten,j u m a l {aaaaaØ} t e n
+JUMALA.GENin,jumala.in,jumala.in,j u m a l {aaaaaØ} i n
+JUMALA.PL.PTV,jumal.i.a,jumalØ.i.Øa,j u m a l {aaaaaØ} {ij} {Øt} {aä}
+JUMALA.PL.ILL,jumal.i.in,jumalØ.i.Øin,j u m a l {aaaaaØ} {ij} {Øh} {V} n
+JUMALA.PL.ILL,jumal.i.hin,jumalØ.i.hin,j u m a l {aaaaaØ} {ij} {Øh} {V} n
 SISAR,sisar,sisarØ,s i s a r {ØeØeØ} 
-SISAR GEN,sisare.n,sisare.n,s i s a r {ØeØeØ} n
-SISAR PTV,sisar.ta,sisarØ.ta,s i s a r {ØeØeØ} {Øt} {aä}
-SISAR ESS,sisare.na,sisare.na,s i s a r {ØeØeØ} {nrs} {aä}
-SISAR ILL,sisare.en,sisare.Øen,s i s a r {ØeØeØ} {Øh} {V} n
-SISAR ILL,sisare.hen,sisare.hen,s i s a r {ØeØeØ} {Øh} {V} n
-SISAR PL INE,sisar.i.ssa,sisarØ.i.ssa,s i s a r {ØeØeØ} {ij} s s {aä}
-SISAR PL GENien,sisar.i.en,sisarØ.i.en,s i s a r {ØeØeØ} {ij} e n
-SISAR PLGENten,sisar.ten,sisarØ.ten,s i s a r {ØeØeØ} t e n
-SISAR PL PTV,sisar.i.a,sisarØ.i.Øa,s i s a r {ØeØeØ} {ij} {Øt} {aä}
-SISAR PL ILL,sisar.i.in,sisarØ.i.Øin,s i s a r {ØeØeØ} {ij} {Øh} {V} n
-SISAR PL ILL,sisar.i.hin,sisarØ.i.hin,s i s a r {ØeØeØ} {ij} {Øh} {V} n
+SISAR.GEN,sisare.n,sisare.n,s i s a r {ØeØeØ} n
+SISAR.PTV,sisar.ta,sisarØ.ta,s i s a r {ØeØeØ} {Øt} {aä}
+SISAR.ESS,sisare.na,sisare.na,s i s a r {ØeØeØ} {nrs} {aä}
+SISAR.ILL,sisare.en,sisare.Øen,s i s a r {ØeØeØ} {Øh} {V} n
+SISAR.ILL,sisare.hen,sisare.hen,s i s a r {ØeØeØ} {Øh} {V} n
+SISAR.PL.INE,sisar.i.ssa,sisarØ.i.ssa,s i s a r {ØeØeØ} {ij} s s {aä}
+SISAR.PL.GENien,sisar.i.en,sisarØ.i.en,s i s a r {ØeØeØ} {ij} e n
+SISAR.PLGENten,sisar.ten,sisarØ.ten,s i s a r {ØeØeØ} t e n
+SISAR.PL.PTV,sisar.i.a,sisarØ.i.Øa,s i s a r {ØeØeØ} {ij} {Øt} {aä}
+SISAR.PL.ILL,sisar.i.in,sisarØ.i.Øin,s i s a r {ØeØeØ} {ij} {Øh} {V} n
+SISAR.PL.ILL,sisar.i.hin,sisarØ.i.hin,s i s a r {ØeØeØ} {ij} {Øh} {V} n
 AHVEN,ahven,ahvenØ,a h v e n {ØeØeØØ} 
-AHVEN GEN,ahvene.n,ahvene.n,a h v e n {ØeØeØØ} n
-AHVEN PTV,ahven.ta,ahvenØ.ta,a h v e n {ØeØeØØ} {Øt} {aä}
-AHVEN ESS,ahvene.na,ahvene.na,a h v e n {ØeØeØØ} {nrs} {aä}
-AHVEN ESS,ahven.na,ahvenØ.na,a h v e n {ØeØeØØ} {nrs} {aä}
-AHVEN ILL,ahvene.en,ahvene.Øen,a h v e n {ØeØeØØ} {Øh} {V} n
-AHVEN ILL,ahvene.hen,ahvene.hen,a h v e n {ØeØeØØ} {Øh} {V} n
-AHVEN PL INE,ahven.i.ssa,ahvenØ.i.ssa,a h v e n {ØeØeØØ} {ij} s s {aä}
-AHVEN PL GENien,ahven.i.en,ahvenØ.i.en,a h v e n {ØeØeØØ} {ij} e n
-AHVEN PLGENten,ahven.ten,ahvenØ.ten,a h v e n {ØeØeØØ} t e n
-AHVEN PL PTV,ahven.i.a,ahvenØ.i.Øa,a h v e n {ØeØeØØ} {ij} {Øt} {aä}
-AHVEN PL ILL,ahven.i.in,ahvenØ.i.Øin,a h v e n {ØeØeØØ} {ij} {Øh} {V} n
-AHVEN PL ILL,ahven.i.hin,ahvenØ.i.hin,a h v e n {ØeØeØØ} {ij} {Øh} {V} n
+AHVEN.GEN,ahvene.n,ahvene.n,a h v e n {ØeØeØØ} n
+AHVEN.PTV,ahven.ta,ahvenØ.ta,a h v e n {ØeØeØØ} {Øt} {aä}
+AHVEN.ESS,ahvene.na,ahvene.na,a h v e n {ØeØeØØ} {nrs} {aä}
+AHVEN.ESS,ahven.na,ahvenØ.na,a h v e n {ØeØeØØ} {nrs} {aä}
+AHVEN.ILL,ahvene.en,ahvene.Øen,a h v e n {ØeØeØØ} {Øh} {V} n
+AHVEN.ILL,ahvene.hen,ahvene.hen,a h v e n {ØeØeØØ} {Øh} {V} n
+AHVEN.PL.INE,ahven.i.ssa,ahvenØ.i.ssa,a h v e n {ØeØeØØ} {ij} s s {aä}
+AHVEN.PL.GENien,ahven.i.en,ahvenØ.i.en,a h v e n {ØeØeØØ} {ij} e n
+AHVEN.PLGENten,ahven.ten,ahvenØ.ten,a h v e n {ØeØeØØ} t e n
+AHVEN.PL.PTV,ahven.i.a,ahvenØ.i.Øa,a h v e n {ØeØeØØ} {ij} {Øt} {aä}
+AHVEN.PL.ILL,ahven.i.in,ahvenØ.i.Øin,a h v e n {ØeØeØØ} {ij} {Øh} {V} n
+AHVEN.PL.ILL,ahven.i.hin,ahvenØ.i.hin,a h v e n {ØeØeØØ} {ij} {Øh} {V} n
 UISTIN,uistin,uistinØ,u i s t i {nmnmm} {ØeØeØ} 
-UISTIN GEN,uistime.n,uistime.n,u i s t i {nmnmm} {ØeØeØ} n
-UISTIN PTV,uistin.ta,uistinØ.ta,u i s t i {nmnmm} {ØeØeØ} {Øt} {aä}
-UISTIN ESS,uistime.na,uistime.na,u i s t i {nmnmm} {ØeØeØ} {nrs} {aä}
-UISTIN ILL,uistime.en,uistime.Øen,u i s t i {nmnmm} {ØeØeØ} {Øh} {V} n
-UISTIN ILL,uistime.hen,uistime.hen,u i s t i {nmnmm} {ØeØeØ} {Øh} {V} n
-UISTIN PL INE,uistim.i.ssa,uistimØ.i.ssa,u i s t i {nmnmm} {ØeØeØ} {ij} s s {aä}
-UISTIN PL GENien,uistim.i.en,uistimØ.i.en,u i s t i {nmnmm} {ØeØeØ} {ij} e n
-UISTIN PLGENten,uistin.ten,uistinØ.ten,u i s t i {nmnmm} {ØeØeØ} t e n
-UISTIN PL PTV,uistim.i.a,uistimØ.i.Øa,u i s t i {nmnmm} {ØeØeØ} {ij} {Øt} {aä}
-UISTIN PL ILL,uistim.i.in,uistimØ.i.Øin,u i s t i {nmnmm} {ØeØeØ} {ij} {Øh} {V} n
-UISTIN PL ILL,uistim.i.hin,uistimØ.i.hin,u i s t i {nmnmm} {ØeØeØ} {ij} {Øh} {V} n
+UISTIN.GEN,uistime.n,uistime.n,u i s t i {nmnmm} {ØeØeØ} n
+UISTIN.PTV,uistin.ta,uistinØ.ta,u i s t i {nmnmm} {ØeØeØ} {Øt} {aä}
+UISTIN.ESS,uistime.na,uistime.na,u i s t i {nmnmm} {ØeØeØ} {nrs} {aä}
+UISTIN.ILL,uistime.en,uistime.Øen,u i s t i {nmnmm} {ØeØeØ} {Øh} {V} n
+UISTIN.ILL,uistime.hen,uistime.hen,u i s t i {nmnmm} {ØeØeØ} {Øh} {V} n
+UISTIN.PL.INE,uistim.i.ssa,uistimØ.i.ssa,u i s t i {nmnmm} {ØeØeØ} {ij} s s {aä}
+UISTIN.PL.GENien,uistim.i.en,uistimØ.i.en,u i s t i {nmnmm} {ØeØeØ} {ij} e n
+UISTIN.PLGENten,uistin.ten,uistinØ.ten,u i s t i {nmnmm} {ØeØeØ} t e n
+UISTIN.PL.PTV,uistim.i.a,uistimØ.i.Øa,u i s t i {nmnmm} {ØeØeØ} {ij} {Øt} {aä}
+UISTIN.PL.ILL,uistim.i.in,uistimØ.i.Øin,u i s t i {nmnmm} {ØeØeØ} {ij} {Øh} {V} n
+UISTIN.PL.ILL,uistim.i.hin,uistimØ.i.hin,u i s t i {nmnmm} {ØeØeØ} {ij} {Øh} {V} n
 ONNETON,onnetØoØnØ,onnetØoØnØ,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} 
 ONNETON,onnetoin,onnetØoinØ,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} 
-ONNETON GEN,onnettoØma.n,onnettoØma.n,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} n
-ONNETON PTV,onnetØoØnØ.ta,onnetØoØnØ.ta,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øt} {aä}
-ONNETON PTV,onnetoin.ta,onnetØoinØ.ta,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øt} {aä}
-ONNETON ESS,onnettoma.na,onnettoØma.na,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {nrs} {aä}
-ONNETON ESS,onneton.na,onnetØoØnØ.na,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {nrs} {aä}
-ONNETON ESS,onnetoin.na,onnetØoinØ.na,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {nrs} {aä}
-ONNETON ILL,onnettoma.an,onnettoØma.Øan,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øh} {V} n
-ONNETON ILL,onnettoma.han,onnettoØma.han,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øh} {V} n
-ONNETON PL INE,onnettom.i.ssa,onnettoØmØ.i.ssa,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} s s {aä}
-ONNETON PL GENien,onnettom.i.en,onnettoØmØ.i.en,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} e n
-ONNETON PLGENten,onneton.ten,onnetØoØnØ.ten,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} t e n
-ONNETON PLGENten,onnetoin.ten,onnetØoinØ.ten,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} t e n
-ONNETON GENin,onnettoma.in,onnettoØma.in,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} i n
-ONNETON PL PTV,onnettom.i.a,onnettoØmØ.i.Øa,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} {Øt} {aä}
-ONNETON PL ILL,onnettom.i.in,onnettoØmØ.i.Øin,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} {Øh} {V} n
-ONNETON PL ILL,onnettom.i.hin,onnettoØmØ.i.hin,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} {Øh} {V} n
+ONNETON.GEN,onnettoØma.n,onnettoØma.n,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} n
+ONNETON.PTV,onnetØoØnØ.ta,onnetØoØnØ.ta,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øt} {aä}
+ONNETON.PTV,onnetoin.ta,onnetØoinØ.ta,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øt} {aä}
+ONNETON.ESS,onnettoma.na,onnettoØma.na,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {nrs} {aä}
+ONNETON.ESS,onneton.na,onnetØoØnØ.na,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {nrs} {aä}
+ONNETON.ESS,onnetoin.na,onnetØoinØ.na,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {nrs} {aä}
+ONNETON.ILL,onnettoma.an,onnettoØma.Øan,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øh} {V} n
+ONNETON.ILL,onnettoma.han,onnettoØma.han,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øh} {V} n
+ONNETON.PL.INE,onnettom.i.ssa,onnettoØmØ.i.ssa,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} s s {aä}
+ONNETON.PL.GENien,onnettom.i.en,onnettoØmØ.i.en,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} e n
+ONNETON.PLGENten,onneton.ten,onnetØoØnØ.ten,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} t e n
+ONNETON.PLGENten,onnetoin.ten,onnetØoinØ.ten,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} t e n
+ONNETON.GENin,onnettoma.in,onnettoØma.in,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} i n
+ONNETON.PL.PTV,onnettom.i.a,onnettoØmØ.i.Øa,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} {Øt} {aä}
+ONNETON.PL.ILL,onnettom.i.in,onnettoØmØ.i.Øin,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} {Øh} {V} n
+ONNETON.PL.ILL,onnettom.i.hin,onnettoØmØ.i.hin,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {ij} {Øh} {V} n
 HEVONEN,hevonen,hevonen,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} 
-HEVONEN GEN,hevose.n,hevoseØ.n,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} n
-HEVONEN PTV,hevos.ta,hevosØØ.ta,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {Øt} {aä}
-HEVONEN ESS,hevose.na,hevoseØ.na,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {nrs} {aä}
-HEVONEN ESS,hevos.na,hevosØØ.na,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {nrs} {aä}
-HEVONEN ESS,hevos.sa,hevosØØ.sa,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {nrs} {aä}
-HEVONEN ILL,hevose.en,hevoseØ.Øen,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {Øh} {V} n
-HEVONEN ILL,hevose.hen,hevoseØ.hen,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {Øh} {V} n
-HEVONEN PL INE,hevos.i.ssa,hevosØØ.i.ssa,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} s s {aä}
-HEVONEN PL GENien,hevos.i.en,hevosØØ.i.en,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} e n
-HEVONEN PLGENten,hevos.ten,hevosØØ.ten,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} t e n
-HEVONEN PL PTV,hevos.i.a,hevosØØ.i.Øa,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} {Øt} {aä}
-HEVONEN PL ILL,hevos.i.in,hevosØØ.i.Øin,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} {Øh} {V} n
-HEVONEN PL ILL,hevos.i.hin,hevosØØ.i.hin,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} {Øh} {V} n
+HEVONEN.GEN,hevose.n,hevoseØ.n,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} n
+HEVONEN.PTV,hevos.ta,hevosØØ.ta,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {Øt} {aä}
+HEVONEN.ESS,hevose.na,hevoseØ.na,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {nrs} {aä}
+HEVONEN.ESS,hevos.na,hevosØØ.na,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {nrs} {aä}
+HEVONEN.ESS,hevos.sa,hevosØØ.sa,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {nrs} {aä}
+HEVONEN.ILL,hevose.en,hevoseØ.Øen,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {Øh} {V} n
+HEVONEN.ILL,hevose.hen,hevoseØ.hen,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {Øh} {V} n
+HEVONEN.PL.INE,hevos.i.ssa,hevosØØ.i.ssa,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} s s {aä}
+HEVONEN.PL.GENien,hevos.i.en,hevosØØ.i.en,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} e n
+HEVONEN.PLGENten,hevos.ten,hevosØØ.ten,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} t e n
+HEVONEN.PL.PTV,hevos.i.a,hevosØØ.i.Øa,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} {Øt} {aä}
+HEVONEN.PL.ILL,hevos.i.in,hevosØØ.i.Øin,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} {Øh} {V} n
+HEVONEN.PL.ILL,hevos.i.hin,hevosØØ.i.hin,h e v o {nssssss} {eeØeØØØ} {nØØØØØØ} {ij} {Øh} {V} n
 VASTAUS,vastaus,vastauØsØ,v a s t a u {ØkØkk} s {ØeØeØ} 
-VASTAUS GEN,vastaukse.n,vastaukse.n,v a s t a u {ØkØkk} s {ØeØeØ} n
-VASTAUS PTV,vastaus.ta,vastauØsØ.ta,v a s t a u {ØkØkk} s {ØeØeØ} {Øt} {aä}
-VASTAUS ESS,vastaukse.na,vastaukse.na,v a s t a u {ØkØkk} s {ØeØeØ} {nrs} {aä}
-VASTAUS ILL,vastaukse.en,vastaukse.Øen,v a s t a u {ØkØkk} s {ØeØeØ} {Øh} {V} n
-VASTAUS ILL,vastaukse.hen,vastaukse.hen,v a s t a u {ØkØkk} s {ØeØeØ} {Øh} {V} n
-VASTAUS PL INE,vastauks.i.ssa,vastauksØ.i.ssa,v a s t a u {ØkØkk} s {ØeØeØ} {ij} s s {aä}
-VASTAUS PL GENien,vastauks.i.en,vastauksØ.i.en,v a s t a u {ØkØkk} s {ØeØeØ} {ij} e n
-VASTAUS PLGENten,vastaus.ten,vastauØsØ.ten,v a s t a u {ØkØkk} s {ØeØeØ} t e n
-VASTAUS PL PTV,vastauks.i.a,vastauksØ.i.Øa,v a s t a u {ØkØkk} s {ØeØeØ} {ij} {Øt} {aä}
-VASTAUS PL ILL,vastauks.i.in,vastauksØ.i.Øin,v a s t a u {ØkØkk} s {ØeØeØ} {ij} {Øh} {V} n
-VASTAUS PL ILL,vastauks.i.hin,vastauksØ.i.hin,v a s t a u {ØkØkk} s {ØeØeØ} {ij} {Øh} {V} n
-KALLEUS,kalleuØsØ,kalleuØsØ,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} 
-KALLEUS GEN,kalleuØde.n,kalleuØde.n,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} n
-KALLEUS PTV,kalleuØtØ.ta,kalleuØtØ.ta,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {Øt} {aä}
-KALLEUS ESS,kalleute.na,kalleuØte.na,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {nrs} {aä}
-KALLEUS ILL,kalleute.en,kalleuØte.Øen,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {Øh} {V} n
-KALLEUS ILL,kalleute.hen,kalleuØte.hen,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {Øh} {V} n
-KALLEUS PL INE,kalleuks.i.ssa,kalleuksØ.i.ssa,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} s s {aä}
-KALLEUS PL GENien,kalleuks.i.en,kalleuksØ.i.en,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} e n
-KALLEUS PLGENten,kalleut.ten,kalleuØtØ.ten,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} t e n
-KALLEUS PL PTV,kalleuks.i.a,kalleuksØ.i.Øa,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} {Øt} {aä}
-KALLEUS PL ILL,kalleuks.i.in,kalleuksØ.i.Øin,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} {Øh} {V} n
-KALLEUS PL ILL,kalleuks.i.hin,kalleuksØ.i.hin,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} {Øh} {V} n
+VASTAUS.GEN,vastaukse.n,vastaukse.n,v a s t a u {ØkØkk} s {ØeØeØ} n
+VASTAUS.PTV,vastaus.ta,vastauØsØ.ta,v a s t a u {ØkØkk} s {ØeØeØ} {Øt} {aä}
+VASTAUS.ESS,vastaukse.na,vastaukse.na,v a s t a u {ØkØkk} s {ØeØeØ} {nrs} {aä}
+VASTAUS.ILL,vastaukse.en,vastaukse.Øen,v a s t a u {ØkØkk} s {ØeØeØ} {Øh} {V} n
+VASTAUS.ILL,vastaukse.hen,vastaukse.hen,v a s t a u {ØkØkk} s {ØeØeØ} {Øh} {V} n
+VASTAUS.PL.INE,vastauks.i.ssa,vastauksØ.i.ssa,v a s t a u {ØkØkk} s {ØeØeØ} {ij} s s {aä}
+VASTAUS.PL.GENien,vastauks.i.en,vastauksØ.i.en,v a s t a u {ØkØkk} s {ØeØeØ} {ij} e n
+VASTAUS.PLGENten,vastaus.ten,vastauØsØ.ten,v a s t a u {ØkØkk} s {ØeØeØ} t e n
+VASTAUS.PL.PTV,vastauks.i.a,vastauksØ.i.Øa,v a s t a u {ØkØkk} s {ØeØeØ} {ij} {Øt} {aä}
+VASTAUS.PL.ILL,vastauks.i.in,vastauksØ.i.Øin,v a s t a u {ØkØkk} s {ØeØeØ} {ij} {Øh} {V} n
+VASTAUS.PL.ILL,vastauks.i.hin,vastauksØ.i.hin,v a s t a u {ØkØkk} s {ØeØeØ} {ij} {Øh} {V} n
+KALLEUS,kalleus,kalleuØsØ,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} 
+KALLEUS.GEN,kalleude.n,kalleuØde.n,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} n
+KALLEUS.PTV,kalleut.ta,kalleuØtØ.ta,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {Øt} {aä}
+KALLEUS.ESS,kalleuØte.na,kalleuØte.na,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {nrs} {aä}
+KALLEUS.ILL,kalleute.en,kalleuØte.Øen,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {Øh} {V} n
+KALLEUS.ILL,kalleute.hen,kalleuØte.hen,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {Øh} {V} n
+KALLEUS.PL.INE,kalleuks.i.ssa,kalleuksØ.i.ssa,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} s s {aä}
+KALLEUS.PL.GENien,kalleuks.i.en,kalleuksØ.i.en,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} e n
+KALLEUS.PLGENten,kalleut.ten,kalleuØtØ.ten,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} t e n
+KALLEUS.PL.PTV,kalleuks.i.a,kalleuksØ.i.Øa,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} {Øt} {aä}
+KALLEUS.PL.ILL,kalleuks.i.in,kalleuksØ.i.Øin,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} {Øh} {V} n
+KALLEUS.PL.ILL,kalleuks.i.hin,kalleuksØ.i.hin,k a l l e u {ØØØØk} {sdtts} {ØeØeØ} {ij} {Øh} {V} n
 VIERAS,vieras,vierasØ,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} 
-VIERAS GEN,vieraa.n,vieraØa.n,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} n
-VIERAS GEN,vieraha.n,vieraha.n,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} n
-VIERAS PTV,vieras.ta,vierasØ.ta,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {Øt} {aä}
-VIERAS ESS,vieraa.na,vieraØa.na,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
-VIERAS ESS,vieras.na,vierasØ.na,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
-VIERAS ESS,vieras.sa,vierasØ.sa,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
-VIERAS ESS,vieraha.na,vieraha.na,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
-VIERAS ILLseen,vieraa.seen,vieraØa.seen,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} s e {Øe} n
-VIERAS ILLseen,vieraha.sen,vieraha.seØn,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} s e {Øe} n
-VIERAS PL INE,viera.i.ssa,vieraØØ.i.ssa,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s s {aä}
-VIERAS PL INE,vierah.i.ssa,vierahØ.i.ssa,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s s {aä}
-VIERAS PL GENiden,viera.i.den,vieraØØ.i.dØen,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {dt} {Øt} e n
-VIERAS PL GENiden,viera.i.tten,vieraØØ.i.tten,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {dt} {Øt} e n
-VIERAS PLGENten,vieras.ten,vierasØ.ten,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} t e n
-VIERAS PL PTV,viera.i.ta,vieraØØ.i.ta,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øt} {aä}
-VIERAS PL PTV,vierah.i.a,vierahØ.i.Øa,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øt} {aä}
-VIERAS PL ILL,viera.i.hin,vieraØØ.i.hin,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øh} {V} n
-VIERAS PL ILLsiin,viera.i.siin,vieraØØ.i.siin,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s i {iØ} n
-VIERAS PL ILLsiin,vierah.i.sin,vierahØ.i.siØn,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s i {iØ} n
+VIERAS.GEN,vieraa.n,vieraØa.n,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} n
+VIERAS.GEN,vieraha.n,vieraha.n,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} n
+VIERAS.PTV,vieras.ta,vierasØ.ta,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {Øt} {aä}
+VIERAS.ESS,vieraa.na,vieraØa.na,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
+VIERAS.ESS,vieras.na,vierasØ.na,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
+VIERAS.ESS,vieras.sa,vierasØ.sa,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
+VIERAS.ESS,vieraha.na,vieraha.na,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
+VIERAS.ILLseen,vieraa.seen,vieraØa.seen,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} s e {Øe} n
+VIERAS.ILLseen,vieraha.sen,vieraha.seØn,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} s e {Øe} n
+VIERAS.PL.INE,viera.i.ssa,vieraØØ.i.ssa,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s s {aä}
+VIERAS.PL.INE,vierah.i.ssa,vierahØ.i.ssa,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s s {aä}
+VIERAS.PL.GENiden,viera.i.den,vieraØØ.i.dØen,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {dt} {Øt} e n
+VIERAS.PL.GENiden,viera.i.tten,vieraØØ.i.tten,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {dt} {Øt} e n
+VIERAS.PLGENten,vieras.ten,vierasØ.ten,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} t e n
+VIERAS.PL.PTV,viera.i.ta,vieraØØ.i.ta,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øt} {aä}
+VIERAS.PL.PTV,vierah.i.a,vierahØ.i.Øa,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øt} {aä}
+VIERAS.PL.ILL,viera.i.hin,vieraØØ.i.hin,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øh} {V} n
+VIERAS.PL.ILLsiin,viera.i.siin,vieraØØ.i.siin,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s i {iØ} n
+VIERAS.PL.ILLsiin,vierah.i.sin,vierahØ.i.siØn,v i e r a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s i {iØ} n
 SAAPAS,saapas,saapØasØ,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} 
-SAAPAS GEN,saappaa.n,saappaØa.n,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} n
-SAAPAS GEN,saappaha.n,saappaha.n,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} n
-SAAPAS PTV,saapas.ta,saapØasØ.ta,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {Øt} {aä}
-SAAPAS ESS,saappaa.na,saappaØa.na,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
-SAAPAS ESS,saapas.na,saapØasØ.na,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
-SAAPAS ESS,saapas.sa,saapØasØ.sa,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
-SAAPAS ESS,saappaha.na,saappaha.na,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
-SAAPAS ILLseen,saappaa.seen,saappaØa.seen,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} s e {Øe} n
-SAAPAS ILLseen,saappaha.sen,saappaha.seØn,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} s e {Øe} n
-SAAPAS PL INE,saappa.i.ssa,saappaØØ.i.ssa,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s s {aä}
-SAAPAS PL INE,saappah.i.ssa,saappahØ.i.ssa,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s s {aä}
-SAAPAS PL GENiden,saappa.i.den,saappaØØ.i.dØen,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {dt} {Øt} e n
-SAAPAS PL GENiden,saappa.i.tten,saappaØØ.i.tten,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {dt} {Øt} e n
-SAAPAS PL GENien,saappah.i.en,saappahØ.i.en,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} e n
-SAAPAS PLGENten,saapas.ten,saapØasØ.ten,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} t e n
-SAAPAS PL PTV,saappa.i.ta,saappaØØ.i.ta,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øt} {aä}
-SAAPAS PL PTV,saappah.i.a,saappahØ.i.Øa,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øt} {aä}
-SAAPAS PL ILL,saappa.i.hin,saappaØØ.i.hin,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øh} {V} n
-SAAPAS PL ILLsiin,saappa.i.siin,saappaØØ.i.siin,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s i {iØ} n
-SAAPAS PL ILLsiin,saappah.i.sin,saappahØ.i.siØn,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s i {iØ} n
+SAAPAS.GEN,saappaa.n,saappaØa.n,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} n
+SAAPAS.GEN,saappaha.n,saappaha.n,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} n
+SAAPAS.PTV,saapas.ta,saapØasØ.ta,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {Øt} {aä}
+SAAPAS.ESS,saappaa.na,saappaØa.na,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
+SAAPAS.ESS,saapas.na,saapØasØ.na,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
+SAAPAS.ESS,saapas.sa,saapØasØ.sa,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
+SAAPAS.ESS,saappaha.na,saappaha.na,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {nrs} {aä}
+SAAPAS.ILLseen,saappaa.seen,saappaØa.seen,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} s e {Øe} n
+SAAPAS.ILLseen,saappaha.sen,saappaha.seØn,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} s e {Øe} n
+SAAPAS.PL.INE,saappa.i.ssa,saappaØØ.i.ssa,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s s {aä}
+SAAPAS.PL.INE,saappah.i.ssa,saappahØ.i.ssa,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s s {aä}
+SAAPAS.PL.GENiden,saappa.i.den,saappaØØ.i.dØen,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {dt} {Øt} e n
+SAAPAS.PL.GENiden,saappa.i.tten,saappaØØ.i.tten,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {dt} {Øt} e n
+SAAPAS.PL.GENien,saappah.i.en,saappahØ.i.en,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} e n
+SAAPAS.PLGENten,saapas.ten,saapØasØ.ten,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} t e n
+SAAPAS.PL.PTV,saappa.i.ta,saappaØØ.i.ta,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øt} {aä}
+SAAPAS.PL.PTV,saappah.i.a,saappahØ.i.Øa,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øt} {aä}
+SAAPAS.PL.ILL,saappa.i.hin,saappaØØ.i.hin,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} {Øh} {V} n
+SAAPAS.PL.ILLsiin,saappa.i.siin,saappaØØ.i.siin,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s i {iØ} n
+SAAPAS.PL.ILLsiin,saappah.i.sin,saappahØ.i.siØn,s a a p {ØppØpØØppp} a {sØhsØsshØh} {ØaaØaØØaØØ} {ij} s i {iØ} n
 KIRVES,kirves,kirvesØ,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} 
-KIRVES GEN,kirvee.n,kirveØe.n,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} n
-KIRVES GEN,kirvehe.n,kirvehe.n,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} n
-KIRVES PTV,kirves.tä,kirvesØ.tä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {Øt} {aä}
-KIRVES ESS,kirvee.nä,kirveØe.nä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {nrs} {aä}
-KIRVES ESS,kirves.nä,kirvesØ.nä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {nrs} {aä}
-KIRVES ESS,kirves.sä,kirvesØ.sä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {nrs} {aä}
-KIRVES ESS,kirvehe.nä,kirvehe.nä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {nrs} {aä}
-KIRVES ILLseen,kirvee.seen,kirveØe.seen,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} s e {Øe} n
-KIRVES ILLseen,kirvehe.sen,kirvehe.seØn,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} s e {Øe} n
-KIRVES PL INE,kirve.i.ssä,kirveØØ.i.ssä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} s s {aä}
-KIRVES PL INE,kirveh.i.ssä,kirvehØ.i.ssä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} s s {aä}
-KIRVES PL GENiden,kirve.i.den,kirveØØ.i.dØen,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {dt} {Øt} e n
-KIRVES PL GENiden,kirve.i.tten,kirveØØ.i.tten,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {dt} {Øt} e n
-KIRVES PL GENien,kirveh.i.en,kirvehØ.i.en,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} e n
-KIRVES PLGENten,kirves.ten,kirvesØ.ten,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} t e n
-KIRVES PL PTV,kirve.i.tä,kirveØØ.i.tä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {Øt} {aä}
-KIRVES PL PTV,kirveh.i.ä,kirvehØ.i.Øä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {Øt} {aä}
-KIRVES PL ILL,kirve.i.hin,kirveØØ.i.hin,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {Øh} {V} n
-KIRVES PL ILLsiin,kirveh.i.sin,kirvehØ.i.siØn,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} s i {iØ} n
+KIRVES.GEN,kirvee.n,kirveØe.n,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} n
+KIRVES.GEN,kirvehe.n,kirvehe.n,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} n
+KIRVES.PTV,kirves.tä,kirvesØ.tä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {Øt} {aä}
+KIRVES.ESS,kirvee.nä,kirveØe.nä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {nrs} {aä}
+KIRVES.ESS,kirves.nä,kirvesØ.nä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {nrs} {aä}
+KIRVES.ESS,kirves.sä,kirvesØ.sä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {nrs} {aä}
+KIRVES.ESS,kirvehe.nä,kirvehe.nä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {nrs} {aä}
+KIRVES.ILLseen,kirvee.seen,kirveØe.seen,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} s e {Øe} n
+KIRVES.ILLseen,kirvehe.sen,kirvehe.seØn,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} s e {Øe} n
+KIRVES.PL.INE,kirve.i.ssä,kirveØØ.i.ssä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} s s {aä}
+KIRVES.PL.INE,kirveh.i.ssä,kirvehØ.i.ssä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} s s {aä}
+KIRVES.PL.GENiden,kirve.i.den,kirveØØ.i.dØen,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {dt} {Øt} e n
+KIRVES.PL.GENiden,kirve.i.tten,kirveØØ.i.tten,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {dt} {Øt} e n
+KIRVES.PL.GENien,kirveh.i.en,kirvehØ.i.en,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} e n
+KIRVES.PLGENten,kirves.ten,kirvesØ.ten,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} t e n
+KIRVES.PL.PTV,kirve.i.tä,kirveØØ.i.tä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {Øt} {aä}
+KIRVES.PL.PTV,kirveh.i.ä,kirvehØ.i.Øä,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {Øt} {aä}
+KIRVES.PL.ILL,kirve.i.hin,kirveØØ.i.hin,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} {Øh} {V} n
+KIRVES.PL.ILLsiin,kirveh.i.sin,kirvehØ.i.siØn,k i r v e {sØhsØsshØh} {ØeeØeØØeØØ} {ij} s i {iØ} n
 KAURIS,kauris,kaurisØ,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} 
-KAURIS GEN,kaurii.n,kauriØi.n,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} n
-KAURIS GEN,kaurihi.n,kaurihi.n,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} n
-KAURIS PTV,kauris.ta,kaurisØ.ta,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {Øt} {aä}
-KAURIS ESS,kaurii.na,kauriØi.na,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {nrs} {aä}
-KAURIS ESS,kauris.na,kaurisØ.na,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {nrs} {aä}
-KAURIS ESS,kauris.sa,kaurisØ.sa,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {nrs} {aä}
-KAURIS ESS,kaurihi.na,kaurihi.na,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {nrs} {aä}
-KAURIS ILLseen,kaurii.seen,kauriØi.seen,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} s e {Øe} n
-KAURIS ILLseen,kaurihi.sen,kaurihi.seØn,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} s e {Øe} n
-KAURIS PL INE,kauri.i.ssa,kauriØØ.i.ssa,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} s s {aä}
-KAURIS PL INE,kaurih.i.ssa,kaurihØ.i.ssa,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} s s {aä}
-KAURIS PL GENiden,kauri.i.den,kauriØØ.i.dØen,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {dt} {Øt} e n
-KAURIS PL GENiden,kauri.i.tten,kauriØØ.i.tten,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {dt} {Øt} e n
-KAURIS PL GENien,kaurih.i.en,kaurihØ.i.en,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} e n
-KAURIS PLGENten,kauris.ten,kaurisØ.ten,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} t e n
-KAURIS PL PTV,kauri.i.ta,kauriØØ.i.ta,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {Øt} {aä}
-KAURIS PL PTV,kaurih.i.a,kaurihØ.i.Øa,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {Øt} {aä}
-KAURIS PL ILL,kauri.i.hin,kauriØØ.i.hin,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {Øh} {V} n
-KAURIS PL ILLsiin,kauri.i.siin,kauriØØ.i.siin,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} s i {iØ} n
-KAURIS PL ILLsiin,kaurih.i.sin,kaurihØ.i.siØn,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} s i {iØ} n
+KAURIS.GEN,kaurii.n,kauriØi.n,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} n
+KAURIS.GEN,kaurihi.n,kaurihi.n,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} n
+KAURIS.PTV,kauris.ta,kaurisØ.ta,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {Øt} {aä}
+KAURIS.ESS,kaurii.na,kauriØi.na,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {nrs} {aä}
+KAURIS.ESS,kauris.na,kaurisØ.na,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {nrs} {aä}
+KAURIS.ESS,kauris.sa,kaurisØ.sa,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {nrs} {aä}
+KAURIS.ESS,kaurihi.na,kaurihi.na,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {nrs} {aä}
+KAURIS.ILLseen,kaurii.seen,kauriØi.seen,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} s e {Øe} n
+KAURIS.ILLseen,kaurihi.sen,kaurihi.seØn,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} s e {Øe} n
+KAURIS.PL.INE,kauri.i.ssa,kauriØØ.i.ssa,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} s s {aä}
+KAURIS.PL.INE,kaurih.i.ssa,kaurihØ.i.ssa,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} s s {aä}
+KAURIS.PL.GENiden,kauri.i.den,kauriØØ.i.dØen,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {dt} {Øt} e n
+KAURIS.PL.GENiden,kauri.i.tten,kauriØØ.i.tten,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {dt} {Øt} e n
+KAURIS.PL.GENien,kaurih.i.en,kaurihØ.i.en,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} e n
+KAURIS.PLGENten,kauris.ten,kaurisØ.ten,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} t e n
+KAURIS.PL.PTV,kauri.i.ta,kauriØØ.i.ta,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {Øt} {aä}
+KAURIS.PL.PTV,kaurih.i.a,kaurihØ.i.Øa,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {Øt} {aä}
+KAURIS.PL.ILL,kauri.i.hin,kauriØØ.i.hin,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} {Øh} {V} n
+KAURIS.PL.ILLsiin,kauri.i.siin,kauriØØ.i.siin,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} s i {iØ} n
+KAURIS.PL.ILLsiin,kaurih.i.sin,kaurihØ.i.siØn,k a u r i {sØhsØsshØh} {ØiiØiØØiØØ} {ij} s i {iØ} n
 KAUNIS,kaunis,kaunisØ,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} 
-KAUNIS GEN,kaunii.n,kauniØi.n,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} n
-KAUNIS GEN,kaunihi.n,kaunihi.n,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} n
-KAUNIS PTV,kaunis.ta,kaunisØ.ta,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {Øt} {aä}
-KAUNIS ESS,kaunii.na,kauniØi.na,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {nrs} {aä}
-KAUNIS ESS,kaunis.na,kaunisØ.na,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {nrs} {aä}
-KAUNIS ESS,kaunis.sa,kaunisØ.sa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {nrs} {aä}
-KAUNIS ESS,kaunihi.na,kaunihi.na,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {nrs} {aä}
-KAUNIS ILLseen,kaunii.seen,kauniØi.seen,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} s e {Øe} n
-KAUNIS ILLseen,kaunihi.sen,kaunihi.seØn,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} s e {Øe} n
-KAUNIS PL INE,kauni.i.ssa,kauniØØ.i.ssa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s s {aä}
-KAUNIS PL INE,kaunih.i.ssa,kaunihØ.i.ssa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s s {aä}
-KAUNIS PL INE,kauneh.i.ssa,kaunehØ.i.ssa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s s {aä}
-KAUNIS PL INE,kaune.i.ssa,kauneØØ.i.ssa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s s {aä}
-KAUNIS PL GENiden,kauni.i.den,kauniØØ.i.dØen,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {dt} {Øt} e n
-KAUNIS PL GENiden,kauni.i.tten,kauniØØ.i.tten,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {dt} {Øt} e n
-KAUNIS PL GENiden,kaune.i.den,kauneØØ.i.dØen,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {dt} {Øt} e n
-KAUNIS PL GENiden,kaune.i.tten,kauneØØ.i.tten,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {dt} {Øt} e n
-KAUNIS PL GENien,kaunih.i.en,kaunihØ.i.en,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} e n
-KAUNIS PL GENien,kauneh.i.en,kaunehØ.i.en,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} e n
-KAUNIS PLGENten,kaunis.ten,kaunisØ.ten,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} t e n
-KAUNIS PL PTV,kauni.i.ta,kauniØØ.i.ta,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øt} {aä}
-KAUNIS PL PTV,kaune.i.ta,kauneØØ.i.ta,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øt} {aä}
-KAUNIS PL PTV,kaunih.i.a,kaunihØ.i.Øa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øt} {aä}
-KAUNIS PL PTV,kauneh.i.a,kaunehØ.i.Øa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øt} {aä}
-KAUNIS PL ILL,kauni.i.hin,kauniØØ.i.hin,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øh} {V} n
-KAUNIS PL ILL,kaune.i.hin,kauneØØ.i.hin,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øh} {V} n
-KAUNIS PL ILLsiin,kauni.i.siin,kauniØØ.i.siin,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s i {iØ} n
-KAUNIS PL ILLsiin,kaune.i.siin,kauneØØ.i.siin,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s i {iØ} n
-KAUNIS PL ILLsiin,kaunih.i.sin,kaunihØ.i.siØn,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s i {iØ} n
-KAUNIS PL ILLsiin,kauneh.i.sin,kaunehØ.i.siØn,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s i {iØ} n
+KAUNIS.GEN,kaunii.n,kauniØi.n,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} n
+KAUNIS.GEN,kaunihi.n,kaunihi.n,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} n
+KAUNIS.PTV,kaunis.ta,kaunisØ.ta,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {Øt} {aä}
+KAUNIS.ESS,kaunii.na,kauniØi.na,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {nrs} {aä}
+KAUNIS.ESS,kaunis.na,kaunisØ.na,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {nrs} {aä}
+KAUNIS.ESS,kaunis.sa,kaunisØ.sa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {nrs} {aä}
+KAUNIS.ESS,kaunihi.na,kaunihi.na,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {nrs} {aä}
+KAUNIS.ILLseen,kaunii.seen,kauniØi.seen,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} s e {Øe} n
+KAUNIS.ILLseen,kaunihi.sen,kaunihi.seØn,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} s e {Øe} n
+KAUNIS.PL.INE,kauni.i.ssa,kauniØØ.i.ssa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s s {aä}
+KAUNIS.PL.INE,kaunih.i.ssa,kaunihØ.i.ssa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s s {aä}
+KAUNIS.PL.INE,kauneh.i.ssa,kaunehØ.i.ssa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s s {aä}
+KAUNIS.PL.INE,kaune.i.ssa,kauneØØ.i.ssa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s s {aä}
+KAUNIS.PL.GENiden,kauni.i.den,kauniØØ.i.dØen,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {dt} {Øt} e n
+KAUNIS.PL.GENiden,kauni.i.tten,kauniØØ.i.tten,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {dt} {Øt} e n
+KAUNIS.PL.GENiden,kaune.i.den,kauneØØ.i.dØen,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {dt} {Øt} e n
+KAUNIS.PL.GENiden,kaune.i.tten,kauneØØ.i.tten,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {dt} {Øt} e n
+KAUNIS.PL.GENien,kaunih.i.en,kaunihØ.i.en,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} e n
+KAUNIS.PL.GENien,kauneh.i.en,kaunehØ.i.en,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} e n
+KAUNIS.PLGENten,kaunis.ten,kaunisØ.ten,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} t e n
+KAUNIS.PL.PTV,kauni.i.ta,kauniØØ.i.ta,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øt} {aä}
+KAUNIS.PL.PTV,kaune.i.ta,kauneØØ.i.ta,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øt} {aä}
+KAUNIS.PL.PTV,kaunih.i.a,kaunihØ.i.Øa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øt} {aä}
+KAUNIS.PL.PTV,kauneh.i.a,kaunehØ.i.Øa,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øt} {aä}
+KAUNIS.PL.ILL,kauni.i.hin,kauniØØ.i.hin,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øh} {V} n
+KAUNIS.PL.ILL,kaune.i.hin,kauneØØ.i.hin,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} {Øh} {V} n
+KAUNIS.PL.ILLsiin,kauni.i.siin,kauniØØ.i.siin,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s i {iØ} n
+KAUNIS.PL.ILLsiin,kaune.i.siin,kauneØØ.i.siin,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s i {iØ} n
+KAUNIS.PL.ILLsiin,kaunih.i.sin,kaunihØ.i.siØn,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s i {iØ} n
+KAUNIS.PL.ILLsiin,kauneh.i.sin,kaunehØ.i.siØn,k a u n {iiiiiiiiieie} {sØhsØsshØØhh} {ØiiØiØØiØØØØ} {ij} s i {iØ} n
 KOIRAS,koiras,koiraØsØ,k o i r a {ØkØkØØk} s {ØeØeØØØ} 
-KOIRAS GEN,koirakse.n,koirakse.n,k o i r a {ØkØkØØk} s {ØeØeØØØ} n
-KOIRAS PTV,koiras.ta,koiraØsØ.ta,k o i r a {ØkØkØØk} s {ØeØeØØØ} {Øt} {aä}
-KOIRAS ESS,koirakse.na,koirakse.na,k o i r a {ØkØkØØk} s {ØeØeØØØ} {nrs} {aä}
-KOIRAS ESS,koiras.na,koiraØsØ.na,k o i r a {ØkØkØØk} s {ØeØeØØØ} {nrs} {aä}
-KOIRAS ESS,koiras.sa,koiraØsØ.sa,k o i r a {ØkØkØØk} s {ØeØeØØØ} {nrs} {aä}
-KOIRAS ILL,koirakse.en,koirakse.Øen,k o i r a {ØkØkØØk} s {ØeØeØØØ} {Øh} {V} n
-KOIRAS ILL,koirakse.hen,koirakse.hen,k o i r a {ØkØkØØk} s {ØeØeØØØ} {Øh} {V} n
-KOIRAS PL INE,koiraks.i.ssa,koiraksØ.i.ssa,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} s s {aä}
-KOIRAS PL GENien,koiraks.i.en,koiraksØ.i.en,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} e n
-KOIRAS PLGENten,koiras.ten,koiraØsØ.ten,k o i r a {ØkØkØØk} s {ØeØeØØØ} t e n
-KOIRAS PL PTV,koiraks.i.a,koiraksØ.i.Øa,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} {Øt} {aä}
-KOIRAS PL ILL,koiraks.i.in,koiraksØ.i.Øin,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} {Øh} {V} n
-KOIRAS PL ILL,koiraks.i.hin,koiraksØ.i.hin,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} {Øh} {V} n
+KOIRAS.GEN,koirakse.n,koirakse.n,k o i r a {ØkØkØØk} s {ØeØeØØØ} n
+KOIRAS.PTV,koiras.ta,koiraØsØ.ta,k o i r a {ØkØkØØk} s {ØeØeØØØ} {Øt} {aä}
+KOIRAS.ESS,koirakse.na,koirakse.na,k o i r a {ØkØkØØk} s {ØeØeØØØ} {nrs} {aä}
+KOIRAS.ESS,koiras.na,koiraØsØ.na,k o i r a {ØkØkØØk} s {ØeØeØØØ} {nrs} {aä}
+KOIRAS.ESS,koiras.sa,koiraØsØ.sa,k o i r a {ØkØkØØk} s {ØeØeØØØ} {nrs} {aä}
+KOIRAS.ILL,koirakse.en,koirakse.Øen,k o i r a {ØkØkØØk} s {ØeØeØØØ} {Øh} {V} n
+KOIRAS.ILL,koirakse.hen,koirakse.hen,k o i r a {ØkØkØØk} s {ØeØeØØØ} {Øh} {V} n
+KOIRAS.PL.INE,koiraks.i.ssa,koiraksØ.i.ssa,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} s s {aä}
+KOIRAS.PL.GENien,koiraks.i.en,koiraksØ.i.en,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} e n
+KOIRAS.PLGENten,koiras.ten,koiraØsØ.ten,k o i r a {ØkØkØØk} s {ØeØeØØØ} t e n
+KOIRAS.PL.PTV,koiraks.i.a,koiraksØ.i.Øa,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} {Øt} {aä}
+KOIRAS.PL.ILL,koiraks.i.in,koiraksØ.i.Øin,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} {Øh} {V} n
+KOIRAS.PL.ILL,koiraks.i.hin,koiraksØ.i.hin,k o i r a {ØkØkØØk} s {ØeØeØØØ} {ij} {Øh} {V} n
 Koiras,koiras,koirasØ,k o i r a {sØhsØhØh} {ØaaØaaØØ} 
-Koiras GEN,koiraa.n,koiraØa.n,k o i r a {sØhsØhØh} {ØaaØaaØØ} n
-Koiras GEN,koiraha.n,koiraha.n,k o i r a {sØhsØhØh} {ØaaØaaØØ} n
-Koiras PTV,koiras.ta,koirasØ.ta,k o i r a {sØhsØhØh} {ØaaØaaØØ} {Øt} {aä}
-Koiras ESS,koiraa.na,koiraØa.na,k o i r a {sØhsØhØh} {ØaaØaaØØ} {nrs} {aä}
-Koiras ESS,koiraha.na,koiraha.na,k o i r a {sØhsØhØh} {ØaaØaaØØ} {nrs} {aä}
-Koiras ILLseen,koiraa.seen,koiraØa.seen,k o i r a {sØhsØhØh} {ØaaØaaØØ} s e {Øe} n
-Koiras ILLseen,koiraha.sen,koiraha.seØn,k o i r a {sØhsØhØh} {ØaaØaaØØ} s e {Øe} n
-Koiras PL INE,koira.i.ssa,koiraØØ.i.ssa,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} s s {aä}
-Koiras PL INE,koirah.i.ssa,koirahØ.i.ssa,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} s s {aä}
-Koiras PL GENiden,koira.i.den,koiraØØ.i.dØen,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {dt} {Øt} e n
-Koiras PL GENiden,koira.i.tten,koiraØØ.i.tten,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {dt} {Øt} e n
-Koiras PL GENien,koirah.i.en,koirahØ.i.en,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} e n
-Koiras PL PTV,koira.i.ta,koiraØØ.i.ta,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {Øt} {aä}
-Koiras PL PTV,koirah.i.a,koirahØ.i.Øa,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {Øt} {aä}
-Koiras PL ILL,koira.i.hin,koiraØØ.i.hin,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {Øh} {V} n
-Koiras PL ILLsiin,koira.i.siin,koiraØØ.i.siin,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} s i {iØ} n
-Koiras PL ILLsiin,koirah.i.sin,koirahØ.i.siØn,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} s i {iØ} n
+Koiras.GEN,koiraa.n,koiraØa.n,k o i r a {sØhsØhØh} {ØaaØaaØØ} n
+Koiras.GEN,koiraha.n,koiraha.n,k o i r a {sØhsØhØh} {ØaaØaaØØ} n
+Koiras.PTV,koiras.ta,koirasØ.ta,k o i r a {sØhsØhØh} {ØaaØaaØØ} {Øt} {aä}
+Koiras.ESS,koiraa.na,koiraØa.na,k o i r a {sØhsØhØh} {ØaaØaaØØ} {nrs} {aä}
+Koiras.ESS,koiraha.na,koiraha.na,k o i r a {sØhsØhØh} {ØaaØaaØØ} {nrs} {aä}
+Koiras.ILLseen,koiraa.seen,koiraØa.seen,k o i r a {sØhsØhØh} {ØaaØaaØØ} s e {Øe} n
+Koiras.ILLseen,koiraha.sen,koiraha.seØn,k o i r a {sØhsØhØh} {ØaaØaaØØ} s e {Øe} n
+Koiras.PL.INE,koira.i.ssa,koiraØØ.i.ssa,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} s s {aä}
+Koiras.PL.INE,koirah.i.ssa,koirahØ.i.ssa,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} s s {aä}
+Koiras.PL.GENiden,koira.i.den,koiraØØ.i.dØen,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {dt} {Øt} e n
+Koiras.PL.GENiden,koira.i.tten,koiraØØ.i.tten,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {dt} {Øt} e n
+Koiras.PL.GENien,koirah.i.en,koirahØ.i.en,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} e n
+Koiras.PL.PTV,koira.i.ta,koiraØØ.i.ta,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {Øt} {aä}
+Koiras.PL.PTV,koirah.i.a,koirahØ.i.Øa,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {Øt} {aä}
+Koiras.PL.ILL,koira.i.hin,koiraØØ.i.hin,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} {Øh} {V} n
+Koiras.PL.ILLsiin,koira.i.siin,koiraØØ.i.siin,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} s i {iØ} n
+Koiras.PL.ILLsiin,koirah.i.sin,koirahØ.i.siØn,k o i r a {sØhsØhØh} {ØaaØaaØØ} {ij} s i {iØ} n
 UROS,uros,urosØ,u r o {sØhsØhØh} {ØooØooØØ} 
-UROS GEN,uroo.n,uroØo.n,u r o {sØhsØhØh} {ØooØooØØ} n
-UROS GEN,uroho.n,uroho.n,u r o {sØhsØhØh} {ØooØooØØ} n
-UROS PTV,uros.ta,urosØ.ta,u r o {sØhsØhØh} {ØooØooØØ} {Øt} {aä}
-UROS ESS,uroo.na,uroØo.na,u r o {sØhsØhØh} {ØooØooØØ} {nrs} {aä}
-UROS ESS,uroho.na,uroho.na,u r o {sØhsØhØh} {ØooØooØØ} {nrs} {aä}
-UROS ILLseen,uroo.seen,uroØo.seen,u r o {sØhsØhØh} {ØooØooØØ} s e {Øe} n
-UROS ILLseen,uroho.sen,uroho.seØn,u r o {sØhsØhØh} {ØooØooØØ} s e {Øe} n
-UROS PL INE,uro.i.ssa,uroØØ.i.ssa,u r o {sØhsØhØh} {ØooØooØØ} {ij} s s {aä}
-UROS PL INE,uroh.i.ssa,urohØ.i.ssa,u r o {sØhsØhØh} {ØooØooØØ} {ij} s s {aä}
-UROS PL GENiden,uro.i.den,uroØØ.i.dØen,u r o {sØhsØhØh} {ØooØooØØ} {ij} {dt} {Øt} e n
-UROS PL GENiden,uro.i.tten,uroØØ.i.tten,u r o {sØhsØhØh} {ØooØooØØ} {ij} {dt} {Øt} e n
-UROS PL GENiden,uroh.i.tten,urohØ.i.tten,u r o {sØhsØhØh} {ØooØooØØ} {ij} {dt} {Øt} e n
-UROS PL GENien,uroh.i.en,urohØ.i.en,u r o {sØhsØhØh} {ØooØooØØ} {ij} e n
-UROS PLGENten,uros.ten,urosØ.ten,u r o {sØhsØhØh} {ØooØooØØ} t e n
-UROS PL PTV,uro.i.ta,uroØØ.i.ta,u r o {sØhsØhØh} {ØooØooØØ} {ij} {Øt} {aä}
-UROS PL PTV,uroh.i.a,urohØ.i.Øa,u r o {sØhsØhØh} {ØooØooØØ} {ij} {Øt} {aä}
-UROS PL ILL,uro.i.hin,uroØØ.i.hin,u r o {sØhsØhØh} {ØooØooØØ} {ij} {Øh} {V} n
-UROS PL ILLsiin,uro.i.siin,uroØØ.i.siin,u r o {sØhsØhØh} {ØooØooØØ} {ij} s i {iØ} n
-UROS PL ILLsiin,uroh.i.sin,urohØ.i.siØn,u r o {sØhsØhØh} {ØooØooØØ} {ij} s i {iØ} n
+UROS.GEN,uroo.n,uroØo.n,u r o {sØhsØhØh} {ØooØooØØ} n
+UROS.GEN,uroho.n,uroho.n,u r o {sØhsØhØh} {ØooØooØØ} n
+UROS.PTV,uros.ta,urosØ.ta,u r o {sØhsØhØh} {ØooØooØØ} {Øt} {aä}
+UROS.ESS,uroo.na,uroØo.na,u r o {sØhsØhØh} {ØooØooØØ} {nrs} {aä}
+UROS.ESS,uroho.na,uroho.na,u r o {sØhsØhØh} {ØooØooØØ} {nrs} {aä}
+UROS.ILLseen,uroo.seen,uroØo.seen,u r o {sØhsØhØh} {ØooØooØØ} s e {Øe} n
+UROS.ILLseen,uroho.sen,uroho.seØn,u r o {sØhsØhØh} {ØooØooØØ} s e {Øe} n
+UROS.PL.INE,uro.i.ssa,uroØØ.i.ssa,u r o {sØhsØhØh} {ØooØooØØ} {ij} s s {aä}
+UROS.PL.INE,uroh.i.ssa,urohØ.i.ssa,u r o {sØhsØhØh} {ØooØooØØ} {ij} s s {aä}
+UROS.PL.GENiden,uro.i.den,uroØØ.i.dØen,u r o {sØhsØhØh} {ØooØooØØ} {ij} {dt} {Øt} e n
+UROS.PL.GENiden,uro.i.tten,uroØØ.i.tten,u r o {sØhsØhØh} {ØooØooØØ} {ij} {dt} {Øt} e n
+UROS.PL.GENiden,uroh.i.tten,urohØ.i.tten,u r o {sØhsØhØh} {ØooØooØØ} {ij} {dt} {Øt} e n
+UROS.PL.GENien,uroh.i.en,urohØ.i.en,u r o {sØhsØhØh} {ØooØooØØ} {ij} e n
+UROS.PLGENten,uros.ten,urosØ.ten,u r o {sØhsØhØh} {ØooØooØØ} t e n
+UROS.PL.PTV,uro.i.ta,uroØØ.i.ta,u r o {sØhsØhØh} {ØooØooØØ} {ij} {Øt} {aä}
+UROS.PL.PTV,uroh.i.a,urohØ.i.Øa,u r o {sØhsØhØh} {ØooØooØØ} {ij} {Øt} {aä}
+UROS.PL.ILL,uro.i.hin,uroØØ.i.hin,u r o {sØhsØhØh} {ØooØooØØ} {ij} {Øh} {V} n
+UROS.PL.ILLsiin,uro.i.siin,uroØØ.i.siin,u r o {sØhsØhØh} {ØooØooØØ} {ij} s i {iØ} n
+UROS.PL.ILLsiin,uroh.i.sin,urohØ.i.siØn,u r o {sØhsØhØh} {ØooØooØØ} {ij} s i {iØ} n
 MIES,mies,miesØ,m i e {shshssh} {ØeØeØØØ} 
-MIES GEN,miehe.n,miehe.n,m i e {shshssh} {ØeØeØØØ} n
-MIES PTV,mies.tä,miesØ.tä,m i e {shshssh} {ØeØeØØØ} {Øt} {aä}
-MIES ESS,miehe.nä,miehe.nä,m i e {shshssh} {ØeØeØØØ} {nrs} {aä}
-MIES ESS,mies.nä,miesØ.nä,m i e {shshssh} {ØeØeØØØ} {nrs} {aä}
-MIES ESS,mies.sä,miesØ.sä,m i e {shshssh} {ØeØeØØØ} {nrs} {aä}
-MIES ILL,miehe.en,miehe.Øen,m i e {shshssh} {ØeØeØØØ} {Øh} {V} n
-MIES PL INE,mieh.i.ssä,miehØ.i.ssä,m i e {shshssh} {ØeØeØØØ} {ij} s s {aä}
-MIES PL GENien,mieh.i.en,miehØ.i.en,m i e {shshssh} {ØeØeØØØ} {ij} e n
-MIES PLGENten,mies.ten,miesØ.ten,m i e {shshssh} {ØeØeØØØ} t e n
-MIES PL PTV,mieh.i.ä,miehØ.i.Øä,m i e {shshssh} {ØeØeØØØ} {ij} {Øt} {aä}
-MIES PL ILL,mieh.i.in,miehØ.i.Øin,m i e {shshssh} {ØeØeØØØ} {ij} {Øh} {V} n
+MIES.GEN,miehe.n,miehe.n,m i e {shshssh} {ØeØeØØØ} n
+MIES.PTV,mies.tä,miesØ.tä,m i e {shshssh} {ØeØeØØØ} {Øt} {aä}
+MIES.ESS,miehe.nä,miehe.nä,m i e {shshssh} {ØeØeØØØ} {nrs} {aä}
+MIES.ESS,mies.nä,miesØ.nä,m i e {shshssh} {ØeØeØØØ} {nrs} {aä}
+MIES.ESS,mies.sä,miesØ.sä,m i e {shshssh} {ØeØeØØØ} {nrs} {aä}
+MIES.ILL,miehe.en,miehe.Øen,m i e {shshssh} {ØeØeØØØ} {Øh} {V} n
+MIES.PL.INE,mieh.i.ssä,miehØ.i.ssä,m i e {shshssh} {ØeØeØØØ} {ij} s s {aä}
+MIES.PL.GENien,mieh.i.en,miehØ.i.en,m i e {shshssh} {ØeØeØØØ} {ij} e n
+MIES.PLGENten,mies.ten,miesØ.ten,m i e {shshssh} {ØeØeØØØ} t e n
+MIES.PL.PTV,mieh.i.ä,miehØ.i.Øä,m i e {shshssh} {ØeØeØØØ} {ij} {Øt} {aä}
+MIES.PL.ILL,mieh.i.in,miehØ.i.Øin,m i e {shshssh} {ØeØeØØØ} {ij} {Øh} {V} n
 AIRUT,airutØ,airutØ,a i r u {tØtØØh} {ØeØeØØ} 
-AIRUT GEN,airuØe.n,airuØe.n,a i r u {tØtØØh} {ØeØeØØ} n
-AIRUT PTV,airutØ.ta,airutØ.ta,a i r u {tØtØØh} {ØeØeØØ} {Øt} {aä}
-AIRUT ESS,airue.na,airuØe.na,a i r u {tØtØØh} {ØeØeØØ} {nrs} {aä}
-AIRUT ILL,airue.en,airuØe.Øen,a i r u {tØtØØh} {ØeØeØØ} {Øh} {V} n
-AIRUT ILL,airue.hen,airuØe.hen,a i r u {tØtØØh} {ØeØeØØ} {Øh} {V} n
-AIRUT PL INE,airu.i.ssa,airuØØ.i.ssa,a i r u {tØtØØh} {ØeØeØØ} {ij} s s {aä}
-AIRUT PL INE,airuh.i.ssa,airuhØ.i.ssa,a i r u {tØtØØh} {ØeØeØØ} {ij} s s {aä}
-AIRUT PL GENiden,airu.i.den,airuØØ.i.dØen,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-AIRUT PL GENiden,airu.i.tten,airuØØ.i.tten,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-AIRUT PL GENiden,airuh.i.tten,airuhØ.i.tten,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-AIRUT PL GENien,airuh.i.en,airuhØ.i.en,a i r u {tØtØØh} {ØeØeØØ} {ij} e n
-AIRUT PLGENten,airut.ten,airutØ.ten,a i r u {tØtØØh} {ØeØeØØ} t e n
-AIRUT PL PTV,airu.i.ta,airuØØ.i.ta,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
-AIRUT PL PTV,airuh.i.a,airuhØ.i.Øa,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
-AIRUT PL ILL,airu.i.hin,airuØØ.i.hin,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øh} {V} n
-AIRUT PL ILLsiin,airu.i.siin,airuØØ.i.siin,a i r u {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
-AIRUT PL ILLsiin,airuh.i.sin,airuhØ.i.siØn,a i r u {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
+AIRUT.GEN,airuØe.n,airuØe.n,a i r u {tØtØØh} {ØeØeØØ} n
+AIRUT.PTV,airutØ.ta,airutØ.ta,a i r u {tØtØØh} {ØeØeØØ} {Øt} {aä}
+AIRUT.ESS,airue.na,airuØe.na,a i r u {tØtØØh} {ØeØeØØ} {nrs} {aä}
+AIRUT.ILL,airue.en,airuØe.Øen,a i r u {tØtØØh} {ØeØeØØ} {Øh} {V} n
+AIRUT.ILL,airue.hen,airuØe.hen,a i r u {tØtØØh} {ØeØeØØ} {Øh} {V} n
+AIRUT.PL.INE,airu.i.ssa,airuØØ.i.ssa,a i r u {tØtØØh} {ØeØeØØ} {ij} s s {aä}
+AIRUT.PL.INE,airuh.i.ssa,airuhØ.i.ssa,a i r u {tØtØØh} {ØeØeØØ} {ij} s s {aä}
+AIRUT.PL.GENiden,airu.i.den,airuØØ.i.dØen,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
+AIRUT.PL.GENiden,airu.i.tten,airuØØ.i.tten,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
+AIRUT.PL.GENiden,airuh.i.tten,airuhØ.i.tten,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
+AIRUT.PL.GENien,airuh.i.en,airuhØ.i.en,a i r u {tØtØØh} {ØeØeØØ} {ij} e n
+AIRUT.PLGENten,airut.ten,airutØ.ten,a i r u {tØtØØh} {ØeØeØØ} t e n
+AIRUT.PL.PTV,airu.i.ta,airuØØ.i.ta,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
+AIRUT.PL.PTV,airuh.i.a,airuhØ.i.Øa,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
+AIRUT.PL.ILL,airu.i.hin,airuØØ.i.hin,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øh} {V} n
+AIRUT.PL.ILLsiin,airu.i.siin,airuØØ.i.siin,a i r u {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
+AIRUT.PL.ILLsiin,airuh.i.sin,airuhØ.i.siØn,a i r u {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
 ÄIDYT,äidytØ,äidytØ,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} 
-ÄIDYT GEN,äityØe.n,äityØe.n,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} n
-ÄIDYT PTV,äidytØ.tä,äidytØ.tä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øt} {aä}
-ÄIDYT ESS,äitye.nä,äityØe.nä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {nrs} {aä}
-ÄIDYT ILL,äitye.en,äityØe.Øen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øh} {V} n
-ÄIDYT ILL,äitye.hen,äityØe.hen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øh} {V} n
-ÄIDYT PL INE,äity.i.ssä,äityØØ.i.ssä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s s {aä}
-ÄIDYT PL INE,äityh.i.ssä,äityhØ.i.ssä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s s {aä}
-ÄIDYT PL GENiden,äity.i.den,äityØØ.i.dØen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-ÄIDYT PL GENiden,äity.i.tten,äityØØ.i.tten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-ÄIDYT PL GENiden,äityh.i.tten,äityhØ.i.tten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-ÄIDYT PL GENien,äityh.i.en,äityhØ.i.en,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} e n
-ÄIDYT PLGENten,äidyt.ten,äidytØ.ten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} t e n
-ÄIDYT PL PTV,äity.i.tä,äityØØ.i.tä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
-ÄIDYT PL PTV,äityh.i.ä,äityhØ.i.Øä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
-ÄIDYT PL ILL,äity.i.hin,äityØØ.i.hin,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øh} {V} n
-ÄIDYT PL ILLsiin,äity.i.siin,äityØØ.i.siin,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
-ÄIDYT PL ILLsiin,äityh.i.sin,äityhØ.i.siØn,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
+ÄIDYT.GEN,äityØe.n,äityØe.n,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} n
+ÄIDYT.PTV,äidytØ.tä,äidytØ.tä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øt} {aä}
+ÄIDYT.ESS,äitye.nä,äityØe.nä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {nrs} {aä}
+ÄIDYT.ILL,äitye.en,äityØe.Øen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øh} {V} n
+ÄIDYT.ILL,äitye.hen,äityØe.hen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øh} {V} n
+ÄIDYT.PL.INE,äity.i.ssä,äityØØ.i.ssä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s s {aä}
+ÄIDYT.PL.INE,äityh.i.ssä,äityhØ.i.ssä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s s {aä}
+ÄIDYT.PL.GENiden,äity.i.den,äityØØ.i.dØen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
+ÄIDYT.PL.GENiden,äity.i.tten,äityØØ.i.tten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
+ÄIDYT.PL.GENiden,äityh.i.tten,äityhØ.i.tten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
+ÄIDYT.PL.GENien,äityh.i.en,äityhØ.i.en,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} e n
+ÄIDYT.PLGENten,äidyt.ten,äidytØ.ten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} t e n
+ÄIDYT.PL.PTV,äity.i.tä,äityØØ.i.tä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
+ÄIDYT.PL.PTV,äityh.i.ä,äityhØ.i.Øä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
+ÄIDYT.PL.ILL,äity.i.hin,äityØØ.i.hin,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øh} {V} n
+ÄIDYT.PL.ILLsiin,äity.i.siin,äityØØ.i.siin,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
+ÄIDYT.PL.ILLsiin,äityh.i.sin,äityhØ.i.siØn,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
 KEVÄT,kevät,kevätØ,k e v ä {tØhtØnhØh} {ØääØäØäØØ} 
-KEVÄT GEN,kevää.n,keväØä.n,k e v ä {tØhtØnhØh} {ØääØäØäØØ} n
-KEVÄT GEN,kevähä.n,kevähä.n,k e v ä {tØhtØnhØh} {ØääØäØäØØ} n
-KEVÄT PTV,kevät.tä,kevätØ.tä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {Øt} {aä}
-KEVÄT ESS,kevää.nä,keväØä.nä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {nrs} {aä}
-KEVÄT ESS,kevän.nä,kevänØ.nä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {nrs} {aä}
-KEVÄT ESS,kevähä.nä,kevähä.nä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {nrs} {aä}
-KEVÄT ILLseen,kevää.seen,keväØä.seen,k e v ä {tØhtØnhØh} {ØääØäØäØØ} s e {Øe} n
-KEVÄT ILLseen,kevähä.sen,kevähä.seØn,k e v ä {tØhtØnhØh} {ØääØäØäØØ} s e {Øe} n
-KEVÄT PL INE,kevä.i.ssä,keväØØ.i.ssä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} s s {aä}
-KEVÄT PL INE,keväh.i.ssä,kevähØ.i.ssä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} s s {aä}
-KEVÄT PL GENiden,kevä.i.den,keväØØ.i.dØen,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {dt} {Øt} e n
-KEVÄT PL GENiden,kevä.i.tten,keväØØ.i.tten,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {dt} {Øt} e n
-KEVÄT PL GENiden,keväh.i.tten,kevähØ.i.tten,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {dt} {Øt} e n
-KEVÄT PL GENien,keväh.i.en,kevähØ.i.en,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} e n
-KEVÄT PLGENten,kevät.ten,kevätØ.ten,k e v ä {tØhtØnhØh} {ØääØäØäØØ} t e n
-KEVÄT PL PTV,kevä.i.tä,keväØØ.i.tä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {Øt} {aä}
-KEVÄT PL PTV,keväh.i.ä,kevähØ.i.Øä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {Øt} {aä}
-KEVÄT PL ILL,kevä.i.hin,keväØØ.i.hin,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {Øh} {V} n
-KEVÄT PL ILLsiin,kevä.i.siin,keväØØ.i.siin,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} s i {iØ} n
-KEVÄT PL ILLsiin,keväh.i.sin,kevähØ.i.siØn,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} s i {iØ} n
+KEVÄT.GEN,kevää.n,keväØä.n,k e v ä {tØhtØnhØh} {ØääØäØäØØ} n
+KEVÄT.GEN,kevähä.n,kevähä.n,k e v ä {tØhtØnhØh} {ØääØäØäØØ} n
+KEVÄT.PTV,kevät.tä,kevätØ.tä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {Øt} {aä}
+KEVÄT.ESS,kevää.nä,keväØä.nä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {nrs} {aä}
+KEVÄT.ESS,kevän.nä,kevänØ.nä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {nrs} {aä}
+KEVÄT.ESS,kevähä.nä,kevähä.nä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {nrs} {aä}
+KEVÄT.ILLseen,kevää.seen,keväØä.seen,k e v ä {tØhtØnhØh} {ØääØäØäØØ} s e {Øe} n
+KEVÄT.ILLseen,kevähä.sen,kevähä.seØn,k e v ä {tØhtØnhØh} {ØääØäØäØØ} s e {Øe} n
+KEVÄT.PL.INE,kevä.i.ssä,keväØØ.i.ssä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} s s {aä}
+KEVÄT.PL.INE,keväh.i.ssä,kevähØ.i.ssä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} s s {aä}
+KEVÄT.PL.GENiden,kevä.i.den,keväØØ.i.dØen,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {dt} {Øt} e n
+KEVÄT.PL.GENiden,kevä.i.tten,keväØØ.i.tten,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {dt} {Øt} e n
+KEVÄT.PL.GENiden,keväh.i.tten,kevähØ.i.tten,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {dt} {Øt} e n
+KEVÄT.PL.GENien,keväh.i.en,kevähØ.i.en,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} e n
+KEVÄT.PLGENten,kevät.ten,kevätØ.ten,k e v ä {tØhtØnhØh} {ØääØäØäØØ} t e n
+KEVÄT.PL.PTV,kevä.i.tä,keväØØ.i.tä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {Øt} {aä}
+KEVÄT.PL.PTV,keväh.i.ä,kevähØ.i.Øä,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {Øt} {aä}
+KEVÄT.PL.ILL,kevä.i.hin,keväØØ.i.hin,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} {Øh} {V} n
+KEVÄT.PL.ILLsiin,kevä.i.siin,keväØØ.i.siin,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} s i {iØ} n
+KEVÄT.PL.ILLsiin,keväh.i.sin,kevähØ.i.siØn,k e v ä {tØhtØnhØh} {ØääØäØäØØ} {ij} s i {iØ} n
 KUOLLUT,kuollut,kuollutØ,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} 
-KUOLLUT GEN,kuollee.n,kuolleØe.n,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} n
-KUOLLUT GEN,kuollehe.n,kuollehe.n,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} n
-KUOLLUT PTV,kuollut.ta,kuollutØ.ta,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {Øt} {aä}
-KUOLLUT ESS,kuollee.na,kuolleØe.na,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {nrs} {aä}
-KUOLLUT ESS,kuollehe.na,kuollehe.na,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {nrs} {aä}
-KUOLLUT ESS,kuollun.na,kuollunØ.na,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {nrs} {aä}
-KUOLLUT ILLseen,kuollee.seen,kuolleØe.seen,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} s e {Øe} n
-KUOLLUT ILLseen,kuollehe.sen,kuollehe.seØn,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} s e {Øe} n
-KUOLLUT PL INE,kuolle.i.ssa,kuolleØØ.i.ssa,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} s s {aä}
-KUOLLUT PL INE,kuolleh.i.ssa,kuollehØ.i.ssa,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} s s {aä}
-KUOLLUT PL GENiden,kuolle.i.den,kuolleØØ.i.dØen,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {dt} {Øt} e n
-KUOLLUT PL GENiden,kuolle.i.tten,kuolleØØ.i.tten,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {dt} {Øt} e n
-KUOLLUT PL GENiden,kuolleh.i.tten,kuollehØ.i.tten,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {dt} {Øt} e n
-KUOLLUT PL GENien,kuolleh.i.en,kuollehØ.i.en,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} e n
-KUOLLUT PLGENten,kuollut.ten,kuollutØ.ten,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} t e n
-KUOLLUT PL PTV,kuolle.i.ta,kuolleØØ.i.ta,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {Øt} {aä}
-KUOLLUT PL PTV,kuolleh.i.a,kuollehØ.i.Øa,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {Øt} {aä}
-KUOLLUT PL ILL,kuolle.i.hin,kuolleØØ.i.hin,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {Øh} {V} n
-KUOLLUT PL ILLsiin,kuolle.i.siin,kuolleØØ.i.siin,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} s i {iØ} n
-KUOLLUT PL ILLsiin,kuolleh.i.sin,kuollehØ.i.siØn,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} s i {iØ} n
+KUOLLUT.GEN,kuollee.n,kuolleØe.n,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} n
+KUOLLUT.GEN,kuollehe.n,kuollehe.n,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} n
+KUOLLUT.PTV,kuollut.ta,kuollutØ.ta,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {Øt} {aä}
+KUOLLUT.ESS,kuollee.na,kuolleØe.na,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {nrs} {aä}
+KUOLLUT.ESS,kuollehe.na,kuollehe.na,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {nrs} {aä}
+KUOLLUT.ESS,kuollun.na,kuollunØ.na,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {nrs} {aä}
+KUOLLUT.ILLseen,kuollee.seen,kuolleØe.seen,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} s e {Øe} n
+KUOLLUT.ILLseen,kuollehe.sen,kuollehe.seØn,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} s e {Øe} n
+KUOLLUT.PL.INE,kuolle.i.ssa,kuolleØØ.i.ssa,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} s s {aä}
+KUOLLUT.PL.INE,kuolleh.i.ssa,kuollehØ.i.ssa,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} s s {aä}
+KUOLLUT.PL.GENiden,kuolle.i.den,kuolleØØ.i.dØen,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {dt} {Øt} e n
+KUOLLUT.PL.GENiden,kuolle.i.tten,kuolleØØ.i.tten,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {dt} {Øt} e n
+KUOLLUT.PL.GENiden,kuolleh.i.tten,kuollehØ.i.tten,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {dt} {Øt} e n
+KUOLLUT.PL.GENien,kuolleh.i.en,kuollehØ.i.en,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} e n
+KUOLLUT.PLGENten,kuollut.ten,kuollutØ.ten,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} t e n
+KUOLLUT.PL.PTV,kuolle.i.ta,kuolleØØ.i.ta,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {Øt} {aä}
+KUOLLUT.PL.PTV,kuolleh.i.a,kuollehØ.i.Øa,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {Øt} {aä}
+KUOLLUT.PL.ILL,kuolle.i.hin,kuolleØØ.i.hin,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} {Øh} {V} n
+KUOLLUT.PL.ILLsiin,kuolle.i.siin,kuolleØØ.i.siin,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} s i {iØ} n
+KUOLLUT.PL.ILLsiin,kuolleh.i.sin,kuollehØ.i.siØn,k u o l l {ueeueeuee} {tØhtØhnØh} {ØeeØeeØØØ} {ij} s i {iØ} n
 VAATE,vaate,vaatØeØØ,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} 
-VAATE GEN,vaattee.n,vaatteØe.n,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} n
-VAATE GEN,vaattehe.n,vaattehe.n,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} n
-VAATE PTV,vaatet.ta,vaatØetØ.ta,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {Øt} {aä}
-VAATE ESS,vaattee.na,vaatteØe.na,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {nrs} {aä}
-VAATE ESS,vaattehe.na,vaattehe.na,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {nrs} {aä}
-VAATE ILLseen,vaattee.seen,vaatteØe.seen,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} s e {Øe} n
-VAATE ILLseen,vaattehe.sen,vaattehe.seØn,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} s e {Øe} n
-VAATE PL INE,vaatte.i.ssa,vaatteØØ.i.ssa,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} s s {aä}
-VAATE PL INE,vaatteh.i.ssa,vaattehØ.i.ssa,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} s s {aä}
-VAATE PL GENiden,vaatte.i.den,vaatteØØ.i.dØen,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {dt} {Øt} e n
-VAATE PL GENiden,vaatte.i.tten,vaatteØØ.i.tten,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {dt} {Øt} e n
-VAATE PL GENien,vaatteh.i.en,vaattehØ.i.en,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} e n
-VAATE PLGENten,vaatet.ten,vaatØetØ.ten,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} t e n
-VAATE PL PTV,vaatte.i.ta,vaatteØØ.i.ta,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {Øt} {aä}
-VAATE PL PTV,vaatteh.i.a,vaattehØ.i.Øa,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {Øt} {aä}
-VAATE PL ILL,vaatte.i.hin,vaatteØØ.i.hin,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {Øh} {V} n
-VAATE PL ILLsiin,vaatte.i.siin,vaatteØØ.i.siin,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} s i {iØ} n
-VAATE PL ILLsiin,vaatteh.i.sin,vaattehØ.i.siØn,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} s i {iØ} n
+VAATE.GEN,vaattee.n,vaatteØe.n,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} n
+VAATE.GEN,vaattehe.n,vaattehe.n,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} n
+VAATE.PTV,vaatet.ta,vaatØetØ.ta,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {Øt} {aä}
+VAATE.ESS,vaattee.na,vaatteØe.na,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {nrs} {aä}
+VAATE.ESS,vaattehe.na,vaattehe.na,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {nrs} {aä}
+VAATE.ILLseen,vaattee.seen,vaatteØe.seen,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} s e {Øe} n
+VAATE.ILLseen,vaattehe.sen,vaattehe.seØn,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} s e {Øe} n
+VAATE.PL.INE,vaatte.i.ssa,vaatteØØ.i.ssa,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} s s {aä}
+VAATE.PL.INE,vaatteh.i.ssa,vaattehØ.i.ssa,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} s s {aä}
+VAATE.PL.GENiden,vaatte.i.den,vaatteØØ.i.dØen,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {dt} {Øt} e n
+VAATE.PL.GENiden,vaatte.i.tten,vaatteØØ.i.tten,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {dt} {Øt} e n
+VAATE.PL.GENien,vaatteh.i.en,vaattehØ.i.en,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} e n
+VAATE.PLGENten,vaatet.ten,vaatØetØ.ten,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} t e n
+VAATE.PL.PTV,vaatte.i.ta,vaatteØØ.i.ta,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {Øt} {aä}
+VAATE.PL.PTV,vaatteh.i.a,vaattehØ.i.Øa,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {Øt} {aä}
+VAATE.PL.ILL,vaatte.i.hin,vaatteØØ.i.hin,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} {Øh} {V} n
+VAATE.PL.ILLsiin,vaatte.i.siin,vaatteØØ.i.siin,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} s i {iØ} n
+VAATE.PL.ILLsiin,vaatteh.i.sin,vaattehØ.i.siØn,v a a t {ØttØtttt} e {ØØhtØhØh} {ØeeØeeØØ} {ij} s i {iØ} n
 TERVE,terve,terveØØ,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} 
-TERVE GEN,tervee.n,terveØe.n,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} n
-TERVE GEN,tervehe.n,tervehe.n,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} n
-TERVE PTV,tervet.tä,tervetØ.tä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {Øt} {aä}
-TERVE ESS,tervee.nä,terveØe.nä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {nrs} {aä}
-TERVE ESS,terven.nä,tervenØ.nä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {nrs} {aä}
-TERVE ESS,tervehe.nä,tervehe.nä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {nrs} {aä}
-TERVE ILLseen,tervee.seen,terveØe.seen,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} s e {Øe} n
-TERVE ILLseen,tervehe.sen,tervehe.seØn,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} s e {Øe} n
-TERVE PL INE,terve.i.ssä,terveØØ.i.ssä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} s s {aä}
-TERVE PL INE,terveh.i.ssä,tervehØ.i.ssä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} s s {aä}
-TERVE PL GENiden,terve.i.den,terveØØ.i.dØen,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {dt} {Øt} e n
-TERVE PL GENiden,terve.i.tten,terveØØ.i.tten,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {dt} {Øt} e n
-TERVE PL GENiden,terveh.i.tten,tervehØ.i.tten,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {dt} {Øt} e n
-TERVE PL GENien,terveh.i.en,tervehØ.i.en,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} e n
-TERVE PLGENten,tervet.ten,tervetØ.ten,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} t e n
-TERVE PL PTV,terve.i.tä,terveØØ.i.tä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {Øt} {aä}
-TERVE PL PTV,terveh.i.ä,tervehØ.i.Øä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {Øt} {aä}
-TERVE PL ILL,terve.i.hin,terveØØ.i.hin,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {Øh} {V} n
-TERVE PL ILLsiin,terve.i.siin,terveØØ.i.siin,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} s i {iØ} n
-TERVE PL ILLsiin,terveh.i.sin,tervehØ.i.siØn,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} s i {iØ} n
+TERVE.GEN,tervee.n,terveØe.n,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} n
+TERVE.GEN,tervehe.n,tervehe.n,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} n
+TERVE.PTV,tervet.tä,tervetØ.tä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {Øt} {aä}
+TERVE.ESS,tervee.nä,terveØe.nä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {nrs} {aä}
+TERVE.ESS,terven.nä,tervenØ.nä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {nrs} {aä}
+TERVE.ESS,tervehe.nä,tervehe.nä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {nrs} {aä}
+TERVE.ILLseen,tervee.seen,terveØe.seen,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} s e {Øe} n
+TERVE.ILLseen,tervehe.sen,tervehe.seØn,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} s e {Øe} n
+TERVE.PL.INE,terve.i.ssä,terveØØ.i.ssä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} s s {aä}
+TERVE.PL.INE,terveh.i.ssä,tervehØ.i.ssä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} s s {aä}
+TERVE.PL.GENiden,terve.i.den,terveØØ.i.dØen,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {dt} {Øt} e n
+TERVE.PL.GENiden,terve.i.tten,terveØØ.i.tten,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {dt} {Øt} e n
+TERVE.PL.GENiden,terveh.i.tten,tervehØ.i.tten,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {dt} {Øt} e n
+TERVE.PL.GENien,terveh.i.en,tervehØ.i.en,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} e n
+TERVE.PLGENten,tervet.ten,tervetØ.ten,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} t e n
+TERVE.PL.PTV,terve.i.tä,terveØØ.i.tä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {Øt} {aä}
+TERVE.PL.PTV,terveh.i.ä,tervehØ.i.Øä,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {Øt} {aä}
+TERVE.PL.ILL,terve.i.hin,terveØØ.i.hin,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} {Øh} {V} n
+TERVE.PL.ILLsiin,terve.i.siin,terveØØ.i.siin,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} s i {iØ} n
+TERVE.PL.ILLsiin,terveh.i.sin,tervehØ.i.siØn,t e r v e {ØØhtØnhØh} {ØeeØeØeØØ} {ij} s i {iØ} n
 ORI,ori,oriØØ,o r i {ØØhtØhØh} {ØiiØiiØØ} 
-ORI GEN,orii.n,oriØi.n,o r i {ØØhtØhØh} {ØiiØiiØØ} n
-ORI GEN,orihi.n,orihi.n,o r i {ØØhtØhØh} {ØiiØiiØØ} n
-ORI PTV,orit.ta,oritØ.ta,o r i {ØØhtØhØh} {ØiiØiiØØ} {Øt} {aä}
-ORI ESS,orii.na,oriØi.na,o r i {ØØhtØhØh} {ØiiØiiØØ} {nrs} {aä}
-ORI ESS,orihi.na,orihi.na,o r i {ØØhtØhØh} {ØiiØiiØØ} {nrs} {aä}
-ORI ILLseen,orii.seen,oriØi.seen,o r i {ØØhtØhØh} {ØiiØiiØØ} s e {Øe} n
-ORI ILLseen,orihi.sen,orihi.seØn,o r i {ØØhtØhØh} {ØiiØiiØØ} s e {Øe} n
-ORI PL INE,ori.i.ssa,oriØØ.i.ssa,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} s s {aä}
-ORI PL INE,orih.i.ssa,orihØ.i.ssa,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} s s {aä}
-ORI PL GENiden,ori.i.den,oriØØ.i.dØen,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {dt} {Øt} e n
-ORI PL GENiden,ori.i.tten,oriØØ.i.tten,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {dt} {Øt} e n
-ORI PL GENiden,orih.i.tten,orihØ.i.tten,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {dt} {Øt} e n
-ORI PL GENien,orih.i.en,orihØ.i.en,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} e n
-ORI PLGENten,orit.ten,oritØ.ten,o r i {ØØhtØhØh} {ØiiØiiØØ} t e n
-ORI PL PTV,ori.i.ta,oriØØ.i.ta,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {Øt} {aä}
-ORI PL PTV,orih.i.a,orihØ.i.Øa,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {Øt} {aä}
-ORI PL ILL,ori.i.hin,oriØØ.i.hin,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {Øh} {V} n
-ORI PL ILLsiin,ori.i.siin,oriØØ.i.siin,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} s i {iØ} n
-ORI PL ILLsiin,orih.i.sin,orihØ.i.siØn,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} s i {iØ} n
+ORI.GEN,orii.n,oriØi.n,o r i {ØØhtØhØh} {ØiiØiiØØ} n
+ORI.GEN,orihi.n,orihi.n,o r i {ØØhtØhØh} {ØiiØiiØØ} n
+ORI.PTV,orit.ta,oritØ.ta,o r i {ØØhtØhØh} {ØiiØiiØØ} {Øt} {aä}
+ORI.ESS,orii.na,oriØi.na,o r i {ØØhtØhØh} {ØiiØiiØØ} {nrs} {aä}
+ORI.ESS,orihi.na,orihi.na,o r i {ØØhtØhØh} {ØiiØiiØØ} {nrs} {aä}
+ORI.ILLseen,orii.seen,oriØi.seen,o r i {ØØhtØhØh} {ØiiØiiØØ} s e {Øe} n
+ORI.ILLseen,orihi.sen,orihi.seØn,o r i {ØØhtØhØh} {ØiiØiiØØ} s e {Øe} n
+ORI.PL.INE,ori.i.ssa,oriØØ.i.ssa,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} s s {aä}
+ORI.PL.INE,orih.i.ssa,orihØ.i.ssa,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} s s {aä}
+ORI.PL.GENiden,ori.i.den,oriØØ.i.dØen,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {dt} {Øt} e n
+ORI.PL.GENiden,ori.i.tten,oriØØ.i.tten,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {dt} {Øt} e n
+ORI.PL.GENiden,orih.i.tten,orihØ.i.tten,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {dt} {Øt} e n
+ORI.PL.GENien,orih.i.en,orihØ.i.en,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} e n
+ORI.PLGENten,orit.ten,oritØ.ten,o r i {ØØhtØhØh} {ØiiØiiØØ} t e n
+ORI.PL.PTV,ori.i.ta,oriØØ.i.ta,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {Øt} {aä}
+ORI.PL.PTV,orih.i.a,orihØ.i.Øa,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {Øt} {aä}
+ORI.PL.ILL,ori.i.hin,oriØØ.i.hin,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} {Øh} {V} n
+ORI.PL.ILLsiin,ori.i.siin,oriØØ.i.siin,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} s i {iØ} n
+ORI.PL.ILLsiin,orih.i.sin,orihØ.i.siØn,o r i {ØØhtØhØh} {ØiiØiiØØ} {ij} s i {iØ} n
 KIIRU,kiiru,kiiruØØ,k i i r u {ØØhtØhØh} {ØuuØuuØØ} 
-KIIRU GEN,kiiruu.n,kiiruØu.n,k i i r u {ØØhtØhØh} {ØuuØuuØØ} n
-KIIRU GEN,kiiruhu.n,kiiruhu.n,k i i r u {ØØhtØhØh} {ØuuØuuØØ} n
-KIIRU PTV,kiirut.ta,kiirutØ.ta,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {Øt} {aä}
-KIIRU ESS,kiiruu.na,kiiruØu.na,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {nrs} {aä}
-KIIRU ESS,kiiruhu.na,kiiruhu.na,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {nrs} {aä}
-KIIRU ILLseen,kiiruu.seen,kiiruØu.seen,k i i r u {ØØhtØhØh} {ØuuØuuØØ} s e {Øe} n
-KIIRU ILLseen,kiiruhu.sen,kiiruhu.seØn,k i i r u {ØØhtØhØh} {ØuuØuuØØ} s e {Øe} n
-KIIRU PL INE,kiiru.i.ssa,kiiruØØ.i.ssa,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} s s {aä}
-KIIRU PL INE,kiiruh.i.ssa,kiiruhØ.i.ssa,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} s s {aä}
-KIIRU PL GENiden,kiiru.i.den,kiiruØØ.i.dØen,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {dt} {Øt} e n
-KIIRU PL GENiden,kiiru.i.tten,kiiruØØ.i.tten,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {dt} {Øt} e n
-KIIRU PL GENiden,kiiruh.i.tten,kiiruhØ.i.tten,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {dt} {Øt} e n
-KIIRU PL GENien,kiiruh.i.en,kiiruhØ.i.en,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} e n
-KIIRU PLGENten,kiirut.ten,kiirutØ.ten,k i i r u {ØØhtØhØh} {ØuuØuuØØ} t e n
-KIIRU PL PTV,kiiru.i.ta,kiiruØØ.i.ta,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {Øt} {aä}
-KIIRU PL PTV,kiiruh.i.a,kiiruhØ.i.Øa,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {Øt} {aä}
-KIIRU PL ILL,kiiru.i.hin,kiiruØØ.i.hin,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {Øh} {V} n
-KIIRU PL ILLsiin,kiiru.i.siin,kiiruØØ.i.siin,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} s i {iØ} n
-KIIRU PL ILLsiin,kiiruh.i.sin,kiiruhØ.i.siØn,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} s i {iØ} n
+KIIRU.GEN,kiiruu.n,kiiruØu.n,k i i r u {ØØhtØhØh} {ØuuØuuØØ} n
+KIIRU.GEN,kiiruhu.n,kiiruhu.n,k i i r u {ØØhtØhØh} {ØuuØuuØØ} n
+KIIRU.PTV,kiirut.ta,kiirutØ.ta,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {Øt} {aä}
+KIIRU.ESS,kiiruu.na,kiiruØu.na,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {nrs} {aä}
+KIIRU.ESS,kiiruhu.na,kiiruhu.na,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {nrs} {aä}
+KIIRU.ILLseen,kiiruu.seen,kiiruØu.seen,k i i r u {ØØhtØhØh} {ØuuØuuØØ} s e {Øe} n
+KIIRU.ILLseen,kiiruhu.sen,kiiruhu.seØn,k i i r u {ØØhtØhØh} {ØuuØuuØØ} s e {Øe} n
+KIIRU.PL.INE,kiiru.i.ssa,kiiruØØ.i.ssa,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} s s {aä}
+KIIRU.PL.INE,kiiruh.i.ssa,kiiruhØ.i.ssa,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} s s {aä}
+KIIRU.PL.GENiden,kiiru.i.den,kiiruØØ.i.dØen,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {dt} {Øt} e n
+KIIRU.PL.GENiden,kiiru.i.tten,kiiruØØ.i.tten,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {dt} {Øt} e n
+KIIRU.PL.GENiden,kiiruh.i.tten,kiiruhØ.i.tten,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {dt} {Øt} e n
+KIIRU.PL.GENien,kiiruh.i.en,kiiruhØ.i.en,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} e n
+KIIRU.PLGENten,kiirut.ten,kiirutØ.ten,k i i r u {ØØhtØhØh} {ØuuØuuØØ} t e n
+KIIRU.PL.PTV,kiiru.i.ta,kiiruØØ.i.ta,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {Øt} {aä}
+KIIRU.PL.PTV,kiiruh.i.a,kiiruhØ.i.Øa,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {Øt} {aä}
+KIIRU.PL.ILL,kiiru.i.hin,kiiruØØ.i.hin,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} {Øh} {V} n
+KIIRU.PL.ILLsiin,kiiru.i.siin,kiiruØØ.i.siin,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} s i {iØ} n
+KIIRU.PL.ILLsiin,kiiruh.i.sin,kiiruhØ.i.siØn,k i i r u {ØØhtØhØh} {ØuuØuuØØ} {ij} s i {iØ} n
 ASKEL,askel,askelØ,a s k e l {ØeØeØ} 
-ASKEL GEN,askele.n,askele.n,a s k e l {ØeØeØ} n
-ASKEL PTV,askel.ta,askelØ.ta,a s k e l {ØeØeØ} {Øt} {aä}
-ASKEL ESS,askele.na,askele.na,a s k e l {ØeØeØ} {nrs} {aä}
-ASKEL ILL,askele.en,askele.Øen,a s k e l {ØeØeØ} {Øh} {V} n
-ASKEL ILL,askele.hen,askele.hen,a s k e l {ØeØeØ} {Øh} {V} n
-ASKEL PL INE,askel.i.ssa,askelØ.i.ssa,a s k e l {ØeØeØ} {ij} s s {aä}
-ASKEL PL GENien,askel.i.en,askelØ.i.en,a s k e l {ØeØeØ} {ij} e n
-ASKEL PLGENten,askel.ten,askelØ.ten,a s k e l {ØeØeØ} t e n
-ASKEL PL PTV,askel.i.a,askelØ.i.Øa,a s k e l {ØeØeØ} {ij} {Øt} {aä}
-ASKEL PL ILL,askel.i.in,askelØ.i.Øin,a s k e l {ØeØeØ} {ij} {Øh} {V} n
-ASKEL PL ILL,askel.i.hin,askelØ.i.hin,a s k e l {ØeØeØ} {ij} {Øh} {V} n
+ASKEL.GEN,askele.n,askele.n,a s k e l {ØeØeØ} n
+ASKEL.PTV,askel.ta,askelØ.ta,a s k e l {ØeØeØ} {Øt} {aä}
+ASKEL.ESS,askele.na,askele.na,a s k e l {ØeØeØ} {nrs} {aä}
+ASKEL.ILL,askele.en,askele.Øen,a s k e l {ØeØeØ} {Øh} {V} n
+ASKEL.ILL,askele.hen,askele.hen,a s k e l {ØeØeØ} {Øh} {V} n
+ASKEL.PL.INE,askel.i.ssa,askelØ.i.ssa,a s k e l {ØeØeØ} {ij} s s {aä}
+ASKEL.PL.GENien,askel.i.en,askelØ.i.en,a s k e l {ØeØeØ} {ij} e n
+ASKEL.PLGENten,askel.ten,askelØ.ten,a s k e l {ØeØeØ} t e n
+ASKEL.PL.PTV,askel.i.a,askelØ.i.Øa,a s k e l {ØeØeØ} {ij} {Øt} {aä}
+ASKEL.PL.ILL,askel.i.in,askelØ.i.Øin,a s k e l {ØeØeØ} {ij} {Øh} {V} n
+ASKEL.PL.ILL,askel.i.hin,askelØ.i.hin,a s k e l {ØeØeØ} {ij} {Øh} {V} n
 ASKELE,askele,askeleØØ,a s k e l e {ØhØtØØ} {ØeeØeØ} 
-ASKELE GEN,askelehe.n,askelehe.n,a s k e l e {ØhØtØØ} {ØeeØeØ} n
-ASKELE GEN,askelee.n,askeleØe.n,a s k e l e {ØhØtØØ} {ØeeØeØ} n
-ASKELE PTV,askelet.ta,askeletØ.ta,a s k e l e {ØhØtØØ} {ØeeØeØ} {Øt} {aä}
-ASKELE ESS,askelee.na,askeleØe.na,a s k e l e {ØhØtØØ} {ØeeØeØ} {nrs} {aä}
-ASKELE ILLseen,askelee.seen,askeleØe.seen,a s k e l e {ØhØtØØ} {ØeeØeØ} s e {Øe} n
-ASKELE PL INE,askele.i.ssa,askeleØØ.i.ssa,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} s s {aä}
-ASKELE PL GENiden,askele.i.den,askeleØØ.i.dØen,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} {dt} {Øt} e n
-ASKELE PL GENiden,askele.i.tten,askeleØØ.i.tten,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} {dt} {Øt} e n
-ASKELE PL PTV,askele.i.ta,askeleØØ.i.ta,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} {Øt} {aä}
-ASKELE PL ILL,askele.i.hin,askeleØØ.i.hin,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} {Øh} {V} n
-ASKELE PL ILLsiin,askele.i.siin,askeleØØ.i.siin,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} s i {iØ} n
+ASKELE.GEN,askelehe.n,askelehe.n,a s k e l e {ØhØtØØ} {ØeeØeØ} n
+ASKELE.GEN,askelee.n,askeleØe.n,a s k e l e {ØhØtØØ} {ØeeØeØ} n
+ASKELE.PTV,askelet.ta,askeletØ.ta,a s k e l e {ØhØtØØ} {ØeeØeØ} {Øt} {aä}
+ASKELE.ESS,askelee.na,askeleØe.na,a s k e l e {ØhØtØØ} {ØeeØeØ} {nrs} {aä}
+ASKELE.ILLseen,askelee.seen,askeleØe.seen,a s k e l e {ØhØtØØ} {ØeeØeØ} s e {Øe} n
+ASKELE.PL.INE,askele.i.ssa,askeleØØ.i.ssa,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} s s {aä}
+ASKELE.PL.GENiden,askele.i.den,askeleØØ.i.dØen,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} {dt} {Øt} e n
+ASKELE.PL.GENiden,askele.i.tten,askeleØØ.i.tten,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} {dt} {Øt} e n
+ASKELE.PL.PTV,askele.i.ta,askeleØØ.i.ta,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} {Øt} {aä}
+ASKELE.PL.ILL,askele.i.hin,askeleØØ.i.hin,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} {Øh} {V} n
+ASKELE.PL.ILLsiin,askele.i.siin,askeleØØ.i.siin,a s k e l e {ØhØtØØ} {ØeeØeØ} {ij} s i {iØ} n

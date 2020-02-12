@@ -1,1253 +1,1253 @@
 MORPHEMES,MORPHS,ZEROFILLED
 ARKKU,arkku,arkku
-ARKKU GEN,arku.n,arkØu.n
-ARKKU PTV,arkku.a,arkku.Øa
-ARKKU ESS,arkku.na,arkku.na
-ARKKU ILL,arkku.un,arkku.Øun
-ARKKU ILL,arkku.hun,arkku.hun
-ARKKU PL INE,arku.i.ssa,arkØu.i.ssa
-ARKKU PL GENien,arkku.j.en,arkku.j.en
-ARKKU GENin,arkku.in,arkku.in
-ARKKU PL PTV,arkku.j.a,arkku.j.Øa
-ARKKU PL ILL,arkku.i.hin,arkku.i.hin
+ARKKU.GEN,arku.n,arkØu.n
+ARKKU.PTV,arkku.a,arkku.Øa
+ARKKU.ESS,arkku.na,arkku.na
+ARKKU.ILL,arkku.un,arkku.Øun
+ARKKU.ILL,arkku.hun,arkku.hun
+ARKKU.PL.INE,arku.i.ssa,arkØu.i.ssa
+ARKKU.PL.GENien,arkku.j.en,arkku.j.en
+ARKKU.GENin,arkku.in,arkku.in
+ARKKU.PL.PTV,arkku.j.a,arkku.j.Øa
+ARKKU.PL.ILL,arkku.i.hin,arkku.i.hin
 PATO,pato,pato
-PATO GEN,pado.n,pado.n
-PATO PTV,pato.a,pato.Øa
-PATO ESS,pato.na,pato.na
-PATO ILL,pato.on,pato.Øon
-PATO ILL,pato.hon,pato.hon
-PATO PL INE,pado.i.ssa,pado.i.ssa
-PATO PL GENien,pato.j.en,pato.j.en
-PATO GENin,pato.in,pato.in
-PATO PL PTV,pato.j.a,pato.j.Øa
-PATO PL ILL,pato.i.hin,pato.i.hin
+PATO.GEN,pado.n,pado.n
+PATO.PTV,pato.a,pato.Øa
+PATO.ESS,pato.na,pato.na
+PATO.ILL,pato.on,pato.Øon
+PATO.ILL,pato.hon,pato.hon
+PATO.PL.INE,pado.i.ssa,pado.i.ssa
+PATO.PL.GENien,pato.j.en,pato.j.en
+PATO.GENin,pato.in,pato.in
+PATO.PL.PTV,pato.j.a,pato.j.Øa
+PATO.PL.ILL,pato.i.hin,pato.i.hin
 ARVELU,arvelu,arvelu
-ARVELU GEN,arvelu.n,arvelu.n
-ARVELU PTV,arvelu.a,arvelu.Øa
-ARVELU ESS,arvelu.na,arvelu.na
-ARVELU ILL,arvelu.un,arvelu.Øun
-ARVELU ILL,arvelu.hun,arvelu.hun
-ARVELU PL INE,arvelu.i.ssa,arvelu.i.ssa
-ARVELU PL GENiden,arvelu.i.den,arvelu.i.dØen
-ARVELU PL GENiden,arvelu.i.tten,arvelu.i.tten
-ARVELU PL GENien,arvelu.j.en,arvelu.j.en
-ARVELU GENin,arvelu.in,arvelu.in
-ARVELU PL PTV,arvelu.j.a,arvelu.j.Øa
-ARVELU PL PTV,arvelu.i.ta,arvelu.i.ta
-ARVELU PL ILL,arvelu.i.hin,arvelu.i.hin
+ARVELU.GEN,arvelu.n,arvelu.n
+ARVELU.PTV,arvelu.a,arvelu.Øa
+ARVELU.ESS,arvelu.na,arvelu.na
+ARVELU.ILL,arvelu.un,arvelu.Øun
+ARVELU.ILL,arvelu.hun,arvelu.hun
+ARVELU.PL.INE,arvelu.i.ssa,arvelu.i.ssa
+ARVELU.PL.GENiden,arvelu.i.den,arvelu.i.dØen
+ARVELU.PL.GENiden,arvelu.i.tten,arvelu.i.tten
+ARVELU.PL.GENien,arvelu.j.en,arvelu.j.en
+ARVELU.GENin,arvelu.in,arvelu.in
+ARVELU.PL.PTV,arvelu.j.a,arvelu.j.Øa
+ARVELU.PL.PTV,arvelu.i.ta,arvelu.i.ta
+ARVELU.PL.ILL,arvelu.i.hin,arvelu.i.hin
 ILMETTY,ilmetty,ilmetty
-ILMETTY GEN,ilmety.n,ilmetØy.n
-ILMETTY PTV,ilmetty.ä,ilmetty.Øä
-ILMETTY ESS,ilmetty.nä,ilmetty.nä
-ILMETTY ILL,ilmetty.yn,ilmetty.Øyn
-ILMETTY ILL,ilmetty.hyn,ilmetty.hyn
-ILMETTY PL INE,ilmety.i.ssä,ilmetØy.i.ssä
-ILMETTY PL GENiden,ilmety.i.den,ilmetØy.i.dØen
-ILMETTY PL GENiden,ilmety.i.tten,ilmetØy.i.tten
-ILMETTY PL GENien,ilmetty.j.en,ilmetty.j.en
-ILMETTY GENin,ilmetty.in,ilmetty.in
-ILMETTY PL PTV,ilmetty.j.ä,ilmetty.j.Øä
-ILMETTY PL PTV,ilmety.i.tä,ilmetØy.i.tä
-ILMETTY PL ILL,ilmetty.i.hin,ilmetty.i.hin
+ILMETTY.GEN,ilmety.n,ilmetØy.n
+ILMETTY.PTV,ilmetty.ä,ilmetty.Øä
+ILMETTY.ESS,ilmetty.nä,ilmetty.nä
+ILMETTY.ILL,ilmetty.yn,ilmetty.Øyn
+ILMETTY.ILL,ilmetty.hyn,ilmetty.hyn
+ILMETTY.PL.INE,ilmety.i.ssä,ilmetØy.i.ssä
+ILMETTY.PL.GENiden,ilmety.i.den,ilmetØy.i.dØen
+ILMETTY.PL.GENiden,ilmety.i.tten,ilmetØy.i.tten
+ILMETTY.PL.GENien,ilmetty.j.en,ilmetty.j.en
+ILMETTY.GENin,ilmetty.in,ilmetty.in
+ILMETTY.PL.PTV,ilmetty.j.ä,ilmetty.j.Øä
+ILMETTY.PL.PTV,ilmety.i.tä,ilmetØy.i.tä
+ILMETTY.PL.ILL,ilmetty.i.hin,ilmetty.i.hin
 SISÄKKÖ,sisäkkö,sisäkkö
-SISÄKKÖ GEN,sisäkö.n,sisäkØö.n
-SISÄKKÖ PTV,sisäkkö.ä,sisäkkö.Øä
-SISÄKKÖ ESS,sisäkkö.nä,sisäkkö.nä
-SISÄKKÖ ILL,sisäkkö.ön,sisäkkö.Øön
-SISÄKKÖ ILL,sisäkkö.hön,sisäkkö.hön
-SISÄKKÖ PL INE,sisäkö.i.ssä,sisäkØö.i.ssä
-SISÄKKÖ PL GENiden,sisäkö.i.den,sisäkØö.i.dØen
-SISÄKKÖ PL GENiden,sisäkö.i.tten,sisäkØö.i.tten
-SISÄKKÖ PL GENien,sisäkkö.j.en,sisäkkö.j.en
-SISÄKKÖ GENin,sisäkkö.in,sisäkkö.in
-SISÄKKÖ PL PTV,sisäkkö.j.ä,sisäkkö.j.Øä
-SISÄKKÖ PL PTV,sisäkö.i.tä,sisäkØö.i.tä
-SISÄKKÖ PL ILL,sisäkkö.i.hin,sisäkkö.i.hin
-SISÄKKÖ PL ILL,sisäkö.i.hin,sisäkØö.i.hin
+SISÄKKÖ.GEN,sisäkö.n,sisäkØö.n
+SISÄKKÖ.PTV,sisäkkö.ä,sisäkkö.Øä
+SISÄKKÖ.ESS,sisäkkö.nä,sisäkkö.nä
+SISÄKKÖ.ILL,sisäkkö.ön,sisäkkö.Øön
+SISÄKKÖ.ILL,sisäkkö.hön,sisäkkö.hön
+SISÄKKÖ.PL.INE,sisäkö.i.ssä,sisäkØö.i.ssä
+SISÄKKÖ.PL.GENiden,sisäkö.i.den,sisäkØö.i.dØen
+SISÄKKÖ.PL.GENiden,sisäkö.i.tten,sisäkØö.i.tten
+SISÄKKÖ.PL.GENien,sisäkkö.j.en,sisäkkö.j.en
+SISÄKKÖ.GENin,sisäkkö.in,sisäkkö.in
+SISÄKKÖ.PL.PTV,sisäkkö.j.ä,sisäkkö.j.Øä
+SISÄKKÖ.PL.PTV,sisäkö.i.tä,sisäkØö.i.tä
+SISÄKKÖ.PL.ILL,sisäkkö.i.hin,sisäkkö.i.hin
+SISÄKKÖ.PL.ILL,sisäkö.i.hin,sisäkØö.i.hin
 AUTIO,autio,autio
-AUTIO GEN,autio.n,autio.n
-AUTIO PTV,autio.ta,autio.ta
-AUTIO PTV,autio.a,autio.Øa
-AUTIO ESS,autio.na,autio.na
-AUTIO ILL,autio.on,autio.Øon
-AUTIO ILL,autio.hon,autio.hon
-AUTIO PL INE,autio.i.ssa,autio.i.ssa
-AUTIO PL GENiden,autio.i.den,autio.i.dØen
-AUTIO PL GENiden,autio.i.tten,autio.i.tten
-AUTIO GENin,autio.in,autio.in
-AUTIO PL PTV,autio.i.ta,autio.i.ta
-AUTIO PL ILL,autio.i.hin,autio.i.hin
+AUTIO.GEN,autio.n,autio.n
+AUTIO.PTV,autio.ta,autio.ta
+AUTIO.PTV,autio.a,autio.Øa
+AUTIO.ESS,autio.na,autio.na
+AUTIO.ILL,autio.on,autio.Øon
+AUTIO.ILL,autio.hon,autio.hon
+AUTIO.PL.INE,autio.i.ssa,autio.i.ssa
+AUTIO.PL.GENiden,autio.i.den,autio.i.dØen
+AUTIO.PL.GENiden,autio.i.tten,autio.i.tten
+AUTIO.GENin,autio.in,autio.in
+AUTIO.PL.PTV,autio.i.ta,autio.i.ta
+AUTIO.PL.ILL,autio.i.hin,autio.i.hin
 HEITTIÖ,heittiö,heittiö
-HEITTIÖ GEN,heittiö.n,heittiö.n
-HEITTIÖ PTV,heittiö.tä,heittiö.tä
-HEITTIÖ PTV,heittiö.ä,heittiö.Øä
-HEITTIÖ ESS,heittiö.nä,heittiö.nä
-HEITTIÖ ILL,heittiö.ön,heittiö.Øön
-HEITTIÖ ILL,heittiö.hön,heittiö.hön
-HEITTIÖ PL INE,heittiö.i.ssä,heittiö.i.ssä
-HEITTIÖ PL GENiden,heittiö.i.den,heittiö.i.dØen
-HEITTIÖ PL GENiden,heittiö.i.tten,heittiö.i.tten
-HEITTIÖ GENin,heittiö.in,heittiö.in
-HEITTIÖ PL PTV,heittiö.i.tä,heittiö.i.tä
-HEITTIÖ PL ILL,heittiö.i.hin,heittiö.i.hin
+HEITTIÖ.GEN,heittiö.n,heittiö.n
+HEITTIÖ.PTV,heittiö.tä,heittiö.tä
+HEITTIÖ.PTV,heittiö.ä,heittiö.Øä
+HEITTIÖ.ESS,heittiö.nä,heittiö.nä
+HEITTIÖ.ILL,heittiö.ön,heittiö.Øön
+HEITTIÖ.ILL,heittiö.hön,heittiö.hön
+HEITTIÖ.PL.INE,heittiö.i.ssä,heittiö.i.ssä
+HEITTIÖ.PL.GENiden,heittiö.i.den,heittiö.i.dØen
+HEITTIÖ.PL.GENiden,heittiö.i.tten,heittiö.i.tten
+HEITTIÖ.GENin,heittiö.in,heittiö.in
+HEITTIÖ.PL.PTV,heittiö.i.tä,heittiö.i.tä
+HEITTIÖ.PL.ILL,heittiö.i.hin,heittiö.i.hin
 VATI,vati,vati
-VATI GEN,vadi.n,vadi.n
-VATI PTV,vati.a,vati.Øa
-VATI ESS,vati.na,vati.na
-VATI ILL,vati.in,vati.Øin
-VATI ILL,vati.hin,vati.hin
-VATI PL INE,vade.i.ssa,vade.i.ssa
-VATI PL GENien,vat.i.en,vatØ.i.en
-VATI GENin,vate.in,vate.in
-VATI PL PTV,vate.j.a,vate.j.Øa
-VATI PL ILL,vate.i.hin,vate.i.hin
+VATI.GEN,vadi.n,vadi.n
+VATI.PTV,vati.a,vati.Øa
+VATI.ESS,vati.na,vati.na
+VATI.ILL,vati.in,vati.Øin
+VATI.ILL,vati.hin,vati.hin
+VATI.PL.INE,vade.i.ssa,vade.i.ssa
+VATI.PL.GENien,vat.i.en,vatØ.i.en
+VATI.GENin,vate.in,vate.in
+VATI.PL.PTV,vate.j.a,vate.j.Øa
+VATI.PL.ILL,vate.i.hin,vate.i.hin
 PATTI,patti,patti
-PATTI GEN,pati.n,patØi.n
-PATTI PTV,patti.a,patti.Øa
-PATTI ESS,patti.na,patti.na
-PATTI ILL,patti.in,patti.Øin
-PATTI ILL,patti.hin,patti.hin
-PATTI PL INE,pate.i.ssa,patØe.i.ssa
-PATTI PL GENien,patt.i.en,pattØ.i.en
-PATTI GENin,patte.in,patte.in
-PATTI PL PTV,patte.j.a,patte.j.Øa
-PATTI PL ILL,patte.i.hin,patte.i.hin
+PATTI.GEN,pati.n,patØi.n
+PATTI.PTV,patti.a,patti.Øa
+PATTI.ESS,patti.na,patti.na
+PATTI.ILL,patti.in,patti.Øin
+PATTI.ILL,patti.hin,patti.hin
+PATTI.PL.INE,pate.i.ssa,patØe.i.ssa
+PATTI.PL.GENien,patt.i.en,pattØ.i.en
+PATTI.GENin,patte.in,patte.in
+PATTI.PL.PTV,patte.j.a,patte.j.Øa
+PATTI.PL.ILL,patte.i.hin,patte.i.hin
 PAPERI,paperi,paperi
-PAPERI GEN,paperi.n,paperi.n
-PAPERI PTV,paperi.a,paperi.Øa
-PAPERI ESS,paperi.na,paperi.na
-PAPERI ILL,paperi.in,paperi.Øin
-PAPERI ILL,paperi.hin,paperi.hin
-PAPERI PL INE,papere.i.ssa,papere.i.ssa
-PAPERI PL GENiden,papere.i.den,papere.i.dØen
-PAPERI PL GENiden,papere.i.tten,papere.i.tten
-PAPERI PL GENien,paper.i.en,paperØ.i.en
-PAPERI GENin,papere.in,papere.in
-PAPERI PL PTV,papere.j.a,papere.j.Øa
-PAPERI PL PTV,papere.i.ta,papere.i.ta
-PAPERI PL ILL,papere.i.hin,papere.i.hin
+PAPERI.GEN,paperi.n,paperi.n
+PAPERI.PTV,paperi.a,paperi.Øa
+PAPERI.ESS,paperi.na,paperi.na
+PAPERI.ILL,paperi.in,paperi.Øin
+PAPERI.ILL,paperi.hin,paperi.hin
+PAPERI.PL.INE,papere.i.ssa,papere.i.ssa
+PAPERI.PL.GENiden,papere.i.den,papere.i.dØen
+PAPERI.PL.GENiden,papere.i.tten,papere.i.tten
+PAPERI.PL.GENien,paper.i.en,paperØ.i.en
+PAPERI.GENin,papere.in,papere.in
+PAPERI.PL.PTV,papere.j.a,papere.j.Øa
+PAPERI.PL.PTV,papere.i.ta,papere.i.ta
+PAPERI.PL.ILL,papere.i.hin,papere.i.hin
 BANAALI,banaali,banaali
-BANAALI GEN,banaali.n,banaali.n
-BANAALI PTV,banaali.a,banaali.Øa
-BANAALI ESS,banaali.na,banaali.na
-BANAALI ILL,banaali.in,banaali.Øin
-BANAALI ILL,banaali.hin,banaali.hin
-BANAALI PL INE,banaale.i.ssa,banaale.i.ssa
-BANAALI PL GENiden,banaale.i.den,banaale.i.dØen
-BANAALI PL GENiden,banaale.i.tten,banaale.i.tten
-BANAALI PL GENien,banaal.i.en,banaalØ.i.en
-BANAALI GENin,banaale.in,banaale.in
-BANAALI PL PTV,banaale.j.a,banaale.j.Øa
-BANAALI PL PTV,banaale.i.ta,banaale.i.ta
-BANAALI PL ILL,banaale.i.hin,banaale.i.hin
+BANAALI.GEN,banaali.n,banaali.n
+BANAALI.PTV,banaali.a,banaali.Øa
+BANAALI.ESS,banaali.na,banaali.na
+BANAALI.ILL,banaali.in,banaali.Øin
+BANAALI.ILL,banaali.hin,banaali.hin
+BANAALI.PL.INE,banaale.i.ssa,banaale.i.ssa
+BANAALI.PL.GENiden,banaale.i.den,banaale.i.dØen
+BANAALI.PL.GENiden,banaale.i.tten,banaale.i.tten
+BANAALI.PL.GENien,banaal.i.en,banaalØ.i.en
+BANAALI.GENin,banaale.in,banaale.in
+BANAALI.PL.PTV,banaale.j.a,banaale.j.Øa
+BANAALI.PL.PTV,banaale.i.ta,banaale.i.ta
+BANAALI.PL.ILL,banaale.i.hin,banaale.i.hin
 KALSIUM,kalsium,kalsiumØ
-KALSIUM GEN,kalsiumi.n,kalsiumi.n
-KALSIUM PTV,kalsiumi.a,kalsiumi.Øa
-KALSIUM ESS,kalsiumi.na,kalsiumi.na
-KALSIUM ILL,kalsiumi.in,kalsiumi.Øin
-KALSIUM ILL,kalsiumi.hin,kalsiumi.hin
-KALSIUM PL INE,kalsiume.i.ssa,kalsiume.i.ssa
-KALSIUM PL GENien,kalsium.i.en,kalsiumØ.i.en
-KALSIUM GENin,kalsiume.in,kalsiume.in
-KALSIUM PL PTV,kalsiume.j.a,kalsiume.j.Øa
-KALSIUM PL ILL,kalsiume.i.hin,kalsiume.i.hin
+KALSIUM.GEN,kalsiumi.n,kalsiumi.n
+KALSIUM.PTV,kalsiumi.a,kalsiumi.Øa
+KALSIUM.ESS,kalsiumi.na,kalsiumi.na
+KALSIUM.ILL,kalsiumi.in,kalsiumi.Øin
+KALSIUM.ILL,kalsiumi.hin,kalsiumi.hin
+KALSIUM.PL.INE,kalsiume.i.ssa,kalsiume.i.ssa
+KALSIUM.PL.GENien,kalsium.i.en,kalsiumØ.i.en
+KALSIUM.GENin,kalsiume.in,kalsiume.in
+KALSIUM.PL.PTV,kalsiume.j.a,kalsiume.j.Øa
+KALSIUM.PL.ILL,kalsiume.i.hin,kalsiume.i.hin
 TUPPI,tuppi,tuppi
-TUPPI GEN,tupe.n,tupØe.n
-TUPPI PTV,tuppe.a,tuppe.Øa
-TUPPI ESS,tuppe.na,tuppe.na
-TUPPI ILL,tuppe.en,tuppe.Øen
-TUPPI ILL,tuppe.hen,tuppe.hen
-TUPPI PL INE,tup.i.ssa,tupØØ.i.ssa
-TUPPI PL GENien,tupp.i.en,tuppØ.i.en
-TUPPI GENin,tuppe.in,tuppe.in
-TUPPI PL PTV,tupp.i.a,tuppØ.i.Øa
-TUPPI PL ILL,tupp.i.in,tuppØ.i.Øin
-TUPPI PL ILL,tupp.i.hin,tuppØ.i.hin
+TUPPI.GEN,tupe.n,tupØe.n
+TUPPI.PTV,tuppe.a,tuppe.Øa
+TUPPI.ESS,tuppe.na,tuppe.na
+TUPPI.ILL,tuppe.en,tuppe.Øen
+TUPPI.ILL,tuppe.hen,tuppe.hen
+TUPPI.PL.INE,tup.i.ssa,tupØØ.i.ssa
+TUPPI.PL.GENien,tupp.i.en,tuppØ.i.en
+TUPPI.GENin,tuppe.in,tuppe.in
+TUPPI.PL.PTV,tupp.i.a,tuppØ.i.Øa
+TUPPI.PL.ILL,tupp.i.in,tuppØ.i.Øin
+TUPPI.PL.ILL,tupp.i.hin,tuppØ.i.hin
 NALLE,nalle,nalle
-NALLE GEN,nalle.n,nalle.n
-NALLE PTV,nalle.a,nalle.Øa
-NALLE ESS,nalle.na,nalle.na
-NALLE ILL,nalle.en,nalle.Øen
-NALLE ILL,nalle.hen,nalle.hen
-NALLE PL INE,nalle.i.ssa,nalle.i.ssa
-NALLE PL GENien,nalle.j.en,nalle.j.en
-NALLE GENin,nalle.in,nalle.in
-NALLE PL PTV,nalle.j.a,nalle.j.Øa
-NALLE PL ILL,nalle.i.hin,nalle.i.hin
+NALLE.GEN,nalle.n,nalle.n
+NALLE.PTV,nalle.a,nalle.Øa
+NALLE.ESS,nalle.na,nalle.na
+NALLE.ILL,nalle.en,nalle.Øen
+NALLE.ILL,nalle.hen,nalle.hen
+NALLE.PL.INE,nalle.i.ssa,nalle.i.ssa
+NALLE.PL.GENien,nalle.j.en,nalle.j.en
+NALLE.GENin,nalle.in,nalle.in
+NALLE.PL.PTV,nalle.j.a,nalle.j.Øa
+NALLE.PL.ILL,nalle.i.hin,nalle.i.hin
 KALA,kala,kala
-KALA GEN,kala.n,kala.n
-KALA PTV,kala.a,kala.Øa
-KALA ESS,kala.na,kala.na
-KALA ILL,kala.an,kala.Øan
-KALA ILL,kala.han,kala.han
-KALA PL INE,kalo.i.ssa,kalo.i.ssa
-KALA PL GENien,kalo.j.en,kalo.j.en
-KALA GENin,kala.in,kala.in
-KALA PL PTV,kalo.j.a,kalo.j.Øa
-KALA PL ILL,kalo.i.hin,kalo.i.hin
+KALA.GEN,kala.n,kala.n
+KALA.PTV,kala.a,kala.Øa
+KALA.ESS,kala.na,kala.na
+KALA.ILL,kala.an,kala.Øan
+KALA.ILL,kala.han,kala.han
+KALA.PL.INE,kalo.i.ssa,kalo.i.ssa
+KALA.PL.GENien,kalo.j.en,kalo.j.en
+KALA.GENin,kala.in,kala.in
+KALA.PL.PTV,kalo.j.a,kalo.j.Øa
+KALA.PL.ILL,kalo.i.hin,kalo.i.hin
 KOIRA,koira,koira
-KOIRA GEN,koira.n,koira.n
-KOIRA PTV,koira.a,koira.Øa
-KOIRA ESS,koira.na,koira.na
-KOIRA ILL,koira.an,koira.Øan
-KOIRA ILL,koira.han,koira.han
-KOIRA PL INE,koir.i.ssa,koirØ.i.ssa
-KOIRA PL GENien,koir.i.en,koirØ.i.en
-KOIRA GENin,koira.in,koira.in
-KOIRA PL PTV,koir.i.a,koirØ.i.Øa
-KOIRA PL ILL,koir.i.in,koirØ.i.Øin
-KOIRA PL ILL,koir.i.hin,koirØ.i.hin
+KOIRA.GEN,koira.n,koira.n
+KOIRA.PTV,koira.a,koira.Øa
+KOIRA.ESS,koira.na,koira.na
+KOIRA.ILL,koira.an,koira.Øan
+KOIRA.ILL,koira.han,koira.han
+KOIRA.PL.INE,koir.i.ssa,koirØ.i.ssa
+KOIRA.PL.GENien,koir.i.en,koirØ.i.en
+KOIRA.GENin,koira.in,koira.in
+KOIRA.PL.PTV,koir.i.a,koirØ.i.Øa
+KOIRA.PL.ILL,koir.i.in,koirØ.i.Øin
+KOIRA.PL.ILL,koir.i.hin,koirØ.i.hin
 MATALA,matala,matala
-MATALA GEN,matala.n,matala.n
-MATALA PTV,matala.a,matala.Øa
-MATALA PTV,matala.ta,matala.ta
-MATALA ESS,matala.na,matala.na
-MATALA ILL,matala.an,matala.Øan
-MATALA ILL,matala.han,matala.han
-MATALA PL INE,matal.i.ssa,matalØ.i.ssa
-MATALA PL INE,matalo.i.ssa,matalo.i.ssa
-MATALA PL GENiden,matalo.i.den,matalo.i.dØen
-MATALA PL GENiden,matalo.i.tten,matalo.i.tten
-MATALA PL GENien,matal.i.en,matalØ.i.en
-MATALA PL GENien,matalo.j.en,matalo.j.en
-MATALA GENin,matala.in,matala.in
-MATALA PL PTV,matal.i.a,matalØ.i.Øa
-MATALA PL PTV,matalo.i.ta,matalo.i.ta
-MATALA PL ILL,matal.i.in,matalØ.i.Øin
-MATALA PL ILL,matalo.i.hin,matalo.i.hin
-MATALA PL ILL,matal.i.hin,matalØ.i.hin
+MATALA.GEN,matala.n,matala.n
+MATALA.PTV,matala.a,matala.Øa
+MATALA.PTV,matala.ta,matala.ta
+MATALA.ESS,matala.na,matala.na
+MATALA.ILL,matala.an,matala.Øan
+MATALA.ILL,matala.han,matala.han
+MATALA.PL.INE,matal.i.ssa,matalØ.i.ssa
+MATALA.PL.INE,matalo.i.ssa,matalo.i.ssa
+MATALA.PL.GENiden,matalo.i.den,matalo.i.dØen
+MATALA.PL.GENiden,matalo.i.tten,matalo.i.tten
+MATALA.PL.GENien,matal.i.en,matalØ.i.en
+MATALA.PL.GENien,matalo.j.en,matalo.j.en
+MATALA.GENin,matala.in,matala.in
+MATALA.PL.PTV,matal.i.a,matalØ.i.Øa
+MATALA.PL.PTV,matalo.i.ta,matalo.i.ta
+MATALA.PL.ILL,matal.i.in,matalØ.i.Øin
+MATALA.PL.ILL,matalo.i.hin,matalo.i.hin
+MATALA.PL.ILL,matal.i.hin,matalØ.i.hin
 ASEMA,asema,asema
-ASEMA GEN,asema.n,asema.n
-ASEMA PTV,asema.a,asema.Øa
-ASEMA PTV,asema.ta,asema.ta
-ASEMA ESS,asema.na,asema.na
-ASEMA ILL,asema.an,asema.Øan
-ASEMA ILL,asema.han,asema.han
-ASEMA PL INE,asem.i.ssa,asemØ.i.ssa
-ASEMA PL GENien,asem.i.en,asemØ.i.en
-ASEMA GENin,asema.in,asema.in
-ASEMA PL PTV,asem.i.a,asemØ.i.Øa
-ASEMA PL ILL,asem.i.in,asemØ.i.Øin
-ASEMA PL ILL,asem.i.hin,asemØ.i.hin
+ASEMA.GEN,asema.n,asema.n
+ASEMA.PTV,asema.a,asema.Øa
+ASEMA.PTV,asema.ta,asema.ta
+ASEMA.ESS,asema.na,asema.na
+ASEMA.ILL,asema.an,asema.Øan
+ASEMA.ILL,asema.han,asema.han
+ASEMA.PL.INE,asem.i.ssa,asemØ.i.ssa
+ASEMA.PL.GENien,asem.i.en,asemØ.i.en
+ASEMA.GENin,asema.in,asema.in
+ASEMA.PL.PTV,asem.i.a,asemØ.i.Øa
+ASEMA.PL.ILL,asem.i.in,asemØ.i.Øin
+ASEMA.PL.ILL,asem.i.hin,asemØ.i.hin
 KULKIJA,kulkija,kulkija
-KULKIJA GEN,kulkija.n,kulkija.n
-KULKIJA PTV,kulkija.a,kulkija.Øa
-KULKIJA PTV,kulkija.ta,kulkija.ta
-KULKIJA ESS,kulkija.na,kulkija.na
-KULKIJA ILL,kulkija.an,kulkija.Øan
-KULKIJA ILL,kulkija.han,kulkija.han
-KULKIJA PL INE,kulkijo.i.ssa,kulkijo.i.ssa
-KULKIJA PL GENiden,kulkijo.i.den,kulkijo.i.dØen
-KULKIJA PL GENiden,kulkijo.i.tten,kulkijo.i.tten
-KULKIJA GENin,kulkija.in,kulkija.in
-KULKIJA PL PTV,kulkijo.i.ta,kulkijo.i.ta
-KULKIJA PL ILL,kulkijo.i.hin,kulkijo.i.hin
+KULKIJA.GEN,kulkija.n,kulkija.n
+KULKIJA.PTV,kulkija.a,kulkija.Øa
+KULKIJA.PTV,kulkija.ta,kulkija.ta
+KULKIJA.ESS,kulkija.na,kulkija.na
+KULKIJA.ILL,kulkija.an,kulkija.Øan
+KULKIJA.ILL,kulkija.han,kulkija.han
+KULKIJA.PL.INE,kulkijo.i.ssa,kulkijo.i.ssa
+KULKIJA.PL.GENiden,kulkijo.i.den,kulkijo.i.dØen
+KULKIJA.PL.GENiden,kulkijo.i.tten,kulkijo.i.tten
+KULKIJA.GENin,kulkija.in,kulkija.in
+KULKIJA.PL.PTV,kulkijo.i.ta,kulkijo.i.ta
+KULKIJA.PL.ILL,kulkijo.i.hin,kulkijo.i.hin
 MANSIKKA,mansikka,mansikka
-MANSIKKA GEN,mansika.n,mansikØa.n
-MANSIKKA PTV,mansikka.a,mansikka.Øa
-MANSIKKA PTV,mansikka.ta,mansikka.ta
-MANSIKKA ESS,mansikka.na,mansikka.na
-MANSIKKA ILL,mansikka.an,mansikka.Øan
-MANSIKKA ILL,mansikka.han,mansikka.han
-MANSIKKA PL INE,mansiko.i.ssa,mansikØo.i.ssa
-MANSIKKA PL GENiden,mansiko.i.den,mansikØo.i.dØen
-MANSIKKA PL GENiden,mansiko.i.tten,mansikØo.i.tten
-MANSIKKA PL GENien,mansikko.j.en,mansikko.j.en
-MANSIKKA GENin,mansikka.in,mansikka.in
-MANSIKKA PL PTV,mansiko.i.ta,mansikØo.i.ta
-MANSIKKA PL PTV,mansikko.j.a,mansikko.j.Øa
-MANSIKKA PL ILL,mansikko.i.hin,mansikko.i.hin
-MANSIKKA PL ILL,mansiko.i.hin,mansikØo.i.hin
+MANSIKKA.GEN,mansika.n,mansikØa.n
+MANSIKKA.PTV,mansikka.a,mansikka.Øa
+MANSIKKA.PTV,mansikka.ta,mansikka.ta
+MANSIKKA.ESS,mansikka.na,mansikka.na
+MANSIKKA.ILL,mansikka.an,mansikka.Øan
+MANSIKKA.ILL,mansikka.han,mansikka.han
+MANSIKKA.PL.INE,mansiko.i.ssa,mansikØo.i.ssa
+MANSIKKA.PL.GENiden,mansiko.i.den,mansikØo.i.dØen
+MANSIKKA.PL.GENiden,mansiko.i.tten,mansikØo.i.tten
+MANSIKKA.PL.GENien,mansikko.j.en,mansikko.j.en
+MANSIKKA.GENin,mansikka.in,mansikka.in
+MANSIKKA.PL.PTV,mansiko.i.ta,mansikØo.i.ta
+MANSIKKA.PL.PTV,mansikko.j.a,mansikko.j.Øa
+MANSIKKA.PL.ILL,mansikko.i.hin,mansikko.i.hin
+MANSIKKA.PL.ILL,mansiko.i.hin,mansikØo.i.hin
 HARAKKA,harakka,harakka
-HARAKKA GEN,haraka.n,harakØa.n
-HARAKKA PTV,harakka.a,harakka.Øa
-HARAKKA PTV,harakka.ta,harakka.ta
-HARAKKA ESS,harakka.na,harakka.na
-HARAKKA ILL,harakka.an,harakka.Øan
-HARAKKA ILL,harakka.han,harakka.han
-HARAKKA PL INE,harako.i.ssa,harakØo.i.ssa
-HARAKKA PL GENiden,harako.i.den,harakØo.i.dØen
-HARAKKA PL GENiden,harako.i.tten,harakØo.i.tten
-HARAKKA PL GENien,harakko.j.en,harakko.j.en
-HARAKKA GENin,harakka.in,harakka.in
-HARAKKA PL PTV,harako.i.ta,harakØo.i.ta
-HARAKKA PL PTV,harakko.j.a,harakko.j.Øa
-HARAKKA PL ILL,harakko.i.hin,harakko.i.hin
-HARAKKA PL ILL,harako.i.hin,harakØo.i.hin
+HARAKKA.GEN,haraka.n,harakØa.n
+HARAKKA.PTV,harakka.a,harakka.Øa
+HARAKKA.PTV,harakka.ta,harakka.ta
+HARAKKA.ESS,harakka.na,harakka.na
+HARAKKA.ILL,harakka.an,harakka.Øan
+HARAKKA.ILL,harakka.han,harakka.han
+HARAKKA.PL.INE,harako.i.ssa,harakØo.i.ssa
+HARAKKA.PL.GENiden,harako.i.den,harakØo.i.dØen
+HARAKKA.PL.GENiden,harako.i.tten,harakØo.i.tten
+HARAKKA.PL.GENien,harakko.j.en,harakko.j.en
+HARAKKA.GENin,harakka.in,harakka.in
+HARAKKA.PL.PTV,harako.i.ta,harakØo.i.ta
+HARAKKA.PL.PTV,harakko.j.a,harakko.j.Øa
+HARAKKA.PL.ILL,harakko.i.hin,harakko.i.hin
+HARAKKA.PL.ILL,harako.i.hin,harakØo.i.hin
 KANTAJA,kantaja,kantaja
-KANTAJA GEN,kantaja.n,kantaja.n
-KANTAJA PTV,kantaja.a,kantaja.Øa
-KANTAJA PTV,kantaja.ta,kantaja.ta
-KANTAJA ESS,kantaja.na,kantaja.na
-KANTAJA ILL,kantaja.an,kantaja.Øan
-KANTAJA ILL,kantaja.han,kantaja.han
-KANTAJA PL INE,kantaj.i.ssa,kantajØ.i.ssa
-KANTAJA PL INE,kantajo.i.ssa,kantajo.i.ssa
-KANTAJA PL GENiden,kantajo.i.den,kantajo.i.dØen
-KANTAJA PL GENiden,kantajo.i.tten,kantajo.i.tten
-KANTAJA PL GENien,kantaj.i.en,kantajØ.i.en
-KANTAJA GENin,kantaja.in,kantaja.in
-KANTAJA PL PTV,kantaj.i.a,kantajØ.i.Øa
-KANTAJA PL PTV,kantajo.i.ta,kantajo.i.ta
-KANTAJA PL ILL,kantaj.i.in,kantajØ.i.Øin
-KANTAJA PL ILL,kantajo.i.hin,kantajo.i.hin
-KANTAJA PL ILL,kantaj.i.hin,kantajØ.i.hin
+KANTAJA.GEN,kantaja.n,kantaja.n
+KANTAJA.PTV,kantaja.a,kantaja.Øa
+KANTAJA.PTV,kantaja.ta,kantaja.ta
+KANTAJA.ESS,kantaja.na,kantaja.na
+KANTAJA.ILL,kantaja.an,kantaja.Øan
+KANTAJA.ILL,kantaja.han,kantaja.han
+KANTAJA.PL.INE,kantaj.i.ssa,kantajØ.i.ssa
+KANTAJA.PL.INE,kantajo.i.ssa,kantajo.i.ssa
+KANTAJA.PL.GENiden,kantajo.i.den,kantajo.i.dØen
+KANTAJA.PL.GENiden,kantajo.i.tten,kantajo.i.tten
+KANTAJA.PL.GENien,kantaj.i.en,kantajØ.i.en
+KANTAJA.GENin,kantaja.in,kantaja.in
+KANTAJA.PL.PTV,kantaj.i.a,kantajØ.i.Øa
+KANTAJA.PL.PTV,kantajo.i.ta,kantajo.i.ta
+KANTAJA.PL.ILL,kantaj.i.in,kantajØ.i.Øin
+KANTAJA.PL.ILL,kantajo.i.hin,kantajo.i.hin
+KANTAJA.PL.ILL,kantaj.i.hin,kantajØ.i.hin
 PERUNA,peruna,peruna
-PERUNA GEN,peruna.n,peruna.n
-PERUNA PTV,peruna.a,peruna.Øa
-PERUNA PTV,peruna.ta,peruna.ta
-PERUNA ESS,peruna.na,peruna.na
-PERUNA ILL,peruna.an,peruna.Øan
-PERUNA ILL,peruna.han,peruna.han
-PERUNA PL INE,peruno.i.ssa,peruno.i.ssa
-PERUNA PL INE,perun.i.ssa,perunØ.i.ssa
-PERUNA PL GENiden,peruno.i.den,peruno.i.dØen
-PERUNA PL GENiden,peruno.i.tten,peruno.i.tten
-PERUNA PL GENien,perun.i.en,perunØ.i.en
-PERUNA PL GENien,peruno.j.en,peruno.j.en
-PERUNA GENin,peruna.in,peruna.in
-PERUNA PL PTV,peruno.i.ta,peruno.i.ta
-PERUNA PL PTV,perun.i.a,perunØ.i.Øa
-PERUNA PL PTV,peruno.j.a,peruno.j.Øa
-PERUNA PL ILL,peruno.i.hin,peruno.i.hin
-PERUNA PL ILL,perun.i.in,perunØ.i.Øin
-PERUNA PL ILL,perun.i.hin,perunØ.i.hin
+PERUNA.GEN,peruna.n,peruna.n
+PERUNA.PTV,peruna.a,peruna.Øa
+PERUNA.PTV,peruna.ta,peruna.ta
+PERUNA.ESS,peruna.na,peruna.na
+PERUNA.ILL,peruna.an,peruna.Øan
+PERUNA.ILL,peruna.han,peruna.han
+PERUNA.PL.INE,peruno.i.ssa,peruno.i.ssa
+PERUNA.PL.INE,perun.i.ssa,perunØ.i.ssa
+PERUNA.PL.GENiden,peruno.i.den,peruno.i.dØen
+PERUNA.PL.GENiden,peruno.i.tten,peruno.i.tten
+PERUNA.PL.GENien,perun.i.en,perunØ.i.en
+PERUNA.PL.GENien,peruno.j.en,peruno.j.en
+PERUNA.GENin,peruna.in,peruna.in
+PERUNA.PL.PTV,peruno.i.ta,peruno.i.ta
+PERUNA.PL.PTV,perun.i.a,perunØ.i.Øa
+PERUNA.PL.PTV,peruno.j.a,peruno.j.Øa
+PERUNA.PL.ILL,peruno.i.hin,peruno.i.hin
+PERUNA.PL.ILL,perun.i.in,perunØ.i.Øin
+PERUNA.PL.ILL,perun.i.hin,perunØ.i.hin
 PASUUNA,pasuuna,pasuuna
-PASUUNA GEN,pasuuna.n,pasuuna.n
-PASUUNA PTV,pasuuna.a,pasuuna.Øa
-PASUUNA PTV,pasuuna.ta,pasuuna.ta
-PASUUNA ESS,pasuuna.na,pasuuna.na
-PASUUNA ILL,pasuuna.an,pasuuna.Øan
-PASUUNA ILL,pasuuna.han,pasuuna.han
-PASUUNA PL INE,pasuuno.i.ssa,pasuuno.i.ssa
-PASUUNA PL INE,pasuun.i.ssa,pasuunØ.i.ssa
-PASUUNA PL GENiden,pasuuno.i.den,pasuuno.i.dØen
-PASUUNA PL GENiden,pasuuno.i.tten,pasuuno.i.tten
-PASUUNA PL GENien,pasuuno.j.en,pasuuno.j.en
-PASUUNA PL GENien,pasuun.i.en,pasuunØ.i.en
-PASUUNA GENin,pasuuna.in,pasuuna.in
-PASUUNA PL PTV,pasuuno.i.ta,pasuuno.i.ta
-PASUUNA PL PTV,pasuuno.j.a,pasuuno.j.Øa
-PASUUNA PL PTV,pasuun.i.a,pasuunØ.i.Øa
-PASUUNA PL ILL,pasuuno.i.hin,pasuuno.i.hin
-PASUUNA PL ILL,pasuun.i.in,pasuunØ.i.Øin
-PASUUNA PL ILL,pasuun.i.hin,pasuunØ.i.hin
+PASUUNA.GEN,pasuuna.n,pasuuna.n
+PASUUNA.PTV,pasuuna.a,pasuuna.Øa
+PASUUNA.PTV,pasuuna.ta,pasuuna.ta
+PASUUNA.ESS,pasuuna.na,pasuuna.na
+PASUUNA.ILL,pasuuna.an,pasuuna.Øan
+PASUUNA.ILL,pasuuna.han,pasuuna.han
+PASUUNA.PL.INE,pasuuno.i.ssa,pasuuno.i.ssa
+PASUUNA.PL.INE,pasuun.i.ssa,pasuunØ.i.ssa
+PASUUNA.PL.GENiden,pasuuno.i.den,pasuuno.i.dØen
+PASUUNA.PL.GENiden,pasuuno.i.tten,pasuuno.i.tten
+PASUUNA.PL.GENien,pasuuno.j.en,pasuuno.j.en
+PASUUNA.PL.GENien,pasuun.i.en,pasuunØ.i.en
+PASUUNA.GENin,pasuuna.in,pasuuna.in
+PASUUNA.PL.PTV,pasuuno.i.ta,pasuuno.i.ta
+PASUUNA.PL.PTV,pasuuno.j.a,pasuuno.j.Øa
+PASUUNA.PL.PTV,pasuun.i.a,pasuunØ.i.Øa
+PASUUNA.PL.ILL,pasuuno.i.hin,pasuuno.i.hin
+PASUUNA.PL.ILL,pasuun.i.in,pasuunØ.i.Øin
+PASUUNA.PL.ILL,pasuun.i.hin,pasuunØ.i.hin
 AINOA,ainoa,ainoa
-AINOA GEN,ainoa.n,ainoa.n
-AINOA PTV,ainoa.a,ainoa.Øa
-AINOA PTV,ainoa.ta,ainoa.ta
-AINOA ESS,ainoa.na,ainoa.na
-AINOA ILL,ainoa.an,ainoa.Øan
-AINOA ILL,ainoa.han,ainoa.han
-AINOA PL INE,aino.i.ssa,ainoØ.i.ssa
-AINOA PL GENiden,aino.i.den,ainoØ.i.dØen
-AINOA PL GENiden,aino.i.tten,ainoØ.i.tten
-AINOA GENin,ainoa.in,ainoa.in
-AINOA PL PTV,aino.i.ta,ainoØ.i.ta
-AINOA PL ILL,aino.i.hin,ainoØ.i.hin
-AINOA PL ILLsiin,aino.i.siin,ainoØ.i.siin
+AINOA.GEN,ainoa.n,ainoa.n
+AINOA.PTV,ainoa.a,ainoa.Øa
+AINOA.PTV,ainoa.ta,ainoa.ta
+AINOA.ESS,ainoa.na,ainoa.na
+AINOA.ILL,ainoa.an,ainoa.Øan
+AINOA.ILL,ainoa.han,ainoa.han
+AINOA.PL.INE,aino.i.ssa,ainoØ.i.ssa
+AINOA.PL.GENiden,aino.i.den,ainoØ.i.dØen
+AINOA.PL.GENiden,aino.i.tten,ainoØ.i.tten
+AINOA.GENin,ainoa.in,ainoa.in
+AINOA.PL.PTV,aino.i.ta,ainoØ.i.ta
+AINOA.PL.ILL,aino.i.hin,ainoØ.i.hin
+AINOA.PL.ILLsiin,aino.i.siin,ainoØ.i.siin
 AINOO,ainoo,ainoo
-AINOO GEN,ainoo.n,ainoo.n
-AINOO PTV,ainoo.ta,ainoo.ta
-AINOO ESS,ainoo.na,ainoo.na
-AINOO ILLseen,ainoo.seen,ainoo.seen
-AINOO PL INE,aino.i.ssa,ainoØ.i.ssa
-AINOO PL GENiden,aino.i.den,ainoØ.i.dØen
-AINOO PL GENiden,aino.i.tten,ainoØ.i.tten
-AINOO PL PTV,aino.i.ta,ainoØ.i.ta
-AINOO PL ILL,aino.i.hin,ainoØ.i.hin
-AINOO PL ILLsiin,aino.i.siin,ainoØ.i.siin
+AINOO.GEN,ainoo.n,ainoo.n
+AINOO.PTV,ainoo.ta,ainoo.ta
+AINOO.ESS,ainoo.na,ainoo.na
+AINOO.ILLseen,ainoo.seen,ainoo.seen
+AINOO.PL.INE,aino.i.ssa,ainoØ.i.ssa
+AINOO.PL.GENiden,aino.i.den,ainoØ.i.dØen
+AINOO.PL.GENiden,aino.i.tten,ainoØ.i.tten
+AINOO.PL.PTV,aino.i.ta,ainoØ.i.ta
+AINOO.PL.ILL,aino.i.hin,ainoØ.i.hin
+AINOO.PL.ILLsiin,aino.i.siin,ainoØ.i.siin
 HERTTUA,herttua,herttua
-HERTTUA GEN,herttua.n,herttua.n
-HERTTUA PTV,herttua.a,herttua.Øa
-HERTTUA PTV,herttua.ta,herttua.ta
-HERTTUA ESS,herttua.na,herttua.na
-HERTTUA ILL,herttua.an,herttua.Øan
-HERTTUA ILL,herttua.han,herttua.han
-HERTTUA PL INE,herttuo.i.ssa,herttuo.i.ssa
-HERTTUA PL INE,herttu.i.ssa,herttuØ.i.ssa
-HERTTUA PL GENiden,herttuo.i.den,herttuo.i.dØen
-HERTTUA PL GENiden,herttuo.i.tten,herttuo.i.tten
-HERTTUA PL GENiden,herttu.i.den,herttuØ.i.dØen
-HERTTUA PL GENiden,herttu.i.tten,herttuØ.i.tten
-HERTTUA GENin,herttua.in,herttua.in
-HERTTUA PL PTV,herttuo.i.ta,herttuo.i.ta
-HERTTUA PL PTV,herttu.i.ta,herttuØ.i.ta
-HERTTUA PL ILL,herttuo.i.hin,herttuo.i.hin
-HERTTUA PL ILL,herttu.i.hin,herttuØ.i.hin
+HERTTUA.GEN,herttua.n,herttua.n
+HERTTUA.PTV,herttua.a,herttua.Øa
+HERTTUA.PTV,herttua.ta,herttua.ta
+HERTTUA.ESS,herttua.na,herttua.na
+HERTTUA.ILL,herttua.an,herttua.Øan
+HERTTUA.ILL,herttua.han,herttua.han
+HERTTUA.PL.INE,herttuo.i.ssa,herttuo.i.ssa
+HERTTUA.PL.INE,herttu.i.ssa,herttuØ.i.ssa
+HERTTUA.PL.GENiden,herttuo.i.den,herttuo.i.dØen
+HERTTUA.PL.GENiden,herttuo.i.tten,herttuo.i.tten
+HERTTUA.PL.GENiden,herttu.i.den,herttuØ.i.dØen
+HERTTUA.PL.GENiden,herttu.i.tten,herttuØ.i.tten
+HERTTUA.GENin,herttua.in,herttua.in
+HERTTUA.PL.PTV,herttuo.i.ta,herttuo.i.ta
+HERTTUA.PL.PTV,herttu.i.ta,herttuØ.i.ta
+HERTTUA.PL.ILL,herttuo.i.hin,herttuo.i.hin
+HERTTUA.PL.ILL,herttu.i.hin,herttuØ.i.hin
 KORKEA,korkea,korkea
-KORKEA GEN,korkea.n,korkea.n
-KORKEA PTV,korkea.a,korkea.Øa
-KORKEA PTV,korkea.ta,korkea.ta
-KORKEA ESS,korkea.na,korkea.na
-KORKEA ILL,korkea.an,korkea.Øan
-KORKEA ILL,korkea.han,korkea.han
-KORKEA PL INE,korke.i.ssa,korkeØ.i.ssa
-KORKEA PL INE,korkeo.i.ssa,korkeo.i.ssa
-KORKEA PL GENiden,korke.i.den,korkeØ.i.dØen
-KORKEA PL GENiden,korke.i.tten,korkeØ.i.tten
-KORKEA PL GENiden,korkeo.i.den,korkeo.i.dØen
-KORKEA PL GENiden,korkeo.i.tten,korkeo.i.tten
-KORKEA GENin,korkea.in,korkea.in
-KORKEA PL PTV,korke.i.ta,korkeØ.i.ta
-KORKEA PL PTV,korkeo.i.ta,korkeo.i.ta
-KORKEA PL ILL,korke.i.hin,korkeØ.i.hin
-KORKEA PL ILL,korkeo.i.hin,korkeo.i.hin
-KORKEA PL ILLsiin,korke.i.siin,korkeØ.i.siin
+KORKEA.GEN,korkea.n,korkea.n
+KORKEA.PTV,korkea.a,korkea.Øa
+KORKEA.PTV,korkea.ta,korkea.ta
+KORKEA.ESS,korkea.na,korkea.na
+KORKEA.ILL,korkea.an,korkea.Øan
+KORKEA.ILL,korkea.han,korkea.han
+KORKEA.PL.INE,korke.i.ssa,korkeØ.i.ssa
+KORKEA.PL.INE,korkeo.i.ssa,korkeo.i.ssa
+KORKEA.PL.GENiden,korke.i.den,korkeØ.i.dØen
+KORKEA.PL.GENiden,korke.i.tten,korkeØ.i.tten
+KORKEA.PL.GENiden,korkeo.i.den,korkeo.i.dØen
+KORKEA.PL.GENiden,korkeo.i.tten,korkeo.i.tten
+KORKEA.GENin,korkea.in,korkea.in
+KORKEA.PL.PTV,korke.i.ta,korkeØ.i.ta
+KORKEA.PL.PTV,korkeo.i.ta,korkeo.i.ta
+KORKEA.PL.ILL,korke.i.hin,korkeØ.i.hin
+KORKEA.PL.ILL,korkeo.i.hin,korkeo.i.hin
+KORKEA.PL.ILLsiin,korke.i.siin,korkeØ.i.siin
 LEVEÄ,leveä,leveä
-LEVEÄ GEN,leveä.n,leveä.n
-LEVEÄ PTV,leveä.ä,leveä.Øä
-LEVEÄ PTV,leveä.tä,leveä.tä
-LEVEÄ ESS,leveä.nä,leveä.nä
-LEVEÄ ILL,leveä.än,leveä.Øän
-LEVEÄ ILL,leveä.hän,leveä.hän
-LEVEÄ PL INE,leve.i.ssä,leveØ.i.ssä
-LEVEÄ PL INE,leveö.i.ssä,leveö.i.ssä
-LEVEÄ PL GENiden,leve.i.den,leveØ.i.dØen
-LEVEÄ PL GENiden,leve.i.tten,leveØ.i.tten
-LEVEÄ PL GENiden,leveö.i.den,leveö.i.dØen
-LEVEÄ PL GENiden,leveö.i.tten,leveö.i.tten
-LEVEÄ GENin,leveä.in,leveä.in
-LEVEÄ PL PTV,leve.i.tä,leveØ.i.tä
-LEVEÄ PL PTV,leveö.i.tä,leveö.i.tä
-LEVEÄ PL ILL,leve.i.hin,leveØ.i.hin
-LEVEÄ PL ILL,leveö.i.hin,leveö.i.hin
-LEVEÄ PL ILLsiin,leve.i.siin,leveØ.i.siin
+LEVEÄ.GEN,leveä.n,leveä.n
+LEVEÄ.PTV,leveä.ä,leveä.Øä
+LEVEÄ.PTV,leveä.tä,leveä.tä
+LEVEÄ.ESS,leveä.nä,leveä.nä
+LEVEÄ.ILL,leveä.än,leveä.Øän
+LEVEÄ.ILL,leveä.hän,leveä.hän
+LEVEÄ.PL.INE,leve.i.ssä,leveØ.i.ssä
+LEVEÄ.PL.INE,leveö.i.ssä,leveö.i.ssä
+LEVEÄ.PL.GENiden,leve.i.den,leveØ.i.dØen
+LEVEÄ.PL.GENiden,leve.i.tten,leveØ.i.tten
+LEVEÄ.PL.GENiden,leveö.i.den,leveö.i.dØen
+LEVEÄ.PL.GENiden,leveö.i.tten,leveö.i.tten
+LEVEÄ.GENin,leveä.in,leveä.in
+LEVEÄ.PL.PTV,leve.i.tä,leveØ.i.tä
+LEVEÄ.PL.PTV,leveö.i.tä,leveö.i.tä
+LEVEÄ.PL.ILL,leve.i.hin,leveØ.i.hin
+LEVEÄ.PL.ILL,leveö.i.hin,leveö.i.hin
+LEVEÄ.PL.ILLsiin,leve.i.siin,leveØ.i.siin
 VAPAA,vapaa,vapaØa
-VAPAA GEN,vapaa.n,vapaØa.n
-VAPAA GEN,vapaha.n,vapaha.n
-VAPAA PTV,vapaa.ta,vapaØa.ta
-VAPAA ESS,vapaa.na,vapaØa.na
-VAPAA ESS,vapaha.na,vapaha.na
-VAPAA ILL,vapaa.han,vapaØa.han
-VAPAA ILLseen,vapaa.seen,vapaØa.seen
-VAPAA ILLseen,vapaha.sen,vapaha.seØn
-VAPAA PL INE,vapa.i.ssa,vapaØØ.i.ssa
-VAPAA PL INE,vapah.i.ssa,vapahØ.i.ssa
-VAPAA PL GENiden,vapa.i.den,vapaØØ.i.dØen
-VAPAA PL GENiden,vapa.i.tten,vapaØØ.i.tten
-VAPAA PL GENiden,vapah.i.tten,vapahØ.i.tten
-VAPAA PL GENien,vapah.i.en,vapahØ.i.en
-VAPAA PL PTV,vapa.i.ta,vapaØØ.i.ta
-VAPAA PL PTV,vapah.i.a,vapahØ.i.Øa
-VAPAA PL ILLsiin,vapa.i.siin,vapaØØ.i.siin
-VAPAA PL ILLsiin,vapah.i.sin,vapahØ.i.siØn
+VAPAA.GEN,vapaa.n,vapaØa.n
+VAPAA.GEN,vapaha.n,vapaha.n
+VAPAA.PTV,vapaa.ta,vapaØa.ta
+VAPAA.ESS,vapaa.na,vapaØa.na
+VAPAA.ESS,vapaha.na,vapaha.na
+VAPAA.ILL,vapaa.han,vapaØa.han
+VAPAA.ILLseen,vapaa.seen,vapaØa.seen
+VAPAA.ILLseen,vapaha.sen,vapaha.seØn
+VAPAA.PL.INE,vapa.i.ssa,vapaØØ.i.ssa
+VAPAA.PL.INE,vapah.i.ssa,vapahØ.i.ssa
+VAPAA.PL.GENiden,vapa.i.den,vapaØØ.i.dØen
+VAPAA.PL.GENiden,vapa.i.tten,vapaØØ.i.tten
+VAPAA.PL.GENiden,vapah.i.tten,vapahØ.i.tten
+VAPAA.PL.GENien,vapah.i.en,vapahØ.i.en
+VAPAA.PL.PTV,vapa.i.ta,vapaØØ.i.ta
+VAPAA.PL.PTV,vapah.i.a,vapahØ.i.Øa
+VAPAA.PL.ILLsiin,vapa.i.siin,vapaØØ.i.siin
+VAPAA.PL.ILLsiin,vapah.i.sin,vapahØ.i.siØn
 TIENOO,tienoo,tienoØo
-TIENOO GEN,tienoo.n,tienoØo.n
-TIENOO GEN,tienoho.n,tienoho.n
-TIENOO PTV,tienoo.ta,tienoØo.ta
-TIENOO ESS,tienoo.na,tienoØo.na
-TIENOO ESS,tienoho.na,tienoho.na
-TIENOO ILL,tienoo.hon,tienoØo.hon
-TIENOO ILLseen,tienoo.seen,tienoØo.seen
-TIENOO ILLseen,tienoho.sen,tienoho.seØn
-TIENOO PL INE,tieno.i.ssa,tienoØØ.i.ssa
-TIENOO PL INE,tienoh.i.ssa,tienohØ.i.ssa
-TIENOO PL GENiden,tieno.i.den,tienoØØ.i.dØen
-TIENOO PL GENiden,tieno.i.tten,tienoØØ.i.tten
-TIENOO PL GENiden,tienoh.i.tten,tienohØ.i.tten
-TIENOO PL GENien,tienoh.i.en,tienohØ.i.en
-TIENOO PL PTV,tieno.i.ta,tienoØØ.i.ta
-TIENOO PL PTV,tienoh.i.a,tienohØ.i.Øa
-TIENOO PL ILL,tieno.i.hin,tienoØØ.i.hin
-TIENOO PL ILLsiin,tieno.i.siin,tienoØØ.i.siin
-TIENOO PL ILLsiin,tienoh.i.sin,tienohØ.i.siØn
-LEIKKUUU,leikkuu,leikkuu
-LEIKKUUU GEN,leikkuu.n,leikkuu.n
-LEIKKUUU PTV,leikkuu.ta,leikkuu.ta
-LEIKKUUU ESS,leikkuu.na,leikkuu.na
-LEIKKUUU ILL,leikkuu.hun,leikkuu.hun
-LEIKKUUU ILLseen,leikkuu.seen,leikkuu.seen
-LEIKKUUU PL INE,leikku.i.ssa,leikkuØ.i.ssa
-LEIKKUUU PL GENiden,leikku.i.den,leikkuØ.i.dØen
-LEIKKUUU PL GENiden,leikku.i.tten,leikkuØ.i.tten
-LEIKKUUU PL PTV,leikku.i.ta,leikkuØ.i.ta
-LEIKKUUU PL ILL,leikku.i.hin,leikkuØ.i.hin
-LEIKKUUU PL ILLsiin,leikku.i.siin,leikkuØ.i.siin
+TIENOO.GEN,tienoo.n,tienoØo.n
+TIENOO.GEN,tienoho.n,tienoho.n
+TIENOO.PTV,tienoo.ta,tienoØo.ta
+TIENOO.ESS,tienoo.na,tienoØo.na
+TIENOO.ESS,tienoho.na,tienoho.na
+TIENOO.ILL,tienoo.hon,tienoØo.hon
+TIENOO.ILLseen,tienoo.seen,tienoØo.seen
+TIENOO.ILLseen,tienoho.sen,tienoho.seØn
+TIENOO.PL.INE,tieno.i.ssa,tienoØØ.i.ssa
+TIENOO.PL.INE,tienoh.i.ssa,tienohØ.i.ssa
+TIENOO.PL.GENiden,tieno.i.den,tienoØØ.i.dØen
+TIENOO.PL.GENiden,tieno.i.tten,tienoØØ.i.tten
+TIENOO.PL.GENiden,tienoh.i.tten,tienohØ.i.tten
+TIENOO.PL.GENien,tienoh.i.en,tienohØ.i.en
+TIENOO.PL.PTV,tieno.i.ta,tienoØØ.i.ta
+TIENOO.PL.PTV,tienoh.i.a,tienohØ.i.Øa
+TIENOO.PL.ILL,tieno.i.hin,tienoØØ.i.hin
+TIENOO.PL.ILLsiin,tieno.i.siin,tienoØØ.i.siin
+TIENOO.PL.ILLsiin,tienoh.i.sin,tienohØ.i.siØn
+LEIKKUU,leikkuu,leikkuu
+LEIKKUU.GEN,leikkuu.n,leikkuu.n
+LEIKKUU.PTV,leikkuu.ta,leikkuu.ta
+LEIKKUU.ESS,leikkuu.na,leikkuu.na
+LEIKKUU.ILL,leikkuu.hun,leikkuu.hun
+LEIKKUU.ILLseen,leikkuu.seen,leikkuu.seen
+LEIKKUU.PL.INE,leikku.i.ssa,leikkuØ.i.ssa
+LEIKKUU.PL.GENiden,leikku.i.den,leikkuØ.i.dØen
+LEIKKUU.PL.GENiden,leikku.i.tten,leikkuØ.i.tten
+LEIKKUU.PL.PTV,leikku.i.ta,leikkuØ.i.ta
+LEIKKUU.PL.ILL,leikku.i.hin,leikkuØ.i.hin
+LEIKKUU.PL.ILLsiin,leikku.i.siin,leikkuØ.i.siin
 KAMEE,kamee,kamee
-KAMEE GEN,kamee.n,kamee.n
-KAMEE PTV,kamee.ta,kamee.ta
-KAMEE ESS,kamee.na,kamee.na
-KAMEE ILL,kamee.hen,kamee.hen
-KAMEE ILLseen,kamee.seen,kamee.seen
-KAMEE PL INE,kame.i.ssa,kameØ.i.ssa
-KAMEE PL GENiden,kame.i.den,kameØ.i.dØen
-KAMEE PL GENiden,kame.i.tten,kameØ.i.tten
-KAMEE PL PTV,kame.i.ta,kameØ.i.ta
-KAMEE PL ILL,kame.i.hin,kameØ.i.hin
-KAMEE PL ILLsiin,kame.i.siin,kameØ.i.siin
+KAMEE.GEN,kamee.n,kamee.n
+KAMEE.PTV,kamee.ta,kamee.ta
+KAMEE.ESS,kamee.na,kamee.na
+KAMEE.ILL,kamee.hen,kamee.hen
+KAMEE.ILLseen,kamee.seen,kamee.seen
+KAMEE.PL.INE,kame.i.ssa,kameØ.i.ssa
+KAMEE.PL.GENiden,kame.i.den,kameØ.i.dØen
+KAMEE.PL.GENiden,kame.i.tten,kameØ.i.tten
+KAMEE.PL.PTV,kame.i.ta,kameØ.i.ta
+KAMEE.PL.ILL,kame.i.hin,kameØ.i.hin
+KAMEE.PL.ILLsiin,kame.i.siin,kameØ.i.siin
 PII,pii,pii
-PII GEN,pii.n,pii.n
-PII PTV,pii.tä,pii.tä
-PII ESS,pii.nä,pii.nä
-PII ILL,pii.hin,pii.hin
-PII PL INE,pi.i.ssä,piØ.i.ssä
-PII PL GENiden,pi.i.den,piØ.i.dØen
-PII PL GENiden,pi.i.tten,piØ.i.tten
-PII PL PTV,pi.i.tä,piØ.i.tä
-PII PL ILL,pi.i.hin,piØ.i.hin
+PII.GEN,pii.n,pii.n
+PII.PTV,pii.tä,pii.tä
+PII.ESS,pii.nä,pii.nä
+PII.ILL,pii.hin,pii.hin
+PII.PL.INE,pi.i.ssä,piØ.i.ssä
+PII.PL.GENiden,pi.i.den,piØ.i.dØen
+PII.PL.GENiden,pi.i.tten,piØ.i.tten
+PII.PL.PTV,pi.i.tä,piØ.i.tä
+PII.PL.ILL,pi.i.hin,piØ.i.hin
 MAA,maa,maa
-MAA GEN,maa.n,maa.n
-MAA PTV,maa.ta,maa.ta
-MAA ESS,maa.na,maa.na
-MAA ILL,maa.han,maa.han
-MAA PL INE,ma.i.ssa,maØ.i.ssa
-MAA PL GENiden,ma.i.den,maØ.i.dØen
-MAA PL GENiden,ma.i.tten,maØ.i.tten
-MAA PL PTV,ma.i.ta,maØ.i.ta
-MAA PL ILL,ma.i.hin,maØ.i.hin
+MAA.GEN,maa.n,maa.n
+MAA.PTV,maa.ta,maa.ta
+MAA.ESS,maa.na,maa.na
+MAA.ILL,maa.han,maa.han
+MAA.PL.INE,ma.i.ssa,maØ.i.ssa
+MAA.PL.GENiden,ma.i.den,maØ.i.dØen
+MAA.PL.GENiden,ma.i.tten,maØ.i.tten
+MAA.PL.PTV,ma.i.ta,maØ.i.ta
+MAA.PL.ILL,ma.i.hin,maØ.i.hin
 PUU,puu,puu
-PUU GEN,puu.n,puu.n
-PUU PTV,puu.ta,puu.ta
-PUU ESS,puu.na,puu.na
-PUU ILL,puu.hun,puu.hun
-PUU PL INE,pu.i.ssa,puØ.i.ssa
-PUU PL GENiden,pu.i.den,puØ.i.dØen
-PUU PL GENiden,pu.i.tten,puØ.i.tten
-PUU PL PTV,pu.i.ta,puØ.i.ta
-PUU PL ILL,pu.i.hin,puØ.i.hin
+PUU.GEN,puu.n,puu.n
+PUU.PTV,puu.ta,puu.ta
+PUU.ESS,puu.na,puu.na
+PUU.ILL,puu.hun,puu.hun
+PUU.PL.INE,pu.i.ssa,puØ.i.ssa
+PUU.PL.GENiden,pu.i.den,puØ.i.dØen
+PUU.PL.GENiden,pu.i.tten,puØ.i.tten
+PUU.PL.PTV,pu.i.ta,puØ.i.ta
+PUU.PL.ILL,pu.i.hin,puØ.i.hin
 SUO,suo,suo
-SUO GEN,suo.n,suo.n
-SUO PTV,suo.ta,suo.ta
-SUO ESS,suo.na,suo.na
-SUO ILL,suo.hon,suo.hon
-SUO PL INE,so.i.ssa,sØo.i.ssa
-SUO PL GENiden,so.i.den,sØo.i.dØen
-SUO PL GENiden,so.i.tten,sØo.i.tten
-SUO PL PTV,so.i.ta,sØo.i.ta
-SUO PL ILL,so.i.hin,sØo.i.hin
+SUO.GEN,suo.n,suo.n
+SUO.PTV,suo.ta,suo.ta
+SUO.ESS,suo.na,suo.na
+SUO.ILL,suo.hon,suo.hon
+SUO.PL.INE,so.i.ssa,sØo.i.ssa
+SUO.PL.GENiden,so.i.den,sØo.i.dØen
+SUO.PL.GENiden,so.i.tten,sØo.i.tten
+SUO.PL.PTV,so.i.ta,sØo.i.ta
+SUO.PL.ILL,so.i.hin,sØo.i.hin
 TUOHI,tuohi,tuohi
-TUOHI GEN,tuohe.n,tuohe.n
-TUOHI PTV,tuoh.ta,tuohØ.ta
-TUOHI ESS,tuohe.na,tuohe.na
-TUOHI ILL,tuohe.en,tuohe.Øen
-TUOHI ILL,tuohe.hen,tuohe.hen
-TUOHI PL INE,tuoh.i.ssa,tuohØ.i.ssa
-TUOHI PL GENien,tuoh.i.en,tuohØ.i.en
-TUOHI PLGENten,tuoh.ten,tuohØ.ten
-TUOHI PL PTV,tuoh.i.a,tuohØ.i.Øa
-TUOHI PL ILL,tuoh.i.in,tuohØ.i.Øin
-TUOHI PL ILL,tuoh.i.hin,tuohØ.i.hin
+TUOHI.GEN,tuohe.n,tuohe.n
+TUOHI.PTV,tuoh.ta,tuohØ.ta
+TUOHI.ESS,tuohe.na,tuohe.na
+TUOHI.ILL,tuohe.en,tuohe.Øen
+TUOHI.ILL,tuohe.hen,tuohe.hen
+TUOHI.PL.INE,tuoh.i.ssa,tuohØ.i.ssa
+TUOHI.PL.GENien,tuoh.i.en,tuohØ.i.en
+TUOHI.PLGENten,tuoh.ten,tuohØ.ten
+TUOHI.PL.PTV,tuoh.i.a,tuohØ.i.Øa
+TUOHI.PL.ILL,tuoh.i.in,tuohØ.i.Øin
+TUOHI.PL.ILL,tuoh.i.hin,tuohØ.i.hin
 LOHI,lohi,lohi
-LOHI GEN,lohe.n,lohe.n
-LOHI PTV,loh.ta,lohØ.ta
-LOHI ESS,lohe.na,lohe.na
-LOHI ILL,lohe.en,lohe.Øen
-LOHI ILL,lohe.hen,lohe.hen
-LOHI PL INE,loh.i.ssa,lohØ.i.ssa
-LOHI PL GENien,loh.i.en,lohØ.i.en
-LOHI PLGENten,loh.ten,lohØ.ten
-LOHI PL PTV,loh.i.a,lohØ.i.Øa
-LOHI PL ILL,loh.i.in,lohØ.i.Øin
-LOHI PL ILL,loh.i.hin,lohØ.i.hin
+LOHI.GEN,lohe.n,lohe.n
+LOHI.PTV,loh.ta,lohØ.ta
+LOHI.ESS,lohe.na,lohe.na
+LOHI.ILL,lohe.en,lohe.Øen
+LOHI.ILL,lohe.hen,lohe.hen
+LOHI.PL.INE,loh.i.ssa,lohØ.i.ssa
+LOHI.PL.GENien,loh.i.en,lohØ.i.en
+LOHI.PLGENten,loh.ten,lohØ.ten
+LOHI.PL.PTV,loh.i.a,lohØ.i.Øa
+LOHI.PL.ILL,loh.i.in,lohØ.i.Øin
+LOHI.PL.ILL,loh.i.hin,lohØ.i.hin
 LAHTI,lahti,lahti
-LAHTI GEN,lahde.n,lahde.n
-LAHTI PTV,lahte.a,lahte.Øa
-LAHTI ESS,lahte.na,lahte.na
-LAHTI ILL,lahte.en,lahte.Øen
-LAHTI ILL,lahte.hen,lahte.hen
-LAHTI PL INE,lahd.i.ssa,lahdØ.i.ssa
-LAHTI PL GENien,laht.i.en,lahtØ.i.en
-LAHTI GENin,lahte.in,lahte.in
-LAHTI PL PTV,laht.i.a,lahtØ.i.Øa
-LAHTI PL ILL,laht.i.in,lahtØ.i.Øin
-LAHTI PL ILL,laht.i.hin,lahtØ.i.hin
+LAHTI.GEN,lahde.n,lahde.n
+LAHTI.PTV,lahte.a,lahte.Øa
+LAHTI.ESS,lahte.na,lahte.na
+LAHTI.ILL,lahte.en,lahte.Øen
+LAHTI.ILL,lahte.hen,lahte.hen
+LAHTI.PL.INE,lahd.i.ssa,lahdØ.i.ssa
+LAHTI.PL.GENien,laht.i.en,lahtØ.i.en
+LAHTI.GENin,lahte.in,lahte.in
+LAHTI.PL.PTV,laht.i.a,lahtØ.i.Øa
+LAHTI.PL.ILL,laht.i.in,lahtØ.i.Øin
+LAHTI.PL.ILL,laht.i.hin,lahtØ.i.hin
 LUMI,lumi,lumi
-LUMI GEN,lume.n,lume.n
-LUMI PTV,lun.ta,lunØ.ta
-LUMI PTV,lume.a,lume.Øa
-LUMI ESS,lume.na,lume.na
-LUMI ILL,lume.en,lume.Øen
-LUMI ILL,lume.hen,lume.hen
-LUMI PL INE,lum.i.ssa,lumØ.i.ssa
-LUMI PL GENien,lum.i.en,lumØ.i.en
-LUMI PLGENten,lun.ten,lunØ.ten
-LUMI GENin,lume.in,lume.in
-LUMI PL PTV,lum.i.a,lumØ.i.Øa
-LUMI PL ILL,lum.i.in,lumØ.i.Øin
-LUMI PL ILL,lum.i.hin,lumØ.i.hin
+LUMI.GEN,lume.n,lume.n
+LUMI.PTV,lun.ta,lunØ.ta
+LUMI.PTV,lume.a,lume.Øa
+LUMI.ESS,lume.na,lume.na
+LUMI.ILL,lume.en,lume.Øen
+LUMI.ILL,lume.hen,lume.hen
+LUMI.PL.INE,lum.i.ssa,lumØ.i.ssa
+LUMI.PL.GENien,lum.i.en,lumØ.i.en
+LUMI.PLGENten,lun.ten,lunØ.ten
+LUMI.GENin,lume.in,lume.in
+LUMI.PL.PTV,lum.i.a,lumØ.i.Øa
+LUMI.PL.ILL,lum.i.in,lumØ.i.Øin
+LUMI.PL.ILL,lum.i.hin,lumØ.i.hin
 TUOMI,tuomi,tuomi
-TUOMI GEN,tuome.n,tuome.n
-TUOMI PTV,tuome.a,tuome.Øa
-TUOMI PTV,tuon.ta,tuonØ.ta
-TUOMI ESS,tuome.na,tuome.na
-TUOMI ILL,tuome.en,tuome.Øen
-TUOMI ILL,tuome.hen,tuome.hen
-TUOMI PL INE,tuom.i.ssa,tuomØ.i.ssa
-TUOMI PL GENien,tuom.i.en,tuomØ.i.en
-TUOMI PLGENten,tuon.ten,tuonØ.ten
-TUOMI PL PTV,tuom.i.a,tuomØ.i.Øa
-TUOMI PL ILL,tuom.i.in,tuomØ.i.Øin
-TUOMI PL ILL,tuom.i.hin,tuomØ.i.hin
+TUOMI.GEN,tuome.n,tuome.n
+TUOMI.PTV,tuome.a,tuome.Øa
+TUOMI.PTV,tuon.ta,tuonØ.ta
+TUOMI.ESS,tuome.na,tuome.na
+TUOMI.ILL,tuome.en,tuome.Øen
+TUOMI.ILL,tuome.hen,tuome.hen
+TUOMI.PL.INE,tuom.i.ssa,tuomØ.i.ssa
+TUOMI.PL.GENien,tuom.i.en,tuomØ.i.en
+TUOMI.PLGENten,tuon.ten,tuonØ.ten
+TUOMI.PL.PTV,tuom.i.a,tuomØ.i.Øa
+TUOMI.PL.ILL,tuom.i.in,tuomØ.i.Øin
+TUOMI.PL.ILL,tuom.i.hin,tuomØ.i.hin
 NIEMI,niemi,niemi
-NIEMI GEN,nieme.n,nieme.n
-NIEMI PTV,nieme.ä,nieme.Øä
-NIEMI PTV,nien.tä,nienØ.tä
-NIEMI ESS,nieme.nä,nieme.nä
-NIEMI ILL,nieme.en,nieme.Øen
-NIEMI ILL,nieme.hen,nieme.hen
-NIEMI PL INE,niem.i.ssä,niemØ.i.ssä
-NIEMI PL GENien,niem.i.en,niemØ.i.en
-NIEMI PLGENten,nien.ten,nienØ.ten
-NIEMI PL PTV,niem.i.ä,niemØ.i.Øä
-NIEMI PL ILL,niem.i.in,niemØ.i.Øin
-NIEMI PL ILL,niem.i.hin,niemØ.i.hin
+NIEMI.GEN,nieme.n,nieme.n
+NIEMI.PTV,nieme.ä,nieme.Øä
+NIEMI.PTV,nien.tä,nienØ.tä
+NIEMI.ESS,nieme.nä,nieme.nä
+NIEMI.ILL,nieme.en,nieme.Øen
+NIEMI.ILL,nieme.hen,nieme.hen
+NIEMI.PL.INE,niem.i.ssä,niemØ.i.ssä
+NIEMI.PL.GENien,niem.i.en,niemØ.i.en
+NIEMI.PLGENten,nien.ten,nienØ.ten
+NIEMI.PL.PTV,niem.i.ä,niemØ.i.Øä
+NIEMI.PL.ILL,niem.i.in,niemØ.i.Øin
+NIEMI.PL.ILL,niem.i.hin,niemØ.i.hin
 PIENI,pieni,pieni
-PIENI GEN,piene.n,piene.n
-PIENI PTV,pien.tä,pienØ.tä
-PIENI ESS,piene.nä,piene.nä
-PIENI ESS,pien.nä,pienØ.nä
-PIENI ILL,piene.en,piene.Øen
-PIENI ILL,piene.hen,piene.hen
-PIENI PL INE,pien.i.ssä,pienØ.i.ssä
-PIENI PL GENien,pien.i.en,pienØ.i.en
-PIENI PLGENten,pien.ten,pienØ.ten
-PIENI PL PTV,pien.i.ä,pienØ.i.Øä
-PIENI PL ILL,pien.i.in,pienØ.i.Øin
-PIENI PL ILL,pien.i.hin,pienØ.i.hin
+PIENI.GEN,piene.n,piene.n
+PIENI.PTV,pien.tä,pienØ.tä
+PIENI.ESS,piene.nä,piene.nä
+PIENI.ESS,pien.nä,pienØ.nä
+PIENI.ILL,piene.en,piene.Øen
+PIENI.ILL,piene.hen,piene.hen
+PIENI.PL.INE,pien.i.ssä,pienØ.i.ssä
+PIENI.PL.GENien,pien.i.en,pienØ.i.en
+PIENI.PLGENten,pien.ten,pienØ.ten
+PIENI.PL.PTV,pien.i.ä,pienØ.i.Øä
+PIENI.PL.ILL,pien.i.in,pienØ.i.Øin
+PIENI.PL.ILL,pien.i.hin,pienØ.i.hin
 NUORI,nuori,nuori
-NUORI GEN,nuore.n,nuore.n
-NUORI PTV,nuor.ta,nuorØ.ta
-NUORI ESS,nuore.na,nuore.na
-NUORI ESS,nuor.na,nuorØ.na
-NUORI ESS,nuor.ra,nuorØ.ra
-NUORI ILL,nuore.en,nuore.Øen
-NUORI ILL,nuore.hen,nuore.hen
-NUORI PL INE,nuor.i.ssa,nuorØ.i.ssa
-NUORI PL GENien,nuor.i.en,nuorØ.i.en
-NUORI PLGENten,nuor.ten,nuorØ.ten
-NUORI PL PTV,nuor.i.a,nuorØ.i.Øa
-NUORI PL ILL,nuor.i.in,nuorØ.i.Øin
-NUORI PL ILL,nuor.i.hin,nuorØ.i.hin
+NUORI.GEN,nuore.n,nuore.n
+NUORI.PTV,nuor.ta,nuorØ.ta
+NUORI.ESS,nuore.na,nuore.na
+NUORI.ESS,nuor.na,nuorØ.na
+NUORI.ESS,nuor.ra,nuorØ.ra
+NUORI.ILL,nuore.en,nuore.Øen
+NUORI.ILL,nuore.hen,nuore.hen
+NUORI.PL.INE,nuor.i.ssa,nuorØ.i.ssa
+NUORI.PL.GENien,nuor.i.en,nuorØ.i.en
+NUORI.PLGENten,nuor.ten,nuorØ.ten
+NUORI.PL.PTV,nuor.i.a,nuorØ.i.Øa
+NUORI.PL.ILL,nuor.i.in,nuorØ.i.Øin
+NUORI.PL.ILL,nuor.i.hin,nuorØ.i.hin
 KÄSI,käsi,käsi
-KÄSI GEN,käde.n,käde.n
-KÄSI PTV,kät.tä,kätØ.tä
-KÄSI ESS,käte.nä,käte.nä
-KÄSI ILL,käte.en,käte.Øen
-KÄSI ILL,käte.hen,käte.hen
-KÄSI PL INE,käs.i.ssä,käsØ.i.ssä
-KÄSI PL GENien,käs.i.en,käsØ.i.en
-KÄSI PLGENten,kät.ten,kätØ.ten
-KÄSI GENin,käte.in,käte.in
-KÄSI PL PTV,käs.i.ä,käsØ.i.Øä
-KÄSI PL ILL,käs.i.in,käsØ.i.Øin
-KÄSI PL ILL,käs.i.hin,käsØ.i.hin
+KÄSI.GEN,käde.n,käde.n
+KÄSI.PTV,kät.tä,kätØ.tä
+KÄSI.ESS,käte.nä,käte.nä
+KÄSI.ILL,käte.en,käte.Øen
+KÄSI.ILL,käte.hen,käte.hen
+KÄSI.PL.INE,käs.i.ssä,käsØ.i.ssä
+KÄSI.PL.GENien,käs.i.en,käsØ.i.en
+KÄSI.PLGENten,kät.ten,kätØ.ten
+KÄSI.GENin,käte.in,käte.in
+KÄSI.PL.PTV,käs.i.ä,käsØ.i.Øä
+KÄSI.PL.ILL,käs.i.in,käsØ.i.Øin
+KÄSI.PL.ILL,käs.i.hin,käsØ.i.hin
 TOSI,tosi,tosi
-TOSI GEN,tode.n,tode.n
-TOSI PTV,tot.ta,totØ.ta
-TOSI ESS,tote.na,tote.na
-TOSI ILL,tote.en,tote.Øen
-TOSI ILL,tote.hen,tote.hen
-TOSI PL INE,tos.i.ssa,tosØ.i.ssa
-TOSI PL GENien,tos.i.en,tosØ.i.en
-TOSI PL PTV,tos.i.a,tosØ.i.Øa
-TOSI PL ILL,tos.i.in,tosØ.i.Øin
-TOSI PL ILL,tos.i.hin,tosØ.i.hin
+TOSI.GEN,tode.n,tode.n
+TOSI.PTV,tot.ta,totØ.ta
+TOSI.ESS,tote.na,tote.na
+TOSI.ILL,tote.en,tote.Øen
+TOSI.ILL,tote.hen,tote.hen
+TOSI.PL.INE,tos.i.ssa,tosØ.i.ssa
+TOSI.PL.GENien,tos.i.en,tosØ.i.en
+TOSI.PL.PTV,tos.i.a,tosØ.i.Øa
+TOSI.PL.ILL,tos.i.in,tosØ.i.Øin
+TOSI.PL.ILL,tos.i.hin,tosØ.i.hin
 HIRSI,hirsi,hirsi
-HIRSI GEN,hirre.n,hirre.n
-HIRSI PTV,hirt.tä,hirtØ.tä
-HIRSI ESS,hirte.nä,hirte.nä
-HIRSI ILL,hirte.en,hirte.Øen
-HIRSI ILL,hirte.hen,hirte.hen
-HIRSI PL INE,hirs.i.ssä,hirsØ.i.ssä
-HIRSI PL GENien,hirs.i.en,hirsØ.i.en
-HIRSI PLGENten,hirt.ten,hirtØ.ten
-HIRSI PL PTV,hirs.i.ä,hirsØ.i.Øä
-HIRSI PL ILL,hirs.i.in,hirsØ.i.Øin
-HIRSI PL ILL,hirs.i.hin,hirsØ.i.hin
+HIRSI.GEN,hirre.n,hirre.n
+HIRSI.PTV,hirt.tä,hirtØ.tä
+HIRSI.ESS,hirte.nä,hirte.nä
+HIRSI.ILL,hirte.en,hirte.Øen
+HIRSI.ILL,hirte.hen,hirte.hen
+HIRSI.PL.INE,hirs.i.ssä,hirsØ.i.ssä
+HIRSI.PL.GENien,hirs.i.en,hirsØ.i.en
+HIRSI.PLGENten,hirt.ten,hirtØ.ten
+HIRSI.PL.PTV,hirs.i.ä,hirsØ.i.Øä
+HIRSI.PL.ILL,hirs.i.in,hirsØ.i.Øin
+HIRSI.PL.ILL,hirs.i.hin,hirsØ.i.hin
 JÄLSI,jälsi,jälsi
-JÄLSI GEN,jälle.n,jälle.n
-JÄLSI PTV,jält.tä,jältØ.tä
-JÄLSI ESS,jälte.nä,jälte.nä
-JÄLSI ILL,jälte.en,jälte.Øen
-JÄLSI ILL,jälte.hen,jälte.hen
-JÄLSI PL INE,jäls.i.ssä,jälsØ.i.ssä
-JÄLSI PL GENien,jäls.i.en,jälsØ.i.en
-JÄLSI PLGENten,jält.ten,jältØ.ten
-JÄLSI PL PTV,jäls.i.ä,jälsØ.i.Øä
-JÄLSI PL ILL,jäls.i.in,jälsØ.i.Øin
-JÄLSI PL ILL,jäls.i.hin,jälsØ.i.hin
+JÄLSI.GEN,jälle.n,jälle.n
+JÄLSI.PTV,jält.tä,jältØ.tä
+JÄLSI.ESS,jälte.nä,jälte.nä
+JÄLSI.ILL,jälte.en,jälte.Øen
+JÄLSI.ILL,jälte.hen,jälte.hen
+JÄLSI.PL.INE,jäls.i.ssä,jälsØ.i.ssä
+JÄLSI.PL.GENien,jäls.i.en,jälsØ.i.en
+JÄLSI.PLGENten,jält.ten,jältØ.ten
+JÄLSI.PL.PTV,jäls.i.ä,jälsØ.i.Øä
+JÄLSI.PL.ILL,jäls.i.in,jälsØ.i.Øin
+JÄLSI.PL.ILL,jäls.i.hin,jälsØ.i.hin
 KANSI,kansi,kansi
-KANSI GEN,kanne.n,kanne.n
-KANSI PTV,kant.ta,kantØ.ta
-KANSI ESS,kante.na,kante.na
-KANSI ILL,kante.en,kante.Øen
-KANSI ILL,kante.hen,kante.hen
-KANSI PL INE,kans.i.ssa,kansØ.i.ssa
-KANSI PL GENien,kans.i.en,kansØ.i.en
-KANSI PLGENten,kant.ten,kantØ.ten
-KANSI PL PTV,kans.i.a,kansØ.i.Øa
-KANSI PL ILL,kans.i.in,kansØ.i.Øin
-KANSI PL ILL,kans.i.hin,kansØ.i.hin
+KANSI.GEN,kanne.n,kanne.n
+KANSI.PTV,kant.ta,kantØ.ta
+KANSI.ESS,kante.na,kante.na
+KANSI.ILL,kante.en,kante.Øen
+KANSI.ILL,kante.hen,kante.hen
+KANSI.PL.INE,kans.i.ssa,kansØ.i.ssa
+KANSI.PL.GENien,kans.i.en,kansØ.i.en
+KANSI.PLGENten,kant.ten,kantØ.ten
+KANSI.PL.PTV,kans.i.a,kansØ.i.Øa
+KANSI.PL.ILL,kans.i.in,kansØ.i.Øin
+KANSI.PL.ILL,kans.i.hin,kansØ.i.hin
 LAPSI,lapsi,lapsi
-LAPSI GEN,lapse.n,lapse.n
-LAPSI PTV,las.ta,laØsØ.ta
-LAPSI ESS,lapse.na,lapse.na
-LAPSI ESS,las.na,laØsØ.na
-LAPSI ESS,las.sa,laØsØ.sa
-LAPSI ILL,lapse.en,lapse.Øen
-LAPSI ILL,lapse.hen,lapse.hen
-LAPSI PL INE,laps.i.ssa,lapsØ.i.ssa
-LAPSI PL GENien,laps.i.en,lapsØ.i.en
-LAPSI PLGENten,las.ten,laØsØ.ten
-LAPSI PL PTV,laps.i.a,lapsØ.i.Øa
-LAPSI PL ILL,laps.i.in,lapsØ.i.Øin
-LAPSI PL ILL,laps.i.hin,lapsØ.i.hin
+LAPSI.GEN,lapse.n,lapse.n
+LAPSI.PTV,las.ta,laØsØ.ta
+LAPSI.ESS,lapse.na,lapse.na
+LAPSI.ESS,las.na,laØsØ.na
+LAPSI.ESS,las.sa,laØsØ.sa
+LAPSI.ILL,lapse.en,lapse.Øen
+LAPSI.ILL,lapse.hen,lapse.hen
+LAPSI.PL.INE,laps.i.ssa,lapsØ.i.ssa
+LAPSI.PL.GENien,laps.i.en,lapsØ.i.en
+LAPSI.PLGENten,las.ten,laØsØ.ten
+LAPSI.PL.PTV,laps.i.a,lapsØ.i.Øa
+LAPSI.PL.ILL,laps.i.in,lapsØ.i.Øin
+LAPSI.PL.ILL,laps.i.hin,lapsØ.i.hin
 HAPSI,hapsi,hapsi
-HAPSI GEN,hapse.n,hapse.n
-HAPSI PTV,hapse.a,hapse.Øa
-HAPSI PTV,has.ta,haØsØ.ta
-HAPSI ESS,hapse.na,hapse.na
-HAPSI ESS,has.na,haØsØ.na
-HAPSI ESS,has.sa,haØsØ.sa
-HAPSI ILL,hapse.en,hapse.Øen
-HAPSI ILL,hapse.hen,hapse.hen
-HAPSI PL INE,haps.i.ssa,hapsØ.i.ssa
-HAPSI PL GENien,haps.i.en,hapsØ.i.en
-HAPSI PLGENten,has.ten,haØsØ.ten
-HAPSI PL PTV,haps.i.a,hapsØ.i.Øa
-HAPSI PL ILL,haps.i.in,hapsØ.i.Øin
-HAPSI PL ILL,haps.i.hin,hapsØ.i.hin
+HAPSI.GEN,hapse.n,hapse.n
+HAPSI.PTV,hapse.a,hapse.Øa
+HAPSI.PTV,has.ta,haØsØ.ta
+HAPSI.ESS,hapse.na,hapse.na
+HAPSI.ESS,has.na,haØsØ.na
+HAPSI.ESS,has.sa,haØsØ.sa
+HAPSI.ILL,hapse.en,hapse.Øen
+HAPSI.ILL,hapse.hen,hapse.hen
+HAPSI.PL.INE,haps.i.ssa,hapsØ.i.ssa
+HAPSI.PL.GENien,haps.i.en,hapsØ.i.en
+HAPSI.PLGENten,has.ten,haØsØ.ten
+HAPSI.PL.PTV,haps.i.a,hapsØ.i.Øa
+HAPSI.PL.ILL,haps.i.in,hapsØ.i.Øin
+HAPSI.PL.ILL,haps.i.hin,hapsØ.i.hin
 VEITSI,veitsi,veitsi
-VEITSI GEN,veitse.n,veitse.n
-VEITSI PTV,veis.tä,veiØsØ.tä
-VEITSI ESS,veitse.nä,veitse.nä
-VEITSI ILL,veitse.en,veitse.Øen
-VEITSI ILL,veitse.hen,veitse.hen
-VEITSI PL INE,veits.i.ssä,veitsØ.i.ssä
-VEITSI PL GENien,veits.i.en,veitsØ.i.en
-VEITSI PLGENten,veis.ten,veiØsØ.ten
-VEITSI PL PTV,veits.i.ä,veitsØ.i.Øä
-VEITSI PL ILL,veits.i.in,veitsØ.i.Øin
-VEITSI PL ILL,veits.i.hin,veitsØ.i.hin
+VEITSI.GEN,veitse.n,veitse.n
+VEITSI.PTV,veis.tä,veiØsØ.tä
+VEITSI.ESS,veitse.nä,veitse.nä
+VEITSI.ILL,veitse.en,veitse.Øen
+VEITSI.ILL,veitse.hen,veitse.hen
+VEITSI.PL.INE,veits.i.ssä,veitsØ.i.ssä
+VEITSI.PL.GENien,veits.i.en,veitsØ.i.en
+VEITSI.PLGENten,veis.ten,veiØsØ.ten
+VEITSI.PL.PTV,veits.i.ä,veitsØ.i.Øä
+VEITSI.PL.ILL,veits.i.in,veitsØ.i.Øin
+VEITSI.PL.ILL,veits.i.hin,veitsØ.i.hin
 PEITSI,peitsi,peitsi
-PEITSI GEN,peitse.n,peitse.n
-PEITSI PTV,peis.tä,peiØsØ.tä
-PEITSI PTV,peitse.ä,peitse.Øä
-PEITSI ESS,peitse.nä,peitse.nä
-PEITSI ILL,peitse.en,peitse.Øen
-PEITSI ILL,peitse.hen,peitse.hen
-PEITSI PL INE,peits.i.ssä,peitsØ.i.ssä
-PEITSI PL GENien,peits.i.en,peitsØ.i.en
-PEITSI PLGENten,peis.ten,peiØsØ.ten
-PEITSI PL PTV,peits.i.ä,peitsØ.i.Øä
-PEITSI PL ILL,peits.i.in,peitsØ.i.Øin
-PEITSI PL ILL,peits.i.hin,peitsØ.i.hin
+PEITSI.GEN,peitse.n,peitse.n
+PEITSI.PTV,peis.tä,peiØsØ.tä
+PEITSI.PTV,peitse.ä,peitse.Øä
+PEITSI.ESS,peitse.nä,peitse.nä
+PEITSI.ILL,peitse.en,peitse.Øen
+PEITSI.ILL,peitse.hen,peitse.hen
+PEITSI.PL.INE,peits.i.ssä,peitsØ.i.ssä
+PEITSI.PL.GENien,peits.i.en,peitsØ.i.en
+PEITSI.PLGENten,peis.ten,peiØsØ.ten
+PEITSI.PL.PTV,peits.i.ä,peitsØ.i.Øä
+PEITSI.PL.ILL,peits.i.in,peitsØ.i.Øin
+PEITSI.PL.ILL,peits.i.hin,peitsØ.i.hin
 SUKSI,suksi,suksi
-SUKSI GEN,sukse.n,sukse.n
-SUKSI PTV,sukse.a,sukse.Øa
-SUKSI PTV,sus.ta,suØsØ.ta
-SUKSI ESS,sukse.na,sukse.na
-SUKSI ILL,sukse.en,sukse.Øen
-SUKSI ILL,sukse.hen,sukse.hen
-SUKSI PL INE,suks.i.ssa,suksØ.i.ssa
-SUKSI PL GENien,suks.i.en,suksØ.i.en
-SUKSI PLGENten,sus.ten,suØsØ.ten
-SUKSI GENin,sukse.in,sukse.in
-SUKSI PL PTV,suks.i.a,suksØ.i.Øa
-SUKSI PL ILL,suks.i.in,suksØ.i.Øin
-SUKSI PL ILL,suks.i.hin,suksØ.i.hin
+SUKSI.GEN,sukse.n,sukse.n
+SUKSI.PTV,sukse.a,sukse.Øa
+SUKSI.PTV,sus.ta,suØsØ.ta
+SUKSI.ESS,sukse.na,sukse.na
+SUKSI.ILL,sukse.en,sukse.Øen
+SUKSI.ILL,sukse.hen,sukse.hen
+SUKSI.PL.INE,suks.i.ssa,suksØ.i.ssa
+SUKSI.PL.GENien,suks.i.en,suksØ.i.en
+SUKSI.PLGENten,sus.ten,suØsØ.ten
+SUKSI.GENin,sukse.in,sukse.in
+SUKSI.PL.PTV,suks.i.a,suksØ.i.Øa
+SUKSI.PL.ILL,suks.i.in,suksØ.i.Øin
+SUKSI.PL.ILL,suks.i.hin,suksØ.i.hin
 UKSI,uksi,uksi
-UKSI GEN,ukse.n,ukse.n
-UKSI PTV,us.ta,uØsØ.ta
-UKSI PTV,ukse.a,ukse.Øa
-UKSI ESS,ukse.na,ukse.na
-UKSI ILL,ukse.en,ukse.Øen
-UKSI ILL,ukse.hen,ukse.hen
-UKSI PL INE,uks.i.ssa,uksØ.i.ssa
-UKSI PL GENien,uks.i.en,uksØ.i.en
-UKSI PLGENten,us.ten,uØsØ.ten
-UKSI PL PTV,uks.i.a,uksØ.i.Øa
-UKSI PL ILL,uks.i.in,uksØ.i.Øin
-UKSI PL ILL,uks.i.hin,uksØ.i.hin
+UKSI.GEN,ukse.n,ukse.n
+UKSI.PTV,us.ta,uØsØ.ta
+UKSI.PTV,ukse.a,ukse.Øa
+UKSI.ESS,ukse.na,ukse.na
+UKSI.ILL,ukse.en,ukse.Øen
+UKSI.ILL,ukse.hen,ukse.hen
+UKSI.PL.INE,uks.i.ssa,uksØ.i.ssa
+UKSI.PL.GENien,uks.i.en,uksØ.i.en
+UKSI.PLGENten,us.ten,uØsØ.ten
+UKSI.PL.PTV,uks.i.a,uksØ.i.Øa
+UKSI.PL.ILL,uks.i.in,uksØ.i.Øin
+UKSI.PL.ILL,uks.i.hin,uksØ.i.hin
 KAKSI,kaksi,kaksi
-KAKSI GEN,kahde.n,kahde.n
-KAKSI PTV,kah.ta,kahØØ.ta
-KAKSI ESS,kahte.na,kahte.na
-KAKSI ILL,kahte.en,kahte.Øen
-KAKSI ILL,kahte.hen,kahte.hen
-KAKSI PL INE,kaks.i.ssa,kaksØ.i.ssa
-KAKSI PL GENien,kaks.i.en,kaksØ.i.en
-KAKSI PL PTV,kaks.i.a,kaksØ.i.Øa
-KAKSI PL ILL,kaks.i.in,kaksØ.i.Øin
-KAKSI PL ILL,kaks.i.hin,kaksØ.i.hin
+KAKSI.GEN,kahde.n,kahde.n
+KAKSI.PTV,kah.ta,kahØØ.ta
+KAKSI.ESS,kahte.na,kahte.na
+KAKSI.ILL,kahte.en,kahte.Øen
+KAKSI.ILL,kahte.hen,kahte.hen
+KAKSI.PL.INE,kaks.i.ssa,kaksØ.i.ssa
+KAKSI.PL.GENien,kaks.i.en,kaksØ.i.en
+KAKSI.PL.PTV,kaks.i.a,kaksØ.i.Øa
+KAKSI.PL.ILL,kaks.i.in,kaksØ.i.Øin
+KAKSI.PL.ILL,kaks.i.hin,kaksØ.i.hin
 SANKARI,sankari,sankari
-SANKARI GEN,sankari.n,sankari.n
-SANKARI PTV,sankari.a,sankari.Øa
-SANKARI ESS,sankari.na,sankari.na
-SANKARI ILL,sankari.in,sankari.Øin
-SANKARI ILL,sankari.hin,sankari.hin
-SANKARI PL INE,sankare.i.ssa,sankare.i.ssa
-SANKARI PL GENiden,sankare.i.den,sankare.i.dØen
-SANKARI PL GENiden,sankare.i.tten,sankare.i.tten
-SANKARI PL GENien,sankar.i.en,sankarØ.i.en
-SANKARI GENin,sankare.in,sankare.in
-SANKARI PL PTV,sankare.i.ta,sankare.i.ta
-SANKARI PL PTV,sankare.j.a,sankare.j.Øa
-SANKARI PL ILL,sankare.i.hin,sankare.i.hin
+SANKARI.GEN,sankari.n,sankari.n
+SANKARI.PTV,sankari.a,sankari.Øa
+SANKARI.ESS,sankari.na,sankari.na
+SANKARI.ILL,sankari.in,sankari.Øin
+SANKARI.ILL,sankari.hin,sankari.hin
+SANKARI.PL.INE,sankare.i.ssa,sankare.i.ssa
+SANKARI.PL.GENiden,sankare.i.den,sankare.i.dØen
+SANKARI.PL.GENiden,sankare.i.tten,sankare.i.tten
+SANKARI.PL.GENien,sankar.i.en,sankarØ.i.en
+SANKARI.GENin,sankare.in,sankare.in
+SANKARI.PL.PTV,sankare.i.ta,sankare.i.ta
+SANKARI.PL.PTV,sankare.j.a,sankare.j.Øa
+SANKARI.PL.ILL,sankare.i.hin,sankare.i.hin
 JUMALA,jumala,jumala
-JUMALA GEN,jumala.n,jumala.n
-JUMALA PTV,jumala.a,jumala.Øa
-JUMALA PTV,jumala.ta,jumala.ta
-JUMALA ESS,jumala.na,jumala.na
-JUMALA ILL,jumala.an,jumala.Øan
-JUMALA ILL,jumala.han,jumala.han
-JUMALA PL INE,jumal.i.ssa,jumalØ.i.ssa
-JUMALA PL GENien,jumal.i.en,jumalØ.i.en
-JUMALA PLGENten,jumal.ten,jumalØ.ten
-JUMALA GENin,jumala.in,jumala.in
-JUMALA PL PTV,jumal.i.a,jumalØ.i.Øa
-JUMALA PL ILL,jumal.i.in,jumalØ.i.Øin
-JUMALA PL ILL,jumal.i.hin,jumalØ.i.hin
+JUMALA.GEN,jumala.n,jumala.n
+JUMALA.PTV,jumala.a,jumala.Øa
+JUMALA.PTV,jumala.ta,jumala.ta
+JUMALA.ESS,jumala.na,jumala.na
+JUMALA.ILL,jumala.an,jumala.Øan
+JUMALA.ILL,jumala.han,jumala.han
+JUMALA.PL.INE,jumal.i.ssa,jumalØ.i.ssa
+JUMALA.PL.GENien,jumal.i.en,jumalØ.i.en
+JUMALA.PLGENten,jumal.ten,jumalØ.ten
+JUMALA.GENin,jumala.in,jumala.in
+JUMALA.PL.PTV,jumal.i.a,jumalØ.i.Øa
+JUMALA.PL.ILL,jumal.i.in,jumalØ.i.Øin
+JUMALA.PL.ILL,jumal.i.hin,jumalØ.i.hin
 SISAR,sisar,sisarØ
-SISAR GEN,sisare.n,sisare.n
-SISAR PTV,sisar.ta,sisarØ.ta
-SISAR ESS,sisare.na,sisare.na
-SISAR ILL,sisare.en,sisare.Øen
-SISAR ILL,sisare.hen,sisare.hen
-SISAR PL INE,sisar.i.ssa,sisarØ.i.ssa
-SISAR PL GENien,sisar.i.en,sisarØ.i.en
-SISAR PLGENten,sisar.ten,sisarØ.ten
-SISAR PL PTV,sisar.i.a,sisarØ.i.Øa
-SISAR PL ILL,sisar.i.in,sisarØ.i.Øin
-SISAR PL ILL,sisar.i.hin,sisarØ.i.hin
+SISAR.GEN,sisare.n,sisare.n
+SISAR.PTV,sisar.ta,sisarØ.ta
+SISAR.ESS,sisare.na,sisare.na
+SISAR.ILL,sisare.en,sisare.Øen
+SISAR.ILL,sisare.hen,sisare.hen
+SISAR.PL.INE,sisar.i.ssa,sisarØ.i.ssa
+SISAR.PL.GENien,sisar.i.en,sisarØ.i.en
+SISAR.PLGENten,sisar.ten,sisarØ.ten
+SISAR.PL.PTV,sisar.i.a,sisarØ.i.Øa
+SISAR.PL.ILL,sisar.i.in,sisarØ.i.Øin
+SISAR.PL.ILL,sisar.i.hin,sisarØ.i.hin
 AHVEN,ahven,ahvenØ
-AHVEN GEN,ahvene.n,ahvene.n
-AHVEN PTV,ahven.ta,ahvenØ.ta
-AHVEN ESS,ahvene.na,ahvene.na
-AHVEN ESS,ahven.na,ahvenØ.na
-AHVEN ILL,ahvene.en,ahvene.Øen
-AHVEN ILL,ahvene.hen,ahvene.hen
-AHVEN PL INE,ahven.i.ssa,ahvenØ.i.ssa
-AHVEN PL GENien,ahven.i.en,ahvenØ.i.en
-AHVEN PLGENten,ahven.ten,ahvenØ.ten
-AHVEN PL PTV,ahven.i.a,ahvenØ.i.Øa
-AHVEN PL ILL,ahven.i.in,ahvenØ.i.Øin
-AHVEN PL ILL,ahven.i.hin,ahvenØ.i.hin
+AHVEN.GEN,ahvene.n,ahvene.n
+AHVEN.PTV,ahven.ta,ahvenØ.ta
+AHVEN.ESS,ahvene.na,ahvene.na
+AHVEN.ESS,ahven.na,ahvenØ.na
+AHVEN.ILL,ahvene.en,ahvene.Øen
+AHVEN.ILL,ahvene.hen,ahvene.hen
+AHVEN.PL.INE,ahven.i.ssa,ahvenØ.i.ssa
+AHVEN.PL.GENien,ahven.i.en,ahvenØ.i.en
+AHVEN.PLGENten,ahven.ten,ahvenØ.ten
+AHVEN.PL.PTV,ahven.i.a,ahvenØ.i.Øa
+AHVEN.PL.ILL,ahven.i.in,ahvenØ.i.Øin
+AHVEN.PL.ILL,ahven.i.hin,ahvenØ.i.hin
 UISTIN,uistin,uistinØ
-UISTIN GEN,uistime.n,uistime.n
-UISTIN PTV,uistin.ta,uistinØ.ta
-UISTIN ESS,uistime.na,uistime.na
-UISTIN ILL,uistime.en,uistime.Øen
-UISTIN ILL,uistime.hen,uistime.hen
-UISTIN PL INE,uistim.i.ssa,uistimØ.i.ssa
-UISTIN PL GENien,uistim.i.en,uistimØ.i.en
-UISTIN PLGENten,uistin.ten,uistinØ.ten
-UISTIN PL PTV,uistim.i.a,uistimØ.i.Øa
-UISTIN PL ILL,uistim.i.in,uistimØ.i.Øin
-UISTIN PL ILL,uistim.i.hin,uistimØ.i.hin
-ONNETON,onnetØoØnØ,onnetØoØnØ
+UISTIN.GEN,uistime.n,uistime.n
+UISTIN.PTV,uistin.ta,uistinØ.ta
+UISTIN.ESS,uistime.na,uistime.na
+UISTIN.ILL,uistime.en,uistime.Øen
+UISTIN.ILL,uistime.hen,uistime.hen
+UISTIN.PL.INE,uistim.i.ssa,uistimØ.i.ssa
+UISTIN.PL.GENien,uistim.i.en,uistimØ.i.en
+UISTIN.PLGENten,uistin.ten,uistinØ.ten
+UISTIN.PL.PTV,uistim.i.a,uistimØ.i.Øa
+UISTIN.PL.ILL,uistim.i.in,uistimØ.i.Øin
+UISTIN.PL.ILL,uistim.i.hin,uistimØ.i.hin
+ONNETON,onneton,onnetØoØnØ
 ONNETON,onnetoin,onnetØoinØ
-ONNETON GEN,onnettoØma.n,onnettoØma.n
-ONNETON PTV,onnetØoØnØ.ta,onnetØoØnØ.ta
-ONNETON PTV,onnetoin.ta,onnetØoinØ.ta
-ONNETON ESS,onnettoma.na,onnettoØma.na
-ONNETON ESS,onneton.na,onnetØoØnØ.na
-ONNETON ESS,onnetoin.na,onnetØoinØ.na
-ONNETON ILL,onnettoma.an,onnettoØma.Øan
-ONNETON ILL,onnettoma.han,onnettoØma.han
-ONNETON PL INE,onnettom.i.ssa,onnettoØmØ.i.ssa
-ONNETON PL GENien,onnettom.i.en,onnettoØmØ.i.en
-ONNETON PLGENten,onneton.ten,onnetØoØnØ.ten
-ONNETON PLGENten,onnetoin.ten,onnetØoinØ.ten
-ONNETON GENin,onnettoma.in,onnettoØma.in
-ONNETON PL PTV,onnettom.i.a,onnettoØmØ.i.Øa
-ONNETON PL ILL,onnettom.i.in,onnettoØmØ.i.Øin
-ONNETON PL ILL,onnettom.i.hin,onnettoØmØ.i.hin
+ONNETON.GEN,onnettoØma.n,onnettoØma.n
+ONNETON.PTV,onneton.ta,onnetØoØnØ.ta
+ONNETON.PTV,onnetoin.ta,onnetØoinØ.ta
+ONNETON.ESS,onnettoma.na,onnettoØma.na
+ONNETON.ESS,onneton.na,onnetØoØnØ.na
+ONNETON.ESS,onnetoin.na,onnetØoinØ.na
+ONNETON.ILL,onnettoma.an,onnettoØma.Øan
+ONNETON.ILL,onnettoma.han,onnettoØma.han
+ONNETON.PL.INE,onnettom.i.ssa,onnettoØmØ.i.ssa
+ONNETON.PL.GENien,onnettom.i.en,onnettoØmØ.i.en
+ONNETON.PLGENten,onneton.ten,onnetØoØnØ.ten
+ONNETON.PLGENten,onnetoin.ten,onnetØoinØ.ten
+ONNETON.GENin,onnettoma.in,onnettoØma.in
+ONNETON.PL.PTV,onnettom.i.a,onnettoØmØ.i.Øa
+ONNETON.PL.ILL,onnettom.i.in,onnettoØmØ.i.Øin
+ONNETON.PL.ILL,onnettom.i.hin,onnettoØmØ.i.hin
 HEVONEN,hevonen,hevonen
-HEVONEN GEN,hevose.n,hevoseØ.n
-HEVONEN PTV,hevos.ta,hevosØØ.ta
-HEVONEN ESS,hevose.na,hevoseØ.na
-HEVONEN ESS,hevos.na,hevosØØ.na
-HEVONEN ESS,hevos.sa,hevosØØ.sa
-HEVONEN ILL,hevose.en,hevoseØ.Øen
-HEVONEN ILL,hevose.hen,hevoseØ.hen
-HEVONEN PL INE,hevos.i.ssa,hevosØØ.i.ssa
-HEVONEN PL GENien,hevos.i.en,hevosØØ.i.en
-HEVONEN PLGENten,hevos.ten,hevosØØ.ten
-HEVONEN PL PTV,hevos.i.a,hevosØØ.i.Øa
-HEVONEN PL ILL,hevos.i.in,hevosØØ.i.Øin
-HEVONEN PL ILL,hevos.i.hin,hevosØØ.i.hin
+HEVONEN.GEN,hevose.n,hevoseØ.n
+HEVONEN.PTV,hevos.ta,hevosØØ.ta
+HEVONEN.ESS,hevose.na,hevoseØ.na
+HEVONEN.ESS,hevos.na,hevosØØ.na
+HEVONEN.ESS,hevos.sa,hevosØØ.sa
+HEVONEN.ILL,hevose.en,hevoseØ.Øen
+HEVONEN.ILL,hevose.hen,hevoseØ.hen
+HEVONEN.PL.INE,hevos.i.ssa,hevosØØ.i.ssa
+HEVONEN.PL.GENien,hevos.i.en,hevosØØ.i.en
+HEVONEN.PLGENten,hevos.ten,hevosØØ.ten
+HEVONEN.PL.PTV,hevos.i.a,hevosØØ.i.Øa
+HEVONEN.PL.ILL,hevos.i.in,hevosØØ.i.Øin
+HEVONEN.PL.ILL,hevos.i.hin,hevosØØ.i.hin
 VASTAUS,vastaus,vastauØsØ
-VASTAUS GEN,vastaukse.n,vastaukse.n
-VASTAUS PTV,vastaus.ta,vastauØsØ.ta
-VASTAUS ESS,vastaukse.na,vastaukse.na
-VASTAUS ILL,vastaukse.en,vastaukse.Øen
-VASTAUS ILL,vastaukse.hen,vastaukse.hen
-VASTAUS PL INE,vastauks.i.ssa,vastauksØ.i.ssa
-VASTAUS PL GENien,vastauks.i.en,vastauksØ.i.en
-VASTAUS PLGENten,vastaus.ten,vastauØsØ.ten
-VASTAUS PL PTV,vastauks.i.a,vastauksØ.i.Øa
-VASTAUS PL ILL,vastauks.i.in,vastauksØ.i.Øin
-VASTAUS PL ILL,vastauks.i.hin,vastauksØ.i.hin
-KALLEUS,kalleuØsØ,kalleuØsØ
-KALLEUS GEN,kalleuØde.n,kalleuØde.n
-KALLEUS PTV,kalleuØtØ.ta,kalleuØtØ.ta
-KALLEUS ESS,kalleute.na,kalleuØte.na
-KALLEUS ILL,kalleute.en,kalleuØte.Øen
-KALLEUS ILL,kalleute.hen,kalleuØte.hen
-KALLEUS PL INE,kalleuks.i.ssa,kalleuksØ.i.ssa
-KALLEUS PL GENien,kalleuks.i.en,kalleuksØ.i.en
-KALLEUS PLGENten,kalleut.ten,kalleuØtØ.ten
-KALLEUS PL PTV,kalleuks.i.a,kalleuksØ.i.Øa
-KALLEUS PL ILL,kalleuks.i.in,kalleuksØ.i.Øin
-KALLEUS PL ILL,kalleuks.i.hin,kalleuksØ.i.hin
+VASTAUS.GEN,vastaukse.n,vastaukse.n
+VASTAUS.PTV,vastaus.ta,vastauØsØ.ta
+VASTAUS.ESS,vastaukse.na,vastaukse.na
+VASTAUS.ILL,vastaukse.en,vastaukse.Øen
+VASTAUS.ILL,vastaukse.hen,vastaukse.hen
+VASTAUS.PL.INE,vastauks.i.ssa,vastauksØ.i.ssa
+VASTAUS.PL.GENien,vastauks.i.en,vastauksØ.i.en
+VASTAUS.PLGENten,vastaus.ten,vastauØsØ.ten
+VASTAUS.PL.PTV,vastauks.i.a,vastauksØ.i.Øa
+VASTAUS.PL.ILL,vastauks.i.in,vastauksØ.i.Øin
+VASTAUS.PL.ILL,vastauks.i.hin,vastauksØ.i.hin
+KALLEUS,kalleus,kalleuØsØ
+KALLEUS.GEN,kalleude.n,kalleuØde.n
+KALLEUS.PTV,kalleut.ta,kalleuØtØ.ta
+KALLEUS.ESS,kalleute.na,kalleuØte.na
+KALLEUS.ILL,kalleute.en,kalleuØte.Øen
+KALLEUS.ILL,kalleute.hen,kalleuØte.hen
+KALLEUS.PL.INE,kalleuks.i.ssa,kalleuksØ.i.ssa
+KALLEUS.PL.GENien,kalleuks.i.en,kalleuksØ.i.en
+KALLEUS.PLGENten,kalleut.ten,kalleuØtØ.ten
+KALLEUS.PL.PTV,kalleuks.i.a,kalleuksØ.i.Øa
+KALLEUS.PL.ILL,kalleuks.i.in,kalleuksØ.i.Øin
+KALLEUS.PL.ILL,kalleuks.i.hin,kalleuksØ.i.hin
 VIERAS,vieras,vierasØ
-VIERAS GEN,vieraa.n,vieraØa.n
-VIERAS GEN,vieraha.n,vieraha.n
-VIERAS PTV,vieras.ta,vierasØ.ta
-VIERAS ESS,vieraa.na,vieraØa.na
-VIERAS ESS,vieras.na,vierasØ.na
-VIERAS ESS,vieras.sa,vierasØ.sa
-VIERAS ESS,vieraha.na,vieraha.na
-VIERAS ILLseen,vieraa.seen,vieraØa.seen
-VIERAS ILLseen,vieraha.sen,vieraha.seØn
-VIERAS PL INE,viera.i.ssa,vieraØØ.i.ssa
-VIERAS PL INE,vierah.i.ssa,vierahØ.i.ssa
-VIERAS PL GENiden,viera.i.den,vieraØØ.i.dØen
-VIERAS PL GENiden,viera.i.tten,vieraØØ.i.tten
-VIERAS PLGENten,vieras.ten,vierasØ.ten
-VIERAS PL PTV,viera.i.ta,vieraØØ.i.ta
-VIERAS PL PTV,vierah.i.a,vierahØ.i.Øa
-VIERAS PL ILL,viera.i.hin,vieraØØ.i.hin
-VIERAS PL ILLsiin,viera.i.siin,vieraØØ.i.siin
-VIERAS PL ILLsiin,vierah.i.sin,vierahØ.i.siØn
+VIERAS.GEN,vieraa.n,vieraØa.n
+VIERAS.GEN,vieraha.n,vieraha.n
+VIERAS.PTV,vieras.ta,vierasØ.ta
+VIERAS.ESS,vieraa.na,vieraØa.na
+VIERAS.ESS,vieras.na,vierasØ.na
+VIERAS.ESS,vieras.sa,vierasØ.sa
+VIERAS.ESS,vieraha.na,vieraha.na
+VIERAS.ILLseen,vieraa.seen,vieraØa.seen
+VIERAS.ILLseen,vieraha.sen,vieraha.seØn
+VIERAS.PL.INE,viera.i.ssa,vieraØØ.i.ssa
+VIERAS.PL.INE,vierah.i.ssa,vierahØ.i.ssa
+VIERAS.PL.GENiden,viera.i.den,vieraØØ.i.dØen
+VIERAS.PL.GENiden,viera.i.tten,vieraØØ.i.tten
+VIERAS.PLGENten,vieras.ten,vierasØ.ten
+VIERAS.PL.PTV,viera.i.ta,vieraØØ.i.ta
+VIERAS.PL.PTV,vierah.i.a,vierahØ.i.Øa
+VIERAS.PL.ILL,viera.i.hin,vieraØØ.i.hin
+VIERAS.PL.ILLsiin,viera.i.siin,vieraØØ.i.siin
+VIERAS.PL.ILLsiin,vierah.i.sin,vierahØ.i.siØn
 SAAPAS,saapas,saapØasØ
-SAAPAS GEN,saappaa.n,saappaØa.n
-SAAPAS GEN,saappaha.n,saappaha.n
-SAAPAS PTV,saapas.ta,saapØasØ.ta
-SAAPAS ESS,saappaa.na,saappaØa.na
-SAAPAS ESS,saapas.na,saapØasØ.na
-SAAPAS ESS,saapas.sa,saapØasØ.sa
-SAAPAS ESS,saappaha.na,saappaha.na
-SAAPAS ILLseen,saappaa.seen,saappaØa.seen
-SAAPAS ILLseen,saappaha.sen,saappaha.seØn
-SAAPAS PL INE,saappa.i.ssa,saappaØØ.i.ssa
-SAAPAS PL INE,saappah.i.ssa,saappahØ.i.ssa
-SAAPAS PL GENiden,saappa.i.den,saappaØØ.i.dØen
-SAAPAS PL GENiden,saappa.i.tten,saappaØØ.i.tten
-SAAPAS PL GENien,saappah.i.en,saappahØ.i.en
-SAAPAS PLGENten,saapas.ten,saapØasØ.ten
-SAAPAS PL PTV,saappa.i.ta,saappaØØ.i.ta
-SAAPAS PL PTV,saappah.i.a,saappahØ.i.Øa
-SAAPAS PL ILL,saappa.i.hin,saappaØØ.i.hin
-SAAPAS PL ILLsiin,saappa.i.siin,saappaØØ.i.siin
-SAAPAS PL ILLsiin,saappah.i.sin,saappahØ.i.siØn
+SAAPAS.GEN,saappaa.n,saappaØa.n
+SAAPAS.GEN,saappaha.n,saappaha.n
+SAAPAS.PTV,saapas.ta,saapØasØ.ta
+SAAPAS.ESS,saappaa.na,saappaØa.na
+SAAPAS.ESS,saapas.na,saapØasØ.na
+SAAPAS.ESS,saapas.sa,saapØasØ.sa
+SAAPAS.ESS,saappaha.na,saappaha.na
+SAAPAS.ILLseen,saappaa.seen,saappaØa.seen
+SAAPAS.ILLseen,saappaha.sen,saappaha.seØn
+SAAPAS.PL.INE,saappa.i.ssa,saappaØØ.i.ssa
+SAAPAS.PL.INE,saappah.i.ssa,saappahØ.i.ssa
+SAAPAS.PL.GENiden,saappa.i.den,saappaØØ.i.dØen
+SAAPAS.PL.GENiden,saappa.i.tten,saappaØØ.i.tten
+SAAPAS.PL.GENien,saappah.i.en,saappahØ.i.en
+SAAPAS.PLGENten,saapas.ten,saapØasØ.ten
+SAAPAS.PL.PTV,saappa.i.ta,saappaØØ.i.ta
+SAAPAS.PL.PTV,saappah.i.a,saappahØ.i.Øa
+SAAPAS.PL.ILL,saappa.i.hin,saappaØØ.i.hin
+SAAPAS.PL.ILLsiin,saappa.i.siin,saappaØØ.i.siin
+SAAPAS.PL.ILLsiin,saappah.i.sin,saappahØ.i.siØn
 KIRVES,kirves,kirvesØ
-KIRVES GEN,kirvee.n,kirveØe.n
-KIRVES GEN,kirvehe.n,kirvehe.n
-KIRVES PTV,kirves.tä,kirvesØ.tä
-KIRVES ESS,kirvee.nä,kirveØe.nä
-KIRVES ESS,kirves.nä,kirvesØ.nä
-KIRVES ESS,kirves.sä,kirvesØ.sä
-KIRVES ESS,kirvehe.nä,kirvehe.nä
-KIRVES ILLseen,kirvee.seen,kirveØe.seen
-KIRVES ILLseen,kirvehe.sen,kirvehe.seØn
-KIRVES PL INE,kirve.i.ssä,kirveØØ.i.ssä
-KIRVES PL INE,kirveh.i.ssä,kirvehØ.i.ssä
-KIRVES PL GENiden,kirve.i.den,kirveØØ.i.dØen
-KIRVES PL GENiden,kirve.i.tten,kirveØØ.i.tten
-KIRVES PL GENien,kirveh.i.en,kirvehØ.i.en
-KIRVES PLGENten,kirves.ten,kirvesØ.ten
-KIRVES PL PTV,kirve.i.tä,kirveØØ.i.tä
-KIRVES PL PTV,kirveh.i.ä,kirvehØ.i.Øä
-KIRVES PL ILL,kirve.i.hin,kirveØØ.i.hin
-KIRVES PL ILLsiin,kirveh.i.sin,kirvehØ.i.siØn
+KIRVES.GEN,kirvee.n,kirveØe.n
+KIRVES.GEN,kirvehe.n,kirvehe.n
+KIRVES.PTV,kirves.tä,kirvesØ.tä
+KIRVES.ESS,kirvee.nä,kirveØe.nä
+KIRVES.ESS,kirves.nä,kirvesØ.nä
+KIRVES.ESS,kirves.sä,kirvesØ.sä
+KIRVES.ESS,kirvehe.nä,kirvehe.nä
+KIRVES.ILLseen,kirvee.seen,kirveØe.seen
+KIRVES.ILLseen,kirvehe.sen,kirvehe.seØn
+KIRVES.PL.INE,kirve.i.ssä,kirveØØ.i.ssä
+KIRVES.PL.INE,kirveh.i.ssä,kirvehØ.i.ssä
+KIRVES.PL.GENiden,kirve.i.den,kirveØØ.i.dØen
+KIRVES.PL.GENiden,kirve.i.tten,kirveØØ.i.tten
+KIRVES.PL.GENien,kirveh.i.en,kirvehØ.i.en
+KIRVES.PLGENten,kirves.ten,kirvesØ.ten
+KIRVES.PL.PTV,kirve.i.tä,kirveØØ.i.tä
+KIRVES.PL.PTV,kirveh.i.ä,kirvehØ.i.Øä
+KIRVES.PL.ILL,kirve.i.hin,kirveØØ.i.hin
+KIRVES.PL.ILLsiin,kirveh.i.sin,kirvehØ.i.siØn
 KAURIS,kauris,kaurisØ
-KAURIS GEN,kaurii.n,kauriØi.n
-KAURIS GEN,kaurihi.n,kaurihi.n
-KAURIS PTV,kauris.ta,kaurisØ.ta
-KAURIS ESS,kaurii.na,kauriØi.na
-KAURIS ESS,kauris.na,kaurisØ.na
-KAURIS ESS,kauris.sa,kaurisØ.sa
-KAURIS ESS,kaurihi.na,kaurihi.na
-KAURIS ILLseen,kaurii.seen,kauriØi.seen
-KAURIS ILLseen,kaurihi.sen,kaurihi.seØn
-KAURIS PL INE,kauri.i.ssa,kauriØØ.i.ssa
-KAURIS PL INE,kaurih.i.ssa,kaurihØ.i.ssa
-KAURIS PL GENiden,kauri.i.den,kauriØØ.i.dØen
-KAURIS PL GENiden,kauri.i.tten,kauriØØ.i.tten
-KAURIS PL GENien,kaurih.i.en,kaurihØ.i.en
-KAURIS PLGENten,kauris.ten,kaurisØ.ten
-KAURIS PL PTV,kauri.i.ta,kauriØØ.i.ta
-KAURIS PL PTV,kaurih.i.a,kaurihØ.i.Øa
-KAURIS PL ILL,kauri.i.hin,kauriØØ.i.hin
-KAURIS PL ILLsiin,kauri.i.siin,kauriØØ.i.siin
-KAURIS PL ILLsiin,kaurih.i.sin,kaurihØ.i.siØn
+KAURIS.GEN,kaurii.n,kauriØi.n
+KAURIS.GEN,kaurihi.n,kaurihi.n
+KAURIS.PTV,kauris.ta,kaurisØ.ta
+KAURIS.ESS,kaurii.na,kauriØi.na
+KAURIS.ESS,kauris.na,kaurisØ.na
+KAURIS.ESS,kauris.sa,kaurisØ.sa
+KAURIS.ESS,kaurihi.na,kaurihi.na
+KAURIS.ILLseen,kaurii.seen,kauriØi.seen
+KAURIS.ILLseen,kaurihi.sen,kaurihi.seØn
+KAURIS.PL.INE,kauri.i.ssa,kauriØØ.i.ssa
+KAURIS.PL.INE,kaurih.i.ssa,kaurihØ.i.ssa
+KAURIS.PL.GENiden,kauri.i.den,kauriØØ.i.dØen
+KAURIS.PL.GENiden,kauri.i.tten,kauriØØ.i.tten
+KAURIS.PL.GENien,kaurih.i.en,kaurihØ.i.en
+KAURIS.PLGENten,kauris.ten,kaurisØ.ten
+KAURIS.PL.PTV,kauri.i.ta,kauriØØ.i.ta
+KAURIS.PL.PTV,kaurih.i.a,kaurihØ.i.Øa
+KAURIS.PL.ILL,kauri.i.hin,kauriØØ.i.hin
+KAURIS.PL.ILLsiin,kauri.i.siin,kauriØØ.i.siin
+KAURIS.PL.ILLsiin,kaurih.i.sin,kaurihØ.i.siØn
 KAUNIS,kaunis,kaunisØ
-KAUNIS GEN,kaunii.n,kauniØi.n
-KAUNIS GEN,kaunihi.n,kaunihi.n
-KAUNIS PTV,kaunis.ta,kaunisØ.ta
-KAUNIS ESS,kaunii.na,kauniØi.na
-KAUNIS ESS,kaunis.na,kaunisØ.na
-KAUNIS ESS,kaunis.sa,kaunisØ.sa
-KAUNIS ESS,kaunihi.na,kaunihi.na
-KAUNIS ILLseen,kaunii.seen,kauniØi.seen
-KAUNIS ILLseen,kaunihi.sen,kaunihi.seØn
-KAUNIS PL INE,kauni.i.ssa,kauniØØ.i.ssa
-KAUNIS PL INE,kaunih.i.ssa,kaunihØ.i.ssa
-KAUNIS PL INE,kauneh.i.ssa,kaunehØ.i.ssa
-KAUNIS PL INE,kaune.i.ssa,kauneØØ.i.ssa
-KAUNIS PL GENiden,kauni.i.den,kauniØØ.i.dØen
-KAUNIS PL GENiden,kauni.i.tten,kauniØØ.i.tten
-KAUNIS PL GENiden,kaune.i.den,kauneØØ.i.dØen
-KAUNIS PL GENiden,kaune.i.tten,kauneØØ.i.tten
-KAUNIS PL GENien,kaunih.i.en,kaunihØ.i.en
-KAUNIS PL GENien,kauneh.i.en,kaunehØ.i.en
-KAUNIS PLGENten,kaunis.ten,kaunisØ.ten
-KAUNIS PL PTV,kauni.i.ta,kauniØØ.i.ta
-KAUNIS PL PTV,kaune.i.ta,kauneØØ.i.ta
-KAUNIS PL PTV,kaunih.i.a,kaunihØ.i.Øa
-KAUNIS PL PTV,kauneh.i.a,kaunehØ.i.Øa
-KAUNIS PL ILL,kauni.i.hin,kauniØØ.i.hin
-KAUNIS PL ILL,kaune.i.hin,kauneØØ.i.hin
-KAUNIS PL ILLsiin,kauni.i.siin,kauniØØ.i.siin
-KAUNIS PL ILLsiin,kaune.i.siin,kauneØØ.i.siin
-KAUNIS PL ILLsiin,kaunih.i.sin,kaunihØ.i.siØn
-KAUNIS PL ILLsiin,kauneh.i.sin,kaunehØ.i.siØn
+KAUNIS.GEN,kaunii.n,kauniØi.n
+KAUNIS.GEN,kaunihi.n,kaunihi.n
+KAUNIS.PTV,kaunis.ta,kaunisØ.ta
+KAUNIS.ESS,kaunii.na,kauniØi.na
+KAUNIS.ESS,kaunis.na,kaunisØ.na
+KAUNIS.ESS,kaunis.sa,kaunisØ.sa
+KAUNIS.ESS,kaunihi.na,kaunihi.na
+KAUNIS.ILLseen,kaunii.seen,kauniØi.seen
+KAUNIS.ILLseen,kaunihi.sen,kaunihi.seØn
+KAUNIS.PL.INE,kauni.i.ssa,kauniØØ.i.ssa
+KAUNIS.PL.INE,kaunih.i.ssa,kaunihØ.i.ssa
+KAUNIS.PL.INE,kauneh.i.ssa,kaunehØ.i.ssa
+KAUNIS.PL.INE,kaune.i.ssa,kauneØØ.i.ssa
+KAUNIS.PL.GENiden,kauni.i.den,kauniØØ.i.dØen
+KAUNIS.PL.GENiden,kauni.i.tten,kauniØØ.i.tten
+KAUNIS.PL.GENiden,kaune.i.den,kauneØØ.i.dØen
+KAUNIS.PL.GENiden,kaune.i.tten,kauneØØ.i.tten
+KAUNIS.PL.GENien,kaunih.i.en,kaunihØ.i.en
+KAUNIS.PL.GENien,kauneh.i.en,kaunehØ.i.en
+KAUNIS.PLGENten,kaunis.ten,kaunisØ.ten
+KAUNIS.PL.PTV,kauni.i.ta,kauniØØ.i.ta
+KAUNIS.PL.PTV,kaune.i.ta,kauneØØ.i.ta
+KAUNIS.PL.PTV,kaunih.i.a,kaunihØ.i.Øa
+KAUNIS.PL.PTV,kauneh.i.a,kaunehØ.i.Øa
+KAUNIS.PL.ILL,kauni.i.hin,kauniØØ.i.hin
+KAUNIS.PL.ILL,kaune.i.hin,kauneØØ.i.hin
+KAUNIS.PL.ILLsiin,kauni.i.siin,kauniØØ.i.siin
+KAUNIS.PL.ILLsiin,kaune.i.siin,kauneØØ.i.siin
+KAUNIS.PL.ILLsiin,kaunih.i.sin,kaunihØ.i.siØn
+KAUNIS.PL.ILLsiin,kauneh.i.sin,kaunehØ.i.siØn
 KOIRAS,koiras,koiraØsØ
-KOIRAS GEN,koirakse.n,koirakse.n
-KOIRAS PTV,koiras.ta,koiraØsØ.ta
-KOIRAS ESS,koirakse.na,koirakse.na
-KOIRAS ESS,koiras.na,koiraØsØ.na
-KOIRAS ESS,koiras.sa,koiraØsØ.sa
-KOIRAS ILL,koirakse.en,koirakse.Øen
-KOIRAS ILL,koirakse.hen,koirakse.hen
-KOIRAS PL INE,koiraks.i.ssa,koiraksØ.i.ssa
-KOIRAS PL GENien,koiraks.i.en,koiraksØ.i.en
-KOIRAS PLGENten,koiras.ten,koiraØsØ.ten
-KOIRAS PL PTV,koiraks.i.a,koiraksØ.i.Øa
-KOIRAS PL ILL,koiraks.i.in,koiraksØ.i.Øin
-KOIRAS PL ILL,koiraks.i.hin,koiraksØ.i.hin
+KOIRAS.GEN,koirakse.n,koirakse.n
+KOIRAS.PTV,koiras.ta,koiraØsØ.ta
+KOIRAS.ESS,koirakse.na,koirakse.na
+KOIRAS.ESS,koiras.na,koiraØsØ.na
+KOIRAS.ESS,koiras.sa,koiraØsØ.sa
+KOIRAS.ILL,koirakse.en,koirakse.Øen
+KOIRAS.ILL,koirakse.hen,koirakse.hen
+KOIRAS.PL.INE,koiraks.i.ssa,koiraksØ.i.ssa
+KOIRAS.PL.GENien,koiraks.i.en,koiraksØ.i.en
+KOIRAS.PLGENten,koiras.ten,koiraØsØ.ten
+KOIRAS.PL.PTV,koiraks.i.a,koiraksØ.i.Øa
+KOIRAS.PL.ILL,koiraks.i.in,koiraksØ.i.Øin
+KOIRAS.PL.ILL,koiraks.i.hin,koiraksØ.i.hin
 Koiras,koiras,koirasØ
-Koiras GEN,koiraa.n,koiraØa.n
-Koiras GEN,koiraha.n,koiraha.n
-Koiras PTV,koiras.ta,koirasØ.ta
-Koiras ESS,koiraa.na,koiraØa.na
-Koiras ESS,koiraha.na,koiraha.na
-Koiras ILLseen,koiraa.seen,koiraØa.seen
-Koiras ILLseen,koiraha.sen,koiraha.seØn
-Koiras PL INE,koira.i.ssa,koiraØØ.i.ssa
-Koiras PL INE,koirah.i.ssa,koirahØ.i.ssa
-Koiras PL GENiden,koira.i.den,koiraØØ.i.dØen
-Koiras PL GENiden,koira.i.tten,koiraØØ.i.tten
-Koiras PL GENien,koirah.i.en,koirahØ.i.en
-Koiras PL PTV,koira.i.ta,koiraØØ.i.ta
-Koiras PL PTV,koirah.i.a,koirahØ.i.Øa
-Koiras PL ILL,koira.i.hin,koiraØØ.i.hin
-Koiras PL ILLsiin,koira.i.siin,koiraØØ.i.siin
-Koiras PL ILLsiin,koirah.i.sin,koirahØ.i.siØn
+Koiras.GEN,koiraa.n,koiraØa.n
+Koiras.GEN,koiraha.n,koiraha.n
+Koiras.PTV,koiras.ta,koirasØ.ta
+Koiras.ESS,koiraa.na,koiraØa.na
+Koiras.ESS,koiraha.na,koiraha.na
+Koiras.ILLseen,koiraa.seen,koiraØa.seen
+Koiras.ILLseen,koiraha.sen,koiraha.seØn
+Koiras.PL.INE,koira.i.ssa,koiraØØ.i.ssa
+Koiras.PL.INE,koirah.i.ssa,koirahØ.i.ssa
+Koiras.PL.GENiden,koira.i.den,koiraØØ.i.dØen
+Koiras.PL.GENiden,koira.i.tten,koiraØØ.i.tten
+Koiras.PL.GENien,koirah.i.en,koirahØ.i.en
+Koiras.PL.PTV,koira.i.ta,koiraØØ.i.ta
+Koiras.PL.PTV,koirah.i.a,koirahØ.i.Øa
+Koiras.PL.ILL,koira.i.hin,koiraØØ.i.hin
+Koiras.PL.ILLsiin,koira.i.siin,koiraØØ.i.siin
+Koiras.PL.ILLsiin,koirah.i.sin,koirahØ.i.siØn
 UROS,uros,urosØ
-UROS GEN,uroo.n,uroØo.n
-UROS GEN,uroho.n,uroho.n
-UROS PTV,uros.ta,urosØ.ta
-UROS ESS,uroo.na,uroØo.na
-UROS ESS,uroho.na,uroho.na
-UROS ILLseen,uroo.seen,uroØo.seen
-UROS ILLseen,uroho.sen,uroho.seØn
-UROS PL INE,uro.i.ssa,uroØØ.i.ssa
-UROS PL INE,uroh.i.ssa,urohØ.i.ssa
-UROS PL GENiden,uro.i.den,uroØØ.i.dØen
-UROS PL GENiden,uro.i.tten,uroØØ.i.tten
-UROS PL GENiden,uroh.i.tten,urohØ.i.tten
-UROS PL GENien,uroh.i.en,urohØ.i.en
-UROS PLGENten,uros.ten,urosØ.ten
-UROS PL PTV,uro.i.ta,uroØØ.i.ta
-UROS PL PTV,uroh.i.a,urohØ.i.Øa
-UROS PL ILL,uro.i.hin,uroØØ.i.hin
-UROS PL ILLsiin,uro.i.siin,uroØØ.i.siin
-UROS PL ILLsiin,uroh.i.sin,urohØ.i.siØn
+UROS.GEN,uroo.n,uroØo.n
+UROS.GEN,uroho.n,uroho.n
+UROS.PTV,uros.ta,urosØ.ta
+UROS.ESS,uroo.na,uroØo.na
+UROS.ESS,uroho.na,uroho.na
+UROS.ILLseen,uroo.seen,uroØo.seen
+UROS.ILLseen,uroho.sen,uroho.seØn
+UROS.PL.INE,uro.i.ssa,uroØØ.i.ssa
+UROS.PL.INE,uroh.i.ssa,urohØ.i.ssa
+UROS.PL.GENiden,uro.i.den,uroØØ.i.dØen
+UROS.PL.GENiden,uro.i.tten,uroØØ.i.tten
+UROS.PL.GENiden,uroh.i.tten,urohØ.i.tten
+UROS.PL.GENien,uroh.i.en,urohØ.i.en
+UROS.PLGENten,uros.ten,urosØ.ten
+UROS.PL.PTV,uro.i.ta,uroØØ.i.ta
+UROS.PL.PTV,uroh.i.a,urohØ.i.Øa
+UROS.PL.ILL,uro.i.hin,uroØØ.i.hin
+UROS.PL.ILLsiin,uro.i.siin,uroØØ.i.siin
+UROS.PL.ILLsiin,uroh.i.sin,urohØ.i.siØn
 MIES,mies,miesØ
-MIES GEN,miehe.n,miehe.n
-MIES PTV,mies.tä,miesØ.tä
-MIES ESS,miehe.nä,miehe.nä
-MIES ESS,mies.nä,miesØ.nä
-MIES ESS,mies.sä,miesØ.sä
-MIES ILL,miehe.en,miehe.Øen
-MIES PL INE,mieh.i.ssä,miehØ.i.ssä
-MIES PL GENien,mieh.i.en,miehØ.i.en
-MIES PLGENten,mies.ten,miesØ.ten
-MIES PL PTV,mieh.i.ä,miehØ.i.Øä
-MIES PL ILL,mieh.i.in,miehØ.i.Øin
-AIRUT,airutØ,airutØ
-AIRUT GEN,airuØe.n,airuØe.n
-AIRUT PTV,airutØ.ta,airutØ.ta
-AIRUT ESS,airue.na,airuØe.na
-AIRUT ILL,airue.en,airuØe.Øen
-AIRUT ILL,airue.hen,airuØe.hen
-AIRUT PL INE,airu.i.ssa,airuØØ.i.ssa
-AIRUT PL INE,airuh.i.ssa,airuhØ.i.ssa
-AIRUT PL GENiden,airu.i.den,airuØØ.i.dØen
-AIRUT PL GENiden,airu.i.tten,airuØØ.i.tten
-AIRUT PL GENiden,airuh.i.tten,airuhØ.i.tten
-AIRUT PL GENien,airuh.i.en,airuhØ.i.en
-AIRUT PLGENten,airut.ten,airutØ.ten
-AIRUT PL PTV,airu.i.ta,airuØØ.i.ta
-AIRUT PL PTV,airuh.i.a,airuhØ.i.Øa
-AIRUT PL ILL,airu.i.hin,airuØØ.i.hin
-AIRUT PL ILLsiin,airu.i.siin,airuØØ.i.siin
-AIRUT PL ILLsiin,airuh.i.sin,airuhØ.i.siØn
-ÄIDYT,äidytØ,äidytØ
-ÄIDYT GEN,äityØe.n,äityØe.n
-ÄIDYT PTV,äidytØ.tä,äidytØ.tä
-ÄIDYT ESS,äitye.nä,äityØe.nä
-ÄIDYT ILL,äitye.en,äityØe.Øen
-ÄIDYT ILL,äitye.hen,äityØe.hen
-ÄIDYT PL INE,äity.i.ssä,äityØØ.i.ssä
-ÄIDYT PL INE,äityh.i.ssä,äityhØ.i.ssä
-ÄIDYT PL GENiden,äity.i.den,äityØØ.i.dØen
-ÄIDYT PL GENiden,äity.i.tten,äityØØ.i.tten
-ÄIDYT PL GENiden,äityh.i.tten,äityhØ.i.tten
-ÄIDYT PL GENien,äityh.i.en,äityhØ.i.en
-ÄIDYT PLGENten,äidyt.ten,äidytØ.ten
-ÄIDYT PL PTV,äity.i.tä,äityØØ.i.tä
-ÄIDYT PL PTV,äityh.i.ä,äityhØ.i.Øä
-ÄIDYT PL ILL,äity.i.hin,äityØØ.i.hin
-ÄIDYT PL ILLsiin,äity.i.siin,äityØØ.i.siin
-ÄIDYT PL ILLsiin,äityh.i.sin,äityhØ.i.siØn
+MIES.GEN,miehe.n,miehe.n
+MIES.PTV,mies.tä,miesØ.tä
+MIES.ESS,miehe.nä,miehe.nä
+MIES.ESS,mies.nä,miesØ.nä
+MIES.ESS,mies.sä,miesØ.sä
+MIES.ILL,miehe.en,miehe.Øen
+MIES.PL.INE,mieh.i.ssä,miehØ.i.ssä
+MIES.PL.GENien,mieh.i.en,miehØ.i.en
+MIES.PLGENten,mies.ten,miesØ.ten
+MIES.PL.PTV,mieh.i.ä,miehØ.i.Øä
+MIES.PL.ILL,mieh.i.in,miehØ.i.Øin
+AIRUT,airut,airutØ
+AIRUT.GEN,airue.n,airuØe.n
+AIRUT.PTV,airut.ta,airutØ.ta
+AIRUT.ESS,airue.na,airuØe.na
+AIRUT.ILL,airue.en,airuØe.Øen
+AIRUT.ILL,airue.hen,airuØe.hen
+AIRUT.PL.INE,airu.i.ssa,airuØØ.i.ssa
+AIRUT.PL.INE,airuh.i.ssa,airuhØ.i.ssa
+AIRUT.PL.GENiden,airu.i.den,airuØØ.i.dØen
+AIRUT.PL.GENiden,airu.i.tten,airuØØ.i.tten
+AIRUT.PL.GENiden,airuh.i.tten,airuhØ.i.tten
+AIRUT.PL.GENien,airuh.i.en,airuhØ.i.en
+AIRUT.PLGENten,airut.ten,airutØ.ten
+AIRUT.PL.PTV,airu.i.ta,airuØØ.i.ta
+AIRUT.PL.PTV,airuh.i.a,airuhØ.i.Øa
+AIRUT.PL.ILL,airu.i.hin,airuØØ.i.hin
+AIRUT.PL.ILLsiin,airu.i.siin,airuØØ.i.siin
+AIRUT.PL.ILLsiin,airuh.i.sin,airuhØ.i.siØn
+ÄIDYT,äidyt,äidytØ
+ÄIDYT.GEN,äitye.n,äityØe.n
+ÄIDYT.PTV,äidyt.tä,äidytØ.tä
+ÄIDYT.ESS,äitye.nä,äityØe.nä
+ÄIDYT.ILL,äitye.en,äityØe.Øen
+ÄIDYT.ILL,äitye.hen,äityØe.hen
+ÄIDYT.PL.INE,äity.i.ssä,äityØØ.i.ssä
+ÄIDYT.PL.INE,äityh.i.ssä,äityhØ.i.ssä
+ÄIDYT.PL.GENiden,äity.i.den,äityØØ.i.dØen
+ÄIDYT.PL.GENiden,äity.i.tten,äityØØ.i.tten
+ÄIDYT.PL.GENiden,äityh.i.tten,äityhØ.i.tten
+ÄIDYT.PL.GENien,äityh.i.en,äityhØ.i.en
+ÄIDYT.PLGENten,äidyt.ten,äidytØ.ten
+ÄIDYT.PL.PTV,äity.i.tä,äityØØ.i.tä
+ÄIDYT.PL.PTV,äityh.i.ä,äityhØ.i.Øä
+ÄIDYT.PL.ILL,äity.i.hin,äityØØ.i.hin
+ÄIDYT.PL.ILLsiin,äity.i.siin,äityØØ.i.siin
+ÄIDYT.PL.ILLsiin,äityh.i.sin,äityhØ.i.siØn
 KEVÄT,kevät,kevätØ
-KEVÄT GEN,kevää.n,keväØä.n
-KEVÄT GEN,kevähä.n,kevähä.n
-KEVÄT PTV,kevät.tä,kevätØ.tä
-KEVÄT ESS,kevää.nä,keväØä.nä
-KEVÄT ESS,kevän.nä,kevänØ.nä
-KEVÄT ESS,kevähä.nä,kevähä.nä
-KEVÄT ILLseen,kevää.seen,keväØä.seen
-KEVÄT ILLseen,kevähä.sen,kevähä.seØn
-KEVÄT PL INE,kevä.i.ssä,keväØØ.i.ssä
-KEVÄT PL INE,keväh.i.ssä,kevähØ.i.ssä
-KEVÄT PL GENiden,kevä.i.den,keväØØ.i.dØen
-KEVÄT PL GENiden,kevä.i.tten,keväØØ.i.tten
-KEVÄT PL GENiden,keväh.i.tten,kevähØ.i.tten
-KEVÄT PL GENien,keväh.i.en,kevähØ.i.en
-KEVÄT PLGENten,kevät.ten,kevätØ.ten
-KEVÄT PL PTV,kevä.i.tä,keväØØ.i.tä
-KEVÄT PL PTV,keväh.i.ä,kevähØ.i.Øä
-KEVÄT PL ILL,kevä.i.hin,keväØØ.i.hin
-KEVÄT PL ILLsiin,kevä.i.siin,keväØØ.i.siin
-KEVÄT PL ILLsiin,keväh.i.sin,kevähØ.i.siØn
+KEVÄT.GEN,kevää.n,keväØä.n
+KEVÄT.GEN,kevähä.n,kevähä.n
+KEVÄT.PTV,kevät.tä,kevätØ.tä
+KEVÄT.ESS,kevää.nä,keväØä.nä
+KEVÄT.ESS,kevän.nä,kevänØ.nä
+KEVÄT.ESS,kevähä.nä,kevähä.nä
+KEVÄT.ILLseen,kevää.seen,keväØä.seen
+KEVÄT.ILLseen,kevähä.sen,kevähä.seØn
+KEVÄT.PL.INE,kevä.i.ssä,keväØØ.i.ssä
+KEVÄT.PL.INE,keväh.i.ssä,kevähØ.i.ssä
+KEVÄT.PL.GENiden,kevä.i.den,keväØØ.i.dØen
+KEVÄT.PL.GENiden,kevä.i.tten,keväØØ.i.tten
+KEVÄT.PL.GENiden,keväh.i.tten,kevähØ.i.tten
+KEVÄT.PL.GENien,keväh.i.en,kevähØ.i.en
+KEVÄT.PLGENten,kevät.ten,kevätØ.ten
+KEVÄT.PL.PTV,kevä.i.tä,keväØØ.i.tä
+KEVÄT.PL.PTV,keväh.i.ä,kevähØ.i.Øä
+KEVÄT.PL.ILL,kevä.i.hin,keväØØ.i.hin
+KEVÄT.PL.ILLsiin,kevä.i.siin,keväØØ.i.siin
+KEVÄT.PL.ILLsiin,keväh.i.sin,kevähØ.i.siØn
 KUOLLUT,kuollut,kuollutØ
-KUOLLUT GEN,kuollee.n,kuolleØe.n
-KUOLLUT GEN,kuollehe.n,kuollehe.n
-KUOLLUT PTV,kuollut.ta,kuollutØ.ta
-KUOLLUT ESS,kuollee.na,kuolleØe.na
-KUOLLUT ESS,kuollehe.na,kuollehe.na
-KUOLLUT ESS,kuollun.na,kuollunØ.na
-KUOLLUT ILLseen,kuollee.seen,kuolleØe.seen
-KUOLLUT ILLseen,kuollehe.sen,kuollehe.seØn
-KUOLLUT PL INE,kuolle.i.ssa,kuolleØØ.i.ssa
-KUOLLUT PL INE,kuolleh.i.ssa,kuollehØ.i.ssa
-KUOLLUT PL GENiden,kuolle.i.den,kuolleØØ.i.dØen
-KUOLLUT PL GENiden,kuolle.i.tten,kuolleØØ.i.tten
-KUOLLUT PL GENiden,kuolleh.i.tten,kuollehØ.i.tten
-KUOLLUT PL GENien,kuolleh.i.en,kuollehØ.i.en
-KUOLLUT PLGENten,kuollut.ten,kuollutØ.ten
-KUOLLUT PL PTV,kuolle.i.ta,kuolleØØ.i.ta
-KUOLLUT PL PTV,kuolleh.i.a,kuollehØ.i.Øa
-KUOLLUT PL ILL,kuolle.i.hin,kuolleØØ.i.hin
-KUOLLUT PL ILLsiin,kuolle.i.siin,kuolleØØ.i.siin
-KUOLLUT PL ILLsiin,kuolleh.i.sin,kuollehØ.i.siØn
+KUOLLUT.GEN,kuollee.n,kuolleØe.n
+KUOLLUT.GEN,kuollehe.n,kuollehe.n
+KUOLLUT.PTV,kuollut.ta,kuollutØ.ta
+KUOLLUT.ESS,kuollee.na,kuolleØe.na
+KUOLLUT.ESS,kuollehe.na,kuollehe.na
+KUOLLUT.ESS,kuollun.na,kuollunØ.na
+KUOLLUT.ILLseen,kuollee.seen,kuolleØe.seen
+KUOLLUT.ILLseen,kuollehe.sen,kuollehe.seØn
+KUOLLUT.PL.INE,kuolle.i.ssa,kuolleØØ.i.ssa
+KUOLLUT.PL.INE,kuolleh.i.ssa,kuollehØ.i.ssa
+KUOLLUT.PL.GENiden,kuolle.i.den,kuolleØØ.i.dØen
+KUOLLUT.PL.GENiden,kuolle.i.tten,kuolleØØ.i.tten
+KUOLLUT.PL.GENiden,kuolleh.i.tten,kuollehØ.i.tten
+KUOLLUT.PL.GENien,kuolleh.i.en,kuollehØ.i.en
+KUOLLUT.PLGENten,kuollut.ten,kuollutØ.ten
+KUOLLUT.PL.PTV,kuolle.i.ta,kuolleØØ.i.ta
+KUOLLUT.PL.PTV,kuolleh.i.a,kuollehØ.i.Øa
+KUOLLUT.PL.ILL,kuolle.i.hin,kuolleØØ.i.hin
+KUOLLUT.PL.ILLsiin,kuolle.i.siin,kuolleØØ.i.siin
+KUOLLUT.PL.ILLsiin,kuolleh.i.sin,kuollehØ.i.siØn
 VAATE,vaate,vaatØeØØ
-VAATE GEN,vaattee.n,vaatteØe.n
-VAATE GEN,vaattehe.n,vaattehe.n
-VAATE PTV,vaatet.ta,vaatØetØ.ta
-VAATE ESS,vaattee.na,vaatteØe.na
-VAATE ESS,vaattehe.na,vaattehe.na
-VAATE ILLseen,vaattee.seen,vaatteØe.seen
-VAATE ILLseen,vaattehe.sen,vaattehe.seØn
-VAATE PL INE,vaatte.i.ssa,vaatteØØ.i.ssa
-VAATE PL INE,vaatteh.i.ssa,vaattehØ.i.ssa
-VAATE PL GENiden,vaatte.i.den,vaatteØØ.i.dØen
-VAATE PL GENiden,vaatte.i.tten,vaatteØØ.i.tten
-VAATE PL GENien,vaatteh.i.en,vaattehØ.i.en
-VAATE PLGENten,vaatet.ten,vaatØetØ.ten
-VAATE PL PTV,vaatte.i.ta,vaatteØØ.i.ta
-VAATE PL PTV,vaatteh.i.a,vaattehØ.i.Øa
-VAATE PL ILL,vaatte.i.hin,vaatteØØ.i.hin
-VAATE PL ILLsiin,vaatte.i.siin,vaatteØØ.i.siin
-VAATE PL ILLsiin,vaatteh.i.sin,vaattehØ.i.siØn
+VAATE.GEN,vaattee.n,vaatteØe.n
+VAATE.GEN,vaattehe.n,vaattehe.n
+VAATE.PTV,vaatet.ta,vaatØetØ.ta
+VAATE.ESS,vaattee.na,vaatteØe.na
+VAATE.ESS,vaattehe.na,vaattehe.na
+VAATE.ILLseen,vaattee.seen,vaatteØe.seen
+VAATE.ILLseen,vaattehe.sen,vaattehe.seØn
+VAATE.PL.INE,vaatte.i.ssa,vaatteØØ.i.ssa
+VAATE.PL.INE,vaatteh.i.ssa,vaattehØ.i.ssa
+VAATE.PL.GENiden,vaatte.i.den,vaatteØØ.i.dØen
+VAATE.PL.GENiden,vaatte.i.tten,vaatteØØ.i.tten
+VAATE.PL.GENien,vaatteh.i.en,vaattehØ.i.en
+VAATE.PLGENten,vaatet.ten,vaatØetØ.ten
+VAATE.PL.PTV,vaatte.i.ta,vaatteØØ.i.ta
+VAATE.PL.PTV,vaatteh.i.a,vaattehØ.i.Øa
+VAATE.PL.ILL,vaatte.i.hin,vaatteØØ.i.hin
+VAATE.PL.ILLsiin,vaatte.i.siin,vaatteØØ.i.siin
+VAATE.PL.ILLsiin,vaatteh.i.sin,vaattehØ.i.siØn
 TERVE,terve,terveØØ
-TERVE GEN,tervee.n,terveØe.n
-TERVE GEN,tervehe.n,tervehe.n
-TERVE PTV,tervet.tä,tervetØ.tä
-TERVE ESS,tervee.nä,terveØe.nä
-TERVE ESS,terven.nä,tervenØ.nä
-TERVE ESS,tervehe.nä,tervehe.nä
-TERVE ILLseen,tervee.seen,terveØe.seen
-TERVE ILLseen,tervehe.sen,tervehe.seØn
-TERVE PL INE,terve.i.ssä,terveØØ.i.ssä
-TERVE PL INE,terveh.i.ssä,tervehØ.i.ssä
-TERVE PL GENiden,terve.i.den,terveØØ.i.dØen
-TERVE PL GENiden,terve.i.tten,terveØØ.i.tten
-TERVE PL GENiden,terveh.i.tten,tervehØ.i.tten
-TERVE PL GENien,terveh.i.en,tervehØ.i.en
-TERVE PLGENten,tervet.ten,tervetØ.ten
-TERVE PL PTV,terve.i.tä,terveØØ.i.tä
-TERVE PL PTV,terveh.i.ä,tervehØ.i.Øä
-TERVE PL ILL,terve.i.hin,terveØØ.i.hin
-TERVE PL ILLsiin,terve.i.siin,terveØØ.i.siin
-TERVE PL ILLsiin,terveh.i.sin,tervehØ.i.siØn
+TERVE.GEN,tervee.n,terveØe.n
+TERVE.GEN,tervehe.n,tervehe.n
+TERVE.PTV,tervet.tä,tervetØ.tä
+TERVE.ESS,tervee.nä,terveØe.nä
+TERVE.ESS,terven.nä,tervenØ.nä
+TERVE.ESS,tervehe.nä,tervehe.nä
+TERVE.ILLseen,tervee.seen,terveØe.seen
+TERVE.ILLseen,tervehe.sen,tervehe.seØn
+TERVE.PL.INE,terve.i.ssä,terveØØ.i.ssä
+TERVE.PL.INE,terveh.i.ssä,tervehØ.i.ssä
+TERVE.PL.GENiden,terve.i.den,terveØØ.i.dØen
+TERVE.PL.GENiden,terve.i.tten,terveØØ.i.tten
+TERVE.PL.GENiden,terveh.i.tten,tervehØ.i.tten
+TERVE.PL.GENien,terveh.i.en,tervehØ.i.en
+TERVE.PLGENten,tervet.ten,tervetØ.ten
+TERVE.PL.PTV,terve.i.tä,terveØØ.i.tä
+TERVE.PL.PTV,terveh.i.ä,tervehØ.i.Øä
+TERVE.PL.ILL,terve.i.hin,terveØØ.i.hin
+TERVE.PL.ILLsiin,terve.i.siin,terveØØ.i.siin
+TERVE.PL.ILLsiin,terveh.i.sin,tervehØ.i.siØn
 ORI,ori,oriØØ
-ORI GEN,orii.n,oriØi.n
-ORI GEN,orihi.n,orihi.n
-ORI PTV,orit.ta,oritØ.ta
-ORI ESS,orii.na,oriØi.na
-ORI ESS,orihi.na,orihi.na
-ORI ILLseen,orii.seen,oriØi.seen
-ORI ILLseen,orihi.sen,orihi.seØn
-ORI PL INE,ori.i.ssa,oriØØ.i.ssa
-ORI PL INE,orih.i.ssa,orihØ.i.ssa
-ORI PL GENiden,ori.i.den,oriØØ.i.dØen
-ORI PL GENiden,ori.i.tten,oriØØ.i.tten
-ORI PL GENiden,orih.i.tten,orihØ.i.tten
-ORI PL GENien,orih.i.en,orihØ.i.en
-ORI PLGENten,orit.ten,oritØ.ten
-ORI PL PTV,ori.i.ta,oriØØ.i.ta
-ORI PL PTV,orih.i.a,orihØ.i.Øa
-ORI PL ILL,ori.i.hin,oriØØ.i.hin
-ORI PL ILLsiin,ori.i.siin,oriØØ.i.siin
-ORI PL ILLsiin,orih.i.sin,orihØ.i.siØn
+ORI.GEN,orii.n,oriØi.n
+ORI.GEN,orihi.n,orihi.n
+ORI.PTV,orit.ta,oritØ.ta
+ORI.ESS,orii.na,oriØi.na
+ORI.ESS,orihi.na,orihi.na
+ORI.ILLseen,orii.seen,oriØi.seen
+ORI.ILLseen,orihi.sen,orihi.seØn
+ORI.PL.INE,ori.i.ssa,oriØØ.i.ssa
+ORI.PL.INE,orih.i.ssa,orihØ.i.ssa
+ORI.PL.GENiden,ori.i.den,oriØØ.i.dØen
+ORI.PL.GENiden,ori.i.tten,oriØØ.i.tten
+ORI.PL.GENiden,orih.i.tten,orihØ.i.tten
+ORI.PL.GENien,orih.i.en,orihØ.i.en
+ORI.PLGENten,orit.ten,oritØ.ten
+ORI.PL.PTV,ori.i.ta,oriØØ.i.ta
+ORI.PL.PTV,orih.i.a,orihØ.i.Øa
+ORI.PL.ILL,ori.i.hin,oriØØ.i.hin
+ORI.PL.ILLsiin,ori.i.siin,oriØØ.i.siin
+ORI.PL.ILLsiin,orih.i.sin,orihØ.i.siØn
 KIIRU,kiiru,kiiruØØ
-KIIRU GEN,kiiruu.n,kiiruØu.n
-KIIRU GEN,kiiruhu.n,kiiruhu.n
-KIIRU PTV,kiirut.ta,kiirutØ.ta
-KIIRU ESS,kiiruu.na,kiiruØu.na
-KIIRU ESS,kiiruhu.na,kiiruhu.na
-KIIRU ILLseen,kiiruu.seen,kiiruØu.seen
-KIIRU ILLseen,kiiruhu.sen,kiiruhu.seØn
-KIIRU PL INE,kiiru.i.ssa,kiiruØØ.i.ssa
-KIIRU PL INE,kiiruh.i.ssa,kiiruhØ.i.ssa
-KIIRU PL GENiden,kiiru.i.den,kiiruØØ.i.dØen
-KIIRU PL GENiden,kiiru.i.tten,kiiruØØ.i.tten
-KIIRU PL GENiden,kiiruh.i.tten,kiiruhØ.i.tten
-KIIRU PL GENien,kiiruh.i.en,kiiruhØ.i.en
-KIIRU PLGENten,kiirut.ten,kiirutØ.ten
-KIIRU PL PTV,kiiru.i.ta,kiiruØØ.i.ta
-KIIRU PL PTV,kiiruh.i.a,kiiruhØ.i.Øa
-KIIRU PL ILL,kiiru.i.hin,kiiruØØ.i.hin
-KIIRU PL ILLsiin,kiiru.i.siin,kiiruØØ.i.siin
-KIIRU PL ILLsiin,kiiruh.i.sin,kiiruhØ.i.siØn
+KIIRU.GEN,kiiruu.n,kiiruØu.n
+KIIRU.GEN,kiiruhu.n,kiiruhu.n
+KIIRU.PTV,kiirut.ta,kiirutØ.ta
+KIIRU.ESS,kiiruu.na,kiiruØu.na
+KIIRU.ESS,kiiruhu.na,kiiruhu.na
+KIIRU.ILLseen,kiiruu.seen,kiiruØu.seen
+KIIRU.ILLseen,kiiruhu.sen,kiiruhu.seØn
+KIIRU.PL.INE,kiiru.i.ssa,kiiruØØ.i.ssa
+KIIRU.PL.INE,kiiruh.i.ssa,kiiruhØ.i.ssa
+KIIRU.PL.GENiden,kiiru.i.den,kiiruØØ.i.dØen
+KIIRU.PL.GENiden,kiiru.i.tten,kiiruØØ.i.tten
+KIIRU.PL.GENiden,kiiruh.i.tten,kiiruhØ.i.tten
+KIIRU.PL.GENien,kiiruh.i.en,kiiruhØ.i.en
+KIIRU.PLGENten,kiirut.ten,kiirutØ.ten
+KIIRU.PL.PTV,kiiru.i.ta,kiiruØØ.i.ta
+KIIRU.PL.PTV,kiiruh.i.a,kiiruhØ.i.Øa
+KIIRU.PL.ILL,kiiru.i.hin,kiiruØØ.i.hin
+KIIRU.PL.ILLsiin,kiiru.i.siin,kiiruØØ.i.siin
+KIIRU.PL.ILLsiin,kiiruh.i.sin,kiiruhØ.i.siØn
 ASKEL,askel,askelØ
-ASKEL GEN,askele.n,askele.n
-ASKEL PTV,askel.ta,askelØ.ta
-ASKEL ESS,askele.na,askele.na
-ASKEL ILL,askele.en,askele.Øen
-ASKEL ILL,askele.hen,askele.hen
-ASKEL PL INE,askel.i.ssa,askelØ.i.ssa
-ASKEL PL GENien,askel.i.en,askelØ.i.en
-ASKEL PLGENten,askel.ten,askelØ.ten
-ASKEL PL PTV,askel.i.a,askelØ.i.Øa
-ASKEL PL ILL,askel.i.in,askelØ.i.Øin
-ASKEL PL ILL,askel.i.hin,askelØ.i.hin
+ASKEL.GEN,askele.n,askele.n
+ASKEL.PTV,askel.ta,askelØ.ta
+ASKEL.ESS,askele.na,askele.na
+ASKEL.ILL,askele.en,askele.Øen
+ASKEL.ILL,askele.hen,askele.hen
+ASKEL.PL.INE,askel.i.ssa,askelØ.i.ssa
+ASKEL.PL.GENien,askel.i.en,askelØ.i.en
+ASKEL.PLGENten,askel.ten,askelØ.ten
+ASKEL.PL.PTV,askel.i.a,askelØ.i.Øa
+ASKEL.PL.ILL,askel.i.in,askelØ.i.Øin
+ASKEL.PL.ILL,askel.i.hin,askelØ.i.hin
 ASKELE,askele,askeleØØ
-ASKELE GEN,askelehe.n,askelehe.n
-ASKELE GEN,askelee.n,askeleØe.n
-ASKELE PTV,askelet.ta,askeletØ.ta
-ASKELE ESS,askelee.na,askeleØe.na
-ASKELE ILLseen,askelee.seen,askeleØe.seen
-ASKELE PL INE,askele.i.ssa,askeleØØ.i.ssa
-ASKELE PL GENiden,askele.i.den,askeleØØ.i.dØen
-ASKELE PL GENiden,askele.i.tten,askeleØØ.i.tten
-ASKELE PL PTV,askele.i.ta,askeleØØ.i.ta
-ASKELE PL ILL,askele.i.hin,askeleØØ.i.hin
-ASKELE PL ILLsiin,askele.i.siin,askeleØØ.i.siin
+ASKELE.GEN,askelehe.n,askelehe.n
+ASKELE.GEN,askelee.n,askeleØe.n
+ASKELE.PTV,askelet.ta,askeletØ.ta
+ASKELE.ESS,askelee.na,askeleØe.na
+ASKELE.ILLseen,askelee.seen,askeleØe.seen
+ASKELE.PL.INE,askele.i.ssa,askeleØØ.i.ssa
+ASKELE.PL.GENiden,askele.i.den,askeleØØ.i.dØen
+ASKELE.PL.GENiden,askele.i.tten,askeleØØ.i.tten
+ASKELE.PL.PTV,askele.i.ta,askeleØØ.i.ta
+ASKELE.PL.ILL,askele.i.hin,askeleØØ.i.hin
+ASKELE.PL.ILLsiin,askele.i.siin,askeleØØ.i.siin
