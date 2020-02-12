@@ -17,7 +17,7 @@ Before one writes even the first rule, one has to prepare a file of examples whi
 
 Alternatively, one may prepeare a file of examples manually with a program editor (such as Gedit or Emacs).  One must use some linguistic competence when finding the morphophonemic representations for the example words.
 
-Whatever method you are using when you build your set of examples, you end up with a file ``grada.pstr`` containing lines like::
+Whatever method you are using when you build your set of examples, you end up with a file ``ksk-renamed.pstr`` containing lines like::
 
   t u o h {ieØeØ}:i
   t u o h {ieØeØ}:e n
@@ -32,39 +32,52 @@ Whatever method you are using when you build your set of examples, you end up wi
   t u o h {ieØeØ}:Ø {ij}:i {Øh}:Ø {V}:i n
   t u o h {ieØeØ}:Ø {ij}:i {Øh}:h {V}:i n
 
-One can use this file directly with the ``twol-comp`` compiler or convert the file into a FST to be more efficient for the compiler to load in by executing the following command::
-
-  python3 twexamp.pl examples.pstr examples.fst
-
 
 Rules, compiling and testing
 ============================
 
-The small set of examples given above has quite a lot of information about a morphophoneme ``{ieØeØ}`` so that one could write the very first rule and save it as a file ``rules.twol``::
+The characteristic feature of the simplified two-level model is that the linguist is *encouraged to write the rules one by one and let the compiler test them immediately against the examples*.  Rules are entirely independent of each other and the linguist can start from any rule and procede as one wishes.  The demanding task of writing a morphophonological grammar is divided into many small and straight-forward tasks of writing a single rule.
+
+Let us try with the morphophoneme ``{ieØeØ}`` and compute the raw rules for it::
+
+  $ twol-discov ksk-renamed.pstr -v 0 -s '{ieØeØ}'
+  {ieØeØ}:i =>
+       _ .#. ;
+  {ieØeØ}:e /<=
+       _ t,
+       _ .#.,
+       _ {Øt}:t,
+       _ {ij}:i ;
+  {ieØeØ}:Ø =>
+       _ t,
+       _ {Øt}:t,
+       _ {ij}:i ;
+
+Our linguistically oriented eyes see that ``{ieØeØ}:i`` occurs if and only if it is at the end of a word.  Thus we get our first rule::
 
   {ieØeØ}:i <=> _ .#. ;
 
-This rule says that the pair ``{ieØeØ}:i`` can only occur at the end of a word and also that at the end of a word, other possible realizations (``{ieØeØ}:e`` and ``{ieØeØ}:Ø``) are there forbidden.
-
-The simple grammar can now be tested against the examples by::
+This rule says that the pair ``{ieØeØ}:i`` can only occur at the end of a word and also that at the end of a word, other possible realizations (``{ieØeØ}:e`` and ``{ieØeØ}:Ø``) are there forbidden.  Let us write that sinle rule and save it as a file ``rules.twol``.  We can compile and test it against our examples by::
 
   $ twol-comp.py --thorough 2 examples.pstr rules.twol 
-  
-  
-  
   {ieØeØ}:i <=> _ .#. ;
   All positive examples accepted
   All negative examples rejected
 
-So, the rule not only accepted all examples but it also rejected the negative examples which were produced by setting the output symbol of ``{ieØeØ}`` in the other examples to ``i`` and the output symbol of the first example word into ``Ø`` and ``e``.  Let us add to the grammar another rule which says that the morphophoneme may correspond to zero if followed by a ``t`` or an ``i`` on the surface::
+So, the rule accepted all given (positive) examples.  In addition, the ``=>`` part of the rule was tested against negative examples which were produced by setting the output symbol of ``{ieØeØ}`` in the other examples (where ``{ieØeØ}:Ø`` or ``{ieØeØ}:e`` occurred) to ``i`` and checking that the ``=>`` rule rejects them all.  Furthermore, the output symbol of the example where ``{ieØeØ}:Ø`` occurred was changed into ``Ø`` and ``e`` and this was checked against the ``<=`` part of the rule in order to see that the rule allows only ``Ø`` as the output symbol in the context given by the rule.  Therefore, the rule appears to do exactly what we wanted (as far as out set of examples covers the relevant combinations).
 
-  {ieØeØ}:Ø <=> _ :t , _ :i ;
+Now we can proceed to the second rule for ``{ieØeØ}``.  The third rule proposed by the discovery program needs a bit cleaning.  Let us add to the grammar another rule which says that the morphophoneme may correspond to zero if followed by a ``t`` or an ``i`` on the surface::
 
-The result will tell that now both rules passed both tests.  It is recommended to write one rule at a time and test it immediately.
+  {ieØeØ}:Ø <=> _ :t ,
+                _ :i ;
+
+Runing the above compilation again shows that now both rules passed both tests.  Now we are done with the morphophoneme ``{ieØeØ}`` and may proceed to other morphophonemes.
 
 One may adjust the amount of testing the compiler will perform.  The parameter ``--thorough`` (or ``-t``) can be given three different values: **0** for omitting both tests, **1** for testing that the rules accept all examples, and **2** for testing both the positive and negative examples of each rule.
 
-Positive tests should always pass, if the rule is correct.  Negative examples are usually also all rejected, but not in all cases.  If there are two rules where one depends on the effect of the other, the negative tests fail.  The wrong ones accepted by the first rule would, indeed, be rejected by the second rule, but the other rule is not available yet.  There is another type of negative tests which is done after all rules have been seen and compiled.  Then, a total set of negative examples is created and this is tested against the combination of all rules.  Then, no negative examples should remain.  This test is not reasonable before all morphophonemes have rules.  These collective tests for all rules can be chosen by givin additional parameters on the command line.
+Positive tests should always pass, if the rule is correct.  Negative examples should usually be all rejected, but not in all cases.  Sometimes there are two rules where one depends on the effect of the other, some negative tests fail.  The wrong ones accepted by the first rule would, indeed, be rejected by the second rule, but the other rule is not available yet.
+
+There is another type of negative tests which is done after all rules have been seen and compiled.  Then, a total set of negative examples is created and this is tested against the combination of all rules.  Then, no negative examples should remain.  This test is not reasonable before all morphophonemes have rules.  These collective tests for all rules can be chosen by givin additional parameters on the command line:
 
   ``--lost`` filename, ``-l`` filename
     If a value is given to this parameter, a FST file is written containing all positive examples which were rejected by at least one rule.  Here we do not know which rule caused this.

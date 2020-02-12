@@ -87,7 +87,7 @@ The step itself consists of the following command::
  $ twol-words2zerofilled demo-words.csv demo-zerofilled.csv \
                          alphabet.text
 
-This script reads data in the above CSV format produced either by the ``paratab2segcsv.py`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file `demo-zerofilled.csv <https://github.com/koskenni/twol/blob/master/test/align/demo-zerofilled-orig.csv>`_ which is augmented with the aligned i.e. zero-filled example word forms.  The alignment is accomplished by the ``multialign.py`` module, see :doc:`alignment` and :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
+This script reads data in the above CSV format produced either by the ``paratab2segcsv.py`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file `demo-zerofilled.csv <https://github.com/koskenni/twol/blob/master/test/align/demo-zerofilled-orig.csv>`__ which is augmented with the aligned i.e. zero-filled example word forms.  The alignment is accomplished by the ``multialign.py`` module, see :doc:`alignment` and :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
 
      MORPHEMES,   MORPHS,     ZEROFILLED
      MÄKI,        mäki,       mäki
@@ -118,9 +118,9 @@ In full scale processing, the tables might contain many more columns than are ac
   $ twol-zerofilled2raw demo-zerofilled.csv demo-raw.csv \
                         demo-affixes.csv
 
-This command reads in the aligned example words file `demo-zerofilled.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-zerofilled-orig.csv>`_ from the preceding step and constructs a raw morphophonemic representation for each example word.  It needs a small file `demo-affixes.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-affixes.csv>`_ which will be discussed later on in this sub-section.
+This command reads in the aligned example words file `demo-zerofilled.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-zerofilled-orig.csv>`__ from the preceding step and constructs a raw morphophonemic representation for each example word.  It needs a small file `demo-affixes.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-affixes.csv>`__ which will be discussed later on in this sub-section.
 
-The output file `demo-raw.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-raw-orig.csv>`_ contains the three fields in the input and a fourth one, the raw morphophonemic representation of the word form, e.g.::
+The output file `demo-raw.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-raw-orig.csv>`__ contains the three fields in the input and a fourth one, the raw morphophonemic representation of the word form, e.g.::
 
      MORPHEMES,   MORPHS,     ZEROFILLED, RAW
      MÄKI,        mäki,       mäki,       m ä {kØkØ} {ieeØ} 
@@ -221,7 +221,7 @@ Exercises
 In order to do these excercises, you must have a Python 3 installed (version at least 3.6) and install the twol-package. See instructions at https://github.com/koskenni/twol/wiki or at the end of the chapter :ref:`compiling`-
 
 1. Test the existing ``demo`` example for creating morphophonemic representations for the example data in https://github.com/koskenni/twol/tree/master/test/align :
-   Four files are needed: `alphabet.text <https://github.com/koskenni/twol/raw/master/test/align/alphabet.text>`__, `demo-affixes.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-affixes.csv>`_, `demo-newnames.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-newnames.csv>`_ and `demo-table.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-table.csv>`__.  You can copy them through the links in the file names above, or you can go to the Github page and click the file name and after that the "Raw" button has a link to the source data.  Click that and then save the clean text version of the file.
+   Four files are needed: `alphabet.text <https://github.com/koskenni/twol/raw/master/test/align/alphabet.text>`__, `demo-affixes.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-affixes.csv>`__, `demo-newnames.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-newnames.csv>`__ and `demo-table.csv <https://github.com/koskenni/twol/raw/master/test/align/demo-table.csv>`__.  You can copy them through the links in the file names above, or you can go to the Github page and click the file name and after that the "Raw" button has a link to the source data.  Click that and then save the clean text version of the file.
    Run the commands that are given in sections 2.1, 2.2, 2.3 and 2.4 in this chapter.  Compare the results you get with the ones given in the above sections. 
 
 2. Using a text editor, add two words in the demo-table.csv::
