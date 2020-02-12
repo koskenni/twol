@@ -17,7 +17,7 @@ Before one writes even the first rule, one has to prepare a file of examples whi
 
 Alternatively, one may prepeare a file of examples manually with a program editor (such as Gedit or Emacs).  One must use some linguistic competence when finding the morphophonemic representations for the example words.
 
-Whatever method you are using when you build your set of examples, you end up with a file ``ksk-renamed.pstr`` containing lines like::
+Whatever method you are using when you build your set of examples, you end up with a file such as `ksk-renamed.pstr <https://github.com/koskenni/twol/raw/master/test/twolcomp/ksk-renamed.pstr>`__ which contains lots of lines like the following::
 
   t u o h {ieØeØ}:i
   t u o h {ieØeØ}:e n
