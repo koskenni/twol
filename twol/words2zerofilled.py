@@ -72,7 +72,9 @@ def main():
     """
     csvfile = open(args.input)
 
-    reader = csv.DictReader(csvfile, delimiter=args.csv_delimiter)
+    reader = csv.DictReader(csvfile,
+                            delimiter=args.csv_delimiter,
+                            skipinitialspace=True)
     i = 0
     morphs_of_morpheme = {}
     for row in reader:

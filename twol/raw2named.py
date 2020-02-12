@@ -58,7 +58,9 @@ def main():
     # 2. a neat (new) name for the morphophoneme
     # 3. Comments documenting typical occurrences of the morphophoneme
     with open(args.names) as namefile:
-        reader = csv.reader(namefile, delimiter=args.delimiter)
+        reader = csv.reader(namefile,
+                            delimiter=args.delimiter,
+                            skipinitialspace=True)
         for row in reader:
             if not row or (not row[0].strip()):
                 continue

@@ -87,7 +87,7 @@ The step itself consists of the following command::
  $ twol-words2zerofilled demo-words.csv demo-zerofilled.csv \
                          alphabet.text
 
-This script reads data in the above CSV format produced either by the ``paratab2segcsv.py`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file `demo-zerofilled.cdv <https://github.com/koskenni/twol/blob/master/test/align/demo-zerofilled-orig.csv>`_ which is augmented with the aligned i.e. zero-filled example word forms.  The alignment is accomplished by the ``multialign.py`` module, see :doc:`alignment` and :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
+This script reads data in the above CSV format produced either by the ``paratab2segcsv.py`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file `demo-zerofilled.csv <https://github.com/koskenni/twol/blob/master/test/align/demo-zerofilled-orig.csv>`_ which is augmented with the aligned i.e. zero-filled example word forms.  The alignment is accomplished by the ``multialign.py`` module, see :doc:`alignment` and :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
 
      MORPHEMES,   MORPHS,     ZEROFILLED
      MÄKI,        mäki,       mäki
