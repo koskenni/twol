@@ -134,9 +134,12 @@ def main():
             aligned_results_lst = multialign.multialign(morphs,
                                                         max_zeros=args.extra_zeros,
                                                         best_count=1)
+            if aligned_results_lst:
+                weight, aligned_morphs_lst = aligned_results_lst[0]
+            else:
+                aligned_morphs_lst = []
             if args.verbosity >= 5:
                 print("aligned_results_lst:", aligned_results_lst)
-            weight, aligned_morphs_lst = aligned_results_lst[0]
         if args.verbosity >= 5:
             print("aligned_morphs_lst:", aligned_results_lst)
         alignments[morpheme] = aligned_morphs_lst
