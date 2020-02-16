@@ -50,7 +50,8 @@ exception_lst = []
 def spaced_bin_int(intg):
     """binint to human readable string conversion."""
     bs = "{:096b}".format(intg)
-    spaced_str = bs[0:16] + " " + bs[16:32] + " " + bs[32:48] + " " + bs[48:64] + " " + bs[64:80] + " " + bs[80:96]
+    spaced_str = (bs[0:16] + " " + bs[16:32] + " " + bs[32:48] +
+                  " " + bs[48:64] + " " + bs[64:80] + " " + bs[80:96])
     return spaced_str
 
 def mphon_to_binint(mphon):
@@ -93,7 +94,7 @@ def mphon_is_valid(mphon):
     """
 
     binint = mphon_to_binint(mphon)
-    if cfg.verbosity >= 10:
+    if cfg.verbosity >= 20:
         print("mphon_is_valid({}) == {}".format(mphon, spaced_bin_int(binint)) )
     if not(~ binint & 0xffffffffffffffffffffffff): # (U,U,U,U,U,U)
         return False
@@ -115,7 +116,7 @@ def mphon_weight(mphon):
     if mphon in mphon_weight_cache:
         return mphon_weight_cache[mphon]
     mphon_int = mphon_to_binint_cache[mphon]
-    if cfg.verbosity > 10:
+    if cfg.verbosity >= 20:
         print("\nmphon_to_binint_cache[{}] = {}".format(mphon,
                                                       spaced_bin_int(mphon_int)))
     w_cons = 999999
@@ -132,7 +133,7 @@ def mphon_weight(mphon):
         if cfg.verbosity >= 20:
             print("{:012b}, {:012b}, {:012b}".format(c1, c2, c3))
         w_cons = weight_c1[c1] + weight_c2[c2] + weight_c3[c3]
-        if cfg.verbosity >= 10:
+        if cfg.verbosity >= 20:
             print("\nmphon_weight info of a cons set:", hex(c1), weight_c1[c1],
                   hex(c2), weight_c2[c2], hex(c3), weight_c3[c3])
     if low != 0xffffffffffff:
@@ -142,11 +143,11 @@ def mphon_weight(mphon):
         if cfg.verbosity >= 20:
             print("{:012b}, {:012b}, {:012b}".format(v1, v2, v3))
         w_vow = weight_v1[v1] + weight_v2[v2] + weight_v3[v3]
-        if cfg.verbosity >= 10:
+        if cfg.verbosity >= 20:
             print("\nmphon_weight info of a vowel set:", hex(v1), weight_v1[v1],
                   hex(v2), weight_v2[v2], hex(v3), weight_v3[v3])
     w = min(w_cons, w_vow)
-    if cfg.verbosity >= 10:
+    if cfg.verbosity >= 20:
         print("\nmphon_int[{}]  = {}".format(mphon, spaced_bin_int(mphon_int)))
         print("mphon_weight[{}] = {}".format(mphon, w))
     mphon_weight_cache[mphon] = w
@@ -224,7 +225,7 @@ def read_alphabet(file_name):
     #
     # now the alphabet data has been read in and extracted
     #
-    if cfg.verbosity >= 10:
+    if cfg.verbosity >= 20:
         print("\ncost_of_zero_c:", cost_of_zero_c)
         print("\ncost_of_zero_v:", cost_of_zero_v)
         print("\nfeature_set_lst:", feature_set_lst)
@@ -246,7 +247,7 @@ def read_alphabet(file_name):
         i += 1
     del feature_group["Zero"]   # feature Zero belongs all groups and
                                 # needs special care
-    if cfg.verbosity >= 10:
+    if cfg.verbosity >= 20:
         print("\nfeature_group:", feature_group)
         print("\nfeature_bitpos:", feature_bitpos)
     #
@@ -270,7 +271,7 @@ def read_alphabet(file_name):
         if intset not in binint_to_mphon_set:
             binint_to_mphon_set[intset] = set()
         binint_to_mphon_set[intset].add(phoneme)
-    if cfg.verbosity >= 10:
+    if cfg.verbosity >= 20:
         lst = [fon + "=" + spaced_bin_int(intg) for fon, intg in
                sorted(mphon_to_binint_cache.items())]
         s = "\n".join(lst)
@@ -305,7 +306,7 @@ def read_alphabet(file_name):
         if cfg.verbosity > 25:
             print("\nsubset, bin_set, weight, group:", subset, bin(bin_set), weight, group)
         subset_bin_lst.append((bin_set, weight, group, bin(bin_set)))
-    if cfg.verbosity > 10:
+    if cfg.verbosity > 20:
         print("\nsubset_bin_lst:", subset_bin_lst)
     #
     # compute weights for all possible feature sets in each of the six groups
@@ -334,7 +335,7 @@ def read_alphabet(file_name):
         for j in range(1, l):
             weight_dict[1 << j] = 0
             weight_dict[(1 << j) +1] = (cost_of_zero_c if i < 3 else cost_of_zero_v)
-        if cfg.verbosity > 10:
+        if cfg.verbosity > 20:
             print("\nweight_dict[{}]:".format(i), weight_dict)
             #for set_int, weight in weight_dict.items():
             #    for phoneme, feature_tuple in features_of_phoneme.items():

@@ -132,9 +132,9 @@ def main():
         # symbols
         if args.verbosity >= 10:
             print("*** princ_zstem_lst:", princ_zstem_lst) ###
-        l = len(princ_zstem_lst[0])
+        lgth = len(princ_zstem_lst[0])
         zstem_rawsym_lst = []
-        for i in range(l):
+        for i in range(lgth):
             lst = []
             for princ_zstem in princ_zstem_lst:
                 lst.append(princ_zstem[i])

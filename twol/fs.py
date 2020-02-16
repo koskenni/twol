@@ -110,6 +110,10 @@ def string_to_fsa(grapheme_string):
         print(string_pair_path)
     bfsa.disjunct(string_pair_path, 0)
     fsa = hfst.HfstTransducer(bfsa)
+    fsa.minimize()
+    fsa.set_name(grapheme_string)
+    if cfg.verbosity >= 10:
+        print(fsa)
     return(fsa)
     
 if __name__ == "__main__":

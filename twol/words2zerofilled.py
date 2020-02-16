@@ -5,7 +5,7 @@
 
 def main():
 
-    version = "2020-02-08"
+    version = "2020-02-16"
     
     import argparse
     argparser = argparse.ArgumentParser(
@@ -55,7 +55,10 @@ def main():
     import collections
     from orderedset import OrderedSet
     import grapheme
+    import twol.cfg as cfg
 
+    cfg.verbosity = args.verbosity
+    
     # STEP 1:
     # Read in the segmented words and collect the allomorphs of each morpheme
 
@@ -112,7 +115,8 @@ def main():
     import twol.multialign as multialign
     import twol.alphabet as alphabet
     
-    alphabet.read_alphabet(args.alphabet)
+    ###alphabet.read_alphabet(args.alphabet)
+    multialign.init(args.alphabet)
 
     alignments = {}
     """All aligned morphs. index: morpheme name, value: sequence of
@@ -121,19 +125,21 @@ def main():
     """
 
     for morpheme in sorted(morphs_of_morpheme.keys()):
-        words = list(morphs_of_morpheme[morpheme])
-        if len(words) == 1 and len(words[0]) == 0:
-            ###aligned_sym_seq = ["Ø"]
-            aligned_sym_seq = []
+        morphs = list(morphs_of_morpheme[morpheme])
+        if len(morphs) == 1 and len(morphs[0]) == 0:
+            aligned_morphs_lst = []
         else:
-            if args.verbosity >= 20:
-                print("words:", words)
-            nz = args.extra_zeros 
-            ####nz = 1 if len(words) > 10 else 2
-            aligned_sym_seq = multialign.aligner(words, nz, morpheme)
-        if args.verbosity >= 20:
-            print("aligned_sym_seq:", aligned_sym_seq)
-        alignments[morpheme] = aligned_sym_seq
+            if args.verbosity >= 5:
+                print("morphs:", morphs)
+            aligned_results_lst = multialign.multialign(morphs,
+                                                        max_zeros=args.extra_zeros,
+                                                        best_count=1)
+            if args.verbosity >= 5:
+                print("aligned_results_lst:", aligned_results_lst)
+            weight, aligned_morphs_lst = aligned_results_lst[0]
+        if args.verbosity >= 5:
+            print("aligned_morphs_lst:", aligned_results_lst)
+        alignments[morpheme] = aligned_morphs_lst
 
     print("-- STEP 2 COMPLETED (alignments done) --")
 
@@ -144,20 +150,15 @@ def main():
     """index: (morpheme, morph), value: zero-filled morph
     """
 
-    for morpheme, aligned_sym_seq in alignments.items():
-        # e.g. "KOTA", ['kkkk', 'oooo', 'tdtd', 'aaØØ']
+    for morpheme, aligned_morphs_lst in alignments.items():
+        # e.g. "KOTA", ['kota', 'koda', 'kotØ', 'kodØ']
         if args.verbosity >= 25:
-            print("aligned_sym_seq:", aligned_sym_seq)
+            print("aligned_morphs_lst:", aligned_morphs_lst)
         if morpheme not in aligned_morphs:
             aligned_morphs[morpheme] = collections.OrderedDict()
-        if aligned_sym_seq:
-            aligned_vec_seq = [tuple(grapheme.graphemes(aligned_sym))
-                               for aligned_sym in aligned_sym_seq]
-            l = len(aligned_vec_seq[0])
-            zero_filled_morphs = ["".join([x[i] for x in aligned_vec_seq])
-                                           for i in range(0,l)]
-            original_morphs = [x.replace("Ø", "") for x in zero_filled_morphs] ##########
-            for origm, zerofm in zip(original_morphs, zero_filled_morphs):
+        if aligned_morphs_lst:
+            original_morphs = [x.replace("Ø", "") for x in aligned_morphs_lst]
+            for origm, zerofm in zip(original_morphs, aligned_morphs_lst):
                 #if origm:
                 #    aligned_morphs[morpheme][origm] = zerofm
                 aligned_morphs[morpheme][origm] = zerofm

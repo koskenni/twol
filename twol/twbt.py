@@ -120,11 +120,11 @@ def ppfst(FST, print_equiv_classes=True, title=""):
     Classes of equivalent symbols:
     b:p c
     """
-    name = FST.get_name()
-    if name:
-        print("\n" + name)
+
     if title:
         print("\n" + title)
+    else:
+        print("\n" + FST.get_name())
     BFST = hfst.HfstBasicTransducer(FST)
     labsy, transy = equivpairs(BFST)
     for state in BFST.states():
