@@ -150,7 +150,7 @@ Definitions and rules consist mostly of *two-level regular expressions* (TLRE) w
 
 One can test the ``twol-comp`` compiler with these two files by a command::
 
-  $ twol-comp grada.pstr grada.twol
+  $ twol-comp -t 2 grada.pstr grada.twol
 
 The compiler compiles and tests the rules in the following manner::
 
