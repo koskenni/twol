@@ -6,7 +6,6 @@ Modules of the twol package
 .. toctree::
    :maxdepth: 4
 
-   twol.aligner
    twol.alphabet
    twol.cfg
    twol.fs

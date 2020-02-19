@@ -10,7 +10,7 @@ In linguistics, we say that word forms consist of :term:`morphs <morph>`, which 
     MÄKI       INE
     'hill'    'in'
   
-Here ``STM`` stands for 'stem' and ``INE`` for inessive case.  Another word form ``mäissä`` could be segmented into three morphs::
+Here ``MÄKI`` stands for the stem morpheme and ``INE`` for inessive case.  Another word form ``mäissä`` could be segmented into three morphs::
 
     mä        i         ssä 
     MÄKI      PL        INE
@@ -42,7 +42,7 @@ The input for the first step is table which one can produce using a spreadsheet 
   | LAKI | laki | lai.ssa  | laki.na  | lae.i.ssa  |
   +------+------+----------+----------+------------+
 
-The twol programs read and write all tables in Comma Separated Value (:term:`CSV`) format  such as `demo-table.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-table.csv>`_::
+In the table, ``STM`  stands for the stem morph and ``ID`` for the column for the names of stem morphemes.  The twol programs read and write all tables in Comma Separated Value (:term:`CSV`) format  such as `demo-table.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-table.csv>`_::
 
    ID,   STM,  STM.INE,  STM.ESS, STM.PL.INE
    MÄKI, mäki, mäe.ssä,  mäke.nä, mä.i.ssä
@@ -87,7 +87,7 @@ The step itself consists of the following command::
  $ twol-words2zerofilled demo-words.csv demo-zerofilled.csv \
                          alphabet.text
 
-This script reads data in the above CSV format produced either by the ``paratab2segcsv.py`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file `demo-zerofilled.csv <https://github.com/koskenni/twol/blob/master/test/align/demo-zerofilled-orig.csv>`__ which is augmented with the aligned i.e. zero-filled example word forms.  The alignment is accomplished by the ``multialign.py`` module, see :doc:`alignment` and :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
+This script reads data in the above CSV format produced either by the ``twol-table2words`` program or directly by the user.  The script aligns the variants of each morpheme and writes a CSV file `demo-zerofilled.csv <https://github.com/koskenni/twol/blob/master/test/align/demo-zerofilled-orig.csv>`__ which is augmented with the aligned i.e. zero-filled example word forms.  The alignment is accomplished by the ``multialign.py`` module, see :doc:`alignment` and :py:mod:`multialign`. The output contains the fields in the input and the zero-filled word forms as the third field, e.g.::
 
      MORPHEMES,   MORPHS,     ZEROFILLED
      MÄKI,        mäki,       mäki
@@ -159,7 +159,7 @@ The file lists the principal forms in lines where the second field is ``+``.  No
 twol-raw2named
 ==============
 
-This script renames some raw morphophonemes of the example word forms and writes a file of examples where each example is a line of blank separated string of :term:`pair symbols <pair symbol>`.  Pair symbols are the newly renamed ones or if the raw symbol is not yet renamed, the pair symbol is the original raw one.  This file is suitable for the twol.py compiler as its example file.
+This script renames some raw morphophonemes of the example word forms and writes a file of examples where each example is a line of blank separated string of :term:`pair symbols <pair symbol>`.  Pair symbols are the newly renamed ones or if the raw symbol is not yet renamed, the pair symbol is the original raw one.  This file is suitable for the ``twol-comp`` compiler as its example file.
 
 The linguist can determine the new names one by one.  The decisions made so far are stored in a CSV file with three columns:  the first is the inital raw name, the second is the now given new name for the morphophoneme, and the third column is for documentation, e.g.::
 
