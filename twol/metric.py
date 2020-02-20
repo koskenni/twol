@@ -24,6 +24,14 @@ pair_weight_dict = {}
 def alignment_fst():
     pair_weight_lst = []
     for insym in alphabet.consonant_set:
+        mphon = "Ø" + insym
+        if alphabet.mphon_is_valid(mphon):
+            xyw = "{}:{}::{}".format(insym, "Ø", alphabet.mphon_weight(mphon))
+        pair_weight_lst.append(xyw)
+        mphon = insym + "Ø"
+        if alphabet.mphon_is_valid(mphon):
+            xyw = "{}:{}::{}".format("Ø", insym, alphabet.mphon_weight(mphon))
+        pair_weight_lst.append(xyw)
         for outsym in alphabet.consonant_set:
             mphon = insym + outsym
             if alphabet.mphon_is_valid(mphon):
@@ -31,6 +39,14 @@ def alignment_fst():
                                          alphabet.mphon_weight(mphon))
                 pair_weight_lst.append(xyw)
     for insym in alphabet.vowel_set:
+        mphon = "Ø" + insym
+        if alphabet.mphon_is_valid(mphon):
+            xyw = "{}:{}::{}".format(insym, "Ø", alphabet.mphon_weight(mphon))
+        pair_weight_lst.append(xyw)
+        mphon = insym + "Ø"
+        if alphabet.mphon_is_valid(mphon):
+            xyw = "{}:{}::{}".format("Ø", insym, alphabet.mphon_weight(mphon))
+        pair_weight_lst.append(xyw)
         for outsym in alphabet.vowel_set:
             mphon = insym + outsym
             if alphabet.mphon_is_valid(mphon):
@@ -48,13 +64,13 @@ def alignment_fst():
         print("\nloop_sets:", loop_sets)
     for_all_lst = []
     for expr, var, loop_set in alphabet.for_definitions_lst:
-        if cfg.verbosity >= 20:
+        if cfg.verbosity >= 25:
             print(expr, var, loop_set)
         for x in loop_sets[loop_set]:
-            if cfg.verbosity >= 20:
+            if cfg.verbosity >= 25:
                 print(x, var, loop_set)
             item_expr = re.sub(var, x, expr)
-            if cfg.verbosity >= 20:
+            if cfg.verbosity >= 25:
                 print("item_expr:", item_expr)
             for_all_lst.append(item_expr)
     for_all_str = "|".join(for_all_lst)

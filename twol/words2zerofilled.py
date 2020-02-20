@@ -104,13 +104,14 @@ def main():
             morphs_of_morpheme[morpheme].add(morph.strip())
     csvfile.close()
 
-    print("-- STEP 1 COMPLETED (seg_example_list, stem_name_set, morphs_of_morpheme done)--")
+    print("-- STEP 1 COMPLETED (seg_example_list, stem_name_set,"
+          " morphs_of_morpheme done)--")
 
     # STEP 2:
     # align the allomorphs of each morpheme
 
     import twol.cfg as cfg
-    cfg.all_zero_weight = 1.0
+    #cfg.all_zero_weight = 1.0
 
     import twol.multialign as multialign
     import twol.alphabet as alphabet
@@ -134,12 +135,12 @@ def main():
             aligned_results_lst = multialign.multialign(morphs,
                                                         max_zeros=args.extra_zeros,
                                                         best_count=1)
+            if args.verbosity >= 5:
+                print("aligned_results_lst:", aligned_results_lst)
             if aligned_results_lst:
                 weight, aligned_morphs_lst = aligned_results_lst[0]
             else:
                 aligned_morphs_lst = []
-            if args.verbosity >= 5:
-                print("aligned_results_lst:", aligned_results_lst)
         if args.verbosity >= 5:
             print("aligned_morphs_lst:", aligned_results_lst)
         alignments[morpheme] = aligned_morphs_lst
@@ -155,7 +156,7 @@ def main():
 
     for morpheme, aligned_morphs_lst in alignments.items():
         # e.g. "KOTA", ['kota', 'koda', 'kotØ', 'kodØ']
-        if args.verbosity >= 25:
+        if args.verbosity >= 5:
             print("aligned_morphs_lst:", aligned_morphs_lst)
         if morpheme not in aligned_morphs:
             aligned_morphs[morpheme] = collections.OrderedDict()
@@ -167,7 +168,7 @@ def main():
                 aligned_morphs[morpheme][origm] = zerofm
         else:
             aligned_morphs[morpheme] = {"": ""}
-    if args.verbosity >= 20:
+    if args.verbosity >= 5:
         print("aligned_morphs", aligned_morphs)
 
     print("-- STEP 3 COMPLETED (aligned_morphs done) --")
@@ -188,8 +189,11 @@ def main():
             print("seg_example:", seg_example)
         morpheme_lst = [morpheme for morpheme, morph in seg_example]
         morph_lst = [morph for morpheme, morph in seg_example]
-        zero_filled_morph_lst = [aligned_morphs[morpheme].get(morph.replace("Ø", ""), "")
-                                  for (morpheme, morph) in seg_example]
+        zero_filled_morph_lst = \
+            [aligned_morphs[morpheme].get(morph.replace("Ø", ""), "")
+             for (morpheme, morph) in seg_example]
+        if args.verbosity >= 20:
+            print("zero_filled_morph_lst:", zero_filled_morph_lst)
         d["MORPHEMES"] = args.name_separator.join(morpheme_lst)
         d["MORPHS"] = args.morph_separator.join(morph_lst)
         d["ZEROFILLED"] = args.morph_separator.join(zero_filled_morph_lst)

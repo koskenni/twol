@@ -61,22 +61,25 @@ Front Back = 10
 
 Unrounded Rounded = 10
 
-Zero += 25 10
+Zero += 20 10
 
 
-j:i::5
-y:ũ::0
-o:õ::5
-X:Ø::10 FOR X IN Vowels
-Ø:X::10 FOR X IN Vowels
-X:Ø::25 FOR X IN Consonants
-Ø:X::25 FOR X IN Consonants
-X:X X:Ø::5 FOR X IN Consonants
-X:X Ø:X::5 FOR X IN Consonants
-X:X X:Ø::5 FOR X IN Vowels
-X:X Ø:X::5 FOR X IN Vowels
-y:ü Ø:ü::5
-y:ü y:Ø::5
-o:õ Ø:õ::5
-o:õ o:Ø::5
+j:i::20
+i:j::20
+u:v::20
+v:u::20
+y:ü::0
+o:õ::20
+#X:Ø::15 FOR X IN Vowels
+#Ø:X::15 FOR X IN Vowels
+#X:Ø::30 FOR X IN Consonants
+#Ø:X::30 FOR X IN Consonants
+X:X X:Ø::20 FOR X IN Consonants
+X:X Ø:X::20 FOR X IN Consonants
+X:X X:Ø::10 FOR X IN Vowels
+X:X Ø:X::10 FOR X IN Vowels
+y:ü Ø:ü::10
+y:ü y:Ø::10
+o:õ Ø:õ::10
+o:õ o:Ø::10
 

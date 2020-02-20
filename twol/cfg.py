@@ -14,7 +14,7 @@ import hfst
 
 verbosity = 0
 
-all_zero_weight = 100.0
+all_zero_weight = 1000.0
 """in multialign: the weight for a set {'Ø'} which is normally
 not preferred but sometimes is needed, eg. when using Øs in
 the input words"""

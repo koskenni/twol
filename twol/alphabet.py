@@ -62,6 +62,8 @@ def mphon_to_binint(mphon):
     :return: A binary integer which represents the morphophoneme
     :rtype: int
     """
+    if cfg.verbosity >= 25:
+        print("mphon_to_binint({})".format(mphon))
     if not mphon:
         return 0
     if mphon in mphon_to_binint_cache:
@@ -94,7 +96,7 @@ def mphon_is_valid(mphon):
     """
 
     binint = mphon_to_binint(mphon)
-    if cfg.verbosity >= 20:
+    if cfg.verbosity >= 30:
         print("mphon_is_valid({}) == {}".format(mphon, spaced_bin_int(binint)) )
     if not(~ binint & 0xffffffffffffffffffffffff): # (U,U,U,U,U,U)
         return False
@@ -116,38 +118,38 @@ def mphon_weight(mphon):
     if mphon in mphon_weight_cache:
         return mphon_weight_cache[mphon]
     mphon_int = mphon_to_binint_cache[mphon]
-    if cfg.verbosity >= 20:
+    if cfg.verbosity >= 25:
         print("\nmphon_to_binint_cache[{}] = {}".format(mphon,
                                                       spaced_bin_int(mphon_int)))
     w_cons = 999999
     w_vow = 999999
     high = mphon_int >> 48               # extract the 48 cons feature bits
     low = mphon_int & 0xffffffffffff     # extract the 48 voc feature bits
-    if cfg.verbosity >= 20:
+    if cfg.verbosity >= 25:
         print("{:048b}".format(high), "high")
         print("{:048b}".format(low), "low")
     if high != 0xffffffffffff:
         c1 = high >> 32                  # place of articulation set
         c2 = (high >> 16) & 0xffff       # voicing set
         c3 = high & 0xffff               # manner of articulation set
-        if cfg.verbosity >= 20:
+        if cfg.verbosity >= 25:
             print("{:012b}, {:012b}, {:012b}".format(c1, c2, c3))
         w_cons = weight_c1[c1] + weight_c2[c2] + weight_c3[c3]
-        if cfg.verbosity >= 20:
+        if cfg.verbosity >= 25:
             print("\nmphon_weight info of a cons set:", hex(c1), weight_c1[c1],
                   hex(c2), weight_c2[c2], hex(c3), weight_c3[c3])
     if low != 0xffffffffffff:
         v1 = low >> 32                   # tongue height
         v2 = (low >> 16) & 0xffff        # backness
         v3 = low & 0xffff                # rounding
-        if cfg.verbosity >= 20:
+        if cfg.verbosity >= 25:
             print("{:012b}, {:012b}, {:012b}".format(v1, v2, v3))
         w_vow = weight_v1[v1] + weight_v2[v2] + weight_v3[v3]
-        if cfg.verbosity >= 20:
+        if cfg.verbosity >= 25:
             print("\nmphon_weight info of a vowel set:", hex(v1), weight_v1[v1],
                   hex(v2), weight_v2[v2], hex(v3), weight_v3[v3])
     w = min(w_cons, w_vow)
-    if cfg.verbosity >= 20:
+    if cfg.verbosity >= 25:
         print("\nmphon_int[{}]  = {}".format(mphon, spaced_bin_int(mphon_int)))
         print("mphon_weight[{}] = {}".format(mphon, w))
     mphon_weight_cache[mphon] = w
@@ -176,8 +178,9 @@ def read_alphabet(file_name):
             line = line_nl.split("#")[0].strip()
             if not line:
                 continue
-            mat1 = re.fullmatch(r":?(?P<symbol>\w):? *= *(?P<feats>\w*( *, *\w*)+)",
-                                line)
+            mat1 = re.fullmatch(
+                r":?(?P<symbol>\w):? *= *(?P<feats>\w*( *, *\w*)+)",
+                line)
             if mat1:            # it defines features of a phoneme
                 r_lst = [feat.strip() for feat in mat1.group("feats").split(",")]
                 if len(r_lst) != 6:
@@ -191,15 +194,17 @@ def read_alphabet(file_name):
                     if not feat in ls and feat:
                         ls.append(feat)
                 continue
-            mat2 = re.fullmatch(r"(?P<elements>\w+( +\w+)+) *= *(?P<weight>[0-9]+)",
-                                line)
+            mat2 = re.fullmatch(
+                r"(?P<elements>\w+( +\w+)+) *= *(?P<weight>[0-9]+)",
+                line)
             if mat2:
                 # it defines a subset and its weight
                 l_lst = mat2.group("elements").split()
                 subset_lst.append((set(l_lst), int(mat2.group("weight"))))
                 continue
-            mat3 = re.fullmatch(r"Zero *[+]= *(?P<consw>[0-9]+) +(?P<voww>[0-9]+)",
-                                line)
+            mat3 = re.fullmatch(
+                r"Zero *[+]= *(?P<consw>[0-9]+) +(?P<voww>[0-9]+)",
+                line)
             if mat3:
                 # it defines the cost of including a Zero in sets
                 cost_of_zero_c = int(mat3.group("consw"))
@@ -267,7 +272,7 @@ def read_alphabet(file_name):
                 intset = (intset << 16) | bin_set
             else:
                 intset = (intset << 16) | 0xffff
-            mphon_to_binint_cache[phoneme] = intset
+        mphon_to_binint_cache[phoneme] = intset
         if intset not in binint_to_mphon_set:
             binint_to_mphon_set[intset] = set()
         binint_to_mphon_set[intset].add(phoneme)
