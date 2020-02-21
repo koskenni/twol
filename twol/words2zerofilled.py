@@ -115,7 +115,7 @@ def main():
 
     import twol.multialign as multialign
     
-    multialign.init(args.alphabet)
+    multialign.init(args.alphabet, all_zero_weight=1)
 
     alignments = {}
     """All aligned morphs. index: morpheme name, value: sequence of
