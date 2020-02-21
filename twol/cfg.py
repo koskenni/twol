@@ -53,6 +53,14 @@ example_lst = []
 example_set = set()
 """Set of examples as space-separated string of normalized pair symbols"""
 
+def timestamp(sourcefile):
+    import os.path
+    import time
+    from datetime import date
+    mtime = os.path.getmtime(sourcefile)
+    return time.strftime('%Y-%m-%d',
+                         time.localtime(mtime))
+
 def pairsym2sympair(pairsym):
     """Converts one pair symbol into a corresponding symbol pair
     

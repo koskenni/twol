@@ -1,6 +1,6 @@
 BASE=demo
 DELIM=,
-ZEROS=0
+ZEROS=1
 .SUFFIXES:
 
 .PHONY : renamed raw zerofilled words features rawmphonemes clean

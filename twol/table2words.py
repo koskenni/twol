@@ -7,8 +7,9 @@
 
 def step1():
     import csv, re, sys
+    import twol.cfg as cfg
 
-    version = "2020-02-08"
+    version = cfg.timestamp(__file__)
 
     import argparse
     argparser = argparse.ArgumentParser(

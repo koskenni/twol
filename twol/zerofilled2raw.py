@@ -16,7 +16,8 @@ languages).
 
 def main():
 
-    version = "2020-02-08"
+    import twol.cfg as cfg
+    version = cfg.timestamp(__file__)
     
     import argparse
     argparser = argparse.ArgumentParser(

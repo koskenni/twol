@@ -167,7 +167,8 @@ def context_to_output_str(pairsym_str):
     return "".join(outsym_lst)
 
 def main():
-    version = "2020-02-01"
+    
+    version = cfg.timestamp(__file__)
     
     import argparse
     arpar = argparse.ArgumentParser(
@@ -175,7 +176,7 @@ def main():
         description="Deduces two-level rules out of"\
         " a file of examples.  The file must consist of"\
         " lines of space-separated pair string.  Such a file"\
-        " can be produced e.g. by twol-renamed program."\
+        " can be produced e.g. by twol-raw2renamed program."\
         " Version {}".format(version))
     arpar.add_argument(
         "examples",

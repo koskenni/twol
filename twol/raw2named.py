@@ -9,8 +9,8 @@ def main():
     import re
     import csv
     import argparse
-
-    version = "2020-02-01"
+    import twol.cfg as cfg
+    version = cfg.timestamp(__file__)
 
     argparser = argparse.ArgumentParser(
         "python3 raw2named.py",

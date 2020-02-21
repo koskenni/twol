@@ -5,7 +5,8 @@
 
 def main():
 
-    version = "2020-02-16"
+    import twol.cfg as cfg
+    version = cfg.timestamp(__file__)
     
     import argparse
     argparser = argparse.ArgumentParser(
@@ -55,7 +56,6 @@ def main():
     import collections
     from orderedset import OrderedSet
     import grapheme
-    import twol.cfg as cfg
 
     cfg.verbosity = args.verbosity
     
@@ -114,9 +114,7 @@ def main():
     #cfg.all_zero_weight = 1.0
 
     import twol.multialign as multialign
-    import twol.alphabet as alphabet
     
-    ###alphabet.read_alphabet(args.alphabet)
     multialign.init(args.alphabet)
 
     alignments = {}
@@ -132,17 +130,16 @@ def main():
         else:
             if args.verbosity >= 5:
                 print("morphs:", morphs)
-            aligned_results_lst = multialign.multialign(morphs,
-                                                        max_zeros=args.extra_zeros,
-                                                        best_count=1)
-            if args.verbosity >= 5:
-                print("aligned_results_lst:", aligned_results_lst)
+            aligned_results_lst = \
+                multialign.multialign(morphs,
+                                      max_zeros=args.extra_zeros,
+                                      best_count=1)
             if aligned_results_lst:
                 weight, aligned_morphs_lst = aligned_results_lst[0]
             else:
                 aligned_morphs_lst = []
         if args.verbosity >= 5:
-            print("aligned_morphs_lst:", aligned_results_lst)
+            print("aligned_results_lst:", aligned_results_lst)
         alignments[morpheme] = aligned_morphs_lst
 
     print("-- STEP 2 COMPLETED (alignments done) --")

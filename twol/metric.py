@@ -87,7 +87,9 @@ def alignment_fst():
     return fst
 
 def main():
-    version = "2020-02-16"
+    #last_modified_date = datetime.fromtimestamp(mtime)
+    
+    version = cfg.timestamp(__file__)
     
     import argparse
     arpar = argparse.ArgumentParser(

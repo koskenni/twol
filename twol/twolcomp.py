@@ -25,7 +25,7 @@ def print_raw_paths(paths):
 
 def main():
 
-    version = "2020-02-11"
+    version = cfg.timestamp(__file__)
     import argparse
     arpar = argparse.ArgumentParser(
         description="A compiler and tester for two-level rules."\

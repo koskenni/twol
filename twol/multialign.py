@@ -128,19 +128,21 @@ def prefer_final_zeros(raw_paths):
     """
     if cfg.verbosity >= 20:
         print("prefer_final_zeros(raw_paths):", raw_paths)
+    max_path_len = max([len(p) for w, p in raw_paths])
     raw_path_lst = []
-    for raw_path in raw_paths:
-        weight, pairs_tuple = raw_path
+    for weight, pairs_tuple in raw_paths:
         if cfg.verbosity >= 20:
-            print(raw_path)
+            print(weight, pairs_tuple)
         mphon_lst = [insym for insym, outsym in pairs_tuple]
+        mphon_lst_len = len(mphon_lst)
         if cfg.verbosity >= 20:
             print(mphon_lst)
-        i = 10 * len(mphon_lst)
+        i = 5 * mphon_lst_len
+        weight += 20 * (mphon_lst_len - max_path_len)
         for mphon in mphon_lst:
             if "Ø" in mphon:
                 weight = weight + i
-            i -= 10
+            i -= 5
         raw_path_lst.append((weight, pairs_tuple))
     result_path_lst = sorted(raw_path_lst, key=lambda raw_path: raw_path[0])
     if cfg.verbosity == 20:
@@ -149,7 +151,7 @@ def prefer_final_zeros(raw_paths):
 
 def align_words(word_lst,
                 zero="Ø",
-                max_zeros=1, best_count=1):
+                max_zeros=1, best_count=10):
     global aligner_fst
 
     zero_fst = fs.string_to_fsa(zero)
@@ -194,7 +196,7 @@ def align_words(word_lst,
             print("shuffled word_fst:\n", word_fst)
         i += 1
         fst.compose(word_fst)
-        fst.n_best(best_count + 20) ####
+        fst.n_best(best_count + 50) ####
         fst.minimize()
         if cfg.verbosity >= 10:
             print("composed fst:\n", fst)
@@ -210,6 +212,8 @@ def align_words(word_lst,
     if cfg.verbosity >= 10:
         print("aligned result:\n", fst)
     raw_paths = fst.extract_paths(output='raw')
+    if not raw_paths:
+        return []
     if cfg.verbosity >= 10:
         print("raw_paths:", raw_paths)
     preferred_raw_path_lst = prefer_final_zeros(raw_paths)
@@ -248,15 +252,15 @@ def multialign(word_lst,
         
 def main():
 
-    version = "2020-02-18"
+    version = cfg.timestamp(__file__)
     
     import argparse
     arpar = argparse.ArgumentParser(
         "twol-multialign",
-        description="""Aligns lists of words separated by
+        description="""Version {}\nAligns lists of words separated by
         a DELIMITER.  See
         https://pytwolc.readthedocs.io/en/latest/alignment.html for
-        detailed instructions. Version {}""".format(version))
+        detailed instructions. """.format(version))
     arpar.add_argument(
         "alphabet",
         help="An alphabet definition file with features and similarity sets.")

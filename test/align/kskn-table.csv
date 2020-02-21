@@ -1,7 +1,7 @@
 ID,KSK,STM,STM.GEN,STM.PTV,STM.ESS,STM.ILL,STM.ILLseen,STM.PL.INE,STM.PL.GENiden,STM.PL.GENien,STM.PLGENten,STM.GENin,STM.PL.PTV,STM.PL.ILL,STM.PL.ILLsiin
 ARKKU,1,arkku,arku.n,arkku.a,arkku.na,"arkku.un [arkku.hun]",,arku.i.ssa,,arkku.j.en,,(arkku.in),arkku.j.a,arkku.i.hin,
 PATO,1,pato,pado.n,pato.a,pato.na,"pato.on [pato.hon]",,pado.i.ssa,,pato.j.en,,(pato.in),pato.j.a,pato.i.hin,
-ARVELU,2,arvelu,arvelu.n,arvelu.a,arvelu.na,"arvelu.un [arvelu.hun]",,arvelu.i.ssa,"arvelu.i.dØen arvelu.i.tten",arvelu.j.en,,(arvelu.in),"arvelu.j.a arvelu.i.ta",arvelu.i.hin,
+ARVELU,2,arvelu,arvelu.n,arvelu.a,arvelu.na,"arvelu.un [arvelu.hun]",,arvelu.i.ssa,"arvelu.i.den arvelu.i.tten",arvelu.j.en,,(arvelu.in),"arvelu.j.a arvelu.i.ta",arvelu.i.hin,
 ILMETTY,2,ilmetty,ilmety.n,ilmetty.ä,ilmetty.nä,"ilmetty.yn [ilmetty.hyn]",,ilmety.i.ssä,"ilmety.i.den ilmety.i.tten",ilmetty.j.en,,(ilmetty.in),"ilmetty.j.ä ilmety.i.tä",ilmetty.i.hin,
 SISÄKKÖ,2,sisäkkö,sisäkö.n,sisäkkö.ä,sisäkkö.nä,"sisäkkö.ön [sisäkkö.hön]",,sisäkö.i.ssä,"sisäkö.i.den sisäkö.i.tten",sisäkkö.j.en,,(sisäkkö.in),"sisäkkö.j.ä sisäkö.i.tä","sisäkkö.i.hin sisäkö.i.hin",
 AUTIO,3,autio,autio.n,"autio.ta (autio.a)",autio.na,"autio.on [autio.hon]",,autio.i.ssa,"autio.i.den autio.i.tten",,,(autio.in),autio.i.ta,autio.i.hin,
@@ -66,7 +66,7 @@ JUMALA,53,jumala,jumala.n,"jumala.a (jumala.ta)",jumala.na,"jumala.an [jumala.ha
 SISAR,54,sisar,sisare.n,sisar.ta,sisare.na,"sisare.en [sisare.hen]",,sisar.i.ssa,,sisar.i.en,sisar.ten,,sisar.i.a,"sisar.i.in [sisar.i.hin]",
 AHVEN,55,ahven,ahvene.n,ahven.ta,"ahvene.na (ahven.na)","ahvene.en [ahvene.hen]",,ahven.i.ssa,,ahven.i.en,ahven.ten,,ahven.i.a,"ahven.i.in [ahven.i.hin]",
 UISTIN,56,uistin,uistime.n,uistin.ta,uistime.na,"uistime.en [uistime.hen]",,uistim.i.ssa,,uistim.i.en,uistin.ten,,uistim.i.a,"uistim.i.in [uistim.i.hin]",
-ONNETON,57,"onneton (onnetoin)",onnettoØma.n,"onneton.ta (onnetoin.ta)","onnettoma.na onneton.na (onnetoin.na)","onnettoma.an [onnettoma.han]",,onnettom.i.ssa,,onnettom.i.en,"onneton.ten (onnetoin.ten)",onnettoma.in,onnettom.i.a,"onnettom.i.in [onnettom.i.hin]",
+ONNETON,57,"onneton (onnetoin)",onnettoma.n,"onneton.ta (onnetoin.ta)","onnettoma.na onneton.na (onnetoin.na)","onnettoma.an [onnettoma.han]",,onnettom.i.ssa,,onnettom.i.en,"onneton.ten (onnetoin.ten)",onnettoma.in,onnettom.i.a,"onnettom.i.in [onnettom.i.hin]",
 ?LÄMMIN,58,lämmin,lämpimä.n,"lämmin.tä (lämpimä.ä) (lämpimä.tä)","lämpimä.nä (lämmin.nä)","lämpimä.än [lämpimä.hän]",,lämpim.i.ssä,,lämpim.i.en,(lämmin.ten),lämpimä.in,lämpim.i.ä,"lämpim.i.in [lämpim.i.hin]",
 ?PAHIN,59,pahin,pahimma.n,"pahin.ta (pahimpa.a) (pahimpa.ta)","pahimpa.na (pahin.na)","pahimpa.an [pahimpa.han]",,pahimm.i.ssa,,pahimp.i.en,pahin.ten,pahimpa.in,pahimp.i.a,"pahimp.i.in [pahimp.i.hin]",
 ?VASEN,60,vasen,vasemma.n,"vasen.ta vasempa.a (vasempa.ta)",vasempa.na,"vasempa.an [vasempa.han]",,vasemm.i.ssa,,vasemp.i.en,(vasen.ten),vasempa.in,vasemp.i.a,"vasemp.i.in [vasemp.i.hin]",
@@ -75,7 +75,7 @@ ONNETON,57,"onneton (onnetoin)",onnettoØma.n,"onneton.ta (onnetoin.ta)","onnett
 ?SEITSEMÄN,62,seitsemän,seitsemä.n,"seitsemä.ä seitsen.tä (seitsemä.tä)","seitsemä.nä (seitsen.nä)","seitsemä.än [seitsemä.hän]",,seitsem.i.ssä,,seitsem.i.en,(seitsen.ten),seitsemä.in,seitsem.i.ä,"seitsem.i.in [seitsem.i.hin]",
 HEVONEN,63,hevonen,hevose.n,hevos.ta,"hevose.na (hevos.na) (hevos.sa)","hevose.en [hevose.hen]",,hevos.i.ssa,,hevos.i.en,hevos.ten,,hevos.i.a,"hevos.i.in [hevos.i.hin]",
 VASTAUS,64,vastaus,vastaukse.n,vastaus.ta,vastaukse.na,"vastaukse.en [vastaukse.hen]",,vastauks.i.ssa,,vastauks.i.en,vastaus.ten,,vastauks.i.a,"vastauks.i.in [vastauks.i.hin]",
-KALLEUS,65,kalleus,kalleude.n,kalleut.ta,kalleuØte.na,"kalleute.en [kalleute.hen]",,kalleuks.i.ssa,,kalleuks.i.en,(kalleut.ten),,kalleuks.i.a,"kalleuks.i.in [kalleuks.i.hin]",
+KALLEUS,65,kalleus,kalleude.n,kalleut.ta,kalleute.na,"kalleute.en [kalleute.hen]",,kalleuks.i.ssa,,kalleuks.i.en,(kalleut.ten),,kalleuks.i.a,"kalleuks.i.in [kalleuks.i.hin]",
 VIERAS,66,vieras,"vieraa.n (vieraha.n)",vieras.ta,"vieraa.na (vieras.na) (vieras.sa) (vieraha.na)",,"vieraa.seen (vieraha.sen)","viera.i.ssa (vierah.i.ssa)","viera.i.den viera.i.tten",,vieras.ten,,"viera.i.ta (vierah.i.a)",viera.i.hin,"viera.i.siin (vierah.i.sin)"
 SAAPAS,66,saapas,"saappaa.n (saappaha.n)",saapas.ta,"saappaa.na (saapas.na) (saapas.sa) (saappaha.na)",,"saappaa.seen (saappaha.sen)","saappa.i.ssa (saappah.i.ssa)","saappa.i.den saappa.i.tten",(saappah.i.en),saapas.ten,,"saappa.i.ta (saappah.i.a)",saappa.i.hin,"saappa.i.siin (saappah.i.sin)"
 KIRVES,67,kirves,"kirvee.n (kirvehe.n)",kirves.tä,"kirvee.nä (kirves.nä) (kirves.sä) (kirvehe.nä)",,"kirvee.seen (kirvehe.sen)","kirve.i.ssä (kirveh.i.ssä)","kirve.i.den kirve.i.tten",(kirveh.i.en),kirves.ten,,"kirve.i.tä (kirveh.i.ä)",kirve.i.hin,(kirveh.i.sin)
