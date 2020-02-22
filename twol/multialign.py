@@ -15,7 +15,7 @@ import twol.fs as fs
 import twol.cfg as cfg
 import twol.twbt as twbt
 import twol.alphabet as alphabet
-import twol.metric as metric
+#import twol.metric as metric
 
 aligner_fst = hfst.HfstTransducer()
 
@@ -23,7 +23,7 @@ aligner_fst = hfst.HfstTransducer()
 def init(alphabet_file_name, all_zero_weight=1):
     global aligner_fst
     alphabet.read_alphabet(alphabet_file_name)
-    aligner_fst = metric.alignment_fst()
+    #aligner_fst = metric.alignment_fst()
     if cfg.verbosity >= 20:
         twbt.ppfst(aligner_fst)
     cfg.all_zero_weight = all_zero_weight
