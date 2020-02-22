@@ -112,6 +112,7 @@ def main():
     args = arpar.parse_args()
 
     cfg.verbosity = args.verbosity
+    cfg.all_zero_weight = 1000
 
     alphabet.read_alphabet(args.alphabet)
 

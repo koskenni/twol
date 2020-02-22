@@ -92,7 +92,7 @@ The lines with a symbol, equal sign and a comma separated list of six feature na
 
 The similarity of each pair or subsets of phonemes is defined by the rest of the lines in the example.  Consider a set of phonemes, e.g. ``{i, e}`` or equivalently a morphophoneme ``ie``.  In terms of features this morphophoneme is represented as::
 
-  ({}, {}, {}, {Close, CloseMid}, {Front}, {Unrounded})
+   None, None, None, {Close, CloseMid}, {Front}, {Unrounded})
 
 There are no consonantal features, i.e. the first three sets are empty and therefore have a zero weight.  The fifth and the sixth sets consist of just one feature, and their weights are also zero.  The fourth set has two features in it.  Its weight is determined by using the feature sets in the alphabet.  The set ``{Close, CloseMid}`` is a subset of four sets in the alphabet::
    
@@ -103,38 +103,23 @@ There are no consonantal features, i.e. the first three sets are empty and there
 
 The sets define different weights, but the lowest weight is taken, thus the weight of this feature group is 10 and the total weight of the morphophoneme ``ie`` is 10.
 
-When reading the alphabet file, the program computes the weights of all possible subsets and their weights of each of the six feature groups.  These pre-computed weights are then used for deciding which alignments are the best. 
+When reading the alphabet file, the program computes the weights of all possible subsets and their weights of each of the six feature groups.  These pre-computed weights are then used for deciding which alignments are the best.   More information on the technical details of the representation of phonemes and sets of features can found in :doc:`twol.alphabet`
 
 
 Installing the package
 ======================
 
-One may install the programs for alignment as a Python package called ``twolalign`` by using::
+One may install the programs for alignment as a Python package called ``twol`` by using::
 
-  $ pip3 install --user twolalign
+  $ pip3 install --user twol
 
 or equivalently with the Python itself::
 
-  $ python3 -m pip install --user twolalign
+  $ python3 -m pip install --user twol
 
 Installing the package this way makes a few command line scripts that can executed as if they were executable programs, in particular: ``twol-multialign`` and ``twol-aligner``.
 
-If these commands do not work, the reason can be that the command line interpreter does not find any commands installed by ``pip3``.  Iin Linux the commands are installed in a directory ``.local/bin``.  This must be present in the ``PATH`` environment variable, usually set in the ``.bashrc`` file.  You could add the following line (where *USERNAME* stands for your username) to that file::
-
-  export PATH=/home/USERNAME/.local/bin:$PATH
-
-You may also need another similar line in the ``.bashrc`` file so that the Python 3 interpreter will find the modules themselves::
-
-  export PYTHONPATH=/home/USERNAME/.local/lib/python3.6/site-packages:$PYTHONPATH
-
-The lines may need to be slightly different on different systems.  On Mac OS, at least, the beginning of the pathnames is different.
-
-If you have previously installed a version of ``twolalign`` and you wieh to replace it with a newer one, you can use an additional option ``--upgrade`` in the installation commands.
-
-If you indend to participate in the development of these tools, you may also clone the github project ``twolalign`` to your personal Linux or Mac computer by::
-
-  $ git clone git@github.com:koskenni/alignment.git
-
+For further advice and information on installing the twol package which contains these alignment programs, see the Wiki in the Github repository: https://github.com/koskenni/twol/wiki/Installing-the-twol-package
 
 
 ``twol-multialign``
