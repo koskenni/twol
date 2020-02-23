@@ -81,13 +81,47 @@ Once all rules seemed to be OK, the complete rule set was tested against the exa
 From here on, the file containing the examples and the rule file became independent and the modifications were made directly to the examples rather than to the tables containing the inflected forms.  Some phenomena were not present in the paradigm tables and needed examples which the tables would not accommodate.
 
 
-Building the KSKTWOL1
-=====================
+Building KSKTWOL1
+=================
 
 Nykysuomen sanakirja and Suomen kielen käänteissanakirja list 82 inflectional classes for nominals and 45 classes for verbs.  Two files with patterns were created in order to map each headword together with its class number into its morphophonological representation which then served as a lexicon entry.  The patterns are fairly loose and general at this stage as they have the inflectional class number available when deducing the morphophonemes.  The patterns for nouns and adjectives is `ofi-pat-na.csv <https://github.com/koskenni/ofitwol/blob/master/ofi/ofi-pat-na.csv>`_ and the one for verbs is ofi-pat-v.csv `<https://github.com/koskenni/ofitwol/blob/master/ofi/ofi-pat-v.csv>`_.
 Using these pattern files and the program `pat-proc-py <https://github.com/koskenni/ofitwol/blob/master/ofi/pat-proc.py>`_ lexical entries were produced using the two-level rules priviously written and tested.  These entries corresponded to the noun, adjective and verb entries in the KSK.  Those files are not published as it cannot be guaranteed that they are fully free from copyright.
 
-The lexicon entries for lexemes need still inflectional affixes in order to make them a part of an operational morphological analyzer.  The table listed the affixes and the information defining  the combinations in which the affixes may occur.  The affix file `ofi-affixes.csv <https://github.com/koskenni/ofitwol/blob/master/ofi/ofi-affixes.csv>`_ 
+The lexicon entries for lexemes need still inflectional affixes in order to make them a part of an operational morphological analyzer.  The table listed the affixes and the information defining  the combinations in which the affixes may occur.  The affix file `ofi-affixes.csv <https://github.com/koskenni/ofitwol/blob/master/ofi/ofi-affixes.csv>`_
+
+The table of inflectional affixes was so constructed that with some short Python scrpts, one could produce different versions of LEXC lexicons out of it.  One version could analyze inflected word forms to their base form and grammatical features indicating the inflectional form.  Another version produced the OFITWOL entry of the word instead of the base form.  This was used in the stages for generating entries out of corpora.
+
+
+Building OFITWOL1
+=================
+
+The analyzer KSKTWOL1 was applied to a list of 243,398,561 distinct word forms of *The Finnish N-grams 1820-2000 of the Newspaper and Periodical Corpus of the National Library of Finland* (http://urn.fi/urn:nbn:fi:lb-2014073038) published in Language Bank of Finland (Kielipankki, https://www.kielipankki.fi).  The file contained lots of words which were incorrectly recognized by the OCR progran, e.g.::
+
+  koaaerttimuallkkla
+  koaaerttipäivän
+  koaaerttlaaaallkkia
+  koaaet
+  koaaetaan
+  koaaeuteec
+  koaafamaan
+
+Some of the underlying printed words could be guessed, eg. the first has probably been ``konserttimusiikkia`` but other instances are more difficult.  For the current purposes, these noise words are not harmful at all.  They are just ignored.  One possible later uses of OFITWO would be to improve the accuracy of the OCR of printed old Finnish texts.
+
+Other sections of the list of word forms are analyzed with ``hfst-lookup`` using the KSKTWOL1 are informative, e.g.::
+  
+  aapeluskouluja  aapeluskouluja+?        inf
+  aapeluskukkoo   aapeluskukkoo+? inf
+  aapeluslen      aapeluslen+?    inf
+  aapelusohjeena  aapelusohjeena+?        inf
+  aapelust        aapelust+?      inf
+  aapelusta       aapelu{ØkØkk}s{ØeØeØ} /s;+N+SG+PTV      0,000000
+  aapelustaan     aapelu{ØkØkk}s{ØeØeØ} /s;+N+SG+PTV+SG3  0,000000
+  aapelustakaan   aapelu{ØkØkk}s{ØeØeØ} /s;+N+SG+PTV+KAAN 0,000000
+  aapelustani     aapelu{ØkØkk}s{ØeØeØ} /s;+N+SG+PTV+SG1  0,000000
+  aapelustcn      aapelustcn+?    inf
+  aapelusten      aapelu{ØkØkk}s{ØeØeØ} /s;+N+PL+GEN      0,000000
+
+Here one can identify entries of the noun ``aapelus`` (``aapinen``, 'alphabet book') in five different forms.  The other word forms shown are either misspellings or compound words of the same lexeme.  Anyway, the analyzer shows that the word ``aapelus`` occurs in the corpus and that a lexicon ``aapelu{ØkØkk}s{ØeØeØ} /s;`` accounts for those five forms.  The entry tells that the lexeme is inflected as ``aapelus``, ``aapeluksen``, ``aapelusta``, ``aapeluksia``. etc.
 
 
 Guessing entries

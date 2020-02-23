@@ -22,7 +22,7 @@ out of lines of space-separated cognate words, e.g.
 
 """
 
-import cfg
+import twol.cfg as cfg
 
 corr_width = 0                  # number of languages
 corr_set = set()                # set of all phoneme correspondences
@@ -34,8 +34,8 @@ from collections import deque
 def read_aligned_cognates(file_name):
     global corr_width
     alcog_file = open(file_name, "r")
-    left_queue = deque([])
-    right_queue = deque([])
+    left_queue = deque()
+    right_queue = deque()
     for line_nl in alcog_file:
         line = line_nl.strip()
         if line.startswith("!"):
@@ -176,6 +176,8 @@ def read_groups(fil):
             else:
                 print("***", letter, "***", line_nl)
         group_sets[lst[0]] = phon_set
+    if args.verbosity >= 10:
+        print("group_lst:", group_lst)
     return
 
 def reduce_string(input_string, symbol_string, set_symbol):
@@ -193,7 +195,7 @@ def reduce_context_set(context_set, symbol_string, set_symbol):
         new_set.add((new_left, new_right))
     return new_set
 
-if __name__ == "__main__":
+def main():
     global group_expansion_set
     import argparse
     arpar = argparse.ArgumentParser("twol-histdiscov")
@@ -214,10 +216,9 @@ if __name__ == "__main__":
     cfg.verbosity = args.verbosity
 
     read_aligned_cognates(args.algcognates)
+
     if args.groups:
         read_groups(open(args.groups, "r"))
-        if args.verbosity >= 10:
-            print("group_lst:", group_lst)
 
     if args.correspondence:
         correspondences = [args.correspondence]
@@ -324,3 +325,7 @@ if __name__ == "__main__":
 
     for rule in rule_lst:
         print(rule)
+    return
+
+if __name__ == "__main__":
+    main()
