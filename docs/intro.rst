@@ -1,3 +1,5 @@
+.. _introduction:
+
 ==========================
 Simplified two-level model
 ==========================

@@ -50,6 +50,9 @@ In the table, ``STM``  stands for the stem morph and ``ID`` for the column for t
    LASI, lasi, lasi.ssa, lasi.na, lase.i.ssa
    LAKI, laki, lai.ssa,  laki.na, lae.i.ssa
 
+
+.. _twol-table2words:
+
 twol-table2words
 ================
 
@@ -76,6 +79,9 @@ reads in a paradigm table `demo-table.csv <https://raw.githubusercontent.com/kos
      LAKI.INE,    lai.ssa
      LAKI.ESS,    laki.na
      LAKI.PL.INE, lae.i.ssa
+
+
+.. _twol-words2zerofilled:
 
 twol-words2zerofilled
 =====================
@@ -109,6 +115,8 @@ This script reads data in the above CSV format produced either by the ``twol-tab
 
 Here we can see why we need to have the same number of periods (.) in the column of MORPHEMES and in the column of MORPHS and actually in the original table.  The aligner now knows which parts of the word forms correspond to stems and what affixes.  With this information, the program can align allomorphs of each stem and of each affix separately.  The aligned morphs now contain some zeros so that the morphs of each morpheme are the same length, e.g. for MÄKI we have stems ``mäki``, ``mäØe``, ``mäke`` and ``mäØØ``.  The phonemes in the first position is constantly ``m``, in the second ``ä``, in the third alternating with ``k`` and ``Ø`` and in the fourth position alternating between ``i``, ``e`` and ``Ø``.  This is the information needed for constructing raw morphophonemes as we see in the next sub-section.
 
+
+.. _twol-zerofilled2raw:
 
 twol-zerofilled2raw
 ===================
@@ -155,6 +163,8 @@ The morphophonemes in affixes coud be constructed mechanically, but we meet simi
   PL,     i
 
 The file lists the principal forms in lines where the second field is ``+``.  Note that the principal forms may consist of zero, one or more affix morphemes (i.e. their names).  The remaining lines have the affix name in the first field and its morphophonemic representation in the second field.  Note that each morpheme (name) has an affix of its own.  One may establish distinct names for grammatically identical but phonemically distinct affixes.  (In Finnish, e.g. some plural genitive endings are so different that one may treat them as different morphemes having slighty different names.)
+
+.. _twol-raw2named:
 
 twol-raw2named
 ==============
