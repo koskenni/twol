@@ -189,7 +189,7 @@ and your program would print::
 ``twol-aligner``
 ----------------
 
-This is an alternative to ``twol-multialign`` which is restrected to aligning exactly two cognate forms at a time.  In return, it can use a more powerful ways than *multialign* to define weights.  In particular, it can express preferences or explicit lower weights for some correspondences by listing them as weighted regular expressions, e.g.::
+This is an alternative to ``twol-multialign`` which is restricted to aligning exactly two cognate forms at a time.  In return, it can use a more powerful ways than *multialign* to define weights.  In particular, it can express preferences or explicit lower weights for some correspondences by listing them as weighted regular expressions, e.g.::
 
   o:õ::5
 
