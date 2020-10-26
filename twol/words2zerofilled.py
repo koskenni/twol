@@ -10,7 +10,7 @@ def main():
     
     import argparse
     argparser = argparse.ArgumentParser(
-        "python3 parad2zerofilled.py",
+        "python3 words2zerofilled.py",
         description="Aligns a set of word forms with morph boundaries"\
         " Version {} ".format(version))
     argparser.add_argument(
@@ -54,7 +54,6 @@ def main():
     import re
     import csv
     import collections
-    from orderedset import OrderedSet
     import grapheme
 
     cfg.verbosity = args.verbosity
@@ -64,7 +63,7 @@ def main():
 
     morphs_of_morpheme = {} 
     """A dict to which allomorphs of each morpheme are collected:
-    morphs_of_morpheme[morpheme_name] == OrderedSet of its allomorphs.
+    morphs_of_morpheme[morpheme_name] == ordered list its unique allomorphs.
     """
     seg_example_list = []
     """A list to which of all example words are collected. 
@@ -97,11 +96,23 @@ def main():
             continue
         stem_name_set.add(morpheme_list[0])
         name_morph_pair_lst = list(zip(morpheme_list, morph_list))
+        if args.verbosity >= 10:
+            print("name_morph_pair_lst", name_morph_pair_lst)
         seg_example_list.append(name_morph_pair_lst)
         for morpheme, morph in name_morph_pair_lst:
+            if args.verbosity >= 10:
+                print("morpheme, morph:", morpheme, morph)
+            morph = morph.strip()
             if morpheme not in morphs_of_morpheme:
-                morphs_of_morpheme[morpheme] = OrderedSet()
-            morphs_of_morpheme[morpheme].add(morph.strip())
+                morphs_of_morpheme[morpheme] = [morph]
+            else:
+                if morph not in morphs_of_morpheme[morpheme]:
+                    morphs = morphs_of_morpheme[morpheme]
+                    morphs.append(morph)
+                    morphs_of_morpheme[morpheme] = morphs
+    if args.verbosity >= 5:
+        print("morphs_of_morpheme", morphs_of_morpheme)
+
     csvfile.close()
 
     print("-- STEP 1 COMPLETED (seg_example_list, stem_name_set,"
@@ -124,7 +135,7 @@ def main():
     """
 
     for morpheme in sorted(morphs_of_morpheme.keys()):
-        morphs = list(morphs_of_morpheme[morpheme])
+        morphs = morphs_of_morpheme[morpheme]
         if len(morphs) == 1 and len(morphs[0]) == 0:
             aligned_morphs_lst = []
         else:
