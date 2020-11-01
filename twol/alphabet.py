@@ -41,6 +41,9 @@ consonant_set = set()
 mphon_weight_cache = {}
 """A cache for morphophoneme weights."""
 
+phoneme_set_weight_cache = {}
+"""Given weights for phoneme sets represented by "".join(sorted(set(MPHON)))"""
+
 for_definitions_lst = []
 """A list of ... FOR X IN ... definitions to be used in metric.py"""
 
@@ -115,6 +118,9 @@ def mphon_weight(mphon):
     global weight_c1, weight_c2, weight_c3, weight_v1, weight_v2, weight_v3
     if re.fullmatch(r"[Ø]+", mphon):
         return cfg.all_zero_weight
+    phon_set_str = "".join(sorted(set(mphon)))
+    if phon_set_str in phoneme_set_weight_cache:
+        return phoneme_set_weight_cache[phon_set_str]
     if mphon in mphon_weight_cache:
         return mphon_weight_cache[mphon]
     mphon_int = mphon_to_binint_cache[mphon]
@@ -153,6 +159,7 @@ def mphon_weight(mphon):
         print("\nmphon_int[{}]  = {}".format(mphon, spaced_bin_int(mphon_int)))
         print("mphon_weight[{}] = {}".format(mphon, w))
     mphon_weight_cache[mphon] = w
+    phoneme_set_weight_cache[phon_set_str] = w
     return w
 
 def read_alphabet(file_name):
@@ -178,50 +185,63 @@ def read_alphabet(file_name):
             line = line_nl.split("#")[0].strip()
             if not line:
                 continue
-            mat1 = re.fullmatch(
-                r":?(?P<symbol>\w):? *= *(?P<feats>\w*( *, *\w*)+)",
+            mat_phon_feat = re.fullmatch(
+                r":?(?P<symbol>(\w|')):? *= *(?P<feats>\w*( *, *\w*)+)",
                 line)
-            if mat1:            # it defines features of a phoneme
-                r_lst = [feat.strip() for feat in mat1.group("feats").split(",")]
+            if mat_phon_feat:
+                # it defines features of a phoneme
+                r_lst = [feat.strip() for feat in mat_phon_feat.group("feats").split(",")]
                 if len(r_lst) != 6:
                     msg = "** WRONG NUMBER OF FEATURES ON LINE {}:\n{}"
                     sys.exit(msg.format(i, line))
-                if mat1.group("symbol") in features_of_phoneme:
+                if mat_phon_feat.group("symbol") in features_of_phoneme:
                     msg = "** {} ALREADY DEFINED. LINE {}:\n{}"
-                    sys.exit(msg.format(mat1.group("symbol"), i, line_nl))
-                features_of_phoneme[mat1.group("symbol")] = tuple(r_lst)
+                    sys.exit(msg.format(mat_phon_feat.group("symbol"), i, line_nl))
+                features_of_phoneme[mat_phon_feat.group("symbol")] = tuple(r_lst)
                 for ls, feat in zip(feature_lst_lst, r_lst):
                     if not feat in ls and feat:
                         ls.append(feat)
                 continue
-            mat2 = re.fullmatch(
-                r"(?P<elements>\w+( +\w+)+) *= *(?P<weight>[0-9]+)",
+            mat_feat_set = re.fullmatch(
+                r"(?P<elements>\w\w\w+( +\w\w\w+)+) *= *(?P<weight>[0-9]+)",
                 line)
-            if mat2:
-                # it defines a subset and its weight
-                l_lst = mat2.group("elements").split()
-                subset_lst.append((set(l_lst), int(mat2.group("weight"))))
+            if mat_feat_set:
+                # it defines a subset of features and its weight
+                l_lst = mat_feat_set.group("elements").split()
+                subset_lst.append((set(l_lst), int(mat_feat_set.group("weight"))))
                 continue
-            mat3 = re.fullmatch(
+            mat_phon_set = re.fullmatch(
+                r"(?P<weight>[0-9]+) *= *(?P<elements>(\w|')+( +(\w|')+)+)",
+                line)
+            if mat_phon_set:
+                # it defines a subset of features and its weight
+                phon_set_str_lst = mat_phon_set.group("elements").split()
+                weight = int(mat_phon_set.group("weight"))
+                for phon_str in phon_set_str_lst:
+                    phon_set_str = "".join(sorted(set(phon_str)))
+                    phoneme_set_weight_cache[phon_set_str] = weight
+                continue
+            mat_zero = re.fullmatch(
                 r"Zero *[+]= *(?P<consw>[0-9]+) +(?P<voww>[0-9]+)",
                 line)
-            if mat3:
-                # it defines the cost of including a Zero in sets
-                cost_of_zero_c = int(mat3.group("consw"))
-                cost_of_zero_v = int(mat3.group("voww"))
+            if mat_zero:
+                # it defines the cost of including a Zero in feature sets
+                cost_of_zero_c = int(mat_zero.group("consw"))
+                cost_of_zero_v = int(mat_zero.group("voww"))
                 continue
-            mat4 = re.fullmatch(
+            mat_for_in = re.fullmatch(
                 r"(?P<expr>(\w:\w +)*\w:\w::[0-9]+) +FOR +(?P<var>\w+) +IN +(?P<set>\w+)",
                 line)
-            if mat4:
+            if mat_for_in:
                 # it defines a FOR IN definition
-                for_definitions_lst.append((mat4.group("expr"),
-                                           mat4.group("var"), mat4.group("set")))
+                for_definitions_lst.append((mat_for_in.group("expr"),
+                                            mat_for_in.group("var"),
+                                            mat_for_in.group("set")))
                 continue
-            mat5 = re.fullmatch("(?P<expr>(\w:\w +)*\w:\w::[0-9]+)", line)
-            if mat5:
+            mat_exception = re.fullmatch("(?P<expr>(\w:\w +)*\w:\w::[0-9]+)", line)
+            if mat_exception:
                 # it defines an exception list
-                exception_lst.append(mat5.group("expr"))
+                exception_lst.append(mat_exception.group("expr"))
                 continue
             msg = "** INCORRECT ALPHABET DEFINITON LINE {}:\n {}"
             sys.exit(msg.format(i, line_nl))

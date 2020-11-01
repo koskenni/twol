@@ -17,6 +17,7 @@ k  =  Velar, Unvoiced, Stop,,,
 g  =  Velar, Voiced, Stop,,,
 ŋ  =  Velar, Voiced, Nasal,,,
 h  =  Glottal, Unvoiced, Fricative,,,
+'  =  Glottal, Unvoiced, Stop,,,
 
 Bilabial Labiodental Dental Alveolar PostAlveolar Palatal Velar Glottal = 50
 Bilabial Labiodental Dental Alveolar PostAlveolar = 30
@@ -63,6 +64,12 @@ Unrounded Rounded = 10
 
 Zero += 20 20
 
+10 = ao äö aoØ äöØ aä aäØ aØ äØ ei eiØ eØ ij iØ oö uy uØ yØ
+10 = kØ kg k' k'Ø kj kv
+10 = pØ pm pv
+##20 = tds tls tns trs
+10 = tØ td tl tn tr
+20 = mn nØ
 
 j:i::20
 i:j::20

@@ -5,13 +5,12 @@ Raw morphophonemes are named according to a set of principal forms
 alternations in a lexeme.  The script assumes that the examples within
 a lexeme occur all in the same order as for their form.
 
-In order to apply this script to another language, one must revise the
-principal_set and the feat2mphons values.  The code still relies on
-the assumption that the stem comes as the first morph (and thus some
-minor modifications would be required in order to handle prefixing
-languages).
+The code still relies on the assumption that the stem comes as the
+first morph (and thus some minor modifications would be required in
+order to handle prefixing languages).
 
 © Kimmo Koskenniemi, 2018. This is free software under GPL 3 license.
+
 """
 
 def main():
@@ -62,13 +61,13 @@ def main():
 
     import re
     import csv
-    from collections import OrderedDict
-    from orderedset import OrderedSet
+    import collections
 
-    principal_set = OrderedSet()
-    """"Set of principal forms or principal parts, i.e. the forms which
+    principal_lst = []
+    """"List of principal forms or principal parts, i.e. the forms which
     uniquely determine the morphophonemic variations that may occur
-    within the stem
+    within the stem.
+
     """
     feat2mphons = {}
 
@@ -80,16 +79,18 @@ def main():
                             skipinitialspace=True)
         for row in affrdr:
             if row[1] == '+':
-                principal_set.add(row[0])
+                feat = row[0]
+                if feat not in principal_lst:
+                    principal_lst.append(feat)
             else:
                 feat2mphons[row[0]] = row[1]
     if args.verbosity >= 10:
-        print("principal_set =", principal_set)####
+        print("principal_lst =", principal_lst)####
         print("feat2mphons =", feat2mphons)####
 
     # Read in the morpheme names and the zero-filled morphs
 
-    stem_morpheme_data = OrderedDict()
+    stem_morpheme_data = collections.OrderedDict()
     """Indexed by stem morpheme name, value is a list of the original data
     for that stem morpheme.  Each value consists of a tuple of fields
     (MORPHEMES, MORPHS, ALIGNED) in the original data.
@@ -127,7 +128,7 @@ def main():
         # select the principal forms of this stem morpheme
         for data in data_lst:
             form_name, orig_morphs, zerof_morph_lst = data
-            if form_name in principal_set:
+            if form_name in principal_lst:
                 princ_zstem_lst.append(zerof_morph_lst[0])
         # form the raw morphophonemes by combining corresponding
         # symbols

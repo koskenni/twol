@@ -883,7 +883,7 @@ VASTAUS.PL.ILL,vastauks.i.hin,vastauksØ.i.hin
 KALLEUS,kalleus,kalleuØsØ
 KALLEUS.GEN,kalleude.n,kalleuØde.n
 KALLEUS.PTV,kalleut.ta,kalleuØtØ.ta
-KALLEUS.ESS,kalleute.na,kalleuØte.na
+KALLEUS.ESS,kalleuØte.na,kalleuØte.na
 KALLEUS.ILL,kalleute.en,kalleuØte.Øen
 KALLEUS.ILL,kalleute.hen,kalleuØte.hen
 KALLEUS.PL.INE,kalleuks.i.ssa,kalleuksØ.i.ssa
@@ -1073,6 +1073,7 @@ AIRUT,airut,airutØ
 AIRUT.GEN,airue.n,airuØe.n
 AIRUT.PTV,airut.ta,airutØ.ta
 AIRUT.ESS,airue.na,airuØe.na
+AIRUT.ESS,airuhe.na,airuhe.na
 AIRUT.ILL,airue.en,airuØe.Øen
 AIRUT.ILL,airue.hen,airuØe.hen
 AIRUT.PL.INE,airu.i.ssa,airuØØ.i.ssa
@@ -1091,6 +1092,7 @@ AIRUT.PL.ILLsiin,airuh.i.sin,airuhØ.i.siØn
 ÄIDYT.GEN,äitye.n,äityØe.n
 ÄIDYT.PTV,äidyt.tä,äidytØ.tä
 ÄIDYT.ESS,äitye.nä,äityØe.nä
+ÄIDYT.ESS,äityhe.nä,äityhe.nä
 ÄIDYT.ILL,äitye.en,äityØe.Øen
 ÄIDYT.ILL,äitye.hen,äityØe.hen
 ÄIDYT.PL.INE,äity.i.ssä,äityØØ.i.ssä

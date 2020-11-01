@@ -406,8 +406,10 @@ class TwolFstSemantics(object):
 def init():
     """Initializes the module and compiles and returns a tatsu parser
 
-    grammar_file -- the name of the file containing the EBNF grammar for rules
-"""
+    grammar_file -- the name of the file containing the EBNF grammar
+    for rules
+
+    """
     import os
     dir = os.path.dirname(os.path.abspath(__file__))
     grammar_file = dir + "/twolcsyntax.ebnf"

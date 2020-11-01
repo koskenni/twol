@@ -836,10 +836,10 @@ UISTIN.PLGENten,uistin.ten,uistinØ.ten,u i s t i {nmnmm} {ØeØeØ} t e n
 UISTIN.PL.PTV,uistim.i.a,uistimØ.i.Øa,u i s t i {nmnmm} {ØeØeØ} {ij} {Øt} {aä}
 UISTIN.PL.ILL,uistim.i.in,uistimØ.i.Øin,u i s t i {nmnmm} {ØeØeØ} {ij} {Øh} {V} n
 UISTIN.PL.ILL,uistim.i.hin,uistimØ.i.hin,u i s t i {nmnmm} {ØeØeØ} {ij} {Øh} {V} n
-ONNETON,onnetØoØnØ,onnetØoØnØ,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} 
+ONNETON,onneton,onnetØoØnØ,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} 
 ONNETON,onnetoin,onnetØoinØ,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} 
 ONNETON.GEN,onnettoØma.n,onnettoØma.n,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} n
-ONNETON.PTV,onnetØoØnØ.ta,onnetØoØnØ.ta,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øt} {aä}
+ONNETON.PTV,onneton.ta,onnetØoØnØ.ta,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øt} {aä}
 ONNETON.PTV,onnetoin.ta,onnetØoinØ.ta,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {Øt} {aä}
 ONNETON.ESS,onnettoma.na,onnettoØma.na,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {nrs} {aä}
 ONNETON.ESS,onneton.na,onnetØoØnØ.na,o n n e t {ØØtØØtØØt} o {ØiØØiØØiØ} {nnmnnmnnm} {ØØaØØaØØØ} {nrs} {aä}
@@ -1069,42 +1069,44 @@ MIES.PL.GENien,mieh.i.en,miehØ.i.en,m i e {shshssh} {ØeØeØØØ} {ij} e n
 MIES.PLGENten,mies.ten,miesØ.ten,m i e {shshssh} {ØeØeØØØ} t e n
 MIES.PL.PTV,mieh.i.ä,miehØ.i.Øä,m i e {shshssh} {ØeØeØØØ} {ij} {Øt} {aä}
 MIES.PL.ILL,mieh.i.in,miehØ.i.Øin,m i e {shshssh} {ØeØeØØØ} {ij} {Øh} {V} n
-AIRUT,airutØ,airutØ,a i r u {tØtØØh} {ØeØeØØ} 
-AIRUT.GEN,airuØe.n,airuØe.n,a i r u {tØtØØh} {ØeØeØØ} n
-AIRUT.PTV,airutØ.ta,airutØ.ta,a i r u {tØtØØh} {ØeØeØØ} {Øt} {aä}
-AIRUT.ESS,airue.na,airuØe.na,a i r u {tØtØØh} {ØeØeØØ} {nrs} {aä}
-AIRUT.ILL,airue.en,airuØe.Øen,a i r u {tØtØØh} {ØeØeØØ} {Øh} {V} n
-AIRUT.ILL,airue.hen,airuØe.hen,a i r u {tØtØØh} {ØeØeØØ} {Øh} {V} n
-AIRUT.PL.INE,airu.i.ssa,airuØØ.i.ssa,a i r u {tØtØØh} {ØeØeØØ} {ij} s s {aä}
-AIRUT.PL.INE,airuh.i.ssa,airuhØ.i.ssa,a i r u {tØtØØh} {ØeØeØØ} {ij} s s {aä}
-AIRUT.PL.GENiden,airu.i.den,airuØØ.i.dØen,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-AIRUT.PL.GENiden,airu.i.tten,airuØØ.i.tten,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-AIRUT.PL.GENiden,airuh.i.tten,airuhØ.i.tten,a i r u {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-AIRUT.PL.GENien,airuh.i.en,airuhØ.i.en,a i r u {tØtØØh} {ØeØeØØ} {ij} e n
-AIRUT.PLGENten,airut.ten,airutØ.ten,a i r u {tØtØØh} {ØeØeØØ} t e n
-AIRUT.PL.PTV,airu.i.ta,airuØØ.i.ta,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
-AIRUT.PL.PTV,airuh.i.a,airuhØ.i.Øa,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
-AIRUT.PL.ILL,airu.i.hin,airuØØ.i.hin,a i r u {tØtØØh} {ØeØeØØ} {ij} {Øh} {V} n
-AIRUT.PL.ILLsiin,airu.i.siin,airuØØ.i.siin,a i r u {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
-AIRUT.PL.ILLsiin,airuh.i.sin,airuhØ.i.siØn,a i r u {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
-ÄIDYT,äidytØ,äidytØ,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} 
-ÄIDYT.GEN,äityØe.n,äityØe.n,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} n
-ÄIDYT.PTV,äidytØ.tä,äidytØ.tä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øt} {aä}
-ÄIDYT.ESS,äitye.nä,äityØe.nä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {nrs} {aä}
-ÄIDYT.ILL,äitye.en,äityØe.Øen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øh} {V} n
-ÄIDYT.ILL,äitye.hen,äityØe.hen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {Øh} {V} n
-ÄIDYT.PL.INE,äity.i.ssä,äityØØ.i.ssä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s s {aä}
-ÄIDYT.PL.INE,äityh.i.ssä,äityhØ.i.ssä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s s {aä}
-ÄIDYT.PL.GENiden,äity.i.den,äityØØ.i.dØen,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-ÄIDYT.PL.GENiden,äity.i.tten,äityØØ.i.tten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-ÄIDYT.PL.GENiden,äityh.i.tten,äityhØ.i.tten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {dt} {Øt} e n
-ÄIDYT.PL.GENien,äityh.i.en,äityhØ.i.en,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} e n
-ÄIDYT.PLGENten,äidyt.ten,äidytØ.ten,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} t e n
-ÄIDYT.PL.PTV,äity.i.tä,äityØØ.i.tä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
-ÄIDYT.PL.PTV,äityh.i.ä,äityhØ.i.Øä,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øt} {aä}
-ÄIDYT.PL.ILL,äity.i.hin,äityØØ.i.hin,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} {Øh} {V} n
-ÄIDYT.PL.ILLsiin,äity.i.siin,äityØØ.i.siin,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
-ÄIDYT.PL.ILLsiin,äityh.i.sin,äityhØ.i.siØn,ä i {dtdttt} y {tØtØØh} {ØeØeØØ} {ij} s i {iØ} n
+AIRUT,airut,airutØ,a i r u {tØtØhØh} {ØeØeeØØ} 
+AIRUT.GEN,airue.n,airuØe.n,a i r u {tØtØhØh} {ØeØeeØØ} n
+AIRUT.PTV,airut.ta,airutØ.ta,a i r u {tØtØhØh} {ØeØeeØØ} {Øt} {aä}
+AIRUT.ESS,airue.na,airuØe.na,a i r u {tØtØhØh} {ØeØeeØØ} {nrs} {aä}
+AIRUT.ESS,airuhe.na,airuhe.na,a i r u {tØtØhØh} {ØeØeeØØ} {nrs} {aä}
+AIRUT.ILL,airue.en,airuØe.Øen,a i r u {tØtØhØh} {ØeØeeØØ} {Øh} {V} n
+AIRUT.ILL,airue.hen,airuØe.hen,a i r u {tØtØhØh} {ØeØeeØØ} {Øh} {V} n
+AIRUT.PL.INE,airu.i.ssa,airuØØ.i.ssa,a i r u {tØtØhØh} {ØeØeeØØ} {ij} s s {aä}
+AIRUT.PL.INE,airuh.i.ssa,airuhØ.i.ssa,a i r u {tØtØhØh} {ØeØeeØØ} {ij} s s {aä}
+AIRUT.PL.GENiden,airu.i.den,airuØØ.i.dØen,a i r u {tØtØhØh} {ØeØeeØØ} {ij} {dt} {Øt} e n
+AIRUT.PL.GENiden,airu.i.tten,airuØØ.i.tten,a i r u {tØtØhØh} {ØeØeeØØ} {ij} {dt} {Øt} e n
+AIRUT.PL.GENiden,airuh.i.tten,airuhØ.i.tten,a i r u {tØtØhØh} {ØeØeeØØ} {ij} {dt} {Øt} e n
+AIRUT.PL.GENien,airuh.i.en,airuhØ.i.en,a i r u {tØtØhØh} {ØeØeeØØ} {ij} e n
+AIRUT.PLGENten,airut.ten,airutØ.ten,a i r u {tØtØhØh} {ØeØeeØØ} t e n
+AIRUT.PL.PTV,airu.i.ta,airuØØ.i.ta,a i r u {tØtØhØh} {ØeØeeØØ} {ij} {Øt} {aä}
+AIRUT.PL.PTV,airuh.i.a,airuhØ.i.Øa,a i r u {tØtØhØh} {ØeØeeØØ} {ij} {Øt} {aä}
+AIRUT.PL.ILL,airu.i.hin,airuØØ.i.hin,a i r u {tØtØhØh} {ØeØeeØØ} {ij} {Øh} {V} n
+AIRUT.PL.ILLsiin,airu.i.siin,airuØØ.i.siin,a i r u {tØtØhØh} {ØeØeeØØ} {ij} s i {iØ} n
+AIRUT.PL.ILLsiin,airuh.i.sin,airuhØ.i.siØn,a i r u {tØtØhØh} {ØeØeeØØ} {ij} s i {iØ} n
+ÄIDYT,äidyt,äidytØ,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} 
+ÄIDYT.GEN,äitye.n,äityØe.n,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} n
+ÄIDYT.PTV,äidyt.tä,äidytØ.tä,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {Øt} {aä}
+ÄIDYT.ESS,äitye.nä,äityØe.nä,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {nrs} {aä}
+ÄIDYT.ESS,äityhe.nä,äityhe.nä,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {nrs} {aä}
+ÄIDYT.ILL,äitye.en,äityØe.Øen,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {Øh} {V} n
+ÄIDYT.ILL,äitye.hen,äityØe.hen,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {Øh} {V} n
+ÄIDYT.PL.INE,äity.i.ssä,äityØØ.i.ssä,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} s s {aä}
+ÄIDYT.PL.INE,äityh.i.ssä,äityhØ.i.ssä,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} s s {aä}
+ÄIDYT.PL.GENiden,äity.i.den,äityØØ.i.dØen,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} {dt} {Øt} e n
+ÄIDYT.PL.GENiden,äity.i.tten,äityØØ.i.tten,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} {dt} {Øt} e n
+ÄIDYT.PL.GENiden,äityh.i.tten,äityhØ.i.tten,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} {dt} {Øt} e n
+ÄIDYT.PL.GENien,äityh.i.en,äityhØ.i.en,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} e n
+ÄIDYT.PLGENten,äidyt.ten,äidytØ.ten,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} t e n
+ÄIDYT.PL.PTV,äity.i.tä,äityØØ.i.tä,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} {Øt} {aä}
+ÄIDYT.PL.PTV,äityh.i.ä,äityhØ.i.Øä,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} {Øt} {aä}
+ÄIDYT.PL.ILL,äity.i.hin,äityØØ.i.hin,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} {Øh} {V} n
+ÄIDYT.PL.ILLsiin,äity.i.siin,äityØØ.i.siin,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} s i {iØ} n
+ÄIDYT.PL.ILLsiin,äityh.i.sin,äityhØ.i.siØn,ä i {dtdtttt} y {tØtØhØh} {ØeØeeØØ} {ij} s i {iØ} n
 KEVÄT,kevät,kevätØ,k e v ä {tØhtØnhØh} {ØääØäØäØØ} 
 KEVÄT.GEN,kevää.n,keväØä.n,k e v ä {tØhtØnhØh} {ØääØäØäØØ} n
 KEVÄT.GEN,kevähä.n,kevähä.n,k e v ä {tØhtØnhØh} {ØääØäØäØØ} n

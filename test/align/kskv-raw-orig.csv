@@ -3,7 +3,7 @@ PUNOA.SG1,puno.n,puno.n,p u n o n
 PUNOA.PAST.SG3,puno.i.,puno.i.Ø,p u n o {i} {VØ}
 PUNOA.POTN.SG3,puno.ne.e,puno.ne.e,p u n o {nlrs} e {VØ}
 PUNOA.COND.SG3,puno.isi.,puno.isi.Ø,p u n o i s i {VØ}
-PUNOA.IMPV,puno.,puno.Ø,p u n o {C}
+PUNOA.IMPV,puno.Ø,puno.Ø,p u n o {C}
 PUNOA.IMPVSG3,puno.koon,puno.koon,p u n o k {oö} {oö} n
 PUNOA.PCP2,puno.nut,puno.nut,p u n o {nlrs} {uy} t
 PUNOA.PSSPRES,puno.tØaan,puno.tØaan,p u n o {tdlrnØ} {C} {aä} {aä} n
@@ -133,7 +133,7 @@ HAASTAA.COND.SG3,haasta.isi.,haasta.isi.Ø,h a a s t {aoØaaae} i s i {VØ}
 HAASTAA.IMPV,haasta.,haasta.Ø,h a a s t {aoØaaae} {C}
 HAASTAA.IMPVSG3,haasta.koon,haasta.koon,h a a s t {aoØaaae} k {oö} {oö} n
 HAASTAA.PCP2,haasta.nut,haasta.nut,h a a s t {aoØaaae} {nlrs} {uy} t
-HAASTAA.PSSPRES,haaste.taan,haaste.tØaan,h a a s t {aoØaaae} {tdlrnØ} {C} {aä} {aä} n
+HAASTAA.PSSPRES,haaste.tØaan,haaste.tØaan,h a a s t {aoØaaae} {tdlrnØ} {C} {aä} {aä} n
 HAASTAA.PSSPAST,haaste.ttiin,haaste.ttiin,h a a s t {aoØaaae} {Øt} t i i n
 HAASTAA.PSSPCP2,haaste.ttu,haaste.ttu,h a a s t {aoØaaae} {Øt} t {uy}
 PAISTAA.SG1,paista.n,paista.n,p a i s t {aoØaaae} n
@@ -282,16 +282,16 @@ VIEDÄ.PCP2,vie.nyt,vie.nyt,v {iØiØii} e {nlrs} {uy} t
 VIEDÄ.PSSPRES,vie.dØään,vie.dØään,v {iØiØii} e {tdlrnØ} {C} {aä} {aä} n
 VIEDÄ.PSSPAST,vie.tiin,vie.Øtiin,v {iØiØii} e {Øt} t i i n
 VIEDÄ.PSSPCP2,vie.ty,vie.Øty,v {iØiØii} e {Øt} t {uy}
-KÄYDÄ.SG1,käØy.n,käØy.n,k ä {ØvØvØØ} {yØyØyy} n
-KÄYDÄ.PAST.SG3,kävØ.i.,kävØ.i.Ø,k ä {ØvØvØØ} {yØyØyy} {i} {VØ}
-KÄYDÄ.POTN.SG3,käy.ne.e,käØy.ne.e,k ä {ØvØvØØ} {yØyØyy} {nlrs} e {VØ}
-KÄYDÄ.COND.SG3,käv.isi.,kävØ.isi.Ø,k ä {ØvØvØØ} {yØyØyy} i s i {VØ}
-KÄYDÄ.IMPV,käy.,käØy.Ø,k ä {ØvØvØØ} {yØyØyy} {C}
-KÄYDÄ.IMPVSG3,käy.köön,käØy.köön,k ä {ØvØvØØ} {yØyØyy} k {oö} {oö} n
-KÄYDÄ.PCP2,käy.nyt,käØy.nyt,k ä {ØvØvØØ} {yØyØyy} {nlrs} {uy} t
-KÄYDÄ.PSSPRES,käy.dØään,käØy.dØään,k ä {ØvØvØØ} {yØyØyy} {tdlrnØ} {C} {aä} {aä} n
-KÄYDÄ.PSSPAST,käy.tiin,käØy.Øtiin,k ä {ØvØvØØ} {yØyØyy} {Øt} t i i n
-KÄYDÄ.PSSPCP2,käy.ty,käØy.Øty,k ä {ØvØvØØ} {yØyØyy} {Øt} t {uy}
+KÄYDÄ.SG1,käy.n,käy.n,k ä {yvyvyy} n
+KÄYDÄ.PAST.SG3,käv.i.,käv.i.Ø,k ä {yvyvyy} {i} {VØ}
+KÄYDÄ.POTN.SG3,käy.ne.e,käy.ne.e,k ä {yvyvyy} {nlrs} e {VØ}
+KÄYDÄ.COND.SG3,käv.isi.,käv.isi.Ø,k ä {yvyvyy} i s i {VØ}
+KÄYDÄ.IMPV,käy.,käy.Ø,k ä {yvyvyy} {C}
+KÄYDÄ.IMPVSG3,käy.köön,käy.köön,k ä {yvyvyy} k {oö} {oö} n
+KÄYDÄ.PCP2,käy.nyt,käy.nyt,k ä {yvyvyy} {nlrs} {uy} t
+KÄYDÄ.PSSPRES,käy.dØään,käy.dØään,k ä {yvyvyy} {tdlrnØ} {C} {aä} {aä} n
+KÄYDÄ.PSSPAST,käy.tiin,käy.Øtiin,k ä {yvyvyy} {Øt} t i i n
+KÄYDÄ.PSSPCP2,käy.ty,käy.Øty,k ä {yvyvyy} {Øt} t {uy}
 NUOLAISTA.SG1,nuolaise.n,nuolaise.n,n u o l a i s {eØØØØØ} n
 NUOLAISTA.PAST.SG3,nuolais.i.,nuolaisØ.i.Ø,n u o l a i s {eØØØØØ} {i} {VØ}
 NUOLAISTA.POTN.SG3,nuolais.se.e,nuolaisØ.se.e,n u o l a i s {eØØØØØ} {nlrs} e {VØ}
@@ -457,6 +457,16 @@ aidata.PCP2,aidan.nut,aidanØ.nut,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {nlrs}
 aidata.PSSPRES,aidat.ØØaan,aidatØ.ØØaan,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {tdlrnØ} {C} {aä} {aä} n
 aidata.PSSPAST,aidat.tiin,aidatØ.Øtiin,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {Øt} t i i n
 aidata.PSSPCP2,aidat.tu,aidatØ.Øtu,a i {ttdtdd} a {ØsnØtt} {aØØØØØ} {Øt} t {uy}
+laota.SG1,lakoØa.n,lakoØa.n,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} n
+laota.PAST.SG3,lakos.i.,lakosØ.i.Ø,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} {i} {VØ}
+laota.POTN.SG3,laon.ne.e,laØonØ.ne.e,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} {nlrs} e {VØ}
+laota.COND.SG3,lakoa.isi.,lakoØa.isi.Ø,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} i s i {VØ}
+laota.IMPV,lakoa.,lakoØa.Ø,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} {C}
+laota.IMPVSG3,laot.koon,laØotØ.koon,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} k {oö} {oö} n
+laota.PCP2,laon.nut,laØonØ.nut,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} {nlrs} {uy} t
+laota.PSSPRES,laot.ØØaan,laØotØ.ØØaan,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} {tdlrnØ} {C} {aä} {aä} n
+laota.PSSPAST,laot.tiin,laØotØ.Øtiin,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} {Øt} t i i n
+laota.PSSPCP2,laot.tu,laØotØ.Øtu,l a {kkØkØØ} o {ØsnØtt} {aØØaØØ} {Øt} t {uy}
 KATKETA.SG1,katkeØa.n,katkeØa.n,k a t k e {ØsnØtt} {aØØaØØ} n
 KATKETA.PAST.SG3,katkes.i.,katkesØ.i.Ø,k a t k e {ØsnØtt} {aØØaØØ} {i} {VØ}
 KATKETA.POTN.SG3,katken.ne.e,katkenØ.ne.e,k a t k e {ØsnØtt} {aØØaØØ} {nlrs} e {VØ}

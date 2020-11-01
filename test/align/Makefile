@@ -1,9 +1,9 @@
 BASE=demo
 DELIM=,
-ZEROS=1
+ZEROS=0
 .SUFFIXES:
 
-.PHONY : renamed raw zerofilled words features rawmphonemes clean
+.PHONY : renamed raw zerofilled words features rawmphonemes clean compare
 
 renamed : $(BASE)-renamed.pstr
 
@@ -44,3 +44,11 @@ clean :
 	rm -f $(BASE)-renamed.pstr $(BASE)-raw.csv
 	rm -f $(BASE)-zerofilled.csv $(BASE)-words.csv
 	rm -f $(BASE)-features.text $(BASE)-rawmphonemes.text
+
+compare :
+	# ----------------------------------------
+	diff $(BASE)-zerofilled-orig.csv $(BASE)-zerofilled.csv | head -20
+	# ----------------------------------------
+	diff $(BASE)-raw-orig.csv $(BASE)-raw.csv | head -20
+	# ----------------------------------------
+	diff $(BASE)-renamed-orig.pstr $(BASE)-renamed.pstr | head -20
