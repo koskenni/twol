@@ -1,5 +1,11 @@
 # twol: Compiler and other tools for two-level morphology
 
+These tools can be installed to your computer from PyPi by normal commands, such as
+
+   pip3 install --user
+
+For more instructions, see TWO Wiki https://github.com/koskenni/twol/wiki
+
 **NOTE:** the programs are under development and many of them may not
   work as expected
 
@@ -13,11 +19,12 @@ https://github.com/hfst/python).
 
 The tools in this repository include:
 
-1. A compiler *twol.py* which reads in a set of examples and a grammar
-   file containing two-level rules.  The compiler parses the rules,
-   compiles them and tests them against the examples. The compiler can
-   write the compiled rules as binary finite-state transducers into a
-   file which can be used with the HFST command line tools.
+1. A compiler *twol.py* or *twol-comp* which reads in a set of
+   examples and a grammar file containing two-level rules.  The
+   compiler parses the rules, compiles them and tests them against the
+   examples. The compiler can write the compiled rules as binary
+   finite-state transducers into a file which can be used with the
+   HFST command line tools.
 
 2. Methods for aligning words or stems. These are useful for defining
    underlying representations of lexical entries.  Morphophonemes in
@@ -25,7 +32,8 @@ The tools in this repository include:
 
 3. Documentation of the methods and the programs.  The source text for
    documentation is in the docs directory and a human readable set of
-   interlinked documents is available at readthedocs
+   interlinked documents is available at Readthedocs
+   (https://pytwolc.readthedocs.io)
 
 
 # twol-comp: Compiler and rule tester for two-level rules
