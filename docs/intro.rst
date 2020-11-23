@@ -4,7 +4,14 @@
 Simplified two-level model
 ==========================
 
-.. note:: The ``twol`` package has been published in `PyPI <https://pypi.org/project/twol/>`__ and can be freely installed from there.  The programs and test materials are available from `Github <https://github.com/koskenni/twol>`__.  The documentation of the ``twol`` package and tools is maintained here.  The programs and this documentation are still under development.
+.. note:: The ``twol`` package has been published in `PyPI
+	  <https://pypi.org/project/twol/>`__ and can be freely
+	  installed from there.  The programs and test materials are
+	  available from `Github
+	  <https://github.com/koskenni/twol>`__.  The documentation of
+	  the ``twol`` package and tools is maintained here.  The
+	  programs are believed to be useful.  The programs and this
+	  documentation are still under development.
 
 The morphological two-level model dates back to [koskenniemi1983]_ and is characterized by the descritpion of phonological or
 morphophonological alternations as a direct relation between the
@@ -24,9 +31,9 @@ This set of documents demonstrates methods and tools for:
 
 1. Establishing the morphophonemic representations (almost mechanically) out of a table of inflectional paradigms.  The method and the tools are described in a separate part of this documentation: :ref:`representations`.
 
-2. Finding raw candidates for the two-level rules.  The method and the use of the program is described in a separate part of this documentatio: :ref:`discovery`.
+2. Finding raw candidates for the two-level rules.  The method and the use of the program are described in a separate part of this documentatio: :ref:`discovery`.
 
-3. Authoring a two-level rule and testing it immediately.  The testing is has been improved so that it consists of two phases: (a) the rule is checked against the examples and the program reports any examples not accepted by the rule, and (b) a set of negative examples is generated from the positive ones and the program checks that the rule discards all of them.  The revised rule formalism is described in part :ref:`formalism`, the use of the compiler in part :ref:`compiling`.  For the interested reader, some details of the methods and algorithms of the compilation process are documented separately: :ref:`twrule`.  The compiler can also test the whole rule grammar against examples.  When a rule has been written for all morphophonemes, the program can make a more comprehensive check that the grammar is complete and has all necessary constraints.
+3. Authoring a two-level rule and testing it immediately.  The testing is has been improved so that it consists of two phases: (a) the rule is checked against the examples and the program reports any examples not accepted by the rule, and (b) a set of negative examples is generated from the positive ones and the program checks that the rule discards all of them.  The revised rule formalism is described in part :ref:`formalism`, the use of the compiler in part :ref:`compiling`.  For the interested reader, some details of the methods and algorithms of the compilation process are documented separately: :ref:`twrule`.  The compiler can also test the whole rule grammar against examples.  When the rules have been written for all morphophonemes, the program can make a more comprehensive check that the grammar is complete and has all necessary constraints.
 
 Various methods and programs programs have been developed in order to simplify the whole process of creating a morphological two-level grammar.  It can be summarized using the following steps:
 
@@ -38,9 +45,9 @@ Various methods and programs programs have been developed in order to simplify t
 
 4. A program aligns the morphs in the examples by adding zero symbols.  The zero-filled morphs are the same length and phonemes in corresponding positions are phonologically similar.
 
-5. A program produces example words as sequences of pair-strings where the left component of each pair is a raw morphophoneme implied by the alignment.  This is the initial version of the example file for designing and testing rules.
+5. A program produces example words as sequences of pair-strings where the left component of each pair is a raw morphophoneme implied by the alignment.  This is the initial version of the file of examples which is then used for designing and testing the rules.
 
-6. Using a version of the example file, one selects one morphophoneme at a time, possibly renames it with a simpler name and:
+6. Using the file of examples, one selects one morphophoneme at a time, possibly renames it with a simpler name and:
 
    a. Lets a program produce tentative raw two-level rules for the morphophoneme.
 
@@ -73,9 +80,9 @@ Here we have eight pair symbols, six of them are abbreviations, e.g. ``k`` stand
   k  a  t {tØ} o  l  l  {aä}
   k  a  t   Ø  o  l  l   a
 
-The upper line is the morphophonemic representation of the example word form, and the lower line is the surface representation of it.  Note that in the examples, the two representations always are of the same length and a zero symbol (Ø) is inserted when necessary.  In the above example, the ultimate surface form consists of only seven sybols: ``k a t o l l a``.  Within the examples and in the rules, these zeros always expliciltly present.
+The upper line is the morphophonemic representation of the example word form, and the lower line is the surface representation of it.  Note that in the examples, the morphophonemic representation has always the the same length as the surface representation.  This is achieved by inserting a zero symbol (Ø) when necessary.  In the above example, the ultimate surface form consists of only seven sybols: ``k a t o l l a``.  *Within the examples and in the rules, these zeros always expliciltly present*.
 
-There is yet another form in which the examples are represented, i.e. as a pair of strings and then the strings are given without spaces, e.g.::
+Some HFST programs (e.g. ``hfst-lookup`` and ``hfst-fst2strings``) may show the examples in yet another form, i.e. as a pair of strings and then the strings are given without spaces, e.g.::
 
   ka{tØ}oll{aä}:katØolla
 
@@ -199,7 +206,9 @@ The compiler compiles and tests the rules in the following manner::
     {kØ'}:k /<= _ Vi Closed ;
     All positive examples accepted
 
-In effect, the result indicates that the rules were quite consistent with the examples. 
+In effect, the result indicates that the rules were quite consistent with the examples.
+
+The ``twol-comp`` program tries to be helpful in indicating typos and syntactic errors in the rules.  Typical erros the user may face arise from using in a rule a symbol which does not occur in any of the examples.  One can see what kinds of error messages the compiler gives by trying to compile `graderr.twol <https://raw.githubusercontent.com/koskenni/twol/master/test/twolcomp/graderr.twol>`_.
 
 ----------
 References
@@ -235,7 +244,7 @@ References
 		      Proceedings Series 18, number 87, pages 53-53,
 		      Linköping University Electronic Press, ISSN
 		      1650-3740,
-		      http://www.ep.liu.se/ecp/article.asp?issue=087\&article=004
+		      http://www.ep.liu.se/ecp/087/004/ecp1387004.pdf
 
 .. [koskenniemi2017] Kimmo Koskenniemi, 2017: "Aligning phonemes using
                   finte-state methods", in *Proceedings of the 21st

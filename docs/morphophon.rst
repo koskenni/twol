@@ -4,17 +4,17 @@
 Morphophonemic representations
 ==============================
 
-In linguistics, we say that word forms consist of :term:`morphs <morph>`, which are sequences of :term:`phonemes <phoneme>` and which have a meaning.  E.g.: a Finnish word form ``mäki`` consists just of the stem morph, 'a hill', whereas ``mäellä`` 'in a hill' could be broken into two morphs::
+In linguistics, we say that word forms consist of :term:`morphs <morph>`, which are sequences of :term:`phonemes <phoneme>` and which have a meaning.  E.g.: a Finnish word form ``mäki`` consists just of the stem morph, 'a hill', whereas ``mäessä`` 'in a hill' could be broken into two morphs::
 
-    mäe       llä
-    MÄKI       INE
-    'hill'    'in'
+    mäe       ssä
+    MÄKI      INE
+   'hill'    'in'
   
 Here ``MÄKI`` stands for the stem morpheme and ``INE`` for inessive case.  Another word form ``mäissä`` could be segmented into three morphs::
 
     mä        i         ssä 
     MÄKI      PL        INE
-    'a hill'  'plural'  'in'    
+   'a hill'  'plural'  'in'    
 
 Our goal is to find a common representation for morphs of the same :term:`morpheme`.  For the stem variants ``mäki``, ``mä`` and ``mäke`` we could establish a single form ``m ä {kØ} {ieØ}`` which could serve as the lexical entry for the morpheme MÄKI, 'a hill'.
 

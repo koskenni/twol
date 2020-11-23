@@ -47,7 +47,7 @@ The following is a simple example of a complete two-level rule grammar::
 
 A definition has an *equal sign* (=).  The name before the equal sign is the *name* (e.g. ``VowS``) defined for the *expression* (``[:a|:e|:i|:ä]``) that follows the equal sign (up to the semicolon (;) which terminates the definition).  A definition may extend over several lines if necessary.
 
-Rules have a *rule operator* ``=>``, ``/<=``, or ``<=>`` or ``<=``.  To the left of the operator, there is an expression which is called the *center* of of the rule (e.g. ``{ieeØ}:Ø``), and to the right there must be one or more *context* (e.g. ``_ i``) for the rule.  If there are more than one context, the contexts are separated by a comma from each other.  The rule is terminated by a semicolon.  Each context consists of a *left context* (which may be empty) and a *right context* (e.g. ``i``) which are separated from each other by an underscore (``_``).
+Rules have a *rule operator* ``=>``, ``/<=``, ``<=>``, ``<=`` or ``<--``.  To the left of the operator, there is an expression which is called the *center* of of the rule (e.g. ``{ieeØ}:Ø``), and to the right there must be one or more *context* (e.g. ``_ i``) for the rule.  If there are more than one context, the contexts are separated by a comma from each other.  The rule is terminated by a semicolon.  Each context consists of a *left context* (which may be empty) and a *right context* (e.g. ``i``) which are separated from each other by an underscore (``_``).
 
 -----------
 Expressions
@@ -114,22 +114,22 @@ Note that composition ``.o.``, cross product ``.x.``, input (or upper) project `
 Two-level rules
 ---------------
 
-There are four types of two-level rules:
+There are five types of two-level rules (the two first are necessary, the thre others are for convenience):
 
 **=>**
     A **context requirement rule** (or a right arrow rule) says that the expressions matching the center or X part of the rule may only occur if surrounded by one of the contexts given in the rule.
 
+**/<=**
+    An **exclusion rule** says that any expression matching the center of the rule may not occur in any of the contexts given by the rule.
+
 **<=**
-    An **output coercion rule** (or a surface coercion rule or a left arrow rule) says that the input side of *X* must correspond to one of the possibilities given in *X* in the contexts given by the rule.  In other words, *X.m - X* may not occur in any of the contexts given by the rule.  Thus *X <= LC _ RC* is equivalent to *X.m - X /<= LC _ RC*
+    An **output coercion rule** (or a surface coercion rule or a left arrow rule) says that the input side of *X* must correspond to one of the possibilities given in *X* in the contexts given by the rule.  In other words, *X.m - X* may not occur in any of the contexts given by the rule.  Thus *X <= LC _ RC* is equivalent to *X.m - X /<= LC _ RC*.
 
 ``<--``
-    An **input coercion rule** says that the output side of *X* must correspond to one of the possibilities given in *X* in the contexts listed in the rule.  In other words, *X.s - X* may not occur in any of the contexts given by the rule.  Thus *X <= LC _ RC* is equivalent to *X.s - X /<= LC _ RC*
+    An **input coercion rule** says that the output side of *X* must correspond to one of the possibilities given in *X* in the contexts listed in the rule.  In other words, *X.s - X* may not occur in any of the contexts given by the rule.  Thus *X <= LC _ RC* is equivalent to *X.s - X /<= LC _ RC*.  Note that the logical direction in both coercion rules is the same: if the *X.m* or resp. *X.s* occurs in the given context, then there is a restriction on it excluding that part of it which is not in *X*.
 
 **<=>**
     Combination of the => and <= rules.
-
-**/<=**
-    An **exclusion rule** says that any expression matching the center of the rule may not occur in any of the contexts given by the rule.
 
 
 --------------------
@@ -140,11 +140,10 @@ For all types of the rules, there is a straight-forward way to check whether the
 
 The compiler can also test rules against so called negative examples as is discussed in :doc:`discovery`.  The negative examples are derived from the given set of examples by distorting them a bit.
 
-For a context requirement rule, this means that one must find contexts other than the ones whre X actually occurs in the set of examples.  Here we choose to seach occurrences where something like X occurs.  The program considers all examples where an Y in X.m occurs.  In these contexts, one replaces that center Y with the center of the rule, X.  From this collection of distorted examples, one still removes any examples that happen to be in the original set of examples.  If the compiled rule accepts any examples in this difference, the compiler reports them as a warning.  If a rule has a too permissive context, then all positive examples are still accepted.  But then, some negative examples are also accepted.  A listing of such negative examples is usually quite useful information for improving the rule.
+For a context requirement rule, this means that one must find contexts other than the ones whre *X* actually occurs in the set of examples.  Here we choose to seach occurrences where something like *X* occurs.  The program considers all examples where an *Y* in *X.m* occurs.  In these contexts, one replaces that center *Y* with the center of the rule, *X*.  From this collection of distorted examples, one still removes any examples that happen to be in the original set of examples.  If the compiled rule accepts any examples in this difference, the compiler reports them as a warning.  If a rule has a too permissive context, then all positive examples are still accepted.  But then, some negative examples are also accepted.  A listing of such negative examples is usually quite useful information for improving the rule.
 
-For an output coercion rule (``<=``), we create the set of negative examples by first finding all examples where X occurs, and replace them with all strings Y in X.m.  From the set of distorted examples we, again, subtract any examples which are in the original set of examples.  This difference is the set of negative examples for an output coercion rule.  The rule is expected to discard all such examples, and the compiler can list any negative example which the rule accepts.
+For an output coercion rule (``<=``), we create the set of negative examples by first finding all examples where *X* occurs, and replace them with all strings *Y* in *X.m*.  From the set of distorted examples we, again, subtract any examples which are in the original set of examples.  This difference is the set of negative examples for an output coercion rule.  The rule is expected to discard all such examples, and the compiler can list any negative example which the rule accepts.
 
-For an input coercion rule (``<--``) the building of negative examples is similar, but instead of using X.m one uses X.s.
+For an input coercion rule (``<--``) the building of negative examples is similar, but instead of using *X.m* one uses *X.s*.
 
-In order to make testing against negative examples general, one would need a different version of the context requirement rule (=>) which could be (``-->``).  That rule would compile the same way as the normal one but it would have a different set of negative examples for testing it.  Obviously, the double arrow rule ought to have, then, a counterpart (``<-->``) too.
-
+The rule formalism is symmetric in respect to the input and output side.  The building of sets of negative examples in the present version of the ``twol-comp`` compiler assumes, however, that we are interested in how the input symbols, i.e. morphophonemes, correspond to output symbols as the case is with morphological analyzers.  If we would use the compiler for mapping closely related languages to each other, both directions are relevant, cf. [koskenniemi2013b]_.  This is not presently implemented in the compiler, although it appears to be fairly simple to implement as an option or some new rule operators.
