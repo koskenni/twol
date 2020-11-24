@@ -36,25 +36,25 @@ Using ``twol-discov``
 The input for this script must be in the same format as the examples given to the ``twol-comp`` rule compiler and tester, e.g.::
 
   m ä {kØ}:k {ieeØ}:i
-  m ä {kØ}:Ø {ieeØ}:e n GEN:Ø
-  m ä {kØ}:Ø {ieeØ}:e s s {aä}:ä INE:Ø
-  m ä {kØ}:k {ieeØ}:e n {aä}:ä ESS:Ø
-  m ä {kØ}:Ø {ieeØ}:Ø i s s {aä}:ä PL:Ø INE:Ø
+  m ä {kØ}:Ø {ieeØ}:e n
+  m ä {kØ}:Ø {ieeØ}:e s s {aä}:ä
+  m ä {kØ}:k {ieeØ}:e n {aä}:ä
+  m ä {kØ}:Ø {ieeØ}:Ø i s s {aä}:ä
   k ä {tds}:s {ieeØ}:i
-  k ä {tds}:d {ieeØ}:e n GEN:Ø
-  k ä {tds}:d {ieeØ}:e s s {aä}:ä INE:Ø
-  k ä {tds}:t {ieeØ}:e n {aä}:ä ESS:Ø
-  k ä {tds}:s {ieeØ}:Ø i s s {aä}:ä PL:Ø INE:Ø
+  k ä {tds}:d {ieeØ}:e n
+  k ä {tds}:d {ieeØ}:e s s {aä}:ä
+  k ä {tds}:t {ieeØ}:e n {aä}:ä
+  k ä {tds}:s {ieeØ}:Ø i s s {aä}:ä
   l a s {iiie}:i
-  l a s {iiie}:i n GEN:Ø
-  l a s {iiie}:i s s {aä}:a INE:Ø
-  l a s {iiie}:i n {aä}:a ESS:Ø
-  l a s {iiie}:e i s s {aä}:a PL:Ø INE:Ø
+  l a s {iiie}:i n
+  l a s {iiie}:i s s {aä}:a
+  l a s {iiie}:i n {aä}:a
+  l a s {iiie}:e i s s {aä}:a
   l a {kØ}:k {iiie}:i
-  l a {kØ}:Ø {iiie}:i n GEN:Ø
-  l a {kØ}:Ø {iiie}:i s s {aä}:a INE:Ø
-  l a {kØ}:k {iiie}:i n {aä}:a ESS:Ø
-  l a {kØ}:Ø {iiie}:e i s s {aä}:a PL:Ø INE:Ø
+  l a {kØ}:Ø {iiie}:i n
+  l a {kØ}:Ø {iiie}:i s s {aä}:a
+  l a {kØ}:k {iiie}:i n {aä}:a
+  l a {kØ}:Ø {iiie}:e i s s {aä}:a
 
 The program collects the input and the output alphabets and the allowed symbol pairs from the examples, thus no other definitions are needed.  The program produces output such as::
 
@@ -94,7 +94,7 @@ The program collects the input and the output alphabets and the allowed symbol p
 	_ {ieeØ}:e n {aä}:ä ;
    {tds}:d =>
 	_ {ieeØ}:e s s ;
-	_ {ieeØ}:e n GEN:Ø ;
+	_ {ieeØ}:e n .#. ;
    {tds}:s /<=
 	_ {ieeØ}:e ;
    {tds}:t =>
