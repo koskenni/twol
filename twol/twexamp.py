@@ -30,6 +30,8 @@ def pairs_to_fst(pair_set):
 def read_fst(filename="examples.fst"):
     """Reads in a previously stored example FST file
     """
+    if not os.path.isfile(filename):
+        exit("EXAMPLE FST FILE {} DOES NOT EXIST",format(filename))
     exfile = hfst.HfstInputStream(filename)
     cfg.examples_fst = exfile.read()
     pair_symbols = cfg.examples_fst.get_property("x-pair_symbols")
@@ -46,18 +48,22 @@ def read_fst(filename="examples.fst"):
         twbt.ppfst(cfg.all_pairs_fst, title="cfg.all_pairs_fst")
     return
     
-def read_examples(filename="test.pstr", build_fsts=True):
-    """Reads the examples from the file whose name is 'filename'.
+def read_examples(filename_lst=["test.pstr"], build_fsts=True):
+    """Reads the examples from files whose names are 'filename_lst'.
     
     The file must contain one example per line and each line consists of
     a space separated sequence of pair-symbols.
     The examples are processed to a FST which is a union of all examples.
     """
+    import os
+    import fileinput
+    for f in filename_lst:
+        if not os.path.isfile(f):
+            exit("EXAMPLE FILE {} DOES NOT EXIST".format(f))
     if build_fsts:
         import hfst
         examples_bfst = hfst.HfstBasicTransducer()
-    exfile = open(filename, "r")
-    for line_nl in exfile:
+    for line_nl in fileinput.input(filename_lst):
         line = line_nl.strip()
         if not line or line.startswith("!"):
             continue
@@ -85,14 +91,14 @@ def read_examples(filename="test.pstr", build_fsts=True):
             examples_bfst.disjunct(symbol_pair_lst, 0)
         for insym, outsym in symbol_pair_lst:
             cfg.symbol_pair_set.add((insym, outsym))
-    exfile.close()
+
     if cfg.verbosity >= 30:
         print("List of examples:", cfg.example_lst)
         print("List of alphabet symbol pairs:", sorted(cfg.symbol_pair_set))
     if build_fsts:
         cfg.all_pairs_fst = pairs_to_fst(cfg.symbol_pair_set)
         cfg.examples_fst = hfst.HfstTransducer(examples_bfst)
-        cfg.examples_fst.set_name(filename)
+        cfg.examples_fst.set_name(filename_lst[-1])
         cfg.examples_fst.minimize()
         if cfg.verbosity >= 30:
             twbt.ppfst(cfg.examples_fst, False, title="Example file as FST")
@@ -103,7 +109,8 @@ def read_examples(filename="test.pstr", build_fsts=True):
         pair_symbol = cfg.sympair2pairsym(insym, outsym)
         cfg.pair_symbol_set.add(pair_symbol)
     if build_fsts:
-        pair_symbol_lst = [insym+':'+outsym for insym, outsym in cfg.symbol_pair_set]
+        pair_symbol_lst = [insym+':'+outsym for insym, outsym
+                           in cfg.symbol_pair_set]
         pair_symbol_str = " ".join(sorted(pair_symbol_lst))
         # print("symbol pairs:", pair_symbol_str) ##
         cfg.examples_fst.set_property("x-pair_symbols", pair_symbol_str)
@@ -127,18 +134,24 @@ def main():
     import hfst
     import argparse
     arpar = argparse.ArgumentParser("python3 twexamp.py")
-    arpar.add_argument("examples", help="example pair strings file",
-                       default="examples.pstr")
-    arpar.add_argument("output", help="file to which write the example FST",
-                       default="")
-    arpar.add_argument("-v", "--verbosity",
-                       help="level of  diagnostic output",
-                       type=int, default=0)
+    arpar.add_argument(
+        "-i", "--input",
+        action='store', nargs='+',
+        help="list of example pair strings files",
+        default=["examples.pstr"])
+    arpar.add_argument(
+        "-o", "--output",
+        help="file to which write the example FST",
+        default="")
+    arpar.add_argument(
+        "-v", "--verbosity",
+        help="level of  diagnostic output",
+        type=int, default=0)
     args = arpar.parse_args()
     
     cfg.verbosity = args.verbosity
     
-    read_examples(args.examples, build_fsts=True)
+    read_examples(args.input, build_fsts=True)
     
     if args.output:
         exfile = hfst.HfstOutputStream(filename=args.output)

@@ -4,7 +4,9 @@
 # Copyright (c) Kimmo Koskenniemi, 2019
 # This orogram is free software according to GPL 3 license
 #
-import sys, re
+import sys
+import re
+import fileinput
 import hfst
 import twol.cfg as cfg
 import twol.twbt as twbt
@@ -56,7 +58,7 @@ def main():
         " Default is 2.",
         type=int, choices=[0, 1, 2], default=2)
     arpar.add_argument(
-        "-r", "--recursion",
+        "--recursion",
         help="set the limit for recursion depth",
         type=int)
     arpar.add_argument(
@@ -64,20 +66,26 @@ def main():
         help="level of  diagnostic output",
         type=int, default=0)
     arpar.add_argument(
-        "examples",
-        help="name of the examples FST file or"\
-        " example pair symbol string file",
-        default="examples.fst")
+        "-e", "--examples", action='store', nargs='+',
+        help="""Either one name of a FST file that contains the examples or
+            a list of names of files which contain the PSTR form examples
+            used for compiling the rules.""",
+        default=[None])
     arpar.add_argument(
-        "rules", help="name of the rule file",
-        default="test.rules")
+        "-r", "--rules", action='store', nargs='+',
+        help="""One or more files which contain the rules,
+             either just one rule file or a file of defines
+             as the first one and a part of the whole rule set
+             as the second""",
+        default=[None])
+
     args = arpar.parse_args()
 
     cfg.verbosity = args.verbosity
     if args.recursion:
         sys.setrecursionlimit(args.recursion)
 
-    if args.examples.endswith(".fst"):
+    if len(args.examples) == 1 and args.examples[0].endswith(".fst"):
         twexamp.read_fst(args.examples)
     else:
         twexamp.read_examples(args.examples)
@@ -99,10 +107,9 @@ def main():
     i = 0
     skip = False
     all_rules_fst_lst = []
-    rule_file = open(args.rules, 'r')
     line_lst = []
 
-    for line_nl in rule_file:
+    for line_nl in fileinput.input(args.rules):
         i += 1
         if not line_lst:
             line_nl_lst = []
