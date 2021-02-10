@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .. warning:: This document is under construction
+=======
+.. note:: OFITWOL is under development.  The present version of rules and lexicons
+	  are believed to be useful, but the documentation below is not up to date.
+	  If you wish to use OFITWOL or experiment with it, please contact the author.
+	  This documentation is going to be revised and updated soon.
+>>>>>>> c6e4d4ba7608e4b13a4773e1cc0627e380e5435f
 
 =============================================
 Open Finnish two-level morphological analyser
@@ -82,8 +89,12 @@ The new rule compiler for Simplified Two-level Model is based on examples.  No r
   k a u p {pØ}:Ø {ao}:a s s {aä}:a
   h a k {kØ}:k a {ØsnØtt}:s {aØØØØ}:Ø {i}:i {VØ}:Ø
 
+<<<<<<< HEAD
 First, a table was made where there was a row for each relevant model word and a column for each relevant inflectional form.  A separate table `kskv-table.csv`_ was made for 68 verbs and another `kskn-table.csv`_ which covered 98 nouns plus adjectives.  One or a few lexemes were chosen from each inflectinal class so that lexemes with and without consonant gradation were covered as well as words conforming to back and front vowel harmony.  The table was then converted into the initial set of some 1900 examples using the relevant programs (:ref:`twol-table2words`, :ref:`twol-words2zerofilled`, :ref:`twol-zerofilled2raw` and :ref:`twol-raw2named`) in the Python 3 package ``twol``.  The initial set of examples was slightly extended as some more words and inflectional forms were included.  The current file contains less than 2400 examples (See `ofi-examples.pstr`_).
 
+=======
+First, a table was made where there was a row for each relevant model word and a column for each relevant inflectional form.  A separate table was made for 68 verbs and another which covered 98 nouns plus adjectives.  One or a few lexemes were chosen from each inflectinal class so that lexemes with and without consonant gradation were covered as well as words conforming to back and front vowel harmony.  The table was then converted into the initial set of some 1900 examples using the relevant programs (:ref:`twol-table2words`, :ref:`twol-words2zerofilled`, :ref:`twol-zerofilled2raw` and :ref:`twol-raw2named`) in the Python 3 package ``twol``.  The initial set of examples was slightly extended as some more words and inflectional forms were included.  The current file contains less than 2400 examples (See `ofi-examples.pstr  <https://github.com/koskenni/ofitwol/blob/master/ofitwol/ofi2/ofi-examples.pstr>`__).
+>>>>>>> c6e4d4ba7608e4b13a4773e1cc0627e380e5435f
 
 Two-level rules
 ===============

@@ -52,6 +52,7 @@ In the table, ``STM``  stands for the stem morph and ``ID`` for the column for t
 
 
 .. _twol-table2words:
+.. index:: twol-table2words
 
 twol-table2words
 ================
@@ -82,6 +83,7 @@ reads in a paradigm table `demo-table.csv <https://raw.githubusercontent.com/kos
 
 
 .. _twol-words2zerofilled:
+.. index:: twol-words2zerofilled, alignment
 
 twol-words2zerofilled
 =====================
@@ -117,6 +119,7 @@ Here we can see why we need to have the same number of periods (.) in the column
 
 
 .. _twol-zerofilled2raw:
+.. index:: twol-zerofilled2raw, raw morphophonemes
 
 twol-zerofilled2raw
 ===================
@@ -165,6 +168,7 @@ The morphophonemes in affixes coud be constructed mechanically, but we meet simi
 The file lists the principal forms in lines where the second field is ``+``.  Note that the principal forms may consist of zero, one or more affix morphemes (i.e. their names).  The remaining lines have the affix name in the first field and its morphophonemic representation in the second field.  Note that each morpheme (name) has an affix of its own.  One may establish distinct names for grammatically identical but phonemically distinct affixes.  (In Finnish, e.g. some plural genitive endings are so different that one may treat them as different morphemes having slighty different names.)
 
 .. _twol-raw2named:
+.. index:: twol-raw2named, renaming raw morphophonemes
 
 twol-raw2named
 ==============
