@@ -46,7 +46,7 @@ before we have the examples.  One way to produce a set of two-level
 examples is the alignment programs which are described later on in
 this file.  The idea of simplified two-level model  is described in
 https://pytwolc.readthedocs.io/en/latest/intro.html and the use of the
-``twpö-comp`` program is described in
+``twol-comp`` program is described in
 https://pytwolc.readthedocs.io/en/latest/compiletest.html and some
 other chapters there.
 

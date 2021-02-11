@@ -59,7 +59,7 @@ Our linguistically oriented eyes see that ``{ieØeØ}:i`` occurs if and only if 
 
 This rule says that the pair ``{ieØeØ}:i`` can only occur at the end of a word and also that at the end of a word, other possible realizations (``{ieØeØ}:e`` and ``{ieØeØ}:Ø``) are there forbidden.  Let us write that sinle rule and save it as a file ``rules.twol``.  We can compile and test it against our examples by::
 
-  $ twol-comp.py --thorough 2 examples.pstr rules.twol 
+  $ twol-comp.py --thorough 2 -e examples.pstr -r rules.twol 
   {ieØeØ}:i <=> _ .#. ;
   All positive examples accepted
   All negative examples rejected
