@@ -2,12 +2,14 @@
 
 These tools can be installed to your computer from PyPi by normal commands, such as
 
-   pip3 install --user
+   pip3 install --user twol
 
 For more instructions, see TWO Wiki https://github.com/koskenni/twol/wiki
 
-**NOTE:** the programs are under development and many of them may not
-  work as expected
+**NOTE:** the programs are under development and some of them may not
+  work as expected, furthermore, the command-line parameters may still
+  change.  Thus, you should check the names and the meanigs of the
+  parameters by using the "-h" option.
 
 This repository contains various tools for *Simplified Two-level
 morphology* which is a revised form of the original two-level
