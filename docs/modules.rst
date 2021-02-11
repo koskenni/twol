@@ -15,6 +15,7 @@ Modules of the twol package
    twol.table2words
    twol.twbt
    twol.discover
+   twol.tester
    twol.twexamp
    twol.twolcomp
    twol.twparser

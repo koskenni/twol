@@ -86,7 +86,7 @@ def main():
         sys.setrecursionlimit(args.recursion)
 
     if len(args.examples) == 1 and args.examples[0].endswith(".fst"):
-        twexamp.read_fst(args.examples)
+        twexamp.read_fst(args.examples[0])
     else:
         twexamp.read_examples(args.examples)
 

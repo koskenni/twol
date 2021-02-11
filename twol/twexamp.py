@@ -30,6 +30,7 @@ def pairs_to_fst(pair_set):
 def read_fst(filename="examples.fst"):
     """Reads in a previously stored example FST file
     """
+    import os
     if not os.path.isfile(filename):
         exit("EXAMPLE FST FILE {} DOES NOT EXIST",format(filename))
     exfile = hfst.HfstInputStream(filename)

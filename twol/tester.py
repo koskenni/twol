@@ -1,7 +1,11 @@
 
-"""twol-tester tests a set of two-level rules against examples
+"""twol-tester tests the full set of two-level rules against examples
 
-This program is useful for checking complete rule sets where all morphophonemes are constrained by some rules.  The twol-comp rule compiler checks indidual rules as it compiles them, so this program becomes useful when initial versions all rules have been written.  The formulae::
+This program is useful for checking complete rule sets where all morphophonemes are constrained by some rules.  The twol-comp rule compiler checks indidual rules as it compiles them, so this program becomes useful when initial versions all rules have been written.  
+
+This program is intended to be used when one partitions the rules in to smaller groups in order to make the development cycle fast when writing larger sets of two-level rules.  The compiler twol-comp does that kinds of checking only if the whole set of rules are compiled but twol-tester can test for the negative examples even if only one or a few rule groups have been recompiled.
+
+The formulae::
 
     lost = examples & rule[1] & rule[2] & ... & rule[n]
 
@@ -18,6 +22,7 @@ import twol.twexamp as twexamp
 import twol.twbt as twbt
 
 def paths(heading, fst):
+    """A function for printing strings that an FST generates"""
     if cfg.verbosity >= 10:
         print(heading + "\n" + fst.extract_paths(max_cycles=1, output="text"))
     return

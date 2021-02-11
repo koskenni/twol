@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-.. warning:: This document is under construction
-=======
-.. note:: OFITWOL is under development.  The present version of rules and lexicons
-	  are believed to be useful, but the documentation below is not up to date.
-	  If you wish to use OFITWOL or experiment with it, please contact the author.
-	  This documentation is going to be revised and updated soon.
->>>>>>> c6e4d4ba7608e4b13a4773e1cc0627e380e5435f
+.. warning:: This document and the OFITWOL are under construction.
+             The present version of rules and lexicons are believed to
+             be useful, but the documentation below is not up to
+             date.  If you wish to use OFITWOL or experiment with it,
+             please contact the author.  This documentation is going to
+             be revised and updated soon.
 
 =============================================
 Open Finnish two-level morphological analyser
@@ -24,36 +22,36 @@ OFITWOL has several functions and components, including:
 The document first describes the current implementation of OFITWOL.  In the last section, some information is given on the background and some further details of the steps and stages of building the analyser and a more detailed comparison between this and some other analysers.
 
 
-Overall structure of OFITWOL
-============================
+How the rules work in OFITWOL
+=============================
 
-The lexicon simply lists the morphophonemic representations of the lexemes and affixes and defines their acceptable combinations.  In brief, the lexicon defines the acceptable sequences of phonemes and morphophonemes.  The lexicon does not define particular base forms for lexemes as they can be mechanically derived from the morphophonemic representations.  The overall structure can be represented as a set of representations which are tied to each other via rules or other relations (which are, of course, composed into a single transducer).  The example word form is ``saappaassa``, 'in a boot':
+The lexicon simply lists the *morphophonemic representations* of the lexemes and affixes and defines their acceptable combinations.  In brief, the lexicon defines the acceptable sequences of phonemes and morphophonemes.  The lexicon OFITWOL does not define base forms for lexemes separately for each lexeme, as they can be mechanically derived from the morphophonemic representations.  The overall structure can be represented as a set of six representations which are tied to each other via rules or other relations (which are, of course, composed into a single transducer).  The example word form is ``saappaassa``, 'in a boot':
 
-1. The final result of the analysis where possible zero symbols have been removed, e.g.::
+1. The underlying representation of the word form consists of the base form of the lexeme and the grammatical tags describing the part of speech and the number and case of the surface word, e.g. the sequence of the following nine symbols::
 
      s a a p   a s +N +SG +INE
 
-2. The result of the analysis which consists of a conventional base form of the lexeme, its part of speech and other inflectional features, e.g.::
+2. The second representation differs from the first by having some zero symbols (Ø) freely inserted in the base form part.  In the shown below, ther is only one shown where the zero is where it will be needed::
 
      s a a p Ø a s +N +SG +INE
 
-3. The morphophonemic representation of the base form and its pars of speech and other inflectional features, e.g.::
+3. The third representation is the morphophonemic representation of the stem of the base form of the lexeme and it still has the part of speech and inflectional features in the end of the string.  This representation is in the lexicon.  The lexicon allows noun stems to be at the beginning, and noun endings to follow. The two-level rules map the third representation into the second representation::
 
      s a a p {pØ} a {sØh} {aäØ} +N +SG +INE
 
-4. The morphophonemic representations of the stems and the affixes, e.g.::
+4. The fourth representation has the same morphophonemic representation of the stem of the lexeme, but here the endings are in their morphophonemic form.  The lexicon entries of the endings relate the features of the forms with the morphophonemic forms of the endings, thus the lexicon maps ``+N +SG +INE`` into ``s s {aä}``::
 
      s a a p {pØ} a {sØh} {aäØ} s s {aä}
 
-5. The surface forms of the word and its affixes with some zero symbols inserted as required by the correspondence between this and the preceding representation, e.g.::
+5. The fifth  representation is what the two-level rules map out of the fourth representation.  Thus, ``{pØ}`` is mapped to ``Ø``, ``{aäØ}`` to ``a`` etc.  At this stage, as in representation 2, the zeros are (auxiliary) symbols, not empty strings::
 
      s a a p p a Ø a s s a
 
-6. The actual surface form as it is written, e.g.::
+6. The sixthe representation is the actual surface form as it is written.  It can be reached from the previous one by deleting the zero symbols (``Ø``)::
 
      s a a p p a   a s s a
 
-Representations 4 and 5 are related to each other by *two-level rules* which neither delete nor insert any symbols.  Similarly, representations 2 and 3 are related to each other by the two-level rules, but with minor differences.  The relation between representations 4 and 5 must permit some free variation in inflected word forms whereas the relation between 2 and 3 is expected to permit only the standard or canonical base form.  See a separate discussion below.
+Representations 4 and 5 are related to each other by *two-level rules* which neither delete nor insert any symbols.  Similarly, representations 2 and 3 are related to each other by the two-level rules, but with minor differences.  The relation between representations 4 and 5 often permits some free variation in the inflected word form whereas the relation between 2 and 3 is expected to permit only the standard or canonical base form.  See a separate discussion below.
 
 The representstions 3 and 4 are related to each other by *a LEXC lexicon*.  Stem parts and the ending parts are mapped in a different manner.  The stems are in their morphophonemic representations and in the lexicon the two representations of the stems are identical.  Lexicon entries for lexemes are thus quite minimalistic, e.g. like the following::
 
@@ -89,12 +87,8 @@ The new rule compiler for Simplified Two-level Model is based on examples.  No r
   k a u p {pØ}:Ø {ao}:a s s {aä}:a
   h a k {kØ}:k a {ØsnØtt}:s {aØØØØ}:Ø {i}:i {VØ}:Ø
 
-<<<<<<< HEAD
 First, a table was made where there was a row for each relevant model word and a column for each relevant inflectional form.  A separate table `kskv-table.csv`_ was made for 68 verbs and another `kskn-table.csv`_ which covered 98 nouns plus adjectives.  One or a few lexemes were chosen from each inflectinal class so that lexemes with and without consonant gradation were covered as well as words conforming to back and front vowel harmony.  The table was then converted into the initial set of some 1900 examples using the relevant programs (:ref:`twol-table2words`, :ref:`twol-words2zerofilled`, :ref:`twol-zerofilled2raw` and :ref:`twol-raw2named`) in the Python 3 package ``twol``.  The initial set of examples was slightly extended as some more words and inflectional forms were included.  The current file contains less than 2400 examples (See `ofi-examples.pstr`_).
 
-=======
-First, a table was made where there was a row for each relevant model word and a column for each relevant inflectional form.  A separate table was made for 68 verbs and another which covered 98 nouns plus adjectives.  One or a few lexemes were chosen from each inflectinal class so that lexemes with and without consonant gradation were covered as well as words conforming to back and front vowel harmony.  The table was then converted into the initial set of some 1900 examples using the relevant programs (:ref:`twol-table2words`, :ref:`twol-words2zerofilled`, :ref:`twol-zerofilled2raw` and :ref:`twol-raw2named`) in the Python 3 package ``twol``.  The initial set of examples was slightly extended as some more words and inflectional forms were included.  The current file contains less than 2400 examples (See `ofi-examples.pstr  <https://github.com/koskenni/ofitwol/blob/master/ofitwol/ofi2/ofi-examples.pstr>`__).
->>>>>>> c6e4d4ba7608e4b13a4773e1cc0627e380e5435f
 
 Two-level rules
 ===============
