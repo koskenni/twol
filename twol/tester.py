@@ -67,7 +67,7 @@ def main():
     # cfg.all_pairs_set
     #
     if len(args.examples) and args.examples[0].endswith(".fst"):
-        twexamp.read_fst(args.examples)
+        twexamp.read_fst(args.examples[0])
     elif len(args.examples) > 0:
         twexamp.read_examples(args.examples, build_fsts=True)
     else:
