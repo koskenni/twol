@@ -89,3 +89,14 @@ The results are FSTs, so we cannot look at them directly.  We can use the ``hfst
 
   $ hfst-fst2strings -i wrong.fst | less
 
+
+Compiling rules in separate groups
+==================================
+
+The twol-comp compiler compiles the rules into an FST file which is actually a sequence of separate FSTs -- one for each rule that was compiled.  Each rule is independent of other rules, they may therefore be compiled separately or in groups.  The resulting FST files can be glued together e.b. with command-line ``cat``.  If there are only few rules, there is no point in such separate compilation, but when there are e.g. more than a hundred rules, then it makes sense to partition the whole set of rules into smaller groups.  If some rules are modified, then only that group needs to be recompiled.  Glueing the FST files is fast, of course.
+
+OFITWOL has presently some 250 simple two-level rules and splitting all rules into smaller groups helps to shorten the development cycle when some modifications are still made.  The recompilation and recombining of the rules is then managed using a Makefile, so that make decides which groups need recompilation and automatically updates the rule FST file.
+
+When one partions the set of all rules, one probably wishes to use just one set of definitions for all groups.  One can separate the definitions into a file of its own (e.g. ``defs.twol``) and compile the individual groups (``group1.twol``) together with that, e.g.::
+
+  twol.comp -e examples.fst -r defs.twol rule1.twol -o rule1.fst
