@@ -36,6 +36,19 @@ def main():
         " or https://github.com/koskenni/twol"\
         " for more information.".format(version))
     arpar.add_argument(
+        "-e", "--examples", action='store', nargs='+',
+        help="""Either one name of a FST file that contains the examples or
+            a list of names of files which contain the PSTR form examples
+            used for compiling the rules.""",
+        default=[None])
+    arpar.add_argument(
+        "-r", "--rules", action='store', nargs='+',
+        help="""One or more files which contain the rules,
+             either just one rule file or a file of defines
+             as the first one and a part of the whole rule set
+             as the second""",
+        default=[None])
+    arpar.add_argument(
         "-o", "--output",
         help="File to which write the compiled rules if a name is given",
         default="")
@@ -65,19 +78,6 @@ def main():
         "-v", "--verbosity",
         help="level of  diagnostic output",
         type=int, default=0)
-    arpar.add_argument(
-        "-e", "--examples", action='store', nargs='+',
-        help="""Either one name of a FST file that contains the examples or
-            a list of names of files which contain the PSTR form examples
-            used for compiling the rules.""",
-        default=[None])
-    arpar.add_argument(
-        "-r", "--rules", action='store', nargs='+',
-        help="""One or more files which contain the rules,
-             either just one rule file or a file of defines
-             as the first one and a part of the whole rule set
-             as the second""",
-        default=[None])
 
     args = arpar.parse_args()
 

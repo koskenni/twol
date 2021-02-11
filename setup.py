@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="twol", # of the PyPI project and package
-    version="0.6.2",
+    version="0.6.5",
     author="Kimmo Koskenniemi",
     author_email="koskenni@gmail.com",
     description="Tools for simplified two-level morphology",
@@ -29,14 +29,14 @@ setuptools.setup(
             "twol-raw2named = twol.raw2named:main",
             "twol-comp = twol.twolcomp:main",
             "twol-examples2fst = twol.twexamp:main",
-            "twol-discov =  twol.discover:main"
+            "twol-discov =  twol.discover:main",
+            "twol-tester = twol.tester:main"
         ]
     },
     include_package_data=True,
     python_requires='>=3.6,<=3.7',
         install_requires=[
             'grapheme',
-            'orderedset',
             'hfst',
             ##'hfst==3.15.0.0b0',
             'TatSu==4.4.0',

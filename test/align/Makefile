@@ -18,7 +18,7 @@ features : $(BASE)-features.text
 rawmphonemes : $(BASE)-rawmphonemes.text
 
 compile :
-	twol-comp $(BASE)-examples.pstr -t 2 $(BASE)-rules.twol
+	twol-comp -e $(BASE)-examples.pstr -t 2 -r $(BASE)-rules.twol
 
 $(BASE)-renamed.pstr : $(BASE)-raw.csv $(BASE)-newnames.csv
 	twol-raw2named $< $@ $(BASE)-newnames.csv
