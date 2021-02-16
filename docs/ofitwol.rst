@@ -1,3 +1,5 @@
+.. _ofitwol:
+
 .. warning:: This document and the OFITWOL are under construction.
              The present version of rules and lexicons are believed to
              be useful, but the documentation below is not up to
@@ -87,14 +89,19 @@ The new rule compiler for Simplified Two-level Model is based on examples.  No r
   k a u p {pØ}:Ø {ao}:a s s {aä}:a
   h a k {kØ}:k a {ØsnØtt}:s {aØØØØ}:Ø {i}:i {VØ}:Ø
 
-First, a table was made where there was a row for each relevant model word and a column for each relevant inflectional form.  A separate table `kskv-table.csv`_ was made for 68 verbs and another `kskn-table.csv`_ which covered 98 nouns plus adjectives.  One or a few lexemes were chosen from each inflectinal class so that lexemes with and without consonant gradation were covered as well as words conforming to back and front vowel harmony.  The table was then converted into the initial set of some 1900 examples using the relevant programs (:ref:`twol-table2words`, :ref:`twol-words2zerofilled`, :ref:`twol-zerofilled2raw` and :ref:`twol-raw2named`) in the Python 3 package ``twol``.  The initial set of examples was slightly extended as some more words and inflectional forms were included.  The current file contains less than 2400 examples (See `ofi-examples.pstr`_).
+First, a table was made where there was a row for each relevant model word and a column for each relevant inflectional form.  A separate table `kskv-table.csv`_ was made for 68 verbs and another `kskn-table.csv`_ which covered 98 nominals (nouns or adjectives).  One or a few lexemes were chosen from each inflectinal class so that lexemes with and without consonant gradation were covered as well as words conforming to back and front vowel harmony.  The table was then converted into the initial set of some 1900 examples using the relevant programs (:ref:`twol-table2words <table2words>`, :ref:`twol-words2zerofilled <words2zerofilled>`, :ref:`twol-zerofilled2raw <zerofilled2raw>` and :ref:`twol-raw2named <raw2named>`) in the Python 3 package ``twol``.  The initial set of examples was slightly extended as some more words and inflectional forms were included.  The current file contains less than 2400 examples (See `ofi-examples.pstr`_).
 
 
 Two-level rules
 ===============
 
-Some 200 mostly quite simple two-level rules were written by using the examples, see :ref:`introduction` for the general principle and  :ref:`formalism` for details of the rule formalism.  The rules were written one at a time and immediately tested against the set of examples.  For some rules, the discovery program was used, see :ref:`discovery`.  The program proved to propose quite good approximate rules, e.g. the morphophoneme ``{ns}`` in ``hevo<n>en`` vs. ``hevo<s>en`` gets a good approximation::
+Some 200 mostly quite simple two-level rules were written by using the examples, see :ref:`introduction` for the general principle and  :ref:`formalism` for details of the rule formalism.  Each rule was was added to the two-level grammar separately and immediately tested against the set of examples.
 
+Authoring and discovering the rules
+-----------------------------------
+
+For some rules, the discovery program was used, see :ref:`discovery`.  The program proved to propose quite good approximate rules, e.g. the morphophoneme ``{ns}`` in ``hevo<n>en`` vs. ``hevo<s>en`` gets a good approximation::
+  
   $ twol-discov ofi-examples-in.pstr -s '{ns}' -v 0
   {ns}:s /<=
          _ {eeØØ}:e {nØØØ}:n ;
@@ -107,7 +114,48 @@ This was easily modified to become the final rule::
 
 Some rules, such as the rules for vowel harmony, could not be approximated in this way using the present discovery program, and they were designed just by looking at the examples.  For any linguist, the relevant rules emerge when one looks at the contexts of the pair symbols in the examples e.g. by using ``fgrep`` or Emacs ``occurs`` command.
 
-The whole rule set consist of three parts: the rules that are common to both relations in the configuration discussed above, `ofi-rules.twol`_, the extra rule for the relation between the levels 4 and 5 `ofi-rules-extra-in.twol`_ and the extra rule in the relation between the levels 2 and 3 `ofi-rules-extra-out`_.
+The two-level rule grammar
+--------------------------
+
+The whole rule set consist of eleven groups:
+
+definitions.twol
+    Common definitions that are used in all rule groups.
+
+consonants.twol
+    Rules for consonant gradation and other alternations which may occur both in nominals and verbs.
+
+vowels.twol
+    Vowel lengthenings and shortenings common to nominals and verbs.
+
+nounfinal.twol
+    Alternations of stem final vowels in nominals.
+
+nouninternal.twol
+    Rules for various consonant alternations in nominal stems.
+
+nounendings.twol
+    Rules which control the shapes of some endings and the types of nominal stems with which they may be combined.
+
+verbfinal.twol
+    Alternations of stem final vowels in verbs.
+
+verbinternal.twol
+    Alternations of stem internal consonants in verbs.
+
+verbsuff.twol
+    Rules for producing the correct shapes of verb endings.
+
+rules-variation.twol
+    Rules which control alternative forms which are accepted as input but which are not desired to be present in the output base forms of the analyzer which produces the base forms.
+
+rules-normalize.twol
+    A few rules needed for generating the base forms
+
+
+
+The nine first groups 
+the rules that are common to both relations in the configuration discussed above, `ofi-rules.twol`_, the extra rule for the relation between the levels 4 and 5 `ofi-rules-extra-in.twol`_ and the extra rule in the relation between the levels 2 and 3 `ofi-rules-extra-out`_.
 
 
 

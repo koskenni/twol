@@ -1,6 +1,6 @@
-.. _discovery:
-
 .. index:: rule discovery, discovery
+
+.. _discovery:
 
 ===============================
 Discovering raw two-level rules

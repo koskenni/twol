@@ -1,3 +1,5 @@
+.. _table2words:
+
 twol\.table2words module
 ========================
 
@@ -5,3 +7,5 @@ twol\.table2words module
     :members:
     :undoc-members:
     :show-inheritance:
+
+See :ref:`representations` to see how the program is used in conjunction with other twol utility programs.
