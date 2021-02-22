@@ -82,7 +82,9 @@ subexpression = expr:expression ;
 optexpression = expr:expression ;
 
 ###symbol_or_pair = token:/[a-zåüäöõšžA-ZØ:{}'´`]+/ ;
-symbol_or_pair = token:/[^- \[\]\/<>=_;,.|&*+\\()]+/ ;
+symbol_or_pair
+    = token:/([^- \[\]\/<>=_;,.|&*+\\()%]|%.)+/
+    ;
 
 boundary = '.#.' ;
 

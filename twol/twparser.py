@@ -333,25 +333,23 @@ class TwolFstSemantics(object):
     def symbol_or_pair(self, ast):
         string = ast.token.strip()
         failmsg = []
-        #pat = re.compile(r"""^
-        #(?P<up>[a-zšžåäöüõA-ZÅÄÖ0-9'´`]*
-        # |
-        # \{[a-zåäöüõA-ZÅÄÖØ'´`]+\})
-        #:
-        #(?P<lo>[a-zšžåäöüõA-ZÅÄÖØ'´`]*)
-        #$""", re.X)
         pat = re.compile(r"""^
         (?P<up>[^- \[\]\/<>=_;,.|&*+\\()\{\}]*
-         |
-         \{[^{}:\s]+\})
+               |
+               \{[^{}:\s]+\}
+        )
         :
-        (?P<lo>[^- \[\]\/<>=_;,.|&*+\\()\{\}]*)
+        (?P<lo>( [^- \[\]\/<>=_;,.|&*+\\()\{\}]
+               | % [- \[\]\/<>=_;,.|&*+\\()\{\}%]
+               )*
+        )
         $""", re.X)
         m = re.match(pat, string)
         if m:                       # it is a pair with a colon
             up = m.group("up")
             up_quoted = re.sub(r"([{}])", r"%\1", up)
-            lo = m.group("lo")
+            lo_quoted = m.group("lo")
+            lo = re.sub(r"%(.)", r"\1", lo_quoted)
             if up and (up not in cfg.input_symbol_set):
                 failmsg.append("input symbol '{}'".format(up))
             if lo and (lo not in cfg.output_symbol_set):
@@ -361,40 +359,43 @@ class TwolFstSemantics(object):
             if failmsg:
                 cfg.error_message = " and ".join(failmsg) + " not in alphabet"
                 raise FailedSemantics(cfg.error_message)
-            elif up and lo:         # it is a valid pair with a colon
-                result_fst = hfst.regex(up_quoted + ':' + lo)
+            elif up and lo:         # it is e.g. "{aØ}:a"
+                result_fst = hfst.regex(up_quoted + ':' + lo_quoted)
                 result_fst.set_name(string)
                 return result_fst
-            elif up and (not lo):
+            elif up and (not lo):   # it is e.g. "{aØ}:"
                 result_fst = hfst.regex(up_quoted)
                 result_fst.compose(cfg.all_pairs_fst)
                 result_fst.set_name(string)
                 return result_fst
-            elif (not up) and lo:
+            elif (not up) and lo:   # it is e.g. ":i"
                 result_fst = cfg.all_pairs_fst.copy()
-                lo_fst = hfst.regex(lo)
+                lo_fst = hfst.regex(lo_quoted)
                 result_fst.compose(lo_fst)
                 result_fst.set_name(string)
                 return result_fst
-            else:
+            else:                   # it is ":"
                 result_fst = cfg.all_pairs_fst.copy()
                 result_fst.set_name("PI")
                 return result_fst
-        m = re.fullmatch(r"[^][|+*{}:\s]+", string)
+        m = re.fullmatch(r"([^][|+*{}:\s%]|%[][|+*{}:\s%])+", string)
+        sym = re.sub(r"%(.)", r"\1", string)
         if m:                       # its either a defined sym or a surf ch
             if string in cfg.definitions:
                 result_fst = cfg.definitions[string].copy()
                 result_fst.set_name(string)
                 return result_fst
-            elif (string in cfg.output_symbol_set) and (string in cfg.input_symbol_set):
+            elif ((sym in cfg.output_symbol_set) and
+                  (sym in cfg.input_symbol_set)):
                 result_fst =  hfst.regex(string)
-                result_fst.set_name(string)
+                result_fst.set_name(sym)
                 return result_fst
             elif string in {'BEGIN', 'END'}:
                 result_fst = hfst.regex(string)
                 result_fst.set_name(string)
                 return result_fst
-        cfg.error_message = "'" + string + "' is an invalid pair/definend symbol"
+        cfg.error_message = ("'{}' is an invalid pair/definend symbol".
+                             format(string))
         raise FailedSemantics(cfg.error_message)
 
     def boundary(self, ast):

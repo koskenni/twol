@@ -9,19 +9,28 @@ Closed = (i) Ci [Ci|END] ;
 {kg}:g | {kj}:j | {kv}:v |
 {pm}:m | {pv}:v | {pØ}:Ø |
 {td}:d | {tl}:l | {tn}:n | {tr}:r | {tØ}:Ø <=>
-    _ Vi Closed ;
+     _ Vi Closed ;
 ! Weakening except k~Ø~'
 
 {kØ}:Ø <=> _  Vi Closed ;
 ! pa<>on
 
 {kØ'}:' <=>
-    Vi :a _ :a Closed ,
-    Vi :e _ :e Closed ,
-    Vi :i _ :i Closed ,
-    Vi :o _ :o Closed ,
-    Vi :u _ :u Closed ;
-! vaa<'>an
+     Vi :a _ :a Closed ,
+     Vi :e _ :e Closed ,
+     Vi :i _ :i Closed ,
+     Vi :o _ :o Closed ,
+     Vi :u _ :u Closed ;
+                              ! vaa<'>an
 
 {kØ'}:k /<= _ Vi Closed ;
 ! vaa<>oissa
+
+{§}:%- <=>
+     :a _ :a ,
+     :o _ :o ,
+     :u _ :u ;
+
+:%% /<= Vow _ ;
+
+%% /<= Cons _ ;
