@@ -1,4 +1,7 @@
 *.~
+*.pdf
+*.png
+*.jpg
 
 # Private files
 *-priv.*
