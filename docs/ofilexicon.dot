@@ -1,0 +1,174 @@
+Digraph {
+	size=7;
+	rankdir=LR;
+	newrank=true;
+	ranksep=0.5;
+	fontsize=24;
+Root [label="Root"]
+{ rank=min ; Root }
+More [label="More"]
+ID_1 [label="/s"]
+ID_2 [label="/s12"]
+ID_3 [label="/a"]
+ID_4 [label="/apos"]
+ID_6 [label="/asup"]
+ID_16 [label="/v"]
+ID_17 [label="tse/v"]
+ID_18 [label="aja/v"]
+ID_19 [label="äjä/v"]
+ID_20 [label="/v0der"]
+ID_21 [label="/v012"]
+ID_22 [label="/v02"]
+ID_23 [label="/v3"]
+ID_24 [label="/p"]
+ID_25 [label="/pc"]
+ID_26 [label="/po"]
+ID_27 [label="/ps"]
+FirstPart [label="FirstPart"]
+Nouns [label="Nouns"]
+Nouns [label="Nouns"]
+Adjectives [label="Adjectives"]
+Verbs [label="Verbs"]
+Particles [label="Particles"]
+s0 [label="s0"]
+s1 [label="s1"]
+s2 [label="s2"]
+s3 [label="s3"]
+s0123 [label="s0123"]
+s012 [label="s012"]
+Poss [label="Poss"]
+PossObl [label="PossObl"]
+PossV [label="PossV"]
+Clit [label="Clit"]
+ClitS [label="ClitS"]
+v0 [label="v0"]
+v1 [label="v1"]
+v2 [label="v2"]
+v3 [label="v3"]
+neg [label="neg"]
+ID_28 [label="4pe"]
+Person [label="Person"]
+End [label="End"]
+{ rank=max ; End }
+{ rank=same ID_1, ID_2, ID_3, ID_4, ID_6, ID_16, ID_17, ID_18, ID_19, ID_20, ID_21, ID_22, ID_23, ID_24, ID_25, ID_26, ID_27 }
+	ID_3 -> ID_3
+	ID_3 -> Clit
+	ID_3 -> s012
+	ID_3 -> s0123
+	ID_4 -> s0123
+	ID_6 -> s0123
+	ID_24 -> End
+	ID_25 -> Clit
+	ID_26 -> Poss
+	ID_26 -> PossV
+	ID_27 -> PossObl
+	ID_27 -> PossV
+	ID_1 -> s0123
+	ID_2 -> s1
+	ID_2 -> s2
+	ID_16 -> ID_20
+	ID_16 -> v0
+	ID_16 -> v1
+	ID_16 -> v2
+	ID_16 -> v3
+	ID_21 -> ID_20
+	ID_21 -> v0
+	ID_21 -> v1
+	ID_21 -> v2
+	ID_22 -> ID_20
+	ID_22 -> v0
+	ID_22 -> v2
+	ID_20 -> ID_3
+	ID_20 -> ID_1
+	ID_23 -> v3
+	ID_28 -> Clit
+	Adjectives -> ID_3
+	Adjectives -> ID_4
+	Adjectives -> ID_6
+	Clit -> End
+	ClitS -> End
+	FirstPart -> More
+	More -> Adjectives
+	More -> Nouns
+	Nouns -> ID_1
+	Nouns -> ID_2
+	Nouns -> Clit
+	Particles -> ID_24
+	Particles -> ID_25
+	Particles -> ID_26
+	Particles -> ID_27
+	Particles -> End
+	Person -> Clit
+	Poss -> Clit
+	Poss -> PossObl
+	PossObl -> Clit
+	PossV -> Clit
+	Root -> Adjectives
+	Root -> Compounds
+	Root -> FirstPart
+	Root -> Nouns
+	Root -> Numerals
+	Root -> Particles
+	Root -> Pronouns
+	Root -> Special
+	Root -> Verbs
+	Verbs -> ID_16
+	Verbs -> ID_21
+	Verbs -> ID_22
+	Verbs -> ID_23
+	Verbs -> ID_18
+	Verbs -> ID_17
+	Verbs -> ID_19
+	ID_18 -> v0
+	ID_18 -> v1
+	ID_18 -> v2
+	ID_18 -> v3
+	neg -> Clit
+	s0 -> Clit
+	s012 -> s0
+	s012 -> s1
+	s012 -> s2
+	s0123 -> s0
+	s0123 -> s1
+	s0123 -> s2
+	s0123 -> s3
+	s1 -> Clit
+	s1 -> Poss
+	s1 -> PossObl
+	s1 -> PossV
+	s2 -> Clit
+	s2 -> Poss
+	s2 -> PossObl
+	s2 -> PossV
+	s3 -> Poss
+	s3 -> PossV
+	ID_17 -> v0
+	ID_17 -> v1
+	ID_17 -> v2
+	ID_17 -> v3
+	v0 -> Clit
+	v0 -> ClitS
+	v0 -> End
+	v0 -> Person
+	v0 -> PossObl
+	v0 -> PossV
+	v0 -> neg
+	v0 -> s0123
+	v1 -> Person
+	v2 -> Person
+	v2 -> neg
+	v3 -> ID_28
+	v3 -> Clit
+	v3 -> End
+	v3 -> Person
+	v3 -> Poss
+	v3 -> PossObl
+	v3 -> PossV
+	v3 -> neg
+	v3 -> s0123
+	ID_19 -> v0
+	ID_19 -> v1
+	ID_19 -> v2
+	ID_19 -> v3
+{ rank=same Adjectives, Compounds, FirstPart, Nouns, Numerals, Particles, Pronouns, Special, Verbs }
+}

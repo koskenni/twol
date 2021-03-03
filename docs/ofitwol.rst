@@ -152,16 +152,12 @@ rules-variation.twol
 rules-normalize.twol
     A few rules needed for generating the base forms
 
-
-
 The nine first groups 
 the rules that are common to both relations in the configuration discussed above, `ofi-rules.twol`_, the extra rule for the relation between the levels 4 and 5 `ofi-rules-extra-in.twol`_ and the extra rule in the relation between the levels 2 and 3 `ofi-rules-extra-out`_.
 
 
-
 Affixes
 =======
-
 All information about inflectional affixes and their combinationss is strored in one CSV file with some 170 rows: `ofi-affixes.csv`_.  For each affix, this file contains some columns which is needed for building a LEXC format lexicon out of the affix entry.
 
 ID
@@ -240,6 +236,22 @@ In addition to the affixes, the lexicon contains a few lexeme lexicons where the
      aloitus_i{kØ}{äØ} /s
      elin_i{kØ}{äØ} /s
 
+
+Linkages between sublexicons
+============================
+
+The following graph summarises the connections between the sublexicons.  Possible sequences start from the *Root* sublexicon which only contains links to the sublexicons which contain the stems of nouns, verbs etc.
+
+.. graphviz:: ofilexicon.dot
+   :alt: linkages of the lexicon
+   :name: OFITWOL lexicon linkages
+   :align: right
+
+The graph is created automatically from the LEXC lexicons that are used for creating the analysers.  There is a Python 3 program, ``lexc2dot`` which reads through a set of LEXC lexicons and produces a ``graphviz dot`` graph where the sublexicons are represented as nodes and the continuations as edges or arrows between the nodes.  The above graph was made by::
+
+  cat root-mphon.lexc lexic-firstpart.lexc lexic-s.lexc lexic-s.lexc \
+    lexic-a.lexc lexic-v.lexc lexic-p.lexc endings.lexc |
+    python3 ~/github/twol/twol/lexc2dot.py -e -s "/" > ofilexicon.dot
 
 Managing variant forms
 ======================

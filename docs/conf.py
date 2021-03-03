@@ -54,6 +54,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'sphinx.ext.graphviz',
 #    'sphinxcontrib.bibtex',
 ]
 
@@ -222,3 +223,7 @@ MOCK_MODULES = [
     'hfst', 'tatsu', 'tatsu.ast', 'tatsu.walkers', 'tatsu.exceptions',
     'grapheme']
 sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
+
+# graphviz settings
+
+graphviz_output_format = 'svg'
