@@ -97,7 +97,7 @@ TLEs may consist of:
     Denotes zero, one or more concatenations of *X*,  E.g ``:Ø*`` would contain the null string, ``:Ø``, ``:Ø :Ø``, etc..
 
 *X+* (Kleene plus)
-    Denotes one or more concatenations of *X*,  E.g ``:Ø*`` would contain ``:Ø``, ``:Ø :Ø``, etc..
+    Denotes one or more concatenations of *X*,  E.g ``:Ø+`` would contain ``:Ø``, ``:Ø :Ø``, etc..
 
 .. index:: morphophonemic projection, surface completion, .m
     

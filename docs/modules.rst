@@ -9,6 +9,7 @@ Modules of the twol package
    twol.alphabet
    twol.cfg
    twol.fs
+   twol.lexc2dot
    twol.metric
    twol.multialign
    twol.raw2named

@@ -156,6 +156,30 @@ The nine first groups
 the rules that are common to both relations in the configuration discussed above, `ofi-rules.twol`_, the extra rule for the relation between the levels 4 and 5 `ofi-rules-extra-in.twol`_ and the extra rule in the relation between the levels 2 and 3 `ofi-rules-extra-out`_.
 
 
+Managing variant forms
+======================
+
+EMSF allows more morphophonemic variation than the present day Finnish, e.g.:
+
+- ``onneto<i>n`` in addition to the standard form ``onneto<>n`` ('unhappy', adjective, nominative, singular)
+
+- ``korke<e>`` in addition to ``korke<a>`` ('high', adjective, nominative, singular)
+
+- ``kih<aja>a`` in addition to ``kih<ise>e`` ('to hiss', verb, active, present tense, 3rd person)
+
+- ``vene<h>essä`` in addition to ``vene<>essä`` ('in a boat'); in MSF the noun has stems ``vene``, ``venee`` and ``venet``, but in EMSF there are two additional stems ``venehe`` and ``veneh``.  A morphophoneme ``{Øth}`` easily describes this variation in EMSF, but the correspondence ``{Øth}:h`` must not be present in the normalised base form ``vene``.
+
+The two first examples are solved through the morphophonemes that describe the variation and the third type is solved by includin some morphemes in the lexicon.  The former type needs special attention, because otherwise the rules will generate several base forms for words containing such morphophonemes.
+
+
+Allowing variation
+------------------
+
+When there is no variation, one may often use the double-arrow two-level rules such as ``{ao}:o <=> _ {ij}:``.  Then, the morphophoneme input symbol has only one possible output character (or zero).  There are two ways to allow several alternatives: Firstly, one may give the alternatives in the left-hand side of the rule, e.g. ``{aØo}:Ø | {aØo}:o <=> _ {ij}:``.  Such a rule clearly allows both ``Ø`` and ``o`` as the output characters for the input symbol ``{aØo}``.  It would be no problem if the lexicon would consist of explicit base forms given to each lexicon entry.  In OMORFI we avoid this base-forms by generating the base-forms automatically from the morphophonemic representations.  The other method of allowing variation is to use combinations of right-arrow rules ``=>`` and exclusion rules ``/<=`` and separate the examples and the rules for the variants from the standard rules.
+
+The file containing the examples must, thus, be split in two parts.  The main part contains all examples where the relation reflects the standard output forms and another which contains only the variant forms.  The variant forms, thus, have the surface representation of the non-standard form but their morphophonemic representation is the same as in the standard forms.  The combination of these two sets of examples is the effective test for input two-level rules and the standard part alone is the test set for the output rules which generate the base forms.
+
+
 Affixes
 =======
 All information about inflectional affixes and their combinationss is strored in one CSV file with some 170 rows: `ofi-affixes.csv`_.  For each affix, this file contains some columns which is needed for building a LEXC format lexicon out of the affix entry.
@@ -247,33 +271,11 @@ The following graph summarises the connections between the sublexicons.  Possibl
    :name: OFITWOL lexicon linkages
    :align: right
 
-The graph is created automatically from the LEXC lexicons that are used for creating the analysers.  There is a Python 3 program, ``lexc2dot`` which reads through a set of LEXC lexicons and produces a ``graphviz dot`` graph where the sublexicons are represented as nodes and the continuations as edges or arrows between the nodes.  The above graph was made by::
+The graph was created automatically from the LEXC lexicons that are the building blocks of the analyser.  A Python 3 program, ``twol-lexc2dot`` which reads through a set of LEXC lexicons and produces a ``graphviz dot`` graph where the sublexicons are represented as nodes and the continuations as edges or arrows between the nodes.  The above graph was made by::
 
   cat root-mphon.lexc lexic-firstpart.lexc lexic-s.lexc lexic-s.lexc \
     lexic-a.lexc lexic-v.lexc lexic-p.lexc endings.lexc |
-    python3 ~/github/twol/twol/lexc2dot.py -e -s "/" > ofilexicon.dot
-
-Managing variant forms
-======================
-
-EMSF allows more morphophonemic variation than the present day Finnish, e.g.:
-
-- ``onnetoin`` in addition to the standard form ``onneton`` ('unhappy', adjective, nominative, singular)
-
-- ``korkee`` in addition to ``korkea`` ('high', adjective, nominative, singular)
-
-- ``kihajaa`` in addition to ``kihisee`` ('to hiss', verb, active, present tense, 3drd person)
-
-- ``venehessä`` in addition to ``veneessä`` ('in a boat'); in MSF the noun has stems ``vene``, ``venee`` and ``venet``, but in EMSF there are two additional stems ``venehe`` and ``veneh``.  A morphophoneme ``{Øth}`` easily describes this variation in EMSF.  The correspondence ``{Øth}:h`` must not be present in the normalised base form ``vene``.
-
- The two first examples are solved through the morphophonemes that describe the variation and the third type is solved by includin some morphemes in the lexicon.  The former type needs special attention, because otherwise the rules will generate several base forms for words containing such morphophonemes.
-
-Allowing variation
-------------------
-
-When there is no variation, one may often use the double-arrow two-level rules such as ``{ao}:o <=> _ {ij}:``.  Then, the morphophoneme input symbol has only one possible output character (or zero).  There are two ways to allow several alternatives: Firstly, one may give the alternatives in the left-hand side of the rule, e.g. ``{aØo}:Ø | {aØo}:o <=> _ {ij}:``.  Such a rule clearly allows both ``Ø`` and ``o`` as the output characters for the input symbol ``{aØo}``.  It would be no problem if the lexicon would consist of explicit base forms given to each lexicon entry.  In OMORFI we avoid this base-forms by generating the base-forms automatically from the morphophonemic representations.  The other method of allowing variation is to use combinations of right-arrow rules ``=>`` and exclusion rules ``/<=`` and separate the examples and the rules for the variants from the standard rules.
-
-The file containing the examples must, thus, be split in two parts.  The main part contains all examples where the relation reflects the standard output forms and another which contains only the variant forms.  The variant forms, thus, have the surface representation of the non-standard form but their morphophonemic representation is the same as in the standard forms.  The combination of these two sets of examples is the effective test for input two-level rules and the standard part alone is the test set for the output rules which generate the base forms.
+    twol-lexc2dot -e -s "/" > ofilexicon.dot
 
  
 Miscellanious Notes

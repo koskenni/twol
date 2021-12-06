@@ -1,3 +1,22 @@
+"""twol-lexc2dot
+=============
+
+Reads in a file of LEXC sublexicons and outputs a DOT graph of the linkages
+
+The input from stdin may be a combination of several lexicon files but
+the very first sublexicon must be called "Root" and be the node where
+the morpheme sequences start.
+
+The sublexicons correspond to DOT nodes and the continuations in lexicon entries correspond to edges of the graph.
+
+In order to structure complex lexicon system graphs, one may have a resticted control over the organising or ranking the nodes.  One option forces the nodes that are directly reachabel from Root to have mutually the same rank.  Another option does the same for any sublexicon whose name contains a slash.  OFITWOL follows a convention that lexeme entries usually continue to nodes like "/v" or "/a".  If one follows this convention, this option is usually quite useful.
+
+If your lexicon system consists of several files, you may concatenate them all or leave some files out.  In this way, you can either describe parts of the whole lexicon system, or just leave some irregular parts out.  If the input is partial, then you may or may not include nodes that cannot be reached from the Root.
+
+The DOT description of the graph can then be processed with graphviz dot program in order to get a PDF or PNG file which can be directly displayed.
+
+"""
+
 from collections import defaultdict
 import re
 
