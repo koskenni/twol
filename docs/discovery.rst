@@ -102,3 +102,4 @@ The program collects the input and the output alphabets and the allowed symbol p
 
 In the output, you can see that the rules for ``{aä}``, i.e. vowel harmony, are fairly useless, even if they are correct for the input data.  On the other hand, the rules for stem final vowel aternations for ``{ieeØ}`` and ``{iiie}`` are almost correct and general.  So are the rules for consonant gradation ``{kØ}`` and the slightly more complicated ``{tds}`` alternation.
 
+
