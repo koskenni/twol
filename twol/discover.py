@@ -197,7 +197,7 @@ def main():
 
     cfg.verbosity = args.verbosity
     
-    twexamp.read_examples(filename=args.examples, build_fsts=False)
+    twexamp.read_examples(filename_lst=[args.examples], build_fsts=False)
     if cfg.verbosity >= 10:
         print("--- all examples read in ---")
     
