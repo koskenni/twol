@@ -203,9 +203,12 @@ def main():
     
     for insym in cfg.input_symbol_set:
         pair_symbols_for_input[insym] = set()
+    for outsym in cfg.output_symbol_set:
+        pair_symbols_for_output[outsym] = set()
     for insym, outsym in cfg.symbol_pair_set:
         pair_symbol = cfg.sympair2pairsym(insym, outsym)
         pair_symbols_for_input[insym].add(pair_symbol)
+        pair_symbols_for_output[outsym].add(pair_symbol)
 
     if args.symbol:
         if args.symbol in pair_symbols_for_input:
@@ -217,10 +220,9 @@ def main():
             if cfg.verbosity >= 10:
                 print("pair_lst:", pair_lst)
         else:
-            print("Symbol {} not in the input alphabet of examples".format(args.symbol))
-            lst = [insym for insym in
-                   pair_symbols_for_input.keys() if len(insym) > 2]
-            print("The following symbols are:", " ".join(sorted(lst)))
+            print("Symbol {} not in occur in the examples".format(args.symbol))
+            lst = list(cfg.pair_symbol_set)
+            print("The following pair-symbols are:\n", " ".join(sorted(lst)))
             exit("")
     else:
         pair_lst = sorted(cfg.symbol_pair_set)

@@ -174,9 +174,9 @@ def read_groups(fil):
             elif letter in group_sets:
                 phon_set.update(group_sets[letter])
             else:
-                print("***", letter, "***", line_nl)
+                print("***", letter, "***", line_nl, " not in examples")
         group_sets[lst[0]] = phon_set
-    if args.verbosity >= 10:
+    if cfg.verbosity >= 10:
         print("group_lst:", group_lst)
     return
 
@@ -294,11 +294,11 @@ def main():
 
         if len(positives) <= len (negatives) or len(positives) == 0:
             print_rule(corr, positives, "=>")
-            if cfg.verbosity > 3:
+            if cfg.verbosity > 0:
                 print_rule(corr, negatives, "/<=")
         else:
             print_rule(corr, negatives, "/<=")
-            if cfg.verbosity > 3:
+            if cfg.verbosity > 0:
                 print_rule(corr, positives, "=>")
         
     #print("corr_containing_group_syms:", corr_containing_group_syms) ###

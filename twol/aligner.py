@@ -43,7 +43,8 @@ def print_result(raw_path, comments, weights, layout="horizontal"):
     
     if layout == "horizontal":
         mphon_lst = \
-            [insym if insym == outsym else insym + ":" + outsym for insym, outsym in sym_pair_lst]
+            [insym if insym == outsym else insym + ":" + outsym
+             for insym, outsym in sym_pair_lst]
         mphonemic_str = " ".join(mphon_lst)
         if weights:
             print(mphonemic_str.ljust(40), weight)
