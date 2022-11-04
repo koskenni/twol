@@ -9,11 +9,16 @@ This is free software according to GNU GPL 3 license.
 
 """
 
-import hfst
+import hfst_dev as hfst
+
 import grapheme
+
 import twol.fs as fs
+
 import twol.cfg as cfg
+
 import twol.twbt as twbt
+
 import twol.alphabet as alphabet
 
 
@@ -81,8 +86,8 @@ Returns a transducer where input labels of thrasitions are concatenations of the
 """
     if cfg.verbosity >= 10:
         print("to be accumulated:\n", fst)
-    bfst = hfst.HfstBasicTransducer(fst)
-    result_bfst = hfst.HfstBasicTransducer()
+    bfst = hfst.HfstIterableTransducer(fst)
+    result_bfst = hfst.HfstIterableTransducer()
     for state in bfst.states():
         result_bfst.add_state(state)
         if bfst.is_final_state(state):

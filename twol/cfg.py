@@ -5,12 +5,9 @@ programs, e.g. `twol`, `multialign`, `table2words`,
 `words2zerofilled` etc.
 """
 
-__author__ = """© Kimmo Koskenniemi, 2018"""
+__author__ = """© Kimmo Koskenniemi, 2018, 2022"""
 
 import re
-import hfst
-
-#hfst.set_default_fst_type(hfst.ImplementationType.FOMA_TYPE)
 
 verbosity = 0
 

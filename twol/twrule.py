@@ -2,11 +2,17 @@
 """
 __author__ = "© Kimmo Koskenniemi, 2018 - 2020"
 __version__ = "2020-02-01"
+
 import re
-import hfst
+
+import hfst_dev as hfst
+
 import twol.cfg as cfg
+
 import twol.fs as fs
+
 import twol.twbt as twbt
+
 import twol.twexamp as twexamp
 
 def init():

@@ -11,10 +11,14 @@ This is free software according to GNU GPL 3 license.
 """
 
 import sys
+
 import re
+
 import twol.alphabet as alphabet
+
 import twol.cfg as cfg
-import hfst
+
+import hfst_dev as hfst
 
 within_set_lst = []
 forall_lst = []

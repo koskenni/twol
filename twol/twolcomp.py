@@ -5,14 +5,23 @@
 # This orogram is free software according to GPL 3 license
 #
 import sys
+
 import re
+
 import fileinput
-import hfst
+
+import hfst_dev as hfst
+
 import twol.cfg as cfg
+
 import twol.twbt as twbt
+
 import twol.twexamp as twexamp
+
 import twol.twrule as twrule
+
 from twol.twparser import init as twparser_init
+
 from twol.twparser import parse_rule
 
 
