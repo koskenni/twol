@@ -4,7 +4,7 @@ The HFST engine used for accomplishing the operations but all functions make cop
 
 © Kimmo Koskenniemi, 2018. This is free code under the GPL 3 license."""
 
-import hfst
+import hfst_dev as hfst
 import grapheme
 import twol.cfg as cfg
 
@@ -86,7 +86,7 @@ def symbol_to_fsa(sym):
     The symbol 'sym' may be e.g. a composed Unicode grapheme, i.e. a
     string of two or more Unicode characters.
     """
-    bfsa = hfst.HfstBasicTransducer()
+    bfsa = hfst.HfstIterableTransducer()
     string_pair_path = ((sym, sym))
     bfsa.disjunct(string_pair_path, 0)
     fsa = hfst.fst(bfsa)
@@ -94,7 +94,7 @@ def symbol_to_fsa(sym):
 
 def symbol_pair_to_fst(insym, outsym):
     """"Return a FST which accepts one the pair string 'insym:outsym'"""
-    bfst = hfst.HfstBasicTransducer()
+    bfst = hfst.HfstIterableTransducer()
     string_pair_path = ((insym, outsym))
     bfsa.disjunct(string_pair_path, 0)
     fst = hfst.fst(bfst)
@@ -102,7 +102,7 @@ def symbol_pair_to_fst(insym, outsym):
 
 def string_to_fsa(grapheme_string):
     """Return a FSA which accepts the sequence of graphemes in the string"""
-    bfsa = hfst.HfstBasicTransducer()
+    bfsa = hfst.HfstIterableTransducer()
     grapheme_list = list(grapheme.graphemes(grapheme_string))
     string_pair_path = tuple(zip(grapheme_list, grapheme_list))
     if cfg.verbosity >= 10:
