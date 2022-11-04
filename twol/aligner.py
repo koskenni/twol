@@ -8,8 +8,10 @@ Copyright 2017-2019, Kimmo Koskenniemi
 This is free software according to GNU GPL 3 license.
 """
 
-import hfst
+import hfst_dev as hfst
+
 import twol.cfg as cfg
+
 import twol.multialign as multialign
 
 def align_two_words(in_word, out_word, aligner_fst, zero, number):

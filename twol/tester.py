@@ -15,10 +15,15 @@ The formulae::
 
 """
 import os
+
 import re
-import hfst
+
+import hfst_dev as hfst
+
 import twol.cfg as cfg
+
 import twol.twexamp as twexamp
+
 import twol.twbt as twbt
 
 def paths(heading, fst):

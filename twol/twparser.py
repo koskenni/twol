@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
+
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import sys, re, json
+
 from codecs import open
+
 from pprint import pprint
 
 import tatsu
@@ -13,11 +16,12 @@ from tatsu.ast import AST
 from tatsu.walkers import NodeWalker
 #from tatsu import walkers
 #from walkers import NodeWalker
-
 from tatsu.exceptions import ParseException, FailedParse, ParseError, FailedSemantics
 
-import hfst
+import hfst_dev as hfst
+
 import twol.cfg as cfg
+
 import twol.twexamp as twexamp
 
 class TwolRegexSemantics(object):
@@ -68,8 +72,8 @@ class TwolRegexSemantics(object):
     def concatenation(self, ast):
         return "[{} {}]".format(ast.left, ast.right)
 
-    def composition(self, ast):
-        return "[{} .o. {}]".format(ast.left, ast.right)
+    #def composition(self, ast):
+    #    return "[{} .o. {}]".format(ast.left, ast.right)
 
     def crossproduct(self, ast):
         return "[{} .x. {}]".format(ast.left, ast.right)
@@ -80,11 +84,11 @@ class TwolRegexSemantics(object):
     def Kleene_plus(self, ast):
         return "[{}]+".format(ast.expr)
 
-    def Upper(self, ast):
-        return "[{}].u".format(ast.expr)
+    #def Upper(self, ast):
+    #    return "[{}].u".format(ast.expr)
 
-    def Lower(self, ast):
-        return "[{}].l".format(ast.expr)
+    #def Lower(self, ast):
+    #    return "[{}].l".format(ast.expr)
 
     def One_but_not(self, ast):
         return r"[PI - [{}]]".format(ast.expr)
@@ -170,6 +174,10 @@ class TwolFstSemantics(object):
         result = ("/<=", ast.left, ast.right)
         return result
 
+    def contexts(self, ast):
+        result = ast.lst.copy()
+        return result
+
     def context_lst(self, ast):
         left_lst = ast.left.copy()
         right_lst = ast.right.copy()
@@ -218,13 +226,13 @@ class TwolFstSemantics(object):
         result_fst.set_name(name)
         return result_fst
 
-    def composition(self, ast):
-        name = "[{} .o. {}]".format(ast.left.get_name(), ast.right.get_name())
-        result_fst = ast.left.copy()
-        result_fst.compose(ast.right)
-        result_fst.minimize()
-        result_fst.set_name(name)
-        return result_fst
+    #def composition(self, ast):
+    #    name = "[{} .o. {}]".format(ast.left.get_name(), ast.right.get_name())
+    #    result_fst = ast.left.copy()
+    #    result_fst.compose(ast.right)
+    #    result_fst.minimize()
+    #    result_fst.set_name(name)
+    #    return result_fst
 
     def crossproduct(self, ast):
         name = "[{} .x. {}]".format(ast.left.get_name(), ast.right.get_name())
@@ -249,32 +257,32 @@ class TwolFstSemantics(object):
         result_fst.set_name(name)
         return result_fst
 
-    def Upper(self, ast):
-        """Input projection
+    #def Upper(self, ast):
+    #    """Input projection
 
-        Note that the result is outside the Pi*, i.e. not a valid
-        two-level expression.  This operator should be avoided at all
-        costs.
-        """
-        name = "[{}].u".format(ast.expr.get_name())
-        result_fst = ast.expr.copy()
-        result_fst.input_project()
-        result_fst.set_name(name)
-        return result_fst
+    #    Note that the result is outside the Pi*, i.e. not a valid
+    #    two-level expression.  This operator should be avoided at all
+    #    costs.
+    #    """
+    #    name = "[{}].u".format(ast.expr.get_name())
+    #    result_fst = ast.expr.copy()
+    #    result_fst.input_project()
+    #    result_fst.set_name(name)
+    #    return result_fst
 
-    def Lower(self, ast):
-        """Output projection
+    #def Lower(self, ast):
+    #    """Output projection
 
-        Note that the result is outside the Pi*, i.e. not a valid
-        two-level expression.  This operator should be avoided at all
-        costs.
-        """
-        name = "[{}].l".format(ast.expr.get_name())
-        result_fst = ast.expr.copy()
-        result_fst.output_project()
-        result_fst.minimize()
-        result_fst.set_name(name)
-        return result_fst
+    #    Note that the result is outside the Pi*, i.e. not a valid
+    #    two-level expression.  This operator should be avoided at all
+    #    costs.
+    #    """
+    #    name = "[{}].l".format(ast.expr.get_name())
+    #    result_fst = ast.expr.copy()
+    #    result_fst.output_project()
+    #    result_fst.minimize()
+    #    result_fst.set_name(name)
+    #    return result_fst
 
     def Morphophonemic(self, ast):
         """Surface completion
@@ -467,11 +475,11 @@ def parse_rule(parser, line_nl, line_no, line_lst, start="expr_start"):
         return "?", None, None
 
 def main():
-    import hfst
+    #import hfst
     import argparse
     import twol.twbt as twbt
-    import twol.cfg as cfg
-    import twol.twexamp as twexamp
+    #import twol.cfg as cfg
+    #import twol.twexamp as twexamp
     arpar = argparse.ArgumentParser(
         description="A compiler and tester for two-level rules")
     arpar.add_argument("start",
