@@ -24,15 +24,16 @@ output_coercion_rule = left:expression op:'<=' ~ right:contexts ';' ;
 
 input_coercion_rule = left:expression op:'<--' ~ right:contexts ';' ;
 
-contexts = context_lst | context ;
+contexts = lst:context_lst | lst:context ;
 
 context_lst = left:context ',' right:contexts ;
 
 context = left:[expression] '_' right:[expression] ;
 
-expression = composition | term ;
+##expression = composition | term ;
+expression = term ;
 
-composition = left:term '.o.' ~ right:expression ;
+##composition = left:term '.o.' ~ right:expression ;
 
 term = union | difference | intersection | factor ;
 
@@ -49,8 +50,8 @@ concatenation = left:unit right:factor ;
 unit =
     | Kleene_plus
     | Kleene_star
-    | Upper
-    | Lower
+    ##| Upper
+    ##| Lower
     | Morphophonemic
     | Surface
     | One_but_not
@@ -61,9 +62,9 @@ Kleene_plus = expr:atom '+' ;
 
 Kleene_star = expr:atom '*' ;
 
-Upper = expr:atom '.u' ;
+#Upper = expr:atom '.u' ;
 
-Lower = expr:atom '.l' ;
+#Lower = expr:atom '.l' ;
 
 Morphophonemic = expr:atom '.m' ;
 
