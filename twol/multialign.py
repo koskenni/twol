@@ -104,7 +104,7 @@ Returns a transducer where input labels of thrasitions are concatenations of the
             if not alphabet.mphon_is_valid(new_insym):
                 continue
             new_weight = alphabet.mphon_weight(new_insym)
-            result_arc = hfst.HfstBasicTransition(tostate,
+            result_arc = hfst.HfstIterableTransition(tostate,
                                                   new_insym,
                                                   new_insym,
                                                   new_weight)
