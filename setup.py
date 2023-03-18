@@ -42,7 +42,7 @@ setuptools.setup(
             #'hfst==3.15.0.0b0',
             'hfst_dev==3.15.0.10b0',
             #'TatSu==4.4.0',
-            'TatSu==5.7',
+            'TatSu==5.7.4',
     ]
 
 )

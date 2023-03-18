@@ -8,6 +8,7 @@
 
 import os
 import sys
+sys.path.insert(0, os.path.abspath("."))
 sys.path.insert(0, os.path.abspath('..'))
 
 project = 'twol'
@@ -18,7 +19,7 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinxcontrib.bibtex']
+# extensions = ['sphinxcontrib.bibtex']
 # extensions = []
 
 extensions = [
@@ -32,7 +33,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
-#    'sphinxcontrib.bibtex',
+    'sphinxcontrib.bibtex',
 ]
 templates_path = ['_templates']
 
