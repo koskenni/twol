@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.abspath('..'))
 project = 'twol'
 copyright = '2020-2023, Kimmo Koskenniemi'
 author = 'Kimmo Koskenniemi'
-release = '0.1'
+release = '0.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -33,7 +33,6 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
-    'sphinxcontrib.bibtex',
 ]
 templates_path = ['_templates']
 
@@ -57,8 +56,4 @@ html_static_path = ['_static']
 graphviz_dot = "/usr/bin/dot"
 
 # -- Options for LaTeX output ---------------------------------------------
-
-bibtex_reference_style = "author_year"
-
-bibtex_bibfiles = ['refs.bib']
 
