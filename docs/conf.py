@@ -53,6 +53,8 @@ master_doc = 'source/index'
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
+graphviz_dot = "/usr/bin/dot"
+
 # -- Options for LaTeX output ---------------------------------------------
 
 bibtex_reference_style = "author_year"
