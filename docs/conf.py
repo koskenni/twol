@@ -53,7 +53,9 @@ master_doc = 'source/index'
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
-graphviz_dot = "/usr/bin/dot"
+# graphviz_dot = "/usr/bin/dot"
+# graphviz_dot = "dot"
+graphviz_output_format = "png"
 
 # -- Options for LaTeX output ---------------------------------------------
 
