@@ -34,7 +34,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
-    'notfound.extension',
+#    'notfound.extension',
 ]
 templates_path = ['_templates']
 
