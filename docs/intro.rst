@@ -269,4 +269,4 @@ References
 		 pp. 174–185.
 
 ..
-    bibliography:: kmkbib.bib
+    bibliography:: source/kmkbib.bib

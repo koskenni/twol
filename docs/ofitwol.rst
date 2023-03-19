@@ -266,7 +266,7 @@ Linkages between sublexicons
 
 The following graph summarises the connections between the sublexicons.  Possible sequences start from the *Root* sublexicon which only contains links to the sublexicons which contain the stems of nouns, verbs etc.
 
-.. graphviz:: ofilexicon.dot
+.. graphviz:: source/ofilexicon.dot
    :alt: linkages of the lexicon
    :name: OFITWOL lexicon linkages
    :align: right
