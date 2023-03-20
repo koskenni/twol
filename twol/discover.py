@@ -22,7 +22,7 @@ def relevant_contexts(pair_symbol):
     
     returns a tuple of:
     
-    pos_context_set -- a set of contexts in the examples where the
+    pos_context_set -- a set of contexts in the examples in which the
     pair_symbol occurs
     
     neg_context_set -- a set of contexts where the input-symbol of the
@@ -220,9 +220,11 @@ def main():
             if cfg.verbosity >= 10:
                 print("pair_lst:", pair_lst)
         else:
-            print("Symbol {} not in occur in the examples".format(args.symbol))
+            print("Symbol {} does not occur in the examples"
+                  .format(args.symbol))
             lst = list(cfg.pair_symbol_set)
-            print("The following pair-symbols are:\n", " ".join(sorted(lst)))
+            print("The following pair-symbols would be valid:\n",
+                  " ".join(sorted(lst)))
             exit("")
     else:
         pair_lst = sorted(cfg.symbol_pair_set)

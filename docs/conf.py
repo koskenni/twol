@@ -55,10 +55,8 @@ master_doc = 'index'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-html_static_path = ['_static']
+html_static_path = ['_build/_static']
 
-# graphviz_dot = "/usr/bin/dot"
-# graphviz_dot = "dot"
 graphviz_output_format = "png"
 
 # -- Options for LaTeX output ---------------------------------------------

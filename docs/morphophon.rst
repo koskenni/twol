@@ -30,17 +30,13 @@ The process consists of four scripts and this chapter walks through these steps 
 
 The input for the first step is table which one can produce using a spreadsheet and we show it here first as:
 
-  +------+------+----------+----------+------------+
-  | ID   | STM  | STM.INE  | STM.ESS  | STM.PL.INE |
-  +======+======+==========+==========+============+
-  | MÄKI | mäki | mäe.ssä  | mäke.nä  | mä.i.ssä   |
-  +------+------+----------+----------+------------+
-  | KÄSI | käsi | käde.ssä | käte.nä  | käs.i.ssä  |
-  +------+------+----------+----------+------------+
-  | LASI | lasi | lasi.ssa | lasi.na  | lase.i.ssa |
-  +------+------+----------+----------+------------+
-  | LAKI | laki | lai.ssa  | laki.na  | lae.i.ssa  |
-  +------+------+----------+----------+------------+
+.. csv-table:: Example word forms as a table
+   :header: "ID",   "STM",  "STM.INE",  "STM.ESS", "STM.PL.INE"
+   
+   MÄKI, mäki, mäe.ssä,  mäke.nä, mä.i.ssä
+   KÄSI, käsi, käde.ssä, käte.nä, käs.i.ssä
+   LASI, lasi, lasi.ssa, lasi.na, lase.i.ssa
+   LAKI, laki, lai.ssa,  laki.na, lae.i.ssa
 
 In the table, ``STM``  stands for the stem morph and ``ID`` for the column for the names of stem morphemes.  The twol programs read and write all tables in Comma Separated Value (:term:`CSV`) format  such as `demo-table.csv <https://raw.githubusercontent.com/koskenni/twol/master/test/align/demo-table.csv>`_::
 
@@ -49,7 +45,6 @@ In the table, ``STM``  stands for the stem morph and ``ID`` for the column for t
    KÄSI, käsi, käde.ssä, käte.nä, käs.i.ssä
    LASI, lasi, lasi.ssa, lasi.na, lase.i.ssa
    LAKI, laki, lai.ssa,  laki.na, lae.i.ssa
-
 
 .. index:: twol-table2words
 .. _twol-table2words:
