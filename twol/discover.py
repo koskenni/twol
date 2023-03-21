@@ -82,7 +82,7 @@ def shorten_contexts(contexts, left_length, right_length):
         new_contexts.add((new_lc, new_rc))
     return(new_contexts)
 
-def minimal_contexts(pair_symbol, pos_contexts, neg_contexts):
+def minimal_contexts(pair_symbol, pos_contexts, neg_contexts, direction):
     """Shortens the left and right contexts step by step
     
     Finds shortest contexts which accept correct occurrences of
@@ -92,6 +92,9 @@ def minimal_contexts(pair_symbol, pos_contexts, neg_contexts):
     contexts are computed
     
     pos_context, neg_contexts -- selected from the examples
+
+    direction -- "left" if left context is truncated first,
+    "right" if right context first
     
     returns a tuple: (positive_contexts, negative_contexts)
     """
@@ -156,7 +159,7 @@ def print_rule(pair_symbol, operator, contexts):
     """Prints one rule"""
     print(pair_symbol, operator)
     rule_lst = ["    {} _ {}".format(lc, rc) for lc, rc in contexts]
-    print(",\n".join(rule_lst) + " ;")
+    print(" ,\n".join(rule_lst) + " ;")
     return
 
 def context_to_output_str(pairsym_str):
@@ -189,6 +192,12 @@ def main():
         " all morphophonemes in the example file",
         default="")
     arpar.add_argument(
+        "-d", "--direction",
+        choices=["left","right"],
+        help="truncate first left or right",
+        default="left")
+
+    arpar.add_argument(
         "-v", "--verbosity",
         help="Level of  diagnostic output, default is 5. Set to"\
         " 0 to omit the printing of relevant examples for the rules",
@@ -219,6 +228,9 @@ def main():
                 pair_lst.append((insym, outsym))
             if cfg.verbosity >= 10:
                 print("pair_lst:", pair_lst)
+        elif args.symbol in cfg.pair_symbol_set:
+            pair_lst = [cfg.pairsym2sympair(args.symbol)]
+            pair_set = set(pair_lst)
         else:
             print("Symbol {} does not occur in the examples"
                   .format(args.symbol))
@@ -233,18 +245,22 @@ def main():
         if len(pair_symbols_for_input[insym]) <= 1:
             continue
         pair_symbol = cfg.sympair2pairsym(insym, outsym)
-        posi_contexts, nega_contexts = relevant_contexts(pair_symbol)
+
+        positive_contexts, negative_contexts = relevant_contexts(pair_symbol)
         pos_contexts, neg_contexts = minimal_contexts(pair_symbol,
-                                                      posi_contexts.copy(),
-                                                      nega_contexts.copy())
-        if len(pos_contexts) <= len(neg_contexts) or cfg.verbosity > 0:
+                                                      positive_contexts.copy(),
+                                                      negative_contexts.copy(),
+                                                      args.direction)
+
+        if len(pos_contexts) <= len(neg_contexts) or cfg.verbosity > 1:
             print_rule(pair_symbol, "=>", pos_contexts)
-        else:
+        if len(pos_contexts) > len(neg_contexts) or cfg.verbosity > 1:
             print_rule(pair_symbol, "/<=", neg_contexts)
-        if args.verbosity >= 5:
-            for lc, rc in posi_contexts:
-                l_str = context_to_output_str(lc)
-                r_str = context_to_output_str(rc)
+
+        if args.verbosity > 0:
+            for lc, rc in positive_contexts:
+                l_str = context_to_output_str(lc[3:])
+                r_str = context_to_output_str(rc[:-3])
                 print("!{:>29}<{}>{}".format(l_str, outsym, r_str))
 
 if __name__ == "__main__":
