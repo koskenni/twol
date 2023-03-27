@@ -15,6 +15,9 @@ Glossary
    CSV
      A common exchange format for representing tabular data which most spreadsheet programs can import and export.  In CSV table rows are usually lines where fields are separated by a comma.  Instead of a comma, a semicolon is sometimes used.  Values may be enclosed in double quotes if they contain e.g. commas.  For more information, see https://en.wikipedia.org/wiki/Comma-separated_values.
 
+   context
+      The immediate environment where a symbol occurs.  The context consists of the left context, i.e. zero or more symbols occurring before and of the right context, i.e. zero or more symbols occurring after the symbol whose context we are speaking of.
+
    deletion
      Deletion is said to occur when a phoneme in a in a morph corresponds to :term:`zero` in another :term:`morph` of the same :term:`morpheme`.  Cf. :term:`epenthesis`.
 

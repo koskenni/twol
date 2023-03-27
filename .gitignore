@@ -3,9 +3,11 @@
 *.png
 *.jpg
 
-# Private files
+# Private and temporary files
 *-priv.*
 priv-*
+*-tmp.*
+tmp-*
 
 # HFST binary files
 *.fst

@@ -125,8 +125,8 @@ def mphon_weight(mphon):
         return mphon_weight_cache[mphon]
     mphon_int = mphon_to_binint_cache[mphon]
     if cfg.verbosity >= 25:
-        print("\nmphon_to_binint_cache[{}] = {}".format(mphon,
-                                                      spaced_bin_int(mphon_int)))
+        print("\nmphon_to_binint_cache[{}] = {}".
+              format(mphon, spaced_bin_int(mphon_int)))
     w_cons = 999999
     w_vow = 999999
     high = mphon_int >> 48               # extract the 48 cons feature bits
@@ -190,13 +190,15 @@ def read_alphabet(file_name):
                 line)
             if mat_phon_feat:
                 # it defines features of a phoneme
-                r_lst = [feat.strip() for feat in mat_phon_feat.group("feats").split(",")]
+                r_lst = [feat.strip()
+                         for feat in mat_phon_feat.group("feats").split(",")]
                 if len(r_lst) != 6:
                     msg = "** WRONG NUMBER OF FEATURES ON LINE {}:\n{}"
                     sys.exit(msg.format(i, line))
                 if mat_phon_feat.group("symbol") in features_of_phoneme:
                     msg = "** {} ALREADY DEFINED. LINE {}:\n{}"
-                    sys.exit(msg.format(mat_phon_feat.group("symbol"), i, line_nl))
+                    sys.exit(msg.format(mat_phon_feat.group("symbol"),
+                                        i, line_nl))
                 features_of_phoneme[mat_phon_feat.group("symbol")] = tuple(r_lst)
                 for ls, feat in zip(feature_lst_lst, r_lst):
                     if not feat in ls and feat:
@@ -208,7 +210,8 @@ def read_alphabet(file_name):
             if mat_feat_set:
                 # it defines a subset of features and its weight
                 l_lst = mat_feat_set.group("elements").split()
-                subset_lst.append((set(l_lst), int(mat_feat_set.group("weight"))))
+                subset_lst.append((set(l_lst),
+                                   int(mat_feat_set.group("weight"))))
                 continue
             mat_phon_set = re.fullmatch(
                 r"(?P<weight>[0-9]+) *= *(?P<elements>(\w|')+( +(\w|')+)+)",

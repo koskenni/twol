@@ -4,16 +4,18 @@ Examples, contexts and rules are treated in terms of strings without any
 finite-state machinery or rule compilation.  Examples and contexts are
 space separated sequences of pair-symbols. 
 
-© Kimmo Koskenniemi, 2017-2018. Free software under the GPL 3 or later.
+© Kimmo Koskenniemi, 2017-2023. Free software under the GPL 3 or later.
 """
 
 import sys
 import re
+from collections import deque
+
 import twol.cfg as cfg
+from twol.cfg import pairsym2sympair, sympair2pairsym
 import twol.twexamp as twexamp
 
 pair_symbols_for_input = {}   # key: input symbol, value: set of pair symbols
-pair_symbols_for_output = {}
 
 def relevant_contexts(pair_symbol):
     """Select positive and negative contexts for a given pair-symbol
@@ -30,7 +32,7 @@ def relevant_contexts(pair_symbol):
     no example in the example_set where the pair_symbol occurs in such a
     context
     """
-    input_symbol, output_symbol = cfg.pairsym2sympair(pair_symbol)
+    input_symbol, output_symbol = pairsym2sympair(pair_symbol)
     positive_context_set = set()
     negative_context_set = set()
     pairsymlist = [re.sub(r"([}{])", r"\\\1", psym)
@@ -58,102 +60,217 @@ def relevant_contexts(pair_symbol):
     negative_context_set = negative_context_set - positive_context_set
     return positive_context_set, negative_context_set
     
+subsets_dict = {
+    "Vowel": ["Height", "Frontness", "Rounding"],
+    "Height": ["Close", "CloseMid", "OpenMid", "Open"],
+    "Close": [":i", ":y", ":u"],
+    "CloseMid": [":e", ":ö", ":o"],
+    "OpenMid": [":ä"],
+    "Open": [":a"],
+    "Frontness": ["Front", "Back"],
+    "Front": [":i", ":y", ":e", ":ö", ":ä"],
+    "Back": [":u", ":o", "a"],
+    "Rounding": ["Rounded", "Unrounded"],
+    "Rounded": [":y", ":u", ":ö", ":o"],
+    "Unrounded": [":i", ":e", ":ä", ":a"],
+}
+
+
 def ppcontexts(ctxs, title):
     """Print a list of context for tracing and debugging"""
     print(title)
     for lc, rc in sorted(ctxs):
         print(lc, "_", rc)
 
-def shorten_contexts(contexts, left_length, right_length):
-    """Computes a new set of truncated contexts"""
+def max_left_len(pos_context_set, neg_context_set):
+    maxposlen = max([len(lc.split()) for lc, rc in pos_context_set])
+    maxneglen = max([len(lc.split()) for lc, rc in neg_context_set])
+    return max(maxposlen, maxneglen)
+
+def max_right_len(pos_context_set, neg_context_set):
+    maxposlen = max([len(rc.split()) for lc, rc in pos_context_set])
+    maxneglen = max([len(rc.split()) for lc, rc in neg_context_set])
+    return max(maxposlen, maxneglen)
+
+def truncate_left(syms_to_remain, pos_context_set, neg_context_set):
     if cfg.verbosity >= 25:
-        print("left and right length:",
-              left_length, right_length)
-        ppcontexts(contexts,
-                   "contexts as given to shorten_contexts()")
-    new_contexts = set()
-    for left_context, right_context in contexts:
-        left_lst = left_context.split(" ")
-        start = max(0, len(left_lst) - left_length)
+        print(f"entering truncate_left, {syms_to_remain =}") ####
+        print(f"{pos_context_set = }") ####
+        print(f"{neg_context_set = }") ####
+    new_pos_context_set = set()
+    new_neg_context_set = set()
+    for left_context, right_context in pos_context_set:
+        left_lst = left_context.split()
+        start = max(0, len(left_lst) - syms_to_remain)
         new_lc = " ".join(left_lst[start:])
-        # print("start:", start, "new_lc:", new_lc)
-        right_lst = right_context.split(" ")
-        new_rc = " ".join(right_lst[0:right_length])
-        new_contexts.add((new_lc, new_rc))
-    return(new_contexts)
+        new_pos_context_set.add((new_lc, right_context))
+    for left_context, right_context in neg_context_set:
+        left_lst = left_context.split()
+        start = max(0, len(left_lst) - syms_to_remain)
+        new_lc = " ".join(left_lst[start:])
+        new_neg_context_set.add((new_lc, right_context))
 
-def minimal_contexts(pair_symbol, pos_contexts, neg_contexts, direction):
-    """Shortens the left and right contexts step by step
-    
-    Finds shortest contexts which accept correct occurrences of
-    pair_symbol and still reject the incorrect occurrences of it.
-    
-    pair_symbol -- a pair-symbol, e.g. '{aä}:a' for which the optimal
-    contexts are computed
-    
-    pos_context, neg_contexts -- selected from the examples
-
-    direction -- "left" if left context is truncated first,
-    "right" if right context first
-    
-    returns a tuple: (positive_contexts, negative_contexts)
-    """
     if cfg.verbosity >= 25:
-        ppcontexts(pos_contexts, "positive contexts for " + pair_symbol)
-        ppcontexts(neg_contexts, "negative contexts for " + pair_symbol)
-    # find maximum lengths (in psyms) of left and right contexts
-    left_len = 0
-    right_len = 0
-    for left_context, right_context in pos_contexts:
-        lcount = left_context.count(" ")
-        if lcount >= left_len: left_len = lcount + 1
-        rcount = right_context.count(" ")
-        if rcount >= right_len: right_len = rcount + 1
-    for left_context, right_context in neg_contexts:
-        lcount = left_context.count(" ")
-        if lcount >= left_len: left_len = lcount + 1
-        rcount = right_context.count(" ")
-        if rcount >= right_len: right_len = rcount + 1
+        print(f"leaving truncate_left, {syms_to_remain =}") ####
+        print(f"{new_pos_context_set = }") ####
+        print(f"{new_neg_context_set = }") ####
+    return (new_pos_context_set, new_neg_context_set)
+        
 
-    # shorten the contexts stepwise while the positive and
-    # the negative contexts stay disjoint
-    p_contexts = pos_contexts.copy()
-    n_contexts = neg_contexts.copy()
-    left_incomplete = True
-    right_incomplete = True
-    while left_incomplete or right_incomplete:
-        # print(left_len, right_len) ##
-        if left_incomplete and left_len > 0:
-            new_p_contexts = shorten_contexts(p_contexts, left_len-1, right_len)
-            new_n_contexts = shorten_contexts(n_contexts, left_len-1, right_len)
-            if new_p_contexts.isdisjoint(new_n_contexts):
-                # print("still disjoint") ##
-                p_contexts = new_p_contexts
-                n_contexts = new_n_contexts
-                left_len = left_len - 1
-            else:
-                if cfg.verbosity >= 25:
-                    print("left side now complete") ##
-                    ppcontexts(new_p_contexts & new_n_contexts,
-                               "intersection of new pos and neg contexts")
-                left_incomplete = False
-        elif right_incomplete and right_len > 0:
-            new_p_contexts = shorten_contexts(p_contexts, left_len, right_len-1)
-            new_n_contexts = shorten_contexts(n_contexts, left_len, right_len-1)
-            if new_p_contexts.isdisjoint(new_n_contexts):
-                # print("still disjoint") ##
-                p_contexts = new_p_contexts
-                n_contexts = new_n_contexts
-                right_len = right_len - 1
-            else:
-                # print("left side now complete") ##
-                right_incomplete = False
+def truncate_right(syms_to_remain, pos_context_set, neg_context_set):
+    if cfg.verbosity >= 25:
+        print(f"entering truncate_right, {syms_to_remain =}") ####
+        print(f"{pos_context_set = }") ####
+        print(f"{neg_context_set = }") ####
+    new_pos_context_set = set()
+    new_neg_context_set = set()
+    for left_context, right_context in pos_context_set:
+        right_lst = right_context.split()
+        new_rc = " ".join(right_lst[0:syms_to_remain])
+        # print(f"{new_rc = }") ####
+        new_pos_context_set.add((left_context, new_rc))
+    for left_context, right_context in neg_context_set:
+        right_lst = right_context.split()
+        new_rc = " ".join(right_lst[0:syms_to_remain])
+        new_neg_context_set.add((left_context, new_rc))
+
+    if cfg.verbosity >= 25:
+        print(f"leaving truncate_right, {syms_to_remain =}") ####
+        print(f"{new_pos_context_set = }") ####
+        print(f"{new_neg_context_set = }") ####
+    return (new_pos_context_set, new_neg_context_set)
+        
+def surface_all(pos_context_set, neg_context_set):
+    pairsym2outsym_map = {}
+    for ctx_set in [pos_context_set, neg_context_set]:
+        for ctx_pair in ctx_set:
+            for ctx in ctx_pair:
+                sym_lst = ctx.split()
+                # print(f"{sym_lst = }") ####
+                for pair_sym in sym_lst:
+                    outsym = pairsym2sympair(pair_sym)[1]
+                    # print(f"{pair_sym = }, {outsym = }") ####
+                    if outsym == ".#.":
+                        pairsym2outsym_map[pair_sym] = outsym
+                    else:
+                        pairsym2outsym_map[pair_sym] = ":" + outsym
+    # print(f"{pairsym2outsym_map = }") ####
+    new_pos_context_set = set()
+    new_neg_context_set = set()
+    for left_context, right_context in pos_context_set:
+        new_left_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
+                        for pairsym in left_context.split()]
+        new_rght_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
+                        for pairsym in right_context.split()]
+        new_pos_context_set.add((" ".join(new_left_ctx),
+                                 " ".join(new_rght_ctx)))
+    for left_context, right_context in neg_context_set:
+        new_left_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
+                        for pairsym in left_context.split()]
+        new_rght_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
+                        for pairsym in right_context.split()]
+        new_neg_context_set.add((" ".join(new_left_ctx),
+                                 " ".join(new_rght_ctx)))
+    if cfg.verbosity >= 20:
+        print(f"{new_pos_context_set = }") ####
+        print(f"{new_neg_context_set = }") ####
+    return (new_pos_context_set, new_neg_context_set)
+
+
+def search_reductions(agenda, pos_context_set, neg_context_set):
+    """context_sets -- (positive_context_sets, negative_context_sets) where these sets are space-separated strings of pair symbols.
+"""
+    if cfg.verbosity >= 10:
+        print(f"{agenda = }") ####
+
+    if not agenda:                  # No more reductions to do.
+        # print(f"final result: {pos_context_set = }, {neg_context_set = }") ####
+        return pos_context_set, neg_context_set
+
+    task = agenda.pop()             # Next step to be tested.
+    # print(f"{task = }") ####
+    op = task[0]
+
+    # -- Start with truncatig all and then truncating less and less --
+    if op == "truncate-left":
+        [op, target_len] = task
+        max_ll = max_left_len(pos_context_set,
+                              neg_context_set)
+        # print(f"{target_len = }, {max_ll = }") ####
+        if target_len <= max_ll:            # possible to truncate
+            # print(f"truncating, {target_len = }") ####
+            (new_pos_ctx_set,
+             new_neg_ctx_set) = truncate_left(target_len,
+                                              pos_context_set,
+                                              neg_context_set)
+            good = new_pos_ctx_set.isdisjoint(new_neg_ctx_set)
         else:
-            break
-    if cfg.verbosity >= 25:
-        ppcontexts(p_contexts, "positive contexts")
-        ppcontexts(n_contexts, "negative contexts")
-    return p_contexts, n_contexts
+            good = False
+        # print(f"{good = }") ####
+        if (not good) and (target_len < max_ll):  # Possible to go on trunc
+            new_task = [op, target_len+1]
+            # print(f"failing but pushing {new_task = }") ####
+            agenda.append(new_task)     # Next attempt pushed into agenda
+
+        if good:
+            # print("succeeding and no further tasks created from this") ####
+            return search_reductions(agenda,
+                                     new_pos_ctx_set,
+                                     new_neg_ctx_set)
+        else:
+            return search_reductions(agenda,
+                                     pos_context_set,
+                                     neg_context_set)
+
+    # -- Start with truncatig all and then extend incrementally --
+    elif op == "truncate-right":
+        [op, target_len] = task
+        max_rl = max_right_len(pos_context_set,
+                               neg_context_set)
+        # print(f"{target_len = }, {max_rl = }") ####
+        if target_len > max_rl:            # Not possible to truncate
+            # print("cannot go on with truncating less, giving up") ####
+            good = False
+        else:
+            # print(f"truncating, {target_len = }") ####
+            (new_pos_ctx_set,
+             new_neg_ctx_set) = truncate_right(target_len,
+                                               pos_context_set,
+                                               neg_context_set)
+            good = new_pos_ctx_set.isdisjoint(new_neg_ctx_set)
+        # print(f"{good = }") ####
+        if (not good) and (target_len < max_rl):  # Possible to go on trunc
+            new_task = [op, target_len+1]
+            # print(f"failing but pushing {new_task = }") ####
+            agenda.append(new_task)     # Next attempt pushed into agenda
+
+        if good:
+            # print("succeeding and no further tasks created from this") ####
+            return search_reductions(agenda,
+                                     new_pos_ctx_set,
+                                     new_neg_ctx_set)
+        else:
+            return search_reductions(agenda,
+                                     pos_context_set,
+                                     neg_context_set)
+    elif op == "surface-all":
+        (new_pos_ctx_set,
+         new_neg_ctx_set) = surface_all(pos_context_set,
+                                        neg_context_set)
+        good = new_pos_ctx_set.isdisjoint(new_neg_ctx_set)
+        # print(f"{good = }") ####
+        if good:
+            # -- Proceed with the reduced context sets --
+            # print("succeeding and no further tasks created from this") ####
+            # print(f"{agenda = }") ####
+            return search_reductions(agenda,
+                                     new_pos_ctx_set,
+                                     new_neg_ctx_set)
+        else:
+            return search_reductions(agenda,
+                                     pos_context_set,
+                                     neg_context_set)
+
 
 def print_rule(pair_symbol, operator, contexts):
     """Prints one rule"""
@@ -164,8 +281,8 @@ def print_rule(pair_symbol, operator, contexts):
 
 def context_to_output_str(pairsym_str):
     """Converts a pair symbol string into its surface string"""
-    pairsym_lst = pairsym_str.split(" ")
-    sympair_lst = [cfg.pairsym2sympair(psym) for psym in pairsym_lst]
+    pairsym_lst = pairsym_str.split()
+    sympair_lst = [pairsym2sympair(psym) for psym in pairsym_lst]
     outsym_lst = [outsym for insym, outsym in sympair_lst]
     return "".join(outsym_lst)
 
@@ -174,6 +291,8 @@ def main():
     version = cfg.timestamp(__file__)
     
     import argparse
+    import json
+    
     arpar = argparse.ArgumentParser(
         "twol-discov",
         description="Deduces two-level rules out of"\
@@ -192,10 +311,9 @@ def main():
         " all morphophonemes in the example file",
         default="")
     arpar.add_argument(
-        "-d", "--direction",
-        choices=["left","right"],
-        help="truncate first left or right",
-        default="left")
+        "-a", "--agenda",
+        help="initial agenda for the context reductions",
+        default="")
 
     arpar.add_argument(
         "-v", "--verbosity",
@@ -205,63 +323,74 @@ def main():
     args = arpar.parse_args()
 
     cfg.verbosity = args.verbosity
-    
+
+    # -- read in all examples --
     twexamp.read_examples(filename_lst=[args.examples], build_fsts=False)
     if cfg.verbosity >= 10:
         print("--- all examples read in ---")
     
     for insym in cfg.input_symbol_set:
         pair_symbols_for_input[insym] = set()
-    for outsym in cfg.output_symbol_set:
-        pair_symbols_for_output[outsym] = set()
     for insym, outsym in cfg.symbol_pair_set:
-        pair_symbol = cfg.sympair2pairsym(insym, outsym)
+        pair_symbol = sympair2pairsym(insym, outsym)
         pair_symbols_for_input[insym].add(pair_symbol)
-        pair_symbols_for_output[outsym].add(pair_symbol)
 
-    if args.symbol:
-        if args.symbol in pair_symbols_for_input:
-            pair_set = pair_symbols_for_input[args.symbol]
-            pair_lst = []
-            for pairsym in pair_set:
-                insym, outsym = cfg.pairsym2sympair(pairsym)
-                pair_lst.append((insym, outsym))
-            if cfg.verbosity >= 10:
-                print("pair_lst:", pair_lst)
-        elif args.symbol in cfg.pair_symbol_set:
-            pair_lst = [cfg.pairsym2sympair(args.symbol)]
-            pair_set = set(pair_lst)
-        else:
-            print("Symbol {} does not occur in the examples"
-                  .format(args.symbol))
-            lst = list(cfg.pair_symbol_set)
-            print("The following pair-symbols would be valid:\n",
-                  " ".join(sorted(lst)))
-            exit("")
+    # -- expand a plain input symbol into a list of symbol pairs --
+    if args.symbol in pair_symbols_for_input:
+        pair_lst = []
+        for pairsym in pair_symbols_for_input[args.symbol]:
+            (insym, outsym) = pairsym2sympair(pairsym)
+            pair_lst.append((insym, outsym))
+        if cfg.verbosity >= 10:
+            print(f"{pair_lst = }")
+    elif args.symbol in cfg.pair_symbol_set:
+        pair_lst = [pairsym2sympair(args.symbol)]
     else:
-        pair_lst = sorted(cfg.symbol_pair_set)
+        print(f"Symbol {args.symbol!r} does not occur in the examples")
+        lst = list(cfg.input_symbol_set)
+        print("The following input symbols would be valid:\n",
+              " ".join(sorted(lst)))
+        exit("")
 
+    if args.agenda:
+        agenda_f = open(args.agenda, 'r')
+        task_lst = list(json.load(agenda_f))
+        print(f"{task_lst = }") ####
+        initial_agenda = deque(reversed(task_lst))
+    else:
+        initial_agenda = deque([
+            ["truncate-right", 0],
+            ["truncate-left", 0],
+            ["surface-all"],
+        ])
+        
+    # -- collect the minimal contexts for each sym pair --
+    pos_neg_contexts_lst = []
     for insym, outsym in pair_lst:
         if len(pair_symbols_for_input[insym]) <= 1:
             continue
-        pair_symbol = cfg.sympair2pairsym(insym, outsym)
+        pair_symbol = sympair2pairsym(insym, outsym)
 
-        positive_contexts, negative_contexts = relevant_contexts(pair_symbol)
-        pos_contexts, neg_contexts = minimal_contexts(pair_symbol,
-                                                      positive_contexts.copy(),
-                                                      negative_contexts.copy(),
-                                                      args.direction)
+        (positive_contexts,
+         negative_contexts) = relevant_contexts(pair_symbol)
 
-        if len(pos_contexts) <= len(neg_contexts) or cfg.verbosity > 1:
+        agenda = initial_agenda.copy()
+        (pos_contexts,
+         neg_contexts) = search_reductions(agenda,
+                                           positive_contexts.copy(),
+                                           negative_contexts.copy())
+
+    # -- print the results collected
+        if len(pos_contexts) <= len(neg_contexts) or cfg.verbosity > 0:
             print_rule(pair_symbol, "=>", pos_contexts)
-        if len(pos_contexts) > len(neg_contexts) or cfg.verbosity > 1:
+        if len(pos_contexts) > len(neg_contexts) or cfg.verbosity > 0:
             print_rule(pair_symbol, "/<=", neg_contexts)
 
-        if args.verbosity > 0:
+        if cfg.verbosity > 1:
             for lc, rc in positive_contexts:
                 l_str = context_to_output_str(lc[3:])
                 r_str = context_to_output_str(rc[:-3])
-                print("!{:>29}<{}>{}".format(l_str, outsym, r_str))
+                print(f"!{l_str:>29}<{outsym}>{r_str}")
 
 if __name__ == "__main__":
     main()
