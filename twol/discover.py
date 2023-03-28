@@ -75,13 +75,6 @@ subsets_dict = {
     "Unrounded": [":i", ":e", ":ä", ":a"],
 }
 
-
-def ppcontexts(ctxs, title):
-    """Print a list of context for tracing and debugging"""
-    print(title)
-    for lc, rc in sorted(ctxs):
-        print(lc, "_", rc)
-
 def max_left_len(pos_context_set, neg_context_set):
     maxposlen = max([len(lc.split()) for lc, rc in pos_context_set])
     maxneglen = max([len(lc.split()) for lc, rc in neg_context_set])
@@ -92,7 +85,9 @@ def max_right_len(pos_context_set, neg_context_set):
     maxneglen = max([len(rc.split()) for lc, rc in neg_context_set])
     return max(maxposlen, maxneglen)
 
+#   =============
 def truncate_left(syms_to_remain, pos_context_set, neg_context_set):
+#   =============
     if cfg.verbosity >= 25:
         print(f"entering truncate_left, {syms_to_remain =}") ####
         print(f"{pos_context_set = }") ####
@@ -115,9 +110,10 @@ def truncate_left(syms_to_remain, pos_context_set, neg_context_set):
         print(f"{new_pos_context_set = }") ####
         print(f"{new_neg_context_set = }") ####
     return (new_pos_context_set, new_neg_context_set)
-        
 
+#   ==============
 def truncate_right(syms_to_remain, pos_context_set, neg_context_set):
+#   ==============
     if cfg.verbosity >= 25:
         print(f"entering truncate_right, {syms_to_remain =}") ####
         print(f"{pos_context_set = }") ####
@@ -139,8 +135,10 @@ def truncate_right(syms_to_remain, pos_context_set, neg_context_set):
         print(f"{new_pos_context_set = }") ####
         print(f"{new_neg_context_set = }") ####
     return (new_pos_context_set, new_neg_context_set)
-        
+
+#   ===========
 def surface_all(pos_context_set, neg_context_set):
+#   ===========
     pairsym2outsym_map = {}
     for ctx_set in [pos_context_set, neg_context_set]:
         for ctx_pair in ctx_set:
@@ -176,8 +174,36 @@ def surface_all(pos_context_set, neg_context_set):
         print(f"{new_neg_context_set = }") ####
     return (new_pos_context_set, new_neg_context_set)
 
+#   ==========
+def reduce_set(set_name, surf_symbol_lst, pos_context_set, neg_context_set):
+#   ==========
+    # print(f"{surf_symbol_lst = }") ####
+    symbol_set = set(surf_symbol_lst)
+    new_pos_context_set = set()
+    new_neg_context_set = set()
+    for left_context, right_context in pos_context_set:
+        new_left_ctx = [set_name if pairsym in symbol_set else pairsym
+                        for pairsym in left_context.split()]
+        new_rght_ctx = [set_name if pairsym in symbol_set else pairsym
+                        for pairsym in right_context.split()]
+        new_pos_context_set.add((" ".join(new_left_ctx),
+                                 " ".join(new_rght_ctx)))
+    for left_context, right_context in neg_context_set:
+        new_left_ctx = [set_name if pairsym in symbol_set else pairsym
+                        for pairsym in left_context.split()]
+        new_rght_ctx = [set_name if pairsym in symbol_set else pairsym
+                        for pairsym in right_context.split()]
+        new_neg_context_set.add((" ".join(new_left_ctx),
+                                 " ".join(new_rght_ctx)))
+    if cfg.verbosity >= 20:
+        print(f"{new_pos_context_set = }") ####
+        print(f"{new_neg_context_set = }") ####
+    return (new_pos_context_set, new_neg_context_set)
+    
 
+#   =================
 def search_reductions(agenda, pos_context_set, neg_context_set):
+#   =================
     """context_sets -- (positive_context_sets, negative_context_sets) where these sets are space-separated strings of pair symbols.
 """
     if cfg.verbosity >= 10:
@@ -192,22 +218,28 @@ def search_reductions(agenda, pos_context_set, neg_context_set):
     op = task[0]
 
     # -- Start with truncatig all and then truncating less and less --
-    if op == "truncate-left":
+    if op in {"truncate-left", "truncate-right"}:
         [op, target_len] = task
-        max_ll = max_left_len(pos_context_set,
-                              neg_context_set)
-        # print(f"{target_len = }, {max_ll = }") ####
-        if target_len <= max_ll:            # possible to truncate
-            # print(f"truncating, {target_len = }") ####
-            (new_pos_ctx_set,
-             new_neg_ctx_set) = truncate_left(target_len,
-                                              pos_context_set,
-                                              neg_context_set)
+        if op == "truncate-left":
+            max_len = max_left_len(pos_context_set, neg_context_set)
+        else:
+            max_len = max_right_len(pos_context_set, neg_context_set)
+        if target_len <= max_len:           # possible to truncate
+            if op == "truncate-left":
+                (new_pos_ctx_set,
+                 new_neg_ctx_set) = truncate_left(target_len,
+                                                  pos_context_set,
+                                                  neg_context_set)
+            else:
+                (new_pos_ctx_set,
+                 new_neg_ctx_set) = truncate_right(target_len,
+                                                   pos_context_set,
+                                                   neg_context_set)
             good = new_pos_ctx_set.isdisjoint(new_neg_ctx_set)
         else:
             good = False
         # print(f"{good = }") ####
-        if (not good) and (target_len < max_ll):  # Possible to go on trunc
+        if (not good) and (target_len < max_len): # Possible to go on trunc
             new_task = [op, target_len+1]
             # print(f"failing but pushing {new_task = }") ####
             agenda.append(new_task)     # Next attempt pushed into agenda
@@ -222,47 +254,19 @@ def search_reductions(agenda, pos_context_set, neg_context_set):
                                      pos_context_set,
                                      neg_context_set)
 
-    # -- Start with truncatig all and then extend incrementally --
-    elif op == "truncate-right":
-        [op, target_len] = task
-        max_rl = max_right_len(pos_context_set,
-                               neg_context_set)
-        # print(f"{target_len = }, {max_rl = }") ####
-        if target_len > max_rl:            # Not possible to truncate
-            # print("cannot go on with truncating less, giving up") ####
-            good = False
-        else:
-            # print(f"truncating, {target_len = }") ####
+    elif (op == "surface-all") or (op.count("-") == 0):
+        if op == "surface-all":
             (new_pos_ctx_set,
-             new_neg_ctx_set) = truncate_right(target_len,
-                                               pos_context_set,
-                                               neg_context_set)
-            good = new_pos_ctx_set.isdisjoint(new_neg_ctx_set)
-        # print(f"{good = }") ####
-        if (not good) and (target_len < max_rl):  # Possible to go on trunc
-            new_task = [op, target_len+1]
-            # print(f"failing but pushing {new_task = }") ####
-            agenda.append(new_task)     # Next attempt pushed into agenda
-
-        if good:
-            # print("succeeding and no further tasks created from this") ####
-            return search_reductions(agenda,
-                                     new_pos_ctx_set,
-                                     new_neg_ctx_set)
+             new_neg_ctx_set) = surface_all(pos_context_set,
+                                            neg_context_set)
         else:
-            return search_reductions(agenda,
-                                     pos_context_set,
-                                     neg_context_set)
-    elif op == "surface-all":
-        (new_pos_ctx_set,
-         new_neg_ctx_set) = surface_all(pos_context_set,
-                                        neg_context_set)
+            (new_pos_ctx_set,
+             new_neg_ctx_set) = reduce_set(op, task[1:],
+                                           pos_context_set,
+                                           neg_context_set)
         good = new_pos_ctx_set.isdisjoint(new_neg_ctx_set)
         # print(f"{good = }") ####
         if good:
-            # -- Proceed with the reduced context sets --
-            # print("succeeding and no further tasks created from this") ####
-            # print(f"{agenda = }") ####
             return search_reductions(agenda,
                                      new_pos_ctx_set,
                                      new_neg_ctx_set)
@@ -355,26 +359,24 @@ def main():
     if args.agenda:
         agenda_f = open(args.agenda, 'r')
         task_lst = list(json.load(agenda_f))
-        print(f"{task_lst = }") ####
-        initial_agenda = deque(reversed(task_lst))
+        # print(f"{task_lst = }") ####
+        agenda_lst = task_lst
     else:
-        initial_agenda = deque([
+        agenda_lst = [
             ["truncate-right", 0],
             ["truncate-left", 0],
             ["surface-all"],
-        ])
+        ]
         
     # -- collect the minimal contexts for each sym pair --
     pos_neg_contexts_lst = []
     for insym, outsym in pair_lst:
-        if len(pair_symbols_for_input[insym]) <= 1:
-            continue
         pair_symbol = sympair2pairsym(insym, outsym)
 
         (positive_contexts,
          negative_contexts) = relevant_contexts(pair_symbol)
 
-        agenda = initial_agenda.copy()
+        agenda = deque(reversed(agenda_lst.copy()))
         (pos_contexts,
          neg_contexts) = search_reductions(agenda,
                                            positive_contexts.copy(),

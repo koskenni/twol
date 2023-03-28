@@ -1,5 +1,5 @@
 [
-    ["truncate-right", 2],
-    ["truncate-left", 1],
+    ["truncate-left", 0],
+    ["truncate-right", 0],
     ["surface-all"]
 ]
