@@ -1,0 +1,45 @@
+[
+  [
+    ["truncate-left", 0],
+    ["truncate-right", 0]
+  ],
+  [
+    ["truncate-left", 0],
+    ["truncate-right", 0],
+    ["surface-all"]
+  ],
+  [
+    ["surface-all"],
+    ["Vowel", ":i", ":y", ":e", ":ö", ":ä", ":u", ":o", ":a"],
+    ["Consonant", ":b", ":d", ":f", "g:", ":h", ":k", ":l", ":m",
+     ":n", ":p", ":r", ":s", ":t", ":v"],
+    ["truncate-left", 0],
+    ["truncate-right", 2]
+  ],
+  [
+    ["surface-all"],
+    ["Vowel", ":i", ":y", ":e", ":ö", ":ä", ":u", ":o", ":a"],
+    ["Consonant", ":b", ":d", ":f", "g:", ":h", ":k", ":l", ":m",
+     ":n", ":p", ":r", ":s", ":t", ":v"],
+    ["truncate-left", 4],
+    ["truncate-right", 0]
+  ],
+  [
+    ["truncate-left", 0],
+    ["surface-all"],
+    ["Vowel", ":i", ":y", ":e", ":ö", ":ä", ":u", ":o", ":a"],
+    ["Consonant", ":b", ":d", ":f", "g:", ":h", ":k", ":l", ":m",
+     ":n", ":p", ":r", ":s", ":t", ":v"],
+    ["truncate-right", 2]
+  ],
+  [
+    ["surface-all"],
+    ["truncate-right", 0],
+    ["C", ":b", ":d", ":f", "g:", ":h", ":k", ":l", ":m",
+     ":n", ":p", ":r", ":s", ":t", ":v"],
+    ["VN", ":i", ":e"],
+    ["VF", ":y", ":ö", ":ä"],
+    ["VB", ":u", ":o", ":a"],
+    ["truncate-left", 0]
+  ]
+]

@@ -25,6 +25,7 @@ release = '0.2'
 
 extensions = [
     'sphinx.ext.autodoc',
+    "sphinx_autodoc_typehints",
 #    'sphinx.ext.doctest',
 #    'sphinx.ext.intersphinx',
 #    'sphinx.ext.todo',
