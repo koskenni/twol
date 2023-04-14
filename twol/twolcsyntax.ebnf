@@ -9,8 +9,7 @@ def_start = define $ ;
 
 define = left:identifier op:'=' ~ right:expression ';' ;
 
-###identifier = token:/[a-záéíóúəüűőåäöčšťA-ZÜØÅÄÖ0-9]+/ ;
-identifier = token:/[^- \[\]\/<>=_;,.|&*+\\()]+/ ;
+identifier = /\b[^\W_][^\W_]+\b/ ;
 
 rule = double_arrow_rule | right_arrow_rule | exclusion_rule | output_coercion_rule | input_coercion_rule ;
 
@@ -62,10 +61,6 @@ Kleene_plus = expr:atom '+' ;
 
 Kleene_star = expr:atom '*' ;
 
-#Upper = expr:atom '.u' ;
-
-#Lower = expr:atom '.l' ;
-
 Morphophonemic = expr:atom '.m' ;
 
 Surface = expr:atom '.s' ;
@@ -75,16 +70,23 @@ One_but_not = '\\' expr:atom ;
 atom
     = '[' @:subexpression ~ ']'
     | '(' @:optexpression ~ ')'
-    | symbol_or_pair
+    | pair
+    | outsym
+    | defined
     | boundary ;
 
 subexpression = expr:expression ;
 
 optexpression = expr:expression ;
 
-###symbol_or_pair = token:/[a-zåüäöõšžA-ZØ:{}'´`]+/ ;
-symbol_or_pair
-    = token:/([^- \[\]\/<>=_;,.|&*+\\()%]|%.)+/
+pair
+    = /(\{[^ _{}]+\}|):([^\W0-9_]\b|[']|%\W|)/
+    ;
+defined
+    = /\b[^\W_][^\W_]+\b/
+    ;
+outsym
+    = /\b[^\W0-9_]\b|[']|%[-%]/
     ;
 
 boundary = '.#.' ;

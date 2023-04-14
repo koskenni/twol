@@ -24,7 +24,7 @@ import twol.cfg as cfg
 
 import twol.twexamp as twexamp
 
-class TwolRegexSemantics(object):
+class DiscovDefSemantics(object):
 
     def define(self, ast):
         cfg.definitions[ast.left] = ast.right
@@ -34,124 +34,128 @@ class TwolRegexSemantics(object):
         string = ast.token.strip()
         return string
 
-    def right_arrow_rule(self, ast):
-        result = ("=>", ast.left, ast.right)
-        return result
-
-    def left_arrow_rule(self, ast):
-        result = ("<=", ast.left, ast.right)
-        return result
-
-    def double_arrow_rule(self, ast):
-        result = ("<=>", ast.left, ast.right)
-        return result
-
-    def exclusion_rule(self, ast):
-        result = ("/<=", ast.left, ast.right)
-        return result
-
-    def context_lst(self, ast):
-        result = ast.left.extend(ast.right)
-        return result
-
-    def context(self, ast):
-        lc = ast.left if ast.left else ""
-        rc = ast.right if ast.right else ""
-        result = [(lc, rc)]
-        return result
-
     def union(self, ast):
-        return "[{} | {}]".format(ast.left, ast.right)
+        return ast.left | ast.right
 
     def intersection(self, ast):
-        return "[{} & {}]".format(ast.left, ast.right)
+        return ast.left & ast.right
 
     def difference(self, ast):
-        return "[{} - {}]".format(ast.left, ast.right)
+        return ast.left - ast.right
 
-    def concatenation(self, ast):
-        return "[{} {}]".format(ast.left, ast.right)
+    def Morphophonemic(self, ast):
+        """Surface completion
 
-    #def composition(self, ast):
-    #    return "[{} .o. {}]".format(ast.left, ast.right)
+        Returns a set which contains valid pair symbols x:y
+        such that for x there is some pair x:z in the original set.
+        For a single symbol pair k:g.m it is equivalent to k:
+        """
+        pairsym_set = ast.expr.copy()
+        insym_set = set()
+        for sympair in pairsym_set:
+            insym, outsym = cfg.pairsym2sympair(pairsym)
+            insym_set.add(outsym)
+        for insymbol, outsymbol in cfg.symbol_pair_set:
+            if insymbol in insym_set:
+                result_set.add(cfg.sympaif2pairsym(insymbol, outsymbol))
+        return result_set
 
-    def crossproduct(self, ast):
-        return "[{} .x. {}]".format(ast.left, ast.right)
+    def Surface(self, ast):
+        """Morphophonemic completion
 
-    def Kleene_star(self, ast):
-        return "[{}]*".format(ast.expr)
+        Returns a set which contais valid pair symbols whose
+        ouput side cepted by the output side of the argument.
+        For a single pair symbol k:g.s it is equivalent to :g
+        """
+        pairsym_set = ast.expr.copy()
+        result_set = set()
+        outsym_set = set()
+        for pairsym in pairsym_set:
+            insym, outsym = cfg.pairsym2sympair(pairsym)
+            outsym_set.add(outsym)
+        for insymbol, outsymbol in cfg.symbol_pair_set:
+            if outsymbol in outsym_set:
+                result_set.add(cfg.sympaif2pairsym(insymbol, outsymbol))
+        return result_set
 
-    def Kleene_plus(self, ast):
-        return "[{}]+".format(ast.expr)
+    def pair(self, ast):
+        # print(f"in pair: {ast = }") ####
+        up, lo = ast
+        up_quoted = re.sub(r"([{}])", r"%\1", up)
+        lo_quoted = lo                         ### ????
+        lo = re.sub(r"%(.)", r"\1", lo_quoted)
+        # print(f"in pair: {up= }, {lo = }") ####
 
-    #def Upper(self, ast):
-    #    return "[{}].u".format(ast.expr)
-
-    #def Lower(self, ast):
-    #    return "[{}].l".format(ast.expr)
-
-    def One_but_not(self, ast):
-        return r"[PI - [{}]]".format(ast.expr)
-
-    def optexpression(self, ast):
-        return "({})".format(ast.expr)
-
-    def subexpression(self, ast):
-        return "[{}]".format(ast.expr)
-
-    def symbol_or_pair(self, ast):
-        string = ast.token.strip()
         failmsg = []
-        pat = re.compile(r"""^
-        (?P<up>[^{}:\s]*
-         |
-         \{[^{}:\s]+\})
-        :
-        (?P<lo>[^{}:\s]*)
-        $""", re.X)
-        m = re.match(pat, string)
-        if m:                       # it is a pair with a colon
-            up = m.group("up")
-            up_quoted = re.sub(r"([{}])", r"%\1", up)
-            lo = m.group("lo")
-            if up and (up not in cfg.input_symbol_set):
-                failmsg.append("input symbol '{}'".format(up))
-            if lo and (lo not in cfg.output_symbol_set):
-                failmsg.append("output symbol '{}'".format(lo))
-            if up and lo and ((up, lo) not in cfg.symbol_pair_set):
-                failmsg.append("symbol pair '{}'".format(string))
-            if failmsg:
-                cfg.error_message = " and ".join(failmsg) + " not in alphabet"
-                raise FailedSemantics(cfg.error_message)
-            elif up and lo:         # it is a valid pair with a colon
-                return "{}:{}".format(up_quoted, lo)
-            elif up and (not lo):
-                return "[{} .o. PI]".format(up_quoted)
-            elif (not up) and lo:
-                return "[PI .o. {}]".format(lo)
-            else:
-                return "PI"
-        m = re.fullmatch(r"[^{}\s:]+", string)
-        if m:                       # its either a defined sym or a surf ch
-            if string in cfg.definitions:
-                return "{}".format(string)
-            elif (string in cfg.output_symbol_set) and (string in cfg.input_symbol_set):
-                return "{}:{}".format(string, string)
-            elif string in {'BEGIN', 'END'}:
-                return string
-        cfg.error_message = "'" + string + "' is an invalid pair/definend symbol"
-        raise FailedSemantics(cfg.error_message)
+        if up and (up not in cfg.input_symbol_set):
+            failmsg.append(f"input symbol '{up}'")
+        if lo and (lo not in cfg.output_symbol_set):
+            failmsg.append(f"outputput symbol '{lo}'")
+        if (up and lo and
+            (up, lo) not in cfg.symbol_pair_set):
+               failmsg.append(f"symbol pair '{up}:{lo}'")
+        if failmsg:
+            cfg.error_message = " and ".join(failmsg) + " not in alphabet"
+            raise FailedSemantics(cfg.error_message)
+
+        if up and lo:         # it is e.g. "{aØ}:a"
+            result_set = set([f"{up}:{lo}"])
+            return result_set
+        elif up and (not lo):   # it is e.g. "{aØ}:"
+            result_set = set()
+            for insym, outsym in cfg.symbol_pair_set:
+                if insym == up:
+                    result_set.add(cfg.sympair2pairsym(insym, outsym))
+            return result_set
+        elif (not up) and lo:   # it is e.g. ":i"
+            result_set = set()
+            for insym, outsym in cfg.symbol_pair_set:
+                if outsym == lo:
+                    result_set.add(cfg.sympair2pairsym(insym, outsym))
+            return result_set
+        else:                   # it is ":"
+            result_set = cfg.pair_symbol_set.copy()
+            return result_set
+
+    def defined(self, ast):
+        # print(f"in defined: {ast = }") ####
+        string = ast
+        if string in cfg.definitions:
+            # print(f"in defined: {string} is a defined symbol") ####
+            result_set = cfg.definitions[string].copy()
+            return result_set
+        else:
+            cfg.error_message = f"in defined: {string} is not defined"
+            raise FailedSemantics(cfg.error_message)
+
+    def outsym(self, ast):
+        # print(f"in outsym: {ast = }") ####
+        string = ast
+        lo_quoted = string                      ### ????
+        lo = re.sub(r"%(.)", r"\1", lo_quoted)
+        # print(f"in outsym: {lo = }, {lo_quoted = }") ####
+        if (lo in cfg.output_symbol_set and
+            (lo,lo) in cfg.symbol_pair_set):
+            # print(f"symbol_or_pair: {string} is a surface symbol") ####
+            result_set =  set(cfg.sympair2pairsym(lo, lo))
+            return result_set
+        else:
+            cfg.error_message = f"in outsym: {string} is not in alphabet"
+            raise FailedSemantics(cfg.error_message)
+
 
 class TwolFstSemantics(object):
 
     def define(self, ast):
         expr_fst = ast.right.copy()
         def_name = ast.left
+        # print(f"define: {def_name = }") ####
         cfg.definitions[def_name] = expr_fst
         return ("=", ast.left, ast.right)
     
     def identifier(self, ast):
-        string = ast.token.strip()
+        # print(f"in identifier: {ast = }") ####
+        string = ast.strip()
         return string
 
     def right_arrow_rule(self, ast):
@@ -195,7 +199,8 @@ class TwolFstSemantics(object):
         return result
 
     def union(self, ast):
-        name = "[{} | {}]".format(ast.left.get_name(), ast.right.get_name())
+        # print(f"in union: {ast = }") ####
+        name = "f[{ast.left.get_name()} | {ast.right.get_name()}]"
         result_fst = ast.left.copy()
         result_fst.disjunct(ast.right)
         result_fst.minimize()
@@ -203,7 +208,7 @@ class TwolFstSemantics(object):
         return result_fst
 
     def intersection(self, ast):
-        name = "[{} & {}]".format(ast.left.get_name(), ast.right.get_name())
+        name = f"[{ast.left.get_name()} & {ast.right.get_name()}]"
         result_fst = ast.left.copy()
         result_fst.conjunct(ast.right)
         result_fst.minimize()
@@ -211,7 +216,7 @@ class TwolFstSemantics(object):
         return result_fst
 
     def difference(self, ast):
-        name = "[{} - {}]".format(ast.left.get_name(), ast.right.get_name())
+        name = f"[{ast.left.get_name()} - {ast.right.get_name()}]"
         result_fst = ast.left.copy()
         result_fst.minus(ast.right)
         result_fst.minimize()
@@ -219,30 +224,15 @@ class TwolFstSemantics(object):
         return result_fst
 
     def concatenation(self, ast):
-        name = "[{} {}]".format(ast.left.get_name(), ast.right.get_name())
+        name = f"[{ast.left.get_name()} {ast.right.get_name()}]"
         result_fst = ast.left.copy()
         result_fst.concatenate(ast.right)
         result_fst.minimize()
         result_fst.set_name(name)
         return result_fst
 
-    #def composition(self, ast):
-    #    name = "[{} .o. {}]".format(ast.left.get_name(), ast.right.get_name())
-    #    result_fst = ast.left.copy()
-    #    result_fst.compose(ast.right)
-    #    result_fst.minimize()
-    #    result_fst.set_name(name)
-    #    return result_fst
-
-    def crossproduct(self, ast):
-        name = "[{} .x. {}]".format(ast.left.get_name(), ast.right.get_name())
-        result_fst = ast.left.copy()
-        result_fst.cross_product(ast.right)
-        result_fst.set_name(name)
-        return result_fst
-
     def Kleene_star(self, ast):
-        name = "[{}]*".format(ast.expr.get_name())
+        name = f"[{ast.expr.get_name()}]*"
         result_fst = ast.expr.copy()
         result_fst.repeat_star()
         result_fst.minimize()
@@ -250,39 +240,12 @@ class TwolFstSemantics(object):
         return result_fst
 
     def Kleene_plus(self, ast):
-        name = "[{}]+".format(ast.expr.get_name())
+        name = f"[{ast.expr.get_name()}]+"
         result_fst = ast.expr.copy()
         result_fst.repeat_plus()
         result_fst.minimize()
         result_fst.set_name(name)
         return result_fst
-
-    #def Upper(self, ast):
-    #    """Input projection
-
-    #    Note that the result is outside the Pi*, i.e. not a valid
-    #    two-level expression.  This operator should be avoided at all
-    #    costs.
-    #    """
-    #    name = "[{}].u".format(ast.expr.get_name())
-    #    result_fst = ast.expr.copy()
-    #    result_fst.input_project()
-    #    result_fst.set_name(name)
-    #    return result_fst
-
-    #def Lower(self, ast):
-    #    """Output projection
-
-    #    Note that the result is outside the Pi*, i.e. not a valid
-    #    two-level expression.  This operator should be avoided at all
-    #    costs.
-    #    """
-    #    name = "[{}].l".format(ast.expr.get_name())
-    #    result_fst = ast.expr.copy()
-    #    result_fst.output_project()
-    #    result_fst.minimize()
-    #    result_fst.set_name(name)
-    #    return result_fst
 
     def Morphophonemic(self, ast):
         """Surface completion
@@ -291,7 +254,7 @@ class TwolFstSemantics(object):
         input side is accepted by the input side of the argument.
         For a single symbol pair k:g it is equivalent to k:
         """
-        name = "[{}].m".format(ast.expr.get_name())
+        name = f"[{ast.expr.get_name()}].m"
         result_fst = ast.expr.copy()
         result_fst.input_project()
         all_pairs_fst = cfg.all_pairs_fst.copy()
@@ -307,7 +270,7 @@ class TwolFstSemantics(object):
         ouput side is accepted by the output side of the argument.
         For a single symbol pair k:g it is equivalent to :g
         """
-        name = "[{}].s".format(ast.expr.get_name())
+        name = f"[{ast.expr.get_name()}].s"
         temp_fst = ast.expr.copy()
         temp_fst.output_project()
         result_fst = cfg.all_pairs_fst.copy()
@@ -338,77 +301,77 @@ class TwolFstSemantics(object):
         result_fst.set_name(name)
         return result_fst
 
-    def symbol_or_pair(self, ast):
-        string = ast.token.strip()
+    def pair(self, ast):
+        # print(f"in pair: {ast = }") ####
+        up, lo = ast
+        up_quoted = re.sub(r"([{}])", r"%\1", up)
+        lo_quoted = lo                         ### ????
+        lo = re.sub(r"%(.)", r"\1", lo_quoted)
+        # print(f"in pair: {up= }, {lo = }") ####
+
         failmsg = []
-        pat = re.compile(r"""^
-        (?P<up>[^- \[\]\/<>=_;,.|&*+\\()\{\}]*
-               |
-               \{[^{}:\s]+\}
-        )
-        :
-        (?P<lo>( [^- \[\]\/<>=_;,.|&*+\\()\{\}]
-               | % [- \[\]\/<>=_;,.|&*+\\()\{\}%]
-               )*
-        )
-        $""", re.X)
-        m = re.match(pat, string)
-        if m:                       # it is a pair with a colon
-            up = m.group("up")
-            up_quoted = re.sub(r"([{}])", r"%\1", up)
-            lo_quoted = m.group("lo")
-            lo = re.sub(r"%(.)", r"\1", lo_quoted)
-            if up and (up not in cfg.input_symbol_set):
-                failmsg.append("input symbol '{}'".format(up))
-            if lo and (lo not in cfg.output_symbol_set):
-                failmsg.append("output symbol '{}'".format(lo))
-            if up and lo and ((up, lo) not in cfg.symbol_pair_set):
-                failmsg.append("symbol pair '{}'".format(string))
-            if failmsg:
-                cfg.error_message = " and ".join(failmsg) + " not in alphabet"
-                raise FailedSemantics(cfg.error_message)
-            elif up and lo:         # it is e.g. "{aØ}:a"
-                result_fst = hfst.regex(up_quoted + ':' + lo_quoted)
-                result_fst.set_name(string)
-                return result_fst
-            elif up and (not lo):   # it is e.g. "{aØ}:"
-                result_fst = hfst.regex(up_quoted)
-                result_fst.compose(cfg.all_pairs_fst)
-                result_fst.set_name(string)
-                return result_fst
-            elif (not up) and lo:   # it is e.g. ":i"
-                result_fst = cfg.all_pairs_fst.copy()
-                lo_fst = hfst.regex(lo_quoted)
-                result_fst.compose(lo_fst)
-                result_fst.set_name(string)
-                return result_fst
-            else:                   # it is ":"
-                result_fst = cfg.all_pairs_fst.copy()
-                result_fst.set_name("PI")
-                return result_fst
-        m = re.fullmatch(r"([^][|+*{}:\s%]|%[][|+*{}:\s%])+", string)
-        sym = re.sub(r"%(.)", r"\1", string)
-        if m:                       # its either a defined sym or a surf ch
-            if string in cfg.definitions:
-                result_fst = cfg.definitions[string].copy()
-                result_fst.set_name(string)
-                return result_fst
-            elif ((sym in cfg.output_symbol_set) and
-                  (sym in cfg.input_symbol_set)):
-                result_fst =  hfst.regex(string)
-                result_fst.set_name(sym)
-                return result_fst
-            elif string in {'BEGIN', 'END'}:
-                result_fst = hfst.regex(string)
-                result_fst.set_name(string)
-                return result_fst
-        cfg.error_message = ("'{}' is an invalid pair/definend symbol".
-                             format(string))
-        raise FailedSemantics(cfg.error_message)
+        if up and (up not in cfg.input_symbol_set):
+            failmsg.append(f"input symbol '{up}'")
+        if lo and (lo not in cfg.output_symbol_set):
+            failmsg.append(f"outputput symbol '{lo}'")
+        if (up and lo and
+            (up, lo) not in cfg.symbol_pair_set):
+               failmsg.append(f"symbol pair '{up}:{lo}'")
+        if failmsg:
+            cfg.error_message = " and ".join(failmsg) + " not in alphabet"
+            raise FailedSemantics(cfg.error_message)
+
+        if up and lo:         # it is e.g. "{aØ}:a"
+            result_fst = hfst.regex(up_quoted + ':' + lo_quoted)
+            result_fst.set_name(f"{up}:{lo}")
+            return result_fst
+        elif up and (not lo):   # it is e.g. "{aØ}:"
+            result_fst = hfst.regex(up_quoted)
+            result_fst.compose(cfg.all_pairs_fst)
+            result_fst.set_name(f"{up}:")
+            return result_fst
+        elif (not up) and lo:   # it is e.g. ":i"
+            result_fst = cfg.all_pairs_fst.copy()
+            lo_fst = hfst.regex(lo_quoted)
+            result_fst.compose(lo_fst)
+            result_fst.set_name(f":{lo}")
+            return result_fst
+        else:                   # it is ":"
+            result_fst = cfg.all_pairs_fst.copy()
+            result_fst.set_name("PI")
+            return result_fst
+
+    def defined(self, ast):
+        # print(f"in defined: {ast = }") ####
+        string = ast
+        if string in cfg.definitions:
+            # print(f"in defined: {string} is a defined symbol") ####
+            result_fst = cfg.definitions[string].copy()
+            result_fst.set_name(string)
+            return result_fst
+        else:
+            cfg.error_message = f"in defined: {string} is not defined"
+            raise FailedSemantics(cfg.error_message)
+
+    def outsym(self, ast):
+        # print(f"in outsym: {ast = }") ####
+        string = ast
+        lo_quoted = string                      ### ????
+        lo = re.sub(r"%(.)", r"\1", lo_quoted)
+        # print(f"in outsym: {lo = }, {lo_quoted = }") ####
+        if (lo in cfg.output_symbol_set and
+            (lo,lo) in cfg.symbol_pair_set):
+            # print(f"symbol_or_pair: {string} is a surface symbol") ####
+            result_fst =  hfst.regex(string)
+            result_fst.set_name(string)
+            return result_fst
+        else:
+            cfg.error_message = f"in outsym: {string} is not in alphabet"
+            raise FailedSemantics(cfg.error_message)
 
     def boundary(self, ast):
         result_fst = hfst.regex("END")
-        #print(result_fst)####
+        # print(result_fst)####
         result_fst.set_name(".#.")
         return result_fst
 
@@ -417,7 +380,6 @@ def init():
 
     grammar_file -- the name of the file containing the EBNF grammar
     for rules
-
     """
     import os
     dir = os.path.dirname(os.path.abspath(__file__))
@@ -436,13 +398,15 @@ def parse_rule(parser, line_nl, line_no, line_lst, start="expr_start"):
     start -- the element in the EBNF grammar where to start the parsing
 """
     line = line_nl.strip()
+    # print(f"{line = }") ####
+    # print(f"in parse_rule: {cfg.definitions.keys() = }") ####
     if (not line) or line[0] == '!':
         return "!", None, None  # it was a comment or an empty line
     rulepat = r"^.* +(=|<=|=>|<=>|/<=|<--) +.*$"
     try:
         m = re.match(rulepat, line)
         if m:
-            #print("groups:", m.groups())###
+            # print("groups:", m.groups()) ####
             if m.group(1) == '=':
                 op, name, expr_fst = parser.parse(line, start='def_start',
                                                   semantics=TwolFstSemantics())
@@ -458,7 +422,7 @@ def parse_rule(parser, line_nl, line_no, line_lst, start="expr_start"):
         print("ERROR WAS IN INPUT LINES:",
               line_no, "-", line_no + len(line_lst) - 1)
         print("".join(line_lst))
-        print("THE ERROR IS LIKELY ABOVE THE '^' OR BEFORE IT")
+        print("THE ERROR IS PROBABLY ABOVE THE '^' OR BEFORE IT")
         msg = str(e)
         lst = msg.split("\n")
         if len(lst) >= 3:

@@ -645,6 +645,7 @@ t o {tds}:s {ieØeØ}:Ø {ij}:i {Øh}:h {V}:i n
 h i r {trs}:s {ieØeØ}:i
 h i r {trs}:r {ieØeØ}:e n
 h i r {trs}:t {ieØeØ}:Ø {Øt}:t {aä}:ä
+h i r {trs}:r {ieØeØ}:r s s {aä}:ä
 h i r {trs}:t {ieØeØ}:e {nrs}:n {aä}:ä
 h i r {trs}:t {ieØeØ}:e {Øh}:Ø {V}:e n
 h i r {trs}:t {ieØeØ}:e {Øh}:h {V}:e n
@@ -1780,6 +1781,14 @@ h a l u {ØsnØtt}:n {aØaØØ}:Ø {nlrs}:n {uy}:u t
 h a l u {ØsnØtt}:t {aØaØØ}:Ø {dlnrtØ}:Ø {C}:Ø {aä}:a {aä}:a n
 h a l u {ØsnØtt}:t {aØaØØ}:Ø {tttØ}:Ø t i i n
 h a l u {ØsnØtt}:t {aØaØØ}:Ø {tttØ}:Ø t {uy}:u
+v i {pv}:p u
+v i {pv}:p u n {aä}:a
+v i {pv}:v u s s {aä}:a
+v i {pv}:v u l l {aä}:a
+v i {pv}:v u t t {aä}:a
+v i {pv}:v u {ij}:i s s {aä}:a
+v i {pv}:v u {ij}:i l l {aä}:a
+v i {pv}:v u {ij}:i t t {aä}:a
 v i {pv}:p u {ØsnØtt}:Ø {aØaØØ}:a n
 v i {pv}:p u {ØsnØtt}:s {aØaØØ}:Ø {i}:i {VØ}:Ø
 v i {pv}:v u {ØsnØtt}:n {aØaØØ}:Ø {nlrs}:n e {VØ}:e

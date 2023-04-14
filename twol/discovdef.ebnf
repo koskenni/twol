@@ -1,0 +1,48 @@
+@@grammar::DiscovDefSyntax
+@@left_recursion :: False
+
+def_start = define $ ;
+
+define = left:identifier op:'=' ~ right:expression ';' ;
+
+identifier = /\b[^\W_][^\W_]+\b/ ;
+
+expression = term ;
+
+term = union | difference | intersection | factor ;
+
+union = left:factor op:'|' ~ right:term ;
+
+difference = left:factor op:'-' ~ right:term ;
+
+intersection = left:factor op:'&' ~ right:term ;
+
+factor = unit ;
+
+unit = Morphophonemic
+    | Surface
+    | atom
+    ;
+
+Morphophonemic = expr:atom '.m' ;
+
+Surface = expr:atom '.s' ;
+
+atom
+    = '[' ~ @:expression ']'
+    | pair
+    | outsym
+    | defined
+    ;
+
+pair
+    = /(\{[^ _{}]+\}|):([^\W0-9_]\b|[']|%\W|)/
+    ;
+defined
+    = /\b[^\W_][^\W_]+\b/
+    ;
+outsym
+    = /\b[^\W0-9_]\b|[']|%[-%]/
+    ;
+
+
