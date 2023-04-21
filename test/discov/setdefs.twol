@@ -1,0 +1,22 @@
+VoSF = :ä | :ö | :y ;
+
+VoSB = :a | :o | :u ;
+
+VoSN = :e | :i ;
+
+Isuf = {ij}: ;
+Ii = :i ;
+
+ØH = {Øh}: ;
+
+VoS = VoSF | VoSB | VoSN ;
+VoM = VoS.m ;
+VoØ = VoM - VoS ;
+
+Ness = {nrs}: ;
+CoS = :b | :d | :h | :k | :l | :m | :n |
+      :p | :r | :s | :t | :v | j ;
+CoM = [CoS.m | {C}:] - Ness ;
+CoØ = CoM - CoS ;
+
+NØØØ = {nØØØ}:Ø ;

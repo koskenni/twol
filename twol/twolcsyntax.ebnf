@@ -80,7 +80,7 @@ subexpression = expr:expression ;
 optexpression = expr:expression ;
 
 pair
-    = /(\{[^ _{}]+\}|):([^\W0-9_]\b|[']|%\W|)/
+    = /(\{[^ _{}]+\}|):([^\W0-9_]\b|['§]|%\W|)/
     ;
 defined
     = /\b[^\W_][^\W_]+\b/
