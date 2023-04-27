@@ -20,3 +20,6 @@ CoM = [CoS.m | {C}:] - Ness ;
 CoØ = CoM - CoS ;
 
 NØØØ = {nØØØ}:Ø ;
+
+Suff = {Øh}: | {ii}: | {ij}: | [Øt}: |
+       {C}: | {dlnrtØ}: | {i}: | {nlrs}: | {tttØ}: ;
