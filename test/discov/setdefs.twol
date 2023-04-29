@@ -1,25 +1,24 @@
-VoSF = :ä | :ö | :y ;
+Suff = {Øh}: | {ii}: | {ij}: | {nrs}: | {Øt}: |
+       {C}: | {dlnrtØ}: | {i}: | {nlrs}: | {tttØ}: |
+       {CL}: | {PS}: ;
 
-VoSB = :a | :o | :u ;
+VowSF = :ä | :ö | :y ;
+VowSB = :a | :o | :u ;
+VowSN = :e | :i ;
+VowS = VowSF | VowSB | VowSN ;
+VowM = VowS.m ;
+VowØ = VowM - VowS ;
+VoS = VowS - Suff ;
+VoM = VowS.m - Suff ;
+VoØ = VoM - VowS ;
 
-VoSN = :e | :i ;
-
-Isuf = {ij}: ;
-Ii = :i ;
-
-ØH = {Øh}: ;
-
-VoS = VoSF | VoSB | VoSN ;
-VoM = VoS.m ;
-VoØ = VoM - VoS ;
-
-Ness = {nrs}: ;
-CoS = :b | :d | :h | :k | :l | :m | :n |
+ConS = :b | :d | :h | :k | :l | :m | :n |
       :p | :r | :s | :t | :v | j ;
-CoM = [CoS.m | {C}:] - Ness ;
-CoØ = CoM - CoS ;
+ConM = ConS.m ;
+ConØ = ConM - ConS ;
+CoM = ConS.m - Suff ;
+CoØ = CoM - ConS ;
 
-NØØØ = {nØØØ}:Ø ;
+VoCoS = VowS | ConS ;
 
-Suff = {Øh}: | {ii}: | {ij}: | [Øt}: |
-       {C}: | {dlnrtØ}: | {i}: | {nlrs}: | {tttØ}: ;
+SuffI = {ij}: ;

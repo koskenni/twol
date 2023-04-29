@@ -13,6 +13,8 @@ from collections import deque, defaultdict
 
 import twol.cfg as cfg
 from twol.cfg import pairsym2sympair, sympair2pairsym, pair_symbol_set
+from twol.cfg import definitions, symbol_pair_set
+from twol.cfg import input_symbol_set, output_symbol_set
 import twol.twexamp as twexamp
 from typing import Dict, Set, Tuple
 
@@ -160,16 +162,36 @@ def reduce_set(set_name: str,
     new_pos_context_set: ContextSet = set()
     new_neg_context_set: ContextSet = set()
     for left_context, right_context in pos_context_set:
-        new_left_ctx = [set_name if pairsym in symbol_set else pairsym
+        new_left_ctx = [set_name
+                        if (pairsym in symbol_set or
+                            (definitions.get(pairsym,
+                                             pair_symbol_set) <=
+                             symbol_set)
+                            ) else pairsym
                         for pairsym in left_context.split()]
-        new_rght_ctx = [set_name if pairsym in symbol_set else pairsym
+        new_rght_ctx = [set_name
+                        if (pairsym in symbol_set or
+                            (definitions.get(pairsym,
+                                             pair_symbol_set) <=
+                             symbol_set)
+                            ) else pairsym
                         for pairsym in right_context.split()]
         new_pos_context_set.add((" ".join(new_left_ctx),
                                  " ".join(new_rght_ctx)))
     for left_context, right_context in neg_context_set:
-        new_left_ctx = [set_name if pairsym in symbol_set else pairsym
+        new_left_ctx = [set_name
+                        if (pairsym in symbol_set or
+                            (definitions.get(pairsym,
+                                             pair_symbol_set) <=
+                             symbol_set)
+                            ) else pairsym
                         for pairsym in left_context.split()]
-        new_rght_ctx = [set_name if pairsym in symbol_set else pairsym
+        new_rght_ctx = [set_name
+                        if (pairsym in symbol_set or
+                            (definitions.get(pairsym,
+                                             pair_symbol_set) <=
+                             symbol_set)
+                            ) else pairsym
                         for pairsym in right_context.split()]
         new_neg_context_set.add((" ".join(new_left_ctx),
                                  " ".join(new_rght_ctx)))
@@ -180,9 +202,10 @@ def reduce_set(set_name: str,
     
 
 #==============================================================
-def surface_all(pos_context_set: ContextSet,
-                neg_context_set: ContextSet) -> ContextSetPair:
-    """Return a pair of context sets where all pair symbols (e.g. "{tds}:s") have been reduced into surface symbols where the input symbol is open (e.g. ":s")."""
+def surface_subset(pos_context_set: ContextSet,
+                   neg_context_set: ContextSet,
+                   subset_name: str) -> ContextSetPair:
+    """Return a pair of context sets where all pair symbols in a given subset (e.g. "{tds}:s") have been reduced into surface symbols where the input symbol is open (e.g. ":s")."""
     pairsym2outsym_map = {}
     for ctx_set in [pos_context_set, neg_context_set]:
         for ctx_pair in ctx_set:
@@ -199,17 +222,22 @@ def surface_all(pos_context_set: ContextSet,
     # print(f"{pairsym2outsym_map = }") ####
     new_pos_context_set: ContextSet = set()
     new_neg_context_set: ContextSet = set()
+    subset = definitions[subset_name]
     for left_context, right_context in pos_context_set:
         new_left_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
+                        if pairsym in subset else pairsym
                         for pairsym in left_context.split()]
         new_rght_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
+                        if pairsym in subset else pairsym
                         for pairsym in right_context.split()]
         new_pos_context_set.add((" ".join(new_left_ctx),
                                  " ".join(new_rght_ctx)))
     for left_context, right_context in neg_context_set:
         new_left_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
+                        if pairsym in subset else pairsym
                         for pairsym in left_context.split()]
         new_rght_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
+                        if pairsym in subset else pairsym
                         for pairsym in right_context.split()]
         new_neg_context_set.add((" ".join(new_left_ctx),
                                  " ".join(new_rght_ctx)))
@@ -217,65 +245,51 @@ def surface_all(pos_context_set: ContextSet,
         print(f"{new_pos_context_set = }") ####
         print(f"{new_neg_context_set = }") ####
     return (new_pos_context_set, new_neg_context_set)
-
-def surface_one(outsym, pos_context_set, neg_context_set):
-    """Return a pair of context sets where all occurrences x:y of outsym x have been replaced with :x"""
-    global outsym2pairsym_set
-    # print(f"in surface_one, {outsym2pairsym_set = }") ####
-    pair_set = outsym2pairsym_set[outsym]
-    # print(f"in surface_one, {outsym = }, {pair_set = }") #####
-    new_pos_context_set: ContextSet = set()
-    new_neg_context_set: ContextSet = set()
-    for left_context, right_context in pos_context_set:
-        new_left_ctx = [":" + outsym
-                        if pairsym in pair_set else pairsym
-                        for pairsym in left_context.split()]
-        new_rght_ctx = [":" + outsym
-                        if pairsym in pair_set else pairsym
-                        for pairsym in right_context.split()]
-        new_pos_context_set.add((" ".join(new_left_ctx),
-                                 " ".join(new_rght_ctx)))
-    for left_context, right_context in neg_context_set:
-        new_left_ctx = [":" + outsym
-                        if pairsym in pair_set else pairsym
-                        for pairsym in left_context.split()]
-        new_rght_ctx = [":" + outsym
-                        if pairsym in pair_set else pairsym
-                        for pairsym in right_context.split()]
-        new_neg_context_set.add((" ".join(new_left_ctx),
-                                 " ".join(new_rght_ctx)))
-    if cfg.verbosity >= 20:
-        print(f"{new_pos_context_set = }") ####
-        print(f"{new_neg_context_set = }") ####
-    return (new_pos_context_set, new_neg_context_set)
-    
 
 #==============================================================
-def surface_some(pos_context_set: ContextSet,
-                 neg_context_set: ContextSet) -> list[list]:
-    """Return a list of set-reduction tasks, one for each surface symbol"""
-    outsym_set = set()
+def mphon_subset(pos_context_set: ContextSet,
+                 neg_context_set: ContextSet,
+                 subset_name: str) -> ContextSetPair:
+    """Return a pair of context sets where pair symbols in a given subset (e.g. "{ij}:i") have been reduced into mphonemic symbols where the output symbol is open (e.g. "{ij}:")."""
+    pairsym2insym_map = {}
     for ctx_set in [pos_context_set, neg_context_set]:
         for ctx_pair in ctx_set:
             for ctx in ctx_pair:
                 sym_lst = ctx.split()
-                # print(f"in surface_some: {sym_lst = }") ####
+                # print(f"{sym_lst = }") ####
                 for pair_sym in sym_lst:
-                    insym, outsym = pairsym2sympair(pair_sym)
-                    # print(f"{pair_sym = }, {insym = }, {outsym = }") ####
-                    if ((pair_sym in pair_symbol_set)
-                        and (re.match(r"[^\\W_0-9]|[.]#[.]", outsym))):
-                        outsym_set.add(outsym)
-    task_lst = []
-    # print(f"in surface_some: {outsym_set = }") ####
-    for outsym in outsym_set:
-        new_task = [":"+outsym]
-        # print(f"in surface_some: {new_task = }") ####
-        if re.match(r"[^-\\W_0-9Ø]", outsym):
-            task_lst.append(new_task)
-    if cfg.verbosity >= 10:
-        print(f"in surface_some: {task_lst = }") ####
-    return task_lst
+                    insym = pairsym2sympair(pair_sym)[0]
+                    # print(f"{pair_sym = }, {insym = }") ####
+                    if insym == ".#.":
+                        pairsym2insym_map[pair_sym] = insym
+                    else:
+                        pairsym2insym_map[pair_sym] =  insym + ":"
+    # print(f"{pairsym2outsym_map = }") ####
+    new_pos_context_set: ContextSet = set()
+    new_neg_context_set: ContextSet = set()
+    subset = definitions[subset_name]
+    for left_context, right_context in pos_context_set:
+        new_left_ctx = [pairsym2insym_map.get(pairsym, pairsym)
+                        if pairsym in subset else pairsym
+                        for pairsym in left_context.split()]
+        new_rght_ctx = [pairsym2insym_map.get(pairsym, pairsym)
+                        if pairsym in subset else pairsym
+                        for pairsym in right_context.split()]
+        new_pos_context_set.add((" ".join(new_left_ctx),
+                                 " ".join(new_rght_ctx)))
+    for left_context, right_context in neg_context_set:
+        new_left_ctx = [pairsym2insym_map.get(pairsym, pairsym)
+                        if pairsym in subset else pairsym
+                        for pairsym in left_context.split()]
+        new_rght_ctx = [pairsym2insym_map.get(pairsym, pairsym)
+                        if pairsym in subset else pairsym
+                        for pairsym in right_context.split()]
+        new_neg_context_set.add((" ".join(new_left_ctx),
+                                 " ".join(new_rght_ctx)))
+    if cfg.verbosity >= 20:
+        print(f"{new_pos_context_set = }") ####
+        print(f"{new_neg_context_set = }") ####
+    return (new_pos_context_set, new_neg_context_set)
 
 #====================================================================
 def search_reductions(agenda: list,
@@ -290,19 +304,25 @@ def search_reductions(agenda: list,
         return pos_context_set, neg_context_set
 
     task = agenda.popleft()             # Next step to be tested.
-    op = task[0]
+    if type(task) is str:
+        op = task
+    elif type(task) is dict:
+        op = task["op"]
+    else:
+        exit(1)
     if cfg.verbosity >= 10:
         print(f"in search_reductions: {op = }, {task = }")
 
     # -- Start with truncatig all and then truncating less and less --
-    if op in {"truncate-left", "truncate-right"}:
-        [op, target_len] = task
-        if op == "truncate-left":
+    if op == "truncate":
+        side = task["side"]
+        target_len = task.get("minimum", 0)
+        if side == "left":
             max_len = max_left_len(pos_context_set, neg_context_set)
         else:
             max_len = max_right_len(pos_context_set, neg_context_set)
         if target_len <= max_len:           # possible to truncate
-            if op == "truncate-left":
+            if side == "left":
                 (new_pos_ctx_set,
                  new_neg_ctx_set) = truncate_left(target_len,
                                                   pos_context_set,
@@ -317,7 +337,7 @@ def search_reductions(agenda: list,
             good = False
         # print(f"{good = }") ####
         if (not good) and (target_len < max_len): # Possible to go on trunc
-            new_task = [op, target_len+1]
+            new_task = {"op": op, "side": side, "minimum": target_len+1}
             # print(f"in search_reductions, failing but pushing {new_task = }") ####
             agenda.appendleft(new_task)     # Next attempt pushed into agenda
 
@@ -331,19 +351,12 @@ def search_reductions(agenda: list,
                                      pos_context_set,
                                      neg_context_set)
 
-    elif (op == "surface-some"):
-        new_task_lst = surface_some(pos_context_set,
-                                    neg_context_set)
-        for new_task in new_task_lst:
-            agenda.appendleft(new_task)
-        return search_reductions(agenda,
-                                 pos_context_set,
-                                 neg_context_set)
-
-    elif (op == "surface-all"):
+    elif (op == "surface"):
+        subset_name = task.get("set", "None")
         (new_pos_ctx_set,
-         new_neg_ctx_set) = surface_all(pos_context_set,
-                                        neg_context_set)
+         new_neg_ctx_set) = surface_subset(pos_context_set,
+                                           neg_context_set,
+                                           subset_name)
         if new_pos_ctx_set.isdisjoint(new_neg_ctx_set):
             return search_reductions(agenda,
                                      new_pos_ctx_set,
@@ -352,10 +365,24 @@ def search_reductions(agenda: list,
             return search_reductions(agenda,
                                      pos_context_set,
                                      neg_context_set)
-    elif (op in cfg.definitions):
+    elif (op == "mphon"):
+        subset_name = task.get("set", "None")
+        (new_pos_ctx_set,
+         new_neg_ctx_set) = mphon_subset(pos_context_set,
+                                         neg_context_set,
+                                         subset_name)
+        if new_pos_ctx_set.isdisjoint(new_neg_ctx_set):
+            return search_reductions(agenda,
+                                     new_pos_ctx_set,
+                                     new_neg_ctx_set)
+        else:
+            return search_reductions(agenda,
+                                     pos_context_set,
+                                     neg_context_set)
+    elif (op in definitions):
         # print(f"in search_reductions, entering reduce_set({op},...)") ####
         (new_pos_ctx_set,
-         new_neg_ctx_set) = reduce_set(op, cfg.definitions[op],
+         new_neg_ctx_set) = reduce_set(op, definitions[op],
                                        pos_context_set,
                                        neg_context_set)
         if new_pos_ctx_set.isdisjoint(new_neg_ctx_set):
@@ -367,7 +394,7 @@ def search_reductions(agenda: list,
                                      pos_context_set,
                                      neg_context_set)
     elif m := re.match("^:(?P<outsym>[^\W_0-9])$", op):
-        if ((outsym := m.group("outsym")) not in cfg.input_symbol_set):
+        if ((outsym := m.group("outsym")) not in input_symbol_set):
             print(f"in search_reductions, invalid surf sym: {outsym}") ####
             exit(1)
         # print(f"in search_reductions, entering surface_one({op})") ####
@@ -482,19 +509,23 @@ def main():
     parser = discopars.init(args.grammar)
     discopars.parse_defs(parser, args.definitions)
     if cfg.verbosity >= 10:
-        for nm, cs in cfg.definitions.items():
+        for nm, cs in definitions.items():
             s_str = " ".join(sorted(list(cs)))
             print(f"{nm}: {s_str}\n")
 
-    for insym, outsym in cfg.symbol_pair_set:
+    for insym, outsym in symbol_pair_set:
         pair_symbol = sympair2pairsym(insym, outsym)
         insym2pairsym_set[insym].add(pair_symbol)
         outsym2pairsym_set[outsym].add(pair_symbol)
+    for insym, symset in insym2pairsym_set.items():
+        definitions[insym + ":"] = symset
+    for insym, symset in outsym2pairsym_set.items():
+        definitions[":" + outsym] = symset
 
     # print(f"in main: {outsym2pairsym_set =}") ####
 
     # -- expand a plain input symbol into a list of symbol pairs --
-    if args.symbol in cfg.input_symbol_set:
+    if args.symbol in input_symbol_set:
         pair_lst = []
         for pairsym in insym2pairsym_set[args.symbol]:
             pair_lst.append(pairsym)
@@ -504,7 +535,7 @@ def main():
         pair_lst = [args.symbol]
     else:
         print(f"Symbol {args.symbol!r} does not occur in the examples")
-        lst = list(cfg.input_symbol_set)
+        lst = list(input_symbol_set)
         print("The following input symbols would be valid:\n",
               " ".join(sorted(lst)))
         exit("")
@@ -514,13 +545,10 @@ def main():
         task_lst_lst = list(json.load(agenda_f))
         # print(f"{task_lst_lst = }") ####
     else:
-        task_lst_lst = [[
-            ["truncate-right", 0],
-            ["truncate-left", 0],
-            ["surface-all"],
-        ]]
+        task_lst_lst = [[{"op": "truncate", "side": "left"},
+	                 {"op": "truncate", "side": "right"}]]
 
-    print(f"in main: {task_lst_lst = }")
+    # print(f"in main: {task_lst_lst = }")
     # -- collect the minimal contexts for each sym pair --
     for pair_symbol in pair_lst:
         context_set_pair: ContextSetPair = relevant_contexts(pair_symbol)
@@ -549,6 +577,10 @@ def main():
 
         for (pair_symbol, pos_contexts, neg_contexts,
              pos_pena, neg_pena, task_lst) in result_lst:
+            if cfg.verbosity > 1:
+                print("\n! recipe:")
+                for task in task_lst:
+                    print(f"!\t\t{task}")
             if cfg.verbosity >= 0 :
                 print_rule(pair_symbol, "=>", pos_contexts, pos_pena)
             if cfg.verbosity > 1:
