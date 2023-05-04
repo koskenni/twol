@@ -1,3 +1,5 @@
+# discovery.py
+# ============
 """A module for dicovering raw two-level rules from a set of carefully chosen examples
 
 Examples, contexts and rules are treated in terms of strings without any
@@ -24,7 +26,6 @@ Context = Tuple[str, str]
 ContextSet = Set[Context]
 PairSym = str
 SymPair = Tuple[str, str]
-ContextSetPair = Tuple[ContextSet, ContextSet]
 
 insym2pairsym_set: Dict[str, str] = defaultdict(set)
 # key: input symbol, value: set of pair symbols
@@ -32,25 +33,27 @@ insym2pairsym_set: Dict[str, str] = defaultdict(set)
 outsym2pairsym_set: Dict[str, str] = defaultdict(set)
 # key: output symbol, value: set of pair symbols
 
+positive_context_set = {}
+negative_context_set = {}
+
 #=============================================================
-def relevant_contexts(pair_symbol: PairSym) -> ContextSetPair:
-    """ Select positive and negative contexts for a given pair-symbol
+def relevant_contexts(pair_symbol: PairSym):
+    """Select positive and negative contexts for a given pair-symbol
     
     pair_symbol -- the pair-symbol for which the contexts are selected
     
-    returns a tuple of:
+    positive_context_set[pair_symbol] -- set to a set of contexts in the
+    examples in which the pair_symbol occurs
     
-    pos_context_set -- a set of contexts in the examples in which the
-    pair_symbol occurs
-    
-    neg_context_set -- a set of contexts where the input-symbol of the
-    pair_symbol occurs with another output-symbol but so that there is
-    no example in the example_set where the pair_symbol occurs in such a
-    context
+    negative_context_set[pair_symbol] -- a set of contexts where the
+    input-symbol of the pair_symbol occurs with another output-symbol
+    but so that there is no example in the example_set where the
+    pair_symbol occurs in such a context
+
     """
     input_symbol, output_symbol = pairsym2sympair(pair_symbol)
-    positive_context_set: ContextSet = set()
-    negative_context_set: ContextSet = set()
+    positive_ctx_set: ContextSet = set()
+    negative_ctx_set: ContextSet = set()
     pairsymlist = [re.sub(r"([}{])", r"\\\1", psym) # eg. {ao}:o --> \{ao\}:o
                    for psym
                    in insym2pairsym_set[input_symbol]]
@@ -70,97 +73,71 @@ def relevant_contexts(pair_symbol: PairSym) -> ContextSetPair:
             context = (left_context, right_context)
             # print(centre, context) ##
             if centre == pair_symbol:
-                positive_context_set.add(context)
+                positive_ctx_set.add(context)
             else:
-                negative_context_set.add(context)
-    negative_context_set = negative_context_set - positive_context_set
-    return positive_context_set, negative_context_set
+                negative_ctx_set.add(context)
+    negative_ctx_set = negative_ctx_set - positive_ctx_set
+
+    positive_context_set[pair_symbol] = positive_ctx_set
+    negative_context_set[pair_symbol] = negative_ctx_set
     
-def max_ctx_len(ctx_set: ContextSet) -> int:
-    if not ctx_set:
-        return 0
-    # print(f"in max_ctx_len: {ctx_set = }") ####
-    left_len_lst = [len(lc.split()) if lc else 0 for lc, rc in ctx_set]
-    # print(f"in max_ctx_len: {left_len_lst = }") ####
-    right_len_lst = [len(rc.split()) if rc else 0 for lc, rc in ctx_set]
-    # print(f"in max_ctx_len: {right_len_lst = }") ####
-    return max(left_len_lst) + max(right_len_lst)
+def max_left_len(pos_context_set: set) -> int:
+    maxlen = max([len(lc.split()) for lc, rc in pos_context_set])
+    return maxlen
 
-def max_left_len(pos_context_set, neg_context_set):
-    maxposlen = max([len(lc.split()) for lc, rc in pos_context_set])
-    maxneglen = max([len(lc.split()) for lc, rc in neg_context_set])
-    return max(maxposlen, maxneglen)
-
-def max_right_len(pos_context_set:set, neg_context_set:set) -> int:
-    maxposlen = max([len(rc.split()) for lc, rc in pos_context_set])
-    maxneglen = max([len(rc.split()) for lc, rc in neg_context_set])
-    return max(maxposlen, maxneglen)
+def max_right_len(pos_context_set: set) -> int:
+    maxlen = max([len(rc.split()) for lc, rc in pos_context_set])
+    return maxlen
 
 #================================================================
 def truncate_left(syms_to_remain: int,
-                  pos_context_set: ContextSet,
-                  neg_context_set: ContextSet) -> ContextSetPair:
+                  context_set: ContextSet
+                  ) -> ContextSet:
     """Truncate the left contexts so that at most *syms_to_remain* symbols remain"""
     if cfg.verbosity >= 25:
         print(f"entering truncate_left, {syms_to_remain =}") ####
-        print(f"{pos_context_set = }") ####
-        print(f"{neg_context_set = }") ####
-    new_pos_context_set: ContextSet = set()
-    new_neg_context_set: ContextSet = set()
-    for left_context, right_context in pos_context_set:
+        print(f"{context_set = }") ####
+    new_context_set: ContextSet = set()
+    for left_context, right_context in context_set:
         left_lst = left_context.split()
         start = max(0, len(left_lst) - syms_to_remain)
         new_lc = " ".join(left_lst[start:])
-        new_pos_context_set.add((new_lc, right_context))
-    for left_context, right_context in neg_context_set:
-        left_lst = left_context.split()
-        start = max(0, len(left_lst) - syms_to_remain)
-        new_lc = " ".join(left_lst[start:])
-        new_neg_context_set.add((new_lc, right_context))
+        new_context_set.add((new_lc, right_context))
 
     if cfg.verbosity >= 25:
         print(f"leaving truncate_left, {syms_to_remain =}") ####
-        print(f"{new_pos_context_set = }") ####
-        print(f"{new_neg_context_set = }") ####
-    return (new_pos_context_set, new_neg_context_set)
+        print(f"{new_context_set = }") ####
+    return new_context_set
 
 #=================================================================
 def truncate_right(syms_to_remain: int,
-                   pos_context_set: ContextSet,
-                   neg_context_set: ContextSet) -> ContextSetPair:
+                   context_set: ContextSet
+                   ) -> ContextSet:
     """Truncate the right contexts so that at most *syms_to_remain* symbols remain"""
     if cfg.verbosity >= 25:
         print(f"entering truncate_right, {syms_to_remain =}") ####
-        print(f"{pos_context_set = }") ####
-        print(f"{neg_context_set = }") ####
-    new_pos_context_set = set()
-    new_neg_context_set = set()
-    for left_context, right_context in pos_context_set:
+        print(f"{context_set = }") ####
+    new_context_set = set()
+    for left_context, right_context in context_set:
         right_lst = right_context.split()
         new_rc = " ".join(right_lst[0:syms_to_remain])
         # print(f"{new_rc = }") ####
-        new_pos_context_set.add((left_context, new_rc))
-    for left_context, right_context in neg_context_set:
-        right_lst = right_context.split()
-        new_rc = " ".join(right_lst[0:syms_to_remain])
-        new_neg_context_set.add((left_context, new_rc))
+        new_context_set.add((left_context, new_rc))
 
     if cfg.verbosity >= 25:
         print(f"leaving truncate_right, {syms_to_remain =}") ####
-        print(f"{new_pos_context_set = }") ####
-        print(f"{new_neg_context_set = }") ####
-    return (new_pos_context_set, new_neg_context_set)
+        print(f"{new_context_set = }") ####
+    return new_context_set
 
 #=============================================================
 def reduce_set(set_name: str,
                symbol_set: set[str] ,
                pos_context_set: ContextSet,
-               neg_context_set: ContextSet) -> ContextSetPair:
+               ) -> ContextSet:
     """Occurrences on symbols in *symbol_lst* in positive and negative contest sets are replaced by *set_name* and the pair of resulting context sets is returned"""
     # print(f"in reduce_set: {set_name = }") ####
     # print(f"{symbol_set = }") ####
     new_pos_context_set: ContextSet = set()
-    new_neg_context_set: ContextSet = set()
     for left_context, right_context in pos_context_set:
         new_left_ctx = [set_name
                         if (pairsym in symbol_set or
@@ -178,50 +155,30 @@ def reduce_set(set_name: str,
                         for pairsym in right_context.split()]
         new_pos_context_set.add((" ".join(new_left_ctx),
                                  " ".join(new_rght_ctx)))
-    for left_context, right_context in neg_context_set:
-        new_left_ctx = [set_name
-                        if (pairsym in symbol_set or
-                            (definitions.get(pairsym,
-                                             pair_symbol_set) <=
-                             symbol_set)
-                            ) else pairsym
-                        for pairsym in left_context.split()]
-        new_rght_ctx = [set_name
-                        if (pairsym in symbol_set or
-                            (definitions.get(pairsym,
-                                             pair_symbol_set) <=
-                             symbol_set)
-                            ) else pairsym
-                        for pairsym in right_context.split()]
-        new_neg_context_set.add((" ".join(new_left_ctx),
-                                 " ".join(new_rght_ctx)))
     if cfg.verbosity >= 20:
         print(f"{new_pos_context_set = }") ####
-        print(f"{new_neg_context_set = }") ####
-    return (new_pos_context_set, new_neg_context_set)
+    return new_pos_context_set
     
 
 #==============================================================
 def surface_subset(pos_context_set: ContextSet,
-                   neg_context_set: ContextSet,
-                   subset_name: str) -> ContextSetPair:
+                   subset_name: str
+                   ) -> ContextSet:
     """Return a pair of context sets where all pair symbols in a given subset (e.g. "{tds}:s") have been reduced into surface symbols where the input symbol is open (e.g. ":s")."""
     pairsym2outsym_map = {}
-    for ctx_set in [pos_context_set, neg_context_set]:
-        for ctx_pair in ctx_set:
-            for ctx in ctx_pair:
-                sym_lst = ctx.split()
-                # print(f"{sym_lst = }") ####
-                for pair_sym in sym_lst:
-                    outsym = pairsym2sympair(pair_sym)[1]
-                    # print(f"{pair_sym = }, {outsym = }") ####
-                    if outsym == ".#.":
-                        pairsym2outsym_map[pair_sym] = outsym
-                    else:
-                        pairsym2outsym_map[pair_sym] = ":" + outsym
+    for ctx_pair in pos_context_set:
+        for ctx in ctx_pair:
+            sym_lst = ctx.split()
+            # print(f"{sym_lst = }") ####
+            for pair_sym in sym_lst:
+                outsym = pairsym2sympair(pair_sym)[1]
+                # print(f"{pair_sym = }, {outsym = }") ####
+                if outsym == ".#.":
+                    pairsym2outsym_map[pair_sym] = outsym
+                else:
+                    pairsym2outsym_map[pair_sym] = ":" + outsym
     # print(f"{pairsym2outsym_map = }") ####
     new_pos_context_set: ContextSet = set()
-    new_neg_context_set: ContextSet = set()
     subset = definitions[subset_name]
     for left_context, right_context in pos_context_set:
         new_left_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
@@ -232,41 +189,29 @@ def surface_subset(pos_context_set: ContextSet,
                         for pairsym in right_context.split()]
         new_pos_context_set.add((" ".join(new_left_ctx),
                                  " ".join(new_rght_ctx)))
-    for left_context, right_context in neg_context_set:
-        new_left_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
-                        if pairsym in subset else pairsym
-                        for pairsym in left_context.split()]
-        new_rght_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
-                        if pairsym in subset else pairsym
-                        for pairsym in right_context.split()]
-        new_neg_context_set.add((" ".join(new_left_ctx),
-                                 " ".join(new_rght_ctx)))
     if cfg.verbosity >= 20:
         print(f"{new_pos_context_set = }") ####
-        print(f"{new_neg_context_set = }") ####
-    return (new_pos_context_set, new_neg_context_set)
+    return new_pos_context_set
 
 #==============================================================
 def mphon_subset(pos_context_set: ContextSet,
-                 neg_context_set: ContextSet,
-                 subset_name: str) -> ContextSetPair:
+                 subset_name: str
+                 )-> ContextSet:
     """Return a pair of context sets where pair symbols in a given subset (e.g. "{ij}:i") have been reduced into mphonemic symbols where the output symbol is open (e.g. "{ij}:")."""
     pairsym2insym_map = {}
-    for ctx_set in [pos_context_set, neg_context_set]:
-        for ctx_pair in ctx_set:
-            for ctx in ctx_pair:
-                sym_lst = ctx.split()
-                # print(f"{sym_lst = }") ####
-                for pair_sym in sym_lst:
-                    insym = pairsym2sympair(pair_sym)[0]
-                    # print(f"{pair_sym = }, {insym = }") ####
-                    if insym == ".#.":
-                        pairsym2insym_map[pair_sym] = insym
-                    else:
-                        pairsym2insym_map[pair_sym] =  insym + ":"
+    for ctx_pair in pos_context_set:
+        for ctx in ctx_pair:
+            sym_lst = ctx.split()
+            # print(f"{sym_lst = }") ####
+            for pair_sym in sym_lst:
+                insym = pairsym2sympair(pair_sym)[0]
+                # print(f"{pair_sym = }, {insym = }") ####
+                if insym == ".#.":
+                    pairsym2insym_map[pair_sym] = insym
+                else:
+                    pairsym2insym_map[pair_sym] =  insym + ":"
     # print(f"{pairsym2outsym_map = }") ####
     new_pos_context_set: ContextSet = set()
-    new_neg_context_set: ContextSet = set()
     subset = definitions[subset_name]
     for left_context, right_context in pos_context_set:
         new_left_ctx = [pairsym2insym_map.get(pairsym, pairsym)
@@ -277,31 +222,89 @@ def mphon_subset(pos_context_set: ContextSet,
                         for pairsym in right_context.split()]
         new_pos_context_set.add((" ".join(new_left_ctx),
                                  " ".join(new_rght_ctx)))
-    for left_context, right_context in neg_context_set:
-        new_left_ctx = [pairsym2insym_map.get(pairsym, pairsym)
-                        if pairsym in subset else pairsym
-                        for pairsym in left_context.split()]
-        new_rght_ctx = [pairsym2insym_map.get(pairsym, pairsym)
-                        if pairsym in subset else pairsym
-                        for pairsym in right_context.split()]
-        new_neg_context_set.add((" ".join(new_left_ctx),
-                                 " ".join(new_rght_ctx)))
     if cfg.verbosity >= 20:
         print(f"{new_pos_context_set = }") ####
-        print(f"{new_neg_context_set = }") ####
-    return (new_pos_context_set, new_neg_context_set)
+    return new_pos_context_set
+
+#====================================================================
+
+def overlap(set_lst: list[str],
+            pairsym_lst: list[str]) -> bool:
+    #print("in overlap: set_lst = {}".format(" ".join(set_lst))) #####
+    #print("in overlap: pairsym_lst = {}".format(" ".join(pairsym_lst))) #####
+    if len(set_lst) > len(pairsym_lst):
+        pairsym_lst = pairsym_lst + ["XYZ"]*(len(set_lst) - len(pairsym_lst))
+    for s, p in zip(set_lst, pairsym_lst):
+        if s in definitions:
+            if p not in definitions[s]:
+                break
+        else:
+            if p != s:
+                break
+    else:
+        #print(f"in overlap: return True") #####
+        return True
+    #print(f"in overlap: return False") #####
+    return False
+
+def pos_neg_is_disjoint(pos_ctx_set: ContextSet,
+                        pair_symbol: PairSym) -> bool:
+    #print(f"in pos_neg_is_disjoint: {pair_symbol = }")
+    for pos_left_str, pos_rght_str in pos_ctx_set:
+        pos_left_lst = list(reversed(pos_left_str.split()))
+        #print(f"in pos_neg_is_disjoint: {pos_left_lst = }") #####
+        pos_rght_lst = pos_rght_str.split()
+        #print(f"in pos_neg_is_disjoint: {pos_rght_lst = }") #####
+        for neg_left_str, neg_rght_str in negative_context_set[pair_symbol]:
+            neg_left_lst = list(reversed(neg_left_str.split()))
+            neg_rght_lst = neg_rght_str.split()
+            if (overlap(pos_left_lst, neg_left_lst)
+                and
+                overlap(pos_rght_lst, neg_rght_lst)):
+                #print("in pos_neg_is_disjoint: return False") #####
+                #print(f"{pos_left_lst} _ {pos_rght_lst}") #####
+                #print(f"{neg_left_lst} _ {neg_rght_lst}\n") #####
+                return(False)
+    #print("in pos_neg_is_disjoint: return True\n") #####
+    return True
+    
+def pos_neg_is_subset(pos_ctx_set: ContextSet,
+                      ctx_set: ContextSet) -> bool:
+    for pos_left_str, pos_rght_str in pos_ctx_set:
+        pos_left_lst = list(reversed(pos_left_str.split()))
+        #print(f"in pos_neg_is_subset: {pos_left_lst = }") #####
+        pos_rght_lst = pos_rght_str.split()
+        #print(f"in pos_neg_is_subset: {pos_rght_lst = }") #####
+        for neg_left_str, neg_rght_str in ctx_set:
+            neg_left_lst = list(reversed(neg_left_str.split()))
+            #print(f"in pos_neg_is_subset: {neg_left_lst = }") #####
+            neg_rght_lst = neg_rght_str.split()
+            #print(f"in pos_neg_is_subset: {neg_rght_lst = }") #####
+            if (overlap(pos_left_lst, neg_left_lst)
+                and
+                overlap(pos_rght_lst, neg_rght_lst)):
+                break
+        else:
+            #print("in pos_neg_is_subset: return False\n") #####
+            return False
+    #print("in pos_neg_is_subset: return True\n") #####
+    return True
+    
 
 #====================================================================
 def search_reductions(agenda: list,
+                      pair_symbol: PairSym,
                       pos_context_set: ContextSet,
-                      neg_context_set: ContextSet) -> ContextSetPair:
-    """context_sets -- (positive_context_sets, negative_context_sets) where these sets are space-separated strings of pair symbols.
-"""
+                      ) -> ContextSet:
+    """context_sets -- (positive_context_sets, negative_context_sets)
+where these sets are space-separated strings of pair symbols.
+
+    """
     if cfg.verbosity >= 10:
         print(f"in search_reductions, {agenda = }") ####
 
     if not agenda:                  # No more reductions to do.
-        return pos_context_set, neg_context_set
+        return pos_context_set
 
     task = agenda.popleft()             # Next step to be tested.
     if type(task) is str:
@@ -318,21 +321,17 @@ def search_reductions(agenda: list,
         side = task["side"]
         target_len = task.get("minimum", 0)
         if side == "left":
-            max_len = max_left_len(pos_context_set, neg_context_set)
+            max_len = max_left_len(pos_context_set)
         else:
-            max_len = max_right_len(pos_context_set, neg_context_set)
+            max_len = max_right_len(pos_context_set)
         if target_len <= max_len:           # possible to truncate
             if side == "left":
-                (new_pos_ctx_set,
-                 new_neg_ctx_set) = truncate_left(target_len,
-                                                  pos_context_set,
-                                                  neg_context_set)
+                new_pos_ctx_set = truncate_left(target_len,
+                                                pos_context_set)
             else:
-                (new_pos_ctx_set,
-                 new_neg_ctx_set) = truncate_right(target_len,
-                                                   pos_context_set,
-                                                   neg_context_set)
-            good = new_pos_ctx_set.isdisjoint(new_neg_ctx_set)
+                new_pos_ctx_set = truncate_right(target_len,
+                                                   pos_context_set)
+            good = pos_neg_is_disjoint(new_pos_ctx_set, pair_symbol) # ***
         else:
             good = False
         # print(f"{good = }") ####
@@ -343,88 +342,64 @@ def search_reductions(agenda: list,
 
         if good:
             # print("succeeding and no further tasks created from this") ####
-            return search_reductions(agenda,
-                                     new_pos_ctx_set,
-                                     new_neg_ctx_set)
+            return search_reductions(agenda, pair_symbol, new_pos_ctx_set)
         else:
-            return search_reductions(agenda,
-                                     pos_context_set,
-                                     neg_context_set)
+            return search_reductions(agenda, pair_symbol, pos_context_set)
 
     elif (op == "surface"):
         subset_name = task.get("set", "None")
-        (new_pos_ctx_set,
-         new_neg_ctx_set) = surface_subset(pos_context_set,
-                                           neg_context_set,
-                                           subset_name)
-        if new_pos_ctx_set.isdisjoint(new_neg_ctx_set):
-            return search_reductions(agenda,
-                                     new_pos_ctx_set,
-                                     new_neg_ctx_set)
+        new_pos_ctx_set = surface_subset(pos_context_set,
+                                         subset_name)
+        # print_context_set(f"from surface_subset {subset_name}", new_pos_ctx_set) ######
+        if pos_neg_is_disjoint(new_pos_ctx_set,
+                               pair_symbol): # ***
+            return search_reductions(agenda, pair_symbol,
+                                     new_pos_ctx_set)
         else:
-            return search_reductions(agenda,
-                                     pos_context_set,
-                                     neg_context_set)
+            return search_reductions(agenda, pair_symbol,
+                                     pos_context_set)
     elif (op == "mphon"):
         subset_name = task.get("set", "None")
-        (new_pos_ctx_set,
-         new_neg_ctx_set) = mphon_subset(pos_context_set,
-                                         neg_context_set,
-                                         subset_name)
-        if new_pos_ctx_set.isdisjoint(new_neg_ctx_set):
-            return search_reductions(agenda,
-                                     new_pos_ctx_set,
-                                     new_neg_ctx_set)
+        new_pos_ctx_set = mphon_subset(pos_context_set,
+                                       subset_name)
+        if pos_neg_is_disjoint(new_pos_ctx_set,
+                               pair_symbol): # ***
+            return search_reductions(agenda, pair_symbol,
+                                     new_pos_ctx_set)
         else:
-            return search_reductions(agenda,
-                                     pos_context_set,
-                                     neg_context_set)
+            return search_reductions(agenda, pair_symbol,
+                                     pos_context_set)
     elif (op in definitions):
         # print(f"in search_reductions, entering reduce_set({op},...)") ####
-        (new_pos_ctx_set,
-         new_neg_ctx_set) = reduce_set(op, definitions[op],
-                                       pos_context_set,
-                                       neg_context_set)
-        if new_pos_ctx_set.isdisjoint(new_neg_ctx_set):
-            return search_reductions(agenda,
-                                     new_pos_ctx_set,
-                                     new_neg_ctx_set)
+        new_pos_ctx_set = reduce_set(op, definitions[op],
+                                     pos_context_set)
+        #print_context_set(f"from reduce_set {op}", new_pos_ctx_set) ######
+        if pos_neg_is_disjoint(new_pos_ctx_set,
+                               pair_symbol): # ***
+            return search_reductions(agenda, pair_symbol,
+                                     new_pos_ctx_set)
         else:
-            return search_reductions(agenda,
-                                     pos_context_set,
-                                     neg_context_set)
+            return search_reductions(agenda, pair_symbol,
+                                     pos_context_set)
     elif m := re.match("^:(?P<outsym>[^\W_0-9])$", op):
         if ((outsym := m.group("outsym")) not in input_symbol_set):
             print(f"in search_reductions, invalid surf sym: {outsym}") ####
             exit(1)
         # print(f"in search_reductions, entering surface_one({op})") ####
-        (new_pos_ctx_set,
-         new_neg_ctx_set) = surface_one(m.group("outsym"),
-                                        pos_context_set,
-                                        neg_context_set)
-        if new_pos_ctx_set.isdisjoint(new_neg_ctx_set):
-            return search_reductions(agenda,
-                                     new_pos_ctx_set,
-                                     new_neg_ctx_set)
+        new_pos_ctx_set = surface_one(m.group("outsym"),
+                                      pos_context_set)
+        if pos_neg_is_disjoint(new_pos_ctx_set, pair_symbol): # ***
+            return search_reductions(agenda, pair_symbol,
+                                     new_pos_ctx_set)
         else:
-            return search_reductions(agenda,
-                                     pos_context_set,
-                                     neg_context_set)
+            return search_reductions(agenda, pair_symbol,
+                                     pos_context_set)
         
     else:
         print(f"in search_reductions, exiting with invalid task: {task = }")
         exit(1)
-    return (set(), set()) ## just to make mypy happy
+    return set() ## just to make mypy happy
 
-
-def print_rule(pair_symbol: PairSym,
-               operator: str,
-               context_set: ContextSet,
-               penalty: int) -> None:
-    """Prints one rule"""
-    print(f"{pair_symbol} {operator}\t\t! {penalty}")
-    rule_lst = [f"    {lc} _ {rc}" for lc, rc in context_set]
-    print(" ,\n".join(rule_lst) + " ;")
 
 def context_to_output_str(pairsym_str: str) -> str:
     """Converts a pair symbol string into its surface string"""
@@ -433,12 +408,8 @@ def context_to_output_str(pairsym_str: str) -> str:
     outsym_lst = [outsym for insym, outsym in sympair_lst]
     return "".join(outsym_lst)
 
-def right_ctx(ctx_pair):
-    lft, rght = ctx_pair
-    return rght
-
 def context_set_penalty(context_set):
-    width = max_ctx_len(context_set)
+    width = max_left_len(context_set) + max_right_len(context_set)
     height = len(context_set)
     sym_set = set()
     for ctx in context_set:
@@ -449,10 +420,73 @@ def context_set_penalty(context_set):
     penalty = width * height * depth
     return penalty
 
-def pos_neg_penalty(pos_context_set, neg_context_set):
-    pos_penalty = context_set_penalty(pos_context_set)
-    neg_penalty = context_set_penalty(neg_context_set)
-    return (pos_penalty, neg_penalty)
+def print_rule(result,
+               penalty: int,
+               operator: str) -> None:
+    """Prints one rule"""
+    pair_symbol = result["pairsym"]
+    context_set = result["posctx"]
+    print(f"{pair_symbol} {operator}\t\t! {penalty}")
+    rule_lst = [f"    {lc} _ {rc}" for lc, rc in context_set]
+    print(" ,\n".join(rule_lst) + " ;")
+
+def print_context_set(msg: str, context_set: ContextSet) -> None:
+    print(msg)
+    rule_lst = [f"    {lc} _ {rc}" for lc, rc in context_set]
+    print(" ,\n".join(rule_lst) + " ;")
+
+def process_results_into_rules(pairsym_lst, result_lst_lst):
+    # process resulte for each recipe
+    for result_lst in result_lst_lst:
+        assert len(pairsym_lst) == len (result_lst)
+        recipe = result_lst[0]["recipe"]
+        if cfg.verbosity > 0:
+            print("\n! recipe:")
+            for task in recipe:
+                print(f"!\t\t{task}")
+        srt_res_lst = sorted(result_lst, key=lambda x: x["pospena"])
+        # simpler if just two possible outsyms for this insym
+        if len(result_lst) == 2222:
+            result = srt_res_lst[0]
+            pair_symbol = result["pairsym"]
+            set_lst = result["posctx"]
+            #print_context_set("positive contexts", set_lst) ####
+            other_result = srt_res_lst[1]
+            other_pairsym = other_result["pairsym"]
+            ctx_set = negative_context_set[other_pairsym]
+            # print_context_set(f"neg ctx set of {other_pairsym = }", ctx_set) ######
+            if pos_neg_is_subset(set_lst,
+                                 ctx_set):
+                weight = result["pospena"]
+                print_rule(result, result["pospena"], "<=>")
+            else:
+                weight = (other_result["pospena"] +
+                          result["pospena"])
+                print_rule(result, result["pospena"], "=>")
+                print_rule(other_result, other_result["pospena"], "=>")
+        # the general case with any num of outsyms for this insym
+        else:
+            success = True
+            for result in srt_res_lst:
+                pair_sym = result["pairsym"]
+                weight = result["pospena"]
+                pos_ctx_set = result["posctx"]
+                exclusive = True
+                for other_result in srt_res_lst:
+                    if other_result == result:
+                        continue
+                    other_pair_sym = other_result["pairsym"]
+                    other_neg_ctx_set = negative_context_set[other_pair_sym]
+                    if not pos_neg_is_subset(pos_ctx_set,
+                                             other_neg_ctx_set):
+                        exclusive = False
+                        success = False
+                        break
+                if exclusive:
+                    if not(success and result == srt_res_lst[-1]):
+                        print_rule(result, weight, "<=>")
+                else:
+                    print_rule(res, res["posctx"], "=>")
 
 def main():
     
@@ -464,28 +498,26 @@ def main():
     
     arpar = argparse.ArgumentParser(
         "twol-discov",
-        description="Deduces two-level rules out of"\
+        description=f"Deduces two-level rules out of"\
         " a file of examples.  The file must consist of"\
         " lines of space-separated pair string.  Such a file"\
         " can be produced e.g. by twol-raw2renamed program."\
-        " Version {}".format(version))
+        " Version: {version}")
     arpar.add_argument(
         "examples",
-        help="Example pair strings file",
+        help="Example pair strings file.",
         default="test.pstr")
     arpar.add_argument(
         "-s", "--symbol",
-        help="Input symbol for which to find rules."\
-        " If not given then rules are proposed for"\
-        " all morphophonemes in the example file",
+        help="Input symbol for which rules are produced.",
         default="")
     arpar.add_argument(
         "-a", "--agendas",
-        help="initial agenda for the context reductions",
+        help="Initial agenda for the context reductions.",
         default="")
     arpar.add_argument(
         "-g", "--grammar",
-        help="EBNF grammar which defines the syntax of the definitions",
+        help="EBNF grammar which defines the syntax of the definitions.",
         default="discovdef.ebnf")
     arpar.add_argument(
         "-d", "--definitions",
@@ -519,26 +551,28 @@ def main():
         outsym2pairsym_set[outsym].add(pair_symbol)
     for insym, symset in insym2pairsym_set.items():
         definitions[insym + ":"] = symset
-    for insym, symset in outsym2pairsym_set.items():
+    for outsym, symset in outsym2pairsym_set.items():
         definitions[":" + outsym] = symset
-
-    # print(f"in main: {outsym2pairsym_set =}") ####
+    #print(f"in main: {definitions =}") ####
 
     # -- expand a plain input symbol into a list of symbol pairs --
     if args.symbol in input_symbol_set:
-        pair_lst = []
+        pairsym_lst = []
         for pairsym in insym2pairsym_set[args.symbol]:
-            pair_lst.append(pairsym)
+            pairsym_lst.append(pairsym)
         if cfg.verbosity >= 10:
-            print(f"{pair_lst = }")
+            print(f"{pairsym_lst = }")
     elif args.symbol in pair_symbol_set:
-        pair_lst = [args.symbol]
+        pairsym_lst = [args.symbol]
     else:
         print(f"Symbol {args.symbol!r} does not occur in the examples")
         lst = list(input_symbol_set)
         print("The following input symbols would be valid:\n",
               " ".join(sorted(lst)))
         exit("")
+
+    for pairsym in pairsym_lst:
+        relevant_contexts(pairsym)
 
     if args.agendas:
         agenda_f = open(args.agendas, 'r')
@@ -548,60 +582,39 @@ def main():
         task_lst_lst = [[{"op": "truncate", "side": "left"},
 	                 {"op": "truncate", "side": "right"}]]
 
-    # print(f"in main: {task_lst_lst = }")
-    # -- collect the minimal contexts for each sym pair --
-    for pair_symbol in pair_lst:
-        context_set_pair: ContextSetPair = relevant_contexts(pair_symbol)
+    result_lst_lst = []
+    # try each recipe in the task_lst_lst
+    for task_lst in task_lst_lst:
         result_lst = []
-        (positive_contexts,
-         negative_contexts) = context_set_pair
-        best_penalty = 999999999
-        for task_lst in task_lst_lst:
-            agenda = deque(task_lst.copy())
-            res_ctx_pair: ContextSetPair= search_reductions(
-                agenda,
-                positive_contexts.copy(),
-                negative_contexts.copy())
-            (pos_contexts, neg_contexts) = res_ctx_pair
-            # print_rule(pair_symbol, "=>", pos_contexts) ####
+        agenda = deque(task_lst.copy())
+        # -- collect the minimal contexts for each sym pair --
+        for pair_symbol in pairsym_lst:
+            result_pos_ctx_set: ContextSet = search_reductions(
+                agenda.copy(),
+                pair_symbol,
+                positive_context_set[pair_symbol].copy())
             # print(f"{pos_contexts = }\n{neg_contexts}") ####
-            pos_pena, neg_pena = pos_neg_penalty(pos_contexts, neg_contexts)
-            penalty = min(pos_pena, neg_pena)
-            # print(f"In inner loop: {penalty = }") ####
-            result_lst.append((pair_symbol,
-                               pos_contexts, neg_contexts,
-                               pos_pena, neg_pena,
-                               task_lst))
-            if penalty < best_penalty:
-                best_penalty = penalty
+            pos_pena = context_set_penalty(result_pos_ctx_set)
+            result_lst.append({"pairsym": pair_symbol,
+                               "posctx": result_pos_ctx_set,
+                               "pospena": pos_pena,
+                               "recipe": task_lst})
 
-        for (pair_symbol, pos_contexts, neg_contexts,
-             pos_pena, neg_pena, task_lst) in result_lst:
-            if cfg.verbosity > 1:
-                print("\n! recipe:")
-                for task in task_lst:
-                    print(f"!\t\t{task}")
-            if cfg.verbosity >= 0 :
-                print_rule(pair_symbol, "=>", pos_contexts, pos_pena)
-            if cfg.verbosity > 1:
-                print_rule(pair_symbol, "/<=", neg_contexts, neg_pena)
+        for result in result_lst:
+            if cfg.verbosity > 1 :
+                print_rule(result, result["pospena"], "=>")
+        result_lst_lst.append(result_lst)
         
-        # -- print the results collected
-        pen = pos_neg_penalty(pos_contexts, neg_contexts)
-        # print(f"in main, best result for {pair_symbol}, {penalty = }: ")  ####
-        #if len(pos_contexts) <= len(neg_contexts) or cfg.verbosity > 1:
-        #    print_rule(pair_symbol, "=>", pos_contexts, pos_pena)
-        #if len(pos_contexts) > len(neg_contexts) or cfg.verbosity > 1:
-        #    print_rule(pair_symbol, "/<=", neg_contexts, neg_pena)
-
-        if cfg.verbosity > 0:
+    process_results_into_rules(pairsym_lst, result_lst_lst)
+    
+    if cfg.verbosity > 1:
+        for pair_symbol in pairsym_lst:
             insym, outsym = pairsym2sympair(pair_symbol)
-            for lc, rc in sorted(positive_contexts, key=right_ctx):
+            pos_ctx_lst = list(positive_context_set[pair_symbol]) # ********
+            for lc, rc in pos_ctx_lst:
                 l_str = context_to_output_str(lc[3:])
                 r_str = context_to_output_str(rc[:-3])
                 print(f"!{l_str:>29}<{outsym}>{r_str}")
-        # for res in result_lst: ####
-        #    print(res) ####
 
 if __name__ == "__main__":
     main()

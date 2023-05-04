@@ -1,0 +1,39 @@
+[
+    [
+	{"op": "truncate", "side": "left"},
+	{"op": "truncate", "side": "right"}
+    ],
+    [
+	{"op": "surface", "set": "VoCoS"},
+	{"op": "truncate", "side": "left"},
+	{"op": "truncate", "side": "right"}
+    ],
+    [
+	{"op": "truncate", "side": "left"},
+	"ConM",
+	"VowS",
+	"VowØ",
+	{"op": "truncate", "side": "right"}
+    ],
+    [
+	{"op": "truncate", "side": "left"},
+	{"op": "truncate", "side": "right"},
+	"Suff",
+	"VoØ",
+	"VoS",
+	{"op": "surface", "set": "VoCoS"}
+    ],
+    [
+	{"op": "truncate", "side": "left"},
+	"{ij}:",
+	"VoØ",
+	{"op": "truncate", "side": "right"}
+    ],
+    [
+	{"op": "truncate", "side": "left"},
+	{"op": "mphon", "set": "Suff"},
+	"VoØ",
+	"CoM",
+	{"op": "truncate", "side": "right"}
+    ]
+]
