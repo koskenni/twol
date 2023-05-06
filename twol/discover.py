@@ -531,6 +531,7 @@ def process_results_into_rules(pairsym_lst: List[PairSym],
                 if cfg.verbosity >= 4:
                     print_rule(result, "=>")
 
+    if cfg.verbosity >= 4:
     print("!\n! selected rules:\n!")
     res_lst = []
     for pairsym in pairsym_lst:
@@ -592,12 +593,17 @@ def main():
         "-d", "--definitions",
         help="definitions of pair symbol sets",
         default="setdefs.twol")
+    arpar.add_argument(
+        "-m", "--max-examples",
+        help="Maximun number of examples per morphophoneme to be printed"\
+        " as comments.  Default is 20 for each pair symbol.",
+        type=int, default=20)
 
     arpar.add_argument(
         "-v", "--verbosity",
-        help="Level of  diagnostic output, default is 5. Set to"\
+        help="Level of  diagnostic output, default is 1. Set to"\
         " 0 to omit the printing of relevant examples for the rules",
-        type=int, default=5)
+        type=int, default=1)
     args = arpar.parse_args()
 
     cfg.verbosity = args.verbosity
@@ -676,11 +682,13 @@ def main():
         
     process_results_into_rules(pairsym_lst, result_lst_lst)
     
-    if cfg.verbosity > 1:
+    if cfg.verbosity >= 1:
         for pair_symbol in pairsym_lst:
             insym, outsym = pairsym2sympair(pair_symbol)
-            pos_ctx_lst = list(positive_context_set[pair_symbol]) # ********
-            for lc, rc in pos_ctx_lst:
+            pos_ctx_lst = list(positive_context_set[pair_symbol])
+            srt_ctx_lst = sorted(pos_ctx_lst,
+                                 key=lambda x: x[1])
+            for lc, rc in srt_ctx_lst[:args.max_examples]:
                 l_str = context_to_output_str(lc[3:])
                 r_str = context_to_output_str(rc[:-3])
                 print(f"!{l_str:>29}<{outsym}>{r_str}")
