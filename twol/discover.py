@@ -479,12 +479,16 @@ def context_set_penalty(context_set: ContextSet):
     return penalty
 
 def print_rule(result: Result,
-               penalty: int,
                operator: str) -> None:
     """Prints one rule"""
+    if cfg.verbosity >= 2:
+        print("\n! recipe:")
+        for task in result["recipe"]:
+            print(f"!\t\t{task}")
     pair_symbol = result["pairsym"]
     context_set = result["posctx"]
-    print(f"{pair_symbol} {operator}\t\t! {penalty}")
+    weight = result["weight"]
+    print(f"{pair_symbol} {operator}\t\t! {weight}")
     rule_lst = [f"    {lc} _ {rc}" for lc, rc in context_set]
     print(" ,\n".join(rule_lst) + " ;")
 
@@ -493,21 +497,18 @@ def print_context_set(msg: str, context_set: ContextSet) -> None:
     rule_lst = [f"    {lc} _ {rc}" for lc, rc in context_set]
     print(" ,\n".join(rule_lst) + " ;")
 
+#====================================================================
 def process_results_into_rules(pairsym_lst: List[PairSym],
                                result_lst_lst: List[List[Result]]):
-    # process resulte for each recipe
+    # process rule candidates for each recipe
+    cand_rule_lst_dict = defaultdict(list)
     for result_lst in result_lst_lst:
         assert len(pairsym_lst) == len (result_lst)
         recipe = result_lst[0]["recipe"]
-        if cfg.verbosity > 0:
-            print("\n! recipe:")
-            for task in recipe:
-                print(f"!\t\t{task}")
-        srt_res_lst = sorted(result_lst, key=lambda x: x["pospena"])
-        success = True
+        srt_res_lst = sorted(result_lst, key=lambda x: x["weight"])
         for result in srt_res_lst:
             pair_sym = result["pairsym"]
-            weight = result["pospena"]
+            weight = result["weight"]
             pos_ctx_set = result["posctx"]
             exclusive = True
             for other_result in srt_res_lst:
@@ -518,14 +519,44 @@ def process_results_into_rules(pairsym_lst: List[PairSym],
                 if not pos_neg_is_subset(pos_ctx_set,
                                          other_neg_ctx_set):
                     exclusive = False
-                    success = False
                     break
             if exclusive:
-                if (not success or result != srt_res_lst[-1]):
-                    print_rule(result, weight, "<=>")
+                cand_rule_lst_dict[pair_sym].append((weight, recipe,
+                                                     "<=>", pos_ctx_set))
+                if cfg.verbosity >= 4:
+                    print_rule(result, "<=>")
             else:
-                print_rule(result, result["posctx"], "=>")
+                cand_rule_lst_dict[pair_sym].append((weight, recipe,
+                                            "=>", pos_ctx_set))
+                if cfg.verbosity >= 4:
+                    print_rule(result, "=>")
 
+    print("!\n! selected rules:\n!")
+    res_lst = []
+    for pairsym in pairsym_lst:
+        cand_rule_lst = sorted(cand_rule_lst_dict[pairsym],
+                               key=lambda x: x[0])
+        #print(f"{cand_rule_lst = }") #####
+        for (weight, recipe, rule_op, pos_ctx_set) in cand_rule_lst[:1]:
+            res = {"pairsym": pairsym,
+                   "posctx": pos_ctx_set,
+                   "recipe": recipe,
+                   "weight": weight,
+                   "ruleop": rule_op}
+            res_lst.append(res)
+ 
+    #print(f"{res_lst = }") #####
+ 
+    srt_res_lst = sorted(res_lst, key=lambda x: x["weight"])
+    exclusive = True
+    for res in res_lst:
+        rule_op = res["ruleop"]
+        if rule_op != "<=>":
+            exclusive = False
+        if (not exclusive) or res != res_lst[-1]:
+            print_rule(res, rule_op)
+        
+#====================================================================
 def main():
     
     version = cfg.timestamp(__file__)
@@ -635,12 +666,12 @@ def main():
             pos_pena = context_set_penalty(result_pos_ctx_set)
             result_lst.append({"pairsym": pair_symbol,
                                "posctx": result_pos_ctx_set,
-                               "pospena": pos_pena,
+                               "weight": pos_pena,
                                "recipe": task_lst})
 
         for result in result_lst:
-            if cfg.verbosity > 1 :
-                print_rule(result, result["pospena"], "=>")
+            if cfg.verbosity >= 5 :
+                print_rule(result, "=>")
         result_lst_lst.append(result_lst)
         
     process_results_into_rules(pairsym_lst, result_lst_lst)
