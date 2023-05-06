@@ -62,3 +62,7 @@ graphviz_output_format = "png"
 
 # -- Options for LaTeX output ---------------------------------------------
 
+# -- Options for typehints ------------------------------------------------
+
+always_document_param_types = True
+#typehints_use_signature = True

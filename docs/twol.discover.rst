@@ -22,23 +22,15 @@ Note the symbol ``.#.`` which denotes the end of the left or right context.   Th
   (".#. k ä", "{ieØeØ}:e n .#.")
 
 
-The sets of positive and the negative contexts afe built and the positive is subtracted from the negative.
+The sets of positive and the negative contexts afe built and the positive is subtracted from the negative.  The negative contexts remain constant during the processing whereas the positive ones are modified by truncations and/or substitutions.  
+
 
 Generalising the sets of contexts
 ---------------------------------
 
 These initial sets of contexts correspond to the trivial rule which constrains the occurrence of the pair symbol within the set of examples.  Such a rule is correct but does not work outside the set of examples because the contexts are too restrictive.  The task of the discovery procedure is to generalise the positive and the negative sets while keeping the two sets mutually exclusive.
 
-One way to generalise the contest is to replace a set of pair symbols with a new symbol, such as symbols ``{ij}:i``, ``{ieØeØ}:i``, ``{V}:i`` and ``i`` with ``:i``.  The replacement is feasible if after applying it, the positive set and the negative set remain disjoint.  A possible reduction worth testing could be to reduce all pairs ``x:x`` to ``:x``.
-
-Another way to generalise the contexts is to shorten them.  One can set a maximum length to the left contexts.  If the  set of truncated positive contexs is still disjoint from the corresponding set of negative contexts, then the new sets can replace the original sets.  One can then proceed with potential further left truncations or right truncations.
-
-A rule corresponding truncated contexts clearly accepts all positive examples but if the truncation is too heavy, some negative examples will accepted along with the correct ones.
-
-The generalising pair symbols might be done first and the truncation then or the other way round.  The order might affect what the final result of the discovery procedure will be (and some experiments are needed).
-
-During the steps of the reduction, the sets of positive and negative examples are treated as steps.  If the recuction produces an identical context out of two or more earlier contexts, then the resulting set is smaller -- and this is of, course a good sign as we are looking for a compact and general expression for the rule.
-
+The program modifies the positive context sets but keeps the negative sets constant.  Therefore, the comparisons between positive and negative context sets is performed with functions which correctly deduce the inclusions or disjointness.
 
 Python functions of the module
 ------------------------------
