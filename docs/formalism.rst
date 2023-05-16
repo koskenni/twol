@@ -122,7 +122,7 @@ TLEs may consist of:
 *[X]* (brackets, grouping)
     A TLE in square brackets denotes itself but the brackets affect the order of evaluation, e.g. ``:e :i | :a :u`` consists of strings of length two whereas ``:e [:i | :a] :u`` would consist of strings of lenght three.
 
-.. index:: optional, ()
+.. index:: optional expression, ()
 
 *(X)* (optional)
     An optional TLE *X* denotes the union of *X* and a set consisting of the zero-length string (epsilon).

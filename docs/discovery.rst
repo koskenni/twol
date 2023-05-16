@@ -62,6 +62,8 @@ The script processes rule contexts incrementally.  The initial set of contexts i
 There will initially be as many contexts parts in the rule as there are occurrences of the pair symbol.  Such a rule trivially accepts all positive examples and rejects all negative examples (but reject many good occurrences beyond the set of given examples).  The idea of the algorithm is to generalise the contexts in steps.  E.g. shorter contexts still accept the positive examples but they do not necessarily reject all negative ones.  Thus, after each step, the program has to check that the rules still rejects the set of all examples.  As long as they do reject, the process can go on.
 
 
+.. index:: generalising context sets, generalising pair symbols, truncation, left-truncation, right-truncation
+
 Generalisations
 ===============
 
@@ -81,6 +83,8 @@ The rule discovery follows so called recipes.  The program is given a list of re
 A recipe is a sequence of steps or tasks selected from the selection of generalisations or reductions presente in the previous section.  The reductions are applied tentatively to the current positive set of contexts of a pair symbol.  If the result is still disjoint from the negative context set of the pair symbol, then the process continues with the newly reduced positive context set.  Otherwise the tentative reduction is discarded and the next step of the recipe is tried.
 
 
+.. index:: context set
+
 Rules as sets of context
 ========================
 
@@ -92,6 +96,8 @@ Mathematically, one can interpret the reductions to multiply the sets of context
 
 Reductions may, in general, cause disjoint positive/negative context sets become ovelapping, but never the opposite.  A reduction must not be able to convert an overlapping context sets become disjoint.  The reductions presented earlier, are safe in this respect.
 
+
+.. index:: set of symbol pairs, symbol pair set, Python set, two-level expression, TLE
 
 Defining sets of pair symbols
 =============================
@@ -111,8 +117,10 @@ The ``twol-discover`` program defines the sets of pair symbols using the same fo
   CoM = CoS.m ;               ! morphophonemic consonants
   CoØ = CoM - CoS ;           ! deleted consonants
 
-See the :ref:`formalism` for details of the rule formalism, especially for the ``.m`` operator.  The program uses a subset (``discovdef.ebnf``) of the rule formalism, but builds Python sets instead of finite-state transducers.
+See the :ref:`formalism` for details of the formalism for two-level expressions (TLE), especially for the ``.m`` operator.  The program uses a subset (``discovdef.ebnf``) of the rule formalism, but instead of finite-state transducers it builds Python sets to represent sets of pair symbols.  See also :ref:`twparsere` for the possibilites of implementing TLE using Python regular expressions.
 
+
+.. index:: recipe of reduction tasks
 
 Recipes to control the order of reductions
 ==========================================
@@ -134,6 +142,8 @@ The user defines a set of recipes i.e. lists of tentative reductions.  Each list
   ]
 
 
+.. index:: evaluating rules, rule weight
+
 Evaluating the rules discovered
 ===============================
 
@@ -149,6 +159,17 @@ The program only produces ``<=>`` and ``=>`` types of rules.  This is not a limi
 Even in the best case, the rules can only be as good as the set of examples are. If the examples are chosen in a disciplined and balanced manner, the program is expected to be useful and practical.  If alternations are only partly present in the set of examples, the proposed raw rules will be poor and may even be misleading.
 
 For more information on the program itself, see the documentation of the program code ``discover`` in the :doc:`modules` and directly in :doc:`twol.discover`.
+
+
+.. index:: optional rules
+
+Selecting final rules
+=====================
+
+In the first phases, the program produces rules for all pairs of the morphophoneme and the rules are right-arrow rules.  If there are two possible pairs, then it is ofthe the case that one pair has a simple context and none of the positive contexts of the other overlaps those of the first one.  Then, the two rules will be replaced with one double-arrow rule for the first one which has a more elegant set of contexts.  In general, with morphophonemes with more than two pairs, a right-arrow rule will be replaced with a double arrow rule if none of the positive context of the other pairs overlap the positive contexts of this pair.  If all but one pairs receive a double-arrow rule, then the last rule will be dropped.
+
+Optional variation inhibits the use of double-arrow rules and removing the last rule.  Then, right-arrow rules produced.  
+
 
 .. index:: twol-discov
 
