@@ -142,16 +142,12 @@ class DiscovDefSemantics(object):
             cfg.error_message = f"in outsym: {string} is not in alphabet"
             raise FailedSemantics(cfg.error_message)
 
-def init(ebnf_filename):
+def init(ebnf_str):
     """Initializes the module and compiles and returns a tatsu parser
 
     grammar_file -- the name of the file containing the EBNF grammar
     for rules
     """
-    import os
-    # dir = os.path.dirname(os.path.abspath(__file__))
-    ebnf_file = ebnf_filename
-    ebnf_str = open(ebnf_file).read()
     # print(ebnf_str) ####
     parser = compile(ebnf_str)
     return parser
@@ -190,8 +186,10 @@ def parse_defs(parser, defs_filename):
                 print(e) ###
                 print(str(e))
             print(40 * "*" + "\n")
+    return defs_str
 
 def main():
+    import os
     import argparse
     arpar = argparse.ArgumentParser(
         description="A compiler for discovery set definitions")
@@ -205,6 +203,10 @@ def main():
     args = arpar.parse_args()
 
     twexamp.read_examples(filename_lst=[args.examples], build_fsts=False)
+
+    # dir = os.path.dirname(os.path.abspath(__file__))
+    ebnf_file = args.grammar
+    ebnf_str = open(ebnf_file).read()
     
     parser = init(args.grammar)
     parse_defs(parser, args.definitions)

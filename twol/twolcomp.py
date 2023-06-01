@@ -166,6 +166,7 @@ def main():
         else:
             print("Error: not a valid type of a rule", op)
             continue
+        R.set_name(rule_str[:30])
         if cfg.verbosity >= 10:
             twbt.ppfst(R)
         if args.lost or args.wrong or args.output:

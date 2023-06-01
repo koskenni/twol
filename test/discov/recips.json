@@ -1,14 +1,17 @@
 [
     [
+	{"name": "left and right truncation"},
 	{"op": "truncate", "side": "left"},
 	{"op": "truncate", "side": "right"}
     ],
     [
+	{"name": "surface of phonemes"},
 	{"op": "surface", "set": "VoCoS"},
 	{"op": "truncate", "side": "left"},
 	{"op": "truncate", "side": "right"}
     ],
     [
+	{"name": "mphon cons and surf vowels"},
 	{"op": "truncate", "side": "left"},
 	"ConM",
 	"VowS",
@@ -16,6 +19,16 @@
 	{"op": "truncate", "side": "right"}
     ],
     [
+	{"name": "vowel harmony"},
+	{"op": "truncate", "side": "right"},
+	"ConM",
+	"VowSF",
+	"VowSB",
+	"VowSN",
+	"VowØ"
+    ],
+    [
+	{"name": "alternations at the end of the stem"},
 	{"op": "truncate", "side": "left"},
 	{"op": "truncate", "side": "right"},
 	"Suff",
@@ -24,12 +37,14 @@
 	{"op": "surface", "set": "VoCoS"}
     ],
     [
+	{"name": "pl/past alternations at the end of the stem"},
 	{"op": "truncate", "side": "left"},
 	"{ij}:",
 	"VoØ",
 	{"op": "truncate", "side": "right"}
     ],
     [
+	{"name": "alternations at the end of stem due to mphon"},
 	{"op": "truncate", "side": "left"},
 	{"op": "mphon", "set": "Suff"},
 	"VoØ",
