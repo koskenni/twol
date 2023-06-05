@@ -15,7 +15,7 @@ from collections import deque, defaultdict
 
 import twol.cfg as cfg
 from twol.cfg import pairsym2sympair, sympair2pairsym, pair_symbol_set
-from twol.cfg import definitions, symbol_pair_set
+from twol.cfg import symbol_pair_set
 from twol.cfg import input_symbol_set, output_symbol_set
 import twol.twexamp as twexamp
 from typing import List, Dict, Set, Tuple, DefaultDict, Deque
@@ -38,17 +38,68 @@ outsym2pairsym_set: DefaultDict[str, set] = defaultdict(set)
 positive_context_set = {}
 negative_context_set = {}
 
+ebnf_str = """
+@@grammar::DiscovDefSyntax
+@@left_recursion :: False
+
+def_start = define $ ;
+
+define = left:identifier op:'=' ~ right:expression ';' ;
+
+identifier = /\b[^\W_][^\W_]+\b/ ;
+
+expression = term ;
+
+term = union | difference | intersection | factor ;
+
+union = left:factor op:'|' ~ right:term ;
+
+difference = left:factor op:'-' ~ right:term ;
+
+intersection = left:factor op:'&' ~ right:term ;
+
+factor = unit ;
+
+unit = Morphophonemic
+    | Surface
+    | atom
+    ;
+
+Morphophonemic = expr:atom '.m' ;
+
+Surface = expr:atom '.s' ;
+
+atom
+    = '[' ~ @:expression ']'
+    | pair
+    | outsym
+    | defined
+    ;
+
+pair
+    = /(\{[^ _{}]+\}|):([^\W0-9_]\b|[']|%\W|)/
+    ;
+defined
+    = /\b[^\W_][^\W_]+\b/
+    ;
+outsym
+    = /\b[^\W0-9_]\b|[']|%[-%]/
+    ;
+"""
+
 def print_context_set(msg: str, context_set: ContextSet) -> None:
     print(msg)
     rule_lst = [f"    {lc} _ {rc}" for lc, rc in context_set]
     print(" ,\n".join(rule_lst) + " ;")
 
 def max_left_len(context_set: ContextSet) -> int:
-    maxlen = max([len(lc.split()) for lc, rc in context_set])
+    maxlen = (max([len(lc.split()) for lc, rc in context_set])
+              if context_set else 0)
     return maxlen
 
 def max_right_len(context_set: ContextSet) -> int:
-    maxlen = max([len(rc.split()) for lc, rc in context_set])
+    maxlen = (max([len(rc.split()) for lc, rc in context_set])
+              if context_set else 0)
     return maxlen
 
 #=============================================================
@@ -159,27 +210,27 @@ def reduce_to_setname(set_name: str,
     """
     Reduce contexts by substituting pair symbols with set names
 
-    :parameter set_name: A name of a pairsym set in definitions.
+    :parameter set_name: A name of a pairsym set in cfg.definitions.
 
     :parameter rule_context_set:  A set of contexts to which the reduction is to be applied.
 
-    :returns: A new set of contexts where every occurrence of pairsyms in ``definitions[set_name]`` have been substituted with ``set_name``.
+    :returns: A new set of contexts where every occurrence of pairsyms in ``cfg.definitions[set_name]`` have been substituted with ``set_name``.
 
 """
-    symbol_set = definitions[set_name]
+    symbol_set = cfg.definitions[set_name]
     # print(f"{symbol_set = }") ####
     new_rule_context_set: ContextSet = set()
     for left_context, right_context in rule_context_set:
         new_left_ctx = [set_name
                         if (pairsym in symbol_set or
-                            (definitions.get(pairsym,
+                            (cfg.definitions.get(pairsym,
                                              pair_symbol_set) <=
                              symbol_set)
                             ) else pairsym
                         for pairsym in left_context.split()]
         new_rght_ctx = [set_name
                         if (pairsym in symbol_set or
-                            (definitions.get(pairsym,
+                            (cfg.definitions.get(pairsym,
                                              pair_symbol_set) <=
                              symbol_set)
                             ) else pairsym
@@ -203,7 +254,7 @@ def reduce_to_surface(rule_context_set: ContextSet,
 
     :parameter subset_name:  A defined subset whose sympairs are considered for reduction.
 
-    :returns:  A new context set where all occurences of pairsyms (``insym:outsym``) in ``definitions[subset_name]`` are replaced with (``:outsym``), e.g. ``{tds}:s`` have been reduced into e.g. ``:s``.
+    :returns:  A new context set where all occurences of pairsyms (``insym:outsym``) in ``cfg.definitions[subset_name]`` are replaced with (``:outsym``), e.g. ``{tds}:s`` have been reduced into e.g. ``:s``.
 
 """
     pairsym2outsym_map = {}
@@ -219,8 +270,10 @@ def reduce_to_surface(rule_context_set: ContextSet,
                 else:
                     pairsym2outsym_map[pair_sym] = ":" + outsym
     # print(f"{pairsym2outsym_map = }") ####
+    #print(f"in reduce_to_surface: {cfg.definitions = }")
+    #print(f"in reduce_to_surface: {subset_name = }")
     new_rule_context_set: ContextSet = set()
-    subset = definitions[subset_name]
+    subset = cfg.definitions[subset_name]
     for left_context, right_context in rule_context_set:
         new_left_ctx = [pairsym2outsym_map.get(pairsym, pairsym)
                         if pairsym in subset else pairsym
@@ -243,7 +296,7 @@ def reduce_to_mphon(rule_context_set: ContextSet,
 
     :param rule_context_set:  A set of positive context which might be truncated and already reduced.
 
-    :param subset_name:  Only pairs which are in definitions[subset_name] are reduced.
+    :param subset_name:  Only pairs which are in cfg.definitions[subset_name] are reduced.
 
     :returns: A modified context set where pair symbols (insym:outsym) belonging to the given subset have been reduced into (insym:).
 
@@ -262,7 +315,7 @@ def reduce_to_mphon(rule_context_set: ContextSet,
                     pairsym2insym_map[pair_sym] =  insym + ":"
     # print(f"{pairsym2outsym_map = }") ####
     new_rule_context_set: ContextSet = set()
-    subset = definitions[subset_name]
+    subset = cfg.definitions[subset_name]
     for left_context, right_context in rule_context_set:
         new_left_ctx = [pairsym2insym_map.get(pairsym, pairsym)
                         if pairsym in subset else pairsym
@@ -295,8 +348,8 @@ def overlap(set_lst: list[str],
     if len(set_lst) > len(pairsym_lst):
         pairsym_lst = pairsym_lst + ["XYZ"]*(len(set_lst) - len(pairsym_lst))
     for s, p in zip(set_lst, pairsym_lst):
-        if s in definitions:
-            if p not in definitions[s]:
+        if s in cfg.definitions:
+            if p not in cfg.definitions[s]:
                 break
         else:
             if p != s:
@@ -463,7 +516,7 @@ def search_reductions(agenda: Deque,
         else:
             return search_reductions(agenda, pair_symbol,
                                      rule_context_set)
-    elif (op in definitions):
+    elif (op in cfg.definitions):
         if cfg.verbosity >= 20:
             print(f"in search_reductions, entering reduce_to_setname({op},..)")
         new_rule_ctx_set = reduce_to_setname(op, rule_context_set)
@@ -585,6 +638,9 @@ def main():
     global outsym2pairsym_set
     import argparse
     import json
+    import os
+
+    global ebnf_str
     
     arpar = argparse.ArgumentParser(
         "twol-discov",
@@ -605,14 +661,13 @@ def main():
         "-r", "--recipes",
         help="Initial list of recipes for the context reductions.",
         default="")
-    arpar.add_argument(
-        "-g", "--grammar",
-        help="EBNF grammar which defines the syntax of the definitions.",
-        default="discovdef.ebnf")
+    #arpar.add_argument(
+    #    "-g", "--grammar",
+    #    help="EBNF grammar which defines the syntax of the definitions."\
+    #    "The program has the official syntax but here you can override it")
     arpar.add_argument(
         "-d", "--definitions",
-        help="definitions of pair symbol sets",
-        default="setdefs.twol")
+        help="name of a file containing the definitions of pair symbol sets")
     arpar.add_argument(
         "-m", "--max-examples",
         help="Maximun number of examples per morphophoneme to be printed"\
@@ -633,15 +688,20 @@ def main():
     if cfg.verbosity >= 10:
         print("--- all examples read in ---")
 
-    import os
+    for insym, outsym in symbol_pair_set:
+        pair_symbol = sympair2pairsym(insym, outsym)
+        insym2pairsym_set[insym].add(pair_symbol)
+        outsym2pairsym_set[outsym].add(pair_symbol)
+    for insym, symset in insym2pairsym_set.items():
+        cfg.definitions[insym + ":"] = symset
+    for outsym, symset in outsym2pairsym_set.items():
+        cfg.definitions[":" + outsym] = symset
+    #print(f"in main: {cfg.definitions =}") ####
 
-    
-    ebnf_file = args.grammar
-    ebnf_str = open(ebnf_file).read()
-    parser = discopars.init(ebnf_str)
+    parser = discopars.init()
     defs_str = discopars.parse_defs(parser, args.definitions)
     if cfg.verbosity >= 10:
-        for nm, cs in definitions.items():
+        for nm, cs in cfg.definitions.items():
             s_str = " ".join(sorted(list(cs)))
             print(f"{nm}: {s_str}\n")
 
@@ -652,16 +712,6 @@ def main():
     else:
         task_lst_lst = [[{"op": "truncate", "side": "left"},
 	                 {"op": "truncate", "side": "right"}]]
-
-    for insym, outsym in symbol_pair_set:
-        pair_symbol = sympair2pairsym(insym, outsym)
-        insym2pairsym_set[insym].add(pair_symbol)
-        outsym2pairsym_set[outsym].add(pair_symbol)
-    for insym, symset in insym2pairsym_set.items():
-        definitions[insym + ":"] = symset
-    for outsym, symset in outsym2pairsym_set.items():
-        definitions[":" + outsym] = symset
-    #print(f"in main: {definitions =}") ####
 
     # -- expand a plain input symbol into a list of symbol pairs --
     if args.symbol in input_symbol_set:
@@ -676,7 +726,7 @@ def main():
               " ".join(sorted(lst)))
         exit("")
 
-    print(defs_str)
+    print(defs_str) ####
     for input_symbol in input_symbol_lst:
         pairsym_lst: List[PairSym]  = []
         for pairsym in insym2pairsym_set[input_symbol]:

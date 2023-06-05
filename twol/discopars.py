@@ -4,7 +4,7 @@
 
 import sys, re, json
 
-from codecs import open
+###from codecs import open
 
 from pprint import pprint
 
@@ -17,20 +17,30 @@ from tatsu.exceptions import ParseException, FailedParse, ParseError, FailedSema
 import twol.cfg as cfg
 import twol.twexamp as twexamp
 
+from collections import deque, defaultdict
+from typing import List, Dict, Set, Tuple, DefaultDict
+
+insym2pairsym_set: DefaultDict[str, set] = defaultdict(set)
+# key: input symbol, value: set of pair symbols
+
+outsym2pairsym_set: DefaultDict[str, set] = defaultdict(set)
+# key: output symbol, value: set of pair symbols
+
+
 class DiscovDefSemantics(object):
 
     def define(self, ast):
-        # print(f"in define: {ast = }") ####
+        #print(f"in define: {ast = }") ####
         cfg.definitions[ast.left] = ast.right
         return
     
     def identifier(self, ast):
         string = ast.strip()
-        # print(f"in identifier: {string}") ####
+        #print(f"in identifier: {string}") ####
         return string
 
     def union(self, ast):
-        # print(f"in union: {ast.left = }, {ast.right = }") ####
+        #print(f"in union: {ast.left = }, {ast.right = }") ####
         return ast.left | ast.right
 
     def intersection(self, ast):
@@ -78,12 +88,12 @@ class DiscovDefSemantics(object):
         return result_set
 
     def pair(self, ast):
-        # print(f"in pair: {ast = }") ####
+        #print(f"in pair: {ast = }") ####
         up, lo = ast
         up_quoted = re.sub(r"([{}])", r"%\1", up)
         lo_quoted = lo                         ### ????
         lo = re.sub(r"%(.)", r"\1", lo_quoted)
-        ## print(f"in pair: {up= }, {lo = }") ####
+        #print(f"in pair: {up= }, {lo = }") ####
 
         failmsg = []
         if up and (up not in cfg.input_symbol_set):
@@ -117,7 +127,7 @@ class DiscovDefSemantics(object):
             return result_set
 
     def defined(self, ast):
-        # print(f"in defined: {ast = }") ####
+        #print(f"in defined: {ast = }") ####
         string = ast
         if string in cfg.definitions:
             # print(f"in defined: {string} is a defined symbol") ####
@@ -128,7 +138,7 @@ class DiscovDefSemantics(object):
             raise FailedSemantics(cfg.error_message)
 
     def outsym(self, ast):
-        # print(f"in outsym: {ast = }") ####
+        #print(f"in outsym: {ast = }") ####
         string = ast
         lo_quoted = string                      ### ????
         lo = re.sub(r"%(.)", r"\1", lo_quoted)
@@ -142,14 +152,68 @@ class DiscovDefSemantics(object):
             cfg.error_message = f"in outsym: {string} is not in alphabet"
             raise FailedSemantics(cfg.error_message)
 
-def init(ebnf_str):
+ebnf_str = """
+@@grammar::DiscovDefSyntax
+@@left_recursion :: False
+
+start = define $ ;
+
+define = left:identifier op:'=' ~ right:expression ';' ;
+
+#identifier = /\b[^\W_0-9][^\W_]+\b/ ;
+#identifier = /[A-ZÅÄÖØ][A-ZÅÄÖØa-zåäöšž]+/ ;
+identifier = /[^\W_0-9][^\W_]+(?=[ \t\n]*=[ \t\n]*)/ ;
+
+expression = term ;
+
+term = union | difference | intersection | factor ;
+
+union = left:factor op:'|' ~ right:term ;
+
+difference = left:factor op:'-' ~ right:term ;
+
+intersection = left:factor op:'&' ~ right:term ;
+
+factor = unit ;
+
+unit = Morphophonemic
+    | Surface
+    | atom
+    ;
+
+Morphophonemic = expr:atom '.m' ;
+
+Surface = expr:atom '.s' ;
+
+atom
+    = '[' ~ @:expression ']'
+    | pair
+    | outsym
+    | defined
+    ;
+
+#pair = /(\{[^ _{}]+\}|):([^\W0-9_]\b|[']|%\W|)/ ;
+#pair = /(\{[A-ZÅÖÄØa-zåöäšž]+\}|):([A-ZÅÖÄØa-zåäöšž']|%\W|)/ ;
+pair = /(\{[^ _{}]+\}|):([^\W0-9_]|[']|%\W|)(?![^\W0-9_]|[']|%[-%])/ ;
+
+#defined = /\b[^\W0-9_][^\W_]+\b/ ;
+#defined = /[A-ZØ][A-ZØa-z]+/ ;
+defined = /[^\W0-9_][^\W_]+/ ;
+
+#outsym = /\b([^\W0-9_]|[']|%[-%])\b/ ;
+#outsym = /[A-ZÅÖÄØa-zåäöšž]|[']|%[-%]/ ;
+outsym = /([^\W0-9_]|[']|%[-%])(?![^\W0-9_]|[']|%[-%])/;
+
+"""
+
+def init():
     """Initializes the module and compiles and returns a tatsu parser
 
     grammar_file -- the name of the file containing the EBNF grammar
     for rules
     """
-    # print(ebnf_str) ####
-    parser = compile(ebnf_str)
+    # print("in init:", ebnf_str) ####
+    parser = compile(ebnf_str, trace=False)
     return parser
 
 def parse_defs(parser, defs_filename):
@@ -159,14 +223,15 @@ def parse_defs(parser, defs_filename):
     for defi in defs_lst:
         try:
             line_lst = [l.strip() for l in defi.split("\n")]
-            def_str = (" ".join(line_lst)) + " ;"
-            # print(f"{def_str = }") ####
-            if def_str.strip() == ";": continue
-            parser.parse(def_str,
-                         start="def_start",
-                         semantics=DiscovDefSemantics())
+            set_def_str = (" ".join(line_lst)) + " ;"
+            # print(f"{set_def_str = }") ####
+            if set_def_str.strip() == ";": continue
+            parser.parse(set_def_str,
+                         start="start",
+                         semantics=DiscovDefSemantics(),
+                         trace=False)
             line_no += len(line_lst)
-            # print(f"{cfg.definitions = }") ####
+            #print(f"{cfg.definitions = }") ####
         except ParseException as e:
             print("\n" + 40 * "*")
             print("ERROR WAS IN INPUT LINES:",
@@ -191,25 +256,25 @@ def parse_defs(parser, defs_filename):
 def main():
     import os
     import argparse
+
     arpar = argparse.ArgumentParser(
         description="A compiler for discovery set definitions")
     arpar.add_argument("-e", "--examples",
                        help="examples file",
                        default="ksk-examples.pstr")
-    arpar.add_argument("-g", "--grammar",
-                       help="EBNF grammar for set definitions",
-                       default="discovdef.ebnf")
     arpar.add_argument("-d", "--definitions", default="setdefs.twol")
     args = arpar.parse_args()
 
     twexamp.read_examples(filename_lst=[args.examples], build_fsts=False)
 
-    # dir = os.path.dirname(os.path.abspath(__file__))
-    ebnf_file = args.grammar
-    ebnf_str = open(ebnf_file).read()
-    
-    parser = init(args.grammar)
+    for insym, outsym in cfg.symbol_pair_set:
+        pair_symbol = cfg.sympair2pairsym(insym, outsym)
+        insym2pairsym_set[insym].add(pair_symbol)
+        outsym2pairsym_set[outsym].add(pair_symbol)
+
+    parser = init()
     parse_defs(parser, args.definitions)
+    
     for nm, cs in cfg.definitions.items():
         s_str = " ".join(sorted(list(cs)))
         print(f"{nm}: {s_str}\n")
