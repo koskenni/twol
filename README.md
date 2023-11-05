@@ -1,8 +1,8 @@
 # twol: Compiler and other tools for two-level morphology
 
-These tools can be installed to your computer from PyPi by normal commands, such as
+These tools can be installed to your computer from PyPi by normal commands, such as:
 
-   pip3 install --user twol
+    pip3 install --user twol
 
 For more instructions, see TWO Wiki https://github.com/koskenni/twol/wiki
 
