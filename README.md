@@ -120,7 +120,7 @@ starting the programs with a ``--help`` option.
 
 ## Licenses
 
-The programs aligner.py, charmetric.py and multialign.py are written
+The programs in this project are written
 by Kimmo Koskenniemi alone and he has the copyright to these
 programs. The programs are free software according to the GNU General
 Public License Version 3, 29 June 2007, see LICENSE.txt in this
