@@ -46,7 +46,7 @@ The tuple with six universal sets is *not valid* by definition, i.e. such morpho
 Binary representation of sets of features
 -----------------------------------------
 
-For each of the six positions, there is a small finite set of possible features.  We assume that there are never more than 16 different features (including "Zero") for any positionThe program finds them and gives a numeric value for each.  The "Zero" feature is always value 0, and the rest are given values 1, 2, 4, 8, 16, 32, ...  Each phoneme gets a representation of six integers which are powers of 2.  The set ``U`` would be ``{1, 2, 4, 8, 16, ..., 2*15}``
+For each of the six positions, there is a small finite set of possible features.  We assume that there are never more than 16 different features (including "Zero") for any positionThe program finds them and gives a numeric value for each.  The "Zero" feature is always value 0, and the rest are given values 1, 2, 4, 8, 16, 32, ...  Each phoneme gets a representation of six integers which are powers of 2.  The set ``U`` would be ``{1, 2, 4, 8, 16, ..., 2**15}``
 
 For each of the six positions we now have an integer which corresponds to the set of features as discussed above.  Union of two sets corresponds to the *or* (``|``) of these binary integers. Combining a morphophoneme and a phoneme reduces now to the or (``|``) of the six corresponding binary integers.
 
