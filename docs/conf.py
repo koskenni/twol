@@ -60,9 +60,13 @@ html_static_path = ['_build/_static']
 
 graphviz_output_format = "png"
 
-# -- Options for LaTeX output ---------------------------------------------
+# -- Options for LaTeX/PDF output -----------------------------------------
+#
+latex_engine = 'xelatex'
+latex_show_urls = 'footnote'
 
 # -- Options for typehints ------------------------------------------------
 
 always_document_param_types = True
 #typehints_use_signature = True
+
