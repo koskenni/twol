@@ -71,7 +71,7 @@ TLEs may consist of:
     Deletion, e.g. ``{kØ}:Ø``, is represented by an arbitrary symbol such as ``Ø`` which is not otherwise used in the language to be described.  The zero is treated as a normal symbol within the rules and examples (thus, not as an epsilon or null string).  Compilation and testing is done with ``Ø`` as a character.  That character is deleted when building a recognizer for analyzing actual word forms in texts.  Note that ``Ø`` is not a valid pair symbol and that morphophonemic representations never contain ``Ø`` as a symbol.  All deletions and ephentheses are treated by using morphophonemes which contain zero as one of its possibilities, e.g. ``{ieØ}``
 
 *:z* (morphophonemic side open)
-    Denotes the set of those pair symbols *x:y* in *Pairs* where *y* = *z*.  E.g. ``:a`` might denote the set of strings ``a``, ``{aä}:a`` and ``{aØ}:a``.
+    Denotes the set of those pair symbols *x:y* in *Pairs* where *y* = *z*.  E.g. ``:a`` might denote the set of ``a``, ``{aä}:a`` and ``{aØ}:a``.
 
 *z:* (surface side open)
     Denotes the set of those pair symbols *x:y* in *Pairs* where *x* = *z*.  E.g. ``{ij}:`` might denote the set of ``{ij}:i`` and ``{ij}:j``
