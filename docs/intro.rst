@@ -31,7 +31,7 @@ This set of documents demonstrates methods and tools for:
 
 1. Establishing the morphophonemic representations (almost mechanically) out of a table of inflectional paradigms.  The method and the tools are described in a separate part of this documentation: :ref:`representations`.
 
-2. Finding raw candidates for the two-level rules.  The method and the use of the program are described in a separate part of this documentatio: :ref:`discovery`.
+2. Finding raw candidates for the two-level rules.  The method and the use of the program are described in a separate part of this documentation: :ref:`discovery`.
 
 3. Authoring a two-level rule and testing it immediately.  The testing is has been improved so that it consists of two phases: (a) the rule is checked against the examples and the program reports any examples not accepted by the rule, and (b) a set of negative examples is generated from the positive ones and the program checks that the rule discards all of them.  The revised rule formalism is described in part :ref:`formalism`, the use of the compiler in part :ref:`compiling`.  For the interested reader, some details of the methods and algorithms of the compilation process are documented separately: :ref:`twrule`.  The compiler can also test the whole rule grammar against examples.  When the rules have been written for all morphophonemes, the program can make a more comprehensive check that the grammar is complete and has all necessary constraints.
 
