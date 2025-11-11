@@ -1,3 +1,4 @@
+
 import setuptools
 
 with open("README.md", "r") as fh:
@@ -5,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="twol", # of the PyPI project and package
-    version="0.8.2",
+    version="0.9",
     author="Kimmo Koskenniemi",
     author_email="koskenni@gmail.com",
     description="Tools for simplified two-level morphology",
