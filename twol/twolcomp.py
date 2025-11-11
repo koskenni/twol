@@ -10,7 +10,7 @@ import re
 
 import fileinput
 
-import hfst_dev as hfst
+import hfst as hfst
 
 import twol.cfg as cfg
 

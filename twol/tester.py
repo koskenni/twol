@@ -18,7 +18,7 @@ import os
 
 import re
 
-import hfst_dev as hfst
+import hfst as hfst
 
 import twol.cfg as cfg
 

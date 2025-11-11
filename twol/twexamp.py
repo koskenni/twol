@@ -12,14 +12,14 @@ hfst.rules.restriction
 
 """
 import re
-import hfst_dev as hfst
+import hfst as hfst
 import twol.cfg as cfg
 import twol.twbt as twbt
 
 def pairs_to_fst(pair_set):
     """Converts a seq of symbol pairs into a fst that accepts any of them
 """
-    pairs_bfst = hfst.HfstIterableTransducer()
+    pairs_bfst = hfst.HfstBasicTransducer()
     for pair in pair_set:
         pairs_bfst.disjunct((pair,), 0)       # arg in tokenized format
     fst = hfst.HfstTransducer(pairs_bfst)
@@ -62,7 +62,7 @@ def read_examples(filename_lst=["test.pstr"], build_fsts=True):
         if not os.path.isfile(f):
             exit("EXAMPLE FILE {} DOES NOT EXIST".format(f))
     if build_fsts:
-        examples_bfst = hfst.HfstIterableTransducer()
+        examples_bfst = hfst.HfstBasicTransducer()
     for line_nl in fileinput.input(filename_lst):
         line = line_nl.strip()
         if not line or line.startswith("!"):

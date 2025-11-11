@@ -18,7 +18,7 @@ from tatsu.walkers import NodeWalker
 #from walkers import NodeWalker
 from tatsu.exceptions import ParseException, FailedParse, ParseError, FailedSemantics
 
-import hfst_dev as hfst
+import hfst as hfst
 
 import twol.cfg as cfg
 

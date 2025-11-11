@@ -8,7 +8,7 @@ Copyright 2017-2019, Kimmo Koskenniemi
 This is free software according to GNU GPL 3 license.
 """
 
-import hfst_dev as hfst
+import hfst as hfst
 
 import twol.cfg as cfg
 

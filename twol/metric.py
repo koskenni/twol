@@ -18,7 +18,7 @@ import twol.alphabet as alphabet
 
 import twol.cfg as cfg
 
-import hfst_dev as hfst
+import hfst as hfst
 
 within_set_lst = []
 forall_lst = []

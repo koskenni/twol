@@ -5,7 +5,7 @@ __version__ = "2020-02-01"
 
 import re
 
-import hfst_dev as hfst
+import hfst as hfst
 
 import twol.cfg as cfg
 

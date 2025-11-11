@@ -5,7 +5,7 @@ Copyright 2015-2020, Kimmo Koskenniemi
 This program is free software under Gnu GPL 3 or later
 """
 
-import hfst_dev as hfst
+import hfst as hfst
 
 import twol.cfg as cfg
 
@@ -32,7 +32,7 @@ def pairname(insym, outsym):
 def equivpairs(bfst):
     """Find and print all sets of equivalent transition pairs.
 
-    bfst -- a HfstIterableTransducer whose transition symbol pairs are
+    bfst -- a HfstBasicTransducer whose transition symbol pairs are
     analyzed
 
     Sets of transition symbol pairs behaving identicaly are computed.
@@ -68,7 +68,7 @@ def equivpairs(bfst):
 
 def fst2dicfst(FST):
     """Returns a dict which gives the transition dict for each state"""
-    BFST = hfst.HfstIterableTransducer(FST)
+    BFST = hfst.HfstBasicTransducer(FST)
     dicfst = {}
     for state in BFST.states():
         tdir = {}
@@ -81,7 +81,7 @@ def fst2dicfst(FST):
 
 def fst_to_fsa(FST, separator='^'):
     """Converts FST into an FSA by joining input and output symbols with separator"""
-    FB = hfst.HfstIterableTransducer(FST)
+    FB = hfst.HfstBasicTransducer(FST)
     sym_pairs = FB.get_transition_pairs()
     dict = {}
     for sym_pair in sym_pairs:
@@ -95,7 +95,7 @@ def fst_to_fsa(FST, separator='^'):
 
 def fsa_to_fst(FSA, separator='^'):
     """hfst.fsa_to_fst does the same """
-    BFSA = hfst.HfstIterableTransducer(FSA)
+    BFSA = hfst.HfstBasicTransducer(FSA)
     sym_pairs = BFSA.get_transition_pairs()
     dic = {}
     for sym_pair in sym_pairs:
@@ -107,7 +107,7 @@ def fsa_to_fst(FSA, separator='^'):
     return FST
 
 def ppfst(FST, print_equiv_classes=True, title=""):
-    """Pretty-prints a HfstTransducer or a HfstIterableTransducer.
+    """Pretty-prints a HfstTransducer or a HfstBasicTransducer.
 
     FST -- the transducer to be pretty-printed
     print_equiv_classes -- if True, then print also the equivalence classes
@@ -127,7 +127,7 @@ def ppfst(FST, print_equiv_classes=True, title=""):
         print("\n" + title)
     else:
         print("\n" + FST.get_name())
-    BFST = hfst.HfstIterableTransducer(FST)
+    BFST = hfst.HfstBasicTransducer(FST)
     labsy, transy = equivpairs(BFST)
     for state in BFST.states():
         d = {}
@@ -159,7 +159,7 @@ def ppfst(FST, print_equiv_classes=True, title=""):
 
 def ppdef(XRC, name, displayed_formula):
     FST = XRC.compile(name)
-    BFST = hfst.HfstIterableTransducer(FST)
+    BFST = hfst.HfstBasicTransducer(FST)
     FST = hfst.HfstTransducer(BFST)
     FST.set_name(name + " = " + displayed_formula)
     ppfst(FST, True)
@@ -189,7 +189,7 @@ def paths(TR, limit=30):
 
 def expanded_examples(TR, insyms, symbol_pair_set):
     # print("symbol_pair_set =", symbol_pair_set) ##
-    BT = hfst.HfstIterableTransducer(TR)
+    BT = hfst.HfstBasicTransducer(TR)
     # print("BT.get_transition_pairs() =", BT.get_transition_pairs()) ##
     for insym in insyms:
         lst = [(ins, outs)
