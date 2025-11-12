@@ -11,7 +11,7 @@ version = "0.9"
 dependencies = [
    "grapheme",
    "hfst >= 3.15",
-   "TatSu == 5.7.4"
+   "TatSu-LTS"
 ]
 requires-python = ">= 3.8"
 
