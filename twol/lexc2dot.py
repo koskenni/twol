@@ -67,7 +67,7 @@ def main():
     for line_nl in sys.stdin:
         line_num += 1
         line = line_nl.rstrip()
-        lst = re.split("\s+", line)
+        lst = re.split(r"\s+", line)
         if line.startswith("!"):
             continue
         if line.startswith("Multichar_Symbols"):
