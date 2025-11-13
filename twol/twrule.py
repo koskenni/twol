@@ -335,7 +335,7 @@ def rightarrow(name, x_fst, *contexts):
     
     x_fst -- the center (X) of the rule
     
-    \*contexts -- list of contexts, i.e. pairs of left and right context
+    *contexts -- list of contexts, i.e. pairs of left and right context
     
     Returns a triple:
     rule_fst -- the compiled rule
@@ -362,7 +362,7 @@ def output_coercion(name, x_fst, *contexts):
     
     x_fst -- the center (X) of the rule
     
-    \*contexts -- list of contexts, i.e. pairs of left and right context
+    *contexts -- list of contexts, i.e. pairs of left and right context
     
     Returns a triple:
     rule_fst -- the compiled rule
@@ -399,7 +399,7 @@ def input_coercion(name, x_fst, *contexts):
     
     x_fst -- the center (X) of the rule
     
-    \*contexts -- list of contexts, i.e. pairs of left and right
+    *contexts -- list of contexts, i.e. pairs of left and right
     context
     
     Returns a triple:
@@ -434,7 +434,7 @@ def doublearrow(name, x_fst, *contexts):
     
     x_fst -- the center (X) of the rule
     
-    \*contexts -- list of contexts, i.e. pairs of left and right
+    *contexts -- list of contexts, i.e. pairs of left and right
     context
     
     Returns a triple:
@@ -466,7 +466,7 @@ def center_exclusion(name, x_fst, *contexts):
     
     x_fst -- the center (X) of the rule
     
-    \*contents -- list of contexts, i.e. pairs of left and right context
+    *contents -- list of contexts, i.e. pairs of left and right context
     
     Returns a triple:
     

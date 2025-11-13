@@ -69,7 +69,7 @@ def read_examples(filename_lst=["test.pstr"], build_fsts=True):
             continue
         lst = line.split("!", maxsplit=1)
         line = lst[0].strip()
-        pairsym_lst = re.split("\s+", line)
+        pairsym_lst = re.split(r"\s+", line)
         symbol_pair_lst = [cfg.pairsym2sympair(pairsym)
                            for pairsym in pairsym_lst]
         if not all([insym and outsym for insym, outsym in symbol_pair_lst]):
