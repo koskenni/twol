@@ -33,6 +33,8 @@ setuptools.setup(
             "twol-discov =  twol.discover:main",
             "twol-tester = twol.tester:main",
             "twol-lexc2dot = twol.lexc2dot:main",
+            "twol-wordset2entry = twol.wordset2entry:main",
+            "twol-generate = twol.twgenerate:main"
         ]
     },
     include_package_data=True,

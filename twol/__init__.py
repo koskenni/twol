@@ -14,5 +14,7 @@ __all__ = [
     "raw2named",
     "table2words",
     "words2zerofilled",
-    "zerofilled2raw"
+    "zerofilled2raw",
+    "wordset2entry",
+    "twgenerate"
 ]
