@@ -34,7 +34,8 @@ setuptools.setup(
             "twol-tester = twol.tester:main",
             "twol-lexc2dot = twol.lexc2dot:main",
             "twol-wordset2entry = twol.wordset2entry:main",
-            "twol-generate = twol.twgenerate:main"
+            "twol-generate = twol.twgenerate:main",
+            "twol-word2entry = twol.word2entry:main"
         ]
     },
     include_package_data=True,

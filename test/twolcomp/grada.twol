@@ -4,7 +4,7 @@ Vow = :a | :e | :i | :o | :u ;
 Cons = :d | :g | :h | :k | :l | :m | :n | :p | :r | :s | :t | :v ;
 Vi = Vow.m ;
 Ci = Cons.m ;
-Closed = (i) Ci [Ci|.#.] ;
+Closed = (i) Ci [Ci | .#. | {_}:] ;
 
 {kg}:g | {kj}:j | {kv}:v |
 {pm}:m | {pv}:v | {pØ}:Ø |
@@ -26,7 +26,7 @@ Closed = (i) Ci [Ci|.#.] ;
 {kØ'}:k /<= _ Vi Closed ;
 ! vaa<>oissa
 
-{§}:%- <=>
+{_}:%- <=>
      :a _ :a ,
      :o _ :o ,
      :u _ :u ;

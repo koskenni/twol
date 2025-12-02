@@ -24,6 +24,14 @@ import twol.cfg as cfg
 
 import twol.twexamp as twexamp
 
+def one_sym_pair_fst(insym, outsym):
+    fst = hfst.HfstBasicTransducer()
+    fst.add_state(1)
+    fst.set_final_weight(1, 0.0)
+    tr = hfst.HfstBasicTransition(1, insym, outsym, 0.0)
+    fst.add_transition(0, tr)
+    return  hfst.HfstTransducer(fst)
+
 class DiscovDefSemantics(object):
 
     def define(self, ast):
@@ -79,14 +87,14 @@ class DiscovDefSemantics(object):
         return result_set
 
     def pair(self, ast):
+        failmsg = []
+
         # print(f"in pair: {ast = }") ####
         up, lo = ast
-        up_quoted = re.sub(r"([{}])", r"%\1", up)
         lo_quoted = lo                         ### ????
         lo = re.sub(r"%(.)", r"\1", lo_quoted)
         # print(f"in pair: {up= }, {lo = }") ####
 
-        failmsg = []
         if up and (up not in cfg.input_symbol_set):
             failmsg.append(f"input symbol '{up}'")
         if lo and (lo not in cfg.output_symbol_set):
@@ -302,11 +310,12 @@ class TwolFstSemantics(object):
         return result_fst
 
     def pair(self, ast):
-        # print(f"in pair: {ast = }") ####
+        # print(f"in pair: ", ast) ####
         up, lo = ast
-        up_quoted = re.sub(r"([{}])", r"%\1", up)
-        lo_quoted = lo                         ### ????
-        lo = re.sub(r"%(.)", r"\1", lo_quoted)
+        if not up: up = ""
+        if not lo: lo = ""
+        if len(lo) == 2 and lo[0] == "%":
+            lo = lo[1]
         # print(f"in pair: {up= }, {lo = }") ####
 
         failmsg = []
@@ -322,17 +331,17 @@ class TwolFstSemantics(object):
             raise FailedSemantics(cfg.error_message)
 
         if up and lo:         # it is e.g. "{aØ}:a"
-            result_fst = hfst.regex(up_quoted + ':' + lo_quoted)
+            result_fst = one_sym_pair_fst(up, lo)
             result_fst.set_name(f"{up}:{lo}")
             return result_fst
         elif up and (not lo):   # it is e.g. "{aØ}:"
-            result_fst = hfst.regex(up_quoted)
+            result_fst = one_sym_pair_fst(up, up)
             result_fst.compose(cfg.all_pairs_fst)
             result_fst.set_name(f"{up}:")
             return result_fst
         elif (not up) and lo:   # it is e.g. ":i"
             result_fst = cfg.all_pairs_fst.copy()
-            lo_fst = hfst.regex(lo_quoted)
+            lo_fst = one_sym_pair_fst(lo, lo)
             result_fst.compose(lo_fst)
             result_fst.set_name(f":{lo}")
             return result_fst
@@ -355,15 +364,15 @@ class TwolFstSemantics(object):
 
     def outsym(self, ast):
         # print(f"in outsym: {ast = }") ####
-        string = ast
-        lo_quoted = string                      ### ????
-        lo = re.sub(r"%(.)", r"\1", lo_quoted)
-        # print(f"in outsym: {lo = }, {lo_quoted = }") ####
+        lo = ast
+        if len(lo) == 2 and lo[0] == "%":
+            lo = lo[1]
+        # print(f"in outsym: {lo = }") ####
         if (lo in cfg.output_symbol_set and
             (lo,lo) in cfg.symbol_pair_set):
             # print(f"symbol_or_pair: {string} is a surface symbol") ####
-            result_fst =  hfst.regex(string)
-            result_fst.set_name(string)
+            result_fst = one_sym_pair_fst(lo, lo)
+            result_fst.set_name(lo)
             return result_fst
         else:
             cfg.error_message = f"in outsym: {string} is not in alphabet"

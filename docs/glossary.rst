@@ -42,7 +42,7 @@ Glossary
      An abstract machine like a :term:`FSM` but it operates with two tapes: *input tape* and *output tape*.  Thus, the :term:`transitios <transition>` are labeled with a :term:`symbol pair` instead of a single symbol.  A transition is applied, if the current input symbol matches the former component of the symbol pair in the transition.  Then, the latter component of the symbol pair is output.  Labels in FST transitions may, in general, also  contain :term:`epsilons <epsilon>` instead of symbols.  In the two-level rules and examples, no epsilons are used.  Two-level FSTs define, thus, *same length relations*, i.e. the relate pairs of strings where both strings are equally long.
 
    generalized restriction
-     A method for compiling rules by formulating the rule components as regular sets.  Additional boundary markers are used so that the restriction for the center part and the restrictions for the context parts can be combined.  The boundary markers are removed after the operations.  Using the boundary markers, the context parts get a natural expression and the context parts can be disjuncted in a natural manner.  See [ylijyrä2006]_ for details.
+     A method for compiling rules by formulating the rule components as regular sets.  Additional boundary markers are used so that the restriction for the center part and the restrictions for the context parts can be combined.  The boundary markers are removed after the operations.  Using the boundary markers, the context parts get a natural expression and the context parts can be disjuncted in a natural manner.  See [ylijyrä2004]_ and [ylijyrä2006]_ for details.
 
    inflection
    conjugation

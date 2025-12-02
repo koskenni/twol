@@ -263,6 +263,15 @@ References
 	  (A list of headwords and their inflection class numbers.)
 	  http://kaino.kotus.fi/sanat/nykysuomi/
 		  
+.. [ylijyrä2004] Anssi Yli-Jyrä and Kimmo Koskenniemi, 2003, Compiling
+		 contextual restrictions on strings into finite-state
+		 automata. Cleophas & B W Watson (toim), Proceedings of
+		 the Eindhoven FASTAR Days 2004, Proceedings. Computer
+		 Science Reports 04/40, Eindhoven, Technische Universiteit
+		 Eindhoven, Eindhoven, The Eindhoven FASTAR Days 2004,
+		 Eindhoven, Alankomaat, 03/09/2004.
+		 http://hdl.handle.net/10138/225831
+
 .. [ylijyrä2006] Anssi Yli-Jyrä and Kimmo Koskenniemi, 2006: "Compiling
 		 Generalized Two-Level Rules and Grammars" in T.
 		 Salakoski et al. (Eds.): *FinTAL 2006*, LNAI 4139,

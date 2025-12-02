@@ -428,7 +428,7 @@ def input_coercion(name, x_fst, *contexts):
     return rule_fst, selector_fst, scrambler_fst
 
 def doublearrow(name, x_fst, *contexts):
-    """Compiles rules like X <=> [LC1,RC1),...(LCk,RCk)]
+    """Compiles rules like X <=> [(LC1,RC1),...(LCk,RCk)]
     
     name -- name to be given to the rule FST
     
@@ -447,8 +447,10 @@ def doublearrow(name, x_fst, *contexts):
     scrambler_fst -- an encoded FST which produces negative examples
 
     """
-    rule_fst, selector_fst, scrambler_fst = rightarrow(name, x_fst, *contexts)
-    rule2_fst, selector2_fst, scrambler2_fst = output_coercion(name, x_fst, *contexts)
+    (rule_fst, selector_fst,
+     scrambler_fst) = rightarrow(name, x_fst, *contexts)
+    (rule2_fst, selector2_fst,
+     scrambler2_fst) = output_coercion(name, x_fst, *contexts)
     rule_fst.intersect(rule2_fst)
     rule_fst.minimize()
     rule_fst.set_name(name)
@@ -466,7 +468,7 @@ def center_exclusion(name, x_fst, *contexts):
     
     x_fst -- the center (X) of the rule
     
-    *contents -- list of contexts, i.e. pairs of left and right context
+    *contexts -- list of contexts, i.e. pairs of left and right context
     
     Returns a triple:
     

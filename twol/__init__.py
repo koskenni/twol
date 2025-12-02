@@ -16,5 +16,6 @@ __all__ = [
     "words2zerofilled",
     "zerofilled2raw",
     "wordset2entry",
-    "twgenerate"
+    "twgenerate",
+    "word2entry"
 ]

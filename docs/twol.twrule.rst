@@ -9,7 +9,7 @@ This module forms the rule FSTs out of the collection of component FSTs which ha
 Compiling the two-level rules
 -----------------------------
 
-The actual compilation starts from the tuples which contain the components as FSTs.  Each rule is parsed and compiled separately using the alphabet extracted from the FST containing the examples.  The method for the compilation is described in [ylijyrä2006]_. The main result of the compilation is the rule FST but two other FSTs are compiled in addition:
+The actual compilation starts from the tuples which contain the components as FSTs.  Each rule is parsed and compiled separately using the alphabet extracted from the FST containing the examples.  The method for the compilation is described in [ylijyrä2004]_. The main result of the compilation is the rule FST but two other FSTs are compiled in addition:
 
 - *rule_fst* which accepts any examples which conform to the rule.  The *rule_fst* accepts strings of symbol pairs.  A rule FST ought to accept all symbol pair strings where the X part occurs in one of the contexts in the rule and/or reject thse strings where this is not the case.
 
@@ -21,7 +21,7 @@ The actual compilation starts from the tuples which contain the components as FS
 Compilation of the rule FST
 ---------------------------
 
-There is a separate function for each type of rules: ``rightarrow()`` for ``=>`` rules, ``output_coercion()`` for ``<=`` rules, ``input_coercion()`` for the new ``<---`` type of rules, ``doublearrow()`` for ``<=>`` rules, and ``center_exclusion()`` for ``/<=`` rules.  The rule FSTs are compiled using the :term:`generalized restriction` method in [ylijyrä2006]_.
+There is a separate function for each type of rules: ``rightarrow()`` for ``=>`` rules, ``output_coercion()`` for ``<=`` rules, ``input_coercion()`` for the new ``<---`` type of rules, ``doublearrow()`` for ``<=>`` rules, and ``center_exclusion()`` for ``/<=`` rules.  The rule FSTs are compiled using the :term:`generalized restriction` method in [ylijyrä2006]_ and [ylijyrä2006]_.
 
 The rule formalism has a special symbol ``.#.`` for the beginning of the left context or the end of the right context.  The compilation makes some effort to implement this literally so that the FSTs do not have transitions for stuff beyond the boundary symbol.  The parser inserts ``BEGIN`` for a left context boundary and ``END`` symbol in the right context.  Function ``begin_end()`` takes care of the cleaning the FSTs.
 
