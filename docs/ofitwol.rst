@@ -161,23 +161,39 @@ Managing variant forms
 
 EMSF allows more morphophonemic variation than the present day Finnish, e.g.:
 
-- ``onneto<i>n`` in addition to the standard form ``onneto<>n`` ('unhappy', adjective, nominative, singular)
+(1) ``onneto<i>n`` in addition to the standard form ``onneto<>n`` ('unhappy', adjective, nominative, singular)
 
-- ``korke<e>`` in addition to ``korke<a>`` ('high', adjective, nominative, singular)
+(2) ``korke<e>`` in addition to ``korke<a>`` ('high', adjective, nominative, singular)
 
-- ``kih<aja>a`` in addition to ``kih<ise>e`` ('to hiss', verb, active, present tense, 3rd person)
+(3) ``vene<h>essä`` in addition to ``vene<>essä`` ('in a boat'); in MSF the noun has stems ``vene``, ``venee`` and ``venet``, but in EMSF there are two additional stems ``venehe`` and ``veneh``.  A morphophoneme ``{Øth}`` easily describes this variation in EMSF, but the correspondence ``{Øth}:h`` must not be present in the normalised base form ``vene``.
 
-- ``vene<h>essä`` in addition to ``vene<>essä`` ('in a boat'); in MSF the noun has stems ``vene``, ``venee`` and ``venet``, but in EMSF there are two additional stems ``venehe`` and ``veneh``.  A morphophoneme ``{Øth}`` easily describes this variation in EMSF, but the correspondence ``{Øth}:h`` must not be present in the normalised base form ``vene``.
+(4) ``kih<aja>a`` in addition to ``kih<ise>e`` ('to hiss', verb, active, present tense, 3rd person)
 
-The two first examples are solved through the morphophonemes that describe the variation and the third type is solved by includin some morphemes in the lexicon.  The former type needs special attention, because otherwise the rules will generate several base forms for words containing such morphophonemes.
+Cases (1), (2) and (3) are solved through the morphophonemes (``{ØiØ}``, ``{aeØo}``, ``{ØØh}``) that describe the variation.  These types need special attention, because otherwise the rules will generate several base forms for words containing such morphophonemes.  The case (4) is solved by including some morphemes in the lexicon.
 
 
 Allowing variation
 ------------------
 
-When there is no variation, one may often use the double-arrow two-level rules such as ``{ao}:o <=> _ {ij}:``.  Then, the morphophoneme input symbol has only one possible output character (or zero).  There are two ways to allow several alternatives: Firstly, one may give the alternatives in the left-hand side of the rule, e.g. ``{aØo}:Ø | {aØo}:o <=> _ {ij}:``.  Such a rule clearly allows both ``Ø`` and ``o`` as the output characters for the input symbol ``{aØo}``.  It would be no problem if the lexicon would consist of explicit base forms given to each lexicon entry.  In OMORFI we avoid this base-forms by generating the base-forms automatically from the morphophonemic representations.  The other method of allowing variation is to use combinations of right-arrow rules ``=>`` and exclusion rules ``/<=`` and separate the examples and the rules for the variants from the standard rules.
+When there is no variation, one may often use the double-arrow two-level rules such as ``{ao}:o <=> _ {ij}:``.  Then, the morphophoneme input symbol has only one possible output symbol, and vice versa, the morphophoneme in the base form will generate just one surface symbol in that context.
 
-The file containing the examples must, thus, be split in two parts.  The main part contains all examples where the relation reflects the standard output forms and another which contains only the variant forms.  The variant forms, thus, have the surface representation of the non-standard form but their morphophonemic representation is the same as in the standard forms.  The combination of these two sets of examples is the effective test for input two-level rules and the standard part alone is the test set for the output rules which generate the base forms.
+Some words have variation, i.e. a particular morphophoneme (e.g. ``{aØo}``) may correspond to two or more surface symbols (``o`` the standard and ``Ø`` the variant) in the same context (e.g. ``pasuun<o>issa`` and ``pasuun<>issa``.  An obvious rule for describing such variation would beto use an ambiguous rule::
+
+  {ao}:o | {ao}:Ø <=> _ {ij}:
+
+The set of pair string examples must then have examples for both the variant and the standard alternatives.  
+
+When generating word-forms, we usually want only the standard alternative to be generated.  When OFITWOL generates the base forms for its lexicon, some words might get lexicon entries both for the standard and the variant forms, and that is not what we want.
+
+In order to resolve this problem, those pair string examples which contain the variant alternatives, are kept in a separate file ``examples-var.pstr`` which is used together with the main examples when compiling the rules for recognition, but not when compiling the rules for generation.
+
+A rule like ``{aØo}:o|{aØo}:Ø <=> _ {ij}:`` would work correctly for recognition, but it might cause an error when compiled for generation (i.e. without the variant examples) because the variant is not in the pair alphabet.  We do not wish to use different rules for the recognition and the generation. If we write the rule as::
+
+  {aØo}: - {aØo}:a <=> _ {ij}:
+
+it does the trick.  For recognition, it is equivalent to the original form because, then, the alphabet as deduced from the examples contains both ``{aØo}:o`` and ``{aØo}:Ø``.  On the other hand, the alphabet as deduced from the main set of examples, contains only ``{aØo}:o``.  One could easily establish yet another two-level rule operator, using which the above rule would look like ``{aØo}:a /<=> _ {ij}:``
+
+The above method handles many but not all cases of morphophonemic variation.  A more general solution is to use combinations of right-arrow rules ``=>`` and exclusion rules ``/<=``,   and separate the examples and the such rules for the variants from the standard rules.
 
 
 Affixes
