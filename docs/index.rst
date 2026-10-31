@@ -29,5 +29,4 @@ Welcome to twol's documentation!
 Indices and tables
 ==================
 
-* :ref:`search`
 

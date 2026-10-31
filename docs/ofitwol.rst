@@ -177,13 +177,13 @@ Allowing variation
 
 When there is no variation, one may often use the double-arrow two-level rules such as ``{ao}:o <=> _ {ij}:``.  Then, the morphophoneme input symbol has only one possible output symbol, and vice versa, the morphophoneme in the base form will generate just one surface symbol in that context.
 
-Some words have variation, i.e. a particular morphophoneme (e.g. ``{aØo}``) may correspond to two or more surface symbols (``o`` the standard and ``Ø`` the variant) in the same context (e.g. ``pasuun<o>issa`` and ``pasuun<>issa``.  An obvious rule for describing such variation would beto use an ambiguous rule::
+Some words have variation, i.e. a particular morphophoneme (e.g. ``{aØo}``) may correspond to two or more surface symbols (``o`` the standard and ``Ø`` the variant) in the same context (e.g. ``pasuun<o>issa`` and ``pasuun<>issa``.  An obvious rule for describing such variation would be to use an ambiguous rule::
 
-  {ao}:o | {ao}:Ø <=> _ {ij}:
+  {aØo}:o | {aØo}:Ø <=> _ {ij}:
 
-The set of pair string examples must then have examples for both the variant and the standard alternatives.  
+The set of pair string examples must then have some examples for both the variant and the standard alternatives.  
 
-When generating word-forms, we usually want only the standard alternative to be generated.  When OFITWOL generates the base forms for its lexicon, some words might get lexicon entries both for the standard and the variant forms, and that is not what we want.
+When generating word-forms, we usually want only the standard alternative to be generated.  When OFITWOL generates the base forms for dispalying the result, it would generate both a standard and a variant base form, and that is not what we want.
 
 In order to resolve this problem, those pair string examples which contain the variant alternatives, are kept in a separate file ``examples-var.pstr`` which is used together with the main examples when compiling the rules for recognition, but not when compiling the rules for generation.
 
@@ -191,7 +191,9 @@ A rule like ``{aØo}:o|{aØo}:Ø <=> _ {ij}:`` would work correctly for recognit
 
   {aØo}: - {aØo}:a <=> _ {ij}:
 
-it does the trick.  For recognition, it is equivalent to the original form because, then, the alphabet as deduced from the examples contains both ``{aØo}:o`` and ``{aØo}:Ø``.  On the other hand, the alphabet as deduced from the main set of examples, contains only ``{aØo}:o``.  One could easily establish yet another two-level rule operator, using which the above rule would look like ``{aØo}:a /<=> _ {ij}:``
+it does the trick.  For recognition, it is equivalent to the original form because, then, the alphabet as deduced from the examples contains both ``{aØo}:o`` and ``{aØo}:Ø``.  On the other hand, the alphabet as deduced from the main set of examples, contains only ``{aØo}:o``.  Therefore, the generatig rule is equivalent to ``{aØo}:o <=> _ {ij}:`` as we wish.
+
+One could easily establish yet another two-level rule operator  ``/<=>``, using which the above rule would look like ``{aØo}:a /<=> _ {ij}:``.  In general, ``X /<=> LC _ RC`` would be interpreted as ``X.m - X <=> LC _ RC``, cf. :ref:`formalism:two-level rules`.
 
 The above method handles many but not all cases of morphophonemic variation.  A more general solution is to use combinations of right-arrow rules ``=>`` and exclusion rules ``/<=``,   and separate the examples and the such rules for the variants from the standard rules.
 
