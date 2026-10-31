@@ -241,7 +241,7 @@ def read_alphabet(file_name):
                                             mat_for_in.group("var"),
                                             mat_for_in.group("set")))
                 continue
-            mat_exception = re.fullmatch("(?P<expr>(\w:\w +)*\w:\w::[0-9]+)", line)
+            mat_exception = re.fullmatch(r"(?P<expr>(\w:\w +)*\w:\w::[0-9]+)", line)
             if mat_exception:
                 # it defines an exception list
                 exception_lst.append(mat_exception.group("expr"))
