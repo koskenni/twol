@@ -197,6 +197,8 @@ One could easily establish yet another two-level rule operator  ``/<=>``, using 
 
 The above method handles many but not all cases of morphophonemic variation.  A more general solution is to use combinations of right-arrow rules ``=>`` and exclusion rules ``/<=``,   and separate the examples and the such rules for the variants from the standard rules.
 
+Note also that different lexemes might have similar variation, but still, by convention, one uses one alternative surface symbol as the standard in some words whereas some other words use a different symbol as the standard.  Then, the solution is to use two separate morphophonemes with similar rules, and include the example with the standard in ``examples.pstr``, and the example with the variant in ``examples-var.pstr``.
+
 
 Affixes
 =======

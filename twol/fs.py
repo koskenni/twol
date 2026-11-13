@@ -14,6 +14,11 @@ def expr(e):
     res.minimize()
     return res
 
+def null_fst():
+    """Return a null FSM which accepts no strings at all"""
+    res = hfst.empty_fst()
+    return res
+
 def concat(f, g):
     """Return the concatenation of two FSTs"""
     res = f.copy()

@@ -327,7 +327,8 @@ class TwolFstSemantics(object):
             (up, lo) not in cfg.symbol_pair_set):
                failmsg.append(f"symbol pair '{up}:{lo}'")
         if failmsg:
-            cfg.error_message = " and ".join(failmsg) + " not in alphabet"
+            cfg.error_message = (" and ".join(failmsg) +
+                                 " not in alphabet")
             raise FailedSemantics(cfg.error_message)
 
         if up and lo:         # it is e.g. "{aØ}:a"
@@ -335,7 +336,7 @@ class TwolFstSemantics(object):
             result_fst.set_name(f"{up}:{lo}")
             return result_fst
         elif up and (not lo):   # it is e.g. "{aØ}:"
-            result_fst = one_sym_pair_fst(up, up)
+            result_fst = one_sym_pair_fst(, up)
             result_fst.compose(cfg.all_pairs_fst)
             result_fst.set_name(f"{up}:")
             return result_fst
